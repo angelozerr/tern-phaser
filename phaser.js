@@ -12,127 +12,130 @@
   });
   
   var defs = {
-		  "!name": "phaser",
+		  "!name": "delite",
 		  "!define": {},
 		  "Phaser": {
 		   "Animation": {
 		    "!type": "fn(game: +Phaser.Game, parent: +Phaser.Sprite, name: string, frameData: +Phaser.FrameData, frames: [?]|[?], frameRate: number, loop: bool, loop: bool)",
-		    "loop": {
-		     "!type": "bool"
-		    },
-		    "game": {
-		     "!type": "+Phaser.Game"
-		    },
-		    "_parent": {
-		     "!type": "+Phaser.Sprite"
-		    },
-		    "_frameData": {
-		     "!type": "+Phaser.FrameData"
-		    },
-		    "name": {
-		     "!type": "string"
-		    },
-		    "_frames": {
-		     "!type": "+array"
-		    },
-		    "delay": {
-		     "!type": "number"
-		    },
-		    "loopCount": {
-		     "!type": "number"
-		    },
-		    "killOnComplete": {
-		     "!type": "bool"
-		    },
-		    "isFinished": {
-		     "!type": "bool"
-		    },
-		    "isPlaying": {
-		     "!type": "bool"
-		    },
-		    "isPaused": {
-		     "!type": "bool"
-		    },
-		    "_pauseStartTime": {
-		     "!type": "bool"
-		    },
-		    "_frameIndex": {
-		     "!type": "number"
-		    },
-		    "_frameDiff": {
-		     "!type": "number"
-		    },
-		    "_frameSkip": {
-		     "!type": "number"
-		    },
-		    "currentFrame": {
-		     "!type": "+Phaser.Frame"
-		    },
-		    "onStart": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "onUpdate": {
-		     "!type": "+Phaser.Signal|+null"
-		    },
-		    "onComplete": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "onLoop": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "play": {
-		     "!type": "fn()"
-		    },
-		    "restart": {
-		     "!type": "fn()"
-		    },
-		    "setFrame": {
-		     "!type": "fn()"
-		    },
-		    "stop": {
-		     "!type": "fn()"
-		    },
-		    "onPause": {
-		     "!type": "fn()"
-		    },
-		    "onResume": {
-		     "!type": "fn()"
-		    },
-		    "update": {
-		     "!type": "fn()"
-		    },
-		    "updateCurrentFrame": {
-		     "!type": "fn()"
-		    },
-		    "next": {
-		     "!type": "fn()"
-		    },
-		    "previous": {
-		     "!type": "fn()"
-		    },
-		    "updateFrameData": {
-		     "!type": "fn()"
-		    },
-		    "destroy": {
-		     "!type": "fn()"
-		    },
-		    "complete": {
-		     "!type": "fn()"
-		    },
-		    "paused": {
-		     "!type": "bool"
-		    },
-		    "frameTotal": {
-		     "!type": "number"
-		    },
-		    "frame": {
-		     "!type": "number"
-		    },
-		    "speed": {
-		     "!type": "number"
-		    },
-		    "enableUpdate": {
-		     "!type": "bool"
+		    "loop": {},
+		    "prototype": {
+		     "game": {
+		      "!type": "+Phaser.Game"
+		     },
+		     "_parent": {
+		      "!type": "+Phaser.Sprite"
+		     },
+		     "_frameData": {
+		      "!type": "+Phaser.FrameData"
+		     },
+		     "name": {
+		      "!type": "string"
+		     },
+		     "_frames": {
+		      "!type": "+array"
+		     },
+		     "delay": {
+		      "!type": "number"
+		     },
+		     "loop": {
+		      "!type": "bool"
+		     },
+		     "loopCount": {
+		      "!type": "number"
+		     },
+		     "killOnComplete": {
+		      "!type": "bool"
+		     },
+		     "isFinished": {
+		      "!type": "bool"
+		     },
+		     "isPlaying": {
+		      "!type": "bool"
+		     },
+		     "isPaused": {
+		      "!type": "bool"
+		     },
+		     "_pauseStartTime": {
+		      "!type": "bool"
+		     },
+		     "_frameIndex": {
+		      "!type": "number"
+		     },
+		     "_frameDiff": {
+		      "!type": "number"
+		     },
+		     "_frameSkip": {
+		      "!type": "number"
+		     },
+		     "currentFrame": {
+		      "!type": "+Phaser.Frame"
+		     },
+		     "onStart": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "onUpdate": {
+		      "!type": "+Phaser.Signal|+null"
+		     },
+		     "onComplete": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "onLoop": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "play": {
+		      "!type": "fn()"
+		     },
+		     "restart": {
+		      "!type": "fn()"
+		     },
+		     "setFrame": {
+		      "!type": "fn()"
+		     },
+		     "stop": {
+		      "!type": "fn()"
+		     },
+		     "onPause": {
+		      "!type": "fn()"
+		     },
+		     "onResume": {
+		      "!type": "fn()"
+		     },
+		     "update": {
+		      "!type": "fn()"
+		     },
+		     "updateCurrentFrame": {
+		      "!type": "fn()"
+		     },
+		     "next": {
+		      "!type": "fn()"
+		     },
+		     "previous": {
+		      "!type": "fn()"
+		     },
+		     "updateFrameData": {
+		      "!type": "fn()"
+		     },
+		     "destroy": {
+		      "!type": "fn()"
+		     },
+		     "complete": {
+		      "!type": "fn()"
+		     },
+		     "paused": {
+		      "!type": "bool"
+		     },
+		     "frameTotal": {
+		      "!type": "number"
+		     },
+		     "frame": {
+		      "!type": "number"
+		     },
+		     "speed": {
+		      "!type": "number"
+		     },
+		     "enableUpdate": {
+		      "!type": "bool"
+		     }
 		    },
 		    "generateFrameNames": {
 		     "!type": "fn()",
@@ -143,16 +146,18 @@
 		    }
 		   },
 		   "Animation#play": {
-		    "delay": {},
-		    "loop": {},
-		    "killOnComplete": {},
-		    "isPlaying": {},
-		    "isFinished": {},
-		    "paused": {},
-		    "loopCount": {},
-		    "_timeLastFrame": {},
-		    "_timeNextFrame": {},
-		    "_frameIndex": {}
+		    "prototype": {
+		     "delay": {},
+		     "loop": {},
+		     "killOnComplete": {},
+		     "isPlaying": {},
+		     "isFinished": {},
+		     "paused": {},
+		     "loopCount": {},
+		     "_timeLastFrame": {},
+		     "_timeNextFrame": {},
+		     "_frameIndex": {}
+		    }
 		   },
 		   "Animation#play#_parent": {
 		    "animations": {
@@ -161,14 +166,16 @@
 		    }
 		   },
 		   "Animation#restart": {
-		    "isPlaying": {},
-		    "isFinished": {},
-		    "paused": {},
-		    "loopCount": {},
-		    "_timeLastFrame": {},
-		    "_timeNextFrame": {},
-		    "_frameIndex": {},
-		    "currentFrame": {}
+		    "prototype": {
+		     "isPlaying": {},
+		     "isFinished": {},
+		     "paused": {},
+		     "loopCount": {},
+		     "_timeLastFrame": {},
+		     "_timeNextFrame": {},
+		     "_frameIndex": {},
+		     "currentFrame": {}
+		    }
 		   },
 		   "Animation#restart#_parent": {
 		    "animations": {
@@ -180,171 +187,197 @@
 		    "frameIndex": {},
 		    "useLocalFrameIndex": {},
 		    "i": {},
-		    "_frameIndex": {},
-		    "_timeNextFrame": {}
+		    "prototype": {
+		     "_frameIndex": {},
+		     "_timeNextFrame": {}
+		    }
 		   },
 		   "Animation#stop": {
 		    "resetFrame": {},
 		    "dispatchComplete": {},
-		    "isPlaying": {},
-		    "isFinished": {},
-		    "paused": {},
-		    "currentFrame": {}
+		    "prototype": {
+		     "isPlaying": {},
+		     "isFinished": {},
+		     "paused": {},
+		     "currentFrame": {}
+		    }
 		   },
 		   "Animation#onPause": {
-		    "_frameDiff": {}
+		    "prototype": {
+		     "_frameDiff": {}
+		    }
 		   },
 		   "Animation#onResume": {
-		    "_timeNextFrame": {}
+		    "prototype": {
+		     "_timeNextFrame": {}
+		    }
 		   },
 		   "Animation#update": {
-		    "_frameSkip": {},
-		    "_frameDiff": {},
-		    "_timeLastFrame": {},
-		    "_timeNextFrame": {},
-		    "_frameIndex": {},
-		    "currentFrame": {}
+		    "prototype": {
+		     "_frameSkip": {},
+		     "_frameDiff": {},
+		     "_timeLastFrame": {},
+		     "_timeNextFrame": {},
+		     "_frameIndex": {},
+		     "currentFrame": {}
+		    }
 		   },
 		   "Animation#updateCurrentFrame": {
 		    "fromPlay": {},
 		    "idx": {},
-		    "currentFrame": {}
+		    "prototype": {
+		     "currentFrame": {}
+		    }
 		   },
 		   "Animation#next": {
 		    "quantity": {},
 		    "frame": {},
-		    "_frameIndex": {}
+		    "prototype": {
+		     "_frameIndex": {}
+		    }
 		   },
 		   "Animation#previous": {
 		    "quantity": {},
 		    "frame": {},
-		    "_frameIndex": {}
+		    "prototype": {
+		     "_frameIndex": {}
+		    }
 		   },
 		   "Animation#updateFrameData": {
-		    "_frameData": {},
-		    "currentFrame": {}
+		    "prototype": {
+		     "_frameData": {},
+		     "currentFrame": {}
+		    }
 		   },
 		   "Animation#destroy": {
-		    "game": {},
-		    "_parent": {},
-		    "_frames": {},
-		    "_frameData": {},
-		    "currentFrame": {},
-		    "isPlaying": {}
+		    "prototype": {
+		     "game": {},
+		     "_parent": {},
+		     "_frames": {},
+		     "_frameData": {},
+		     "currentFrame": {},
+		     "isPlaying": {}
+		    }
 		   },
 		   "Animation#complete": {
-		    "_frameIndex": {},
-		    "currentFrame": {},
-		    "isPlaying": {},
-		    "isFinished": {},
-		    "paused": {}
+		    "prototype": {
+		     "_frameIndex": {},
+		     "currentFrame": {},
+		     "isPlaying": {},
+		     "isFinished": {},
+		     "paused": {}
+		    }
 		   },
 		   "AnimationManager": {
 		    "!type": "fn(sprite: +Phaser.Sprite)",
-		    "sprite": {
-		     "!type": "+Phaser.Sprite"
-		    },
-		    "game": {
-		     "!type": "+Phaser.Game"
-		    },
-		    "currentFrame": {
-		     "!type": "+Phaser.Frame"
-		    },
-		    "currentAnim": {
-		     "!type": "+Phaser.Animation"
-		    },
-		    "updateIfVisible": {
-		     "!type": "bool"
-		    },
-		    "isLoaded": {
-		     "!type": "bool"
-		    },
-		    "_frameData": {
-		     "!type": "+Phaser.FrameData"
-		    },
-		    "_anims": {
-		     "!type": "?"
-		    },
-		    "_outputFrames": {
-		     "!type": "?"
-		    },
-		    "loadFrameData": {
-		     "!type": "fn()"
-		    },
-		    "copyFrameData": {
-		     "!type": "fn()"
-		    },
-		    "add": {
-		     "!type": "fn()"
-		    },
-		    "validateFrames": {
-		     "!type": "fn()"
-		    },
-		    "play": {
-		     "!type": "fn()"
-		    },
-		    "stop": {
-		     "!type": "fn()"
-		    },
-		    "update": {
-		     "!type": "fn()"
-		    },
-		    "next": {
-		     "!type": "fn()"
-		    },
-		    "previous": {
-		     "!type": "fn()"
-		    },
-		    "getAnimation": {
-		     "!type": "fn()"
-		    },
-		    "refreshFrame": {
-		     "!type": "fn()"
-		    },
-		    "destroy": {
-		     "!type": "fn()"
-		    },
-		    "frameData": {
-		     "!type": "+Phaser.FrameData"
-		    },
-		    "frameTotal": {
-		     "!type": "number"
-		    },
-		    "paused": {
-		     "!type": "bool"
-		    },
-		    "name": {
-		     "!type": "string"
-		    },
-		    "frame": {
-		     "!type": "number"
-		    },
-		    "frameName": {
-		     "!type": "string"
+		    "prototype": {
+		     "sprite": {
+		      "!type": "+Phaser.Sprite"
+		     },
+		     "game": {
+		      "!type": "+Phaser.Game"
+		     },
+		     "currentFrame": {
+		      "!type": "+Phaser.Frame"
+		     },
+		     "currentAnim": {
+		      "!type": "+Phaser.Animation"
+		     },
+		     "updateIfVisible": {
+		      "!type": "bool"
+		     },
+		     "isLoaded": {
+		      "!type": "bool"
+		     },
+		     "_frameData": {
+		      "!type": "+Phaser.FrameData"
+		     },
+		     "_anims": {},
+		     "_outputFrames": {},
+		     "loadFrameData": {
+		      "!type": "fn()"
+		     },
+		     "copyFrameData": {
+		      "!type": "fn()"
+		     },
+		     "add": {
+		      "!type": "fn()"
+		     },
+		     "validateFrames": {
+		      "!type": "fn()"
+		     },
+		     "play": {
+		      "!type": "fn()"
+		     },
+		     "stop": {
+		      "!type": "fn()"
+		     },
+		     "update": {
+		      "!type": "fn()"
+		     },
+		     "next": {
+		      "!type": "fn()"
+		     },
+		     "previous": {
+		      "!type": "fn()"
+		     },
+		     "getAnimation": {
+		      "!type": "fn()"
+		     },
+		     "refreshFrame": {
+		      "!type": "fn()"
+		     },
+		     "destroy": {
+		      "!type": "fn()"
+		     },
+		     "frameData": {
+		      "!type": "+Phaser.FrameData"
+		     },
+		     "frameTotal": {
+		      "!type": "number"
+		     },
+		     "paused": {
+		      "!type": "bool"
+		     },
+		     "name": {
+		      "!type": "string"
+		     },
+		     "frame": {
+		      "!type": "number"
+		     },
+		     "frameName": {
+		      "!type": "string"
+		     }
 		    }
 		   },
 		   "AnimationManager#loadFrameData": {
 		    "anim": {},
-		    "_frameData": {},
-		    "frame": {},
-		    "frameName": {},
-		    "isLoaded": {}
+		    "prototype": {
+		     "_frameData": {},
+		     "frame": {},
+		     "frameName": {},
+		     "isLoaded": {}
+		    }
 		   },
 		   "AnimationManager#copyFrameData": {
-		    "_frameData": {},
-		    "anim": {},
-		    "frame": {},
-		    "frameName": {},
-		    "isLoaded": {}
+		    "prototype": {
+		     "_frameData": {},
+		     "frame": {},
+		     "frameName": {},
+		     "isLoaded": {}
+		    },
+		    "anim": {}
 		   },
 		   "AnimationManager#add": {
 		    "frames": {},
 		    "frameRate": {},
 		    "loop": {},
 		    "useNumericIndex": {},
-		    "_outputFrames": {},
-		    "_anims[undefined]": {},
-		    "currentAnim": {}
+		    "prototype": {
+		     "_outputFrames": {},
+		     "_anims[undefined]": {},
+		     "currentAnim": {}
+		    }
 		   },
 		   "AnimationManager#add#sprite": {
 		    "refreshTexture": {}
@@ -357,31 +390,43 @@
 		    "paused": {}
 		   },
 		   "AnimationManager#play": {
-		    "currentAnim": {},
-		    "currentFrame": {}
+		    "prototype": {
+		     "currentAnim": {},
+		     "currentFrame": {}
+		    }
 		   },
 		   "AnimationManager#stop": {
 		    "resetFrame": {},
-		    "currentAnim": {}
+		    "prototype": {
+		     "currentAnim": {}
+		    }
 		   },
 		   "AnimationManager#update": {
-		    "currentFrame": {}
+		    "prototype": {
+		     "currentFrame": {}
+		    }
 		   },
 		   "AnimationManager#next": {
-		    "currentFrame": {}
+		    "prototype": {
+		     "currentFrame": {}
+		    }
 		   },
 		   "AnimationManager#previous": {
-		    "currentFrame": {}
+		    "prototype": {
+		     "currentFrame": {}
+		    }
 		   },
 		   "AnimationManager#destroy": {
 		    "anim": {},
-		    "_anims": {},
-		    "_outputFrames": {},
-		    "_frameData": {},
-		    "currentAnim": {},
-		    "currentFrame": {},
-		    "sprite": {},
-		    "game": {}
+		    "prototype": {
+		     "_anims": {},
+		     "_outputFrames": {},
+		     "_frameData": {},
+		     "currentAnim": {},
+		     "currentFrame": {},
+		     "sprite": {},
+		     "game": {}
+		    }
 		   },
 		   "AnimationParser": {
 		    "!type": "fn()",
@@ -435,100 +480,106 @@
 		   },
 		   "Frame": {
 		    "!type": "fn(index: number, x: number, y: number, width: number, height: number, name: string)",
-		    "index": {
-		     "!type": "number"
-		    },
-		    "x": {
-		     "!type": "number"
-		    },
-		    "y": {
-		     "!type": "number"
-		    },
-		    "width": {
-		     "!type": "number"
-		    },
-		    "height": {
-		     "!type": "number"
-		    },
-		    "name": {
-		     "!type": "string"
-		    },
-		    "centerX": {
-		     "!type": "number"
-		    },
-		    "centerY": {
-		     "!type": "number"
-		    },
-		    "distance": {
-		     "!type": "number"
-		    },
-		    "rotated": {
-		     "!type": "bool"
-		    },
-		    "rotationDirection": {
-		     "!type": "string"
-		    },
-		    "trimmed": {
-		     "!type": "bool"
-		    },
-		    "sourceSizeW": {
-		     "!type": "number"
-		    },
-		    "sourceSizeH": {
-		     "!type": "number"
-		    },
-		    "spriteSourceSizeX": {
-		     "!type": "number"
-		    },
-		    "spriteSourceSizeY": {
-		     "!type": "number"
-		    },
-		    "spriteSourceSizeW": {
-		     "!type": "number"
-		    },
-		    "spriteSourceSizeH": {
-		     "!type": "number"
-		    },
-		    "right": {
-		     "!type": "number"
-		    },
-		    "bottom": {
-		     "!type": "number"
-		    },
-		    "resize": {
-		     "!type": "fn()"
-		    },
-		    "setTrim": {
-		     "!type": "fn()"
-		    },
-		    "clone": {
-		     "!type": "fn()"
-		    },
-		    "getRect": {
-		     "!type": "fn()"
+		    "prototype": {
+		     "index": {
+		      "!type": "number"
+		     },
+		     "x": {
+		      "!type": "number"
+		     },
+		     "y": {
+		      "!type": "number"
+		     },
+		     "width": {
+		      "!type": "number"
+		     },
+		     "height": {
+		      "!type": "number"
+		     },
+		     "name": {
+		      "!type": "string"
+		     },
+		     "centerX": {
+		      "!type": "number"
+		     },
+		     "centerY": {
+		      "!type": "number"
+		     },
+		     "distance": {
+		      "!type": "number"
+		     },
+		     "rotated": {
+		      "!type": "bool"
+		     },
+		     "rotationDirection": {
+		      "!type": "string"
+		     },
+		     "trimmed": {
+		      "!type": "bool"
+		     },
+		     "sourceSizeW": {
+		      "!type": "number"
+		     },
+		     "sourceSizeH": {
+		      "!type": "number"
+		     },
+		     "spriteSourceSizeX": {
+		      "!type": "number"
+		     },
+		     "spriteSourceSizeY": {
+		      "!type": "number"
+		     },
+		     "spriteSourceSizeW": {
+		      "!type": "number"
+		     },
+		     "spriteSourceSizeH": {
+		      "!type": "number"
+		     },
+		     "right": {
+		      "!type": "number"
+		     },
+		     "bottom": {
+		      "!type": "number"
+		     },
+		     "resize": {
+		      "!type": "fn()"
+		     },
+		     "setTrim": {
+		      "!type": "fn()"
+		     },
+		     "clone": {
+		      "!type": "fn()"
+		     },
+		     "getRect": {
+		      "!type": "fn()"
+		     }
 		    }
 		   },
 		   "Frame#resize": {
-		    "width": {},
-		    "height": {},
-		    "centerX": {},
-		    "centerY": {},
-		    "distance": {},
-		    "sourceSizeW": {},
-		    "sourceSizeH": {},
-		    "right": {},
-		    "bottom": {}
+		    "prototype": {
+		     "width": {},
+		     "height": {},
+		     "centerX": {},
+		     "centerY": {},
+		     "distance": {},
+		     "sourceSizeW": {},
+		     "sourceSizeH": {},
+		     "right": {},
+		     "bottom": {}
+		    }
 		   },
 		   "Frame#setTrim": {
-		    "trimmed": {},
-		    "sourceSizeW": {},
-		    "sourceSizeH": {},
-		    "centerX": {},
-		    "centerY": {},
-		    "spriteSourceSizeX": {},
-		    "spriteSourceSizeY": {},
-		    "spriteSourceSizeW": {},
-		    "spriteSourceSizeH": {}
+		    "prototype": {
+		     "trimmed": {},
+		     "sourceSizeW": {},
+		     "sourceSizeH": {},
+		     "centerX": {},
+		     "centerY": {},
+		     "spriteSourceSizeX": {},
+		     "spriteSourceSizeY": {},
+		     "spriteSourceSizeW": {},
+		     "spriteSourceSizeH": {}
+		    }
 		   },
 		   "Frame#clone": {
 		    "output": {},
@@ -542,42 +593,46 @@
 		   },
 		   "FrameData": {
 		    "!type": "fn()",
-		    "_frames": {
-		     "!type": "[?]"
-		    },
-		    "_frameNames": {
-		     "!type": "[?]"
-		    },
-		    "addFrame": {
-		     "!type": "fn()"
-		    },
-		    "getFrame": {
-		     "!type": "fn()"
-		    },
-		    "getFrameByName": {
-		     "!type": "fn()"
-		    },
-		    "checkFrameName": {
-		     "!type": "fn()"
-		    },
-		    "clone": {
-		     "!type": "fn()"
-		    },
-		    "getFrameRange": {
-		     "!type": "fn()"
-		    },
-		    "getFrames": {
-		     "!type": "fn()"
-		    },
-		    "getFrameIndexes": {
-		     "!type": "fn()"
-		    },
-		    "total": {
-		     "!type": "number"
+		    "prototype": {
+		     "_frames": {
+		      "!type": "[?]"
+		     },
+		     "_frameNames": {
+		      "!type": "[?]"
+		     },
+		     "addFrame": {
+		      "!type": "fn()"
+		     },
+		     "getFrame": {
+		      "!type": "fn()"
+		     },
+		     "getFrameByName": {
+		      "!type": "fn()"
+		     },
+		     "checkFrameName": {
+		      "!type": "fn()"
+		     },
+		     "clone": {
+		      "!type": "fn()"
+		     },
+		     "getFrameRange": {
+		      "!type": "fn()"
+		     },
+		     "getFrames": {
+		      "!type": "fn()"
+		     },
+		     "getFrameIndexes": {
+		      "!type": "fn()"
+		     },
+		     "total": {
+		      "!type": "number"
+		     }
 		    }
 		   },
 		   "FrameData#addFrame": {
-		    "_frameNames[undefined]": {}
+		    "prototype": {
+		     "_frameNames[undefined]": {}
+		    }
 		   },
 		   "FrameData#getFrame": {
 		    "index": {}
@@ -603,53 +658,106 @@
 		   },
 		   "Camera": {
 		    "!type": "fn(game: +Phaser.Game, id: number, x: number, y: number, width: number, height: number)",
-		    "game": {
-		     "!type": "+Phaser.Game"
-		    },
-		    "world": {
-		     "!type": "+Phaser.World"
-		    },
-		    "id": {
-		     "!type": "number"
-		    },
-		    "view": {
-		     "!type": "+Phaser.Rectangle"
-		    },
-		    "bounds": {
-		     "!type": "+Phaser.Rectangle"
-		    },
-		    "deadzone": {
-		     "!type": "+Phaser.Rectangle"
-		    },
-		    "visible": {
-		     "!type": "bool"
-		    },
-		    "roundPx": {
-		     "!type": "bool"
-		    },
-		    "atLimit": {
-		     "!type": "bool"
-		    },
-		    "target": {
-		     "!type": "+Phaser.Sprite"
-		    },
-		    "displayObject": {
-		     "!type": "+PIXI.DisplayObject"
-		    },
-		    "scale": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "totalInView": {
-		     "!type": "number"
-		    },
-		    "_targetPosition": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "_edge": {
-		     "!type": "number"
-		    },
-		    "_position": {
-		     "!type": "+Phaser.Point"
+		    "prototype": {
+		     "game": {
+		      "!type": "+Phaser.Game"
+		     },
+		     "world": {
+		      "!type": "+Phaser.World"
+		     },
+		     "id": {
+		      "!type": "number"
+		     },
+		     "view": {
+		      "!type": "+Phaser.Rectangle"
+		     },
+		     "bounds": {
+		      "!type": "+Phaser.Rectangle"
+		     },
+		     "deadzone": {
+		      "!type": "+Phaser.Rectangle"
+		     },
+		     "visible": {
+		      "!type": "bool"
+		     },
+		     "roundPx": {
+		      "!type": "bool"
+		     },
+		     "atLimit": {
+		      "!type": "bool"
+		     },
+		     "target": {
+		      "!type": "+Phaser.Sprite"
+		     },
+		     "displayObject": {
+		      "!type": "+PIXI.DisplayObject"
+		     },
+		     "scale": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "totalInView": {
+		      "!type": "number"
+		     },
+		     "_targetPosition": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "_edge": {
+		      "!type": "number"
+		     },
+		     "_position": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "preUpdate": {
+		      "!type": "fn()"
+		     },
+		     "follow": {
+		      "!type": "fn()"
+		     },
+		     "unfollow": {
+		      "!type": "fn()"
+		     },
+		     "focusOn": {
+		      "!type": "fn()"
+		     },
+		     "focusOnXY": {
+		      "!type": "fn()"
+		     },
+		     "update": {
+		      "!type": "fn()"
+		     },
+		     "updateTarget": {
+		      "!type": "fn()"
+		     },
+		     "setBoundsToWorld": {
+		      "!type": "fn()"
+		     },
+		     "checkBounds": {
+		      "!type": "fn()"
+		     },
+		     "setPosition": {
+		      "!type": "fn()"
+		     },
+		     "setSize": {
+		      "!type": "fn()"
+		     },
+		     "reset": {
+		      "!type": "fn()"
+		     },
+		     "x": {
+		      "!type": "number"
+		     },
+		     "y": {
+		      "!type": "number"
+		     },
+		     "position": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "width": {
+		      "!type": "number"
+		     },
+		     "height": {
+		      "!type": "number"
+		     }
 		    },
 		    "FOLLOW_LOCKON": {
 		     "!type": "number"
@@ -662,57 +770,6 @@
 		    },
 		    "FOLLOW_TOPDOWN_TIGHT": {
 		     "!type": "number"
-		    },
-		    "preUpdate": {
-		     "!type": "fn()"
-		    },
-		    "follow": {
-		     "!type": "fn()"
-		    },
-		    "unfollow": {
-		     "!type": "fn()"
-		    },
-		    "focusOn": {
-		     "!type": "fn()"
-		    },
-		    "focusOnXY": {
-		     "!type": "fn()"
-		    },
-		    "update": {
-		     "!type": "fn()"
-		    },
-		    "updateTarget": {
-		     "!type": "fn()"
-		    },
-		    "setBoundsToWorld": {
-		     "!type": "fn()"
-		    },
-		    "checkBounds": {
-		     "!type": "fn()"
-		    },
-		    "setPosition": {
-		     "!type": "fn()"
-		    },
-		    "setSize": {
-		     "!type": "fn()"
-		    },
-		    "reset": {
-		     "!type": "fn()"
-		    },
-		    "x": {
-		     "!type": "number"
-		    },
-		    "y": {
-		     "!type": "number"
-		    },
-		    "position": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "width": {
-		     "!type": "number"
-		    },
-		    "height": {
-		     "!type": "number"
 		    }
 		   },
 		   "Camera#atLimit": {
@@ -720,18 +777,24 @@
 		    "y": {}
 		   },
 		   "Camera#preUpdate": {
-		    "totalInView": {}
+		    "prototype": {
+		     "totalInView": {}
+		    }
 		   },
 		   "Camera#follow": {
 		    "style": {},
-		    "target": {},
+		    "prototype": {
+		     "target": {},
+		     "deadzone": {}
+		    },
 		    "helper": {},
 		    "w": {},
-		    "h": {},
-		    "deadzone": {}
+		    "h": {}
 		   },
 		   "Camera#unfollow": {
-		    "target": {}
+		    "prototype": {
+		     "target": {}
+		    }
 		   },
 		   "Camera#update#displayObject": {
 		    "position": {
@@ -740,7 +803,9 @@
 		    }
 		   },
 		   "Camera#updateTarget": {
-		    "_edge": {}
+		    "prototype": {
+		     "_edge": {}
+		    }
 		   },
 		   "Camera#updateTarget#view": {
 		    "x": {},
@@ -763,7 +828,9 @@
 		    "height": {}
 		   },
 		   "Camera#reset": {
-		    "target": {}
+		    "prototype": {
+		     "target": {}
+		    }
 		   },
 		   "Camera#reset#view": {
 		    "x": {},
@@ -771,20 +838,28 @@
 		   },
 		   "Create": {
 		    "!type": "fn(game: +Phaser.Game)",
-		    "game": {
-		     "!type": "+Phaser.Game"
-		    },
-		    "bmd": {
-		     "!type": "+Phaser.BitmapData"
-		    },
-		    "canvas": {
-		     "!type": "+HTMLCanvasElement"
-		    },
-		    "ctx": {
-		     "!type": "+CanvasRenderingContext2D"
-		    },
-		    "palettes": {
-		     "!type": "+array"
+		    "prototype": {
+		     "game": {
+		      "!type": "+Phaser.Game"
+		     },
+		     "bmd": {
+		      "!type": "+Phaser.BitmapData"
+		     },
+		     "canvas": {
+		      "!type": "+HTMLCanvasElement"
+		     },
+		     "ctx": {
+		      "!type": "+CanvasRenderingContext2D"
+		     },
+		     "palettes": {
+		      "!type": "+array"
+		     },
+		     "texture": {
+		      "!type": "fn()"
+		     },
+		     "grid": {
+		      "!type": "fn()"
+		     }
 		    },
 		    "PALETTE_ARNE": {
 		     "!type": "number"
@@ -800,12 +875,6 @@
 		    },
 		    "PALETTE_JAPANESE_MACHINE": {
 		     "!type": "number"
-		    },
-		    "texture": {
-		     "!type": "fn()"
-		    },
-		    "grid": {
-		     "!type": "fn()"
 		    }
 		   },
 		   "Create#texture": {
@@ -831,54 +900,54 @@
 		   },
 		   "Filter": {
 		    "!type": "fn(game: +Phaser.Game, uniforms: ?, fragmentSrc: [?]|string)",
-		    "game": {
-		     "!type": "+Phaser.Game"
-		    },
-		    "type": {
-		     "!type": "number"
-		    },
-		    "passes": {
-		     "!type": "+array"
-		    },
-		    "shaders": {
-		     "!type": "+array"
-		    },
-		    "dirty": {
-		     "!type": "bool"
-		    },
-		    "padding": {
-		     "!type": "number"
-		    },
-		    "prevPoint": {
-		     "!type": "+Phaser.Point"
+		    "prototype": {
+		     "game": {
+		      "!type": "+Phaser.Game"
+		     },
+		     "type": {
+		      "!type": "number"
+		     },
+		     "passes": {
+		      "!type": "+array"
+		     },
+		     "shaders": {
+		      "!type": "+array"
+		     },
+		     "dirty": {
+		      "!type": "bool"
+		     },
+		     "padding": {
+		      "!type": "number"
+		     },
+		     "prevPoint": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "uniforms": {},
+		     "uniforms[undefined]": {},
+		     "fragmentSrc": {
+		      "!type": "+array|string"
+		     },
+		     "init": {
+		      "!type": "fn()"
+		     },
+		     "setResolution": {
+		      "!type": "fn()"
+		     },
+		     "update": {
+		      "!type": "fn()"
+		     },
+		     "destroy": {
+		      "!type": "fn()"
+		     },
+		     "width": {
+		      "!type": "number"
+		     },
+		     "height": {
+		      "!type": "number"
+		     }
 		    },
 		    "d": {},
-		    "uniforms": {
-		     "!type": "?"
-		    },
-		    "key": {},
-		    "uniforms[undefined]": {},
-		    "fragmentSrc": {
-		     "!type": "+array|string"
-		    },
-		    "init": {
-		     "!type": "fn()"
-		    },
-		    "setResolution": {
-		     "!type": "fn()"
-		    },
-		    "update": {
-		     "!type": "fn()"
-		    },
-		    "destroy": {
-		     "!type": "fn()"
-		    },
-		    "width": {
-		     "!type": "number"
-		    },
-		    "height": {
-		     "!type": "number"
-		    }
+		    "key": {}
 		   },
 		   "Filter#uniforms": {
 		    "resolution": {
@@ -960,80 +1029,86 @@
 		    }
 		   },
 		   "Filter#destroy": {
-		    "game": {}
+		    "prototype": {
+		     "game": {}
+		    }
 		   },
 		   "FlexGrid": {
 		    "!type": "fn(manager: +Phaser.ScaleManager, width: number, height: number)",
-		    "game": {
-		     "!type": "+Phaser.Game"
-		    },
-		    "manager": {
-		     "!type": "+Phaser.ScaleManager"
-		    },
-		    "width": {},
-		    "height": {},
-		    "boundsCustom": {},
-		    "boundsFluid": {},
-		    "boundsFull": {},
-		    "boundsNone": {},
-		    "positionCustom": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "positionFluid": {},
-		    "positionFull": {},
-		    "positionNone": {},
-		    "scaleCustom": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "scaleFluid": {},
-		    "scaleFluidInversed": {},
-		    "scaleFull": {},
-		    "scaleNone": {},
-		    "customWidth": {},
-		    "customHeight": {},
-		    "customOffsetX": {},
-		    "customOffsetY": {},
-		    "ratioH": {},
-		    "ratioV": {},
-		    "multiplier": {},
-		    "layers": {},
-		    "setSize": {
-		     "!type": "fn()"
-		    },
-		    "createCustomLayer": {
-		     "!type": "fn()"
-		    },
-		    "createFluidLayer": {
-		     "!type": "fn()"
-		    },
-		    "createFullLayer": {
-		     "!type": "fn()"
-		    },
-		    "createFixedLayer": {
-		     "!type": "fn()"
-		    },
-		    "reset": {
-		     "!type": "fn()"
-		    },
-		    "onResize": {
-		     "!type": "fn()"
-		    },
-		    "refresh": {
-		     "!type": "fn()"
-		    },
-		    "fitSprite": {
-		     "!type": "fn()"
-		    },
-		    "debug": {
-		     "!type": "fn()"
+		    "prototype": {
+		     "game": {
+		      "!type": "+Phaser.Game"
+		     },
+		     "manager": {
+		      "!type": "+Phaser.ScaleManager"
+		     },
+		     "width": {},
+		     "height": {},
+		     "boundsCustom": {},
+		     "boundsFluid": {},
+		     "boundsFull": {},
+		     "boundsNone": {},
+		     "positionCustom": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "positionFluid": {},
+		     "positionFull": {},
+		     "positionNone": {},
+		     "scaleCustom": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "scaleFluid": {},
+		     "scaleFluidInversed": {},
+		     "scaleFull": {},
+		     "scaleNone": {},
+		     "customWidth": {},
+		     "customHeight": {},
+		     "customOffsetX": {},
+		     "customOffsetY": {},
+		     "ratioH": {},
+		     "ratioV": {},
+		     "multiplier": {},
+		     "layers": {},
+		     "setSize": {
+		      "!type": "fn()"
+		     },
+		     "createCustomLayer": {
+		      "!type": "fn()"
+		     },
+		     "createFluidLayer": {
+		      "!type": "fn()"
+		     },
+		     "createFullLayer": {
+		      "!type": "fn()"
+		     },
+		     "createFixedLayer": {
+		      "!type": "fn()"
+		     },
+		     "reset": {
+		      "!type": "fn()"
+		     },
+		     "onResize": {
+		      "!type": "fn()"
+		     },
+		     "refresh": {
+		      "!type": "fn()"
+		     },
+		     "fitSprite": {
+		      "!type": "fn()"
+		     },
+		     "debug": {
+		      "!type": "fn()"
+		     }
 		    }
 		   },
 		   "FlexGrid#setSize": {
-		    "width": {},
-		    "height": {},
-		    "ratioH": {},
-		    "ratioV": {},
-		    "scaleNone": {}
+		    "prototype": {
+		     "width": {},
+		     "height": {},
+		     "ratioH": {},
+		     "ratioV": {},
+		     "scaleNone": {}
+		    }
 		   },
 		   "FlexGrid#setSize#boundsNone": {
 		    "width": {},
@@ -1041,8 +1116,10 @@
 		   },
 		   "FlexGrid#createCustomLayer": {
 		    "addToWorld": {},
-		    "customWidth": {},
-		    "customHeight": {},
+		    "prototype": {
+		     "customWidth": {},
+		     "customHeight": {}
+		    },
 		    "layer": {}
 		   },
 		   "FlexGrid#createCustomLayer#boundsCustom": {
@@ -1067,11 +1144,15 @@
 		    "scale": {}
 		   },
 		   "FlexGrid#onResize": {
-		    "ratioH": {},
-		    "ratioV": {}
+		    "prototype": {
+		     "ratioH": {},
+		     "ratioV": {}
+		    }
 		   },
 		   "FlexGrid#refresh": {
-		    "multiplier": {}
+		    "prototype": {
+		     "multiplier": {}
+		    }
 		   },
 		   "FlexGrid#refresh#boundsFluid": {
 		    "width": {},
@@ -1083,605 +1164,606 @@
 		   },
 		   "FlexLayer": {
 		    "!type": "fn(manager: +Phaser.FlexGrid, position: +Phaser.Point, bounds: +Phaser.Rectangle, scale: +Phaser.Point)",
-		    "manager": {
-		     "!type": "+Phaser.ScaleManager"
-		    },
-		    "grid": {
-		     "!type": "+Phaser.FlexGrid"
-		    },
-		    "persist": {},
-		    "position": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "bounds": {
-		     "!type": "+Phaser.Rectangle"
-		    },
-		    "scale": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "topLeft": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "topMiddle": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "topRight": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "bottomLeft": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "bottomMiddle": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "bottomRight": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "resize": {
-		     "!type": "fn()"
-		    },
-		    "debug": {
-		     "!type": "fn()"
-		    },
-		    "game": {
-		     "!type": "+Phaser.Game"
-		    },
-		    "name": {
-		     "!type": "string"
-		    },
-		    "z": {
-		     "!type": "+integer"
-		    },
-		    "type": {
-		     "!type": "+integer"
-		    },
-		    "physicsType": {
-		     "!type": "number"
-		    },
-		    "alive": {
-		     "!type": "bool"
-		    },
-		    "exists": {
-		     "!type": "bool"
-		    },
-		    "ignoreDestroy": {
-		     "!type": "bool"
-		    },
-		    "pendingDestroy": {
-		     "!type": "bool"
-		    },
-		    "classType": {
-		     "!type": "?"
-		    },
-		    "cursor": {
-		     "!type": "+DisplayObject"
-		    },
-		    "enableBody": {
-		     "!type": "bool"
-		    },
-		    "enableBodyDebug": {
-		     "!type": "bool"
-		    },
-		    "physicsBodyType": {
-		     "!type": "+integer"
-		    },
-		    "physicsSortDirection": {
-		     "!type": "+integer"
-		    },
-		    "onDestroy": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "cursorIndex": {
-		     "!type": "+integer"
-		    },
-		    "fixedToCamera": {
-		     "!type": "bool"
-		    },
-		    "cameraOffset": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "hash": {
-		     "!type": "+array"
-		    },
-		    "_sortProperty": {
-		     "!type": "string"
-		    },
-		    "add": {
-		     "!type": "fn(child: +DisplayObject, silent: bool) -> ?"
-		    },
-		    "addToHash": {
-		     "!type": "fn(child: +DisplayObject) -> ?"
-		    },
-		    "removeFromHash": {
-		     "!type": "fn(child: +DisplayObject) -> ?"
-		    },
-		    "addMultiple": {
-		     "!type": "fn(children: [?]|+Phaser.Group, silent: bool) -> ?"
-		    },
-		    "addAt": {
-		     "!type": "fn(child: +DisplayObject, index: +integer, silent: bool) -> ?"
-		    },
-		    "getAt": {
-		     "!type": "fn(index: +integer) -> ?"
-		    },
-		    "create": {
-		     "!type": "fn(x: number, y: number, key: string, frame: +integer|string, exists: bool) -> ?"
-		    },
-		    "createMultiple": {
-		     "!type": "fn(quantity: +integer, key: string, frame: +integer|string, exists: bool)"
-		    },
-		    "updateZ": {
-		     "!type": "fn()"
-		    },
-		    "resetCursor": {
-		     "!type": "fn(index: +integer) -> ?"
-		    },
-		    "next": {
-		     "!type": "fn() -> ?"
-		    },
-		    "previous": {
-		     "!type": "fn() -> ?"
-		    },
-		    "swap": {
-		     "!type": "fn(child1: +any, child2: +any)"
-		    },
-		    "bringToTop": {
-		     "!type": "fn(child: +any) -> ?"
-		    },
-		    "sendToBack": {
-		     "!type": "fn(child: +any) -> ?"
-		    },
-		    "moveUp": {
-		     "!type": "fn(child: +any) -> ?"
-		    },
-		    "moveDown": {
-		     "!type": "fn(child: +any) -> ?"
-		    },
-		    "xy": {
-		     "!type": "fn(index: +integer, x: number, y: number)"
-		    },
-		    "reverse": {
-		     "!type": "fn()"
-		    },
-		    "getIndex": {
-		     "!type": "fn(child: +any) -> ?"
-		    },
-		    "replace": {
-		     "!type": "fn(oldChild: +any, newChild: +any) -> ?"
-		    },
-		    "hasProperty": {
-		     "!type": "fn(child: +any, key: [?]) -> ?"
-		    },
-		    "setProperty": {
-		     "!type": "fn(child: +any, key: +array, value: +any, operation: +integer, force: bool) -> ?"
-		    },
-		    "checkProperty": {
-		     "!type": "fn(child: +any, key: +array, value: +any, force: bool) -> ?"
-		    },
-		    "set": {
-		     "!type": "fn(child: +Phaser.Sprite, key: string, value: +any, checkAlive: bool, checkVisible: bool, operation: +integer, force: bool) -> ?"
-		    },
-		    "setAll": {
-		     "!type": "fn(key: string, value: +any, checkAlive: bool, checkVisible: bool, operation: +integer, force: bool)"
-		    },
-		    "setAllChildren": {
-		     "!type": "fn(key: string, value: +any, checkAlive: bool, checkVisible: bool, operation: +integer, force: bool)"
-		    },
-		    "checkAll": {
-		     "!type": "fn(key: string, value: +any, checkAlive: bool, checkVisible: bool, force: bool)"
-		    },
-		    "addAll": {
-		     "!type": "fn(property: string, amount: number, checkAlive: bool, checkVisible: bool)"
-		    },
-		    "subAll": {
-		     "!type": "fn(property: string, amount: number, checkAlive: bool, checkVisible: bool)"
-		    },
-		    "multiplyAll": {
-		     "!type": "fn(property: string, amount: number, checkAlive: bool, checkVisible: bool)"
-		    },
-		    "divideAll": {
-		     "!type": "fn(property: string, amount: number, checkAlive: bool, checkVisible: bool)"
-		    },
-		    "callAllExists": {
-		     "!type": "fn(callback: string, existsValue: bool, parameter: +any)"
-		    },
-		    "callbackFromArray": {
-		     "!type": "fn(child: ?, callback: +array, length: +integer)"
-		    },
-		    "callAll": {
-		     "!type": "fn(method: string, context: string, args: +any)"
-		    },
-		    "preUpdate": {
-		     "!type": "fn()"
-		    },
-		    "update": {
-		     "!type": "fn()"
-		    },
-		    "postUpdate": {
-		     "!type": "fn()"
-		    },
-		    "filter": {
-		     "!type": "fn(predicate: +function, checkExists: bool) -> ?"
-		    },
-		    "forEach": {
-		     "!type": "fn(callback: +function, callbackContext: ?, checkExists: bool, args: +any)"
-		    },
-		    "forEachExists": {
-		     "!type": "fn(callback: +function, callbackContext: ?, args: +any)"
-		    },
-		    "forEachAlive": {
-		     "!type": "fn(callback: +function, callbackContext: ?, args: +any)"
-		    },
-		    "forEachDead": {
-		     "!type": "fn(callback: +function, callbackContext: ?, args: +any)"
-		    },
-		    "sort": {
-		     "!type": "fn(key: string, order: +integer)"
-		    },
-		    "customSort": {
-		     "!type": "fn(sortHandler: +function, context: ?)"
-		    },
-		    "ascendingSortHandler": {
-		     "!type": "fn(a: ?, b: ?)"
-		    },
-		    "descendingSortHandler": {
-		     "!type": "fn(a: ?, b: ?)"
-		    },
-		    "iterate": {
-		     "!type": "fn(key: string, value: +any, returnType: +integer, callback: +function, callbackContext: ?, args: [?]) -> ?"
-		    },
-		    "getFirstExists": {
-		     "!type": "fn(exists: bool) -> ?"
-		    },
-		    "getFirstAlive": {
-		     "!type": "fn() -> ?"
-		    },
-		    "getFirstDead": {
-		     "!type": "fn() -> ?"
-		    },
-		    "getTop": {
-		     "!type": "fn() -> ?"
-		    },
-		    "getBottom": {
-		     "!type": "fn() -> ?"
-		    },
-		    "countLiving": {
-		     "!type": "fn() -> ?"
-		    },
-		    "countDead": {
-		     "!type": "fn() -> ?"
-		    },
-		    "getRandom": {
-		     "!type": "fn(startIndex: +integer, length: +integer) -> ?"
-		    },
-		    "remove": {
-		     "!type": "fn(child: +any, destroy: bool, silent: bool) -> ?"
-		    },
-		    "moveAll": {
-		     "!type": "fn(group: +Phaser.Group, silent: bool) -> ?"
-		    },
-		    "removeAll": {
-		     "!type": "fn(destroy: bool, silent: bool)"
-		    },
-		    "removeBetween": {
-		     "!type": "fn(startIndex: +integer, endIndex: +integer, destroy: bool, silent: bool)"
-		    },
-		    "destroy": {
-		     "!type": "fn(destroyChildren: bool, soft: bool)"
-		    },
-		    "total": {
-		     "!type": "+integer"
-		    },
-		    "length": {
-		     "!type": "+integer"
-		    },
-		    "angle": {
-		     "!type": "number"
-		    },
-		    "x": {
-		     "!type": "number"
-		    },
-		    "y": {
-		     "!type": "number"
-		    },
-		    "rotation": {
-		     "!type": "number"
-		    },
-		    "visible": {
-		     "!type": "bool"
-		    },
-		    "alpha": {
-		     "!type": "number"
-		    },
-		    "children": {
-		     "!type": "?"
+		    "prototype": {
+		     "manager": {
+		      "!type": "+Phaser.ScaleManager"
+		     },
+		     "grid": {
+		      "!type": "+Phaser.FlexGrid"
+		     },
+		     "persist": {},
+		     "position": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "bounds": {
+		      "!type": "+Phaser.Rectangle"
+		     },
+		     "scale": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "topLeft": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "topMiddle": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "topRight": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "bottomLeft": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "bottomMiddle": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "bottomRight": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "resize": {
+		      "!type": "fn()"
+		     },
+		     "debug": {
+		      "!type": "fn()"
+		     },
+		     "game": {
+		      "!type": "+Phaser.Game"
+		     },
+		     "name": {
+		      "!type": "string"
+		     },
+		     "z": {
+		      "!type": "number"
+		     },
+		     "type": {
+		      "!type": "number"
+		     },
+		     "physicsType": {
+		      "!type": "number"
+		     },
+		     "alive": {
+		      "!type": "bool"
+		     },
+		     "exists": {
+		      "!type": "bool"
+		     },
+		     "ignoreDestroy": {
+		      "!type": "bool"
+		     },
+		     "pendingDestroy": {
+		      "!type": "bool"
+		     },
+		     "classType": {},
+		     "cursor": {
+		      "!type": "+DisplayObject"
+		     },
+		     "enableBody": {
+		      "!type": "bool"
+		     },
+		     "enableBodyDebug": {
+		      "!type": "bool"
+		     },
+		     "physicsBodyType": {
+		      "!type": "number"
+		     },
+		     "physicsSortDirection": {
+		      "!type": "number"
+		     },
+		     "onDestroy": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "cursorIndex": {
+		      "!type": "number"
+		     },
+		     "fixedToCamera": {
+		      "!type": "bool"
+		     },
+		     "cameraOffset": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "hash": {
+		      "!type": "+array"
+		     },
+		     "_sortProperty": {
+		      "!type": "string"
+		     },
+		     "add": {
+		      "!type": "fn(child: +DisplayObject, silent: bool) -> ?"
+		     },
+		     "addToHash": {
+		      "!type": "fn(child: +DisplayObject) -> ?"
+		     },
+		     "removeFromHash": {
+		      "!type": "fn(child: +DisplayObject) -> ?"
+		     },
+		     "addMultiple": {
+		      "!type": "fn(children: [?]|+Phaser.Group, silent: bool) -> ?"
+		     },
+		     "addAt": {
+		      "!type": "fn(child: +DisplayObject, index: number, silent: bool) -> ?"
+		     },
+		     "getAt": {
+		      "!type": "fn(index: number) -> ?"
+		     },
+		     "create": {
+		      "!type": "fn(x: number, y: number, key: string, frame: number|string, exists: bool) -> ?"
+		     },
+		     "createMultiple": {
+		      "!type": "fn(quantity: number, key: string, frame: number|string, exists: bool)"
+		     },
+		     "updateZ": {
+		      "!type": "fn()"
+		     },
+		     "resetCursor": {
+		      "!type": "fn(index: number) -> ?"
+		     },
+		     "next": {
+		      "!type": "fn() -> ?"
+		     },
+		     "previous": {
+		      "!type": "fn() -> ?"
+		     },
+		     "swap": {
+		      "!type": "fn(child1: +any, child2: +any)"
+		     },
+		     "bringToTop": {
+		      "!type": "fn(child: +any) -> ?"
+		     },
+		     "sendToBack": {
+		      "!type": "fn(child: +any) -> ?"
+		     },
+		     "moveUp": {
+		      "!type": "fn(child: +any) -> ?"
+		     },
+		     "moveDown": {
+		      "!type": "fn(child: +any) -> ?"
+		     },
+		     "xy": {
+		      "!type": "fn(index: number, x: number, y: number)"
+		     },
+		     "reverse": {
+		      "!type": "fn()"
+		     },
+		     "getIndex": {
+		      "!type": "fn(child: +any) -> ?"
+		     },
+		     "replace": {
+		      "!type": "fn(oldChild: +any, newChild: +any) -> ?"
+		     },
+		     "hasProperty": {
+		      "!type": "fn(child: +any, key: [?]) -> ?"
+		     },
+		     "setProperty": {
+		      "!type": "fn(child: +any, key: +array, value: +any, operation: number, force: bool) -> ?"
+		     },
+		     "checkProperty": {
+		      "!type": "fn(child: +any, key: +array, value: +any, force: bool) -> ?"
+		     },
+		     "set": {
+		      "!type": "fn(child: +Phaser.Sprite, key: string, value: +any, checkAlive: bool, checkVisible: bool, operation: number, force: bool) -> ?"
+		     },
+		     "setAll": {
+		      "!type": "fn(key: string, value: +any, checkAlive: bool, checkVisible: bool, operation: number, force: bool)"
+		     },
+		     "setAllChildren": {
+		      "!type": "fn(key: string, value: +any, checkAlive: bool, checkVisible: bool, operation: number, force: bool)"
+		     },
+		     "checkAll": {
+		      "!type": "fn(key: string, value: +any, checkAlive: bool, checkVisible: bool, force: bool)"
+		     },
+		     "addAll": {
+		      "!type": "fn(property: string, amount: number, checkAlive: bool, checkVisible: bool)"
+		     },
+		     "subAll": {
+		      "!type": "fn(property: string, amount: number, checkAlive: bool, checkVisible: bool)"
+		     },
+		     "multiplyAll": {
+		      "!type": "fn(property: string, amount: number, checkAlive: bool, checkVisible: bool)"
+		     },
+		     "divideAll": {
+		      "!type": "fn(property: string, amount: number, checkAlive: bool, checkVisible: bool)"
+		     },
+		     "callAllExists": {
+		      "!type": "fn(callback: string, existsValue: bool, parameter: +any)"
+		     },
+		     "callbackFromArray": {
+		      "!type": "fn(child: ?, callback: +array, length: number)"
+		     },
+		     "callAll": {
+		      "!type": "fn(method: string, context: string, args: +any)"
+		     },
+		     "preUpdate": {
+		      "!type": "fn()"
+		     },
+		     "update": {
+		      "!type": "fn()"
+		     },
+		     "postUpdate": {
+		      "!type": "fn()"
+		     },
+		     "filter": {
+		      "!type": "fn(predicate: +function, checkExists: bool) -> ?"
+		     },
+		     "forEach": {
+		      "!type": "fn(callback: +function, callbackContext: ?, checkExists: bool, args: +any)"
+		     },
+		     "forEachExists": {
+		      "!type": "fn(callback: +function, callbackContext: ?, args: +any)"
+		     },
+		     "forEachAlive": {
+		      "!type": "fn(callback: +function, callbackContext: ?, args: +any)"
+		     },
+		     "forEachDead": {
+		      "!type": "fn(callback: +function, callbackContext: ?, args: +any)"
+		     },
+		     "sort": {
+		      "!type": "fn(key: string, order: number)"
+		     },
+		     "customSort": {
+		      "!type": "fn(sortHandler: +function, context: ?)"
+		     },
+		     "ascendingSortHandler": {
+		      "!type": "fn(a: ?, b: ?)"
+		     },
+		     "descendingSortHandler": {
+		      "!type": "fn(a: ?, b: ?)"
+		     },
+		     "iterate": {
+		      "!type": "fn(key: string, value: +any, returnType: number, callback: +function, callbackContext: ?, args: [?]) -> ?"
+		     },
+		     "getFirstExists": {
+		      "!type": "fn(exists: bool) -> ?"
+		     },
+		     "getFirstAlive": {
+		      "!type": "fn() -> ?"
+		     },
+		     "getFirstDead": {
+		      "!type": "fn() -> ?"
+		     },
+		     "getTop": {
+		      "!type": "fn() -> ?"
+		     },
+		     "getBottom": {
+		      "!type": "fn() -> ?"
+		     },
+		     "countLiving": {
+		      "!type": "fn() -> ?"
+		     },
+		     "countDead": {
+		      "!type": "fn() -> ?"
+		     },
+		     "getRandom": {
+		      "!type": "fn(startIndex: number, length: number) -> ?"
+		     },
+		     "remove": {
+		      "!type": "fn(child: +any, destroy: bool, silent: bool) -> ?"
+		     },
+		     "moveAll": {
+		      "!type": "fn(group: +Phaser.Group, silent: bool) -> ?"
+		     },
+		     "removeAll": {
+		      "!type": "fn(destroy: bool, silent: bool)"
+		     },
+		     "removeBetween": {
+		      "!type": "fn(startIndex: number, endIndex: number, destroy: bool, silent: bool)"
+		     },
+		     "destroy": {
+		      "!type": "fn(destroyChildren: bool, soft: bool)"
+		     },
+		     "total": {
+		      "!type": "number"
+		     },
+		     "length": {
+		      "!type": "number"
+		     },
+		     "angle": {
+		      "!type": "number"
+		     },
+		     "x": {
+		      "!type": "number"
+		     },
+		     "y": {
+		      "!type": "number"
+		     },
+		     "rotation": {
+		      "!type": "number"
+		     },
+		     "visible": {
+		      "!type": "bool"
+		     },
+		     "alpha": {
+		      "!type": "number"
+		     },
+		     "children": {}
 		    }
 		   },
 		   "Game": {
-		    "!type": "fn(width: number|string, height: number|string, renderer: number, parent: string|+HTMLElement, state: ?, transparent: bool, antialias: bool, physicsConfig: ?) -> +Phaser.Game",
-		    "id": {
-		     "!type": "number"
-		    },
-		    "config": {
-		     "!type": "?"
-		    },
-		    "physicsConfig": {
-		     "!type": "?"
-		    },
-		    "parent": {
-		     "!type": "string|+HTMLElement"
-		    },
-		    "width": {
-		     "!type": "+integer"
-		    },
-		    "height": {
-		     "!type": "+integer"
-		    },
-		    "resolution": {
-		     "!type": "+integer"
-		    },
-		    "_width": {
-		     "!type": "+integer"
-		    },
-		    "_height": {
-		     "!type": "+integer"
-		    },
-		    "transparent": {
-		     "!type": "bool"
-		    },
-		    "antialias": {
-		     "!type": "bool"
-		    },
-		    "preserveDrawingBuffer": {
-		     "!type": "bool"
-		    },
-		    "renderer": {
-		     "!type": "+PIXI.CanvasRenderer|+PIXI.WebGLRenderer"
-		    },
-		    "renderType": {
-		     "!type": "number"
-		    },
-		    "state": {
-		     "!type": "+Phaser.StateManager"
-		    },
-		    "isBooted": {
-		     "!type": "bool"
-		    },
-		    "isRunning": {
-		     "!type": "bool"
-		    },
-		    "raf": {
-		     "!type": "+Phaser.RequestAnimationFrame"
-		    },
-		    "add": {
-		     "!type": "+Phaser.GameObjectFactory"
-		    },
-		    "make": {
-		     "!type": "+Phaser.GameObjectCreator"
-		    },
-		    "cache": {
-		     "!type": "+Phaser.Cache"
-		    },
-		    "input": {
-		     "!type": "+Phaser.Input"
-		    },
-		    "load": {
-		     "!type": "+Phaser.Loader"
-		    },
-		    "math": {
-		     "!type": "+Phaser.Math"
-		    },
-		    "net": {
-		     "!type": "+Phaser.Net"
-		    },
-		    "scale": {
-		     "!type": "+Phaser.ScaleManager"
-		    },
-		    "sound": {
-		     "!type": "+Phaser.SoundManager"
-		    },
-		    "stage": {
-		     "!type": "+Phaser.Stage"
-		    },
-		    "time": {
-		     "!type": "+Phaser.Time"
-		    },
-		    "tweens": {
-		     "!type": "+Phaser.TweenManager"
-		    },
-		    "world": {
-		     "!type": "+Phaser.World"
-		    },
-		    "physics": {
-		     "!type": "+Phaser.Physics"
-		    },
-		    "plugins": {
-		     "!type": "+Phaser.PluginManager"
-		    },
-		    "rnd": {
-		     "!type": "+Phaser.RandomDataGenerator"
-		    },
-		    "device": {
-		     "!type": "+Phaser.Device"
-		    },
-		    "camera": {
-		     "!type": "+Phaser.Camera"
-		    },
-		    "canvas": {
-		     "!type": "+HTMLCanvasElement"
-		    },
-		    "context": {
-		     "!type": "+CanvasRenderingContext2D"
-		    },
-		    "debug": {
-		     "!type": "+Phaser.Utils.Debug"
-		    },
-		    "particles": {
-		     "!type": "+Phaser.Particles"
-		    },
-		    "create": {
-		     "!type": "+Phaser.Create"
-		    },
-		    "lockRender": {
-		     "!type": "bool"
-		    },
-		    "stepping": {
-		     "!type": "bool"
-		    },
-		    "pendingStep": {
-		     "!type": "bool"
-		    },
-		    "stepCount": {
-		     "!type": "number"
-		    },
-		    "onPause": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "onResume": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "onBlur": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "onFocus": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "_paused": {
-		     "!type": "bool"
-		    },
-		    "_codePaused": {
-		     "!type": "bool"
-		    },
-		    "currentUpdateID": {
-		     "!type": "+integer"
-		    },
-		    "updatesThisFrame": {
-		     "!type": "+integer"
-		    },
-		    "_deltaTime": {
-		     "!type": "number"
-		    },
-		    "_lastCount": {
-		     "!type": "number"
-		    },
-		    "_spiraling": {
-		     "!type": "number"
-		    },
-		    "_kickstart": {
-		     "!type": "bool"
-		    },
-		    "fpsProblemNotifier": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "forceSingleUpdate": {
-		     "!type": "bool"
-		    },
-		    "_nextFpsNotification": {
-		     "!type": "number"
-		    },
-		    "parseConfig": {
-		     "!type": "fn()"
-		    },
-		    "boot": {
-		     "!type": "fn()"
-		    },
-		    "showDebugHeader": {
-		     "!type": "fn()"
-		    },
-		    "setUpRenderer": {
-		     "!type": "fn()"
-		    },
-		    "contextLost": {
-		     "!type": "fn()"
-		    },
-		    "contextRestored": {
-		     "!type": "fn()"
-		    },
-		    "update": {
-		     "!type": "fn()"
-		    },
-		    "updateLogic": {
-		     "!type": "fn()"
-		    },
-		    "updateRender": {
-		     "!type": "fn()"
-		    },
-		    "enableStep": {
-		     "!type": "fn()"
-		    },
-		    "disableStep": {
-		     "!type": "fn()"
-		    },
-		    "step": {
-		     "!type": "fn()"
-		    },
-		    "destroy": {
-		     "!type": "fn()"
-		    },
-		    "gamePaused": {
-		     "!type": "fn()"
-		    },
-		    "gameResumed": {
-		     "!type": "fn()"
-		    },
-		    "focusLoss": {
-		     "!type": "fn()"
-		    },
-		    "focusGain": {
-		     "!type": "fn()"
-		    },
-		    "paused": {
-		     "!type": "bool"
+		    "!type": "fn(width: number|string, height: number|string, renderer: number, parent: string|+HTMLElement, state: ?, transparent: bool, antialias: bool, physicsConfig: ?)",
+		    "prototype": {
+		     "id": {
+		      "!type": "number"
+		     },
+		     "config": {},
+		     "physicsConfig": {},
+		     "parent": {
+		      "!type": "string|+HTMLElement"
+		     },
+		     "width": {
+		      "!type": "number"
+		     },
+		     "height": {
+		      "!type": "number"
+		     },
+		     "resolution": {
+		      "!type": "number"
+		     },
+		     "_width": {
+		      "!type": "number"
+		     },
+		     "_height": {
+		      "!type": "number"
+		     },
+		     "transparent": {
+		      "!type": "bool"
+		     },
+		     "antialias": {
+		      "!type": "bool"
+		     },
+		     "preserveDrawingBuffer": {
+		      "!type": "bool"
+		     },
+		     "renderer": {
+		      "!type": "+PIXI.CanvasRenderer|+PIXI.WebGLRenderer"
+		     },
+		     "renderType": {
+		      "!type": "number"
+		     },
+		     "state": {
+		      "!type": "+Phaser.StateManager"
+		     },
+		     "isBooted": {
+		      "!type": "bool"
+		     },
+		     "isRunning": {
+		      "!type": "bool"
+		     },
+		     "raf": {
+		      "!type": "+Phaser.RequestAnimationFrame"
+		     },
+		     "add": {
+		      "!type": "+Phaser.GameObjectFactory"
+		     },
+		     "make": {
+		      "!type": "+Phaser.GameObjectCreator"
+		     },
+		     "cache": {
+		      "!type": "+Phaser.Cache"
+		     },
+		     "input": {
+		      "!type": "+Phaser.Input"
+		     },
+		     "load": {
+		      "!type": "+Phaser.Loader"
+		     },
+		     "math": {
+		      "!type": "+Phaser.Math"
+		     },
+		     "net": {
+		      "!type": "+Phaser.Net"
+		     },
+		     "scale": {
+		      "!type": "+Phaser.ScaleManager"
+		     },
+		     "sound": {
+		      "!type": "+Phaser.SoundManager"
+		     },
+		     "stage": {
+		      "!type": "+Phaser.Stage"
+		     },
+		     "time": {
+		      "!type": "+Phaser.Time"
+		     },
+		     "tweens": {
+		      "!type": "+Phaser.TweenManager"
+		     },
+		     "world": {
+		      "!type": "+Phaser.World"
+		     },
+		     "physics": {
+		      "!type": "+Phaser.Physics"
+		     },
+		     "plugins": {
+		      "!type": "+Phaser.PluginManager"
+		     },
+		     "rnd": {
+		      "!type": "+Phaser.RandomDataGenerator"
+		     },
+		     "device": {
+		      "!type": "+Phaser.Device"
+		     },
+		     "camera": {
+		      "!type": "+Phaser.Camera"
+		     },
+		     "canvas": {
+		      "!type": "+HTMLCanvasElement"
+		     },
+		     "context": {
+		      "!type": "+CanvasRenderingContext2D"
+		     },
+		     "debug": {
+		      "!type": "+Phaser.Utils.Debug"
+		     },
+		     "particles": {
+		      "!type": "+Phaser.Particles"
+		     },
+		     "create": {
+		      "!type": "+Phaser.Create"
+		     },
+		     "lockRender": {
+		      "!type": "bool"
+		     },
+		     "stepping": {
+		      "!type": "bool"
+		     },
+		     "pendingStep": {
+		      "!type": "bool"
+		     },
+		     "stepCount": {
+		      "!type": "number"
+		     },
+		     "onPause": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "onResume": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "onBlur": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "onFocus": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "_paused": {
+		      "!type": "bool"
+		     },
+		     "_codePaused": {
+		      "!type": "bool"
+		     },
+		     "currentUpdateID": {
+		      "!type": "number"
+		     },
+		     "updatesThisFrame": {
+		      "!type": "number"
+		     },
+		     "_deltaTime": {
+		      "!type": "number"
+		     },
+		     "_lastCount": {
+		      "!type": "number"
+		     },
+		     "_spiraling": {
+		      "!type": "number"
+		     },
+		     "_kickstart": {
+		      "!type": "bool"
+		     },
+		     "fpsProblemNotifier": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "forceSingleUpdate": {
+		      "!type": "bool"
+		     },
+		     "_nextFpsNotification": {
+		      "!type": "number"
+		     },
+		     "parseConfig": {
+		      "!type": "fn()"
+		     },
+		     "boot": {
+		      "!type": "fn()"
+		     },
+		     "showDebugHeader": {
+		      "!type": "fn()"
+		     },
+		     "setUpRenderer": {
+		      "!type": "fn()"
+		     },
+		     "contextLost": {
+		      "!type": "fn()"
+		     },
+		     "contextRestored": {
+		      "!type": "fn()"
+		     },
+		     "update": {
+		      "!type": "fn()"
+		     },
+		     "updateLogic": {
+		      "!type": "fn()"
+		     },
+		     "updateRender": {
+		      "!type": "fn()"
+		     },
+		     "enableStep": {
+		      "!type": "fn()"
+		     },
+		     "disableStep": {
+		      "!type": "fn()"
+		     },
+		     "step": {
+		      "!type": "fn()"
+		     },
+		     "destroy": {
+		      "!type": "fn()"
+		     },
+		     "gamePaused": {
+		      "!type": "fn()"
+		     },
+		     "gameResumed": {
+		      "!type": "fn()"
+		     },
+		     "focusLoss": {
+		      "!type": "fn()"
+		     },
+		     "focusGain": {
+		      "!type": "fn()"
+		     },
+		     "paused": {
+		      "!type": "bool"
+		     }
 		    }
 		   },
 		   "Game#config": {
 		    "enableDebug": {}
 		   },
 		   "Game#parseConfig": {
-		    "config": {},
-		    "_width": {},
-		    "_height": {},
-		    "renderType": {},
-		    "parent": {},
-		    "transparent": {},
-		    "antialias": {},
-		    "resolution": {},
-		    "preserveDrawingBuffer": {},
-		    "physicsConfig": {},
+		    "prototype": {
+		     "config": {},
+		     "_width": {},
+		     "_height": {},
+		     "renderType": {},
+		     "parent": {},
+		     "transparent": {},
+		     "antialias": {},
+		     "resolution": {},
+		     "preserveDrawingBuffer": {},
+		     "physicsConfig": {},
+		     "rnd": {},
+		     "state": {}
+		    },
 		    "seed": {},
-		    "rnd": {},
 		    "state": {}
 		   },
 		   "Game#parseConfig#config": {
 		    "enableDebug": {}
 		   },
 		   "Game#boot": {
-		    "onPause": {},
-		    "onResume": {},
-		    "onBlur": {},
-		    "onFocus": {},
-		    "isBooted": {},
-		    "math": {},
-		    "scale": {},
-		    "stage": {},
-		    "world": {},
-		    "add": {},
-		    "make": {},
-		    "cache": {},
-		    "load": {},
-		    "time": {},
-		    "tweens": {},
-		    "input": {},
-		    "sound": {},
-		    "physics": {},
-		    "particles": {},
-		    "create": {},
-		    "plugins": {},
-		    "net": {},
-		    "debug": {},
-		    "isRunning": {},
-		    "raf": {},
-		    "_kickstart": {}
+		    "prototype": {
+		     "onPause": {},
+		     "onResume": {},
+		     "onBlur": {},
+		     "onFocus": {},
+		     "isBooted": {},
+		     "math": {},
+		     "scale": {},
+		     "stage": {},
+		     "world": {},
+		     "add": {},
+		     "make": {},
+		     "cache": {},
+		     "load": {},
+		     "time": {},
+		     "tweens": {},
+		     "input": {},
+		     "sound": {},
+		     "physics": {},
+		     "particles": {},
+		     "create": {},
+		     "plugins": {},
+		     "net": {},
+		     "debug": {},
+		     "isRunning": {},
+		     "raf": {},
+		     "_kickstart": {}
+		    }
 		   },
 		   "Game#boot#debug": {
 		    "preUpdate": {
@@ -1703,10 +1785,12 @@
 		    "i": {}
 		   },
 		   "Game#setUpRenderer": {
-		    "canvas": {},
-		    "renderType": {},
-		    "renderer": {},
-		    "context": {}
+		    "prototype": {
+		     "canvas": {},
+		     "renderType": {},
+		     "renderer": {},
+		     "context": {}
+		    }
 		   },
 		   "Game#setUpRenderer#canvas": {
 		    "style": {
@@ -1724,347 +1808,365 @@
 		    "contextLost": {}
 		   },
 		   "Game#update": {
-		    "_kickstart": {},
-		    "_nextFpsNotification": {},
-		    "_deltaTime": {},
-		    "_spiraling": {},
+		    "prototype": {
+		     "_kickstart": {},
+		     "_nextFpsNotification": {},
+		     "_deltaTime": {},
+		     "_spiraling": {},
+		     "updatesThisFrame": {},
+		     "currentUpdateID": {},
+		     "_lastCount": {}
+		    },
 		    "slowStep": {},
-		    "count": {},
-		    "updatesThisFrame": {},
-		    "currentUpdateID": {},
-		    "_lastCount": {}
+		    "count": {}
 		   },
 		   "Game#updateLogic": {
-		    "pendingStep": {}
+		    "prototype": {
+		     "pendingStep": {}
+		    }
 		   },
 		   "Game#enableStep": {
-		    "stepping": {},
-		    "pendingStep": {},
-		    "stepCount": {}
+		    "prototype": {
+		     "stepping": {},
+		     "pendingStep": {},
+		     "stepCount": {}
+		    }
 		   },
 		   "Game#disableStep": {
-		    "stepping": {},
-		    "pendingStep": {}
+		    "prototype": {
+		     "stepping": {},
+		     "pendingStep": {}
+		    }
 		   },
 		   "Game#step": {
-		    "pendingStep": {}
+		    "prototype": {
+		     "pendingStep": {}
+		    }
 		   },
 		   "Game#destroy": {
-		    "state": {},
-		    "cache": {},
-		    "input": {},
-		    "load": {},
-		    "sound": {},
-		    "stage": {},
-		    "time": {},
-		    "world": {},
-		    "isBooted": {}
+		    "prototype": {
+		     "state": {},
+		     "cache": {},
+		     "input": {},
+		     "load": {},
+		     "sound": {},
+		     "stage": {},
+		     "time": {},
+		     "world": {},
+		     "isBooted": {}
+		    }
 		   },
 		   "GAMES[undefined]": {},
 		   "Game#gamePaused": {
-		    "_paused": {},
-		    "lockRender": {}
+		    "prototype": {
+		     "_paused": {},
+		     "lockRender": {}
+		    }
 		   },
 		   "Game#gameResumed": {
-		    "_paused": {},
-		    "lockRender": {}
+		    "prototype": {
+		     "_paused": {},
+		     "lockRender": {}
+		    }
 		   },
 		   "Group": {
 		    "!type": "fn()",
 		    "addToStage": {},
-		    "enableBody": {
-		     "!type": "bool"
-		    },
-		    "physicsBodyType": {
-		     "!type": "+integer"
-		    },
-		    "game": {
-		     "!type": "+Phaser.Game"
+		    "enableBody": {},
+		    "physicsBodyType": {},
+		    "prototype": {
+		     "game": {
+		      "!type": "+Phaser.Game"
+		     },
+		     "name": {
+		      "!type": "string"
+		     },
+		     "z": {
+		      "!type": "number"
+		     },
+		     "type": {
+		      "!type": "number"
+		     },
+		     "physicsType": {
+		      "!type": "number"
+		     },
+		     "alive": {
+		      "!type": "bool"
+		     },
+		     "exists": {
+		      "!type": "bool"
+		     },
+		     "ignoreDestroy": {
+		      "!type": "bool"
+		     },
+		     "pendingDestroy": {
+		      "!type": "bool"
+		     },
+		     "classType": {},
+		     "cursor": {
+		      "!type": "+DisplayObject"
+		     },
+		     "enableBody": {
+		      "!type": "bool"
+		     },
+		     "enableBodyDebug": {
+		      "!type": "bool"
+		     },
+		     "physicsBodyType": {
+		      "!type": "number"
+		     },
+		     "physicsSortDirection": {
+		      "!type": "number"
+		     },
+		     "onDestroy": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "cursorIndex": {
+		      "!type": "number"
+		     },
+		     "fixedToCamera": {
+		      "!type": "bool"
+		     },
+		     "cameraOffset": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "hash": {
+		      "!type": "+array"
+		     },
+		     "_sortProperty": {
+		      "!type": "string"
+		     },
+		     "add": {
+		      "!type": "fn()"
+		     },
+		     "addToHash": {
+		      "!type": "fn()"
+		     },
+		     "removeFromHash": {
+		      "!type": "fn()"
+		     },
+		     "addMultiple": {
+		      "!type": "fn()"
+		     },
+		     "addAt": {
+		      "!type": "fn()"
+		     },
+		     "getAt": {
+		      "!type": "fn()"
+		     },
+		     "create": {
+		      "!type": "fn()"
+		     },
+		     "createMultiple": {
+		      "!type": "fn()"
+		     },
+		     "updateZ": {
+		      "!type": "fn()"
+		     },
+		     "resetCursor": {
+		      "!type": "fn()"
+		     },
+		     "next": {
+		      "!type": "fn()"
+		     },
+		     "previous": {
+		      "!type": "fn()"
+		     },
+		     "swap": {
+		      "!type": "fn()"
+		     },
+		     "bringToTop": {
+		      "!type": "fn()"
+		     },
+		     "sendToBack": {
+		      "!type": "fn()"
+		     },
+		     "moveUp": {
+		      "!type": "fn()"
+		     },
+		     "moveDown": {
+		      "!type": "fn()"
+		     },
+		     "xy": {
+		      "!type": "fn()"
+		     },
+		     "reverse": {
+		      "!type": "fn()"
+		     },
+		     "getIndex": {
+		      "!type": "fn()"
+		     },
+		     "replace": {
+		      "!type": "fn()"
+		     },
+		     "hasProperty": {
+		      "!type": "fn()"
+		     },
+		     "setProperty": {
+		      "!type": "fn()"
+		     },
+		     "checkProperty": {
+		      "!type": "fn()"
+		     },
+		     "set": {
+		      "!type": "fn()"
+		     },
+		     "setAll": {
+		      "!type": "fn()"
+		     },
+		     "setAllChildren": {
+		      "!type": "fn()"
+		     },
+		     "checkAll": {
+		      "!type": "fn()"
+		     },
+		     "addAll": {
+		      "!type": "fn()"
+		     },
+		     "subAll": {
+		      "!type": "fn()"
+		     },
+		     "multiplyAll": {
+		      "!type": "fn()"
+		     },
+		     "divideAll": {
+		      "!type": "fn()"
+		     },
+		     "callAllExists": {
+		      "!type": "fn()"
+		     },
+		     "callbackFromArray": {
+		      "!type": "fn()"
+		     },
+		     "callAll": {
+		      "!type": "fn()"
+		     },
+		     "preUpdate": {
+		      "!type": "fn()"
+		     },
+		     "update": {
+		      "!type": "fn()"
+		     },
+		     "postUpdate": {
+		      "!type": "fn()"
+		     },
+		     "filter": {
+		      "!type": "fn()"
+		     },
+		     "forEach": {
+		      "!type": "fn()"
+		     },
+		     "forEachExists": {
+		      "!type": "fn()"
+		     },
+		     "forEachAlive": {
+		      "!type": "fn()"
+		     },
+		     "forEachDead": {
+		      "!type": "fn()"
+		     },
+		     "sort": {
+		      "!type": "fn()"
+		     },
+		     "customSort": {
+		      "!type": "fn()"
+		     },
+		     "ascendingSortHandler": {
+		      "!type": "fn()"
+		     },
+		     "descendingSortHandler": {
+		      "!type": "fn()"
+		     },
+		     "iterate": {
+		      "!type": "fn()"
+		     },
+		     "getFirstExists": {
+		      "!type": "fn()"
+		     },
+		     "getFirstAlive": {
+		      "!type": "fn()"
+		     },
+		     "getFirstDead": {
+		      "!type": "fn()"
+		     },
+		     "getTop": {
+		      "!type": "fn()"
+		     },
+		     "getBottom": {
+		      "!type": "fn()"
+		     },
+		     "countLiving": {
+		      "!type": "fn()"
+		     },
+		     "countDead": {
+		      "!type": "fn()"
+		     },
+		     "getRandom": {
+		      "!type": "fn()"
+		     },
+		     "remove": {
+		      "!type": "fn()"
+		     },
+		     "moveAll": {
+		      "!type": "fn()"
+		     },
+		     "removeAll": {
+		      "!type": "fn()"
+		     },
+		     "removeBetween": {
+		      "!type": "fn()"
+		     },
+		     "destroy": {
+		      "!type": "fn()"
+		     },
+		     "total": {
+		      "!type": "number"
+		     },
+		     "length": {
+		      "!type": "number"
+		     },
+		     "angle": {
+		      "!type": "number"
+		     },
+		     "x": {
+		      "!type": "number"
+		     },
+		     "y": {
+		      "!type": "number"
+		     },
+		     "rotation": {
+		      "!type": "number"
+		     },
+		     "visible": {
+		      "!type": "bool"
+		     },
+		     "alpha": {
+		      "!type": "number"
+		     },
+		     "children": {}
 		    },
 		    "parent": {},
-		    "name": {
-		     "!type": "string"
-		    },
-		    "z": {
-		     "!type": "+integer"
-		    },
-		    "type": {
-		     "!type": "+integer"
-		    },
-		    "physicsType": {
-		     "!type": "number"
-		    },
-		    "alive": {
-		     "!type": "bool"
-		    },
-		    "exists": {
-		     "!type": "bool"
-		    },
-		    "ignoreDestroy": {
-		     "!type": "bool"
-		    },
-		    "pendingDestroy": {
-		     "!type": "bool"
-		    },
-		    "classType": {
-		     "!type": "?"
-		    },
-		    "cursor": {
-		     "!type": "+DisplayObject"
-		    },
-		    "enableBodyDebug": {
-		     "!type": "bool"
-		    },
-		    "physicsSortDirection": {
-		     "!type": "+integer"
-		    },
-		    "onDestroy": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "cursorIndex": {
-		     "!type": "+integer"
-		    },
-		    "fixedToCamera": {
-		     "!type": "bool"
-		    },
-		    "cameraOffset": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "hash": {
-		     "!type": "+array"
-		    },
-		    "_sortProperty": {
-		     "!type": "string"
-		    },
 		    "RETURN_NONE": {
-		     "!type": "+integer"
+		     "!type": "number"
 		    },
 		    "RETURN_TOTAL": {
-		     "!type": "+integer"
+		     "!type": "number"
 		    },
 		    "RETURN_CHILD": {
-		     "!type": "+integer"
+		     "!type": "number"
 		    },
 		    "SORT_ASCENDING": {
-		     "!type": "+integer"
+		     "!type": "number"
 		    },
 		    "SORT_DESCENDING": {
-		     "!type": "+integer"
-		    },
-		    "add": {
-		     "!type": "fn()"
-		    },
-		    "addToHash": {
-		     "!type": "fn()"
-		    },
-		    "removeFromHash": {
-		     "!type": "fn()"
-		    },
-		    "addMultiple": {
-		     "!type": "fn()"
-		    },
-		    "addAt": {
-		     "!type": "fn()"
-		    },
-		    "getAt": {
-		     "!type": "fn()"
-		    },
-		    "create": {
-		     "!type": "fn()"
-		    },
-		    "createMultiple": {
-		     "!type": "fn()"
-		    },
-		    "updateZ": {
-		     "!type": "fn()"
-		    },
-		    "resetCursor": {
-		     "!type": "fn()"
-		    },
-		    "next": {
-		     "!type": "fn()"
-		    },
-		    "previous": {
-		     "!type": "fn()"
-		    },
-		    "swap": {
-		     "!type": "fn()"
-		    },
-		    "bringToTop": {
-		     "!type": "fn()"
-		    },
-		    "sendToBack": {
-		     "!type": "fn()"
-		    },
-		    "moveUp": {
-		     "!type": "fn()"
-		    },
-		    "moveDown": {
-		     "!type": "fn()"
-		    },
-		    "xy": {
-		     "!type": "fn()"
-		    },
-		    "reverse": {
-		     "!type": "fn()"
-		    },
-		    "getIndex": {
-		     "!type": "fn()"
-		    },
-		    "replace": {
-		     "!type": "fn()"
-		    },
-		    "hasProperty": {
-		     "!type": "fn()"
-		    },
-		    "setProperty": {
-		     "!type": "fn()"
-		    },
-		    "checkProperty": {
-		     "!type": "fn()"
-		    },
-		    "set": {
-		     "!type": "fn()"
-		    },
-		    "setAll": {
-		     "!type": "fn()"
-		    },
-		    "setAllChildren": {
-		     "!type": "fn()"
-		    },
-		    "checkAll": {
-		     "!type": "fn()"
-		    },
-		    "addAll": {
-		     "!type": "fn()"
-		    },
-		    "subAll": {
-		     "!type": "fn()"
-		    },
-		    "multiplyAll": {
-		     "!type": "fn()"
-		    },
-		    "divideAll": {
-		     "!type": "fn()"
-		    },
-		    "callAllExists": {
-		     "!type": "fn()"
-		    },
-		    "callbackFromArray": {
-		     "!type": "fn()"
-		    },
-		    "callAll": {
-		     "!type": "fn()"
-		    },
-		    "preUpdate": {
-		     "!type": "fn()"
-		    },
-		    "update": {
-		     "!type": "fn()"
-		    },
-		    "postUpdate": {
-		     "!type": "fn()"
-		    },
-		    "filter": {
-		     "!type": "fn()"
-		    },
-		    "forEach": {
-		     "!type": "fn()"
-		    },
-		    "forEachExists": {
-		     "!type": "fn()"
-		    },
-		    "forEachAlive": {
-		     "!type": "fn()"
-		    },
-		    "forEachDead": {
-		     "!type": "fn()"
-		    },
-		    "sort": {
-		     "!type": "fn()"
-		    },
-		    "customSort": {
-		     "!type": "fn()"
-		    },
-		    "ascendingSortHandler": {
-		     "!type": "fn()"
-		    },
-		    "descendingSortHandler": {
-		     "!type": "fn()"
-		    },
-		    "iterate": {
-		     "!type": "fn()"
-		    },
-		    "getFirstExists": {
-		     "!type": "fn()"
-		    },
-		    "getFirstAlive": {
-		     "!type": "fn()"
-		    },
-		    "getFirstDead": {
-		     "!type": "fn()"
-		    },
-		    "getTop": {
-		     "!type": "fn()"
-		    },
-		    "getBottom": {
-		     "!type": "fn()"
-		    },
-		    "countLiving": {
-		     "!type": "fn()"
-		    },
-		    "countDead": {
-		     "!type": "fn()"
-		    },
-		    "getRandom": {
-		     "!type": "fn()"
-		    },
-		    "remove": {
-		     "!type": "fn()"
-		    },
-		    "moveAll": {
-		     "!type": "fn()"
-		    },
-		    "removeAll": {
-		     "!type": "fn()"
-		    },
-		    "removeBetween": {
-		     "!type": "fn()"
-		    },
-		    "destroy": {
-		     "!type": "fn()"
-		    },
-		    "total": {
-		     "!type": "+integer"
-		    },
-		    "length": {
-		     "!type": "+integer"
-		    },
-		    "angle": {
 		     "!type": "number"
-		    },
-		    "x": {
-		     "!type": "number"
-		    },
-		    "y": {
-		     "!type": "number"
-		    },
-		    "rotation": {
-		     "!type": "number"
-		    },
-		    "visible": {
-		     "!type": "bool"
-		    },
-		    "alpha": {
-		     "!type": "number"
-		    },
-		    "children": {
-		     "!type": "?"
 		    }
 		   },
 		   "Group#add": {
 		    "silent": {},
-		    "cursor": {}
+		    "prototype": {
+		     "cursor": {}
+		    }
 		   },
 		   "Group#addToHash": {
 		    "index": {}
@@ -2077,12 +2179,16 @@
 		   },
 		   "Group#addAt": {
 		    "silent": {},
-		    "cursor": {}
+		    "prototype": {
+		     "cursor": {}
+		    }
 		   },
 		   "Group#create": {
 		    "exists": {},
 		    "child": {},
-		    "cursor": {}
+		    "prototype": {
+		     "cursor": {}
+		    }
 		   },
 		   "Group#create~child": {
 		    "exists": {},
@@ -2102,16 +2208,22 @@
 		   },
 		   "Group#resetCursor": {
 		    "index": {},
-		    "cursorIndex": {},
-		    "cursor": {}
+		    "prototype": {
+		     "cursorIndex": {},
+		     "cursor": {}
+		    }
 		   },
 		   "Group#next": {
-		    "cursorIndex": {},
-		    "cursor": {}
+		    "prototype": {
+		     "cursorIndex": {},
+		     "cursor": {}
+		    }
 		   },
 		   "Group#previous": {
-		    "cursorIndex": {},
-		    "cursor": {}
+		    "prototype": {
+		     "cursorIndex": {},
+		     "cursor": {}
+		    }
 		   },
 		   "Group#moveUp": {
 		    "a": {},
@@ -2181,15 +2293,19 @@
 		    "callbackContext": {}
 		   },
 		   "Group#preUpdate": {
-		    "renderOrderID": {},
+		    "prototype": {
+		     "renderOrderID": {}
+		    },
 		    "i": {}
 		   },
 		   "Group#update": {
 		    "i": {}
 		   },
 		   "Group#postUpdate": {
-		    "x": {},
-		    "y": {},
+		    "prototype": {
+		     "x": {},
+		     "y": {}
+		    },
 		    "i": {}
 		   },
 		   "Group#filter": {
@@ -2221,7 +2337,9 @@
 		   "Group#sort": {
 		    "key": {},
 		    "order": {},
-		    "_sortProperty": {}
+		    "prototype": {
+		     "_sortProperty": {}
+		    }
 		   },
 		   "Group#iterate": {
 		    "total": {},
@@ -2241,15 +2359,19 @@
 		   },
 		   "Group#moveAll": {
 		    "silent": {},
-		    "hash": {},
-		    "cursor": {}
+		    "prototype": {
+		     "hash": {},
+		     "cursor": {}
+		    }
 		   },
 		   "Group#removeAll": {
 		    "destroy": {},
 		    "silent": {},
 		    "removed": {},
-		    "hash": {},
-		    "cursor": {}
+		    "prototype": {
+		     "hash": {},
+		     "cursor": {}
+		    }
 		   },
 		   "Group#removeBetween": {
 		    "endIndex": {},
@@ -2257,115 +2379,128 @@
 		    "silent": {},
 		    "i": {},
 		    "removed": {},
-		    "cursor": {}
+		    "prototype": {
+		     "cursor": {}
+		    }
 		   },
 		   "Group#destroy": {
 		    "destroyChildren": {},
 		    "soft": {},
-		    "cursor": {},
-		    "filters": {},
-		    "pendingDestroy": {},
-		    "game": {},
-		    "exists": {}
+		    "prototype": {
+		     "cursor": {},
+		     "filters": {},
+		     "pendingDestroy": {},
+		     "game": {},
+		     "exists": {}
+		    }
 		   },
 		   "Plugin": {
 		    "!type": "fn(game: +Phaser.Game, parent: +any)",
-		    "parent": {
-		     "!type": "+any"
-		    },
-		    "game": {
-		     "!type": "+Phaser.Game"
-		    },
-		    "active": {
-		     "!type": "bool"
-		    },
-		    "visible": {
-		     "!type": "bool"
-		    },
-		    "hasPreUpdate": {
-		     "!type": "bool"
-		    },
-		    "hasUpdate": {
-		     "!type": "bool"
-		    },
-		    "hasPostUpdate": {
-		     "!type": "bool"
-		    },
-		    "hasRender": {
-		     "!type": "bool"
-		    },
-		    "hasPostRender": {
-		     "!type": "bool"
-		    },
-		    "preUpdate": {
-		     "!type": "fn()"
-		    },
-		    "update": {
-		     "!type": "fn()"
-		    },
-		    "render": {
-		     "!type": "fn()"
-		    },
-		    "postRender": {
-		     "!type": "fn()"
-		    },
-		    "destroy": {
-		     "!type": "fn()"
+		    "parent": {},
+		    "prototype": {
+		     "game": {
+		      "!type": "+Phaser.Game"
+		     },
+		     "parent": {
+		      "!type": "+any"
+		     },
+		     "active": {
+		      "!type": "bool"
+		     },
+		     "visible": {
+		      "!type": "bool"
+		     },
+		     "hasPreUpdate": {
+		      "!type": "bool"
+		     },
+		     "hasUpdate": {
+		      "!type": "bool"
+		     },
+		     "hasPostUpdate": {
+		      "!type": "bool"
+		     },
+		     "hasRender": {
+		      "!type": "bool"
+		     },
+		     "hasPostRender": {
+		      "!type": "bool"
+		     },
+		     "preUpdate": {
+		      "!type": "fn()"
+		     },
+		     "update": {
+		      "!type": "fn()"
+		     },
+		     "render": {
+		      "!type": "fn()"
+		     },
+		     "postRender": {
+		      "!type": "fn()"
+		     },
+		     "destroy": {
+		      "!type": "fn()"
+		     }
 		    }
 		   },
 		   "Plugin#destroy": {
-		    "game": {},
-		    "parent": {},
-		    "active": {},
-		    "visible": {}
+		    "prototype": {
+		     "game": {},
+		     "parent": {},
+		     "active": {},
+		     "visible": {}
+		    }
 		   },
 		   "PluginManager": {
 		    "!type": "fn(game: +Phaser.Game)",
-		    "game": {
-		     "!type": "+Phaser.Game"
-		    },
-		    "plugins": {
-		     "!type": "[?]"
-		    },
-		    "_len": {
-		     "!type": "number"
-		    },
-		    "_i": {
-		     "!type": "number"
-		    },
-		    "add": {
-		     "!type": "fn()"
-		    },
-		    "remove": {
-		     "!type": "fn()"
-		    },
-		    "removeAll": {
-		     "!type": "fn()"
-		    },
-		    "preUpdate": {
-		     "!type": "fn()"
-		    },
-		    "update": {
-		     "!type": "fn()"
-		    },
-		    "postUpdate": {
-		     "!type": "fn()"
-		    },
-		    "render": {
-		     "!type": "fn()"
-		    },
-		    "postRender": {
-		     "!type": "fn()"
-		    },
-		    "destroy": {
-		     "!type": "fn()"
+		    "prototype": {
+		     "game": {
+		      "!type": "+Phaser.Game"
+		     },
+		     "plugins": {
+		      "!type": "[?]"
+		     },
+		     "_len": {
+		      "!type": "number"
+		     },
+		     "_i": {
+		      "!type": "number"
+		     },
+		     "add": {
+		      "!type": "fn()"
+		     },
+		     "remove": {
+		      "!type": "fn()"
+		     },
+		     "removeAll": {
+		      "!type": "fn()"
+		     },
+		     "preUpdate": {
+		      "!type": "fn()"
+		     },
+		     "update": {
+		      "!type": "fn()"
+		     },
+		     "postUpdate": {
+		      "!type": "fn()"
+		     },
+		     "render": {
+		      "!type": "fn()"
+		     },
+		     "postRender": {
+		      "!type": "fn()"
+		     },
+		     "destroy": {
+		      "!type": "fn()"
+		     }
 		    }
 		   },
 		   "PluginManager#add": {
 		    "args": {},
 		    "result": {},
 		    "plugin": {},
-		    "_len": {}
+		    "prototype": {
+		     "_len": {}
+		    }
 		   },
 		   "PluginManager#add~plugin": {
 		    "game": {},
@@ -2379,365 +2514,379 @@
 		    "visible": {}
 		   },
 		   "PluginManager#remove": {
-		    "_i": {}
+		    "prototype": {
+		     "_i": {}
+		    }
 		   },
 		   "PluginManager#removeAll": {
-		    "_i": {},
-		    "_len": {}
+		    "prototype": {
+		     "_i": {},
+		     "_len": {}
+		    }
 		   },
 		   "PluginManager#removeAll#plugins": {
 		    "length": {}
 		   },
 		   "PluginManager#preUpdate": {
-		    "_i": {}
+		    "prototype": {
+		     "_i": {}
+		    }
 		   },
 		   "PluginManager#update": {
-		    "_i": {}
+		    "prototype": {
+		     "_i": {}
+		    }
 		   },
 		   "PluginManager#postUpdate": {
-		    "_i": {}
+		    "prototype": {
+		     "_i": {}
+		    }
 		   },
 		   "PluginManager#render": {
-		    "_i": {}
+		    "prototype": {
+		     "_i": {}
+		    }
 		   },
 		   "PluginManager#postRender": {
-		    "_i": {}
+		    "prototype": {
+		     "_i": {}
+		    }
 		   },
 		   "PluginManager#destroy": {
-		    "game": {}
+		    "prototype": {
+		     "game": {}
+		    }
 		   },
 		   "ScaleManager": {
 		    "!type": "fn(game: +Phaser.Game, width: number|string, height: number|string)",
-		    "game": {
-		     "!type": "+Phaser.Game"
-		    },
-		    "dom": {
-		     "!type": "+Phaser.DOM"
-		    },
-		    "grid": {
-		     "!type": "+Phaser.FlexGrid"
-		    },
-		    "width": {
-		     "!type": "number"
-		    },
-		    "height": {
-		     "!type": "number"
-		    },
-		    "minWidth": {
-		     "!type": "number"
-		    },
-		    "maxWidth": {
-		     "!type": "number"
-		    },
-		    "minHeight": {
-		     "!type": "number"
-		    },
-		    "maxHeight": {
-		     "!type": "number"
-		    },
-		    "offset": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "forceLandscape": {
-		     "!type": "bool"
-		    },
-		    "forcePortrait": {
-		     "!type": "bool"
-		    },
-		    "incorrectOrientation": {
-		     "!type": "bool"
-		    },
-		    "_pageAlignHorizontally": {
-		     "!type": "bool"
-		    },
-		    "_pageAlignVertically": {
-		     "!type": "bool"
-		    },
-		    "onOrientationChange": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "enterIncorrectOrientation": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "leaveIncorrectOrientation": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "fullScreenTarget": {
-		     "!type": "+DOMElement"
-		    },
-		    "_createdFullScreenTarget": {
-		     "!type": "+DOMElement"
-		    },
-		    "onFullScreenInit": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "onFullScreenChange": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "onFullScreenError": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "screenOrientation": {
-		     "!type": "string"
-		    },
-		    "scaleFactor": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "scaleFactorInversed": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "margin": {
-		     "!type": "+Bounds-like"
-		    },
-		    "bounds": {
-		     "!type": "+Phaser.Rectangle"
-		    },
-		    "aspectRatio": {
-		     "!type": "number"
-		    },
-		    "sourceAspectRatio": {
-		     "!type": "number"
-		    },
-		    "event": {
-		     "!type": "+any"
-		    },
-		    "windowConstraints": {
-		     "!type": "string"
-		    },
-		    "compatibility": {
-		     "!type": "bool"
-		    },
-		    "_scaleMode": {
-		     "!type": "number"
-		    },
-		    "_fullScreenScaleMode": {},
-		    "parentIsWindow": {
-		     "!type": "bool"
-		    },
-		    "parentNode": {
-		     "!type": "+DOMElement"
-		    },
-		    "parentScaleFactor": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "trackParentInterval": {
-		     "!type": "+integer"
-		    },
-		    "onSizeChange": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "onResize": {
-		     "!type": "+function"
-		    },
-		    "onResizeContext": {
-		     "!type": "?"
-		    },
-		    "_pendingScaleMode": {
-		     "!type": "+integer"
-		    },
-		    "_fullScreenRestore": {
-		     "!type": "?"
-		    },
-		    "_gameSize": {
-		     "!type": "+Phaser.Rectangle"
-		    },
-		    "_userScaleFactor": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "_userScaleTrim": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "_lastUpdate": {
-		     "!type": "number"
-		    },
-		    "_updateThrottle": {
-		     "!type": "+integer"
-		    },
-		    "_updateThrottleReset": {
-		     "!type": "+integer"
-		    },
-		    "_parentBounds": {
-		     "!type": "+Phaser.Rectangle"
-		    },
-		    "_tempBounds": {
-		     "!type": "+Phaser.Rectangle"
-		    },
-		    "_lastReportedCanvasSize": {
-		     "!type": "+Phaser.Rectangle"
-		    },
-		    "_lastReportedGameSize": {
-		     "!type": "+Phaser.Rectangle"
-		    },
-		    "_booted": {
-		     "!type": "bool"
+		    "prototype": {
+		     "game": {
+		      "!type": "+Phaser.Game"
+		     },
+		     "dom": {
+		      "!type": "+Phaser.DOM"
+		     },
+		     "grid": {
+		      "!type": "+Phaser.FlexGrid"
+		     },
+		     "width": {
+		      "!type": "number"
+		     },
+		     "height": {
+		      "!type": "number"
+		     },
+		     "minWidth": {
+		      "!type": "number"
+		     },
+		     "maxWidth": {
+		      "!type": "number"
+		     },
+		     "minHeight": {
+		      "!type": "number"
+		     },
+		     "maxHeight": {
+		      "!type": "number"
+		     },
+		     "offset": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "forceLandscape": {
+		      "!type": "bool"
+		     },
+		     "forcePortrait": {
+		      "!type": "bool"
+		     },
+		     "incorrectOrientation": {
+		      "!type": "bool"
+		     },
+		     "_pageAlignHorizontally": {
+		      "!type": "bool"
+		     },
+		     "_pageAlignVertically": {
+		      "!type": "bool"
+		     },
+		     "onOrientationChange": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "enterIncorrectOrientation": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "leaveIncorrectOrientation": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "fullScreenTarget": {
+		      "!type": "+DOMElement"
+		     },
+		     "_createdFullScreenTarget": {
+		      "!type": "+DOMElement"
+		     },
+		     "onFullScreenInit": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "onFullScreenChange": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "onFullScreenError": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "screenOrientation": {
+		      "!type": "string"
+		     },
+		     "scaleFactor": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "scaleFactorInversed": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "margin": {
+		      "!type": "+Bounds-like"
+		     },
+		     "bounds": {
+		      "!type": "+Phaser.Rectangle"
+		     },
+		     "aspectRatio": {
+		      "!type": "number"
+		     },
+		     "sourceAspectRatio": {
+		      "!type": "number"
+		     },
+		     "event": {
+		      "!type": "+any"
+		     },
+		     "windowConstraints": {
+		      "!type": "string"
+		     },
+		     "compatibility": {
+		      "!type": "bool"
+		     },
+		     "_scaleMode": {
+		      "!type": "number"
+		     },
+		     "_fullScreenScaleMode": {},
+		     "parentIsWindow": {
+		      "!type": "bool"
+		     },
+		     "parentNode": {
+		      "!type": "+DOMElement"
+		     },
+		     "parentScaleFactor": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "trackParentInterval": {
+		      "!type": "number"
+		     },
+		     "onSizeChange": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "onResize": {
+		      "!type": "+function"
+		     },
+		     "onResizeContext": {},
+		     "_pendingScaleMode": {
+		      "!type": "number"
+		     },
+		     "_fullScreenRestore": {},
+		     "_gameSize": {
+		      "!type": "+Phaser.Rectangle"
+		     },
+		     "_userScaleFactor": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "_userScaleTrim": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "_lastUpdate": {
+		      "!type": "number"
+		     },
+		     "_updateThrottle": {
+		      "!type": "number"
+		     },
+		     "_updateThrottleReset": {
+		      "!type": "number"
+		     },
+		     "_parentBounds": {
+		      "!type": "+Phaser.Rectangle"
+		     },
+		     "_tempBounds": {
+		      "!type": "+Phaser.Rectangle"
+		     },
+		     "_lastReportedCanvasSize": {
+		      "!type": "+Phaser.Rectangle"
+		     },
+		     "_lastReportedGameSize": {
+		      "!type": "+Phaser.Rectangle"
+		     },
+		     "_booted": {
+		      "!type": "bool"
+		     },
+		     "boot": {
+		      "!type": "fn()"
+		     },
+		     "parseConfig": {
+		      "!type": "fn()"
+		     },
+		     "setupScale": {
+		      "!type": "fn()"
+		     },
+		     "_gameResumed": {
+		      "!type": "fn()"
+		     },
+		     "setGameSize": {
+		      "!type": "fn()"
+		     },
+		     "setUserScale": {
+		      "!type": "fn()"
+		     },
+		     "setResizeCallback": {
+		      "!type": "fn()"
+		     },
+		     "signalSizeChange": {
+		      "!type": "fn()"
+		     },
+		     "setMinMax": {
+		      "!type": "fn()"
+		     },
+		     "preUpdate": {
+		      "!type": "fn()"
+		     },
+		     "pauseUpdate": {
+		      "!type": "fn()"
+		     },
+		     "updateDimensions": {
+		      "!type": "fn()"
+		     },
+		     "updateScalingAndBounds": {
+		      "!type": "fn()"
+		     },
+		     "forceOrientation": {
+		      "!type": "fn()"
+		     },
+		     "classifyOrientation": {
+		      "!type": "fn()"
+		     },
+		     "updateOrientationState": {
+		      "!type": "fn()"
+		     },
+		     "orientationChange": {
+		      "!type": "fn()"
+		     },
+		     "windowResize": {
+		      "!type": "fn()"
+		     },
+		     "scrollTop": {
+		      "!type": "fn()"
+		     },
+		     "refresh": {
+		      "!type": "fn()"
+		     },
+		     "updateLayout": {
+		      "!type": "fn()"
+		     },
+		     "getParentBounds": {
+		      "!type": "fn()"
+		     },
+		     "alignCanvas": {
+		      "!type": "fn()"
+		     },
+		     "reflowGame": {
+		      "!type": "fn()"
+		     },
+		     "reflowCanvas": {
+		      "!type": "fn()"
+		     },
+		     "resetCanvas": {
+		      "!type": "fn()"
+		     },
+		     "queueUpdate": {
+		      "!type": "fn()"
+		     },
+		     "reset": {
+		      "!type": "fn()"
+		     },
+		     "setMaximum": {
+		      "!type": "fn()"
+		     },
+		     "setShowAll": {
+		      "!type": "fn()"
+		     },
+		     "setExactFit": {
+		      "!type": "fn()"
+		     },
+		     "createFullScreenTarget": {
+		      "!type": "fn()"
+		     },
+		     "startFullScreen": {
+		      "!type": "fn()"
+		     },
+		     "stopFullScreen": {
+		      "!type": "fn()"
+		     },
+		     "cleanupCreatedTarget": {
+		      "!type": "fn()"
+		     },
+		     "prepScreenMode": {
+		      "!type": "fn()"
+		     },
+		     "fullScreenChange": {
+		      "!type": "fn()"
+		     },
+		     "fullScreenError": {
+		      "!type": "fn()"
+		     },
+		     "scaleSprite": {
+		      "!type": "fn()"
+		     },
+		     "destroy": {
+		      "!type": "fn()"
+		     },
+		     "boundingParent": {
+		      "!type": "+DOMElement"
+		     },
+		     "scaleMode": {
+		      "!type": "number"
+		     },
+		     "fullScreenScaleMode": {
+		      "!type": "number"
+		     },
+		     "currentScaleMode": {
+		      "!type": "number"
+		     },
+		     "pageAlignHorizontally": {
+		      "!type": "bool"
+		     },
+		     "pageAlignVertically": {
+		      "!type": "bool"
+		     },
+		     "isFullScreen": {
+		      "!type": "bool"
+		     },
+		     "isPortrait": {
+		      "!type": "bool"
+		     },
+		     "isLandscape": {
+		      "!type": "bool"
+		     },
+		     "isGamePortrait": {
+		      "!type": "bool"
+		     },
+		     "isGameLandscape": {
+		      "!type": "bool"
+		     }
 		    },
 		    "EXACT_FIT": {
-		     "!type": "+integer"
-		    },
-		    "NO_SCALE": {
-		     "!type": "+integer"
-		    },
-		    "SHOW_ALL": {
-		     "!type": "+integer"
-		    },
-		    "RESIZE": {
-		     "!type": "+integer"
-		    },
-		    "USER_SCALE": {
-		     "!type": "+integer"
-		    },
-		    "boot": {
-		     "!type": "fn()"
-		    },
-		    "parseConfig": {
-		     "!type": "fn()"
-		    },
-		    "setupScale": {
-		     "!type": "fn()"
-		    },
-		    "_gameResumed": {
-		     "!type": "fn()"
-		    },
-		    "setGameSize": {
-		     "!type": "fn()"
-		    },
-		    "setUserScale": {
-		     "!type": "fn()"
-		    },
-		    "setResizeCallback": {
-		     "!type": "fn()"
-		    },
-		    "signalSizeChange": {
-		     "!type": "fn()"
-		    },
-		    "setMinMax": {
-		     "!type": "fn()"
-		    },
-		    "preUpdate": {
-		     "!type": "fn()"
-		    },
-		    "pauseUpdate": {
-		     "!type": "fn()"
-		    },
-		    "updateDimensions": {
-		     "!type": "fn()"
-		    },
-		    "updateScalingAndBounds": {
-		     "!type": "fn()"
-		    },
-		    "forceOrientation": {
-		     "!type": "fn()"
-		    },
-		    "classifyOrientation": {
-		     "!type": "fn()"
-		    },
-		    "updateOrientationState": {
-		     "!type": "fn()"
-		    },
-		    "orientationChange": {
-		     "!type": "fn()"
-		    },
-		    "windowResize": {
-		     "!type": "fn()"
-		    },
-		    "scrollTop": {
-		     "!type": "fn()"
-		    },
-		    "refresh": {
-		     "!type": "fn()"
-		    },
-		    "updateLayout": {
-		     "!type": "fn()"
-		    },
-		    "getParentBounds": {
-		     "!type": "fn()"
-		    },
-		    "alignCanvas": {
-		     "!type": "fn()"
-		    },
-		    "reflowGame": {
-		     "!type": "fn()"
-		    },
-		    "reflowCanvas": {
-		     "!type": "fn()"
-		    },
-		    "resetCanvas": {
-		     "!type": "fn()"
-		    },
-		    "queueUpdate": {
-		     "!type": "fn()"
-		    },
-		    "reset": {
-		     "!type": "fn()"
-		    },
-		    "setMaximum": {
-		     "!type": "fn()"
-		    },
-		    "setShowAll": {
-		     "!type": "fn()"
-		    },
-		    "setExactFit": {
-		     "!type": "fn()"
-		    },
-		    "createFullScreenTarget": {
-		     "!type": "fn()"
-		    },
-		    "startFullScreen": {
-		     "!type": "fn()"
-		    },
-		    "stopFullScreen": {
-		     "!type": "fn()"
-		    },
-		    "cleanupCreatedTarget": {
-		     "!type": "fn()"
-		    },
-		    "prepScreenMode": {
-		     "!type": "fn()"
-		    },
-		    "fullScreenChange": {
-		     "!type": "fn()"
-		    },
-		    "fullScreenError": {
-		     "!type": "fn()"
-		    },
-		    "scaleSprite": {
-		     "!type": "fn()"
-		    },
-		    "destroy": {
-		     "!type": "fn()"
-		    },
-		    "boundingParent": {
-		     "!type": "+DOMElement"
-		    },
-		    "scaleMode": {
-		     "!type": "+integer"
-		    },
-		    "fullScreenScaleMode": {
-		     "!type": "+integer"
-		    },
-		    "currentScaleMode": {
 		     "!type": "number"
 		    },
-		    "pageAlignHorizontally": {
-		     "!type": "bool"
+		    "NO_SCALE": {
+		     "!type": "number"
 		    },
-		    "pageAlignVertically": {
-		     "!type": "bool"
+		    "SHOW_ALL": {
+		     "!type": "number"
 		    },
-		    "isFullScreen": {
-		     "!type": "bool"
+		    "RESIZE": {
+		     "!type": "number"
 		    },
-		    "isPortrait": {
-		     "!type": "bool"
-		    },
-		    "isLandscape": {
-		     "!type": "bool"
-		    },
-		    "isGamePortrait": {
-		     "!type": "bool"
-		    },
-		    "isGameLandscape": {
-		     "!type": "bool"
+		    "USER_SCALE": {
+		     "!type": "number"
 		    }
 		   },
 		   "ScaleManager#margin": {
@@ -2764,23 +2913,25 @@
 		   "ScaleManager#boot": {
 		    "compat": {},
 		    "_this": {},
-		    "_orientationChange": {
-		     "!type": "fn()"
-		    },
-		    "_windowResize": {
-		     "!type": "fn()"
-		    },
-		    "_fullScreenChange": {
-		     "!type": "fn()"
-		    },
-		    "_fullScreenError": {
-		     "!type": "fn()"
-		    },
-		    "screenOrientation": {},
-		    "grid": {},
-		    "_booted": {},
-		    "scaleMode": {},
-		    "_pendingScaleMode": {}
+		    "prototype": {
+		     "_orientationChange": {
+		      "!type": "fn()"
+		     },
+		     "_windowResize": {
+		      "!type": "fn()"
+		     },
+		     "_fullScreenChange": {
+		      "!type": "fn()"
+		     },
+		     "_fullScreenError": {
+		      "!type": "fn()"
+		     },
+		     "screenOrientation": {},
+		     "grid": {},
+		     "_booted": {},
+		     "scaleMode": {},
+		     "_pendingScaleMode": {}
+		    }
 		   },
 		   "ScaleManager#boot~compat": {
 		    "supportsFullScreen": {},
@@ -2789,16 +2940,20 @@
 		    "clickTrampoline": {}
 		   },
 		   "ScaleManager#parseConfig": {
-		    "scaleMode": {},
-		    "_pendingScaleMode": {},
-		    "fullScreenScaleMode": {},
-		    "fullScreenTarget": {}
+		    "prototype": {
+		     "scaleMode": {},
+		     "_pendingScaleMode": {},
+		     "fullScreenScaleMode": {},
+		     "fullScreenTarget": {}
+		    }
 		   },
 		   "ScaleManager#setupScale": {
 		    "target": {},
 		    "rect": {},
-		    "parentNode": {},
-		    "parentIsWindow": {},
+		    "prototype": {
+		     "parentNode": {},
+		     "parentIsWindow": {}
+		    },
 		    "newWidth": {},
 		    "newHeight": {}
 		   },
@@ -2811,38 +2966,48 @@
 		    "y": {}
 		   },
 		   "ScaleManager#setResizeCallback": {
-		    "onResize": {},
-		    "onResizeContext": {}
+		    "prototype": {
+		     "onResize": {},
+		     "onResizeContext": {}
+		    }
 		   },
 		   "ScaleManager#signalSizeChange": {
 		    "width": {},
 		    "height": {}
 		   },
 		   "ScaleManager#setMinMax": {
-		    "minWidth": {},
-		    "minHeight": {},
-		    "maxWidth": {},
-		    "maxHeight": {}
+		    "prototype": {
+		     "minWidth": {},
+		     "minHeight": {},
+		     "maxWidth": {},
+		     "maxHeight": {}
+		    }
 		   },
 		   "ScaleManager#preUpdate": {
 		    "prevThrottle": {},
-		    "_updateThrottleReset": {},
+		    "prototype": {
+		     "_updateThrottleReset": {},
+		     "_updateThrottle": {},
+		     "_lastUpdate": {}
+		    },
 		    "prevWidth": {},
 		    "prevHeight": {},
 		    "bounds": {},
 		    "boundsChanged": {},
 		    "orientationChanged": {},
-		    "throttle": {},
-		    "_updateThrottle": {},
-		    "_lastUpdate": {}
+		    "throttle": {}
 		   },
 		   "ScaleManager#pauseUpdate": {
-		    "_updateThrottle": {}
+		    "prototype": {
+		     "_updateThrottle": {}
+		    }
 		   },
 		   "ScaleManager#updateDimensions": {
-		    "width": {},
-		    "height": {},
-		    "sourceAspectRatio": {}
+		    "prototype": {
+		     "width": {},
+		     "height": {},
+		     "sourceAspectRatio": {}
+		    }
 		   },
 		   "ScaleManager#updateDimensions#game": {
 		    "width": {},
@@ -2857,33 +3022,46 @@
 		    "y": {}
 		   },
 		   "ScaleManager#updateScalingAndBounds": {
-		    "aspectRatio": {}
+		    "prototype": {
+		     "aspectRatio": {}
+		    }
 		   },
 		   "ScaleManager#forceOrientation": {
 		    "forcePortrait": {},
-		    "forceLandscape": {}
+		    "prototype": {
+		     "forceLandscape": {},
+		     "forcePortrait": {}
+		    }
 		   },
 		   "ScaleManager#updateOrientationState": {
 		    "previousOrientation": {},
 		    "previouslyIncorrect": {},
-		    "screenOrientation": {},
-		    "incorrectOrientation": {},
+		    "prototype": {
+		     "screenOrientation": {},
+		     "incorrectOrientation": {}
+		    },
 		    "changed": {},
 		    "correctnessChanged": {}
 		   },
 		   "ScaleManager#orientationChange": {
-		    "event": {}
+		    "prototype": {
+		     "event": {}
+		    }
 		   },
 		   "ScaleManager#windowResize": {
-		    "event": {}
+		    "prototype": {
+		     "event": {}
+		    }
 		   },
 		   "ScaleManager#scrollTop": {
 		    "scrollTo": {}
 		   },
 		   "ScaleManager#updateLayout": {
 		    "scaleMode": {},
-		    "width": {},
-		    "height": {},
+		    "prototype": {
+		     "width": {},
+		     "height": {}
+		    },
 		    "bounds": {}
 		   },
 		   "ScaleManager#getParentBounds": {
@@ -2926,8 +3104,10 @@
 		    "bounds": {}
 		   },
 		   "ScaleManager#reflowCanvas": {
-		    "width": {},
-		    "height": {}
+		    "prototype": {
+		     "width": {},
+		     "height": {}
+		    }
 		   },
 		   "ScaleManager#resetCanvas": {
 		    "cssWidth": {},
@@ -2947,22 +3127,32 @@
 		    "height": {}
 		   },
 		   "ScaleManager#queueUpdate": {
-		    "_updateThrottle": {}
+		    "prototype": {
+		     "_updateThrottle": {}
+		    }
 		   },
 		   "ScaleManager#setMaximum": {
-		    "width": {},
-		    "height": {}
+		    "prototype": {
+		     "width": {},
+		     "height": {}
+		    }
 		   },
 		   "ScaleManager#setShowAll": {
 		    "bounds": {},
 		    "width": {},
 		    "height": {},
-		    "multiplier": {}
+		    "multiplier": {},
+		    "prototype": {
+		     "width": {},
+		     "height": {}
+		    }
 		   },
 		   "ScaleManager#setExactFit": {
 		    "bounds": {},
-		    "width": {},
-		    "height": {}
+		    "prototype": {
+		     "width": {},
+		     "height": {}
+		    }
 		   },
 		   "ScaleManager#createFullScreenTarget": {
 		    "fsTarget": {}
@@ -2976,7 +3166,9 @@
 		    "_this": {},
 		    "input": {},
 		    "fsTarget": {},
-		    "_createdFullScreenTarget": {},
+		    "prototype": {
+		     "_createdFullScreenTarget": {}
+		    },
 		    "initData": {},
 		    "canvas": {},
 		    "parent": {}
@@ -2992,12 +3184,16 @@
 		   "ScaleManager#cleanupCreatedTarget": {
 		    "fsTarget": {},
 		    "parent": {},
-		    "_createdFullScreenTarget": {}
+		    "prototype": {
+		     "_createdFullScreenTarget": {}
+		    }
 		   },
 		   "ScaleManager#prepScreenMode": {
 		    "createdTarget": {},
 		    "fsTarget": {},
-		    "_fullScreenRestore": {}
+		    "prototype": {
+		     "_fullScreenRestore": {}
+		    }
 		   },
 		   "ScaleManager#prepScreenMode#_fullScreenRestore": {
 		    "targetWidth": {},
@@ -3008,10 +3204,14 @@
 		    "style_height": {}
 		   },
 		   "ScaleManager#fullScreenChange": {
-		    "event": {}
+		    "prototype": {
+		     "event": {}
+		    }
 		   },
 		   "ScaleManager#fullScreenError": {
-		    "event": {}
+		    "prototype": {
+		     "event": {}
+		    }
 		   },
 		   "ScaleManager#scaleSprite": {
 		    "width": {},
@@ -3025,65 +3225,67 @@
 		   },
 		   "Signal": {
 		    "!type": "fn()",
-		    "_bindings": {
-		     "!type": "[?]"
-		    },
-		    "_prevParams": {
-		     "!type": "+any"
-		    },
-		    "memorize": {
-		     "!type": "bool"
-		    },
-		    "_shouldPropagate": {
-		     "!type": "bool"
-		    },
-		    "active": {
-		     "!type": "bool"
-		    },
-		    "_boundDispatch": {
-		     "!type": "+function"
-		    },
-		    "validateListener": {
-		     "!type": "fn()"
-		    },
-		    "_registerListener": {
-		     "!type": "fn()"
-		    },
-		    "_addBinding": {
-		     "!type": "fn()"
-		    },
-		    "_indexOfListener": {
-		     "!type": "fn()"
-		    },
-		    "has": {
-		     "!type": "fn()"
-		    },
-		    "add": {
-		     "!type": "fn()"
-		    },
-		    "addOnce": {
-		     "!type": "fn()"
-		    },
-		    "remove": {
-		     "!type": "fn()"
-		    },
-		    "removeAll": {
-		     "!type": "fn()"
-		    },
-		    "getNumListeners": {
-		     "!type": "fn()"
-		    },
-		    "halt": {
-		     "!type": "fn()"
-		    },
-		    "dispatch": {
-		     "!type": "fn()"
-		    },
-		    "forget": {
-		     "!type": "fn()"
-		    },
-		    "dispose": {
-		     "!type": "fn()"
+		    "prototype": {
+		     "_bindings": {
+		      "!type": "[?]"
+		     },
+		     "_prevParams": {
+		      "!type": "+any"
+		     },
+		     "memorize": {
+		      "!type": "bool"
+		     },
+		     "_shouldPropagate": {
+		      "!type": "bool"
+		     },
+		     "active": {
+		      "!type": "bool"
+		     },
+		     "_boundDispatch": {
+		      "!type": "+function"
+		     },
+		     "validateListener": {
+		      "!type": "fn()"
+		     },
+		     "_registerListener": {
+		      "!type": "fn()"
+		     },
+		     "_addBinding": {
+		      "!type": "fn()"
+		     },
+		     "_indexOfListener": {
+		      "!type": "fn()"
+		     },
+		     "has": {
+		      "!type": "fn()"
+		     },
+		     "add": {
+		      "!type": "fn()"
+		     },
+		     "addOnce": {
+		      "!type": "fn()"
+		     },
+		     "remove": {
+		      "!type": "fn()"
+		     },
+		     "removeAll": {
+		      "!type": "fn()"
+		     },
+		     "getNumListeners": {
+		      "!type": "fn()"
+		     },
+		     "halt": {
+		      "!type": "fn()"
+		     },
+		     "dispatch": {
+		      "!type": "fn()"
+		     },
+		     "forget": {
+		      "!type": "fn()"
+		     },
+		     "dispose": {
+		      "!type": "fn()"
+		     }
 		    }
 		   },
 		   "Signal#_registerListener": {
@@ -3091,7 +3293,9 @@
 		    "binding": {}
 		   },
 		   "Signal#_addBinding": {
-		    "_bindings": {},
+		    "prototype": {
+		     "_bindings": {}
+		    },
 		    "n": {}
 		   },
 		   "Signal#_indexOfListener": {
@@ -3118,71 +3322,79 @@
 		    "length": {}
 		   },
 		   "Signal#halt": {
-		    "_shouldPropagate": {}
+		    "prototype": {
+		     "_shouldPropagate": {}
+		    }
 		   },
 		   "Signal#dispatch": {
 		    "paramsArr": {},
 		    "n": {},
 		    "bindings": {},
-		    "_prevParams": {},
-		    "_shouldPropagate": {}
+		    "prototype": {
+		     "_prevParams": {},
+		     "_shouldPropagate": {}
+		    }
 		   },
 		   "Signal#forget": {
-		    "_prevParams": {}
+		    "prototype": {
+		     "_prevParams": {}
+		    }
 		   },
 		   "Signal#dispose": {
-		    "_bindings": {},
-		    "_prevParams": {}
+		    "prototype": {
+		     "_bindings": {},
+		     "_prevParams": {}
+		    }
 		   },
 		   "SignalBinding": {
 		    "!type": "fn(signal: +Phaser.Signal, listener: +function, isOnce: bool, listenerContext: ?, priority: number, args: +any)",
-		    "_listener": {
-		     "!type": "+Phaser.Game"
-		    },
-		    "_isOnce": {
-		     "!type": "bool"
-		    },
-		    "context": {
-		     "!type": "?"
-		    },
-		    "_signal": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "_priority": {
-		     "!type": "number"
-		    },
-		    "_args": {
-		     "!type": "+array"
-		    },
-		    "callCount": {
-		     "!type": "number"
-		    },
-		    "active": {
-		     "!type": "bool"
-		    },
-		    "params": {
-		     "!type": "+array|+null"
-		    },
-		    "execute": {
-		     "!type": "fn()"
-		    },
-		    "detach": {
-		     "!type": "fn()"
-		    },
-		    "isBound": {
-		     "!type": "fn()"
-		    },
-		    "isOnce": {
-		     "!type": "fn()"
-		    },
-		    "getListener": {
-		     "!type": "fn()"
-		    },
-		    "getSignal": {
-		     "!type": "fn()"
-		    },
-		    "_destroy": {
-		     "!type": "fn()"
+		    "prototype": {
+		     "_listener": {
+		      "!type": "+Phaser.Game"
+		     },
+		     "_isOnce": {
+		      "!type": "bool"
+		     },
+		     "context": {},
+		     "_signal": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "_priority": {
+		      "!type": "number"
+		     },
+		     "_args": {
+		      "!type": "+array"
+		     },
+		     "callCount": {
+		      "!type": "number"
+		     },
+		     "active": {
+		      "!type": "bool"
+		     },
+		     "params": {
+		      "!type": "+array|+null"
+		     },
+		     "execute": {
+		      "!type": "fn()"
+		     },
+		     "detach": {
+		      "!type": "fn()"
+		     },
+		     "isBound": {
+		      "!type": "fn()"
+		     },
+		     "isOnce": {
+		      "!type": "fn()"
+		     },
+		     "getListener": {
+		      "!type": "fn()"
+		     },
+		     "getSignal": {
+		      "!type": "fn()"
+		     },
+		     "_destroy": {
+		      "!type": "fn()"
+		     }
 		    }
 		   },
 		   "SignalBinding#execute": {
@@ -3191,76 +3403,80 @@
 		   },
 		   "Stage": {
 		    "!type": "fn(game: +Phaser.Game)",
-		    "game": {
-		     "!type": "+Phaser.Game"
-		    },
-		    "name": {
-		     "!type": "string"
-		    },
-		    "disableVisibilityChange": {
-		     "!type": "bool"
-		    },
-		    "exists": {
-		     "!type": "bool"
-		    },
-		    "currentRenderOrderID": {
-		     "!type": "number"
-		    },
-		    "_hiddenVar": {
-		     "!type": "string"
-		    },
-		    "_onChange": {
-		     "!type": "+function"
-		    },
-		    "_backgroundColor": {
-		     "!type": "number"
-		    },
-		    "parseConfig": {
-		     "!type": "fn()"
-		    },
-		    "boot": {
-		     "!type": "fn()"
-		    },
-		    "preUpdate": {
-		     "!type": "fn()"
-		    },
-		    "update": {
-		     "!type": "fn()"
-		    },
-		    "postUpdate": {
-		     "!type": "fn()"
-		    },
-		    "updateTransform": {
-		     "!type": "fn()"
-		    },
-		    "checkVisibility": {
-		     "!type": "fn()"
-		    },
-		    "visibilityChange": {
-		     "!type": "fn()"
-		    },
-		    "setBackgroundColor": {
-		     "!type": "fn()"
-		    },
-		    "destroy": {
-		     "!type": "fn()"
-		    },
-		    "backgroundColor": {
-		     "!type": "number|string"
-		    },
-		    "smoothed": {
-		     "!type": "bool"
-		    },
-		    "worldTransform": {
-		     "!type": "?"
+		    "prototype": {
+		     "game": {
+		      "!type": "+Phaser.Game"
+		     },
+		     "name": {
+		      "!type": "string"
+		     },
+		     "disableVisibilityChange": {
+		      "!type": "bool"
+		     },
+		     "exists": {
+		      "!type": "bool"
+		     },
+		     "currentRenderOrderID": {
+		      "!type": "number"
+		     },
+		     "_hiddenVar": {
+		      "!type": "string"
+		     },
+		     "_onChange": {
+		      "!type": "+function"
+		     },
+		     "_backgroundColor": {
+		      "!type": "number"
+		     },
+		     "parseConfig": {
+		      "!type": "fn()"
+		     },
+		     "boot": {
+		      "!type": "fn()"
+		     },
+		     "preUpdate": {
+		      "!type": "fn()"
+		     },
+		     "update": {
+		      "!type": "fn()"
+		     },
+		     "postUpdate": {
+		      "!type": "fn()"
+		     },
+		     "updateTransform": {
+		      "!type": "fn()"
+		     },
+		     "checkVisibility": {
+		      "!type": "fn()"
+		     },
+		     "visibilityChange": {
+		      "!type": "fn()"
+		     },
+		     "setBackgroundColor": {
+		      "!type": "fn()"
+		     },
+		     "destroy": {
+		      "!type": "fn()"
+		     },
+		     "backgroundColor": {
+		      "!type": "number|string"
+		     },
+		     "smoothed": {
+		      "!type": "bool"
+		     },
+		     "worldTransform": {}
 		    }
 		   },
 		   "Stage#parseConfig": {
-		    "disableVisibilityChange": {},
-		    "backgroundColor": {}
+		    "prototype": {
+		     "disableVisibilityChange": {},
+		     "backgroundColor": {}
+		    }
 		   },
 		   "Stage#preUpdate": {
-		    "currentRenderOrderID": {},
+		    "prototype": {
+		     "currentRenderOrderID": {}
+		    },
 		    "i": {}
 		   },
 		   "Stage#update": {
@@ -3270,300 +3486,318 @@
 		    "i": {}
 		   },
 		   "Stage#updateTransform": {
-		    "worldAlpha": {},
+		    "prototype": {
+		     "worldAlpha": {}
+		    },
 		    "i": {}
 		   },
 		   "Stage#checkVisibility": {
-		    "_hiddenVar": {},
-		    "_this": {},
-		    "_onChange": {
-		     "!type": "fn()"
-		    }
+		    "prototype": {
+		     "_hiddenVar": {},
+		     "_onChange": {
+		      "!type": "fn()"
+		     }
+		    },
+		    "_this": {}
 		   },
 		   "Stage#setBackgroundColor": {
 		    "rgb": {},
-		    "_backgroundColor": {},
-		    "backgroundColorSplit": {},
-		    "backgroundColorString": {}
+		    "prototype": {
+		     "_backgroundColor": {},
+		     "backgroundColorSplit": {},
+		     "backgroundColorString": {}
+		    }
 		   },
 		   "State": {
 		    "!type": "fn()",
-		    "game": {
-		     "!type": "+Phaser.Game"
-		    },
-		    "key": {
-		     "!type": "string"
-		    },
-		    "add": {
-		     "!type": "+Phaser.GameObjectFactory"
-		    },
-		    "make": {
-		     "!type": "+Phaser.GameObjectCreator"
-		    },
-		    "camera": {
-		     "!type": "+Phaser.Camera"
-		    },
-		    "cache": {
-		     "!type": "+Phaser.Cache"
-		    },
-		    "input": {
-		     "!type": "+Phaser.Input"
-		    },
-		    "load": {
-		     "!type": "+Phaser.Loader"
-		    },
-		    "math": {
-		     "!type": "+Phaser.Math"
-		    },
-		    "sound": {
-		     "!type": "+Phaser.SoundManager"
-		    },
-		    "scale": {
-		     "!type": "+Phaser.ScaleManager"
-		    },
-		    "stage": {
-		     "!type": "+Phaser.Stage"
-		    },
-		    "time": {
-		     "!type": "+Phaser.Time"
-		    },
-		    "tweens": {
-		     "!type": "+Phaser.TweenManager"
-		    },
-		    "world": {
-		     "!type": "+Phaser.World"
-		    },
-		    "particles": {
-		     "!type": "+Phaser.Particles"
-		    },
-		    "physics": {
-		     "!type": "+Phaser.Physics"
-		    },
-		    "rnd": {
-		     "!type": "+Phaser.RandomDataGenerator"
-		    },
-		    "init": {
-		     "!type": "fn()"
-		    },
-		    "preload": {
-		     "!type": "fn()"
-		    },
-		    "loadUpdate": {
-		     "!type": "fn()"
-		    },
-		    "loadRender": {
-		     "!type": "fn()"
-		    },
-		    "create": {
-		     "!type": "fn()"
-		    },
-		    "update": {
-		     "!type": "fn()"
-		    },
-		    "preRender": {
-		     "!type": "fn()"
-		    },
-		    "render": {
-		     "!type": "fn()"
-		    },
-		    "resize": {
-		     "!type": "fn()"
-		    },
-		    "paused": {
-		     "!type": "fn()"
-		    },
-		    "resumed": {
-		     "!type": "fn()"
-		    },
-		    "pauseUpdate": {
-		     "!type": "fn()"
-		    },
-		    "shutdown": {
-		     "!type": "fn()"
+		    "prototype": {
+		     "game": {
+		      "!type": "+Phaser.Game"
+		     },
+		     "key": {
+		      "!type": "string"
+		     },
+		     "add": {
+		      "!type": "+Phaser.GameObjectFactory"
+		     },
+		     "make": {
+		      "!type": "+Phaser.GameObjectCreator"
+		     },
+		     "camera": {
+		      "!type": "+Phaser.Camera"
+		     },
+		     "cache": {
+		      "!type": "+Phaser.Cache"
+		     },
+		     "input": {
+		      "!type": "+Phaser.Input"
+		     },
+		     "load": {
+		      "!type": "+Phaser.Loader"
+		     },
+		     "math": {
+		      "!type": "+Phaser.Math"
+		     },
+		     "sound": {
+		      "!type": "+Phaser.SoundManager"
+		     },
+		     "scale": {
+		      "!type": "+Phaser.ScaleManager"
+		     },
+		     "stage": {
+		      "!type": "+Phaser.Stage"
+		     },
+		     "time": {
+		      "!type": "+Phaser.Time"
+		     },
+		     "tweens": {
+		      "!type": "+Phaser.TweenManager"
+		     },
+		     "world": {
+		      "!type": "+Phaser.World"
+		     },
+		     "particles": {
+		      "!type": "+Phaser.Particles"
+		     },
+		     "physics": {
+		      "!type": "+Phaser.Physics"
+		     },
+		     "rnd": {
+		      "!type": "+Phaser.RandomDataGenerator"
+		     },
+		     "init": {
+		      "!type": "fn()"
+		     },
+		     "preload": {
+		      "!type": "fn()"
+		     },
+		     "loadUpdate": {
+		      "!type": "fn()"
+		     },
+		     "loadRender": {
+		      "!type": "fn()"
+		     },
+		     "create": {
+		      "!type": "fn()"
+		     },
+		     "update": {
+		      "!type": "fn()"
+		     },
+		     "preRender": {
+		      "!type": "fn()"
+		     },
+		     "render": {
+		      "!type": "fn()"
+		     },
+		     "resize": {
+		      "!type": "fn()"
+		     },
+		     "paused": {
+		      "!type": "fn()"
+		     },
+		     "resumed": {
+		      "!type": "fn()"
+		     },
+		     "pauseUpdate": {
+		      "!type": "fn()"
+		     },
+		     "shutdown": {
+		      "!type": "fn()"
+		     }
 		    }
 		   },
 		   "StateManager": {
 		    "!type": "fn(game: +Phaser.Game, pendingState: +Phaser.State|?)",
-		    "game": {
-		     "!type": "+Phaser.Game"
-		    },
-		    "states": {
-		     "!type": "?"
-		    },
-		    "_pendingState": {
-		     "!type": "+Phaser.State"
-		    },
-		    "_clearWorld": {
-		     "!type": "bool"
-		    },
-		    "_clearCache": {
-		     "!type": "bool"
-		    },
-		    "_created": {
-		     "!type": "bool"
-		    },
-		    "_args": {
-		     "!type": "[?]"
-		    },
-		    "current": {
-		     "!type": "string"
-		    },
-		    "onStateChange": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "onInitCallback": {
-		     "!type": "+function"
-		    },
-		    "onPreloadCallback": {
-		     "!type": "+function"
-		    },
-		    "onCreateCallback": {
-		     "!type": "+function"
-		    },
-		    "onUpdateCallback": {
-		     "!type": "+function"
-		    },
-		    "onRenderCallback": {
-		     "!type": "+function"
-		    },
-		    "onResizeCallback": {
-		     "!type": "+function"
-		    },
-		    "onPreRenderCallback": {
-		     "!type": "+function"
-		    },
-		    "onLoadUpdateCallback": {
-		     "!type": "+function"
-		    },
-		    "onLoadRenderCallback": {
-		     "!type": "+function"
-		    },
-		    "onPausedCallback": {
-		     "!type": "+function"
-		    },
-		    "onResumedCallback": {
-		     "!type": "+function"
-		    },
-		    "onPauseUpdateCallback": {
-		     "!type": "+function"
-		    },
-		    "onShutDownCallback": {
-		     "!type": "+function"
-		    },
-		    "boot": {
-		     "!type": "fn()"
-		    },
-		    "add": {
-		     "!type": "fn()"
-		    },
-		    "remove": {
-		     "!type": "fn()"
-		    },
-		    "start": {
-		     "!type": "fn()"
-		    },
-		    "restart": {
-		     "!type": "fn()"
-		    },
-		    "dummy": {
-		     "!type": "fn()"
-		    },
-		    "preUpdate": {
-		     "!type": "fn()"
-		    },
-		    "clearCurrentState": {
-		     "!type": "fn()"
-		    },
-		    "checkState": {
-		     "!type": "fn()"
-		    },
-		    "link": {
-		     "!type": "fn()"
-		    },
-		    "unlink": {
-		     "!type": "fn()"
-		    },
-		    "setCurrentState": {
-		     "!type": "fn()"
-		    },
-		    "getCurrentState": {
-		     "!type": "fn()"
-		    },
-		    "loadComplete": {
-		     "!type": "fn()"
-		    },
-		    "pause": {
-		     "!type": "fn()"
-		    },
-		    "resume": {
-		     "!type": "fn()"
-		    },
-		    "update": {
-		     "!type": "fn()"
-		    },
-		    "pauseUpdate": {
-		     "!type": "fn()"
-		    },
-		    "preRender": {
-		     "!type": "fn()"
-		    },
-		    "resize": {
-		     "!type": "fn()"
-		    },
-		    "render": {
-		     "!type": "fn()"
-		    },
-		    "destroy": {
-		     "!type": "fn()"
-		    },
-		    "created": {
-		     "!type": "bool"
+		    "prototype": {
+		     "game": {
+		      "!type": "+Phaser.Game"
+		     },
+		     "states": {},
+		     "_pendingState": {
+		      "!type": "+Phaser.State"
+		     },
+		     "_clearWorld": {
+		      "!type": "bool"
+		     },
+		     "_clearCache": {
+		      "!type": "bool"
+		     },
+		     "_created": {
+		      "!type": "bool"
+		     },
+		     "_args": {
+		      "!type": "[?]"
+		     },
+		     "current": {
+		      "!type": "string"
+		     },
+		     "onStateChange": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "onInitCallback": {
+		      "!type": "+function"
+		     },
+		     "onPreloadCallback": {
+		      "!type": "+function"
+		     },
+		     "onCreateCallback": {
+		      "!type": "+function"
+		     },
+		     "onUpdateCallback": {
+		      "!type": "+function"
+		     },
+		     "onRenderCallback": {
+		      "!type": "+function"
+		     },
+		     "onResizeCallback": {
+		      "!type": "+function"
+		     },
+		     "onPreRenderCallback": {
+		      "!type": "+function"
+		     },
+		     "onLoadUpdateCallback": {
+		      "!type": "+function"
+		     },
+		     "onLoadRenderCallback": {
+		      "!type": "+function"
+		     },
+		     "onPausedCallback": {
+		      "!type": "+function"
+		     },
+		     "onResumedCallback": {
+		      "!type": "+function"
+		     },
+		     "onPauseUpdateCallback": {
+		      "!type": "+function"
+		     },
+		     "onShutDownCallback": {
+		      "!type": "+function"
+		     },
+		     "boot": {
+		      "!type": "fn()"
+		     },
+		     "add": {
+		      "!type": "fn()"
+		     },
+		     "remove": {
+		      "!type": "fn()"
+		     },
+		     "start": {
+		      "!type": "fn()"
+		     },
+		     "restart": {
+		      "!type": "fn()"
+		     },
+		     "dummy": {
+		      "!type": "fn()"
+		     },
+		     "preUpdate": {
+		      "!type": "fn()"
+		     },
+		     "clearCurrentState": {
+		      "!type": "fn()"
+		     },
+		     "checkState": {
+		      "!type": "fn()"
+		     },
+		     "link": {
+		      "!type": "fn()"
+		     },
+		     "unlink": {
+		      "!type": "fn()"
+		     },
+		     "setCurrentState": {
+		      "!type": "fn()"
+		     },
+		     "getCurrentState": {
+		      "!type": "fn()"
+		     },
+		     "loadComplete": {
+		      "!type": "fn()"
+		     },
+		     "pause": {
+		      "!type": "fn()"
+		     },
+		     "resume": {
+		      "!type": "fn()"
+		     },
+		     "update": {
+		      "!type": "fn()"
+		     },
+		     "pauseUpdate": {
+		      "!type": "fn()"
+		     },
+		     "preRender": {
+		      "!type": "fn()"
+		     },
+		     "resize": {
+		      "!type": "fn()"
+		     },
+		     "render": {
+		      "!type": "fn()"
+		     },
+		     "destroy": {
+		      "!type": "fn()"
+		     },
+		     "created": {
+		      "!type": "bool"
+		     }
 		    }
 		   },
 		   "StateManager#add": {
 		    "autoStart": {},
 		    "newState": {},
-		    "states[undefined]": {},
-		    "_pendingState": {}
+		    "prototype": {
+		     "states[undefined]": {},
+		     "_pendingState": {}
+		    }
 		   },
 		   "StateManager#add~newState": {
 		    "game": {}
 		   },
 		   "StateManager#remove": {
-		    "callbackContext": {},
-		    "onInitCallback": {},
-		    "onShutDownCallback": {},
-		    "onPreloadCallback": {},
-		    "onLoadRenderCallback": {},
-		    "onLoadUpdateCallback": {},
-		    "onCreateCallback": {},
-		    "onUpdateCallback": {},
-		    "onPreRenderCallback": {},
-		    "onRenderCallback": {},
-		    "onResizeCallback": {},
-		    "onPausedCallback": {},
-		    "onResumedCallback": {},
-		    "onPauseUpdateCallback": {}
+		    "prototype": {
+		     "callbackContext": {},
+		     "onInitCallback": {},
+		     "onShutDownCallback": {},
+		     "onPreloadCallback": {},
+		     "onLoadRenderCallback": {},
+		     "onLoadUpdateCallback": {},
+		     "onCreateCallback": {},
+		     "onUpdateCallback": {},
+		     "onPreRenderCallback": {},
+		     "onRenderCallback": {},
+		     "onResizeCallback": {},
+		     "onPausedCallback": {},
+		     "onResumedCallback": {},
+		     "onPauseUpdateCallback": {}
+		    }
 		   },
 		   "StateManager#start": {
 		    "clearWorld": {},
 		    "clearCache": {},
-		    "_pendingState": {},
-		    "_clearWorld": {},
-		    "_clearCache": {},
-		    "_args": {}
+		    "prototype": {
+		     "_pendingState": {},
+		     "_clearWorld": {},
+		     "_clearCache": {},
+		     "_args": {}
+		    }
 		   },
 		   "StateManager#restart": {
 		    "clearWorld": {},
 		    "clearCache": {},
-		    "_pendingState": {},
-		    "_clearWorld": {},
-		    "_clearCache": {},
-		    "_args": {}
+		    "prototype": {
+		     "_pendingState": {},
+		     "_clearWorld": {},
+		     "_clearCache": {},
+		     "_args": {}
+		    }
 		   },
 		   "StateManager#preUpdate": {
 		    "previousStateKey": {},
-		    "_pendingState": {}
+		    "prototype": {
+		     "_pendingState": {}
+		    }
 		   },
 		   "StateManager#checkState": {
 		    "valid": {}
@@ -3610,377 +3844,383 @@
 		    "physics": {}
 		   },
 		   "StateManager#setCurrentState": {
-		    "callbackContext": {},
-		    "onInitCallback": {},
-		    "onPreloadCallback": {},
-		    "onLoadRenderCallback": {},
-		    "onLoadUpdateCallback": {},
-		    "onCreateCallback": {},
-		    "onUpdateCallback": {},
-		    "onPreRenderCallback": {},
-		    "onRenderCallback": {},
-		    "onResizeCallback": {},
-		    "onPausedCallback": {},
-		    "onResumedCallback": {},
-		    "onPauseUpdateCallback": {},
-		    "onShutDownCallback": {},
-		    "current": {},
-		    "_created": {},
-		    "_args": {}
+		    "prototype": {
+		     "callbackContext": {},
+		     "onInitCallback": {},
+		     "onPreloadCallback": {},
+		     "onLoadRenderCallback": {},
+		     "onLoadUpdateCallback": {},
+		     "onCreateCallback": {},
+		     "onUpdateCallback": {},
+		     "onPreRenderCallback": {},
+		     "onRenderCallback": {},
+		     "onResizeCallback": {},
+		     "onPausedCallback": {},
+		     "onResumedCallback": {},
+		     "onPauseUpdateCallback": {},
+		     "onShutDownCallback": {},
+		     "current": {},
+		     "_created": {},
+		     "_args": {}
+		    }
 		   },
 		   "StateManager#setCurrentState#game": {
 		    "_kickstart": {}
 		   },
 		   "StateManager#loadComplete": {
-		    "_created": {}
+		    "prototype": {
+		     "_created": {}
+		    }
 		   },
 		   "StateManager#destroy": {
-		    "callbackContext": {},
-		    "onInitCallback": {},
-		    "onShutDownCallback": {},
-		    "onPreloadCallback": {},
-		    "onLoadRenderCallback": {},
-		    "onLoadUpdateCallback": {},
-		    "onCreateCallback": {},
-		    "onUpdateCallback": {},
-		    "onRenderCallback": {},
-		    "onPausedCallback": {},
-		    "onResumedCallback": {},
-		    "onPauseUpdateCallback": {},
-		    "game": {},
-		    "states": {},
-		    "_pendingState": {},
-		    "current": {}
+		    "prototype": {
+		     "callbackContext": {},
+		     "onInitCallback": {},
+		     "onShutDownCallback": {},
+		     "onPreloadCallback": {},
+		     "onLoadRenderCallback": {},
+		     "onLoadUpdateCallback": {},
+		     "onCreateCallback": {},
+		     "onUpdateCallback": {},
+		     "onRenderCallback": {},
+		     "onPausedCallback": {},
+		     "onResumedCallback": {},
+		     "onPauseUpdateCallback": {},
+		     "game": {},
+		     "states": {},
+		     "_pendingState": {},
+		     "current": {}
+		    }
 		   },
 		   "World": {
 		    "!type": "fn(game: +Phaser.Game)",
-		    "bounds": {
-		     "!type": "+Phaser.Rectangle"
-		    },
-		    "camera": {
-		     "!type": "+Phaser.Camera"
-		    },
-		    "_definedSize": {
-		     "!type": "bool"
-		    },
-		    "_width": {
-		     "!type": "number"
-		    },
-		    "_height": {
-		     "!type": "number"
-		    },
-		    "boot": {
-		     "!type": "fn()"
-		    },
-		    "stateChange": {
-		     "!type": "fn()"
-		    },
-		    "setBounds": {
-		     "!type": "fn()"
-		    },
-		    "resize": {
-		     "!type": "fn()"
-		    },
-		    "shutdown": {
-		     "!type": "fn()"
-		    },
-		    "wrap": {
-		     "!type": "fn()"
-		    },
-		    "width": {
-		     "!type": "number"
-		    },
-		    "height": {
-		     "!type": "number"
-		    },
-		    "centerX": {
-		     "!type": "number"
-		    },
-		    "centerY": {
-		     "!type": "number"
-		    },
-		    "randomX": {
-		     "!type": "number"
-		    },
-		    "randomY": {
-		     "!type": "number"
-		    },
-		    "game": {
-		     "!type": "+Phaser.Game"
-		    },
-		    "name": {
-		     "!type": "string"
-		    },
-		    "z": {
-		     "!type": "+integer"
-		    },
-		    "type": {
-		     "!type": "+integer"
-		    },
-		    "physicsType": {
-		     "!type": "number"
-		    },
-		    "alive": {
-		     "!type": "bool"
-		    },
-		    "exists": {
-		     "!type": "bool"
-		    },
-		    "ignoreDestroy": {
-		     "!type": "bool"
-		    },
-		    "pendingDestroy": {
-		     "!type": "bool"
-		    },
-		    "classType": {
-		     "!type": "?"
-		    },
-		    "cursor": {
-		     "!type": "+DisplayObject"
-		    },
-		    "enableBody": {
-		     "!type": "bool"
-		    },
-		    "enableBodyDebug": {
-		     "!type": "bool"
-		    },
-		    "physicsBodyType": {
-		     "!type": "+integer"
-		    },
-		    "physicsSortDirection": {
-		     "!type": "+integer"
-		    },
-		    "onDestroy": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "cursorIndex": {
-		     "!type": "+integer"
-		    },
-		    "fixedToCamera": {
-		     "!type": "bool"
-		    },
-		    "cameraOffset": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "hash": {
-		     "!type": "+array"
-		    },
-		    "_sortProperty": {
-		     "!type": "string"
-		    },
-		    "add": {
-		     "!type": "fn(child: +DisplayObject, silent: bool) -> ?"
-		    },
-		    "addToHash": {
-		     "!type": "fn(child: +DisplayObject) -> ?"
-		    },
-		    "removeFromHash": {
-		     "!type": "fn(child: +DisplayObject) -> ?"
-		    },
-		    "addMultiple": {
-		     "!type": "fn(children: [?]|+Phaser.Group, silent: bool) -> ?"
-		    },
-		    "addAt": {
-		     "!type": "fn(child: +DisplayObject, index: +integer, silent: bool) -> ?"
-		    },
-		    "getAt": {
-		     "!type": "fn(index: +integer) -> ?"
-		    },
-		    "create": {
-		     "!type": "fn(x: number, y: number, key: string, frame: +integer|string, exists: bool) -> ?"
-		    },
-		    "createMultiple": {
-		     "!type": "fn(quantity: +integer, key: string, frame: +integer|string, exists: bool)"
-		    },
-		    "updateZ": {
-		     "!type": "fn()"
-		    },
-		    "resetCursor": {
-		     "!type": "fn(index: +integer) -> ?"
-		    },
-		    "next": {
-		     "!type": "fn() -> ?"
-		    },
-		    "previous": {
-		     "!type": "fn() -> ?"
-		    },
-		    "swap": {
-		     "!type": "fn(child1: +any, child2: +any)"
-		    },
-		    "bringToTop": {
-		     "!type": "fn(child: +any) -> ?"
-		    },
-		    "sendToBack": {
-		     "!type": "fn(child: +any) -> ?"
-		    },
-		    "moveUp": {
-		     "!type": "fn(child: +any) -> ?"
-		    },
-		    "moveDown": {
-		     "!type": "fn(child: +any) -> ?"
-		    },
-		    "xy": {
-		     "!type": "fn(index: +integer, x: number, y: number)"
-		    },
-		    "reverse": {
-		     "!type": "fn()"
-		    },
-		    "getIndex": {
-		     "!type": "fn(child: +any) -> ?"
-		    },
-		    "replace": {
-		     "!type": "fn(oldChild: +any, newChild: +any) -> ?"
-		    },
-		    "hasProperty": {
-		     "!type": "fn(child: +any, key: [?]) -> ?"
-		    },
-		    "setProperty": {
-		     "!type": "fn(child: +any, key: +array, value: +any, operation: +integer, force: bool) -> ?"
-		    },
-		    "checkProperty": {
-		     "!type": "fn(child: +any, key: +array, value: +any, force: bool) -> ?"
-		    },
-		    "set": {
-		     "!type": "fn(child: +Phaser.Sprite, key: string, value: +any, checkAlive: bool, checkVisible: bool, operation: +integer, force: bool) -> ?"
-		    },
-		    "setAll": {
-		     "!type": "fn(key: string, value: +any, checkAlive: bool, checkVisible: bool, operation: +integer, force: bool)"
-		    },
-		    "setAllChildren": {
-		     "!type": "fn(key: string, value: +any, checkAlive: bool, checkVisible: bool, operation: +integer, force: bool)"
-		    },
-		    "checkAll": {
-		     "!type": "fn(key: string, value: +any, checkAlive: bool, checkVisible: bool, force: bool)"
-		    },
-		    "addAll": {
-		     "!type": "fn(property: string, amount: number, checkAlive: bool, checkVisible: bool)"
-		    },
-		    "subAll": {
-		     "!type": "fn(property: string, amount: number, checkAlive: bool, checkVisible: bool)"
-		    },
-		    "multiplyAll": {
-		     "!type": "fn(property: string, amount: number, checkAlive: bool, checkVisible: bool)"
-		    },
-		    "divideAll": {
-		     "!type": "fn(property: string, amount: number, checkAlive: bool, checkVisible: bool)"
-		    },
-		    "callAllExists": {
-		     "!type": "fn(callback: string, existsValue: bool, parameter: +any)"
-		    },
-		    "callbackFromArray": {
-		     "!type": "fn(child: ?, callback: +array, length: +integer)"
-		    },
-		    "callAll": {
-		     "!type": "fn(method: string, context: string, args: +any)"
-		    },
-		    "preUpdate": {
-		     "!type": "fn()"
-		    },
-		    "update": {
-		     "!type": "fn()"
-		    },
-		    "postUpdate": {
-		     "!type": "fn()"
-		    },
-		    "filter": {
-		     "!type": "fn(predicate: +function, checkExists: bool) -> ?"
-		    },
-		    "forEach": {
-		     "!type": "fn(callback: +function, callbackContext: ?, checkExists: bool, args: +any)"
-		    },
-		    "forEachExists": {
-		     "!type": "fn(callback: +function, callbackContext: ?, args: +any)"
-		    },
-		    "forEachAlive": {
-		     "!type": "fn(callback: +function, callbackContext: ?, args: +any)"
-		    },
-		    "forEachDead": {
-		     "!type": "fn(callback: +function, callbackContext: ?, args: +any)"
-		    },
-		    "sort": {
-		     "!type": "fn(key: string, order: +integer)"
-		    },
-		    "customSort": {
-		     "!type": "fn(sortHandler: +function, context: ?)"
-		    },
-		    "ascendingSortHandler": {
-		     "!type": "fn(a: ?, b: ?)"
-		    },
-		    "descendingSortHandler": {
-		     "!type": "fn(a: ?, b: ?)"
-		    },
-		    "iterate": {
-		     "!type": "fn(key: string, value: +any, returnType: +integer, callback: +function, callbackContext: ?, args: [?]) -> ?"
-		    },
-		    "getFirstExists": {
-		     "!type": "fn(exists: bool) -> ?"
-		    },
-		    "getFirstAlive": {
-		     "!type": "fn() -> ?"
-		    },
-		    "getFirstDead": {
-		     "!type": "fn() -> ?"
-		    },
-		    "getTop": {
-		     "!type": "fn() -> ?"
-		    },
-		    "getBottom": {
-		     "!type": "fn() -> ?"
-		    },
-		    "countLiving": {
-		     "!type": "fn() -> ?"
-		    },
-		    "countDead": {
-		     "!type": "fn() -> ?"
-		    },
-		    "getRandom": {
-		     "!type": "fn(startIndex: +integer, length: +integer) -> ?"
-		    },
-		    "remove": {
-		     "!type": "fn(child: +any, destroy: bool, silent: bool) -> ?"
-		    },
-		    "moveAll": {
-		     "!type": "fn(group: +Phaser.Group, silent: bool) -> ?"
-		    },
-		    "removeAll": {
-		     "!type": "fn(destroy: bool, silent: bool)"
-		    },
-		    "removeBetween": {
-		     "!type": "fn(startIndex: +integer, endIndex: +integer, destroy: bool, silent: bool)"
-		    },
-		    "destroy": {
-		     "!type": "fn(destroyChildren: bool, soft: bool)"
-		    },
-		    "total": {
-		     "!type": "+integer"
-		    },
-		    "length": {
-		     "!type": "+integer"
-		    },
-		    "angle": {
-		     "!type": "number"
-		    },
-		    "x": {
-		     "!type": "number"
-		    },
-		    "y": {
-		     "!type": "number"
-		    },
-		    "rotation": {
-		     "!type": "number"
-		    },
-		    "visible": {
-		     "!type": "bool"
-		    },
-		    "alpha": {
-		     "!type": "number"
-		    },
-		    "children": {
-		     "!type": "?"
+		    "prototype": {
+		     "bounds": {
+		      "!type": "+Phaser.Rectangle"
+		     },
+		     "camera": {
+		      "!type": "+Phaser.Camera"
+		     },
+		     "_definedSize": {
+		      "!type": "bool"
+		     },
+		     "_width": {
+		      "!type": "number"
+		     },
+		     "_height": {
+		      "!type": "number"
+		     },
+		     "boot": {
+		      "!type": "fn()"
+		     },
+		     "stateChange": {
+		      "!type": "fn()"
+		     },
+		     "setBounds": {
+		      "!type": "fn()"
+		     },
+		     "resize": {
+		      "!type": "fn()"
+		     },
+		     "shutdown": {
+		      "!type": "fn()"
+		     },
+		     "wrap": {
+		      "!type": "fn()"
+		     },
+		     "width": {
+		      "!type": "number"
+		     },
+		     "height": {
+		      "!type": "number"
+		     },
+		     "centerX": {
+		      "!type": "number"
+		     },
+		     "centerY": {
+		      "!type": "number"
+		     },
+		     "randomX": {
+		      "!type": "number"
+		     },
+		     "randomY": {
+		      "!type": "number"
+		     },
+		     "game": {
+		      "!type": "+Phaser.Game"
+		     },
+		     "name": {
+		      "!type": "string"
+		     },
+		     "z": {
+		      "!type": "number"
+		     },
+		     "type": {
+		      "!type": "number"
+		     },
+		     "physicsType": {
+		      "!type": "number"
+		     },
+		     "alive": {
+		      "!type": "bool"
+		     },
+		     "exists": {
+		      "!type": "bool"
+		     },
+		     "ignoreDestroy": {
+		      "!type": "bool"
+		     },
+		     "pendingDestroy": {
+		      "!type": "bool"
+		     },
+		     "classType": {},
+		     "cursor": {
+		      "!type": "+DisplayObject"
+		     },
+		     "enableBody": {
+		      "!type": "bool"
+		     },
+		     "enableBodyDebug": {
+		      "!type": "bool"
+		     },
+		     "physicsBodyType": {
+		      "!type": "number"
+		     },
+		     "physicsSortDirection": {
+		      "!type": "number"
+		     },
+		     "onDestroy": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "cursorIndex": {
+		      "!type": "number"
+		     },
+		     "fixedToCamera": {
+		      "!type": "bool"
+		     },
+		     "cameraOffset": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "hash": {
+		      "!type": "+array"
+		     },
+		     "_sortProperty": {
+		      "!type": "string"
+		     },
+		     "add": {
+		      "!type": "fn(child: +DisplayObject, silent: bool) -> ?"
+		     },
+		     "addToHash": {
+		      "!type": "fn(child: +DisplayObject) -> ?"
+		     },
+		     "removeFromHash": {
+		      "!type": "fn(child: +DisplayObject) -> ?"
+		     },
+		     "addMultiple": {
+		      "!type": "fn(children: [?]|+Phaser.Group, silent: bool) -> ?"
+		     },
+		     "addAt": {
+		      "!type": "fn(child: +DisplayObject, index: number, silent: bool) -> ?"
+		     },
+		     "getAt": {
+		      "!type": "fn(index: number) -> ?"
+		     },
+		     "create": {
+		      "!type": "fn(x: number, y: number, key: string, frame: number|string, exists: bool) -> ?"
+		     },
+		     "createMultiple": {
+		      "!type": "fn(quantity: number, key: string, frame: number|string, exists: bool)"
+		     },
+		     "updateZ": {
+		      "!type": "fn()"
+		     },
+		     "resetCursor": {
+		      "!type": "fn(index: number) -> ?"
+		     },
+		     "next": {
+		      "!type": "fn() -> ?"
+		     },
+		     "previous": {
+		      "!type": "fn() -> ?"
+		     },
+		     "swap": {
+		      "!type": "fn(child1: +any, child2: +any)"
+		     },
+		     "bringToTop": {
+		      "!type": "fn(child: +any) -> ?"
+		     },
+		     "sendToBack": {
+		      "!type": "fn(child: +any) -> ?"
+		     },
+		     "moveUp": {
+		      "!type": "fn(child: +any) -> ?"
+		     },
+		     "moveDown": {
+		      "!type": "fn(child: +any) -> ?"
+		     },
+		     "xy": {
+		      "!type": "fn(index: number, x: number, y: number)"
+		     },
+		     "reverse": {
+		      "!type": "fn()"
+		     },
+		     "getIndex": {
+		      "!type": "fn(child: +any) -> ?"
+		     },
+		     "replace": {
+		      "!type": "fn(oldChild: +any, newChild: +any) -> ?"
+		     },
+		     "hasProperty": {
+		      "!type": "fn(child: +any, key: [?]) -> ?"
+		     },
+		     "setProperty": {
+		      "!type": "fn(child: +any, key: +array, value: +any, operation: number, force: bool) -> ?"
+		     },
+		     "checkProperty": {
+		      "!type": "fn(child: +any, key: +array, value: +any, force: bool) -> ?"
+		     },
+		     "set": {
+		      "!type": "fn(child: +Phaser.Sprite, key: string, value: +any, checkAlive: bool, checkVisible: bool, operation: number, force: bool) -> ?"
+		     },
+		     "setAll": {
+		      "!type": "fn(key: string, value: +any, checkAlive: bool, checkVisible: bool, operation: number, force: bool)"
+		     },
+		     "setAllChildren": {
+		      "!type": "fn(key: string, value: +any, checkAlive: bool, checkVisible: bool, operation: number, force: bool)"
+		     },
+		     "checkAll": {
+		      "!type": "fn(key: string, value: +any, checkAlive: bool, checkVisible: bool, force: bool)"
+		     },
+		     "addAll": {
+		      "!type": "fn(property: string, amount: number, checkAlive: bool, checkVisible: bool)"
+		     },
+		     "subAll": {
+		      "!type": "fn(property: string, amount: number, checkAlive: bool, checkVisible: bool)"
+		     },
+		     "multiplyAll": {
+		      "!type": "fn(property: string, amount: number, checkAlive: bool, checkVisible: bool)"
+		     },
+		     "divideAll": {
+		      "!type": "fn(property: string, amount: number, checkAlive: bool, checkVisible: bool)"
+		     },
+		     "callAllExists": {
+		      "!type": "fn(callback: string, existsValue: bool, parameter: +any)"
+		     },
+		     "callbackFromArray": {
+		      "!type": "fn(child: ?, callback: +array, length: number)"
+		     },
+		     "callAll": {
+		      "!type": "fn(method: string, context: string, args: +any)"
+		     },
+		     "preUpdate": {
+		      "!type": "fn()"
+		     },
+		     "update": {
+		      "!type": "fn()"
+		     },
+		     "postUpdate": {
+		      "!type": "fn()"
+		     },
+		     "filter": {
+		      "!type": "fn(predicate: +function, checkExists: bool) -> ?"
+		     },
+		     "forEach": {
+		      "!type": "fn(callback: +function, callbackContext: ?, checkExists: bool, args: +any)"
+		     },
+		     "forEachExists": {
+		      "!type": "fn(callback: +function, callbackContext: ?, args: +any)"
+		     },
+		     "forEachAlive": {
+		      "!type": "fn(callback: +function, callbackContext: ?, args: +any)"
+		     },
+		     "forEachDead": {
+		      "!type": "fn(callback: +function, callbackContext: ?, args: +any)"
+		     },
+		     "sort": {
+		      "!type": "fn(key: string, order: number)"
+		     },
+		     "customSort": {
+		      "!type": "fn(sortHandler: +function, context: ?)"
+		     },
+		     "ascendingSortHandler": {
+		      "!type": "fn(a: ?, b: ?)"
+		     },
+		     "descendingSortHandler": {
+		      "!type": "fn(a: ?, b: ?)"
+		     },
+		     "iterate": {
+		      "!type": "fn(key: string, value: +any, returnType: number, callback: +function, callbackContext: ?, args: [?]) -> ?"
+		     },
+		     "getFirstExists": {
+		      "!type": "fn(exists: bool) -> ?"
+		     },
+		     "getFirstAlive": {
+		      "!type": "fn() -> ?"
+		     },
+		     "getFirstDead": {
+		      "!type": "fn() -> ?"
+		     },
+		     "getTop": {
+		      "!type": "fn() -> ?"
+		     },
+		     "getBottom": {
+		      "!type": "fn() -> ?"
+		     },
+		     "countLiving": {
+		      "!type": "fn() -> ?"
+		     },
+		     "countDead": {
+		      "!type": "fn() -> ?"
+		     },
+		     "getRandom": {
+		      "!type": "fn(startIndex: number, length: number) -> ?"
+		     },
+		     "remove": {
+		      "!type": "fn(child: +any, destroy: bool, silent: bool) -> ?"
+		     },
+		     "moveAll": {
+		      "!type": "fn(group: +Phaser.Group, silent: bool) -> ?"
+		     },
+		     "removeAll": {
+		      "!type": "fn(destroy: bool, silent: bool)"
+		     },
+		     "removeBetween": {
+		      "!type": "fn(startIndex: number, endIndex: number, destroy: bool, silent: bool)"
+		     },
+		     "destroy": {
+		      "!type": "fn(destroyChildren: bool, soft: bool)"
+		     },
+		     "total": {
+		      "!type": "number"
+		     },
+		     "length": {
+		      "!type": "number"
+		     },
+		     "angle": {
+		      "!type": "number"
+		     },
+		     "x": {
+		      "!type": "number"
+		     },
+		     "y": {
+		      "!type": "number"
+		     },
+		     "rotation": {
+		      "!type": "number"
+		     },
+		     "visible": {
+		      "!type": "bool"
+		     },
+		     "alpha": {
+		      "!type": "number"
+		     },
+		     "children": {}
 		    }
 		   },
 		   "World#boot": {
-		    "camera": {}
+		    "prototype": {
+		     "camera": {}
+		    }
 		   },
 		   "World#boot#camera": {
 		    "displayObject": {},
@@ -3990,15 +4230,19 @@
 		    "camera": {}
 		   },
 		   "World#stateChange": {
-		    "x": {},
-		    "y": {}
+		    "prototype": {
+		     "x": {},
+		     "y": {}
+		    }
 		   },
 		   "World#setBounds": {
-		    "_definedSize": {},
-		    "_width": {},
-		    "_height": {},
-		    "x": {},
-		    "y": {}
+		    "prototype": {
+		     "_definedSize": {},
+		     "_width": {},
+		     "_height": {},
+		     "x": {},
+		     "y": {}
+		    }
 		   },
 		   "World#resize": {
 		    "width": {},
@@ -4016,288 +4260,290 @@
 		   },
 		   "BitmapData": {
 		    "!type": "fn(game: +Phaser.Game, key: string, width: number, height: number)",
-		    "width": {
-		     "!type": "number"
-		    },
-		    "height": {
-		     "!type": "number"
-		    },
-		    "game": {
-		     "!type": "+Phaser.Game"
-		    },
-		    "key": {
-		     "!type": "string"
-		    },
-		    "canvas": {
-		     "!type": "+HTMLCanvasElement"
-		    },
-		    "context": {
-		     "!type": "+CanvasRenderingContext2D"
-		    },
-		    "ctx": {
-		     "!type": "+CanvasRenderingContext2D"
-		    },
-		    "imageData": {
-		     "!type": "+ImageData"
-		    },
-		    "data": {
-		     "!type": "+Uint8ClampedArray"
-		    },
-		    "pixels": {
-		     "!type": "+Uint32Array"
-		    },
-		    "buffer": {},
-		    "baseTexture": {
-		     "!type": "+PIXI.BaseTexture"
-		    },
-		    "texture": {
-		     "!type": "+PIXI.Texture"
-		    },
-		    "textureFrame": {
-		     "!type": "+Phaser.Frame"
-		    },
-		    "type": {
-		     "!type": "number"
-		    },
-		    "disableTextureUpload": {
-		     "!type": "bool"
-		    },
-		    "dirty": {
-		     "!type": "bool"
-		    },
-		    "cls": {
-		     "!type": "fn()"
-		    },
-		    "_image": {
-		     "!type": "number"
-		    },
-		    "_pos": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "_size": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "_scale": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "_rotate": {
-		     "!type": "number"
-		    },
-		    "_alpha": {
-		     "!type": "?"
-		    },
-		    "_anchor": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "_tempR": {
-		     "!type": "number"
-		    },
-		    "_tempG": {
-		     "!type": "number"
-		    },
-		    "_tempB": {
-		     "!type": "number"
-		    },
-		    "_circle": {
-		     "!type": "+Phaser.Circle"
-		    },
-		    "_swapCanvas": {
-		     "!type": "+HTMLCanvasElement"
-		    },
-		    "move": {
-		     "!type": "fn()"
-		    },
-		    "moveH": {
-		     "!type": "fn()"
-		    },
-		    "moveV": {
-		     "!type": "fn()"
-		    },
-		    "add": {
-		     "!type": "fn()"
-		    },
-		    "load": {
-		     "!type": "fn()"
-		    },
-		    "clear": {
-		     "!type": "fn()"
-		    },
-		    "fill": {
-		     "!type": "fn()"
-		    },
-		    "generateTexture": {
-		     "!type": "fn()"
-		    },
-		    "resize": {
-		     "!type": "fn()"
-		    },
-		    "update": {
-		     "!type": "fn()"
-		    },
-		    "processPixelRGB": {
-		     "!type": "fn()"
-		    },
-		    "processPixel": {
-		     "!type": "fn()"
-		    },
-		    "replaceRGB": {
-		     "!type": "fn()"
-		    },
-		    "setHSL": {
-		     "!type": "fn()"
-		    },
-		    "shiftHSL": {
-		     "!type": "fn()"
-		    },
-		    "setPixel32": {
-		     "!type": "fn()"
-		    },
-		    "setPixel": {
-		     "!type": "fn()"
-		    },
-		    "getPixel": {
-		     "!type": "fn()"
-		    },
-		    "getPixel32": {
-		     "!type": "fn()"
-		    },
-		    "getPixelRGB": {
-		     "!type": "fn()"
-		    },
-		    "getPixels": {
-		     "!type": "fn()"
-		    },
-		    "getFirstPixel": {
-		     "!type": "fn()"
-		    },
-		    "getBounds": {
-		     "!type": "fn()"
-		    },
-		    "addToWorld": {
-		     "!type": "fn()"
-		    },
-		    "copy": {
-		     "!type": "fn()"
-		    },
-		    "copyRect": {
-		     "!type": "fn()"
-		    },
-		    "draw": {
-		     "!type": "fn()"
-		    },
-		    "drawGroup": {
-		     "!type": "fn()"
-		    },
-		    "drawFull": {
-		     "!type": "fn()"
-		    },
-		    "shadow": {
-		     "!type": "fn()"
-		    },
-		    "alphaMask": {
-		     "!type": "fn()"
-		    },
-		    "extract": {
-		     "!type": "fn()"
-		    },
-		    "rect": {
-		     "!type": "fn()"
-		    },
-		    "text": {
-		     "!type": "fn()"
-		    },
-		    "circle": {
-		     "!type": "fn()"
-		    },
-		    "line": {
-		     "!type": "fn()"
-		    },
-		    "textureLine": {
-		     "!type": "fn()"
-		    },
-		    "render": {
-		     "!type": "fn()"
-		    },
-		    "destroy": {
-		     "!type": "fn()"
-		    },
-		    "blendReset": {
-		     "!type": "fn()"
-		    },
-		    "blendSourceOver": {
-		     "!type": "fn()"
-		    },
-		    "blendSourceIn": {
-		     "!type": "fn()"
-		    },
-		    "blendSourceOut": {
-		     "!type": "fn()"
-		    },
-		    "blendSourceAtop": {
-		     "!type": "fn()"
-		    },
-		    "blendDestinationOver": {
-		     "!type": "fn()"
-		    },
-		    "blendDestinationIn": {
-		     "!type": "fn()"
-		    },
-		    "blendDestinationOut": {
-		     "!type": "fn()"
-		    },
-		    "blendDestinationAtop": {
-		     "!type": "fn()"
-		    },
-		    "blendXor": {
-		     "!type": "fn()"
-		    },
-		    "blendAdd": {
-		     "!type": "fn()"
-		    },
-		    "blendMultiply": {
-		     "!type": "fn()"
-		    },
-		    "blendScreen": {
-		     "!type": "fn()"
-		    },
-		    "blendOverlay": {
-		     "!type": "fn()"
-		    },
-		    "blendDarken": {
-		     "!type": "fn()"
-		    },
-		    "blendLighten": {
-		     "!type": "fn()"
-		    },
-		    "blendColorDodge": {
-		     "!type": "fn()"
-		    },
-		    "blendColorBurn": {
-		     "!type": "fn()"
-		    },
-		    "blendHardLight": {
-		     "!type": "fn()"
-		    },
-		    "blendSoftLight": {
-		     "!type": "fn()"
-		    },
-		    "blendDifference": {
-		     "!type": "fn()"
-		    },
-		    "blendExclusion": {
-		     "!type": "fn()"
-		    },
-		    "blendHue": {
-		     "!type": "fn()"
-		    },
-		    "blendSaturation": {
-		     "!type": "fn()"
-		    },
-		    "blendColor": {
-		     "!type": "fn()"
-		    },
-		    "blendLuminosity": {
-		     "!type": "fn()"
+		    "width": {},
+		    "height": {},
+		    "prototype": {
+		     "game": {
+		      "!type": "+Phaser.Game"
+		     },
+		     "key": {
+		      "!type": "string"
+		     },
+		     "width": {
+		      "!type": "number"
+		     },
+		     "height": {
+		      "!type": "number"
+		     },
+		     "canvas": {
+		      "!type": "+HTMLCanvasElement"
+		     },
+		     "context": {
+		      "!type": "+CanvasRenderingContext2D"
+		     },
+		     "ctx": {
+		      "!type": "+CanvasRenderingContext2D"
+		     },
+		     "imageData": {
+		      "!type": "+ImageData"
+		     },
+		     "data": {
+		      "!type": "+Uint8ClampedArray"
+		     },
+		     "pixels": {
+		      "!type": "+Uint32Array"
+		     },
+		     "buffer": {},
+		     "baseTexture": {
+		      "!type": "+PIXI.BaseTexture"
+		     },
+		     "texture": {
+		      "!type": "+PIXI.Texture"
+		     },
+		     "textureFrame": {
+		      "!type": "+Phaser.Frame"
+		     },
+		     "type": {
+		      "!type": "number"
+		     },
+		     "disableTextureUpload": {
+		      "!type": "bool"
+		     },
+		     "dirty": {
+		      "!type": "bool"
+		     },
+		     "cls": {
+		      "!type": "fn()"
+		     },
+		     "_image": {
+		      "!type": "number"
+		     },
+		     "_pos": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "_size": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "_scale": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "_rotate": {
+		      "!type": "number"
+		     },
+		     "_alpha": {},
+		     "_anchor": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "_tempR": {
+		      "!type": "number"
+		     },
+		     "_tempG": {
+		      "!type": "number"
+		     },
+		     "_tempB": {
+		      "!type": "number"
+		     },
+		     "_circle": {
+		      "!type": "+Phaser.Circle"
+		     },
+		     "_swapCanvas": {
+		      "!type": "+HTMLCanvasElement"
+		     },
+		     "move": {
+		      "!type": "fn()"
+		     },
+		     "moveH": {
+		      "!type": "fn()"
+		     },
+		     "moveV": {
+		      "!type": "fn()"
+		     },
+		     "add": {
+		      "!type": "fn()"
+		     },
+		     "load": {
+		      "!type": "fn()"
+		     },
+		     "clear": {
+		      "!type": "fn()"
+		     },
+		     "fill": {
+		      "!type": "fn()"
+		     },
+		     "generateTexture": {
+		      "!type": "fn()"
+		     },
+		     "resize": {
+		      "!type": "fn()"
+		     },
+		     "update": {
+		      "!type": "fn()"
+		     },
+		     "processPixelRGB": {
+		      "!type": "fn()"
+		     },
+		     "processPixel": {
+		      "!type": "fn()"
+		     },
+		     "replaceRGB": {
+		      "!type": "fn()"
+		     },
+		     "setHSL": {
+		      "!type": "fn()"
+		     },
+		     "shiftHSL": {
+		      "!type": "fn()"
+		     },
+		     "setPixel32": {
+		      "!type": "fn()"
+		     },
+		     "setPixel": {
+		      "!type": "fn()"
+		     },
+		     "getPixel": {
+		      "!type": "fn()"
+		     },
+		     "getPixel32": {
+		      "!type": "fn()"
+		     },
+		     "getPixelRGB": {
+		      "!type": "fn()"
+		     },
+		     "getPixels": {
+		      "!type": "fn()"
+		     },
+		     "getFirstPixel": {
+		      "!type": "fn()"
+		     },
+		     "getBounds": {
+		      "!type": "fn()"
+		     },
+		     "addToWorld": {
+		      "!type": "fn()"
+		     },
+		     "copy": {
+		      "!type": "fn()"
+		     },
+		     "copyRect": {
+		      "!type": "fn()"
+		     },
+		     "draw": {
+		      "!type": "fn()"
+		     },
+		     "drawGroup": {
+		      "!type": "fn()"
+		     },
+		     "drawFull": {
+		      "!type": "fn()"
+		     },
+		     "shadow": {
+		      "!type": "fn()"
+		     },
+		     "alphaMask": {
+		      "!type": "fn()"
+		     },
+		     "extract": {
+		      "!type": "fn()"
+		     },
+		     "rect": {
+		      "!type": "fn()"
+		     },
+		     "text": {
+		      "!type": "fn()"
+		     },
+		     "circle": {
+		      "!type": "fn()"
+		     },
+		     "line": {
+		      "!type": "fn()"
+		     },
+		     "textureLine": {
+		      "!type": "fn()"
+		     },
+		     "render": {
+		      "!type": "fn()"
+		     },
+		     "destroy": {
+		      "!type": "fn()"
+		     },
+		     "blendReset": {
+		      "!type": "fn()"
+		     },
+		     "blendSourceOver": {
+		      "!type": "fn()"
+		     },
+		     "blendSourceIn": {
+		      "!type": "fn()"
+		     },
+		     "blendSourceOut": {
+		      "!type": "fn()"
+		     },
+		     "blendSourceAtop": {
+		      "!type": "fn()"
+		     },
+		     "blendDestinationOver": {
+		      "!type": "fn()"
+		     },
+		     "blendDestinationIn": {
+		      "!type": "fn()"
+		     },
+		     "blendDestinationOut": {
+		      "!type": "fn()"
+		     },
+		     "blendDestinationAtop": {
+		      "!type": "fn()"
+		     },
+		     "blendXor": {
+		      "!type": "fn()"
+		     },
+		     "blendAdd": {
+		      "!type": "fn()"
+		     },
+		     "blendMultiply": {
+		      "!type": "fn()"
+		     },
+		     "blendScreen": {
+		      "!type": "fn()"
+		     },
+		     "blendOverlay": {
+		      "!type": "fn()"
+		     },
+		     "blendDarken": {
+		      "!type": "fn()"
+		     },
+		     "blendLighten": {
+		      "!type": "fn()"
+		     },
+		     "blendColorDodge": {
+		      "!type": "fn()"
+		     },
+		     "blendColorBurn": {
+		      "!type": "fn()"
+		     },
+		     "blendHardLight": {
+		      "!type": "fn()"
+		     },
+		     "blendSoftLight": {
+		      "!type": "fn()"
+		     },
+		     "blendDifference": {
+		      "!type": "fn()"
+		     },
+		     "blendExclusion": {
+		      "!type": "fn()"
+		     },
+		     "blendHue": {
+		      "!type": "fn()"
+		     },
+		     "blendSaturation": {
+		      "!type": "fn()"
+		     },
+		     "blendColor": {
+		      "!type": "fn()"
+		     },
+		     "blendLuminosity": {
+		      "!type": "fn()"
+		     }
 		    },
 		    "getTransform": {
 		     "!type": "fn()",
@@ -4343,11 +4589,15 @@
 		    "y": {},
 		    "width": {},
 		    "height": {},
-		    "dirty": {}
+		    "prototype": {
+		     "dirty": {}
+		    }
 		   },
 		   "BitmapData#fill": {
 		    "a": {},
-		    "dirty": {}
+		    "prototype": {
+		     "dirty": {}
+		    }
 		   },
 		   "BitmapData#fill#context": {
 		    "fillStyle": {}
@@ -4360,9 +4610,11 @@
 		    "src": {}
 		   },
 		   "BitmapData#resize": {
-		    "width": {},
-		    "height": {},
-		    "dirty": {}
+		    "prototype": {
+		     "width": {},
+		     "height": {},
+		     "dirty": {}
+		    }
 		   },
 		   "BitmapData#resize#canvas": {
 		    "width": {},
@@ -4393,10 +4645,12 @@
 		    "y": {},
 		    "width": {},
 		    "height": {},
-		    "imageData": {},
-		    "data": {},
-		    "buffer": {},
-		    "pixels": {}
+		    "prototype": {
+		     "imageData": {},
+		     "data": {},
+		     "buffer": {},
+		     "pixels": {}
+		    }
 		   },
 		   "BitmapData#processPixelRGB": {
 		    "x": {},
@@ -4409,7 +4663,10 @@
 		    "result": {},
 		    "dirty": {},
 		    "ty": {},
-		    "tx": {}
+		    "tx": {},
+		    "prototype": {
+		     "dirty": {}
+		    }
 		   },
 		   "BitmapData#processPixelRGB~result": {
 		    "r": {},
@@ -4429,7 +4686,10 @@
 		    "dirty": {},
 		    "ty": {},
 		    "tx": {},
-		    "pixels[undefined]": {}
+		    "prototype": {
+		     "pixels[undefined]": {},
+		     "dirty": {}
+		    }
 		   },
 		   "BitmapData#replaceRGB": {
 		    "sx": {},
@@ -4439,7 +4699,9 @@
 		    "source": {},
 		    "y": {},
 		    "x": {},
-		    "dirty": {}
+		    "prototype": {
+		     "dirty": {}
+		    }
 		   },
 		   "BitmapData#setHSL": {
 		    "h": {},
@@ -4449,7 +4711,9 @@
 		    "pixel": {},
 		    "y": {},
 		    "x": {},
-		    "dirty": {}
+		    "prototype": {
+		     "dirty": {}
+		    }
 		   },
 		   "BitmapData#setHSL~pixel": {
 		    "h": {},
@@ -4464,7 +4728,9 @@
 		    "pixel": {},
 		    "y": {},
 		    "x": {},
-		    "dirty": {}
+		    "prototype": {
+		     "dirty": {}
+		    }
 		   },
 		   "BitmapData#shiftHSL~pixel": {
 		    "h": {},
@@ -4473,8 +4739,10 @@
 		   },
 		   "BitmapData#setPixel32": {
 		    "immediate": {},
-		    "pixels[undefined]": {},
-		    "dirty": {}
+		    "prototype": {
+		     "pixels[undefined]": {},
+		     "dirty": {}
+		    }
 		   },
 		   "BitmapData#getPixel": {
 		    "out": {},
@@ -4514,8 +4782,12 @@
 		   },
 		   "BitmapData#copy": {
 		    "source": {},
-		    "_image": {},
-		    "_rotate": {},
+		    "prototype": {
+		     "_image": {},
+		     "_rotate": {},
+		     "op": {},
+		     "dirty": {}
+		    },
 		    "tx": {},
 		    "ty": {},
 		    "x": {},
@@ -4524,9 +4796,7 @@
 		    "newHeight": {},
 		    "blendMode": {},
 		    "roundPx": {},
-		    "ctx": {},
-		    "op": {},
-		    "dirty": {}
+		    "ctx": {}
 		   },
 		   "BitmapData#copy#_alpha": {
 		    "current": {},
@@ -4607,331 +4877,392 @@
 		    "image": {},
 		    "width": {},
 		    "ctx": {},
-		    "_circle": {},
-		    "dirty": {}
+		    "prototype": {
+		     "_circle": {},
+		     "dirty": {}
+		    }
 		   },
 		   "BitmapData#textureLine~ctx": {
 		    "fillStyle": {}
 		   },
 		   "BitmapData#render": {
-		    "dirty": {}
+		    "prototype": {
+		     "dirty": {}
+		    }
 		   },
 		   "BitmapData#blendReset": {
-		    "op": {}
+		    "prototype": {
+		     "op": {}
+		    }
 		   },
 		   "BitmapData#blendSourceOver": {
-		    "op": {}
+		    "prototype": {
+		     "op": {}
+		    }
 		   },
 		   "BitmapData#blendSourceIn": {
-		    "op": {}
+		    "prototype": {
+		     "op": {}
+		    }
 		   },
 		   "BitmapData#blendSourceOut": {
-		    "op": {}
+		    "prototype": {
+		     "op": {}
+		    }
 		   },
 		   "BitmapData#blendSourceAtop": {
-		    "op": {}
+		    "prototype": {
+		     "op": {}
+		    }
 		   },
 		   "BitmapData#blendDestinationOver": {
-		    "op": {}
+		    "prototype": {
+		     "op": {}
+		    }
 		   },
 		   "BitmapData#blendDestinationIn": {
-		    "op": {}
+		    "prototype": {
+		     "op": {}
+		    }
 		   },
 		   "BitmapData#blendDestinationOut": {
-		    "op": {}
+		    "prototype": {
+		     "op": {}
+		    }
 		   },
 		   "BitmapData#blendDestinationAtop": {
-		    "op": {}
+		    "prototype": {
+		     "op": {}
+		    }
 		   },
 		   "BitmapData#blendXor": {
-		    "op": {}
+		    "prototype": {
+		     "op": {}
+		    }
 		   },
 		   "BitmapData#blendAdd": {
-		    "op": {}
+		    "prototype": {
+		     "op": {}
+		    }
 		   },
 		   "BitmapData#blendMultiply": {
-		    "op": {}
+		    "prototype": {
+		     "op": {}
+		    }
 		   },
 		   "BitmapData#blendScreen": {
-		    "op": {}
+		    "prototype": {
+		     "op": {}
+		    }
 		   },
 		   "BitmapData#blendOverlay": {
-		    "op": {}
+		    "prototype": {
+		     "op": {}
+		    }
 		   },
 		   "BitmapData#blendDarken": {
-		    "op": {}
+		    "prototype": {
+		     "op": {}
+		    }
 		   },
 		   "BitmapData#blendLighten": {
-		    "op": {}
+		    "prototype": {
+		     "op": {}
+		    }
 		   },
 		   "BitmapData#blendColorDodge": {
-		    "op": {}
+		    "prototype": {
+		     "op": {}
+		    }
 		   },
 		   "BitmapData#blendColorBurn": {
-		    "op": {}
+		    "prototype": {
+		     "op": {}
+		    }
 		   },
 		   "BitmapData#blendHardLight": {
-		    "op": {}
+		    "prototype": {
+		     "op": {}
+		    }
 		   },
 		   "BitmapData#blendSoftLight": {
-		    "op": {}
+		    "prototype": {
+		     "op": {}
+		    }
 		   },
 		   "BitmapData#blendDifference": {
-		    "op": {}
+		    "prototype": {
+		     "op": {}
+		    }
 		   },
 		   "BitmapData#blendExclusion": {
-		    "op": {}
+		    "prototype": {
+		     "op": {}
+		    }
 		   },
 		   "BitmapData#blendHue": {
-		    "op": {}
+		    "prototype": {
+		     "op": {}
+		    }
 		   },
 		   "BitmapData#blendSaturation": {
-		    "op": {}
+		    "prototype": {
+		     "op": {}
+		    }
 		   },
 		   "BitmapData#blendColor": {
-		    "op": {}
+		    "prototype": {
+		     "op": {}
+		    }
 		   },
 		   "BitmapData#blendLuminosity": {
-		    "op": {}
+		    "prototype": {
+		     "op": {}
+		    }
 		   },
 		   "BitmapText": {
 		    "!type": "fn(game: +Phaser.Game, x: number, y: number, font: string, text: string, size: number, align: string)",
-		    "x": {
-		     "!type": "number"
-		    },
-		    "y": {
-		     "!type": "number"
-		    },
-		    "font": {
-		     "!type": "string"
-		    },
-		    "text": {
-		     "!type": "string"
-		    },
+		    "x": {},
+		    "y": {},
+		    "font": {},
+		    "text": {},
 		    "size": {},
-		    "align": {
-		     "!type": "string"
-		    },
-		    "type": {
-		     "!type": "number"
-		    },
-		    "physicsType": {
-		     "!type": "number"
-		    },
-		    "textWidth": {
-		     "!type": "number"
-		    },
-		    "textHeight": {
-		     "!type": "number"
-		    },
-		    "anchor": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "_prevAnchor": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "_glyphs": {
-		     "!type": "+array"
-		    },
-		    "_maxWidth": {
-		     "!type": "number"
-		    },
-		    "_text": {
-		     "!type": "string"
-		    },
-		    "_data": {
-		     "!type": "string"
-		    },
-		    "_font": {
-		     "!type": "string"
-		    },
-		    "_fontSize": {
-		     "!type": "number"
-		    },
-		    "_align": {
-		     "!type": "string"
-		    },
-		    "_tint": {
-		     "!type": "number"
-		    },
-		    "dirty": {
-		     "!type": "bool"
-		    },
-		    "preUpdatePhysics": {},
-		    "preUpdateLifeSpan": {},
-		    "preUpdateInWorld": {},
-		    "preUpdateCore": {},
-		    "preUpdate": {
-		     "!type": "fn() -> ?"
-		    },
-		    "postUpdate": {
-		     "!type": "fn()"
-		    },
-		    "setText": {
-		     "!type": "fn()"
-		    },
-		    "scanLine": {
-		     "!type": "fn()"
-		    },
-		    "updateText": {
-		     "!type": "fn()"
-		    },
-		    "purgeGlyphs": {
-		     "!type": "fn()"
-		    },
-		    "updateTransform": {
-		     "!type": "fn()"
-		    },
-		    "tint": {
-		     "!type": "number"
-		    },
-		    "fontSize": {
-		     "!type": "number"
-		    },
-		    "maxWidth": {
-		     "!type": "number"
-		    },
-		    "smoothed": {
-		     "!type": "bool"
-		    },
-		    "children": {
-		     "!type": "?"
-		    },
-		    "game": {
-		     "!type": "+Phaser.Game"
-		    },
-		    "name": {
-		     "!type": "string"
-		    },
-		    "components": {
-		     "!type": "?"
-		    },
-		    "z": {
-		     "!type": "number"
-		    },
-		    "events": {
-		     "!type": "+Phaser.Events"
-		    },
-		    "animations": {
-		     "!type": "+Phaser.AnimationManager"
-		    },
-		    "key": {
-		     "!type": "string|+Phaser.RenderTexture|+Phaser.BitmapData|+Phaser.Video|+PIXI.Texture"
-		    },
-		    "world": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "debug": {
-		     "!type": "bool"
-		    },
-		    "previousPosition": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "previousRotation": {
-		     "!type": "number"
-		    },
-		    "renderOrderID": {
-		     "!type": "number"
-		    },
-		    "fresh": {
-		     "!type": "bool"
-		    },
-		    "pendingDestroy": {
-		     "!type": "bool"
-		    },
-		    "_bounds": {
-		     "!type": "+Phaser.Rectangle"
-		    },
-		    "_exists": {
-		     "!type": "bool"
-		    },
-		    "exists": {
-		     "!type": "bool"
-		    },
-		    "update": {
-		     "!type": "fn()"
-		    },
-		    "angle": {
-		     "!type": "number"
-		    },
-		    "autoCull": {
-		     "!type": "bool"
-		    },
-		    "inCamera": {
-		     "!type": "bool"
-		    },
-		    "offsetX": {
-		     "!type": "number"
-		    },
-		    "offsetY": {
-		     "!type": "number"
-		    },
-		    "left": {
-		     "!type": "number"
-		    },
-		    "right": {
-		     "!type": "number"
-		    },
-		    "top": {
-		     "!type": "number"
-		    },
-		    "bottom": {
-		     "!type": "number"
-		    },
-		    "destroyPhase": {
-		     "!type": "bool"
-		    },
-		    "destroy": {
-		     "!type": "fn(destroyChildren: bool)"
-		    },
-		    "_fixedToCamera": {
-		     "!type": "bool"
-		    },
-		    "fixedToCamera": {
-		     "!type": "bool"
-		    },
-		    "cameraOffset": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "input": {
-		     "!type": "+Phaser.InputHandler|+null"
-		    },
-		    "inputEnabled": {
-		     "!type": "bool"
-		    },
-		    "checkWorldBounds": {
-		     "!type": "bool"
-		    },
-		    "outOfBoundsKill": {
-		     "!type": "bool"
-		    },
-		    "_outOfBoundsFired": {
-		     "!type": "bool"
-		    },
-		    "inWorld": {
-		     "!type": "bool"
-		    },
-		    "alive": {
-		     "!type": "bool"
-		    },
-		    "lifespan": {
-		     "!type": "number"
-		    },
-		    "revive": {
-		     "!type": "fn(health: number) -> ?"
-		    },
-		    "kill": {
-		     "!type": "fn() -> ?"
-		    },
-		    "body": {
-		     "!type": "+Phaser.Physics.Arcade.Body|+Phaser.Physics.P2.Body|+Phaser.Physics.Ninja.Body|+null"
-		    },
-		    "reset": {
-		     "!type": "fn(x: number, y: number, health: number) -> ?"
+		    "align": {},
+		    "prototype": {
+		     "type": {
+		      "!type": "number"
+		     },
+		     "physicsType": {
+		      "!type": "number"
+		     },
+		     "textWidth": {
+		      "!type": "number"
+		     },
+		     "textHeight": {
+		      "!type": "number"
+		     },
+		     "anchor": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "_prevAnchor": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "_glyphs": {
+		      "!type": "+array"
+		     },
+		     "_maxWidth": {
+		      "!type": "number"
+		     },
+		     "_text": {
+		      "!type": "string"
+		     },
+		     "_data": {
+		      "!type": "string"
+		     },
+		     "_font": {
+		      "!type": "string"
+		     },
+		     "_fontSize": {
+		      "!type": "number"
+		     },
+		     "_align": {
+		      "!type": "string"
+		     },
+		     "_tint": {
+		      "!type": "number"
+		     },
+		     "dirty": {
+		      "!type": "bool"
+		     },
+		     "preUpdatePhysics": {},
+		     "preUpdateLifeSpan": {},
+		     "preUpdateInWorld": {},
+		     "preUpdateCore": {},
+		     "preUpdate": {
+		      "!type": "fn() -> ?"
+		     },
+		     "postUpdate": {
+		      "!type": "fn()"
+		     },
+		     "setText": {
+		      "!type": "fn()"
+		     },
+		     "scanLine": {
+		      "!type": "fn()"
+		     },
+		     "updateText": {
+		      "!type": "fn()"
+		     },
+		     "purgeGlyphs": {
+		      "!type": "fn()"
+		     },
+		     "updateTransform": {
+		      "!type": "fn()"
+		     },
+		     "align": {
+		      "!type": "string"
+		     },
+		     "tint": {
+		      "!type": "number"
+		     },
+		     "font": {
+		      "!type": "string"
+		     },
+		     "fontSize": {
+		      "!type": "number"
+		     },
+		     "text": {
+		      "!type": "string"
+		     },
+		     "maxWidth": {
+		      "!type": "number"
+		     },
+		     "smoothed": {
+		      "!type": "bool"
+		     },
+		     "children": {},
+		     "game": {
+		      "!type": "+Phaser.Game"
+		     },
+		     "name": {
+		      "!type": "string"
+		     },
+		     "components": {},
+		     "z": {
+		      "!type": "number"
+		     },
+		     "events": {
+		      "!type": "+Phaser.Events"
+		     },
+		     "animations": {
+		      "!type": "+Phaser.AnimationManager"
+		     },
+		     "key": {
+		      "!type": "string|+Phaser.RenderTexture|+Phaser.BitmapData|+Phaser.Video|+PIXI.Texture"
+		     },
+		     "world": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "debug": {
+		      "!type": "bool"
+		     },
+		     "previousPosition": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "previousRotation": {
+		      "!type": "number"
+		     },
+		     "renderOrderID": {
+		      "!type": "number"
+		     },
+		     "fresh": {
+		      "!type": "bool"
+		     },
+		     "pendingDestroy": {
+		      "!type": "bool"
+		     },
+		     "_bounds": {
+		      "!type": "+Phaser.Rectangle"
+		     },
+		     "_exists": {
+		      "!type": "bool"
+		     },
+		     "exists": {
+		      "!type": "bool"
+		     },
+		     "update": {
+		      "!type": "fn()"
+		     },
+		     "angle": {
+		      "!type": "number"
+		     },
+		     "autoCull": {
+		      "!type": "bool"
+		     },
+		     "inCamera": {
+		      "!type": "bool"
+		     },
+		     "offsetX": {
+		      "!type": "number"
+		     },
+		     "offsetY": {
+		      "!type": "number"
+		     },
+		     "left": {
+		      "!type": "number"
+		     },
+		     "right": {
+		      "!type": "number"
+		     },
+		     "top": {
+		      "!type": "number"
+		     },
+		     "bottom": {
+		      "!type": "number"
+		     },
+		     "destroyPhase": {
+		      "!type": "bool"
+		     },
+		     "destroy": {
+		      "!type": "fn(destroyChildren: bool)"
+		     },
+		     "_fixedToCamera": {
+		      "!type": "bool"
+		     },
+		     "fixedToCamera": {
+		      "!type": "bool"
+		     },
+		     "cameraOffset": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "input": {
+		      "!type": "+Phaser.InputHandler|+null"
+		     },
+		     "inputEnabled": {
+		      "!type": "bool"
+		     },
+		     "checkWorldBounds": {
+		      "!type": "bool"
+		     },
+		     "outOfBoundsKill": {
+		      "!type": "bool"
+		     },
+		     "_outOfBoundsFired": {
+		      "!type": "bool"
+		     },
+		     "inWorld": {
+		      "!type": "bool"
+		     },
+		     "alive": {
+		      "!type": "bool"
+		     },
+		     "lifespan": {
+		      "!type": "number"
+		     },
+		     "revive": {
+		      "!type": "fn(health: number) -> ?"
+		     },
+		     "kill": {
+		      "!type": "fn() -> ?"
+		     },
+		     "body": {
+		      "!type": "+Phaser.Physics.Arcade.Body|+Phaser.Physics.P2.Body|+Phaser.Physics.Ninja.Body|+null"
+		     },
+		     "x": {
+		      "!type": "number"
+		     },
+		     "y": {
+		      "!type": "number"
+		     },
+		     "reset": {
+		      "!type": "fn(x: number, y: number, health: number) -> ?"
+		     }
 		    }
 		   },
 		   "BitmapText#setText": {
-		    "text": {}
+		    "prototype": {
+		     "text": {}
+		    }
 		   },
 		   "BitmapText#scanLine": {
 		    "x": {},
@@ -4953,9 +5284,11 @@
 		    "scale": {},
 		    "lines": {},
 		    "y": {},
-		    "textWidth": {},
+		    "prototype": {
+		     "textWidth": {},
+		     "textHeight": {}
+		    },
 		    "line": {},
-		    "textHeight": {},
 		    "t": {},
 		    "align": {},
 		    "ax": {},
@@ -4981,510 +5314,156 @@
 		    "len": {},
 		    "kept": {},
 		    "i": {},
-		    "_glyphs": {}
-		   },
-		   "BitmapText#updateTransform": {
-		    "dirty": {}
-		   },
-		   "Button": {
-		    "!type": "fn(game: +Phaser.Game, x: number, y: number, key: string, callback: +function, callbackContext: ?, overFrame: string|+integer, outFrame: string|+integer, downFrame: string|+integer, upFrame: string|+integer)",
-		    "x": {},
-		    "y": {},
-		    "key": {
-		     "!type": "string|+Phaser.RenderTexture|+Phaser.BitmapData|+Phaser.Video|+PIXI.Texture"
-		    },
-		    "callback": {},
-		    "callbackContext": {},
-		    "type": {
-		     "!type": "number"
-		    },
-		    "physicsType": {
-		     "!type": "number"
-		    },
-		    "_onOverFrame": {
-		     "!type": "string|+integer"
-		    },
-		    "_onOutFrame": {
-		     "!type": "string|+integer"
-		    },
-		    "_onDownFrame": {
-		     "!type": "string|+integer"
-		    },
-		    "_onUpFrame": {
-		     "!type": "string|+integer"
-		    },
-		    "onOverSound": {
-		     "!type": "+Phaser.Sound|+Phaser.AudioSprite|+null"
-		    },
-		    "onOutSound": {
-		     "!type": "+Phaser.Sound|+Phaser.AudioSprite|+null"
-		    },
-		    "onDownSound": {
-		     "!type": "+Phaser.Sound|+Phaser.AudioSprite|+null"
-		    },
-		    "onUpSound": {
-		     "!type": "+Phaser.Sound|+Phaser.AudioSprite|+null"
-		    },
-		    "onOverSoundMarker": {
-		     "!type": "string"
-		    },
-		    "onOutSoundMarker": {
-		     "!type": "string"
-		    },
-		    "onDownSoundMarker": {
-		     "!type": "string"
-		    },
-		    "onUpSoundMarker": {
-		     "!type": "string"
-		    },
-		    "onInputOver": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "onInputOut": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "onInputDown": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "onInputUp": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "onOverMouseOnly": {
-		     "!type": "bool"
-		    },
-		    "freezeFrames": {
-		     "!type": "bool"
-		    },
-		    "forceOut": {
-		     "!type": "bool"
-		    },
-		    "inputEnabled": {
-		     "!type": "bool"
-		    },
-		    "clearFrames": {
-		     "!type": "fn()"
-		    },
-		    "removedFromWorld": {
-		     "!type": "fn()"
-		    },
-		    "setStateFrame": {
-		     "!type": "fn()"
-		    },
-		    "changeStateFrame": {
-		     "!type": "fn()"
-		    },
-		    "setFrames": {
-		     "!type": "fn()"
-		    },
-		    "setStateSound": {
-		     "!type": "fn()"
-		    },
-		    "playStateSound": {
-		     "!type": "fn()"
-		    },
-		    "setSounds": {
-		     "!type": "fn()"
-		    },
-		    "setOverSound": {
-		     "!type": "fn()"
-		    },
-		    "setOutSound": {
-		     "!type": "fn()"
-		    },
-		    "setDownSound": {
-		     "!type": "fn()"
-		    },
-		    "setUpSound": {
-		     "!type": "fn()"
-		    },
-		    "onInputOverHandler": {
-		     "!type": "fn()"
-		    },
-		    "onInputOutHandler": {
-		     "!type": "fn()"
-		    },
-		    "onInputDownHandler": {
-		     "!type": "fn()"
-		    },
-		    "onInputUpHandler": {
-		     "!type": "fn()"
-		    },
-		    "preUpdate": {
-		     "!type": "fn()"
-		    },
-		    "anchor": {
-		     "!type": "?"
-		    },
-		    "texture": {
-		     "!type": "?"
-		    },
-		    "_width": {
-		     "!type": "?"
-		    },
-		    "_height": {
-		     "!type": "?"
-		    },
-		    "tint": {
-		     "!type": "?"
-		    },
-		    "cachedTint": {
-		     "!type": "?"
-		    },
-		    "tintedTexture": {
-		     "!type": "?"
-		    },
-		    "blendMode": {
-		     "!type": "?"
-		    },
-		    "shader": {
-		     "!type": "?"
-		    },
-		    "game": {
-		     "!type": "+Phaser.Game"
-		    },
-		    "name": {
-		     "!type": "string"
-		    },
-		    "components": {
-		     "!type": "?"
-		    },
-		    "z": {
-		     "!type": "number"
-		    },
-		    "events": {
-		     "!type": "+Phaser.Events"
-		    },
-		    "animations": {
-		     "!type": "+Phaser.AnimationManager"
-		    },
-		    "world": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "debug": {
-		     "!type": "bool"
-		    },
-		    "previousPosition": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "previousRotation": {
-		     "!type": "number"
-		    },
-		    "renderOrderID": {
-		     "!type": "number"
-		    },
-		    "fresh": {
-		     "!type": "bool"
-		    },
-		    "pendingDestroy": {
-		     "!type": "bool"
-		    },
-		    "_bounds": {
-		     "!type": "+Phaser.Rectangle"
-		    },
-		    "_exists": {
-		     "!type": "bool"
-		    },
-		    "exists": {
-		     "!type": "bool"
-		    },
-		    "update": {
-		     "!type": "fn()"
-		    },
-		    "postUpdate": {
-		     "!type": "fn()"
-		    },
-		    "angle": {
-		     "!type": "number"
-		    },
-		    "play": {
-		     "!type": "fn(name: string, frameRate: number, loop: bool, killOnComplete: bool) -> ?"
-		    },
-		    "autoCull": {
-		     "!type": "bool"
-		    },
-		    "inCamera": {
-		     "!type": "bool"
-		    },
-		    "offsetX": {
-		     "!type": "number"
-		    },
-		    "offsetY": {
-		     "!type": "number"
-		    },
-		    "left": {
-		     "!type": "number"
-		    },
-		    "right": {
-		     "!type": "number"
-		    },
-		    "top": {
-		     "!type": "number"
-		    },
-		    "bottom": {
-		     "!type": "number"
-		    },
-		    "bringToTop": {
-		     "!type": "fn() -> ?"
-		    },
-		    "sendToBack": {
-		     "!type": "fn() -> ?"
-		    },
-		    "moveUp": {
-		     "!type": "fn() -> ?"
-		    },
-		    "moveDown": {
-		     "!type": "fn() -> ?"
-		    },
-		    "cropRect": {
-		     "!type": "+Phaser.Rectangle"
-		    },
-		    "_crop": {
-		     "!type": "+Phaser.Rectangle"
-		    },
-		    "crop": {
-		     "!type": "fn(rect: +Phaser.Rectangle, copy: bool)"
-		    },
-		    "updateCrop": {
-		     "!type": "fn()"
-		    },
-		    "destroyPhase": {
-		     "!type": "bool"
-		    },
-		    "destroy": {
-		     "!type": "fn(destroyChildren: bool)"
-		    },
-		    "_fixedToCamera": {
-		     "!type": "bool"
-		    },
-		    "fixedToCamera": {
-		     "!type": "bool"
-		    },
-		    "cameraOffset": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "input": {
-		     "!type": "+Phaser.InputHandler|+null"
-		    },
-		    "alive": {
-		     "!type": "bool"
-		    },
-		    "lifespan": {
-		     "!type": "number"
-		    },
-		    "revive": {
-		     "!type": "fn(health: number) -> ?"
-		    },
-		    "kill": {
-		     "!type": "fn() -> ?"
-		    },
-		    "customRender": {
-		     "!type": "bool"
-		    },
-		    "_frame": {
-		     "!type": "+Phaser.Rectangle"
-		    },
-		    "loadTexture": {
-		     "!type": "fn(key: string|+Phaser.RenderTexture|+Phaser.BitmapData|+Phaser.Video|+PIXI.Texture, frame: string|number, stopAnimation: bool)"
-		    },
-		    "setFrame": {
-		     "!type": "fn(frame: +Phaser.Frame)"
-		    },
-		    "resizeFrame": {
-		     "!type": "fn(parent: ?, width: +integer, height: +integer)"
-		    },
-		    "resetFrame": {
-		     "!type": "fn()"
-		    },
-		    "frame": {
-		     "!type": "+integer"
-		    },
-		    "frameName": {
-		     "!type": "string"
-		    },
-		    "overlap": {
-		     "!type": "fn(displayObject: +Phaser.Sprite|+Phaser.Image|+Phaser.TileSprite|+Phaser.Button|+PIXI.DisplayObject) -> ?"
-		    },
-		    "reset": {
-		     "!type": "fn(x: number, y: number, health: number) -> ?"
-		    },
-		    "smoothed": {
-		     "!type": "bool"
+		    "prototype": {
+		     "_glyphs": {}
 		    }
 		   },
-		   "Button#input": {
-		    "useHandCursor": {}
+		   "BitmapText#updateTransform": {
+		    "prototype": {
+		     "dirty": {}
+		    }
 		   },
-		   "Button#removedFromWorld": {
-		    "inputEnabled": {}
-		   },
-		   "Button#setStateFrame": {
-		    "frameKey": {}
-		   },
-		   "Button#changeStateFrame": {
-		    "frameKey": {},
-		    "frame": {},
-		    "frameName": {}
-		   },
-		   "Button#setStateSound": {
-		    "soundKey": {},
-		    "markerKey": {}
-		   },
-		   "Button#playStateSound": {
-		    "soundKey": {},
-		    "sound": {},
-		    "markerKey": {},
-		    "marker": {}
-		   },
-		   "Button#onInputUpHandler": {
-		    "changedUp": {}
-		   },
-		   "Component": {
-		    "Angle": {
-		     "!type": "fn()",
-		     "angle": {
+		   "Button": {
+		    "!type": "fn(game: +Phaser.Game, x: number, y: number, key: string, callback: +function, callbackContext: ?, overFrame: string|number, outFrame: string|number, downFrame: string|number, upFrame: string|number)",
+		    "x": {},
+		    "y": {},
+		    "key": {},
+		    "callback": {},
+		    "callbackContext": {},
+		    "prototype": {
+		     "type": {
 		      "!type": "number"
-		     }
-		    },
-		    "Angle#angle": {
-		     "get": {
-		      "!type": "fn()"
 		     },
-		     "set": {
-		      "!type": "fn()",
-		      "rotation": {}
-		     }
-		    },
-		    "Animation": {
-		     "!type": "fn()",
-		     "play": {
-		      "!type": "fn(name: string, frameRate: number, loop: bool, killOnComplete: bool) -> ?"
-		     }
-		    },
-		    "AutoCull": {
-		     "!type": "fn()",
-		     "autoCull": {
+		     "physicsType": {
+		      "!type": "number"
+		     },
+		     "_onOverFrame": {
+		      "!type": "string|number"
+		     },
+		     "_onOutFrame": {
+		      "!type": "string|number"
+		     },
+		     "_onDownFrame": {
+		      "!type": "string|number"
+		     },
+		     "_onUpFrame": {
+		      "!type": "string|number"
+		     },
+		     "onOverSound": {
+		      "!type": "+Phaser.Sound|+Phaser.AudioSprite|+null"
+		     },
+		     "onOutSound": {
+		      "!type": "+Phaser.Sound|+Phaser.AudioSprite|+null"
+		     },
+		     "onDownSound": {
+		      "!type": "+Phaser.Sound|+Phaser.AudioSprite|+null"
+		     },
+		     "onUpSound": {
+		      "!type": "+Phaser.Sound|+Phaser.AudioSprite|+null"
+		     },
+		     "onOverSoundMarker": {
+		      "!type": "string"
+		     },
+		     "onOutSoundMarker": {
+		      "!type": "string"
+		     },
+		     "onDownSoundMarker": {
+		      "!type": "string"
+		     },
+		     "onUpSoundMarker": {
+		      "!type": "string"
+		     },
+		     "onInputOver": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "onInputOut": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "onInputDown": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "onInputUp": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "onOverMouseOnly": {
 		      "!type": "bool"
 		     },
-		     "inCamera": {
+		     "freezeFrames": {
 		      "!type": "bool"
-		     }
-		    },
-		    "AutoCull#inCamera": {
-		     "get": {
+		     },
+		     "forceOut": {
+		      "!type": "bool"
+		     },
+		     "inputEnabled": {
+		      "!type": "bool"
+		     },
+		     "clearFrames": {
 		      "!type": "fn()"
 		     },
-		     "get#_bounds": {
-		      "x": {},
-		      "y": {}
-		     }
-		    },
-		    "Bounds": {
-		     "!type": "fn()",
-		     "offsetX": {
-		      "!type": "number"
-		     },
-		     "offsetY": {
-		      "!type": "number"
-		     },
-		     "left": {
-		      "!type": "number"
-		     },
-		     "right": {
-		      "!type": "number"
-		     },
-		     "top": {
-		      "!type": "number"
-		     },
-		     "bottom": {
-		      "!type": "number"
-		     }
-		    },
-		    "Bounds#offsetX": {
-		     "get": {
+		     "removedFromWorld": {
 		      "!type": "fn()"
-		     }
-		    },
-		    "Bounds#offsetY": {
-		     "get": {
-		      "!type": "fn()"
-		     }
-		    },
-		    "Bounds#left": {
-		     "get": {
-		      "!type": "fn()"
-		     }
-		    },
-		    "Bounds#right": {
-		     "get": {
-		      "!type": "fn()"
-		     }
-		    },
-		    "Bounds#top": {
-		     "get": {
-		      "!type": "fn()"
-		     }
-		    },
-		    "Bounds#bottom": {
-		     "get": {
-		      "!type": "fn()"
-		     }
-		    },
-		    "BringToTop": {
-		     "!type": "fn()",
-		     "bringToTop": {
-		      "!type": "fn() -> ?"
 		     },
-		     "sendToBack": {
-		      "!type": "fn() -> ?"
+		     "setStateFrame": {
+		      "!type": "fn()"
 		     },
-		     "moveUp": {
-		      "!type": "fn() -> ?"
+		     "changeStateFrame": {
+		      "!type": "fn()"
 		     },
-		     "moveDown": {
-		      "!type": "fn() -> ?"
-		     }
-		    },
-		    "!type": "fn()",
-		    "Core": {
-		     "!type": "fn()",
-		     "install": {
-		      "!type": "fn()",
-		      "components": {},
-		      "i": {},
-		      "id": {},
-		      "replace": {},
-		      "components[undefined]": {}
+		     "setFrames": {
+		      "!type": "fn()"
 		     },
-		     "init": {
-		      "!type": "fn()",
-		      "game": {},
-		      "key": {},
-		      "world": {},
-		      "previousPosition": {},
-		      "events": {},
-		      "_bounds": {},
-		      "body": {},
-		      "animations": {},
-		      "cameraOffset": {}
+		     "setStateSound": {
+		      "!type": "fn()"
+		     },
+		     "playStateSound": {
+		      "!type": "fn()"
+		     },
+		     "setSounds": {
+		      "!type": "fn()"
+		     },
+		     "setOverSound": {
+		      "!type": "fn()"
+		     },
+		     "setOutSound": {
+		      "!type": "fn()"
+		     },
+		     "setDownSound": {
+		      "!type": "fn()"
+		     },
+		     "setUpSound": {
+		      "!type": "fn()"
+		     },
+		     "onInputOverHandler": {
+		      "!type": "fn()"
+		     },
+		     "onInputOutHandler": {
+		      "!type": "fn()"
+		     },
+		     "onInputDownHandler": {
+		      "!type": "fn()"
+		     },
+		     "onInputUpHandler": {
+		      "!type": "fn()"
 		     },
 		     "preUpdate": {
-		      "!type": "fn()",
-		      "previousRotation": {},
-		      "renderOrderID": {},
-		      "i": {}
+		      "!type": "fn()"
 		     },
-		     "preUpdate#texture": {
-		      "requiresReTint": {}
-		     },
+		     "anchor": {},
+		     "texture": {},
+		     "_width": {},
+		     "_height": {},
+		     "tint": {},
+		     "cachedTint": {},
+		     "tintedTexture": {},
+		     "blendMode": {},
+		     "shader": {},
 		     "game": {
 		      "!type": "+Phaser.Game"
 		     },
 		     "name": {
 		      "!type": "string"
 		     },
-		     "components": {
-		      "!type": "?"
-		     },
+		     "components": {},
 		     "z": {
 		      "!type": "number"
 		     },
@@ -5532,23 +5511,49 @@
 		     },
 		     "postUpdate": {
 		      "!type": "fn()"
-		     }
-		    },
-		    "Core#exists": {
-		     "get": {
-		      "!type": "fn()"
 		     },
-		     "set": {
-		      "!type": "fn()",
-		      "_exists": {},
-		      "visible": {}
-		     }
-		    },
-		    "Core#postUpdate": {
-		     "i": {}
-		    },
-		    "Crop": {
-		     "!type": "fn()",
+		     "angle": {
+		      "!type": "number"
+		     },
+		     "play": {
+		      "!type": "fn(name: string, frameRate: number, loop: bool, killOnComplete: bool) -> ?"
+		     },
+		     "autoCull": {
+		      "!type": "bool"
+		     },
+		     "inCamera": {
+		      "!type": "bool"
+		     },
+		     "offsetX": {
+		      "!type": "number"
+		     },
+		     "offsetY": {
+		      "!type": "number"
+		     },
+		     "left": {
+		      "!type": "number"
+		     },
+		     "right": {
+		      "!type": "number"
+		     },
+		     "top": {
+		      "!type": "number"
+		     },
+		     "bottom": {
+		      "!type": "number"
+		     },
+		     "bringToTop": {
+		      "!type": "fn() -> ?"
+		     },
+		     "sendToBack": {
+		      "!type": "fn() -> ?"
+		     },
+		     "moveUp": {
+		      "!type": "fn() -> ?"
+		     },
+		     "moveDown": {
+		      "!type": "fn() -> ?"
+		     },
 		     "cropRect": {
 		      "!type": "+Phaser.Rectangle"
 		     },
@@ -5560,15 +5565,361 @@
 		     },
 		     "updateCrop": {
 		      "!type": "fn()"
+		     },
+		     "destroyPhase": {
+		      "!type": "bool"
+		     },
+		     "destroy": {
+		      "!type": "fn(destroyChildren: bool)"
+		     },
+		     "_fixedToCamera": {
+		      "!type": "bool"
+		     },
+		     "fixedToCamera": {
+		      "!type": "bool"
+		     },
+		     "cameraOffset": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "input": {
+		      "!type": "+Phaser.InputHandler|+null"
+		     },
+		     "alive": {
+		      "!type": "bool"
+		     },
+		     "lifespan": {
+		      "!type": "number"
+		     },
+		     "revive": {
+		      "!type": "fn(health: number) -> ?"
+		     },
+		     "kill": {
+		      "!type": "fn() -> ?"
+		     },
+		     "customRender": {
+		      "!type": "bool"
+		     },
+		     "_frame": {
+		      "!type": "+Phaser.Rectangle"
+		     },
+		     "loadTexture": {
+		      "!type": "fn(key: string|+Phaser.RenderTexture|+Phaser.BitmapData|+Phaser.Video|+PIXI.Texture, frame: string|number, stopAnimation: bool)"
+		     },
+		     "setFrame": {
+		      "!type": "fn(frame: +Phaser.Frame)"
+		     },
+		     "resizeFrame": {
+		      "!type": "fn(parent: ?, width: number, height: number)"
+		     },
+		     "resetFrame": {
+		      "!type": "fn()"
+		     },
+		     "frame": {
+		      "!type": "number"
+		     },
+		     "frameName": {
+		      "!type": "string"
+		     },
+		     "overlap": {
+		      "!type": "fn(displayObject: +Phaser.Sprite|+Phaser.Image|+Phaser.TileSprite|+Phaser.Button|+PIXI.DisplayObject) -> ?"
+		     },
+		     "reset": {
+		      "!type": "fn(x: number, y: number, health: number) -> ?"
+		     },
+		     "smoothed": {
+		      "!type": "bool"
+		     }
+		    }
+		   },
+		   "Button#input": {
+		    "useHandCursor": {}
+		   },
+		   "Button#removedFromWorld": {
+		    "prototype": {
+		     "inputEnabled": {}
+		    }
+		   },
+		   "Button#setStateFrame": {
+		    "frameKey": {}
+		   },
+		   "Button#changeStateFrame": {
+		    "frameKey": {},
+		    "frame": {},
+		    "prototype": {
+		     "frameName": {},
+		     "frame": {}
+		    }
+		   },
+		   "Button#setStateSound": {
+		    "soundKey": {},
+		    "markerKey": {}
+		   },
+		   "Button#playStateSound": {
+		    "soundKey": {},
+		    "sound": {},
+		    "markerKey": {},
+		    "marker": {}
+		   },
+		   "Button#onInputUpHandler": {
+		    "changedUp": {}
+		   },
+		   "Component": {
+		    "Angle": {
+		     "!type": "fn()",
+		     "prototype": {
+		      "angle": {
+		       "!type": "number"
+		      }
+		     }
+		    },
+		    "Angle#angle": {
+		     "get": {
+		      "!type": "fn()"
+		     },
+		     "set": {
+		      "!type": "fn()",
+		      "prototype": {
+		       "rotation": {}
+		      }
+		     }
+		    },
+		    "Animation": {
+		     "!type": "fn()",
+		     "prototype": {
+		      "play": {
+		       "!type": "fn(name: string, frameRate: number, loop: bool, killOnComplete: bool) -> ?"
+		      }
+		     }
+		    },
+		    "AutoCull": {
+		     "!type": "fn()",
+		     "prototype": {
+		      "autoCull": {
+		       "!type": "bool"
+		      },
+		      "inCamera": {
+		       "!type": "bool"
+		      }
+		     }
+		    },
+		    "AutoCull#inCamera": {
+		     "get": {
+		      "!type": "fn()"
+		     },
+		     "get#_bounds": {
+		      "x": {},
+		      "y": {}
+		     }
+		    },
+		    "Bounds": {
+		     "!type": "fn()",
+		     "prototype": {
+		      "offsetX": {
+		       "!type": "number"
+		      },
+		      "offsetY": {
+		       "!type": "number"
+		      },
+		      "left": {
+		       "!type": "number"
+		      },
+		      "right": {
+		       "!type": "number"
+		      },
+		      "top": {
+		       "!type": "number"
+		      },
+		      "bottom": {
+		       "!type": "number"
+		      }
+		     }
+		    },
+		    "Bounds#offsetX": {
+		     "get": {
+		      "!type": "fn()"
+		     }
+		    },
+		    "Bounds#offsetY": {
+		     "get": {
+		      "!type": "fn()"
+		     }
+		    },
+		    "Bounds#left": {
+		     "get": {
+		      "!type": "fn()"
+		     }
+		    },
+		    "Bounds#right": {
+		     "get": {
+		      "!type": "fn()"
+		     }
+		    },
+		    "Bounds#top": {
+		     "get": {
+		      "!type": "fn()"
+		     }
+		    },
+		    "Bounds#bottom": {
+		     "get": {
+		      "!type": "fn()"
+		     }
+		    },
+		    "BringToTop": {
+		     "!type": "fn()",
+		     "prototype": {
+		      "bringToTop": {
+		       "!type": "fn() -> ?"
+		      },
+		      "sendToBack": {
+		       "!type": "fn() -> ?"
+		      },
+		      "moveUp": {
+		       "!type": "fn() -> ?"
+		      },
+		      "moveDown": {
+		       "!type": "fn() -> ?"
+		      }
+		     }
+		    },
+		    "!type": "fn()",
+		    "Core": {
+		     "!type": "fn()",
+		     "install": {
+		      "!type": "fn()",
+		      "prototype": {
+		       "components": {},
+		       "components[undefined]": {}
+		      },
+		      "i": {},
+		      "id": {},
+		      "replace": {}
+		     },
+		     "init": {
+		      "!type": "fn()",
+		      "prototype": {
+		       "game": {},
+		       "key": {},
+		       "world": {},
+		       "previousPosition": {},
+		       "events": {},
+		       "_bounds": {},
+		       "body": {},
+		       "animations": {},
+		       "cameraOffset": {}
+		      }
+		     },
+		     "preUpdate": {
+		      "!type": "fn()",
+		      "prototype": {
+		       "previousRotation": {},
+		       "renderOrderID": {}
+		      },
+		      "i": {}
+		     },
+		     "preUpdate#texture": {
+		      "requiresReTint": {}
+		     },
+		     "prototype": {
+		      "game": {
+		       "!type": "+Phaser.Game"
+		      },
+		      "name": {
+		       "!type": "string"
+		      },
+		      "components": {},
+		      "z": {
+		       "!type": "number"
+		      },
+		      "events": {
+		       "!type": "+Phaser.Events"
+		      },
+		      "animations": {
+		       "!type": "+Phaser.AnimationManager"
+		      },
+		      "key": {
+		       "!type": "string|+Phaser.RenderTexture|+Phaser.BitmapData|+Phaser.Video|+PIXI.Texture"
+		      },
+		      "world": {
+		       "!type": "+Phaser.Point"
+		      },
+		      "debug": {
+		       "!type": "bool"
+		      },
+		      "previousPosition": {
+		       "!type": "+Phaser.Point"
+		      },
+		      "previousRotation": {
+		       "!type": "number"
+		      },
+		      "renderOrderID": {
+		       "!type": "number"
+		      },
+		      "fresh": {
+		       "!type": "bool"
+		      },
+		      "pendingDestroy": {
+		       "!type": "bool"
+		      },
+		      "_bounds": {
+		       "!type": "+Phaser.Rectangle"
+		      },
+		      "_exists": {
+		       "!type": "bool"
+		      },
+		      "exists": {
+		       "!type": "bool"
+		      },
+		      "update": {
+		       "!type": "fn()"
+		      },
+		      "postUpdate": {
+		       "!type": "fn()"
+		      }
+		     }
+		    },
+		    "Core#exists": {
+		     "get": {
+		      "!type": "fn()"
+		     },
+		     "set": {
+		      "!type": "fn()",
+		      "prototype": {
+		       "_exists": {},
+		       "visible": {}
+		      }
+		     }
+		    },
+		    "Core#postUpdate": {
+		     "i": {}
+		    },
+		    "Crop": {
+		     "!type": "fn()",
+		     "prototype": {
+		      "cropRect": {
+		       "!type": "+Phaser.Rectangle"
+		      },
+		      "_crop": {
+		       "!type": "+Phaser.Rectangle"
+		      },
+		      "crop": {
+		       "!type": "fn(rect: +Phaser.Rectangle, copy: bool)"
+		      },
+		      "updateCrop": {
+		       "!type": "fn()"
+		      }
 		     }
 		    },
 		    "Crop#crop": {
 		     "copy": {},
-		     "cropRect": {},
-		     "_crop": {}
+		     "prototype": {
+		      "cropRect": {},
+		      "_crop": {}
+		     }
 		    },
 		    "Crop#updateCrop": {
-		     "_crop": {},
+		     "prototype": {
+		      "_crop": {}
+		     },
 		     "cx": {},
 		     "cy": {},
 		     "cw": {},
@@ -5594,14 +5945,16 @@
 		    },
 		    "Delta": {
 		     "!type": "fn()",
-		     "deltaX": {
-		      "!type": "number"
-		     },
-		     "deltaY": {
-		      "!type": "number"
-		     },
-		     "deltaZ": {
-		      "!type": "number"
+		     "prototype": {
+		      "deltaX": {
+		       "!type": "number"
+		      },
+		      "deltaY": {
+		       "!type": "number"
+		      },
+		      "deltaZ": {
+		       "!type": "number"
+		      }
 		     }
 		    },
 		    "Delta#deltaX": {
@@ -5621,38 +5974,42 @@
 		    },
 		    "Destroy": {
 		     "!type": "fn()",
-		     "destroyPhase": {
-		      "!type": "bool"
-		     },
-		     "destroy": {
-		      "!type": "fn(destroyChildren: bool)"
+		     "prototype": {
+		      "destroyPhase": {
+		       "!type": "bool"
+		      },
+		      "destroy": {
+		       "!type": "fn(destroyChildren: bool)"
+		      }
 		     }
 		    },
 		    "Destroy#destroy": {
 		     "destroyChildren": {},
-		     "destroyPhase": {},
-		     "i": {},
-		     "_crop": {},
-		     "_frame": {},
-		     "_glyphs": {},
-		     "alive": {},
-		     "exists": {},
-		     "visible": {},
-		     "filters": {},
-		     "mask": {},
-		     "game": {},
-		     "renderable": {},
-		     "transformCallback": {},
-		     "transformCallbackContext": {},
-		     "hitArea": {},
-		     "parent": {},
-		     "stage": {},
-		     "worldTransform": {},
-		     "filterArea": {},
-		     "_bounds": {},
-		     "_currentBounds": {},
-		     "_mask": {},
-		     "pendingDestroy": {}
+		     "prototype": {
+		      "destroyPhase": {},
+		      "_crop": {},
+		      "_frame": {},
+		      "_glyphs": {},
+		      "alive": {},
+		      "exists": {},
+		      "visible": {},
+		      "filters": {},
+		      "mask": {},
+		      "game": {},
+		      "renderable": {},
+		      "transformCallback": {},
+		      "transformCallbackContext": {},
+		      "hitArea": {},
+		      "parent": {},
+		      "stage": {},
+		      "worldTransform": {},
+		      "filterArea": {},
+		      "_bounds": {},
+		      "_currentBounds": {},
+		      "_mask": {},
+		      "pendingDestroy": {}
+		     },
+		     "i": {}
 		    },
 		    "FixedToCamera": {
 		     "!type": "fn()",
@@ -5663,14 +6020,16 @@
 		      "x": {},
 		      "y": {}
 		     },
-		     "_fixedToCamera": {
-		      "!type": "bool"
-		     },
-		     "fixedToCamera": {
-		      "!type": "bool"
-		     },
-		     "cameraOffset": {
-		      "!type": "+Phaser.Point"
+		     "prototype": {
+		      "_fixedToCamera": {
+		       "!type": "bool"
+		      },
+		      "fixedToCamera": {
+		       "!type": "bool"
+		      },
+		      "cameraOffset": {
+		       "!type": "+Phaser.Point"
+		      }
 		     }
 		    },
 		    "FixedToCamera#fixedToCamera": {
@@ -5679,30 +6038,40 @@
 		     },
 		     "set": {
 		      "!type": "fn()",
-		      "_fixedToCamera": {}
+		      "prototype": {
+		       "_fixedToCamera": {}
+		      }
 		     }
 		    },
 		    "Health": {
 		     "!type": "fn()",
-		     "health": {
-		      "!type": "number"
-		     },
-		     "maxHealth": {
-		      "!type": "number"
-		     },
-		     "damage": {},
-		     "heal": {}
+		     "prototype": {
+		      "health": {
+		       "!type": "number"
+		      },
+		      "maxHealth": {
+		       "!type": "number"
+		      },
+		      "damage": {},
+		      "heal": {}
+		     }
 		    },
 		    "Health#damage": {
-		     "health": {}
+		     "prototype": {
+		      "health": {}
+		     }
 		    },
 		    "Health#heal": {
-		     "health": {}
+		     "prototype": {
+		      "health": {}
+		     }
 		    },
 		    "InCamera": {
 		     "!type": "fn()",
-		     "inCamera": {
-		      "!type": "bool"
+		     "prototype": {
+		      "inCamera": {
+		       "!type": "bool"
+		      }
 		     }
 		    },
 		    "InCamera#inCamera": {
@@ -5712,11 +6081,13 @@
 		    },
 		    "InputEnabled": {
 		     "!type": "fn()",
-		     "input": {
-		      "!type": "+Phaser.InputHandler|+null"
-		     },
-		     "inputEnabled": {
-		      "!type": "bool"
+		     "prototype": {
+		      "input": {
+		       "!type": "+Phaser.InputHandler|+null"
+		      },
+		      "inputEnabled": {
+		       "!type": "bool"
+		      }
 		     }
 		    },
 		    "InputEnabled#inputEnabled": {
@@ -5725,31 +6096,37 @@
 		     },
 		     "set": {
 		      "!type": "fn()",
-		      "input": {}
+		      "prototype": {
+		       "input": {}
+		      }
 		     }
 		    },
 		    "InWorld": {
 		     "!type": "fn()",
 		     "preUpdate": {
 		      "!type": "fn()",
-		      "renderable": {},
-		      "_outOfBoundsFired": {}
+		      "prototype": {
+		       "renderable": {},
+		       "_outOfBoundsFired": {}
+		      }
 		     },
 		     "preUpdate#_bounds": {
 		      "x": {},
 		      "y": {}
 		     },
-		     "checkWorldBounds": {
-		      "!type": "bool"
-		     },
-		     "outOfBoundsKill": {
-		      "!type": "bool"
-		     },
-		     "_outOfBoundsFired": {
-		      "!type": "bool"
-		     },
-		     "inWorld": {
-		      "!type": "bool"
+		     "prototype": {
+		      "checkWorldBounds": {
+		       "!type": "bool"
+		      },
+		      "outOfBoundsKill": {
+		       "!type": "bool"
+		      },
+		      "_outOfBoundsFired": {
+		       "!type": "bool"
+		      },
+		      "inWorld": {
+		       "!type": "bool"
+		      }
 		     }
 		    },
 		    "InWorld#inWorld": {
@@ -5761,69 +6138,82 @@
 		     "!type": "fn()",
 		     "preUpdate": {
 		      "!type": "fn()",
-		      "lifespan": {}
+		      "prototype": {
+		       "lifespan": {}
+		      }
 		     },
-		     "alive": {
-		      "!type": "bool"
-		     },
-		     "lifespan": {
-		      "!type": "number"
-		     },
-		     "revive": {
-		      "!type": "fn(health: number) -> ?"
-		     },
-		     "kill": {
-		      "!type": "fn() -> ?"
+		     "prototype": {
+		      "alive": {
+		       "!type": "bool"
+		      },
+		      "lifespan": {
+		       "!type": "number"
+		      },
+		      "revive": {
+		       "!type": "fn(health: number) -> ?"
+		      },
+		      "kill": {
+		       "!type": "fn() -> ?"
+		      }
 		     }
 		    },
 		    "LifeSpan#revive": {
 		     "health": {},
-		     "alive": {},
-		     "exists": {},
-		     "visible": {}
+		     "prototype": {
+		      "alive": {},
+		      "exists": {},
+		      "visible": {},
+		      "health": {}
+		     }
 		    },
 		    "LifeSpan#kill": {
-		     "alive": {},
-		     "exists": {},
-		     "visible": {}
+		     "prototype": {
+		      "alive": {},
+		      "exists": {},
+		      "visible": {}
+		     }
 		    },
 		    "LoadTexture": {
 		     "!type": "fn()",
-		     "customRender": {
-		      "!type": "bool"
-		     },
-		     "_frame": {
-		      "!type": "+Phaser.Rectangle"
-		     },
-		     "loadTexture": {
-		      "!type": "fn(key: string|+Phaser.RenderTexture|+Phaser.BitmapData|+Phaser.Video|+PIXI.Texture, frame: string|number, stopAnimation: bool)"
-		     },
-		     "setFrame": {
-		      "!type": "fn(frame: +Phaser.Frame)"
-		     },
-		     "resizeFrame": {
-		      "!type": "fn(parent: ?, width: +integer, height: +integer)"
-		     },
-		     "resetFrame": {
-		      "!type": "fn()"
-		     },
-		     "frame": {
-		      "!type": "+integer"
-		     },
-		     "frameName": {
-		      "!type": "string"
+		     "prototype": {
+		      "customRender": {
+		       "!type": "bool"
+		      },
+		      "_frame": {
+		       "!type": "+Phaser.Rectangle"
+		      },
+		      "loadTexture": {
+		       "!type": "fn(key: string|+Phaser.RenderTexture|+Phaser.BitmapData|+Phaser.Video|+PIXI.Texture, frame: string|number, stopAnimation: bool)"
+		      },
+		      "setFrame": {
+		       "!type": "fn(frame: +Phaser.Frame)"
+		      },
+		      "resizeFrame": {
+		       "!type": "fn(parent: ?, width: number, height: number)"
+		      },
+		      "resetFrame": {
+		       "!type": "fn()"
+		      },
+		      "frame": {
+		       "!type": "number"
+		      },
+		      "frameName": {
+		       "!type": "string"
+		      }
 		     }
 		    },
 		    "LoadTexture#loadTexture": {
 		     "frame": {},
-		     "key": {},
-		     "customRender": {},
+		     "prototype": {
+		      "key": {},
+		      "customRender": {},
+		      "_frame": {}
+		     },
 		     "cache": {},
 		     "setFrame": {},
 		     "smoothed": {},
 		     "valid": {},
-		     "img": {},
-		     "_frame": {}
+		     "img": {}
 		    },
 		    "LoadTexture#loadTexture#texture": {
 		     "valid": {},
@@ -5832,8 +6222,10 @@
 		     }
 		    },
 		    "LoadTexture#setFrame": {
-		     "_frame": {},
-		     "refreshTexture": {}
+		     "prototype": {
+		      "_frame": {},
+		      "refreshTexture": {}
+		     }
 		    },
 		    "LoadTexture#setFrame#texture": {
 		     "frame": {
@@ -5882,17 +6274,21 @@
 		    },
 		    "Overlap": {
 		     "!type": "fn()",
-		     "overlap": {
-		      "!type": "fn(displayObject: +Phaser.Sprite|+Phaser.Image|+Phaser.TileSprite|+Phaser.Button|+PIXI.DisplayObject) -> ?"
+		     "prototype": {
+		      "overlap": {
+		       "!type": "fn(displayObject: +Phaser.Sprite|+Phaser.Image|+Phaser.TileSprite|+Phaser.Button|+PIXI.DisplayObject) -> ?"
+		      }
 		     }
 		    },
 		    "PhysicsBody": {
 		     "!type": "fn()",
 		     "preUpdate": {
 		      "!type": "fn()",
-		      "previousRotation": {},
-		      "fresh": {},
-		      "renderOrderID": {}
+		      "prototype": {
+		       "previousRotation": {},
+		       "fresh": {},
+		       "renderOrderID": {}
+		      }
 		     },
 		     "preUpdate#worldTransform": {
 		      "tx": {},
@@ -5901,14 +6297,16 @@
 		     "postUpdate": {
 		      "!type": "fn()"
 		     },
-		     "body": {
-		      "!type": "+Phaser.Physics.Arcade.Body|+Phaser.Physics.P2.Body|+Phaser.Physics.Ninja.Body|+null"
-		     },
-		     "x": {
-		      "!type": "number"
-		     },
-		     "y": {
-		      "!type": "number"
+		     "prototype": {
+		      "body": {
+		       "!type": "+Phaser.Physics.Arcade.Body|+Phaser.Physics.P2.Body|+Phaser.Physics.Ninja.Body|+null"
+		      },
+		      "x": {
+		       "!type": "number"
+		      },
+		      "y": {
+		       "!type": "number"
+		      }
 		     }
 		    },
 		    "PhysicsBody#x": {
@@ -5941,54 +6339,63 @@
 		    },
 		    "Reset": {
 		     "!type": "fn()",
-		     "reset": {
-		      "!type": "fn(x: number, y: number, health: number) -> ?"
+		     "prototype": {
+		      "reset": {
+		       "!type": "fn(x: number, y: number, health: number) -> ?"
+		      }
 		     }
 		    },
 		    "Reset#reset": {
 		     "health": {},
-		     "fresh": {},
-		     "exists": {},
-		     "visible": {},
-		     "renderable": {},
-		     "_outOfBoundsFired": {},
-		     "alive": {}
+		     "prototype": {
+		      "fresh": {},
+		      "exists": {},
+		      "visible": {},
+		      "renderable": {},
+		      "_outOfBoundsFired": {},
+		      "alive": {},
+		      "health": {}
+		     }
 		    },
 		    "ScaleMinMax": {
 		     "!type": "fn()",
-		     "transformCallback": {
-		      "!type": "+function"
-		     },
-		     "transformCallbackContext": {
-		      "!type": "?"
-		     },
-		     "scaleMin": {
-		      "!type": "+Phaser.Point"
-		     },
-		     "scaleMax": {
-		      "!type": "+Phaser.Point"
-		     },
-		     "checkTransform": {
-		      "!type": "fn(wt: +PIXI.Matrix)"
-		     },
-		     "setScaleMinMax": {
-		      "!type": "fn(minX: number|+null, minY: number|+null, maxX: number|+null, maxY: number|+null)"
+		     "prototype": {
+		      "transformCallback": {
+		       "!type": "+function"
+		      },
+		      "transformCallbackContext": {},
+		      "scaleMin": {
+		       "!type": "+Phaser.Point"
+		      },
+		      "scaleMax": {
+		       "!type": "+Phaser.Point"
+		      },
+		      "checkTransform": {
+		       "!type": "fn(wt: +PIXI.Matrix)"
+		      },
+		      "setScaleMinMax": {
+		       "!type": "fn(minX: number|+null, minY: number|+null, maxX: number|+null, maxY: number|+null)"
+		      }
 		     }
 		    },
 		    "ScaleMinMax#setScaleMinMax": {
 		     "minY": {},
 		     "maxX": {},
 		     "maxY": {},
-		     "scaleMin": {},
-		     "scaleMax": {}
+		     "prototype": {
+		      "scaleMin": {},
+		      "scaleMax": {}
+		     }
 		    },
 		    "ScaleMinMax#setScaleMinMax~minY": {
 		     "maxY": {}
 		    },
 		    "Smoothed": {
 		     "!type": "fn()",
-		     "smoothed": {
-		      "!type": "bool"
+		     "prototype": {
+		      "smoothed": {
+		       "!type": "bool"
+		      }
 		     }
 		    },
 		    "Smoothed#smoothed": {
@@ -6007,280 +6414,288 @@
 		   },
 		   "Events": {
 		    "!type": "fn(sprite: +Phaser.Sprite)",
-		    "parent": {
-		     "!type": "+Phaser.Sprite"
-		    },
-		    "destroy": {
-		     "!type": "fn()"
-		    },
-		    "onAddedToGroup": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "onRemovedFromGroup": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "onRemovedFromWorld": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "onDestroy": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "onKilled": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "onRevived": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "onOutOfBounds": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "onEnterBounds": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "onInputOver": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "onInputOut": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "onInputDown": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "onInputUp": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "onDragStart": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "onDragUpdate": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "onDragStop": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "onAnimationStart": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "onAnimationComplete": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "onAnimationLoop": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "[undefined]": {
-		     "!type": "fn()"
+		    "prototype": {
+		     "parent": {
+		      "!type": "+Phaser.Sprite"
+		     },
+		     "destroy": {
+		      "!type": "fn()"
+		     },
+		     "onAddedToGroup": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "onRemovedFromGroup": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "onRemovedFromWorld": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "onDestroy": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "onKilled": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "onRevived": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "onOutOfBounds": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "onEnterBounds": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "onInputOver": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "onInputOut": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "onInputDown": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "onInputUp": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "onDragStart": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "onDragUpdate": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "onDragStop": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "onAnimationStart": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "onAnimationComplete": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "onAnimationLoop": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "[undefined]": {
+		      "!type": "fn()"
+		     }
 		    }
 		   },
 		   "Events#destroy": {
-		    "_parent": {}
+		    "prototype": {
+		     "_parent": {}
+		    }
 		   },
 		   "Creature": {
 		    "!type": "fn(game: +Phaser.Game, x: number, y: number, key: string|+PIXI.Texture, mesh: string, animation: string)",
-		    "animation": {
-		     "!type": "+CreatureAnimation"
-		    },
-		    "type": {
-		     "!type": "number"
+		    "animation": {},
+		    "prototype": {
+		     "type": {
+		      "!type": "number"
+		     },
+		     "_creature": {
+		      "!type": "+Creature"
+		     },
+		     "animation": {
+		      "!type": "+CreatureAnimation"
+		     },
+		     "manager": {
+		      "!type": "+CreatureManager"
+		     },
+		     "timeDelta": {
+		      "!type": "number"
+		     },
+		     "texture": {
+		      "!type": "+PIXI.Texture"
+		     },
+		     "dirty": {},
+		     "blendMode": {},
+		     "creatureBoundsMin": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "creatureBoundsMax": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "vertices": {
+		      "!type": "+PIXI.Float32Array"
+		     },
+		     "uvs": {
+		      "!type": "+PIXI.Float32Array"
+		     },
+		     "indices": {
+		      "!type": "+PIXI.Uint16Array"
+		     },
+		     "indices[undefined]": {},
+		     "colors": {
+		      "!type": "+PIXI.Uint16Array"
+		     },
+		     "preUpdateInWorld": {},
+		     "preUpdateCore": {},
+		     "preUpdate": {
+		      "!type": "fn()"
+		     },
+		     "_initWebGL": {
+		      "!type": "fn()"
+		     },
+		     "_renderWebGL": {
+		      "!type": "fn()"
+		     },
+		     "_renderCreature": {
+		      "!type": "fn()"
+		     },
+		     "updateCreatureBounds": {
+		      "!type": "fn()"
+		     },
+		     "updateData": {
+		      "!type": "fn()"
+		     },
+		     "updateRenderData": {
+		      "!type": "fn()"
+		     },
+		     "setAnimation": {
+		      "!type": "fn()"
+		     },
+		     "play": {
+		      "!type": "fn()"
+		     },
+		     "stop": {
+		      "!type": "fn()"
+		     },
+		     "isPlaying": {
+		      "!type": "bool"
+		     },
+		     "loop": {
+		      "!type": "bool"
+		     },
+		     "children": {},
+		     "game": {
+		      "!type": "+Phaser.Game"
+		     },
+		     "name": {
+		      "!type": "string"
+		     },
+		     "components": {},
+		     "z": {
+		      "!type": "number"
+		     },
+		     "events": {
+		      "!type": "+Phaser.Events"
+		     },
+		     "animations": {
+		      "!type": "+Phaser.AnimationManager"
+		     },
+		     "key": {
+		      "!type": "string|+Phaser.RenderTexture|+Phaser.BitmapData|+Phaser.Video|+PIXI.Texture"
+		     },
+		     "world": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "debug": {
+		      "!type": "bool"
+		     },
+		     "previousPosition": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "previousRotation": {
+		      "!type": "number"
+		     },
+		     "renderOrderID": {
+		      "!type": "number"
+		     },
+		     "fresh": {
+		      "!type": "bool"
+		     },
+		     "pendingDestroy": {
+		      "!type": "bool"
+		     },
+		     "_bounds": {
+		      "!type": "+Phaser.Rectangle"
+		     },
+		     "_exists": {
+		      "!type": "bool"
+		     },
+		     "exists": {
+		      "!type": "bool"
+		     },
+		     "update": {
+		      "!type": "fn()"
+		     },
+		     "postUpdate": {
+		      "!type": "fn()"
+		     },
+		     "angle": {
+		      "!type": "number"
+		     },
+		     "autoCull": {
+		      "!type": "bool"
+		     },
+		     "inCamera": {
+		      "!type": "bool"
+		     },
+		     "bringToTop": {
+		      "!type": "fn() -> ?"
+		     },
+		     "sendToBack": {
+		      "!type": "fn() -> ?"
+		     },
+		     "moveUp": {
+		      "!type": "fn() -> ?"
+		     },
+		     "moveDown": {
+		      "!type": "fn() -> ?"
+		     },
+		     "destroyPhase": {
+		      "!type": "bool"
+		     },
+		     "destroy": {
+		      "!type": "fn(destroyChildren: bool)"
+		     },
+		     "_fixedToCamera": {
+		      "!type": "bool"
+		     },
+		     "fixedToCamera": {
+		      "!type": "bool"
+		     },
+		     "cameraOffset": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "alive": {
+		      "!type": "bool"
+		     },
+		     "lifespan": {
+		      "!type": "number"
+		     },
+		     "revive": {
+		      "!type": "fn(health: number) -> ?"
+		     },
+		     "kill": {
+		      "!type": "fn() -> ?"
+		     },
+		     "reset": {
+		      "!type": "fn(x: number, y: number, health: number) -> ?"
+		     }
 		    },
 		    "meshData": {},
-		    "_creature": {
-		     "!type": "+Creature"
-		    },
-		    "manager": {
-		     "!type": "+CreatureManager"
-		    },
-		    "timeDelta": {
-		     "!type": "number"
-		    },
-		    "texture": {
-		     "!type": "+PIXI.Texture"
-		    },
-		    "dirty": {},
-		    "blendMode": {},
-		    "creatureBoundsMin": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "creatureBoundsMax": {
-		     "!type": "+Phaser.Point"
-		    },
+		    "texture": {},
 		    "target": {},
-		    "vertices": {
-		     "!type": "+PIXI.Float32Array"
-		    },
-		    "uvs": {
-		     "!type": "+PIXI.Float32Array"
-		    },
-		    "indices": {
-		     "!type": "+PIXI.Uint16Array"
-		    },
-		    "i": {},
-		    "indices[undefined]": {},
-		    "colors": {
-		     "!type": "+PIXI.Uint16Array"
-		    },
-		    "preUpdateInWorld": {},
-		    "preUpdateCore": {},
-		    "preUpdate": {
-		     "!type": "fn()"
-		    },
-		    "_initWebGL": {
-		     "!type": "fn()"
-		    },
-		    "_renderWebGL": {
-		     "!type": "fn()"
-		    },
-		    "_renderCreature": {
-		     "!type": "fn()"
-		    },
-		    "updateCreatureBounds": {
-		     "!type": "fn()"
-		    },
-		    "updateData": {
-		     "!type": "fn()"
-		    },
-		    "updateRenderData": {
-		     "!type": "fn()"
-		    },
-		    "setAnimation": {
-		     "!type": "fn()"
-		    },
-		    "play": {
-		     "!type": "fn()"
-		    },
-		    "stop": {
-		     "!type": "fn()"
-		    },
-		    "isPlaying": {
-		     "!type": "bool"
-		    },
-		    "loop": {
-		     "!type": "bool"
-		    },
-		    "children": {
-		     "!type": "?"
-		    },
-		    "game": {
-		     "!type": "+Phaser.Game"
-		    },
-		    "name": {
-		     "!type": "string"
-		    },
-		    "components": {
-		     "!type": "?"
-		    },
-		    "z": {
-		     "!type": "number"
-		    },
-		    "events": {
-		     "!type": "+Phaser.Events"
-		    },
-		    "animations": {
-		     "!type": "+Phaser.AnimationManager"
-		    },
-		    "key": {
-		     "!type": "string|+Phaser.RenderTexture|+Phaser.BitmapData|+Phaser.Video|+PIXI.Texture"
-		    },
-		    "world": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "debug": {
-		     "!type": "bool"
-		    },
-		    "previousPosition": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "previousRotation": {
-		     "!type": "number"
-		    },
-		    "renderOrderID": {
-		     "!type": "number"
-		    },
-		    "fresh": {
-		     "!type": "bool"
-		    },
-		    "pendingDestroy": {
-		     "!type": "bool"
-		    },
-		    "_bounds": {
-		     "!type": "+Phaser.Rectangle"
-		    },
-		    "_exists": {
-		     "!type": "bool"
-		    },
-		    "exists": {
-		     "!type": "bool"
-		    },
-		    "update": {
-		     "!type": "fn()"
-		    },
-		    "postUpdate": {
-		     "!type": "fn()"
-		    },
-		    "angle": {
-		     "!type": "number"
-		    },
-		    "autoCull": {
-		     "!type": "bool"
-		    },
-		    "inCamera": {
-		     "!type": "bool"
-		    },
-		    "bringToTop": {
-		     "!type": "fn() -> ?"
-		    },
-		    "sendToBack": {
-		     "!type": "fn() -> ?"
-		    },
-		    "moveUp": {
-		     "!type": "fn() -> ?"
-		    },
-		    "moveDown": {
-		     "!type": "fn() -> ?"
-		    },
-		    "destroyPhase": {
-		     "!type": "bool"
-		    },
-		    "destroy": {
-		     "!type": "fn(destroyChildren: bool)"
-		    },
-		    "_fixedToCamera": {
-		     "!type": "bool"
-		    },
-		    "fixedToCamera": {
-		     "!type": "bool"
-		    },
-		    "cameraOffset": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "alive": {
-		     "!type": "bool"
-		    },
-		    "lifespan": {
-		     "!type": "number"
-		    },
-		    "revive": {
-		     "!type": "fn(health: number) -> ?"
-		    },
-		    "kill": {
-		     "!type": "fn() -> ?"
-		    },
-		    "reset": {
-		     "!type": "fn(x: number, y: number, health: number) -> ?"
-		    }
+		    "i": {}
 		   },
 		   "Creature#_initWebGL": {
 		    "gl": {},
-		    "_vertexBuffer": {},
-		    "_indexBuffer": {},
-		    "_uvBuffer": {},
-		    "_colorBuffer": {}
+		    "prototype": {
+		     "_vertexBuffer": {},
+		     "_indexBuffer": {},
+		     "_uvBuffer": {},
+		     "_colorBuffer": {}
+		    }
 		   },
 		   "Creature#_renderCreature": {
 		    "gl": {},
 		    "projection": {},
 		    "offset": {},
 		    "shader": {},
-		    "dirty": {}
+		    "prototype": {
+		     "dirty": {}
+		    }
 		   },
 		   "Creature#updateCreatureBounds": {
 		    "target": {}
@@ -6289,7 +6704,9 @@
 		    "target": {},
 		    "read_pts": {},
 		    "read_uvs": {},
-		    "dirty": {}
+		    "prototype": {
+		     "dirty": {}
+		    }
 		   },
 		   "Creature#updateRenderData": {
 		    "target": {},
@@ -6297,79 +6714,86 @@
 		    "uv_index": {},
 		    "write_pt_index": {},
 		    "i": {},
-		    "vertices[undefined]": {},
-		    "uvs[undefined]": {}
+		    "prototype": {
+		     "vertices[undefined]": {},
+		     "uvs[undefined]": {}
+		    }
 		   },
 		   "Creature#play": {
-		    "loop": {}
+		    "loop": {},
+		    "prototype": {
+		     "loop": {}
+		    }
 		   },
 		   "GameObjectCreator": {
 		    "!type": "fn(game: +Phaser.Game)",
-		    "game": {
-		     "!type": "+Phaser.Game"
-		    },
-		    "world": {
-		     "!type": "+Phaser.World"
-		    },
-		    "image": {
-		     "!type": "fn()"
-		    },
-		    "sprite": {
-		     "!type": "fn()"
-		    },
-		    "tween": {
-		     "!type": "fn()"
-		    },
-		    "group": {
-		     "!type": "fn()"
-		    },
-		    "spriteBatch": {
-		     "!type": "fn()"
-		    },
-		    "audio": {
-		     "!type": "fn()"
-		    },
-		    "audioSprite": {
-		     "!type": "fn()"
-		    },
-		    "sound": {
-		     "!type": "fn()"
-		    },
-		    "tileSprite": {
-		     "!type": "fn()"
-		    },
-		    "rope": {
-		     "!type": "fn()"
-		    },
-		    "text": {
-		     "!type": "fn()"
-		    },
-		    "button": {
-		     "!type": "fn()"
-		    },
-		    "graphics": {
-		     "!type": "fn()"
-		    },
-		    "emitter": {
-		     "!type": "fn()"
-		    },
-		    "retroFont": {
-		     "!type": "fn()"
-		    },
-		    "bitmapText": {
-		     "!type": "fn()"
-		    },
-		    "tilemap": {
-		     "!type": "fn()"
-		    },
-		    "renderTexture": {
-		     "!type": "fn()"
-		    },
-		    "bitmapData": {
-		     "!type": "fn()"
-		    },
-		    "filter": {
-		     "!type": "fn()"
+		    "prototype": {
+		     "game": {
+		      "!type": "+Phaser.Game"
+		     },
+		     "world": {
+		      "!type": "+Phaser.World"
+		     },
+		     "image": {
+		      "!type": "fn()"
+		     },
+		     "sprite": {
+		      "!type": "fn()"
+		     },
+		     "tween": {
+		      "!type": "fn()"
+		     },
+		     "group": {
+		      "!type": "fn()"
+		     },
+		     "spriteBatch": {
+		      "!type": "fn()"
+		     },
+		     "audio": {
+		      "!type": "fn()"
+		     },
+		     "audioSprite": {
+		      "!type": "fn()"
+		     },
+		     "sound": {
+		      "!type": "fn()"
+		     },
+		     "tileSprite": {
+		      "!type": "fn()"
+		     },
+		     "rope": {
+		      "!type": "fn()"
+		     },
+		     "text": {
+		      "!type": "fn()"
+		     },
+		     "button": {
+		      "!type": "fn()"
+		     },
+		     "graphics": {
+		      "!type": "fn()"
+		     },
+		     "emitter": {
+		      "!type": "fn()"
+		     },
+		     "retroFont": {
+		      "!type": "fn()"
+		     },
+		     "bitmapText": {
+		      "!type": "fn()"
+		     },
+		     "tilemap": {
+		      "!type": "fn()"
+		     },
+		     "renderTexture": {
+		      "!type": "fn()"
+		     },
+		     "bitmapData": {
+		      "!type": "fn()"
+		     },
+		     "filter": {
+		      "!type": "fn()"
+		     }
 		    }
 		   },
 		   "GameObjectCreator#spriteBatch": {
@@ -6392,86 +6816,88 @@
 		   },
 		   "GameObjectFactory": {
 		    "!type": "fn(game: +Phaser.Game)",
-		    "game": {
-		     "!type": "+Phaser.Game"
-		    },
-		    "world": {
-		     "!type": "+Phaser.World"
-		    },
-		    "existing": {
-		     "!type": "fn()"
-		    },
-		    "image": {
-		     "!type": "fn()"
-		    },
-		    "sprite": {
-		     "!type": "fn()"
-		    },
-		    "creature": {
-		     "!type": "fn()"
-		    },
-		    "tween": {
-		     "!type": "fn()"
-		    },
-		    "group": {
-		     "!type": "fn()"
-		    },
-		    "physicsGroup": {
-		     "!type": "fn()"
-		    },
-		    "spriteBatch": {
-		     "!type": "fn()"
-		    },
-		    "audio": {
-		     "!type": "fn()"
-		    },
-		    "sound": {
-		     "!type": "fn()"
-		    },
-		    "audioSprite": {
-		     "!type": "fn()"
-		    },
-		    "tileSprite": {
-		     "!type": "fn()"
-		    },
-		    "rope": {
-		     "!type": "fn()"
-		    },
-		    "text": {
-		     "!type": "fn()"
-		    },
-		    "button": {
-		     "!type": "fn()"
-		    },
-		    "graphics": {
-		     "!type": "fn()"
-		    },
-		    "emitter": {
-		     "!type": "fn()"
-		    },
-		    "retroFont": {
-		     "!type": "fn()"
-		    },
-		    "bitmapText": {
-		     "!type": "fn()"
-		    },
-		    "tilemap": {
-		     "!type": "fn()"
-		    },
-		    "renderTexture": {
-		     "!type": "fn()"
-		    },
-		    "video": {
-		     "!type": "fn()"
-		    },
-		    "bitmapData": {
-		     "!type": "fn()"
-		    },
-		    "filter": {
-		     "!type": "fn()"
-		    },
-		    "plugin": {
-		     "!type": "fn()"
+		    "prototype": {
+		     "game": {
+		      "!type": "+Phaser.Game"
+		     },
+		     "world": {
+		      "!type": "+Phaser.World"
+		     },
+		     "existing": {
+		      "!type": "fn()"
+		     },
+		     "image": {
+		      "!type": "fn()"
+		     },
+		     "sprite": {
+		      "!type": "fn()"
+		     },
+		     "creature": {
+		      "!type": "fn()"
+		     },
+		     "tween": {
+		      "!type": "fn()"
+		     },
+		     "group": {
+		      "!type": "fn()"
+		     },
+		     "physicsGroup": {
+		      "!type": "fn()"
+		     },
+		     "spriteBatch": {
+		      "!type": "fn()"
+		     },
+		     "audio": {
+		      "!type": "fn()"
+		     },
+		     "sound": {
+		      "!type": "fn()"
+		     },
+		     "audioSprite": {
+		      "!type": "fn()"
+		     },
+		     "tileSprite": {
+		      "!type": "fn()"
+		     },
+		     "rope": {
+		      "!type": "fn()"
+		     },
+		     "text": {
+		      "!type": "fn()"
+		     },
+		     "button": {
+		      "!type": "fn()"
+		     },
+		     "graphics": {
+		      "!type": "fn()"
+		     },
+		     "emitter": {
+		      "!type": "fn()"
+		     },
+		     "retroFont": {
+		      "!type": "fn()"
+		     },
+		     "bitmapText": {
+		      "!type": "fn()"
+		     },
+		     "tilemap": {
+		      "!type": "fn()"
+		     },
+		     "renderTexture": {
+		      "!type": "fn()"
+		     },
+		     "video": {
+		      "!type": "fn()"
+		     },
+		     "bitmapData": {
+		      "!type": "fn()"
+		     },
+		     "filter": {
+		      "!type": "fn()"
+		     },
+		     "plugin": {
+		      "!type": "fn()"
+		     }
 		    }
 		   },
 		   "GameObjectFactory#image": {
@@ -6523,165 +6949,167 @@
 		   },
 		   "Graphics": {
 		    "!type": "fn(game: +Phaser.Game, x: number, y: number)",
-		    "x": {
-		     "!type": "number"
-		    },
-		    "y": {
-		     "!type": "number"
-		    },
-		    "type": {
-		     "!type": "number"
-		    },
-		    "physicsType": {
-		     "!type": "number"
-		    },
-		    "preUpdatePhysics": {},
-		    "preUpdateLifeSpan": {},
-		    "preUpdateInWorld": {},
-		    "preUpdateCore": {},
-		    "preUpdate": {
-		     "!type": "fn()"
-		    },
-		    "destroy": {
-		     "!type": "fn()"
-		    },
-		    "drawTriangle": {
-		     "!type": "fn()"
-		    },
-		    "drawTriangles": {
-		     "!type": "fn()"
-		    },
-		    "game": {
-		     "!type": "+Phaser.Game"
-		    },
-		    "name": {
-		     "!type": "string"
-		    },
-		    "components": {
-		     "!type": "?"
-		    },
-		    "z": {
-		     "!type": "number"
-		    },
-		    "events": {
-		     "!type": "+Phaser.Events"
-		    },
-		    "animations": {
-		     "!type": "+Phaser.AnimationManager"
-		    },
-		    "key": {
-		     "!type": "string|+Phaser.RenderTexture|+Phaser.BitmapData|+Phaser.Video|+PIXI.Texture"
-		    },
-		    "world": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "debug": {
-		     "!type": "bool"
-		    },
-		    "previousPosition": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "previousRotation": {
-		     "!type": "number"
-		    },
-		    "renderOrderID": {
-		     "!type": "number"
-		    },
-		    "fresh": {
-		     "!type": "bool"
-		    },
-		    "pendingDestroy": {
-		     "!type": "bool"
-		    },
-		    "_bounds": {
-		     "!type": "+Phaser.Rectangle"
-		    },
-		    "_exists": {
-		     "!type": "bool"
-		    },
-		    "exists": {
-		     "!type": "bool"
-		    },
-		    "update": {
-		     "!type": "fn()"
-		    },
-		    "postUpdate": {
-		     "!type": "fn()"
-		    },
-		    "angle": {
-		     "!type": "number"
-		    },
-		    "autoCull": {
-		     "!type": "bool"
-		    },
-		    "inCamera": {
-		     "!type": "bool"
-		    },
-		    "offsetX": {
-		     "!type": "number"
-		    },
-		    "offsetY": {
-		     "!type": "number"
-		    },
-		    "left": {
-		     "!type": "number"
-		    },
-		    "right": {
-		     "!type": "number"
-		    },
-		    "top": {
-		     "!type": "number"
-		    },
-		    "bottom": {
-		     "!type": "number"
-		    },
-		    "destroyPhase": {
-		     "!type": "bool"
-		    },
-		    "_fixedToCamera": {
-		     "!type": "bool"
-		    },
-		    "fixedToCamera": {
-		     "!type": "bool"
-		    },
-		    "cameraOffset": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "input": {
-		     "!type": "+Phaser.InputHandler|+null"
-		    },
-		    "inputEnabled": {
-		     "!type": "bool"
-		    },
-		    "checkWorldBounds": {
-		     "!type": "bool"
-		    },
-		    "outOfBoundsKill": {
-		     "!type": "bool"
-		    },
-		    "_outOfBoundsFired": {
-		     "!type": "bool"
-		    },
-		    "inWorld": {
-		     "!type": "bool"
-		    },
-		    "alive": {
-		     "!type": "bool"
-		    },
-		    "lifespan": {
-		     "!type": "number"
-		    },
-		    "revive": {
-		     "!type": "fn(health: number) -> ?"
-		    },
-		    "kill": {
-		     "!type": "fn() -> ?"
-		    },
-		    "body": {
-		     "!type": "+Phaser.Physics.Arcade.Body|+Phaser.Physics.P2.Body|+Phaser.Physics.Ninja.Body|+null"
-		    },
-		    "reset": {
-		     "!type": "fn(x: number, y: number, health: number) -> ?"
+		    "x": {},
+		    "y": {},
+		    "prototype": {
+		     "type": {
+		      "!type": "number"
+		     },
+		     "physicsType": {
+		      "!type": "number"
+		     },
+		     "preUpdatePhysics": {},
+		     "preUpdateLifeSpan": {},
+		     "preUpdateInWorld": {},
+		     "preUpdateCore": {},
+		     "preUpdate": {
+		      "!type": "fn()"
+		     },
+		     "destroy": {
+		      "!type": "fn()"
+		     },
+		     "drawTriangle": {
+		      "!type": "fn()"
+		     },
+		     "drawTriangles": {
+		      "!type": "fn()"
+		     },
+		     "game": {
+		      "!type": "+Phaser.Game"
+		     },
+		     "name": {
+		      "!type": "string"
+		     },
+		     "components": {},
+		     "z": {
+		      "!type": "number"
+		     },
+		     "events": {
+		      "!type": "+Phaser.Events"
+		     },
+		     "animations": {
+		      "!type": "+Phaser.AnimationManager"
+		     },
+		     "key": {
+		      "!type": "string|+Phaser.RenderTexture|+Phaser.BitmapData|+Phaser.Video|+PIXI.Texture"
+		     },
+		     "world": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "debug": {
+		      "!type": "bool"
+		     },
+		     "previousPosition": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "previousRotation": {
+		      "!type": "number"
+		     },
+		     "renderOrderID": {
+		      "!type": "number"
+		     },
+		     "fresh": {
+		      "!type": "bool"
+		     },
+		     "pendingDestroy": {
+		      "!type": "bool"
+		     },
+		     "_bounds": {
+		      "!type": "+Phaser.Rectangle"
+		     },
+		     "_exists": {
+		      "!type": "bool"
+		     },
+		     "exists": {
+		      "!type": "bool"
+		     },
+		     "update": {
+		      "!type": "fn()"
+		     },
+		     "postUpdate": {
+		      "!type": "fn()"
+		     },
+		     "angle": {
+		      "!type": "number"
+		     },
+		     "autoCull": {
+		      "!type": "bool"
+		     },
+		     "inCamera": {
+		      "!type": "bool"
+		     },
+		     "offsetX": {
+		      "!type": "number"
+		     },
+		     "offsetY": {
+		      "!type": "number"
+		     },
+		     "left": {
+		      "!type": "number"
+		     },
+		     "right": {
+		      "!type": "number"
+		     },
+		     "top": {
+		      "!type": "number"
+		     },
+		     "bottom": {
+		      "!type": "number"
+		     },
+		     "destroyPhase": {
+		      "!type": "bool"
+		     },
+		     "_fixedToCamera": {
+		      "!type": "bool"
+		     },
+		     "fixedToCamera": {
+		      "!type": "bool"
+		     },
+		     "cameraOffset": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "input": {
+		      "!type": "+Phaser.InputHandler|+null"
+		     },
+		     "inputEnabled": {
+		      "!type": "bool"
+		     },
+		     "checkWorldBounds": {
+		      "!type": "bool"
+		     },
+		     "outOfBoundsKill": {
+		      "!type": "bool"
+		     },
+		     "_outOfBoundsFired": {
+		      "!type": "bool"
+		     },
+		     "inWorld": {
+		      "!type": "bool"
+		     },
+		     "alive": {
+		      "!type": "bool"
+		     },
+		     "lifespan": {
+		      "!type": "number"
+		     },
+		     "revive": {
+		      "!type": "fn(health: number) -> ?"
+		     },
+		     "kill": {
+		      "!type": "fn() -> ?"
+		     },
+		     "body": {
+		      "!type": "+Phaser.Physics.Arcade.Body|+Phaser.Physics.P2.Body|+Phaser.Physics.Ninja.Body|+null"
+		     },
+		     "x": {
+		      "!type": "number"
+		     },
+		     "y": {
+		      "!type": "number"
+		     },
+		     "reset": {
+		      "!type": "fn(x: number, y: number, health: number) -> ?"
+		     }
 		    }
 		   },
 		   "Graphics#drawTriangle": {
@@ -6716,563 +7144,538 @@
 		    "!type": "fn(game: +Phaser.Game, x: number, y: number, key: string|+Phaser.RenderTexture|+Phaser.BitmapData|+PIXI.Texture, frame: string|number)",
 		    "x": {},
 		    "y": {},
-		    "key": {
-		     "!type": "string|+Phaser.RenderTexture|+Phaser.BitmapData|+Phaser.Video|+PIXI.Texture"
-		    },
-		    "frame": {
-		     "!type": "+integer"
-		    },
-		    "type": {
-		     "!type": "number"
-		    },
-		    "preUpdateInWorld": {},
-		    "preUpdateCore": {},
-		    "preUpdate": {
-		     "!type": "fn()"
-		    },
-		    "anchor": {
-		     "!type": "?"
-		    },
-		    "texture": {
-		     "!type": "?"
-		    },
-		    "_width": {
-		     "!type": "?"
-		    },
-		    "_height": {
-		     "!type": "?"
-		    },
-		    "tint": {
-		     "!type": "?"
-		    },
-		    "cachedTint": {
-		     "!type": "?"
-		    },
-		    "tintedTexture": {
-		     "!type": "?"
-		    },
-		    "blendMode": {
-		     "!type": "?"
-		    },
-		    "shader": {
-		     "!type": "?"
-		    },
-		    "game": {
-		     "!type": "+Phaser.Game"
-		    },
-		    "name": {
-		     "!type": "string"
-		    },
-		    "components": {
-		     "!type": "?"
-		    },
-		    "z": {
-		     "!type": "number"
-		    },
-		    "events": {
-		     "!type": "+Phaser.Events"
-		    },
-		    "animations": {
-		     "!type": "+Phaser.AnimationManager"
-		    },
-		    "world": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "debug": {
-		     "!type": "bool"
-		    },
-		    "previousPosition": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "previousRotation": {
-		     "!type": "number"
-		    },
-		    "renderOrderID": {
-		     "!type": "number"
-		    },
-		    "fresh": {
-		     "!type": "bool"
-		    },
-		    "pendingDestroy": {
-		     "!type": "bool"
-		    },
-		    "_bounds": {
-		     "!type": "+Phaser.Rectangle"
-		    },
-		    "_exists": {
-		     "!type": "bool"
-		    },
-		    "exists": {
-		     "!type": "bool"
-		    },
-		    "update": {
-		     "!type": "fn()"
-		    },
-		    "postUpdate": {
-		     "!type": "fn()"
-		    },
-		    "angle": {
-		     "!type": "number"
-		    },
-		    "play": {
-		     "!type": "fn(name: string, frameRate: number, loop: bool, killOnComplete: bool) -> ?"
-		    },
-		    "autoCull": {
-		     "!type": "bool"
-		    },
-		    "inCamera": {
-		     "!type": "bool"
-		    },
-		    "offsetX": {
-		     "!type": "number"
-		    },
-		    "offsetY": {
-		     "!type": "number"
-		    },
-		    "left": {
-		     "!type": "number"
-		    },
-		    "right": {
-		     "!type": "number"
-		    },
-		    "top": {
-		     "!type": "number"
-		    },
-		    "bottom": {
-		     "!type": "number"
-		    },
-		    "bringToTop": {
-		     "!type": "fn() -> ?"
-		    },
-		    "sendToBack": {
-		     "!type": "fn() -> ?"
-		    },
-		    "moveUp": {
-		     "!type": "fn() -> ?"
-		    },
-		    "moveDown": {
-		     "!type": "fn() -> ?"
-		    },
-		    "cropRect": {
-		     "!type": "+Phaser.Rectangle"
-		    },
-		    "_crop": {
-		     "!type": "+Phaser.Rectangle"
-		    },
-		    "crop": {
-		     "!type": "fn(rect: +Phaser.Rectangle, copy: bool)"
-		    },
-		    "updateCrop": {
-		     "!type": "fn()"
-		    },
-		    "destroyPhase": {
-		     "!type": "bool"
-		    },
-		    "destroy": {
-		     "!type": "fn(destroyChildren: bool)"
-		    },
-		    "_fixedToCamera": {
-		     "!type": "bool"
-		    },
-		    "fixedToCamera": {
-		     "!type": "bool"
-		    },
-		    "cameraOffset": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "input": {
-		     "!type": "+Phaser.InputHandler|+null"
-		    },
-		    "inputEnabled": {
-		     "!type": "bool"
-		    },
-		    "alive": {
-		     "!type": "bool"
-		    },
-		    "lifespan": {
-		     "!type": "number"
-		    },
-		    "revive": {
-		     "!type": "fn(health: number) -> ?"
-		    },
-		    "kill": {
-		     "!type": "fn() -> ?"
-		    },
-		    "customRender": {
-		     "!type": "bool"
-		    },
-		    "_frame": {
-		     "!type": "+Phaser.Rectangle"
-		    },
-		    "loadTexture": {
-		     "!type": "fn(key: string|+Phaser.RenderTexture|+Phaser.BitmapData|+Phaser.Video|+PIXI.Texture, frame: string|number, stopAnimation: bool)"
-		    },
-		    "setFrame": {
-		     "!type": "fn(frame: +Phaser.Frame)"
-		    },
-		    "resizeFrame": {
-		     "!type": "fn(parent: ?, width: +integer, height: +integer)"
-		    },
-		    "resetFrame": {
-		     "!type": "fn()"
-		    },
-		    "frameName": {
-		     "!type": "string"
-		    },
-		    "overlap": {
-		     "!type": "fn(displayObject: +Phaser.Sprite|+Phaser.Image|+Phaser.TileSprite|+Phaser.Button|+PIXI.DisplayObject) -> ?"
-		    },
-		    "reset": {
-		     "!type": "fn(x: number, y: number, health: number) -> ?"
-		    },
-		    "smoothed": {
-		     "!type": "bool"
+		    "key": {},
+		    "frame": {},
+		    "prototype": {
+		     "type": {
+		      "!type": "number"
+		     },
+		     "preUpdateInWorld": {},
+		     "preUpdateCore": {},
+		     "preUpdate": {
+		      "!type": "fn()"
+		     },
+		     "anchor": {},
+		     "texture": {},
+		     "_width": {},
+		     "_height": {},
+		     "tint": {},
+		     "cachedTint": {},
+		     "tintedTexture": {},
+		     "blendMode": {},
+		     "shader": {},
+		     "game": {
+		      "!type": "+Phaser.Game"
+		     },
+		     "name": {
+		      "!type": "string"
+		     },
+		     "components": {},
+		     "z": {
+		      "!type": "number"
+		     },
+		     "events": {
+		      "!type": "+Phaser.Events"
+		     },
+		     "animations": {
+		      "!type": "+Phaser.AnimationManager"
+		     },
+		     "key": {
+		      "!type": "string|+Phaser.RenderTexture|+Phaser.BitmapData|+Phaser.Video|+PIXI.Texture"
+		     },
+		     "world": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "debug": {
+		      "!type": "bool"
+		     },
+		     "previousPosition": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "previousRotation": {
+		      "!type": "number"
+		     },
+		     "renderOrderID": {
+		      "!type": "number"
+		     },
+		     "fresh": {
+		      "!type": "bool"
+		     },
+		     "pendingDestroy": {
+		      "!type": "bool"
+		     },
+		     "_bounds": {
+		      "!type": "+Phaser.Rectangle"
+		     },
+		     "_exists": {
+		      "!type": "bool"
+		     },
+		     "exists": {
+		      "!type": "bool"
+		     },
+		     "update": {
+		      "!type": "fn()"
+		     },
+		     "postUpdate": {
+		      "!type": "fn()"
+		     },
+		     "angle": {
+		      "!type": "number"
+		     },
+		     "play": {
+		      "!type": "fn(name: string, frameRate: number, loop: bool, killOnComplete: bool) -> ?"
+		     },
+		     "autoCull": {
+		      "!type": "bool"
+		     },
+		     "inCamera": {
+		      "!type": "bool"
+		     },
+		     "offsetX": {
+		      "!type": "number"
+		     },
+		     "offsetY": {
+		      "!type": "number"
+		     },
+		     "left": {
+		      "!type": "number"
+		     },
+		     "right": {
+		      "!type": "number"
+		     },
+		     "top": {
+		      "!type": "number"
+		     },
+		     "bottom": {
+		      "!type": "number"
+		     },
+		     "bringToTop": {
+		      "!type": "fn() -> ?"
+		     },
+		     "sendToBack": {
+		      "!type": "fn() -> ?"
+		     },
+		     "moveUp": {
+		      "!type": "fn() -> ?"
+		     },
+		     "moveDown": {
+		      "!type": "fn() -> ?"
+		     },
+		     "cropRect": {
+		      "!type": "+Phaser.Rectangle"
+		     },
+		     "_crop": {
+		      "!type": "+Phaser.Rectangle"
+		     },
+		     "crop": {
+		      "!type": "fn(rect: +Phaser.Rectangle, copy: bool)"
+		     },
+		     "updateCrop": {
+		      "!type": "fn()"
+		     },
+		     "destroyPhase": {
+		      "!type": "bool"
+		     },
+		     "destroy": {
+		      "!type": "fn(destroyChildren: bool)"
+		     },
+		     "_fixedToCamera": {
+		      "!type": "bool"
+		     },
+		     "fixedToCamera": {
+		      "!type": "bool"
+		     },
+		     "cameraOffset": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "input": {
+		      "!type": "+Phaser.InputHandler|+null"
+		     },
+		     "inputEnabled": {
+		      "!type": "bool"
+		     },
+		     "alive": {
+		      "!type": "bool"
+		     },
+		     "lifespan": {
+		      "!type": "number"
+		     },
+		     "revive": {
+		      "!type": "fn(health: number) -> ?"
+		     },
+		     "kill": {
+		      "!type": "fn() -> ?"
+		     },
+		     "customRender": {
+		      "!type": "bool"
+		     },
+		     "_frame": {
+		      "!type": "+Phaser.Rectangle"
+		     },
+		     "loadTexture": {
+		      "!type": "fn(key: string|+Phaser.RenderTexture|+Phaser.BitmapData|+Phaser.Video|+PIXI.Texture, frame: string|number, stopAnimation: bool)"
+		     },
+		     "setFrame": {
+		      "!type": "fn(frame: +Phaser.Frame)"
+		     },
+		     "resizeFrame": {
+		      "!type": "fn(parent: ?, width: number, height: number)"
+		     },
+		     "resetFrame": {
+		      "!type": "fn()"
+		     },
+		     "frame": {
+		      "!type": "number"
+		     },
+		     "frameName": {
+		      "!type": "string"
+		     },
+		     "overlap": {
+		      "!type": "fn(displayObject: +Phaser.Sprite|+Phaser.Image|+Phaser.TileSprite|+Phaser.Button|+PIXI.DisplayObject) -> ?"
+		     },
+		     "reset": {
+		      "!type": "fn(x: number, y: number, health: number) -> ?"
+		     },
+		     "smoothed": {
+		      "!type": "bool"
+		     }
 		    }
 		   },
 		   "Particle": {
 		    "!type": "fn(game: +Phaser.Game, x: number, y: number, key: string|+Phaser.RenderTexture|+Phaser.BitmapData|+PIXI.Texture, frame: string|number)",
-		    "autoScale": {
-		     "!type": "bool"
-		    },
-		    "scaleData": {
-		     "!type": "+array"
-		    },
-		    "_s": {
-		     "!type": "number"
-		    },
-		    "autoAlpha": {
-		     "!type": "bool"
-		    },
-		    "alphaData": {
-		     "!type": "+array"
-		    },
-		    "_a": {
-		     "!type": "number"
-		    },
-		    "update": {
-		     "!type": "fn()"
-		    },
-		    "onEmit": {
-		     "!type": "fn()"
-		    },
-		    "setAlphaData": {
-		     "!type": "fn()"
-		    },
-		    "setScaleData": {
-		     "!type": "fn()"
-		    },
-		    "reset": {
-		     "!type": "fn()"
-		    },
-		    "type": {
-		     "!type": "number"
-		    },
-		    "physicsType": {
-		     "!type": "number"
-		    },
-		    "preUpdate": {
-		     "!type": "fn() -> ?"
-		    },
-		    "anchor": {
-		     "!type": "?"
-		    },
-		    "texture": {
-		     "!type": "?"
-		    },
-		    "_width": {
-		     "!type": "?"
-		    },
-		    "_height": {
-		     "!type": "?"
-		    },
-		    "tint": {
-		     "!type": "?"
-		    },
-		    "cachedTint": {
-		     "!type": "?"
-		    },
-		    "tintedTexture": {
-		     "!type": "?"
-		    },
-		    "blendMode": {
-		     "!type": "?"
-		    },
-		    "shader": {
-		     "!type": "?"
-		    },
-		    "game": {
-		     "!type": "+Phaser.Game"
-		    },
-		    "name": {
-		     "!type": "string"
-		    },
-		    "components": {
-		     "!type": "?"
-		    },
-		    "z": {
-		     "!type": "number"
-		    },
-		    "events": {
-		     "!type": "+Phaser.Events"
-		    },
-		    "animations": {
-		     "!type": "+Phaser.AnimationManager"
-		    },
-		    "key": {
-		     "!type": "string|+Phaser.RenderTexture|+Phaser.BitmapData|+Phaser.Video|+PIXI.Texture"
-		    },
-		    "world": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "debug": {
-		     "!type": "bool"
-		    },
-		    "previousPosition": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "previousRotation": {
-		     "!type": "number"
-		    },
-		    "renderOrderID": {
-		     "!type": "number"
-		    },
-		    "fresh": {
-		     "!type": "bool"
-		    },
-		    "pendingDestroy": {
-		     "!type": "bool"
-		    },
-		    "_bounds": {
-		     "!type": "+Phaser.Rectangle"
-		    },
-		    "_exists": {
-		     "!type": "bool"
-		    },
-		    "exists": {
-		     "!type": "bool"
-		    },
-		    "postUpdate": {
-		     "!type": "fn()"
-		    },
-		    "angle": {
-		     "!type": "number"
-		    },
-		    "play": {
-		     "!type": "fn(name: string, frameRate: number, loop: bool, killOnComplete: bool) -> ?"
-		    },
-		    "autoCull": {
-		     "!type": "bool"
-		    },
-		    "inCamera": {
-		     "!type": "bool"
-		    },
-		    "offsetX": {
-		     "!type": "number"
-		    },
-		    "offsetY": {
-		     "!type": "number"
-		    },
-		    "left": {
-		     "!type": "number"
-		    },
-		    "right": {
-		     "!type": "number"
-		    },
-		    "top": {
-		     "!type": "number"
-		    },
-		    "bottom": {
-		     "!type": "number"
-		    },
-		    "bringToTop": {
-		     "!type": "fn() -> ?"
-		    },
-		    "sendToBack": {
-		     "!type": "fn() -> ?"
-		    },
-		    "moveUp": {
-		     "!type": "fn() -> ?"
-		    },
-		    "moveDown": {
-		     "!type": "fn() -> ?"
-		    },
-		    "cropRect": {
-		     "!type": "+Phaser.Rectangle"
-		    },
-		    "_crop": {
-		     "!type": "+Phaser.Rectangle"
-		    },
-		    "crop": {
-		     "!type": "fn(rect: +Phaser.Rectangle, copy: bool)"
-		    },
-		    "updateCrop": {
-		     "!type": "fn()"
-		    },
-		    "deltaX": {
-		     "!type": "number"
-		    },
-		    "deltaY": {
-		     "!type": "number"
-		    },
-		    "deltaZ": {
-		     "!type": "number"
-		    },
-		    "destroyPhase": {
-		     "!type": "bool"
-		    },
-		    "destroy": {
-		     "!type": "fn(destroyChildren: bool)"
-		    },
-		    "_fixedToCamera": {
-		     "!type": "bool"
-		    },
-		    "fixedToCamera": {
-		     "!type": "bool"
-		    },
-		    "cameraOffset": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "health": {
-		     "!type": "number"
-		    },
-		    "maxHealth": {
-		     "!type": "number"
-		    },
-		    "damage": {},
-		    "heal": {},
-		    "input": {
-		     "!type": "+Phaser.InputHandler|+null"
-		    },
-		    "inputEnabled": {
-		     "!type": "bool"
-		    },
-		    "checkWorldBounds": {
-		     "!type": "bool"
-		    },
-		    "outOfBoundsKill": {
-		     "!type": "bool"
-		    },
-		    "_outOfBoundsFired": {
-		     "!type": "bool"
-		    },
-		    "inWorld": {
-		     "!type": "bool"
-		    },
-		    "alive": {
-		     "!type": "bool"
-		    },
-		    "lifespan": {
-		     "!type": "number"
-		    },
-		    "revive": {
-		     "!type": "fn(health: number) -> ?"
-		    },
-		    "kill": {
-		     "!type": "fn() -> ?"
-		    },
-		    "customRender": {
-		     "!type": "bool"
-		    },
-		    "_frame": {
-		     "!type": "+Phaser.Rectangle"
-		    },
-		    "loadTexture": {
-		     "!type": "fn(key: string|+Phaser.RenderTexture|+Phaser.BitmapData|+Phaser.Video|+PIXI.Texture, frame: string|number, stopAnimation: bool)"
-		    },
-		    "setFrame": {
-		     "!type": "fn(frame: +Phaser.Frame)"
-		    },
-		    "resizeFrame": {
-		     "!type": "fn(parent: ?, width: +integer, height: +integer)"
-		    },
-		    "resetFrame": {
-		     "!type": "fn()"
-		    },
-		    "frame": {
-		     "!type": "+integer"
-		    },
-		    "frameName": {
-		     "!type": "string"
-		    },
-		    "overlap": {
-		     "!type": "fn(displayObject: +Phaser.Sprite|+Phaser.Image|+Phaser.TileSprite|+Phaser.Button|+PIXI.DisplayObject) -> ?"
-		    },
-		    "body": {
-		     "!type": "+Phaser.Physics.Arcade.Body|+Phaser.Physics.P2.Body|+Phaser.Physics.Ninja.Body|+null"
-		    },
-		    "x": {
-		     "!type": "number"
-		    },
-		    "y": {
-		     "!type": "number"
-		    },
-		    "transformCallback": {
-		     "!type": "+function"
-		    },
-		    "transformCallbackContext": {
-		     "!type": "?"
-		    },
-		    "scaleMin": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "scaleMax": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "checkTransform": {
-		     "!type": "fn(wt: +PIXI.Matrix)"
-		    },
-		    "setScaleMinMax": {
-		     "!type": "fn(minX: number|+null, minY: number|+null, maxX: number|+null, maxY: number|+null)"
-		    },
-		    "smoothed": {
-		     "!type": "bool"
+		    "prototype": {
+		     "autoScale": {
+		      "!type": "bool"
+		     },
+		     "scaleData": {
+		      "!type": "+array"
+		     },
+		     "_s": {
+		      "!type": "number"
+		     },
+		     "autoAlpha": {
+		      "!type": "bool"
+		     },
+		     "alphaData": {
+		      "!type": "+array"
+		     },
+		     "_a": {
+		      "!type": "number"
+		     },
+		     "update": {
+		      "!type": "fn()"
+		     },
+		     "onEmit": {
+		      "!type": "fn()"
+		     },
+		     "setAlphaData": {
+		      "!type": "fn()"
+		     },
+		     "setScaleData": {
+		      "!type": "fn()"
+		     },
+		     "reset": {
+		      "!type": "fn()"
+		     },
+		     "type": {
+		      "!type": "number"
+		     },
+		     "physicsType": {
+		      "!type": "number"
+		     },
+		     "preUpdate": {
+		      "!type": "fn() -> ?"
+		     },
+		     "anchor": {},
+		     "texture": {},
+		     "_width": {},
+		     "_height": {},
+		     "tint": {},
+		     "cachedTint": {},
+		     "tintedTexture": {},
+		     "blendMode": {},
+		     "shader": {},
+		     "game": {
+		      "!type": "+Phaser.Game"
+		     },
+		     "name": {
+		      "!type": "string"
+		     },
+		     "components": {},
+		     "z": {
+		      "!type": "number"
+		     },
+		     "events": {
+		      "!type": "+Phaser.Events"
+		     },
+		     "animations": {
+		      "!type": "+Phaser.AnimationManager"
+		     },
+		     "key": {
+		      "!type": "string|+Phaser.RenderTexture|+Phaser.BitmapData|+Phaser.Video|+PIXI.Texture"
+		     },
+		     "world": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "debug": {
+		      "!type": "bool"
+		     },
+		     "previousPosition": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "previousRotation": {
+		      "!type": "number"
+		     },
+		     "renderOrderID": {
+		      "!type": "number"
+		     },
+		     "fresh": {
+		      "!type": "bool"
+		     },
+		     "pendingDestroy": {
+		      "!type": "bool"
+		     },
+		     "_bounds": {
+		      "!type": "+Phaser.Rectangle"
+		     },
+		     "_exists": {
+		      "!type": "bool"
+		     },
+		     "exists": {
+		      "!type": "bool"
+		     },
+		     "postUpdate": {
+		      "!type": "fn()"
+		     },
+		     "angle": {
+		      "!type": "number"
+		     },
+		     "play": {
+		      "!type": "fn(name: string, frameRate: number, loop: bool, killOnComplete: bool) -> ?"
+		     },
+		     "autoCull": {
+		      "!type": "bool"
+		     },
+		     "inCamera": {
+		      "!type": "bool"
+		     },
+		     "offsetX": {
+		      "!type": "number"
+		     },
+		     "offsetY": {
+		      "!type": "number"
+		     },
+		     "left": {
+		      "!type": "number"
+		     },
+		     "right": {
+		      "!type": "number"
+		     },
+		     "top": {
+		      "!type": "number"
+		     },
+		     "bottom": {
+		      "!type": "number"
+		     },
+		     "bringToTop": {
+		      "!type": "fn() -> ?"
+		     },
+		     "sendToBack": {
+		      "!type": "fn() -> ?"
+		     },
+		     "moveUp": {
+		      "!type": "fn() -> ?"
+		     },
+		     "moveDown": {
+		      "!type": "fn() -> ?"
+		     },
+		     "cropRect": {
+		      "!type": "+Phaser.Rectangle"
+		     },
+		     "_crop": {
+		      "!type": "+Phaser.Rectangle"
+		     },
+		     "crop": {
+		      "!type": "fn(rect: +Phaser.Rectangle, copy: bool)"
+		     },
+		     "updateCrop": {
+		      "!type": "fn()"
+		     },
+		     "deltaX": {
+		      "!type": "number"
+		     },
+		     "deltaY": {
+		      "!type": "number"
+		     },
+		     "deltaZ": {
+		      "!type": "number"
+		     },
+		     "destroyPhase": {
+		      "!type": "bool"
+		     },
+		     "destroy": {
+		      "!type": "fn(destroyChildren: bool)"
+		     },
+		     "_fixedToCamera": {
+		      "!type": "bool"
+		     },
+		     "fixedToCamera": {
+		      "!type": "bool"
+		     },
+		     "cameraOffset": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "health": {
+		      "!type": "number"
+		     },
+		     "maxHealth": {
+		      "!type": "number"
+		     },
+		     "damage": {},
+		     "heal": {},
+		     "input": {
+		      "!type": "+Phaser.InputHandler|+null"
+		     },
+		     "inputEnabled": {
+		      "!type": "bool"
+		     },
+		     "checkWorldBounds": {
+		      "!type": "bool"
+		     },
+		     "outOfBoundsKill": {
+		      "!type": "bool"
+		     },
+		     "_outOfBoundsFired": {
+		      "!type": "bool"
+		     },
+		     "inWorld": {
+		      "!type": "bool"
+		     },
+		     "alive": {
+		      "!type": "bool"
+		     },
+		     "lifespan": {
+		      "!type": "number"
+		     },
+		     "revive": {
+		      "!type": "fn(health: number) -> ?"
+		     },
+		     "kill": {
+		      "!type": "fn() -> ?"
+		     },
+		     "customRender": {
+		      "!type": "bool"
+		     },
+		     "_frame": {
+		      "!type": "+Phaser.Rectangle"
+		     },
+		     "loadTexture": {
+		      "!type": "fn(key: string|+Phaser.RenderTexture|+Phaser.BitmapData|+Phaser.Video|+PIXI.Texture, frame: string|number, stopAnimation: bool)"
+		     },
+		     "setFrame": {
+		      "!type": "fn(frame: +Phaser.Frame)"
+		     },
+		     "resizeFrame": {
+		      "!type": "fn(parent: ?, width: number, height: number)"
+		     },
+		     "resetFrame": {
+		      "!type": "fn()"
+		     },
+		     "frame": {
+		      "!type": "number"
+		     },
+		     "frameName": {
+		      "!type": "string"
+		     },
+		     "overlap": {
+		      "!type": "fn(displayObject: +Phaser.Sprite|+Phaser.Image|+Phaser.TileSprite|+Phaser.Button|+PIXI.DisplayObject) -> ?"
+		     },
+		     "body": {
+		      "!type": "+Phaser.Physics.Arcade.Body|+Phaser.Physics.P2.Body|+Phaser.Physics.Ninja.Body|+null"
+		     },
+		     "x": {
+		      "!type": "number"
+		     },
+		     "y": {
+		      "!type": "number"
+		     },
+		     "transformCallback": {
+		      "!type": "+function"
+		     },
+		     "transformCallbackContext": {},
+		     "scaleMin": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "scaleMax": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "checkTransform": {
+		      "!type": "fn(wt: +PIXI.Matrix)"
+		     },
+		     "setScaleMinMax": {
+		      "!type": "fn(minX: number|+null, minY: number|+null, maxX: number|+null, maxY: number|+null)"
+		     },
+		     "smoothed": {
+		      "!type": "bool"
+		     }
 		    }
 		   },
 		   "Particle#update": {
-		    "autoScale": {},
-		    "alpha": {},
-		    "autoAlpha": {}
+		    "prototype": {
+		     "autoScale": {},
+		     "alpha": {},
+		     "autoAlpha": {}
+		    }
 		   },
 		   "Particle#setAlphaData": {
-		    "alphaData": {},
-		    "_a": {},
-		    "alpha": {},
-		    "autoAlpha": {}
+		    "prototype": {
+		     "alphaData": {},
+		     "_a": {},
+		     "alpha": {},
+		     "autoAlpha": {}
+		    }
 		   },
 		   "Particle#setScaleData": {
-		    "scaleData": {},
-		    "_s": {},
-		    "autoScale": {}
+		    "prototype": {
+		     "scaleData": {},
+		     "_s": {},
+		     "autoScale": {}
+		    }
 		   },
 		   "Particle#reset": {
-		    "alpha": {},
-		    "autoScale": {},
-		    "autoAlpha": {}
+		    "prototype": {
+		     "alpha": {},
+		     "autoScale": {},
+		     "autoAlpha": {}
+		    }
 		   },
 		   "RenderTexture": {
 		    "!type": "fn(game: +Phaser.Game, key: string, width: number, height: number, key: string, scaleMode: number, resolution: number)",
-		    "key": {
-		     "!type": "string"
-		    },
+		    "key": {},
 		    "scaleMode": {},
 		    "resolution": {},
-		    "game": {
-		     "!type": "+Phaser.Game"
-		    },
-		    "type": {
-		     "!type": "number"
-		    },
-		    "_tempMatrix": {
-		     "!type": "+PIXI.Matrix"
-		    },
-		    "render": {
-		     "!type": "fn()"
-		    },
-		    "renderXY": {
-		     "!type": "fn()"
-		    },
-		    "renderRawXY": {
-		     "!type": "fn()"
+		    "prototype": {
+		     "game": {
+		      "!type": "+Phaser.Game"
+		     },
+		     "key": {
+		      "!type": "string"
+		     },
+		     "type": {
+		      "!type": "number"
+		     },
+		     "_tempMatrix": {
+		      "!type": "+PIXI.Matrix"
+		     },
+		     "render": {
+		      "!type": "fn()"
+		     },
+		     "renderXY": {
+		      "!type": "fn()"
+		     },
+		     "renderRawXY": {
+		      "!type": "fn()"
+		     }
 		    }
 		   },
 		   "RenderTexture#renderXY#_tempMatrix": {
@@ -7282,69 +7685,116 @@
 		   "RetroFont": {
 		    "!type": "fn(game: +Phaser.Game, key: string, characterWidth: number, characterHeight: number, chars: string, charsPerRow: number, xSpacing: number, ySpacing: number, xOffset: number, yOffset: number)",
 		    "charsPerRow": {},
-		    "characterWidth": {
-		     "!type": "number"
-		    },
-		    "characterHeight": {
-		     "!type": "number"
-		    },
-		    "characterSpacingX": {
-		     "!type": "number"
-		    },
-		    "characterSpacingY": {
-		     "!type": "number"
-		    },
-		    "characterPerRow": {
-		     "!type": "number"
-		    },
-		    "offsetX": {
-		     "!type": "number"
-		    },
-		    "offsetY": {
-		     "!type": "number"
-		    },
-		    "align": {
-		     "!type": "string"
-		    },
-		    "multiLine": {
-		     "!type": "bool"
-		    },
-		    "autoUpperCase": {
-		     "!type": "bool"
-		    },
-		    "customSpacingX": {
-		     "!type": "number"
-		    },
-		    "customSpacingY": {
-		     "!type": "number"
-		    },
-		    "fixedWidth": {
-		     "!type": "number"
-		    },
-		    "fontSet": {
-		     "!type": "+Image"
-		    },
-		    "_text": {
-		     "!type": "string"
-		    },
-		    "grabData": {
-		     "!type": "+array"
-		    },
-		    "frameData": {
-		     "!type": "+Phaser.FrameData"
+		    "prototype": {
+		     "characterWidth": {
+		      "!type": "number"
+		     },
+		     "characterHeight": {
+		      "!type": "number"
+		     },
+		     "characterSpacingX": {
+		      "!type": "number"
+		     },
+		     "characterSpacingY": {
+		      "!type": "number"
+		     },
+		     "characterPerRow": {
+		      "!type": "number"
+		     },
+		     "offsetX": {
+		      "!type": "number"
+		     },
+		     "offsetY": {
+		      "!type": "number"
+		     },
+		     "align": {
+		      "!type": "string"
+		     },
+		     "multiLine": {
+		      "!type": "bool"
+		     },
+		     "autoUpperCase": {
+		      "!type": "bool"
+		     },
+		     "customSpacingX": {
+		      "!type": "number"
+		     },
+		     "customSpacingY": {
+		      "!type": "number"
+		     },
+		     "fixedWidth": {
+		      "!type": "number"
+		     },
+		     "fontSet": {
+		      "!type": "+Image"
+		     },
+		     "_text": {
+		      "!type": "string"
+		     },
+		     "grabData": {
+		      "!type": "+array"
+		     },
+		     "frameData": {
+		      "!type": "+Phaser.FrameData"
+		     },
+		     "grabData[undefined]": {},
+		     "stamp": {
+		      "!type": "+Phaser.Image"
+		     },
+		     "type": {
+		      "!type": "number"
+		     },
+		     "setFixedWidth": {
+		      "!type": "fn()"
+		     },
+		     "setText": {
+		      "!type": "fn()"
+		     },
+		     "buildRetroFontText": {
+		      "!type": "fn()"
+		     },
+		     "pasteLine": {
+		      "!type": "fn()"
+		     },
+		     "getLongestLine": {
+		      "!type": "fn()"
+		     },
+		     "removeUnsupportedCharacters": {
+		      "!type": "fn()"
+		     },
+		     "updateOffset": {
+		      "!type": "fn()"
+		     },
+		     "text": {
+		      "!type": "string"
+		     },
+		     "smoothed": {
+		      "!type": "string"
+		     },
+		     "game": {
+		      "!type": "+Phaser.Game"
+		     },
+		     "key": {
+		      "!type": "string"
+		     },
+		     "_tempMatrix": {
+		      "!type": "+PIXI.Matrix"
+		     },
+		     "renderXY": {
+		      "!type": "fn(displayObject: +Phaser.Sprite|+Phaser.Image|+Phaser.Text|+Phaser.BitmapText|+Phaser.Group, x: number, y: number, clear: bool)"
+		     },
+		     "renderRawXY": {
+		      "!type": "fn(displayObject: +Phaser.Sprite|+Phaser.Image|+Phaser.Text|+Phaser.BitmapText|+Phaser.Group, x: number, y: number, clear: bool)"
+		     },
+		     "render": {
+		      "!type": "fn(displayObject: +Phaser.Sprite|+Phaser.Image|+Phaser.Text|+Phaser.BitmapText|+Phaser.Group, matrix: +Phaser.Matrix, clear: bool)"
+		     }
 		    },
 		    "currentX": {},
 		    "currentY": {},
 		    "r": {},
 		    "c": {},
 		    "frame": {},
-		    "grabData[undefined]": {},
-		    "stamp": {
-		     "!type": "+Phaser.Image"
-		    },
-		    "type": {
-		     "!type": "number"
-		    },
 		    "ALIGN_LEFT": {
 		     "!type": "string"
 		    },
@@ -7386,72 +7836,33 @@
 		    },
 		    "TEXT_SET11": {
 		     "!type": "string"
-		    },
-		    "setFixedWidth": {
-		     "!type": "fn()"
-		    },
-		    "setText": {
-		     "!type": "fn()"
-		    },
-		    "buildRetroFontText": {
-		     "!type": "fn()"
-		    },
-		    "pasteLine": {
-		     "!type": "fn()"
-		    },
-		    "getLongestLine": {
-		     "!type": "fn()"
-		    },
-		    "removeUnsupportedCharacters": {
-		     "!type": "fn()"
-		    },
-		    "updateOffset": {
-		     "!type": "fn()"
-		    },
-		    "text": {
-		     "!type": "string"
-		    },
-		    "smoothed": {
-		     "!type": "string"
-		    },
-		    "game": {
-		     "!type": "+Phaser.Game"
-		    },
-		    "key": {
-		     "!type": "string"
-		    },
-		    "_tempMatrix": {
-		     "!type": "+PIXI.Matrix"
-		    },
-		    "renderXY": {
-		     "!type": "fn(displayObject: +Phaser.Sprite|+Phaser.Image|+Phaser.Text|+Phaser.BitmapText|+Phaser.Group, x: number, y: number, clear: bool)"
-		    },
-		    "renderRawXY": {
-		     "!type": "fn(displayObject: +Phaser.Sprite|+Phaser.Image|+Phaser.Text|+Phaser.BitmapText|+Phaser.Group, x: number, y: number, clear: bool)"
-		    },
-		    "render": {
-		     "!type": "fn(displayObject: +Phaser.Sprite|+Phaser.Image|+Phaser.Text|+Phaser.BitmapText|+Phaser.Group, matrix: +Phaser.Matrix, clear: bool)"
 		    }
 		   },
 		   "RetroFont#setFixedWidth": {
 		    "lineAlignment": {},
-		    "fixedWidth": {},
-		    "align": {}
+		    "prototype": {
+		     "fixedWidth": {},
+		     "align": {}
+		    }
 		   },
 		   "RetroFont#setText": {
-		    "multiLine": {},
-		    "customSpacingX": {},
-		    "customSpacingY": {},
-		    "align": {},
-		    "autoUpperCase": {},
-		    "text": {}
+		    "prototype": {
+		     "multiLine": {},
+		     "customSpacingX": {},
+		     "customSpacingY": {},
+		     "align": {},
+		     "autoUpperCase": {},
+		     "text": {}
+		    }
 		   },
 		   "RetroFont#buildRetroFontText": {
 		    "cx": {},
 		    "cy": {},
 		    "lines": {},
 		    "i": {},
-		    "requiresReTint": {}
+		    "prototype": {
+		     "requiresReTint": {}
+		    }
 		   },
 		   "RetroFont#pasteLine": {
 		    "c": {},
@@ -7483,253 +7894,255 @@
 		   },
 		   "Rope": {
 		    "!type": "fn(game: +Phaser.Game, x: number, y: number, key: string|+Phaser.RenderTexture|+Phaser.BitmapData|+PIXI.Texture, frame: string|number, points: [?])",
-		    "points": {},
-		    "_hasUpdateAnimation": {},
-		    "_updateAnimationCallback": {},
-		    "x": {
-		     "!type": "number"
-		    },
-		    "y": {
-		     "!type": "number"
-		    },
-		    "key": {
-		     "!type": "string|+Phaser.RenderTexture|+Phaser.BitmapData|+Phaser.Video|+PIXI.Texture"
-		    },
-		    "frame": {
-		     "!type": "+integer"
-		    },
-		    "type": {
-		     "!type": "number"
-		    },
-		    "_scroll": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "preUpdatePhysics": {},
-		    "preUpdateLifeSpan": {},
-		    "preUpdateInWorld": {},
-		    "preUpdateCore": {},
-		    "preUpdate": {
-		     "!type": "fn()"
-		    },
-		    "update": {
-		     "!type": "fn()"
-		    },
-		    "reset": {
-		     "!type": "fn()"
-		    },
-		    "updateAnimation": {
-		     "!type": "+function"
-		    },
-		    "segments": {
-		     "!type": "[?]"
-		    },
-		    "game": {
-		     "!type": "+Phaser.Game"
-		    },
-		    "name": {
-		     "!type": "string"
-		    },
-		    "components": {
-		     "!type": "?"
-		    },
-		    "z": {
-		     "!type": "number"
-		    },
-		    "events": {
-		     "!type": "+Phaser.Events"
-		    },
-		    "animations": {
-		     "!type": "+Phaser.AnimationManager"
-		    },
-		    "world": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "debug": {
-		     "!type": "bool"
-		    },
-		    "previousPosition": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "previousRotation": {
-		     "!type": "number"
-		    },
-		    "renderOrderID": {
-		     "!type": "number"
-		    },
-		    "fresh": {
-		     "!type": "bool"
-		    },
-		    "pendingDestroy": {
-		     "!type": "bool"
-		    },
-		    "_bounds": {
-		     "!type": "+Phaser.Rectangle"
-		    },
-		    "_exists": {
-		     "!type": "bool"
-		    },
-		    "exists": {
-		     "!type": "bool"
-		    },
-		    "postUpdate": {
-		     "!type": "fn()"
-		    },
-		    "angle": {
-		     "!type": "number"
-		    },
-		    "play": {
-		     "!type": "fn(name: string, frameRate: number, loop: bool, killOnComplete: bool) -> ?"
-		    },
-		    "autoCull": {
-		     "!type": "bool"
-		    },
-		    "inCamera": {
-		     "!type": "bool"
-		    },
-		    "offsetX": {
-		     "!type": "number"
-		    },
-		    "offsetY": {
-		     "!type": "number"
-		    },
-		    "left": {
-		     "!type": "number"
-		    },
-		    "right": {
-		     "!type": "number"
-		    },
-		    "top": {
-		     "!type": "number"
-		    },
-		    "bottom": {
-		     "!type": "number"
-		    },
-		    "bringToTop": {
-		     "!type": "fn() -> ?"
-		    },
-		    "sendToBack": {
-		     "!type": "fn() -> ?"
-		    },
-		    "moveUp": {
-		     "!type": "fn() -> ?"
-		    },
-		    "moveDown": {
-		     "!type": "fn() -> ?"
-		    },
-		    "cropRect": {
-		     "!type": "+Phaser.Rectangle"
-		    },
-		    "_crop": {
-		     "!type": "+Phaser.Rectangle"
-		    },
-		    "crop": {
-		     "!type": "fn(rect: +Phaser.Rectangle, copy: bool)"
-		    },
-		    "updateCrop": {
-		     "!type": "fn()"
-		    },
-		    "deltaX": {
-		     "!type": "number"
-		    },
-		    "deltaY": {
-		     "!type": "number"
-		    },
-		    "deltaZ": {
-		     "!type": "number"
-		    },
-		    "destroyPhase": {
-		     "!type": "bool"
-		    },
-		    "destroy": {
-		     "!type": "fn(destroyChildren: bool)"
-		    },
-		    "_fixedToCamera": {
-		     "!type": "bool"
-		    },
-		    "fixedToCamera": {
-		     "!type": "bool"
-		    },
-		    "cameraOffset": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "input": {
-		     "!type": "+Phaser.InputHandler|+null"
-		    },
-		    "inputEnabled": {
-		     "!type": "bool"
-		    },
-		    "checkWorldBounds": {
-		     "!type": "bool"
-		    },
-		    "outOfBoundsKill": {
-		     "!type": "bool"
-		    },
-		    "_outOfBoundsFired": {
-		     "!type": "bool"
-		    },
-		    "inWorld": {
-		     "!type": "bool"
-		    },
-		    "alive": {
-		     "!type": "bool"
-		    },
-		    "lifespan": {
-		     "!type": "number"
-		    },
-		    "revive": {
-		     "!type": "fn(health: number) -> ?"
-		    },
-		    "kill": {
-		     "!type": "fn() -> ?"
-		    },
-		    "customRender": {
-		     "!type": "bool"
-		    },
-		    "_frame": {
-		     "!type": "+Phaser.Rectangle"
-		    },
-		    "loadTexture": {
-		     "!type": "fn(key: string|+Phaser.RenderTexture|+Phaser.BitmapData|+Phaser.Video|+PIXI.Texture, frame: string|number, stopAnimation: bool)"
-		    },
-		    "setFrame": {
-		     "!type": "fn(frame: +Phaser.Frame)"
-		    },
-		    "resizeFrame": {
-		     "!type": "fn(parent: ?, width: +integer, height: +integer)"
-		    },
-		    "resetFrame": {
-		     "!type": "fn()"
-		    },
-		    "frameName": {
-		     "!type": "string"
-		    },
-		    "overlap": {
-		     "!type": "fn(displayObject: +Phaser.Sprite|+Phaser.Image|+Phaser.TileSprite|+Phaser.Button|+PIXI.DisplayObject) -> ?"
-		    },
-		    "body": {
-		     "!type": "+Phaser.Physics.Arcade.Body|+Phaser.Physics.P2.Body|+Phaser.Physics.Ninja.Body|+null"
-		    },
-		    "transformCallback": {
-		     "!type": "+function"
-		    },
-		    "transformCallbackContext": {
-		     "!type": "?"
-		    },
-		    "scaleMin": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "scaleMax": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "checkTransform": {
-		     "!type": "fn(wt: +PIXI.Matrix)"
-		    },
-		    "setScaleMinMax": {
-		     "!type": "fn(minX: number|+null, minY: number|+null, maxX: number|+null, maxY: number|+null)"
-		    },
-		    "smoothed": {
-		     "!type": "bool"
-		    }
+		    "prototype": {
+		     "points": {},
+		     "_hasUpdateAnimation": {},
+		     "_updateAnimationCallback": {},
+		     "type": {
+		      "!type": "number"
+		     },
+		     "_scroll": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "preUpdatePhysics": {},
+		     "preUpdateLifeSpan": {},
+		     "preUpdateInWorld": {},
+		     "preUpdateCore": {},
+		     "preUpdate": {
+		      "!type": "fn()"
+		     },
+		     "update": {
+		      "!type": "fn()"
+		     },
+		     "reset": {
+		      "!type": "fn()"
+		     },
+		     "updateAnimation": {
+		      "!type": "+function"
+		     },
+		     "segments": {
+		      "!type": "[?]"
+		     },
+		     "game": {
+		      "!type": "+Phaser.Game"
+		     },
+		     "name": {
+		      "!type": "string"
+		     },
+		     "components": {},
+		     "z": {
+		      "!type": "number"
+		     },
+		     "events": {
+		      "!type": "+Phaser.Events"
+		     },
+		     "animations": {
+		      "!type": "+Phaser.AnimationManager"
+		     },
+		     "key": {
+		      "!type": "string|+Phaser.RenderTexture|+Phaser.BitmapData|+Phaser.Video|+PIXI.Texture"
+		     },
+		     "world": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "debug": {
+		      "!type": "bool"
+		     },
+		     "previousPosition": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "previousRotation": {
+		      "!type": "number"
+		     },
+		     "renderOrderID": {
+		      "!type": "number"
+		     },
+		     "fresh": {
+		      "!type": "bool"
+		     },
+		     "pendingDestroy": {
+		      "!type": "bool"
+		     },
+		     "_bounds": {
+		      "!type": "+Phaser.Rectangle"
+		     },
+		     "_exists": {
+		      "!type": "bool"
+		     },
+		     "exists": {
+		      "!type": "bool"
+		     },
+		     "postUpdate": {
+		      "!type": "fn()"
+		     },
+		     "angle": {
+		      "!type": "number"
+		     },
+		     "play": {
+		      "!type": "fn(name: string, frameRate: number, loop: bool, killOnComplete: bool) -> ?"
+		     },
+		     "autoCull": {
+		      "!type": "bool"
+		     },
+		     "inCamera": {
+		      "!type": "bool"
+		     },
+		     "offsetX": {
+		      "!type": "number"
+		     },
+		     "offsetY": {
+		      "!type": "number"
+		     },
+		     "left": {
+		      "!type": "number"
+		     },
+		     "right": {
+		      "!type": "number"
+		     },
+		     "top": {
+		      "!type": "number"
+		     },
+		     "bottom": {
+		      "!type": "number"
+		     },
+		     "bringToTop": {
+		      "!type": "fn() -> ?"
+		     },
+		     "sendToBack": {
+		      "!type": "fn() -> ?"
+		     },
+		     "moveUp": {
+		      "!type": "fn() -> ?"
+		     },
+		     "moveDown": {
+		      "!type": "fn() -> ?"
+		     },
+		     "cropRect": {
+		      "!type": "+Phaser.Rectangle"
+		     },
+		     "_crop": {
+		      "!type": "+Phaser.Rectangle"
+		     },
+		     "crop": {
+		      "!type": "fn(rect: +Phaser.Rectangle, copy: bool)"
+		     },
+		     "updateCrop": {
+		      "!type": "fn()"
+		     },
+		     "deltaX": {
+		      "!type": "number"
+		     },
+		     "deltaY": {
+		      "!type": "number"
+		     },
+		     "deltaZ": {
+		      "!type": "number"
+		     },
+		     "destroyPhase": {
+		      "!type": "bool"
+		     },
+		     "destroy": {
+		      "!type": "fn(destroyChildren: bool)"
+		     },
+		     "_fixedToCamera": {
+		      "!type": "bool"
+		     },
+		     "fixedToCamera": {
+		      "!type": "bool"
+		     },
+		     "cameraOffset": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "input": {
+		      "!type": "+Phaser.InputHandler|+null"
+		     },
+		     "inputEnabled": {
+		      "!type": "bool"
+		     },
+		     "checkWorldBounds": {
+		      "!type": "bool"
+		     },
+		     "outOfBoundsKill": {
+		      "!type": "bool"
+		     },
+		     "_outOfBoundsFired": {
+		      "!type": "bool"
+		     },
+		     "inWorld": {
+		      "!type": "bool"
+		     },
+		     "alive": {
+		      "!type": "bool"
+		     },
+		     "lifespan": {
+		      "!type": "number"
+		     },
+		     "revive": {
+		      "!type": "fn(health: number) -> ?"
+		     },
+		     "kill": {
+		      "!type": "fn() -> ?"
+		     },
+		     "customRender": {
+		      "!type": "bool"
+		     },
+		     "_frame": {
+		      "!type": "+Phaser.Rectangle"
+		     },
+		     "loadTexture": {
+		      "!type": "fn(key: string|+Phaser.RenderTexture|+Phaser.BitmapData|+Phaser.Video|+PIXI.Texture, frame: string|number, stopAnimation: bool)"
+		     },
+		     "setFrame": {
+		      "!type": "fn(frame: +Phaser.Frame)"
+		     },
+		     "resizeFrame": {
+		      "!type": "fn(parent: ?, width: number, height: number)"
+		     },
+		     "resetFrame": {
+		      "!type": "fn()"
+		     },
+		     "frame": {
+		      "!type": "number"
+		     },
+		     "frameName": {
+		      "!type": "string"
+		     },
+		     "overlap": {
+		      "!type": "fn(displayObject: +Phaser.Sprite|+Phaser.Image|+Phaser.TileSprite|+Phaser.Button|+PIXI.DisplayObject) -> ?"
+		     },
+		     "body": {
+		      "!type": "+Phaser.Physics.Arcade.Body|+Phaser.Physics.P2.Body|+Phaser.Physics.Ninja.Body|+null"
+		     },
+		     "x": {
+		      "!type": "number"
+		     },
+		     "y": {
+		      "!type": "number"
+		     },
+		     "transformCallback": {
+		      "!type": "+function"
+		     },
+		     "transformCallbackContext": {},
+		     "scaleMin": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "scaleMax": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "checkTransform": {
+		      "!type": "fn(wt: +PIXI.Matrix)"
+		     },
+		     "setScaleMinMax": {
+		      "!type": "fn(minX: number|+null, minY: number|+null, maxX: number|+null, maxY: number|+null)"
+		     },
+		     "smoothed": {
+		      "!type": "bool"
+		     }
+		    },
+		    "x": {},
+		    "y": {},
+		    "key": {},
+		    "frame": {}
 		   },
 		   "Rope#preUpdate#tilePosition": {
 		    "x": {},
@@ -7741,1025 +8154,990 @@
 		   },
 		   "Sprite": {
 		    "!type": "fn(game: +Phaser.Game, x: number, y: number, key: string|+Phaser.RenderTexture|+Phaser.BitmapData|+PIXI.Texture, frame: string|number)",
-		    "x": {
-		     "!type": "number"
-		    },
-		    "y": {
-		     "!type": "number"
-		    },
-		    "key": {
-		     "!type": "string|+Phaser.RenderTexture|+Phaser.BitmapData|+Phaser.Video|+PIXI.Texture"
-		    },
-		    "frame": {
-		     "!type": "+integer"
-		    },
-		    "type": {
-		     "!type": "number"
-		    },
-		    "physicsType": {
-		     "!type": "number"
-		    },
-		    "preUpdatePhysics": {},
-		    "preUpdateLifeSpan": {},
-		    "preUpdateInWorld": {},
-		    "preUpdateCore": {},
-		    "preUpdate": {
-		     "!type": "fn() -> ?"
-		    },
-		    "anchor": {
-		     "!type": "?"
-		    },
-		    "texture": {
-		     "!type": "?"
-		    },
-		    "_width": {
-		     "!type": "?"
-		    },
-		    "_height": {
-		     "!type": "?"
-		    },
-		    "tint": {
-		     "!type": "?"
-		    },
-		    "cachedTint": {
-		     "!type": "?"
-		    },
-		    "tintedTexture": {
-		     "!type": "?"
-		    },
-		    "blendMode": {
-		     "!type": "?"
-		    },
-		    "shader": {
-		     "!type": "?"
-		    },
-		    "game": {
-		     "!type": "+Phaser.Game"
-		    },
-		    "name": {
-		     "!type": "string"
-		    },
-		    "components": {
-		     "!type": "?"
-		    },
-		    "z": {
-		     "!type": "number"
-		    },
-		    "events": {
-		     "!type": "+Phaser.Events"
-		    },
-		    "animations": {
-		     "!type": "+Phaser.AnimationManager"
-		    },
-		    "world": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "debug": {
-		     "!type": "bool"
-		    },
-		    "previousPosition": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "previousRotation": {
-		     "!type": "number"
-		    },
-		    "renderOrderID": {
-		     "!type": "number"
-		    },
-		    "fresh": {
-		     "!type": "bool"
-		    },
-		    "pendingDestroy": {
-		     "!type": "bool"
-		    },
-		    "_bounds": {
-		     "!type": "+Phaser.Rectangle"
-		    },
-		    "_exists": {
-		     "!type": "bool"
-		    },
-		    "exists": {
-		     "!type": "bool"
-		    },
-		    "update": {
-		     "!type": "fn()"
-		    },
-		    "postUpdate": {
-		     "!type": "fn()"
-		    },
-		    "angle": {
-		     "!type": "number"
-		    },
-		    "play": {
-		     "!type": "fn(name: string, frameRate: number, loop: bool, killOnComplete: bool) -> ?"
-		    },
-		    "autoCull": {
-		     "!type": "bool"
-		    },
-		    "inCamera": {
-		     "!type": "bool"
-		    },
-		    "offsetX": {
-		     "!type": "number"
-		    },
-		    "offsetY": {
-		     "!type": "number"
-		    },
-		    "left": {
-		     "!type": "number"
-		    },
-		    "right": {
-		     "!type": "number"
-		    },
-		    "top": {
-		     "!type": "number"
-		    },
-		    "bottom": {
-		     "!type": "number"
-		    },
-		    "bringToTop": {
-		     "!type": "fn() -> ?"
-		    },
-		    "sendToBack": {
-		     "!type": "fn() -> ?"
-		    },
-		    "moveUp": {
-		     "!type": "fn() -> ?"
-		    },
-		    "moveDown": {
-		     "!type": "fn() -> ?"
-		    },
-		    "cropRect": {
-		     "!type": "+Phaser.Rectangle"
-		    },
-		    "_crop": {
-		     "!type": "+Phaser.Rectangle"
-		    },
-		    "crop": {
-		     "!type": "fn(rect: +Phaser.Rectangle, copy: bool)"
-		    },
-		    "updateCrop": {
-		     "!type": "fn()"
-		    },
-		    "deltaX": {
-		     "!type": "number"
-		    },
-		    "deltaY": {
-		     "!type": "number"
-		    },
-		    "deltaZ": {
-		     "!type": "number"
-		    },
-		    "destroyPhase": {
-		     "!type": "bool"
-		    },
-		    "destroy": {
-		     "!type": "fn(destroyChildren: bool)"
-		    },
-		    "_fixedToCamera": {
-		     "!type": "bool"
-		    },
-		    "fixedToCamera": {
-		     "!type": "bool"
-		    },
-		    "cameraOffset": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "health": {
-		     "!type": "number"
-		    },
-		    "maxHealth": {
-		     "!type": "number"
-		    },
-		    "damage": {},
-		    "heal": {},
-		    "input": {
-		     "!type": "+Phaser.InputHandler|+null"
-		    },
-		    "inputEnabled": {
-		     "!type": "bool"
-		    },
-		    "checkWorldBounds": {
-		     "!type": "bool"
-		    },
-		    "outOfBoundsKill": {
-		     "!type": "bool"
-		    },
-		    "_outOfBoundsFired": {
-		     "!type": "bool"
-		    },
-		    "inWorld": {
-		     "!type": "bool"
-		    },
-		    "alive": {
-		     "!type": "bool"
-		    },
-		    "lifespan": {
-		     "!type": "number"
-		    },
-		    "revive": {
-		     "!type": "fn(health: number) -> ?"
-		    },
-		    "kill": {
-		     "!type": "fn() -> ?"
-		    },
-		    "customRender": {
-		     "!type": "bool"
-		    },
-		    "_frame": {
-		     "!type": "+Phaser.Rectangle"
-		    },
-		    "loadTexture": {
-		     "!type": "fn(key: string|+Phaser.RenderTexture|+Phaser.BitmapData|+Phaser.Video|+PIXI.Texture, frame: string|number, stopAnimation: bool)"
-		    },
-		    "setFrame": {
-		     "!type": "fn(frame: +Phaser.Frame)"
-		    },
-		    "resizeFrame": {
-		     "!type": "fn(parent: ?, width: +integer, height: +integer)"
-		    },
-		    "resetFrame": {
-		     "!type": "fn()"
-		    },
-		    "frameName": {
-		     "!type": "string"
-		    },
-		    "overlap": {
-		     "!type": "fn(displayObject: +Phaser.Sprite|+Phaser.Image|+Phaser.TileSprite|+Phaser.Button|+PIXI.DisplayObject) -> ?"
-		    },
-		    "body": {
-		     "!type": "+Phaser.Physics.Arcade.Body|+Phaser.Physics.P2.Body|+Phaser.Physics.Ninja.Body|+null"
-		    },
-		    "reset": {
-		     "!type": "fn(x: number, y: number, health: number) -> ?"
-		    },
-		    "transformCallback": {
-		     "!type": "+function"
-		    },
-		    "transformCallbackContext": {
-		     "!type": "?"
-		    },
-		    "scaleMin": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "scaleMax": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "checkTransform": {
-		     "!type": "fn(wt: +PIXI.Matrix)"
-		    },
-		    "setScaleMinMax": {
-		     "!type": "fn(minX: number|+null, minY: number|+null, maxX: number|+null, maxY: number|+null)"
-		    },
-		    "smoothed": {
-		     "!type": "bool"
+		    "x": {},
+		    "y": {},
+		    "key": {},
+		    "frame": {},
+		    "prototype": {
+		     "type": {
+		      "!type": "number"
+		     },
+		     "physicsType": {
+		      "!type": "number"
+		     },
+		     "preUpdatePhysics": {},
+		     "preUpdateLifeSpan": {},
+		     "preUpdateInWorld": {},
+		     "preUpdateCore": {},
+		     "preUpdate": {
+		      "!type": "fn() -> ?"
+		     },
+		     "anchor": {},
+		     "texture": {},
+		     "_width": {},
+		     "_height": {},
+		     "tint": {},
+		     "cachedTint": {},
+		     "tintedTexture": {},
+		     "blendMode": {},
+		     "shader": {},
+		     "game": {
+		      "!type": "+Phaser.Game"
+		     },
+		     "name": {
+		      "!type": "string"
+		     },
+		     "components": {},
+		     "z": {
+		      "!type": "number"
+		     },
+		     "events": {
+		      "!type": "+Phaser.Events"
+		     },
+		     "animations": {
+		      "!type": "+Phaser.AnimationManager"
+		     },
+		     "key": {
+		      "!type": "string|+Phaser.RenderTexture|+Phaser.BitmapData|+Phaser.Video|+PIXI.Texture"
+		     },
+		     "world": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "debug": {
+		      "!type": "bool"
+		     },
+		     "previousPosition": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "previousRotation": {
+		      "!type": "number"
+		     },
+		     "renderOrderID": {
+		      "!type": "number"
+		     },
+		     "fresh": {
+		      "!type": "bool"
+		     },
+		     "pendingDestroy": {
+		      "!type": "bool"
+		     },
+		     "_bounds": {
+		      "!type": "+Phaser.Rectangle"
+		     },
+		     "_exists": {
+		      "!type": "bool"
+		     },
+		     "exists": {
+		      "!type": "bool"
+		     },
+		     "update": {
+		      "!type": "fn()"
+		     },
+		     "postUpdate": {
+		      "!type": "fn()"
+		     },
+		     "angle": {
+		      "!type": "number"
+		     },
+		     "play": {
+		      "!type": "fn(name: string, frameRate: number, loop: bool, killOnComplete: bool) -> ?"
+		     },
+		     "autoCull": {
+		      "!type": "bool"
+		     },
+		     "inCamera": {
+		      "!type": "bool"
+		     },
+		     "offsetX": {
+		      "!type": "number"
+		     },
+		     "offsetY": {
+		      "!type": "number"
+		     },
+		     "left": {
+		      "!type": "number"
+		     },
+		     "right": {
+		      "!type": "number"
+		     },
+		     "top": {
+		      "!type": "number"
+		     },
+		     "bottom": {
+		      "!type": "number"
+		     },
+		     "bringToTop": {
+		      "!type": "fn() -> ?"
+		     },
+		     "sendToBack": {
+		      "!type": "fn() -> ?"
+		     },
+		     "moveUp": {
+		      "!type": "fn() -> ?"
+		     },
+		     "moveDown": {
+		      "!type": "fn() -> ?"
+		     },
+		     "cropRect": {
+		      "!type": "+Phaser.Rectangle"
+		     },
+		     "_crop": {
+		      "!type": "+Phaser.Rectangle"
+		     },
+		     "crop": {
+		      "!type": "fn(rect: +Phaser.Rectangle, copy: bool)"
+		     },
+		     "updateCrop": {
+		      "!type": "fn()"
+		     },
+		     "deltaX": {
+		      "!type": "number"
+		     },
+		     "deltaY": {
+		      "!type": "number"
+		     },
+		     "deltaZ": {
+		      "!type": "number"
+		     },
+		     "destroyPhase": {
+		      "!type": "bool"
+		     },
+		     "destroy": {
+		      "!type": "fn(destroyChildren: bool)"
+		     },
+		     "_fixedToCamera": {
+		      "!type": "bool"
+		     },
+		     "fixedToCamera": {
+		      "!type": "bool"
+		     },
+		     "cameraOffset": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "health": {
+		      "!type": "number"
+		     },
+		     "maxHealth": {
+		      "!type": "number"
+		     },
+		     "damage": {},
+		     "heal": {},
+		     "input": {
+		      "!type": "+Phaser.InputHandler|+null"
+		     },
+		     "inputEnabled": {
+		      "!type": "bool"
+		     },
+		     "checkWorldBounds": {
+		      "!type": "bool"
+		     },
+		     "outOfBoundsKill": {
+		      "!type": "bool"
+		     },
+		     "_outOfBoundsFired": {
+		      "!type": "bool"
+		     },
+		     "inWorld": {
+		      "!type": "bool"
+		     },
+		     "alive": {
+		      "!type": "bool"
+		     },
+		     "lifespan": {
+		      "!type": "number"
+		     },
+		     "revive": {
+		      "!type": "fn(health: number) -> ?"
+		     },
+		     "kill": {
+		      "!type": "fn() -> ?"
+		     },
+		     "customRender": {
+		      "!type": "bool"
+		     },
+		     "_frame": {
+		      "!type": "+Phaser.Rectangle"
+		     },
+		     "loadTexture": {
+		      "!type": "fn(key: string|+Phaser.RenderTexture|+Phaser.BitmapData|+Phaser.Video|+PIXI.Texture, frame: string|number, stopAnimation: bool)"
+		     },
+		     "setFrame": {
+		      "!type": "fn(frame: +Phaser.Frame)"
+		     },
+		     "resizeFrame": {
+		      "!type": "fn(parent: ?, width: number, height: number)"
+		     },
+		     "resetFrame": {
+		      "!type": "fn()"
+		     },
+		     "frame": {
+		      "!type": "number"
+		     },
+		     "frameName": {
+		      "!type": "string"
+		     },
+		     "overlap": {
+		      "!type": "fn(displayObject: +Phaser.Sprite|+Phaser.Image|+Phaser.TileSprite|+Phaser.Button|+PIXI.DisplayObject) -> ?"
+		     },
+		     "body": {
+		      "!type": "+Phaser.Physics.Arcade.Body|+Phaser.Physics.P2.Body|+Phaser.Physics.Ninja.Body|+null"
+		     },
+		     "x": {
+		      "!type": "number"
+		     },
+		     "y": {
+		      "!type": "number"
+		     },
+		     "reset": {
+		      "!type": "fn(x: number, y: number, health: number) -> ?"
+		     },
+		     "transformCallback": {
+		      "!type": "+function"
+		     },
+		     "transformCallbackContext": {},
+		     "scaleMin": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "scaleMax": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "checkTransform": {
+		      "!type": "fn(wt: +PIXI.Matrix)"
+		     },
+		     "setScaleMinMax": {
+		      "!type": "fn(minX: number|+null, minY: number|+null, maxX: number|+null, maxY: number|+null)"
+		     },
+		     "smoothed": {
+		      "!type": "bool"
+		     }
 		    }
 		   },
 		   "SpriteBatch": {
 		    "!type": "fn(game: +Phaser.Game, parent: +Phaser.Group|+Phaser.Sprite|+null, name: string, addToStage: bool)",
 		    "parent": {},
-		    "type": {
-		     "!type": "number"
-		    },
-		    "game": {
-		     "!type": "+Phaser.Game"
-		    },
-		    "name": {
-		     "!type": "string"
-		    },
-		    "z": {
-		     "!type": "+integer"
-		    },
-		    "physicsType": {
-		     "!type": "number"
-		    },
-		    "alive": {
-		     "!type": "bool"
-		    },
-		    "exists": {
-		     "!type": "bool"
-		    },
-		    "ignoreDestroy": {
-		     "!type": "bool"
-		    },
-		    "pendingDestroy": {
-		     "!type": "bool"
-		    },
-		    "classType": {
-		     "!type": "?"
-		    },
-		    "cursor": {
-		     "!type": "+DisplayObject"
-		    },
-		    "enableBody": {
-		     "!type": "bool"
-		    },
-		    "enableBodyDebug": {
-		     "!type": "bool"
-		    },
-		    "physicsBodyType": {
-		     "!type": "+integer"
-		    },
-		    "physicsSortDirection": {
-		     "!type": "+integer"
-		    },
-		    "onDestroy": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "cursorIndex": {
-		     "!type": "+integer"
-		    },
-		    "fixedToCamera": {
-		     "!type": "bool"
-		    },
-		    "cameraOffset": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "hash": {
-		     "!type": "+array"
-		    },
-		    "_sortProperty": {
-		     "!type": "string"
-		    },
-		    "add": {
-		     "!type": "fn(child: +DisplayObject, silent: bool) -> ?"
-		    },
-		    "addToHash": {
-		     "!type": "fn(child: +DisplayObject) -> ?"
-		    },
-		    "removeFromHash": {
-		     "!type": "fn(child: +DisplayObject) -> ?"
-		    },
-		    "addMultiple": {
-		     "!type": "fn(children: [?]|+Phaser.Group, silent: bool) -> ?"
-		    },
-		    "addAt": {
-		     "!type": "fn(child: +DisplayObject, index: +integer, silent: bool) -> ?"
-		    },
-		    "getAt": {
-		     "!type": "fn(index: +integer) -> ?"
-		    },
-		    "create": {
-		     "!type": "fn(x: number, y: number, key: string, frame: +integer|string, exists: bool) -> ?"
-		    },
-		    "createMultiple": {
-		     "!type": "fn(quantity: +integer, key: string, frame: +integer|string, exists: bool)"
-		    },
-		    "updateZ": {
-		     "!type": "fn()"
-		    },
-		    "resetCursor": {
-		     "!type": "fn(index: +integer) -> ?"
-		    },
-		    "next": {
-		     "!type": "fn() -> ?"
-		    },
-		    "previous": {
-		     "!type": "fn() -> ?"
-		    },
-		    "swap": {
-		     "!type": "fn(child1: +any, child2: +any)"
-		    },
-		    "bringToTop": {
-		     "!type": "fn(child: +any) -> ?"
-		    },
-		    "sendToBack": {
-		     "!type": "fn(child: +any) -> ?"
-		    },
-		    "moveUp": {
-		     "!type": "fn(child: +any) -> ?"
-		    },
-		    "moveDown": {
-		     "!type": "fn(child: +any) -> ?"
-		    },
-		    "xy": {
-		     "!type": "fn(index: +integer, x: number, y: number)"
-		    },
-		    "reverse": {
-		     "!type": "fn()"
-		    },
-		    "getIndex": {
-		     "!type": "fn(child: +any) -> ?"
-		    },
-		    "replace": {
-		     "!type": "fn(oldChild: +any, newChild: +any) -> ?"
-		    },
-		    "hasProperty": {
-		     "!type": "fn(child: +any, key: [?]) -> ?"
-		    },
-		    "setProperty": {
-		     "!type": "fn(child: +any, key: +array, value: +any, operation: +integer, force: bool) -> ?"
-		    },
-		    "checkProperty": {
-		     "!type": "fn(child: +any, key: +array, value: +any, force: bool) -> ?"
-		    },
-		    "set": {
-		     "!type": "fn(child: +Phaser.Sprite, key: string, value: +any, checkAlive: bool, checkVisible: bool, operation: +integer, force: bool) -> ?"
-		    },
-		    "setAll": {
-		     "!type": "fn(key: string, value: +any, checkAlive: bool, checkVisible: bool, operation: +integer, force: bool)"
-		    },
-		    "setAllChildren": {
-		     "!type": "fn(key: string, value: +any, checkAlive: bool, checkVisible: bool, operation: +integer, force: bool)"
-		    },
-		    "checkAll": {
-		     "!type": "fn(key: string, value: +any, checkAlive: bool, checkVisible: bool, force: bool)"
-		    },
-		    "addAll": {
-		     "!type": "fn(property: string, amount: number, checkAlive: bool, checkVisible: bool)"
-		    },
-		    "subAll": {
-		     "!type": "fn(property: string, amount: number, checkAlive: bool, checkVisible: bool)"
-		    },
-		    "multiplyAll": {
-		     "!type": "fn(property: string, amount: number, checkAlive: bool, checkVisible: bool)"
-		    },
-		    "divideAll": {
-		     "!type": "fn(property: string, amount: number, checkAlive: bool, checkVisible: bool)"
-		    },
-		    "callAllExists": {
-		     "!type": "fn(callback: string, existsValue: bool, parameter: +any)"
-		    },
-		    "callbackFromArray": {
-		     "!type": "fn(child: ?, callback: +array, length: +integer)"
-		    },
-		    "callAll": {
-		     "!type": "fn(method: string, context: string, args: +any)"
-		    },
-		    "preUpdate": {
-		     "!type": "fn()"
-		    },
-		    "update": {
-		     "!type": "fn()"
-		    },
-		    "postUpdate": {
-		     "!type": "fn()"
-		    },
-		    "filter": {
-		     "!type": "fn(predicate: +function, checkExists: bool) -> ?"
-		    },
-		    "forEach": {
-		     "!type": "fn(callback: +function, callbackContext: ?, checkExists: bool, args: +any)"
-		    },
-		    "forEachExists": {
-		     "!type": "fn(callback: +function, callbackContext: ?, args: +any)"
-		    },
-		    "forEachAlive": {
-		     "!type": "fn(callback: +function, callbackContext: ?, args: +any)"
-		    },
-		    "forEachDead": {
-		     "!type": "fn(callback: +function, callbackContext: ?, args: +any)"
-		    },
-		    "sort": {
-		     "!type": "fn(key: string, order: +integer)"
-		    },
-		    "customSort": {
-		     "!type": "fn(sortHandler: +function, context: ?)"
-		    },
-		    "ascendingSortHandler": {
-		     "!type": "fn(a: ?, b: ?)"
-		    },
-		    "descendingSortHandler": {
-		     "!type": "fn(a: ?, b: ?)"
-		    },
-		    "iterate": {
-		     "!type": "fn(key: string, value: +any, returnType: +integer, callback: +function, callbackContext: ?, args: [?]) -> ?"
-		    },
-		    "getFirstExists": {
-		     "!type": "fn(exists: bool) -> ?"
-		    },
-		    "getFirstAlive": {
-		     "!type": "fn() -> ?"
-		    },
-		    "getFirstDead": {
-		     "!type": "fn() -> ?"
-		    },
-		    "getTop": {
-		     "!type": "fn() -> ?"
-		    },
-		    "getBottom": {
-		     "!type": "fn() -> ?"
-		    },
-		    "countLiving": {
-		     "!type": "fn() -> ?"
-		    },
-		    "countDead": {
-		     "!type": "fn() -> ?"
-		    },
-		    "getRandom": {
-		     "!type": "fn(startIndex: +integer, length: +integer) -> ?"
-		    },
-		    "remove": {
-		     "!type": "fn(child: +any, destroy: bool, silent: bool) -> ?"
-		    },
-		    "moveAll": {
-		     "!type": "fn(group: +Phaser.Group, silent: bool) -> ?"
-		    },
-		    "removeAll": {
-		     "!type": "fn(destroy: bool, silent: bool)"
-		    },
-		    "removeBetween": {
-		     "!type": "fn(startIndex: +integer, endIndex: +integer, destroy: bool, silent: bool)"
-		    },
-		    "destroy": {
-		     "!type": "fn(destroyChildren: bool, soft: bool)"
-		    },
-		    "total": {
-		     "!type": "+integer"
-		    },
-		    "length": {
-		     "!type": "+integer"
-		    },
-		    "angle": {
-		     "!type": "number"
-		    },
-		    "x": {
-		     "!type": "number"
-		    },
-		    "y": {
-		     "!type": "number"
-		    },
-		    "rotation": {
-		     "!type": "number"
-		    },
-		    "visible": {
-		     "!type": "bool"
-		    },
-		    "alpha": {
-		     "!type": "number"
-		    },
-		    "children": {
-		     "!type": "?"
+		    "prototype": {
+		     "type": {
+		      "!type": "number"
+		     },
+		     "game": {
+		      "!type": "+Phaser.Game"
+		     },
+		     "name": {
+		      "!type": "string"
+		     },
+		     "z": {
+		      "!type": "number"
+		     },
+		     "physicsType": {
+		      "!type": "number"
+		     },
+		     "alive": {
+		      "!type": "bool"
+		     },
+		     "exists": {
+		      "!type": "bool"
+		     },
+		     "ignoreDestroy": {
+		      "!type": "bool"
+		     },
+		     "pendingDestroy": {
+		      "!type": "bool"
+		     },
+		     "classType": {},
+		     "cursor": {
+		      "!type": "+DisplayObject"
+		     },
+		     "enableBody": {
+		      "!type": "bool"
+		     },
+		     "enableBodyDebug": {
+		      "!type": "bool"
+		     },
+		     "physicsBodyType": {
+		      "!type": "number"
+		     },
+		     "physicsSortDirection": {
+		      "!type": "number"
+		     },
+		     "onDestroy": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "cursorIndex": {
+		      "!type": "number"
+		     },
+		     "fixedToCamera": {
+		      "!type": "bool"
+		     },
+		     "cameraOffset": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "hash": {
+		      "!type": "+array"
+		     },
+		     "_sortProperty": {
+		      "!type": "string"
+		     },
+		     "add": {
+		      "!type": "fn(child: +DisplayObject, silent: bool) -> ?"
+		     },
+		     "addToHash": {
+		      "!type": "fn(child: +DisplayObject) -> ?"
+		     },
+		     "removeFromHash": {
+		      "!type": "fn(child: +DisplayObject) -> ?"
+		     },
+		     "addMultiple": {
+		      "!type": "fn(children: [?]|+Phaser.Group, silent: bool) -> ?"
+		     },
+		     "addAt": {
+		      "!type": "fn(child: +DisplayObject, index: number, silent: bool) -> ?"
+		     },
+		     "getAt": {
+		      "!type": "fn(index: number) -> ?"
+		     },
+		     "create": {
+		      "!type": "fn(x: number, y: number, key: string, frame: number|string, exists: bool) -> ?"
+		     },
+		     "createMultiple": {
+		      "!type": "fn(quantity: number, key: string, frame: number|string, exists: bool)"
+		     },
+		     "updateZ": {
+		      "!type": "fn()"
+		     },
+		     "resetCursor": {
+		      "!type": "fn(index: number) -> ?"
+		     },
+		     "next": {
+		      "!type": "fn() -> ?"
+		     },
+		     "previous": {
+		      "!type": "fn() -> ?"
+		     },
+		     "swap": {
+		      "!type": "fn(child1: +any, child2: +any)"
+		     },
+		     "bringToTop": {
+		      "!type": "fn(child: +any) -> ?"
+		     },
+		     "sendToBack": {
+		      "!type": "fn(child: +any) -> ?"
+		     },
+		     "moveUp": {
+		      "!type": "fn(child: +any) -> ?"
+		     },
+		     "moveDown": {
+		      "!type": "fn(child: +any) -> ?"
+		     },
+		     "xy": {
+		      "!type": "fn(index: number, x: number, y: number)"
+		     },
+		     "reverse": {
+		      "!type": "fn()"
+		     },
+		     "getIndex": {
+		      "!type": "fn(child: +any) -> ?"
+		     },
+		     "replace": {
+		      "!type": "fn(oldChild: +any, newChild: +any) -> ?"
+		     },
+		     "hasProperty": {
+		      "!type": "fn(child: +any, key: [?]) -> ?"
+		     },
+		     "setProperty": {
+		      "!type": "fn(child: +any, key: +array, value: +any, operation: number, force: bool) -> ?"
+		     },
+		     "checkProperty": {
+		      "!type": "fn(child: +any, key: +array, value: +any, force: bool) -> ?"
+		     },
+		     "set": {
+		      "!type": "fn(child: +Phaser.Sprite, key: string, value: +any, checkAlive: bool, checkVisible: bool, operation: number, force: bool) -> ?"
+		     },
+		     "setAll": {
+		      "!type": "fn(key: string, value: +any, checkAlive: bool, checkVisible: bool, operation: number, force: bool)"
+		     },
+		     "setAllChildren": {
+		      "!type": "fn(key: string, value: +any, checkAlive: bool, checkVisible: bool, operation: number, force: bool)"
+		     },
+		     "checkAll": {
+		      "!type": "fn(key: string, value: +any, checkAlive: bool, checkVisible: bool, force: bool)"
+		     },
+		     "addAll": {
+		      "!type": "fn(property: string, amount: number, checkAlive: bool, checkVisible: bool)"
+		     },
+		     "subAll": {
+		      "!type": "fn(property: string, amount: number, checkAlive: bool, checkVisible: bool)"
+		     },
+		     "multiplyAll": {
+		      "!type": "fn(property: string, amount: number, checkAlive: bool, checkVisible: bool)"
+		     },
+		     "divideAll": {
+		      "!type": "fn(property: string, amount: number, checkAlive: bool, checkVisible: bool)"
+		     },
+		     "callAllExists": {
+		      "!type": "fn(callback: string, existsValue: bool, parameter: +any)"
+		     },
+		     "callbackFromArray": {
+		      "!type": "fn(child: ?, callback: +array, length: number)"
+		     },
+		     "callAll": {
+		      "!type": "fn(method: string, context: string, args: +any)"
+		     },
+		     "preUpdate": {
+		      "!type": "fn()"
+		     },
+		     "update": {
+		      "!type": "fn()"
+		     },
+		     "postUpdate": {
+		      "!type": "fn()"
+		     },
+		     "filter": {
+		      "!type": "fn(predicate: +function, checkExists: bool) -> ?"
+		     },
+		     "forEach": {
+		      "!type": "fn(callback: +function, callbackContext: ?, checkExists: bool, args: +any)"
+		     },
+		     "forEachExists": {
+		      "!type": "fn(callback: +function, callbackContext: ?, args: +any)"
+		     },
+		     "forEachAlive": {
+		      "!type": "fn(callback: +function, callbackContext: ?, args: +any)"
+		     },
+		     "forEachDead": {
+		      "!type": "fn(callback: +function, callbackContext: ?, args: +any)"
+		     },
+		     "sort": {
+		      "!type": "fn(key: string, order: number)"
+		     },
+		     "customSort": {
+		      "!type": "fn(sortHandler: +function, context: ?)"
+		     },
+		     "ascendingSortHandler": {
+		      "!type": "fn(a: ?, b: ?)"
+		     },
+		     "descendingSortHandler": {
+		      "!type": "fn(a: ?, b: ?)"
+		     },
+		     "iterate": {
+		      "!type": "fn(key: string, value: +any, returnType: number, callback: +function, callbackContext: ?, args: [?]) -> ?"
+		     },
+		     "getFirstExists": {
+		      "!type": "fn(exists: bool) -> ?"
+		     },
+		     "getFirstAlive": {
+		      "!type": "fn() -> ?"
+		     },
+		     "getFirstDead": {
+		      "!type": "fn() -> ?"
+		     },
+		     "getTop": {
+		      "!type": "fn() -> ?"
+		     },
+		     "getBottom": {
+		      "!type": "fn() -> ?"
+		     },
+		     "countLiving": {
+		      "!type": "fn() -> ?"
+		     },
+		     "countDead": {
+		      "!type": "fn() -> ?"
+		     },
+		     "getRandom": {
+		      "!type": "fn(startIndex: number, length: number) -> ?"
+		     },
+		     "remove": {
+		      "!type": "fn(child: +any, destroy: bool, silent: bool) -> ?"
+		     },
+		     "moveAll": {
+		      "!type": "fn(group: +Phaser.Group, silent: bool) -> ?"
+		     },
+		     "removeAll": {
+		      "!type": "fn(destroy: bool, silent: bool)"
+		     },
+		     "removeBetween": {
+		      "!type": "fn(startIndex: number, endIndex: number, destroy: bool, silent: bool)"
+		     },
+		     "destroy": {
+		      "!type": "fn(destroyChildren: bool, soft: bool)"
+		     },
+		     "total": {
+		      "!type": "number"
+		     },
+		     "length": {
+		      "!type": "number"
+		     },
+		     "angle": {
+		      "!type": "number"
+		     },
+		     "x": {
+		      "!type": "number"
+		     },
+		     "y": {
+		      "!type": "number"
+		     },
+		     "rotation": {
+		      "!type": "number"
+		     },
+		     "visible": {
+		      "!type": "bool"
+		     },
+		     "alpha": {
+		      "!type": "number"
+		     },
+		     "children": {}
 		    }
 		   },
 		   "Text": {
 		    "!type": "fn(game: +Phaser.Game, x: number, y: number, text: string, style: ?, style_font: string, style_fontStyle: string, style_fontVariant: string, style_fontWeight: string, style_fontSize: string|number, style_backgroundColor: string, style_fill: string, style_align: string, style_boundsAlignH: string, style_boundsAlignV: string, style_stroke: string, style_strokeThickness: number, style_wordWrap: bool, style_wordWrapWidth: number, style_tabs: number)",
-		    "x": {
-		     "!type": "number"
-		    },
-		    "y": {
-		     "!type": "number"
-		    },
-		    "text": {
-		     "!type": "string"
-		    },
+		    "x": {},
+		    "y": {},
+		    "text": {},
 		    "style": {},
-		    "type": {
-		     "!type": "number"
-		    },
-		    "physicsType": {
-		     "!type": "number"
-		    },
-		    "padding": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "textBounds": {
-		     "!type": "+Phaser.Rectangle"
-		    },
-		    "canvas": {
-		     "!type": "+HTMLCanvasElement"
-		    },
-		    "context": {
-		     "!type": "+HTMLCanvasElement"
-		    },
-		    "colors": {
-		     "!type": "+array"
-		    },
-		    "strokeColors": {
-		     "!type": "+array"
-		    },
-		    "fontStyles": {
-		     "!type": "+array"
-		    },
-		    "fontWeights": {
-		     "!type": "+array"
-		    },
-		    "autoRound": {
-		     "!type": "bool"
-		    },
-		    "_res": {
-		     "!type": "number"
-		    },
-		    "_text": {
-		     "!type": "string"
-		    },
-		    "_fontComponents": {
-		     "!type": "?"
-		    },
-		    "_lineSpacing": {
-		     "!type": "number"
-		    },
-		    "_charCount": {
-		     "!type": "number"
-		    },
-		    "_width": {
-		     "!type": "number"
-		    },
-		    "_height": {
-		     "!type": "number"
-		    },
-		    "preUpdate": {
-		     "!type": "fn()"
-		    },
-		    "update": {
-		     "!type": "fn()"
-		    },
-		    "destroy": {
-		     "!type": "fn()"
-		    },
-		    "setShadow": {
-		     "!type": "fn()"
-		    },
-		    "setStyle": {
-		     "!type": "fn()"
-		    },
-		    "updateText": {
-		     "!type": "fn()"
-		    },
-		    "renderTabLine": {
-		     "!type": "fn()"
-		    },
-		    "updateShadow": {
-		     "!type": "fn()"
-		    },
-		    "updateLine": {
-		     "!type": "fn()"
-		    },
-		    "clearColors": {
-		     "!type": "fn()"
-		    },
-		    "clearFontValues": {
-		     "!type": "fn()"
-		    },
-		    "addColor": {
-		     "!type": "fn()"
-		    },
-		    "addStrokeColor": {
-		     "!type": "fn()"
-		    },
-		    "addFontStyle": {
-		     "!type": "fn()"
-		    },
-		    "addFontWeight": {
-		     "!type": "fn()"
-		    },
-		    "runWordWrap": {
-		     "!type": "fn()"
-		    },
-		    "updateFont": {
-		     "!type": "fn()"
-		    },
-		    "fontToComponents": {
-		     "!type": "fn()"
-		    },
-		    "componentsToFont": {
-		     "!type": "fn()"
-		    },
-		    "setText": {
-		     "!type": "fn()"
-		    },
-		    "parseList": {
-		     "!type": "fn()"
-		    },
-		    "setTextBounds": {
-		     "!type": "fn()"
-		    },
-		    "updateTexture": {
-		     "!type": "fn()"
-		    },
-		    "_renderWebGL": {
-		     "!type": "fn()"
-		    },
-		    "_renderCanvas": {
-		     "!type": "fn()"
-		    },
-		    "determineFontProperties": {
-		     "!type": "fn()"
+		    "prototype": {
+		     "type": {
+		      "!type": "number"
+		     },
+		     "physicsType": {
+		      "!type": "number"
+		     },
+		     "padding": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "textBounds": {
+		      "!type": "+Phaser.Rectangle"
+		     },
+		     "canvas": {
+		      "!type": "+HTMLCanvasElement"
+		     },
+		     "context": {
+		      "!type": "+HTMLCanvasElement"
+		     },
+		     "colors": {
+		      "!type": "+array"
+		     },
+		     "strokeColors": {
+		      "!type": "+array"
+		     },
+		     "fontStyles": {
+		      "!type": "+array"
+		     },
+		     "fontWeights": {
+		      "!type": "+array"
+		     },
+		     "autoRound": {
+		      "!type": "bool"
+		     },
+		     "_res": {
+		      "!type": "number"
+		     },
+		     "_text": {
+		      "!type": "string"
+		     },
+		     "_fontComponents": {},
+		     "_lineSpacing": {
+		      "!type": "number"
+		     },
+		     "_charCount": {
+		      "!type": "number"
+		     },
+		     "_width": {
+		      "!type": "number"
+		     },
+		     "_height": {
+		      "!type": "number"
+		     },
+		     "preUpdate": {
+		      "!type": "fn()"
+		     },
+		     "update": {
+		      "!type": "fn()"
+		     },
+		     "destroy": {
+		      "!type": "fn()"
+		     },
+		     "setShadow": {
+		      "!type": "fn()"
+		     },
+		     "setStyle": {
+		      "!type": "fn()"
+		     },
+		     "updateText": {
+		      "!type": "fn()"
+		     },
+		     "renderTabLine": {
+		      "!type": "fn()"
+		     },
+		     "updateShadow": {
+		      "!type": "fn()"
+		     },
+		     "updateLine": {
+		      "!type": "fn()"
+		     },
+		     "clearColors": {
+		      "!type": "fn()"
+		     },
+		     "clearFontValues": {
+		      "!type": "fn()"
+		     },
+		     "addColor": {
+		      "!type": "fn()"
+		     },
+		     "addStrokeColor": {
+		      "!type": "fn()"
+		     },
+		     "addFontStyle": {
+		      "!type": "fn()"
+		     },
+		     "addFontWeight": {
+		      "!type": "fn()"
+		     },
+		     "runWordWrap": {
+		      "!type": "fn()"
+		     },
+		     "updateFont": {
+		      "!type": "fn()"
+		     },
+		     "fontToComponents": {
+		      "!type": "fn()"
+		     },
+		     "componentsToFont": {
+		      "!type": "fn()"
+		     },
+		     "setText": {
+		      "!type": "fn()"
+		     },
+		     "parseList": {
+		      "!type": "fn()"
+		     },
+		     "setTextBounds": {
+		      "!type": "fn()"
+		     },
+		     "updateTexture": {
+		      "!type": "fn()"
+		     },
+		     "_renderWebGL": {
+		      "!type": "fn()"
+		     },
+		     "_renderCanvas": {
+		      "!type": "fn()"
+		     },
+		     "determineFontProperties": {
+		      "!type": "fn()"
+		     },
+		     "getBounds": {
+		      "!type": "fn()"
+		     },
+		     "text": {
+		      "!type": "string"
+		     },
+		     "cssFont": {
+		      "!type": "string"
+		     },
+		     "font": {
+		      "!type": "string"
+		     },
+		     "fontSize": {
+		      "!type": "number|string"
+		     },
+		     "fontWeight": {
+		      "!type": "string"
+		     },
+		     "fontStyle": {
+		      "!type": "string"
+		     },
+		     "fontVariant": {
+		      "!type": "string"
+		     },
+		     "fill": {},
+		     "align": {
+		      "!type": "string"
+		     },
+		     "resolution": {
+		      "!type": "number"
+		     },
+		     "tabs": {
+		      "!type": "number|+array"
+		     },
+		     "boundsAlignH": {
+		      "!type": "string"
+		     },
+		     "boundsAlignV": {
+		      "!type": "string"
+		     },
+		     "stroke": {
+		      "!type": "string"
+		     },
+		     "strokeThickness": {
+		      "!type": "number"
+		     },
+		     "wordWrap": {
+		      "!type": "bool"
+		     },
+		     "wordWrapWidth": {
+		      "!type": "number"
+		     },
+		     "lineSpacing": {
+		      "!type": "number"
+		     },
+		     "shadowOffsetX": {
+		      "!type": "number"
+		     },
+		     "shadowOffsetY": {
+		      "!type": "number"
+		     },
+		     "shadowColor": {
+		      "!type": "string"
+		     },
+		     "shadowBlur": {
+		      "!type": "number"
+		     },
+		     "shadowStroke": {
+		      "!type": "bool"
+		     },
+		     "shadowFill": {
+		      "!type": "bool"
+		     },
+		     "width": {
+		      "!type": "number"
+		     },
+		     "height": {
+		      "!type": "number"
+		     },
+		     "anchor": {},
+		     "texture": {},
+		     "tint": {},
+		     "cachedTint": {},
+		     "tintedTexture": {},
+		     "blendMode": {},
+		     "shader": {},
+		     "game": {
+		      "!type": "+Phaser.Game"
+		     },
+		     "name": {
+		      "!type": "string"
+		     },
+		     "components": {},
+		     "z": {
+		      "!type": "number"
+		     },
+		     "events": {
+		      "!type": "+Phaser.Events"
+		     },
+		     "animations": {
+		      "!type": "+Phaser.AnimationManager"
+		     },
+		     "key": {
+		      "!type": "string|+Phaser.RenderTexture|+Phaser.BitmapData|+Phaser.Video|+PIXI.Texture"
+		     },
+		     "world": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "debug": {
+		      "!type": "bool"
+		     },
+		     "previousPosition": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "previousRotation": {
+		      "!type": "number"
+		     },
+		     "renderOrderID": {
+		      "!type": "number"
+		     },
+		     "fresh": {
+		      "!type": "bool"
+		     },
+		     "pendingDestroy": {
+		      "!type": "bool"
+		     },
+		     "_bounds": {
+		      "!type": "+Phaser.Rectangle"
+		     },
+		     "_exists": {
+		      "!type": "bool"
+		     },
+		     "exists": {
+		      "!type": "bool"
+		     },
+		     "postUpdate": {
+		      "!type": "fn()"
+		     },
+		     "angle": {
+		      "!type": "number"
+		     },
+		     "play": {
+		      "!type": "fn(name: string, frameRate: number, loop: bool, killOnComplete: bool) -> ?"
+		     },
+		     "autoCull": {
+		      "!type": "bool"
+		     },
+		     "inCamera": {
+		      "!type": "bool"
+		     },
+		     "offsetX": {
+		      "!type": "number"
+		     },
+		     "offsetY": {
+		      "!type": "number"
+		     },
+		     "left": {
+		      "!type": "number"
+		     },
+		     "right": {
+		      "!type": "number"
+		     },
+		     "top": {
+		      "!type": "number"
+		     },
+		     "bottom": {
+		      "!type": "number"
+		     },
+		     "bringToTop": {
+		      "!type": "fn() -> ?"
+		     },
+		     "sendToBack": {
+		      "!type": "fn() -> ?"
+		     },
+		     "moveUp": {
+		      "!type": "fn() -> ?"
+		     },
+		     "moveDown": {
+		      "!type": "fn() -> ?"
+		     },
+		     "cropRect": {
+		      "!type": "+Phaser.Rectangle"
+		     },
+		     "_crop": {
+		      "!type": "+Phaser.Rectangle"
+		     },
+		     "crop": {
+		      "!type": "fn(rect: +Phaser.Rectangle, copy: bool)"
+		     },
+		     "updateCrop": {
+		      "!type": "fn()"
+		     },
+		     "deltaX": {
+		      "!type": "number"
+		     },
+		     "deltaY": {
+		      "!type": "number"
+		     },
+		     "deltaZ": {
+		      "!type": "number"
+		     },
+		     "destroyPhase": {
+		      "!type": "bool"
+		     },
+		     "_fixedToCamera": {
+		      "!type": "bool"
+		     },
+		     "fixedToCamera": {
+		      "!type": "bool"
+		     },
+		     "cameraOffset": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "health": {
+		      "!type": "number"
+		     },
+		     "maxHealth": {
+		      "!type": "number"
+		     },
+		     "damage": {},
+		     "heal": {},
+		     "input": {
+		      "!type": "+Phaser.InputHandler|+null"
+		     },
+		     "inputEnabled": {
+		      "!type": "bool"
+		     },
+		     "checkWorldBounds": {
+		      "!type": "bool"
+		     },
+		     "outOfBoundsKill": {
+		      "!type": "bool"
+		     },
+		     "_outOfBoundsFired": {
+		      "!type": "bool"
+		     },
+		     "inWorld": {
+		      "!type": "bool"
+		     },
+		     "alive": {
+		      "!type": "bool"
+		     },
+		     "lifespan": {
+		      "!type": "number"
+		     },
+		     "revive": {
+		      "!type": "fn(health: number) -> ?"
+		     },
+		     "kill": {
+		      "!type": "fn() -> ?"
+		     },
+		     "customRender": {
+		      "!type": "bool"
+		     },
+		     "_frame": {
+		      "!type": "+Phaser.Rectangle"
+		     },
+		     "loadTexture": {
+		      "!type": "fn(key: string|+Phaser.RenderTexture|+Phaser.BitmapData|+Phaser.Video|+PIXI.Texture, frame: string|number, stopAnimation: bool)"
+		     },
+		     "setFrame": {
+		      "!type": "fn(frame: +Phaser.Frame)"
+		     },
+		     "resizeFrame": {
+		      "!type": "fn(parent: ?, width: number, height: number)"
+		     },
+		     "resetFrame": {
+		      "!type": "fn()"
+		     },
+		     "frame": {
+		      "!type": "number"
+		     },
+		     "frameName": {
+		      "!type": "string"
+		     },
+		     "overlap": {
+		      "!type": "fn(displayObject: +Phaser.Sprite|+Phaser.Image|+Phaser.TileSprite|+Phaser.Button|+PIXI.DisplayObject) -> ?"
+		     },
+		     "body": {
+		      "!type": "+Phaser.Physics.Arcade.Body|+Phaser.Physics.P2.Body|+Phaser.Physics.Ninja.Body|+null"
+		     },
+		     "x": {
+		      "!type": "number"
+		     },
+		     "y": {
+		      "!type": "number"
+		     },
+		     "reset": {
+		      "!type": "fn(x: number, y: number, health: number) -> ?"
+		     },
+		     "transformCallback": {
+		      "!type": "+function"
+		     },
+		     "transformCallbackContext": {},
+		     "scaleMin": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "scaleMax": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "checkTransform": {
+		      "!type": "fn(wt: +PIXI.Matrix)"
+		     },
+		     "setScaleMinMax": {
+		      "!type": "fn(minX: number|+null, minY: number|+null, maxX: number|+null, maxY: number|+null)"
+		     },
+		     "smoothed": {
+		      "!type": "bool"
+		     }
 		    },
 		    "fontPropertiesCache[undefined]": {},
-		    "getBounds": {
-		     "!type": "fn()"
-		    },
-		    "cssFont": {
-		     "!type": "string"
-		    },
-		    "font": {
-		     "!type": "string"
-		    },
-		    "fontSize": {
-		     "!type": "number|string"
-		    },
-		    "fontWeight": {
-		     "!type": "string"
-		    },
-		    "fontStyle": {
-		     "!type": "string"
-		    },
-		    "fontVariant": {
-		     "!type": "string"
-		    },
-		    "fill": {
-		     "!type": "?"
-		    },
-		    "align": {
-		     "!type": "string"
-		    },
-		    "resolution": {
-		     "!type": "+integer"
-		    },
-		    "tabs": {
-		     "!type": "+integer|+array"
-		    },
-		    "boundsAlignH": {
-		     "!type": "string"
-		    },
-		    "boundsAlignV": {
-		     "!type": "string"
-		    },
-		    "stroke": {
-		     "!type": "string"
-		    },
-		    "strokeThickness": {
-		     "!type": "number"
-		    },
-		    "wordWrap": {
-		     "!type": "bool"
-		    },
-		    "wordWrapWidth": {
-		     "!type": "number"
-		    },
-		    "lineSpacing": {
-		     "!type": "number"
-		    },
-		    "shadowOffsetX": {
-		     "!type": "number"
-		    },
-		    "shadowOffsetY": {
-		     "!type": "number"
-		    },
-		    "shadowColor": {
-		     "!type": "string"
-		    },
-		    "shadowBlur": {
-		     "!type": "number"
-		    },
-		    "shadowStroke": {
-		     "!type": "bool"
-		    },
-		    "shadowFill": {
-		     "!type": "bool"
-		    },
-		    "width": {
-		     "!type": "number"
-		    },
-		    "height": {
-		     "!type": "number"
-		    },
 		    "fontPropertiesCache": {},
 		    "fontPropertiesCanvas": {},
-		    "fontPropertiesContext": {},
-		    "anchor": {
-		     "!type": "?"
-		    },
-		    "texture": {
-		     "!type": "?"
-		    },
-		    "tint": {
-		     "!type": "?"
-		    },
-		    "cachedTint": {
-		     "!type": "?"
-		    },
-		    "tintedTexture": {
-		     "!type": "?"
-		    },
-		    "blendMode": {
-		     "!type": "?"
-		    },
-		    "shader": {
-		     "!type": "?"
-		    },
-		    "game": {
-		     "!type": "+Phaser.Game"
-		    },
-		    "name": {
-		     "!type": "string"
-		    },
-		    "components": {
-		     "!type": "?"
-		    },
-		    "z": {
-		     "!type": "number"
-		    },
-		    "events": {
-		     "!type": "+Phaser.Events"
-		    },
-		    "animations": {
-		     "!type": "+Phaser.AnimationManager"
-		    },
-		    "key": {
-		     "!type": "string|+Phaser.RenderTexture|+Phaser.BitmapData|+Phaser.Video|+PIXI.Texture"
-		    },
-		    "world": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "debug": {
-		     "!type": "bool"
-		    },
-		    "previousPosition": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "previousRotation": {
-		     "!type": "number"
-		    },
-		    "renderOrderID": {
-		     "!type": "number"
-		    },
-		    "fresh": {
-		     "!type": "bool"
-		    },
-		    "pendingDestroy": {
-		     "!type": "bool"
-		    },
-		    "_bounds": {
-		     "!type": "+Phaser.Rectangle"
-		    },
-		    "_exists": {
-		     "!type": "bool"
-		    },
-		    "exists": {
-		     "!type": "bool"
-		    },
-		    "postUpdate": {
-		     "!type": "fn()"
-		    },
-		    "angle": {
-		     "!type": "number"
-		    },
-		    "play": {
-		     "!type": "fn(name: string, frameRate: number, loop: bool, killOnComplete: bool) -> ?"
-		    },
-		    "autoCull": {
-		     "!type": "bool"
-		    },
-		    "inCamera": {
-		     "!type": "bool"
-		    },
-		    "offsetX": {
-		     "!type": "number"
-		    },
-		    "offsetY": {
-		     "!type": "number"
-		    },
-		    "left": {
-		     "!type": "number"
-		    },
-		    "right": {
-		     "!type": "number"
-		    },
-		    "top": {
-		     "!type": "number"
-		    },
-		    "bottom": {
-		     "!type": "number"
-		    },
-		    "bringToTop": {
-		     "!type": "fn() -> ?"
-		    },
-		    "sendToBack": {
-		     "!type": "fn() -> ?"
-		    },
-		    "moveUp": {
-		     "!type": "fn() -> ?"
-		    },
-		    "moveDown": {
-		     "!type": "fn() -> ?"
-		    },
-		    "cropRect": {
-		     "!type": "+Phaser.Rectangle"
-		    },
-		    "_crop": {
-		     "!type": "+Phaser.Rectangle"
-		    },
-		    "crop": {
-		     "!type": "fn(rect: +Phaser.Rectangle, copy: bool)"
-		    },
-		    "updateCrop": {
-		     "!type": "fn()"
-		    },
-		    "deltaX": {
-		     "!type": "number"
-		    },
-		    "deltaY": {
-		     "!type": "number"
-		    },
-		    "deltaZ": {
-		     "!type": "number"
-		    },
-		    "destroyPhase": {
-		     "!type": "bool"
-		    },
-		    "_fixedToCamera": {
-		     "!type": "bool"
-		    },
-		    "fixedToCamera": {
-		     "!type": "bool"
-		    },
-		    "cameraOffset": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "health": {
-		     "!type": "number"
-		    },
-		    "maxHealth": {
-		     "!type": "number"
-		    },
-		    "damage": {},
-		    "heal": {},
-		    "input": {
-		     "!type": "+Phaser.InputHandler|+null"
-		    },
-		    "inputEnabled": {
-		     "!type": "bool"
-		    },
-		    "checkWorldBounds": {
-		     "!type": "bool"
-		    },
-		    "outOfBoundsKill": {
-		     "!type": "bool"
-		    },
-		    "_outOfBoundsFired": {
-		     "!type": "bool"
-		    },
-		    "inWorld": {
-		     "!type": "bool"
-		    },
-		    "alive": {
-		     "!type": "bool"
-		    },
-		    "lifespan": {
-		     "!type": "number"
-		    },
-		    "revive": {
-		     "!type": "fn(health: number) -> ?"
-		    },
-		    "kill": {
-		     "!type": "fn() -> ?"
-		    },
-		    "customRender": {
-		     "!type": "bool"
-		    },
-		    "_frame": {
-		     "!type": "+Phaser.Rectangle"
-		    },
-		    "loadTexture": {
-		     "!type": "fn(key: string|+Phaser.RenderTexture|+Phaser.BitmapData|+Phaser.Video|+PIXI.Texture, frame: string|number, stopAnimation: bool)"
-		    },
-		    "setFrame": {
-		     "!type": "fn(frame: +Phaser.Frame)"
-		    },
-		    "resizeFrame": {
-		     "!type": "fn(parent: ?, width: +integer, height: +integer)"
-		    },
-		    "resetFrame": {
-		     "!type": "fn()"
-		    },
-		    "frame": {
-		     "!type": "+integer"
-		    },
-		    "frameName": {
-		     "!type": "string"
-		    },
-		    "overlap": {
-		     "!type": "fn(displayObject: +Phaser.Sprite|+Phaser.Image|+Phaser.TileSprite|+Phaser.Button|+PIXI.DisplayObject) -> ?"
-		    },
-		    "body": {
-		     "!type": "+Phaser.Physics.Arcade.Body|+Phaser.Physics.P2.Body|+Phaser.Physics.Ninja.Body|+null"
-		    },
-		    "reset": {
-		     "!type": "fn(x: number, y: number, health: number) -> ?"
-		    },
-		    "transformCallback": {
-		     "!type": "+function"
-		    },
-		    "transformCallbackContext": {
-		     "!type": "?"
-		    },
-		    "scaleMin": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "scaleMax": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "checkTransform": {
-		     "!type": "fn(wt: +PIXI.Matrix)"
-		    },
-		    "setScaleMinMax": {
-		     "!type": "fn(minX: number|+null, minY: number|+null, maxX: number|+null, maxY: number|+null)"
-		    },
-		    "smoothed": {
-		     "!type": "bool"
-		    }
+		    "fontPropertiesContext": {}
 		   },
 		   "Text#setShadow": {
 		    "x": {},
@@ -8768,7 +9146,9 @@
 		    "blur": {},
 		    "shadowStroke": {},
 		    "shadowFill": {},
-		    "dirty": {}
+		    "prototype": {
+		     "dirty": {}
+		    }
 		   },
 		   "Text#setShadow#style": {
 		    "shadowOffsetX": {},
@@ -8781,8 +9161,11 @@
 		   "Text#setStyle": {
 		    "style": {},
 		    "components": {},
-		    "_fontComponents": {},
-		    "dirty": {}
+		    "prototype": {
+		     "_fontComponents": {},
+		     "style": {},
+		     "dirty": {}
+		    }
 		   },
 		   "Text#setStyle~style": {
 		    "font": {},
@@ -8842,7 +9225,9 @@
 		    "lineSpacing": {},
 		    "linePositionX": {},
 		    "linePositionY": {},
-		    "_charCount": {}
+		    "prototype": {
+		     "_charCount": {}
+		    }
 		   },
 		   "Text#updateText~lineWidths": {
 		    "undefined]": {}
@@ -8882,30 +9267,42 @@
 		    "fillStyle": {}
 		   },
 		   "Text#clearColors": {
-		    "colors": {},
-		    "strokeColors": {},
-		    "dirty": {}
+		    "prototype": {
+		     "colors": {},
+		     "strokeColors": {},
+		     "dirty": {}
+		    }
 		   },
 		   "Text#clearFontValues": {
-		    "fontStyles": {},
-		    "fontWeights": {},
-		    "dirty": {}
+		    "prototype": {
+		     "fontStyles": {},
+		     "fontWeights": {},
+		     "dirty": {}
+		    }
 		   },
 		   "Text#addColor": {
-		    "colors[undefined]": {},
-		    "dirty": {}
+		    "prototype": {
+		     "colors[undefined]": {},
+		     "dirty": {}
+		    }
 		   },
 		   "Text#addStrokeColor": {
-		    "strokeColors[undefined]": {},
-		    "dirty": {}
+		    "prototype": {
+		     "strokeColors[undefined]": {},
+		     "dirty": {}
+		    }
 		   },
 		   "Text#addFontStyle": {
-		    "fontStyles[undefined]": {},
-		    "dirty": {}
+		    "prototype": {
+		     "fontStyles[undefined]": {},
+		     "dirty": {}
+		    }
 		   },
 		   "Text#addFontWeight": {
-		    "fontWeights[undefined]": {},
-		    "dirty": {}
+		    "prototype": {
+		     "fontWeights[undefined]": {},
+		     "dirty": {}
+		    }
 		   },
 		   "Text#runWordWrap": {
 		    "result": {},
@@ -8919,7 +9316,9 @@
 		   },
 		   "Text#updateFont": {
 		    "font": {},
-		    "dirty": {}
+		    "prototype": {
+		     "dirty": {}
+		    }
 		   },
 		   "Text#updateFont#style": {
 		    "font": {}
@@ -8932,17 +9331,23 @@
 		    "v": {}
 		   },
 		   "Text#setText": {
-		    "text": {},
-		    "dirty": {}
+		    "prototype": {
+		     "text": {},
+		     "dirty": {}
+		    }
 		   },
 		   "Text#parseList": {
 		    "s": {},
 		    "i": {},
-		    "text": {},
-		    "dirty": {}
+		    "prototype": {
+		     "text": {},
+		     "dirty": {}
+		    }
 		   },
 		   "Text#setTextBounds": {
-		    "textBounds": {}
+		    "prototype": {
+		     "textBounds": {}
+		    }
 		   },
 		   "Text#setTextBounds#style": {
 		    "wordWrapWidth": {}
@@ -8953,11 +9358,13 @@
 		    "frame": {},
 		    "w": {},
 		    "h": {},
-		    "_width": {},
-		    "_height": {},
+		    "prototype": {
+		     "_width": {},
+		     "_height": {},
+		     "renderable": {}
+		    },
 		    "x": {},
-		    "y": {},
-		    "renderable": {}
+		    "y": {}
 		   },
 		   "Text#updateTexture~base": {
 		    "width": {},
@@ -8981,10 +9388,14 @@
 		    "y": {}
 		   },
 		   "Text#_renderWebGL": {
-		    "dirty": {}
+		    "prototype": {
+		     "dirty": {}
+		    }
 		   },
 		   "Text#_renderCanvas": {
-		    "dirty": {}
+		    "prototype": {
+		     "dirty": {}
+		    }
 		   },
 		   "Text#determineFontProperties": {
 		    "properties": {},
@@ -9016,268 +9427,248 @@
 		    "fontSize": {}
 		   },
 		   "Text#getBounds": {
-		    "dirty": {}
+		    "prototype": {
+		     "dirty": {}
+		    }
 		   },
 		   "TileSprite": {
 		    "!type": "fn(game: +Phaser.Game, x: number, y: number, width: number, height: number, key: string|+Phaser.RenderTexture|+Phaser.BitmapData|+PIXI.Texture, frame: string|number)",
-		    "x": {
-		     "!type": "number"
-		    },
-		    "y": {
-		     "!type": "number"
-		    },
+		    "x": {},
+		    "y": {},
 		    "width": {},
 		    "height": {},
-		    "key": {
-		     "!type": "string|+Phaser.RenderTexture|+Phaser.BitmapData|+Phaser.Video|+PIXI.Texture"
-		    },
-		    "frame": {
-		     "!type": "+integer"
-		    },
-		    "type": {
-		     "!type": "number"
-		    },
-		    "physicsType": {
-		     "!type": "number"
-		    },
-		    "_scroll": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "def": {},
-		    "preUpdatePhysics": {},
-		    "preUpdateLifeSpan": {},
-		    "preUpdateInWorld": {},
-		    "preUpdateCore": {},
-		    "preUpdate": {
-		     "!type": "fn()"
-		    },
-		    "autoScroll": {
-		     "!type": "fn()"
-		    },
-		    "stopScroll": {
-		     "!type": "fn()"
-		    },
-		    "destroy": {
-		     "!type": "fn()"
-		    },
-		    "reset": {
-		     "!type": "fn()"
-		    },
-		    "_width": {
-		     "!type": "?"
-		    },
-		    "_height": {
-		     "!type": "?"
-		    },
-		    "tileScale": {
-		     "!type": "?"
-		    },
-		    "tileScaleOffset": {
-		     "!type": "?"
-		    },
-		    "tilePosition": {
-		     "!type": "?"
-		    },
-		    "renderable": {
-		     "!type": "?"
-		    },
-		    "tint": {
-		     "!type": "?"
-		    },
-		    "textureDebug": {
-		     "!type": "?"
-		    },
-		    "blendMode": {
-		     "!type": "?"
-		    },
-		    "canvasBuffer": {
-		     "!type": "?"
-		    },
-		    "tilingTexture": {
-		     "!type": "?"
-		    },
-		    "tilePattern": {
-		     "!type": "?"
-		    },
-		    "refreshTexture": {
-		     "!type": "?"
-		    },
-		    "game": {
-		     "!type": "+Phaser.Game"
-		    },
-		    "name": {
-		     "!type": "string"
-		    },
-		    "components": {
-		     "!type": "?"
-		    },
-		    "z": {
-		     "!type": "number"
-		    },
-		    "events": {
-		     "!type": "+Phaser.Events"
-		    },
-		    "animations": {
-		     "!type": "+Phaser.AnimationManager"
-		    },
-		    "world": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "debug": {
-		     "!type": "bool"
-		    },
-		    "previousPosition": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "previousRotation": {
-		     "!type": "number"
-		    },
-		    "renderOrderID": {
-		     "!type": "number"
-		    },
-		    "fresh": {
-		     "!type": "bool"
-		    },
-		    "pendingDestroy": {
-		     "!type": "bool"
-		    },
-		    "_bounds": {
-		     "!type": "+Phaser.Rectangle"
-		    },
-		    "_exists": {
-		     "!type": "bool"
-		    },
-		    "exists": {
-		     "!type": "bool"
-		    },
-		    "update": {
-		     "!type": "fn()"
-		    },
-		    "postUpdate": {
-		     "!type": "fn()"
-		    },
-		    "angle": {
-		     "!type": "number"
-		    },
-		    "play": {
-		     "!type": "fn(name: string, frameRate: number, loop: bool, killOnComplete: bool) -> ?"
-		    },
-		    "autoCull": {
-		     "!type": "bool"
-		    },
-		    "inCamera": {
-		     "!type": "bool"
-		    },
-		    "offsetX": {
-		     "!type": "number"
-		    },
-		    "offsetY": {
-		     "!type": "number"
-		    },
-		    "left": {
-		     "!type": "number"
-		    },
-		    "right": {
-		     "!type": "number"
-		    },
-		    "top": {
-		     "!type": "number"
-		    },
-		    "bottom": {
-		     "!type": "number"
-		    },
-		    "bringToTop": {
-		     "!type": "fn() -> ?"
-		    },
-		    "sendToBack": {
-		     "!type": "fn() -> ?"
-		    },
-		    "moveUp": {
-		     "!type": "fn() -> ?"
-		    },
-		    "moveDown": {
-		     "!type": "fn() -> ?"
-		    },
-		    "destroyPhase": {
-		     "!type": "bool"
-		    },
-		    "_fixedToCamera": {
-		     "!type": "bool"
-		    },
-		    "fixedToCamera": {
-		     "!type": "bool"
-		    },
-		    "cameraOffset": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "health": {
-		     "!type": "number"
-		    },
-		    "maxHealth": {
-		     "!type": "number"
-		    },
-		    "damage": {},
-		    "heal": {},
-		    "input": {
-		     "!type": "+Phaser.InputHandler|+null"
-		    },
-		    "inputEnabled": {
-		     "!type": "bool"
-		    },
-		    "checkWorldBounds": {
-		     "!type": "bool"
-		    },
-		    "outOfBoundsKill": {
-		     "!type": "bool"
-		    },
-		    "_outOfBoundsFired": {
-		     "!type": "bool"
-		    },
-		    "inWorld": {
-		     "!type": "bool"
-		    },
-		    "alive": {
-		     "!type": "bool"
-		    },
-		    "lifespan": {
-		     "!type": "number"
-		    },
-		    "revive": {
-		     "!type": "fn(health: number) -> ?"
-		    },
-		    "kill": {
-		     "!type": "fn() -> ?"
-		    },
-		    "customRender": {
-		     "!type": "bool"
-		    },
-		    "_frame": {
-		     "!type": "+Phaser.Rectangle"
-		    },
-		    "loadTexture": {
-		     "!type": "fn(key: string|+Phaser.RenderTexture|+Phaser.BitmapData|+Phaser.Video|+PIXI.Texture, frame: string|number, stopAnimation: bool)"
-		    },
-		    "setFrame": {
-		     "!type": "fn(frame: +Phaser.Frame)"
-		    },
-		    "resizeFrame": {
-		     "!type": "fn(parent: ?, width: +integer, height: +integer)"
-		    },
-		    "resetFrame": {
-		     "!type": "fn()"
-		    },
-		    "frameName": {
-		     "!type": "string"
-		    },
-		    "overlap": {
-		     "!type": "fn(displayObject: +Phaser.Sprite|+Phaser.Image|+Phaser.TileSprite|+Phaser.Button|+PIXI.DisplayObject) -> ?"
-		    },
-		    "body": {
-		     "!type": "+Phaser.Physics.Arcade.Body|+Phaser.Physics.P2.Body|+Phaser.Physics.Ninja.Body|+null"
-		    },
-		    "smoothed": {
-		     "!type": "bool"
-		    }
+		    "key": {},
+		    "frame": {},
+		    "prototype": {
+		     "type": {
+		      "!type": "number"
+		     },
+		     "physicsType": {
+		      "!type": "number"
+		     },
+		     "_scroll": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "preUpdatePhysics": {},
+		     "preUpdateLifeSpan": {},
+		     "preUpdateInWorld": {},
+		     "preUpdateCore": {},
+		     "preUpdate": {
+		      "!type": "fn()"
+		     },
+		     "autoScroll": {
+		      "!type": "fn()"
+		     },
+		     "stopScroll": {
+		      "!type": "fn()"
+		     },
+		     "destroy": {
+		      "!type": "fn()"
+		     },
+		     "reset": {
+		      "!type": "fn()"
+		     },
+		     "_width": {},
+		     "_height": {},
+		     "tileScale": {},
+		     "tileScaleOffset": {},
+		     "tilePosition": {},
+		     "renderable": {},
+		     "tint": {},
+		     "textureDebug": {},
+		     "blendMode": {},
+		     "canvasBuffer": {},
+		     "tilingTexture": {},
+		     "tilePattern": {},
+		     "refreshTexture": {},
+		     "game": {
+		      "!type": "+Phaser.Game"
+		     },
+		     "name": {
+		      "!type": "string"
+		     },
+		     "components": {},
+		     "z": {
+		      "!type": "number"
+		     },
+		     "events": {
+		      "!type": "+Phaser.Events"
+		     },
+		     "animations": {
+		      "!type": "+Phaser.AnimationManager"
+		     },
+		     "key": {
+		      "!type": "string|+Phaser.RenderTexture|+Phaser.BitmapData|+Phaser.Video|+PIXI.Texture"
+		     },
+		     "world": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "debug": {
+		      "!type": "bool"
+		     },
+		     "previousPosition": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "previousRotation": {
+		      "!type": "number"
+		     },
+		     "renderOrderID": {
+		      "!type": "number"
+		     },
+		     "fresh": {
+		      "!type": "bool"
+		     },
+		     "pendingDestroy": {
+		      "!type": "bool"
+		     },
+		     "_bounds": {
+		      "!type": "+Phaser.Rectangle"
+		     },
+		     "_exists": {
+		      "!type": "bool"
+		     },
+		     "exists": {
+		      "!type": "bool"
+		     },
+		     "update": {
+		      "!type": "fn()"
+		     },
+		     "postUpdate": {
+		      "!type": "fn()"
+		     },
+		     "angle": {
+		      "!type": "number"
+		     },
+		     "play": {
+		      "!type": "fn(name: string, frameRate: number, loop: bool, killOnComplete: bool) -> ?"
+		     },
+		     "autoCull": {
+		      "!type": "bool"
+		     },
+		     "inCamera": {
+		      "!type": "bool"
+		     },
+		     "offsetX": {
+		      "!type": "number"
+		     },
+		     "offsetY": {
+		      "!type": "number"
+		     },
+		     "left": {
+		      "!type": "number"
+		     },
+		     "right": {
+		      "!type": "number"
+		     },
+		     "top": {
+		      "!type": "number"
+		     },
+		     "bottom": {
+		      "!type": "number"
+		     },
+		     "bringToTop": {
+		      "!type": "fn() -> ?"
+		     },
+		     "sendToBack": {
+		      "!type": "fn() -> ?"
+		     },
+		     "moveUp": {
+		      "!type": "fn() -> ?"
+		     },
+		     "moveDown": {
+		      "!type": "fn() -> ?"
+		     },
+		     "destroyPhase": {
+		      "!type": "bool"
+		     },
+		     "_fixedToCamera": {
+		      "!type": "bool"
+		     },
+		     "fixedToCamera": {
+		      "!type": "bool"
+		     },
+		     "cameraOffset": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "health": {
+		      "!type": "number"
+		     },
+		     "maxHealth": {
+		      "!type": "number"
+		     },
+		     "damage": {},
+		     "heal": {},
+		     "input": {
+		      "!type": "+Phaser.InputHandler|+null"
+		     },
+		     "inputEnabled": {
+		      "!type": "bool"
+		     },
+		     "checkWorldBounds": {
+		      "!type": "bool"
+		     },
+		     "outOfBoundsKill": {
+		      "!type": "bool"
+		     },
+		     "_outOfBoundsFired": {
+		      "!type": "bool"
+		     },
+		     "inWorld": {
+		      "!type": "bool"
+		     },
+		     "alive": {
+		      "!type": "bool"
+		     },
+		     "lifespan": {
+		      "!type": "number"
+		     },
+		     "revive": {
+		      "!type": "fn(health: number) -> ?"
+		     },
+		     "kill": {
+		      "!type": "fn() -> ?"
+		     },
+		     "customRender": {
+		      "!type": "bool"
+		     },
+		     "_frame": {
+		      "!type": "+Phaser.Rectangle"
+		     },
+		     "loadTexture": {
+		      "!type": "fn(key: string|+Phaser.RenderTexture|+Phaser.BitmapData|+Phaser.Video|+PIXI.Texture, frame: string|number, stopAnimation: bool)"
+		     },
+		     "setFrame": {
+		      "!type": "fn(frame: +Phaser.Frame)"
+		     },
+		     "resizeFrame": {
+		      "!type": "fn(parent: ?, width: number, height: number)"
+		     },
+		     "resetFrame": {
+		      "!type": "fn()"
+		     },
+		     "frame": {
+		      "!type": "number"
+		     },
+		     "frameName": {
+		      "!type": "string"
+		     },
+		     "overlap": {
+		      "!type": "fn(displayObject: +Phaser.Sprite|+Phaser.Image|+Phaser.TileSprite|+Phaser.Button|+PIXI.DisplayObject) -> ?"
+		     },
+		     "body": {
+		      "!type": "+Phaser.Physics.Arcade.Body|+Phaser.Physics.P2.Body|+Phaser.Physics.Ninja.Body|+null"
+		     },
+		     "x": {
+		      "!type": "number"
+		     },
+		     "y": {
+		      "!type": "number"
+		     },
+		     "smoothed": {
+		      "!type": "bool"
+		     }
+		    },
+		    "def": {}
 		   },
 		   "TileSprite#preUpdate#tilePosition": {
 		    "x": {},
@@ -9289,198 +9680,201 @@
 		   },
 		   "Video": {
 		    "!type": "fn(game: +Phaser.Game, key: string|+null, url: string|+null)",
-		    "key": {
-		     "!type": "string"
-		    },
+		    "key": {},
 		    "url": {},
-		    "game": {
-		     "!type": "+Phaser.Game"
+		    "prototype": {
+		     "game": {
+		      "!type": "+Phaser.Game"
+		     },
+		     "key": {
+		      "!type": "string"
+		     },
+		     "width": {
+		      "!type": "number"
+		     },
+		     "height": {
+		      "!type": "number"
+		     },
+		     "type": {
+		      "!type": "number"
+		     },
+		     "disableTextureUpload": {
+		      "!type": "bool"
+		     },
+		     "touchLocked": {
+		      "!type": "bool"
+		     },
+		     "onPlay": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "onChangeSource": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "onComplete": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "onAccess": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "onError": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "onTimeout": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "timeout": {
+		      "!type": "number"
+		     },
+		     "_timeOutID": {
+		      "!type": "number"
+		     },
+		     "video": {
+		      "!type": "+HTMLVideoElement"
+		     },
+		     "videoStream": {
+		      "!type": "+MediaStream"
+		     },
+		     "isStreaming": {
+		      "!type": "bool"
+		     },
+		     "retryLimit": {
+		      "!type": "number"
+		     },
+		     "retry": {
+		      "!type": "number"
+		     },
+		     "retryInterval": {
+		      "!type": "number"
+		     },
+		     "_retryID": {
+		      "!type": "number"
+		     },
+		     "_codeMuted": {
+		      "!type": "bool"
+		     },
+		     "_muted": {
+		      "!type": "bool"
+		     },
+		     "_codePaused": {
+		      "!type": "bool"
+		     },
+		     "_paused": {
+		      "!type": "bool"
+		     },
+		     "_pending": {
+		      "!type": "bool"
+		     },
+		     "_autoplay": {
+		      "!type": "bool"
+		     },
+		     "baseTexture": {},
+		     "texture": {
+		      "!type": "+PIXI.Texture"
+		     },
+		     "textureFrame": {
+		      "!type": "+Phaser.Frame"
+		     },
+		     "snapshot": {
+		      "!type": "+Phaser.BitmapData"
+		     },
+		     "connectToMediaStream": {
+		      "!type": "fn()"
+		     },
+		     "startMediaStream": {
+		      "!type": "fn()"
+		     },
+		     "getUserMediaTimeout": {
+		      "!type": "fn()"
+		     },
+		     "getUserMediaError": {
+		      "!type": "fn()"
+		     },
+		     "getUserMediaSuccess": {
+		      "!type": "fn()"
+		     },
+		     "createVideoFromBlob": {
+		      "!type": "fn()"
+		     },
+		     "createVideoFromURL": {
+		      "!type": "fn()"
+		     },
+		     "updateTexture": {
+		      "!type": "fn()"
+		     },
+		     "complete": {
+		      "!type": "fn()"
+		     },
+		     "play": {
+		      "!type": "fn()"
+		     },
+		     "playHandler": {
+		      "!type": "fn()"
+		     },
+		     "stop": {
+		      "!type": "fn()"
+		     },
+		     "add": {
+		      "!type": "fn()"
+		     },
+		     "addToWorld": {
+		      "!type": "fn()"
+		     },
+		     "render": {
+		      "!type": "fn()"
+		     },
+		     "setMute": {
+		      "!type": "fn()"
+		     },
+		     "unsetMute": {
+		      "!type": "fn()"
+		     },
+		     "setPause": {
+		      "!type": "fn()"
+		     },
+		     "setResume": {
+		      "!type": "fn()"
+		     },
+		     "changeSource": {
+		      "!type": "fn()"
+		     },
+		     "checkVideoProgress": {
+		      "!type": "fn()"
+		     },
+		     "setTouchLock": {
+		      "!type": "fn()"
+		     },
+		     "unlock": {
+		      "!type": "fn()"
+		     },
+		     "grab": {
+		      "!type": "fn()"
+		     },
+		     "removeVideoElement": {
+		      "!type": "fn()"
+		     },
+		     "destroy": {
+		      "!type": "fn()"
+		     },
+		     "mute": {
+		      "!type": "bool"
+		     },
+		     "paused": {
+		      "!type": "bool"
+		     },
+		     "volume": {
+		      "!type": "number"
+		     },
+		     "playbackRate": {
+		      "!type": "number"
+		     },
+		     "loop": {
+		      "!type": "bool"
+		     },
+		     "playing": {
+		      "!type": "bool"
+		     }
 		    },
-		    "width": {
-		     "!type": "number"
-		    },
-		    "height": {
-		     "!type": "number"
-		    },
-		    "type": {
-		     "!type": "number"
-		    },
-		    "disableTextureUpload": {
-		     "!type": "bool"
-		    },
-		    "touchLocked": {
-		     "!type": "bool"
-		    },
-		    "onPlay": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "onChangeSource": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "onComplete": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "onAccess": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "onError": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "onTimeout": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "timeout": {
-		     "!type": "+integer"
-		    },
-		    "_timeOutID": {
-		     "!type": "+integer"
-		    },
-		    "video": {
-		     "!type": "+HTMLVideoElement"
-		    },
-		    "videoStream": {
-		     "!type": "+MediaStream"
-		    },
-		    "isStreaming": {
-		     "!type": "bool"
-		    },
-		    "retryLimit": {
-		     "!type": "+integer"
-		    },
-		    "retry": {
-		     "!type": "+integer"
-		    },
-		    "retryInterval": {
-		     "!type": "+integer"
-		    },
-		    "_retryID": {
-		     "!type": "+integer"
-		    },
-		    "_codeMuted": {
-		     "!type": "bool"
-		    },
-		    "_muted": {
-		     "!type": "bool"
-		    },
-		    "_codePaused": {
-		     "!type": "bool"
-		    },
-		    "_paused": {
-		     "!type": "bool"
-		    },
-		    "_pending": {
-		     "!type": "bool"
-		    },
-		    "_autoplay": {
-		     "!type": "bool"
-		    },
-		    "_video": {},
-		    "baseTexture": {},
-		    "texture": {
-		     "!type": "+PIXI.Texture"
-		    },
-		    "textureFrame": {
-		     "!type": "+Phaser.Frame"
-		    },
-		    "snapshot": {
-		     "!type": "+Phaser.BitmapData"
-		    },
-		    "connectToMediaStream": {
-		     "!type": "fn()"
-		    },
-		    "startMediaStream": {
-		     "!type": "fn()"
-		    },
-		    "getUserMediaTimeout": {
-		     "!type": "fn()"
-		    },
-		    "getUserMediaError": {
-		     "!type": "fn()"
-		    },
-		    "getUserMediaSuccess": {
-		     "!type": "fn()"
-		    },
-		    "createVideoFromBlob": {
-		     "!type": "fn()"
-		    },
-		    "createVideoFromURL": {
-		     "!type": "fn()"
-		    },
-		    "updateTexture": {
-		     "!type": "fn()"
-		    },
-		    "complete": {
-		     "!type": "fn()"
-		    },
-		    "play": {
-		     "!type": "fn()"
-		    },
-		    "playHandler": {
-		     "!type": "fn()"
-		    },
-		    "stop": {
-		     "!type": "fn()"
-		    },
-		    "add": {
-		     "!type": "fn()"
-		    },
-		    "addToWorld": {
-		     "!type": "fn()"
-		    },
-		    "render": {
-		     "!type": "fn()"
-		    },
-		    "setMute": {
-		     "!type": "fn()"
-		    },
-		    "unsetMute": {
-		     "!type": "fn()"
-		    },
-		    "setPause": {
-		     "!type": "fn()"
-		    },
-		    "setResume": {
-		     "!type": "fn()"
-		    },
-		    "changeSource": {
-		     "!type": "fn()"
-		    },
-		    "checkVideoProgress": {
-		     "!type": "fn()"
-		    },
-		    "setTouchLock": {
-		     "!type": "fn()"
-		    },
-		    "unlock": {
-		     "!type": "fn()"
-		    },
-		    "grab": {
-		     "!type": "fn()"
-		    },
-		    "removeVideoElement": {
-		     "!type": "fn()"
-		    },
-		    "destroy": {
-		     "!type": "fn()"
-		    },
-		    "mute": {
-		     "!type": "bool"
-		    },
-		    "paused": {
-		     "!type": "bool"
-		    },
-		    "volume": {
-		     "!type": "number"
-		    },
-		    "playbackRate": {
-		     "!type": "number"
-		    },
-		    "loop": {
-		     "!type": "bool"
-		    },
-		    "playing": {
-		     "!type": "bool"
-		    }
+		    "_video": {}
 		   },
 		   "Video#texture": {
 		    "valid": {}
@@ -9489,9 +9883,11 @@
 		    "locked": {}
 		   },
 		   "Video#connectToMediaStream": {
-		    "video": {},
-		    "videoStream": {},
-		    "isStreaming": {}
+		    "prototype": {
+		     "video": {},
+		     "videoStream": {},
+		     "isStreaming": {}
+		    }
 		   },
 		   "Video#connectToMediaStream#baseTexture": {
 		    "source": {}
@@ -9500,8 +9896,10 @@
 		    "captureAudio": {},
 		    "width": {},
 		    "height": {},
-		    "video": {},
-		    "_timeOutID": {}
+		    "prototype": {
+		     "video": {},
+		     "_timeOutID": {}
+		    }
 		   },
 		   "Video#startMediaStream#videoStream": {
 		    "active": {}
@@ -9511,7 +9909,9 @@
 		    "height": {}
 		   },
 		   "Video#getUserMediaSuccess": {
-		    "videoStream": {},
+		    "prototype": {
+		     "videoStream": {}
+		    },
 		    "self": {}
 		   },
 		   "Video#getUserMediaSuccess#video": {
@@ -9535,7 +9935,9 @@
 		   },
 		   "Video#createVideoFromBlob": {
 		    "_this": {},
-		    "video": {}
+		    "prototype": {
+		     "video": {}
+		    }
 		   },
 		   "Video#createVideoFromBlob#video": {
 		    "controls": {},
@@ -9544,10 +9946,12 @@
 		   },
 		   "Video#createVideoFromURL": {
 		    "autoplay": {},
-		    "video": {},
-		    "retry": {},
-		    "_retryID": {},
-		    "key": {}
+		    "prototype": {
+		     "video": {},
+		     "retry": {},
+		     "_retryID": {},
+		     "key": {}
+		    }
 		   },
 		   "Video#createVideoFromURL#texture": {
 		    "valid": {}
@@ -9560,7 +9964,11 @@
 		   "Video#updateTexture": {
 		    "change": {},
 		    "width": {},
-		    "height": {}
+		    "height": {},
+		    "prototype": {
+		     "width": {},
+		     "height": {}
+		    }
 		   },
 		   "Video#updateTexture#baseTexture": {
 		    "source": {}
@@ -9573,9 +9981,11 @@
 		   "Video#play": {
 		    "loop": {},
 		    "playbackRate": {},
-		    "_pending": {},
-		    "retry": {},
-		    "_retryID": {}
+		    "prototype": {
+		     "_pending": {},
+		     "retry": {},
+		     "_retryID": {}
+		    }
 		   },
 		   "Video#play#video": {
 		    "loop": {},
@@ -9588,9 +9998,11 @@
 		    "active": {}
 		   },
 		   "Video#stop": {
-		    "videoStream": {},
-		    "isStreaming": {},
-		    "_pending": {}
+		    "prototype": {
+		     "videoStream": {},
+		     "isStreaming": {},
+		     "_pending": {}
+		    }
 		   },
 		   "Video#add": {
 		    "i": {}
@@ -9601,29 +10013,39 @@
 		    "image": {}
 		   },
 		   "Video#setMute": {
-		    "_muted": {}
+		    "prototype": {
+		     "_muted": {}
+		    }
 		   },
 		   "Video#setMute#video": {
 		    "muted": {}
 		   },
 		   "Video#unsetMute": {
-		    "_muted": {}
+		    "prototype": {
+		     "_muted": {}
+		    }
 		   },
 		   "Video#unsetMute#video": {
 		    "muted": {}
 		   },
 		   "Video#setPause": {
-		    "_paused": {}
+		    "prototype": {
+		     "_paused": {}
+		    }
 		   },
 		   "Video#setResume": {
-		    "_paused": {}
+		    "prototype": {
+		     "_paused": {}
+		    }
 		   },
 		   "Video#changeSource": {
 		    "autoplay": {},
-		    "retry": {},
-		    "_retryID": {},
-		    "_autoplay": {},
-		    "paused": {}
+		    "prototype": {
+		     "retry": {},
+		     "_retryID": {},
+		     "_autoplay": {},
+		     "paused": {}
+		    }
 		   },
 		   "Video#changeSource#texture": {
 		    "valid": {}
@@ -9632,13 +10054,19 @@
 		    "src": {}
 		   },
 		   "Video#checkVideoProgress": {
-		    "_retryID": {}
+		    "prototype": {
+		     "_retryID": {}
+		    }
 		   },
 		   "Video#setTouchLock": {
-		    "touchLocked": {}
+		    "prototype": {
+		     "touchLocked": {}
+		    }
 		   },
 		   "Video#unlock": {
-		    "touchLocked": {},
+		    "prototype": {
+		     "touchLocked": {}
+		    },
 		    "_video": {}
 		   },
 		   "Video#unlock~_video": {
@@ -9650,93 +10078,106 @@
 		    "blendMode": {}
 		   },
 		   "Video#removeVideoElement": {
-		    "video": {}
+		    "prototype": {
+		     "video": {}
+		    }
 		   },
 		   "Circle": {
 		    "!type": "fn(x: number, y: number, diameter: number)",
-		    "x": {
-		     "!type": "number"
-		    },
-		    "y": {
-		     "!type": "number"
-		    },
-		    "diameter": {
-		     "!type": "number"
-		    },
-		    "_diameter": {
-		     "!type": "number"
-		    },
-		    "_radius": {
-		     "!type": "number"
-		    },
-		    "type": {
-		     "!type": "number"
-		    },
-		    "circumference": {
-		     "!type": "fn()"
-		    },
-		    "random": {
-		     "!type": "fn()"
-		    },
-		    "getBounds": {
-		     "!type": "fn()"
-		    },
-		    "setTo": {
-		     "!type": "fn()"
-		    },
-		    "copyFrom": {
-		     "!type": "fn()"
-		    },
-		    "copyTo": {
-		     "!type": "fn()"
-		    },
-		    "distance": {
-		     "!type": "fn()"
-		    },
-		    "clone": {
-		     "!type": "fn()"
+		    "x": {},
+		    "y": {},
+		    "diameter": {},
+		    "prototype": {
+		     "x": {
+		      "!type": "number"
+		     },
+		     "y": {
+		      "!type": "number"
+		     },
+		     "_diameter": {
+		      "!type": "number"
+		     },
+		     "_radius": {
+		      "!type": "number"
+		     },
+		     "type": {
+		      "!type": "number"
+		     },
+		     "circumference": {
+		      "!type": "fn()"
+		     },
+		     "random": {
+		      "!type": "fn()"
+		     },
+		     "getBounds": {
+		      "!type": "fn()"
+		     },
+		     "setTo": {
+		      "!type": "fn()"
+		     },
+		     "copyFrom": {
+		      "!type": "fn()"
+		     },
+		     "copyTo": {
+		      "!type": "fn()"
+		     },
+		     "distance": {
+		      "!type": "fn()"
+		     },
+		     "clone": {
+		      "!type": "fn()"
+		     },
+		     "contains": {
+		      "!type": "fn()"
+		     },
+		     "circumferencePoint": {
+		      "!type": "fn()"
+		     },
+		     "offset": {
+		      "!type": "fn()"
+		     },
+		     "offsetPoint": {
+		      "!type": "fn()"
+		     },
+		     "diameter": {
+		      "!type": "number"
+		     },
+		     "radius": {
+		      "!type": "number"
+		     },
+		     "left": {},
+		     "right": {
+		      "!type": "number"
+		     },
+		     "top": {
+		      "!type": "number"
+		     },
+		     "bottom": {
+		      "!type": "number"
+		     },
+		     "area": {
+		      "!type": "number"
+		     },
+		     "empty": {
+		      "!type": "bool"
+		     }
 		    },
 		    "contains": {
 		     "!type": "fn()",
 		     "dx": {},
 		     "dy": {}
 		    },
-		    "circumferencePoint": {
-		     "!type": "fn()",
-		     "asDegrees": {},
-		     "out": {},
-		     "angle": {}
-		    },
-		    "offset": {
-		     "!type": "fn()"
-		    },
-		    "offsetPoint": {
-		     "!type": "fn()"
-		    },
-		    "radius": {
-		     "!type": "number"
-		    },
-		    "left": {},
-		    "right": {
-		     "!type": "number"
-		    },
-		    "top": {
-		     "!type": "number"
-		    },
-		    "bottom": {
-		     "!type": "number"
-		    },
-		    "area": {
-		     "!type": "number"
-		    },
-		    "empty": {
-		     "!type": "bool"
-		    },
 		    "equals": {
 		     "!type": "fn()"
 		    },
 		    "intersects": {
 		     "!type": "fn()"
+		    },
+		    "circumferencePoint": {
+		     "!type": "fn()",
+		     "asDegrees": {},
+		     "out": {},
+		     "angle": {}
 		    },
 		    "circumferencePoint~out": {
 		     "x": {},
@@ -9768,10 +10209,12 @@
 		    "y": {}
 		   },
 		   "Circle#setTo": {
-		    "x": {},
-		    "y": {},
-		    "_diameter": {},
-		    "_radius": {}
+		    "prototype": {
+		     "x": {},
+		     "y": {},
+		     "_diameter": {},
+		     "_radius": {}
+		    }
 		   },
 		   "Circle#distance": {
 		    "distance": {}
@@ -9780,68 +10223,81 @@
 		    "output": {}
 		   },
 		   "Circle#offset": {
-		    "x": {},
-		    "y": {}
+		    "prototype": {
+		     "x": {},
+		     "y": {}
+		    }
 		   },
 		   "Ellipse": {
 		    "!type": "fn(x: number, y: number, width: number, height: number)",
-		    "x": {
-		     "!type": "number"
-		    },
-		    "y": {
-		     "!type": "number"
-		    },
-		    "width": {
-		     "!type": "number"
-		    },
-		    "height": {
-		     "!type": "number"
-		    },
-		    "type": {
-		     "!type": "number"
-		    },
-		    "setTo": {
-		     "!type": "fn()"
-		    },
-		    "getBounds": {
-		     "!type": "fn()"
-		    },
-		    "copyFrom": {
-		     "!type": "fn()"
-		    },
-		    "copyTo": {
-		     "!type": "fn()"
-		    },
-		    "clone": {
-		     "!type": "fn()"
+		    "x": {},
+		    "y": {},
+		    "width": {},
+		    "height": {},
+		    "prototype": {
+		     "x": {
+		      "!type": "number"
+		     },
+		     "y": {
+		      "!type": "number"
+		     },
+		     "width": {
+		      "!type": "number"
+		     },
+		     "height": {
+		      "!type": "number"
+		     },
+		     "type": {
+		      "!type": "number"
+		     },
+		     "setTo": {
+		      "!type": "fn()"
+		     },
+		     "getBounds": {
+		      "!type": "fn()"
+		     },
+		     "copyFrom": {
+		      "!type": "fn()"
+		     },
+		     "copyTo": {
+		      "!type": "fn()"
+		     },
+		     "clone": {
+		      "!type": "fn()"
+		     },
+		     "contains": {
+		      "!type": "fn()"
+		     },
+		     "random": {
+		      "!type": "fn()"
+		     },
+		     "left": {},
+		     "right": {
+		      "!type": "number"
+		     },
+		     "top": {
+		      "!type": "number"
+		     },
+		     "bottom": {
+		      "!type": "number"
+		     },
+		     "empty": {
+		      "!type": "bool"
+		     }
 		    },
 		    "contains": {
 		     "!type": "fn()",
 		     "normx": {},
 		     "normy": {}
-		    },
-		    "random": {
-		     "!type": "fn()"
-		    },
-		    "left": {},
-		    "right": {
-		     "!type": "number"
-		    },
-		    "top": {
-		     "!type": "number"
-		    },
-		    "bottom": {
-		     "!type": "number"
-		    },
-		    "empty": {
-		     "!type": "bool"
 		    }
 		   },
 		   "Ellipse#setTo": {
-		    "x": {},
-		    "y": {},
-		    "width": {},
-		    "height": {}
+		    "prototype": {
+		     "x": {},
+		     "y": {},
+		     "width": {},
+		     "height": {}
+		    }
 		   },
 		   "Ellipse#clone": {
 		    "output": {}
@@ -9861,101 +10317,103 @@
 		    "y1": {},
 		    "x2": {},
 		    "y2": {},
-		    "start": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "end": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "type": {
-		     "!type": "number"
-		    },
-		    "setTo": {
-		     "!type": "fn()"
-		    },
-		    "fromSprite": {
-		     "!type": "fn()"
-		    },
-		    "fromAngle": {
-		     "!type": "fn()"
-		    },
-		    "rotate": {
-		     "!type": "fn()"
-		    },
-		    "rotateAround": {
-		     "!type": "fn()"
-		    },
-		    "intersects": {
-		     "!type": "fn()"
-		    },
-		    "reflect": {
-		     "!type": "fn()"
-		    },
-		    "midPoint": {
-		     "!type": "fn()"
-		    },
-		    "centerOn": {
-		     "!type": "fn()"
-		    },
-		    "pointOnLine": {
-		     "!type": "fn()"
-		    },
-		    "pointOnSegment": {
-		     "!type": "fn()"
-		    },
-		    "random": {
-		     "!type": "fn()"
-		    },
-		    "coordinatesOnLine": {
-		     "!type": "fn()"
-		    },
-		    "clone": {
-		     "!type": "fn()"
-		    },
-		    "length": {
-		     "!type": "number"
-		    },
-		    "angle": {
-		     "!type": "number"
-		    },
-		    "slope": {
-		     "!type": "number"
-		    },
-		    "perpSlope": {
-		     "!type": "number"
-		    },
-		    "x": {
-		     "!type": "number"
-		    },
-		    "y": {
-		     "!type": "number"
-		    },
-		    "left": {
-		     "!type": "number"
-		    },
-		    "right": {
-		     "!type": "number"
-		    },
-		    "top": {
-		     "!type": "number"
-		    },
-		    "bottom": {
-		     "!type": "number"
-		    },
-		    "width": {
-		     "!type": "number"
-		    },
-		    "height": {
-		     "!type": "number"
-		    },
-		    "normalX": {
-		     "!type": "number"
-		    },
-		    "normalY": {
-		     "!type": "number"
-		    },
-		    "normalAngle": {
-		     "!type": "number"
+		    "prototype": {
+		     "start": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "end": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "type": {
+		      "!type": "number"
+		     },
+		     "setTo": {
+		      "!type": "fn()"
+		     },
+		     "fromSprite": {
+		      "!type": "fn()"
+		     },
+		     "fromAngle": {
+		      "!type": "fn()"
+		     },
+		     "rotate": {
+		      "!type": "fn()"
+		     },
+		     "rotateAround": {
+		      "!type": "fn()"
+		     },
+		     "intersects": {
+		      "!type": "fn()"
+		     },
+		     "reflect": {
+		      "!type": "fn()"
+		     },
+		     "midPoint": {
+		      "!type": "fn()"
+		     },
+		     "centerOn": {
+		      "!type": "fn()"
+		     },
+		     "pointOnLine": {
+		      "!type": "fn()"
+		     },
+		     "pointOnSegment": {
+		      "!type": "fn()"
+		     },
+		     "random": {
+		      "!type": "fn()"
+		     },
+		     "coordinatesOnLine": {
+		      "!type": "fn()"
+		     },
+		     "clone": {
+		      "!type": "fn()"
+		     },
+		     "length": {
+		      "!type": "number"
+		     },
+		     "angle": {
+		      "!type": "number"
+		     },
+		     "slope": {
+		      "!type": "number"
+		     },
+		     "perpSlope": {
+		      "!type": "number"
+		     },
+		     "x": {
+		      "!type": "number"
+		     },
+		     "y": {
+		      "!type": "number"
+		     },
+		     "left": {
+		      "!type": "number"
+		     },
+		     "right": {
+		      "!type": "number"
+		     },
+		     "top": {
+		      "!type": "number"
+		     },
+		     "bottom": {
+		      "!type": "number"
+		     },
+		     "width": {
+		      "!type": "number"
+		     },
+		     "height": {
+		      "!type": "number"
+		     },
+		     "normalX": {
+		      "!type": "number"
+		     },
+		     "normalY": {
+		      "!type": "number"
+		     },
+		     "normalAngle": {
+		      "!type": "number"
+		     }
 		    },
 		    "intersectsPoints": {
 		     "!type": "fn()",
@@ -9975,6 +10433,12 @@
 		    "intersectsPoints~result": {
 		     "x": {},
 		     "y": {}
+		    },
+		    "intersects": {
+		     "!type": "fn()"
+		    },
+		    "reflect": {
+		     "!type": "fn()"
 		    }
 		   },
 		   "Line#fromSprite": {
@@ -10031,74 +10495,84 @@
 		   },
 		   "Matrix": {
 		    "!type": "fn(a: number, b: number, c: number, d: number, tx: number, ty: number)",
-		    "a": {
-		     "!type": "number"
-		    },
-		    "b": {
-		     "!type": "number"
-		    },
-		    "c": {
-		     "!type": "number"
-		    },
-		    "d": {
-		     "!type": "number"
-		    },
-		    "tx": {
-		     "!type": "number"
-		    },
-		    "ty": {
-		     "!type": "number"
-		    },
-		    "type": {
-		     "!type": "number"
-		    },
-		    "fromArray": {
-		     "!type": "fn()"
-		    },
-		    "setTo": {
-		     "!type": "fn()"
-		    },
-		    "clone": {
-		     "!type": "fn()"
-		    },
-		    "copyTo": {
-		     "!type": "fn()"
-		    },
-		    "copyFrom": {
-		     "!type": "fn()"
-		    },
-		    "toArray": {
-		     "!type": "fn()"
-		    },
-		    "apply": {
-		     "!type": "fn()"
-		    },
-		    "applyInverse": {
-		     "!type": "fn()"
-		    },
-		    "translate": {
-		     "!type": "fn()"
-		    },
-		    "scale": {
-		     "!type": "fn()"
-		    },
-		    "rotate": {
-		     "!type": "fn()"
-		    },
-		    "append": {
-		     "!type": "fn()"
-		    },
-		    "identity": {
-		     "!type": "fn()"
-		    }
-		   },
-		   "Matrix#setTo": {
 		    "a": {},
 		    "b": {},
 		    "c": {},
 		    "d": {},
 		    "tx": {},
-		    "ty": {}
+		    "ty": {},
+		    "prototype": {
+		     "a": {
+		      "!type": "number"
+		     },
+		     "b": {
+		      "!type": "number"
+		     },
+		     "c": {
+		      "!type": "number"
+		     },
+		     "d": {
+		      "!type": "number"
+		     },
+		     "tx": {
+		      "!type": "number"
+		     },
+		     "ty": {
+		      "!type": "number"
+		     },
+		     "type": {
+		      "!type": "number"
+		     },
+		     "fromArray": {
+		      "!type": "fn()"
+		     },
+		     "setTo": {
+		      "!type": "fn()"
+		     },
+		     "clone": {
+		      "!type": "fn()"
+		     },
+		     "copyTo": {
+		      "!type": "fn()"
+		     },
+		     "copyFrom": {
+		      "!type": "fn()"
+		     },
+		     "toArray": {
+		      "!type": "fn()"
+		     },
+		     "apply": {
+		      "!type": "fn()"
+		     },
+		     "applyInverse": {
+		      "!type": "fn()"
+		     },
+		     "translate": {
+		      "!type": "fn()"
+		     },
+		     "scale": {
+		      "!type": "fn()"
+		     },
+		     "rotate": {
+		      "!type": "fn()"
+		     },
+		     "append": {
+		      "!type": "fn()"
+		     },
+		     "identity": {
+		      "!type": "fn()"
+		     }
+		    }
+		   },
+		   "Matrix#setTo": {
+		    "prototype": {
+		     "a": {},
+		     "b": {},
+		     "c": {},
+		     "d": {},
+		     "tx": {},
+		     "ty": {}
+		    }
 		   },
 		   "Matrix#clone": {
 		    "output": {}
@@ -10112,12 +10586,14 @@
 		    "ty": {}
 		   },
 		   "Matrix#copyFrom": {
-		    "a": {},
-		    "b": {},
-		    "c": {},
-		    "d": {},
-		    "tx": {},
-		    "ty": {}
+		    "prototype": {
+		     "a": {},
+		     "b": {},
+		     "c": {},
+		     "d": {},
+		     "tx": {},
+		     "ty": {}
+		    }
 		   },
 		   "Matrix#toArray": {
 		    "array": {}
@@ -10151,16 +10627,20 @@
 		    "y": {}
 		   },
 		   "Matrix#translate": {
-		    "tx": {},
-		    "ty": {}
+		    "prototype": {
+		     "tx": {},
+		     "ty": {}
+		    }
 		   },
 		   "Matrix#scale": {
-		    "a": {},
-		    "d": {},
-		    "c": {},
-		    "b": {},
-		    "tx": {},
-		    "ty": {}
+		    "prototype": {
+		     "a": {},
+		     "d": {},
+		     "c": {},
+		     "b": {},
+		     "tx": {},
+		     "ty": {}
+		    }
 		   },
 		   "Matrix#rotate": {
 		    "cos": {},
@@ -10168,155 +10648,169 @@
 		    "a1": {},
 		    "c1": {},
 		    "tx1": {},
-		    "a": {},
-		    "b": {},
-		    "c": {},
-		    "d": {},
-		    "tx": {},
-		    "ty": {}
+		    "prototype": {
+		     "a": {},
+		     "b": {},
+		     "c": {},
+		     "d": {},
+		     "tx": {},
+		     "ty": {}
+		    }
 		   },
 		   "Matrix#append": {
 		    "a1": {},
 		    "b1": {},
 		    "c1": {},
 		    "d1": {},
-		    "a": {},
-		    "b": {},
-		    "c": {},
-		    "d": {},
-		    "tx": {},
-		    "ty": {}
+		    "prototype": {
+		     "a": {},
+		     "b": {},
+		     "c": {},
+		     "d": {},
+		     "tx": {},
+		     "ty": {}
+		    }
 		   },
 		   "identityMatrix": {},
 		   "Point": {
 		    "!type": "fn(x: number, y: number)",
-		    "x": {
-		     "!type": "number"
-		    },
-		    "y": {
-		     "!type": "number"
-		    },
-		    "type": {
-		     "!type": "number"
-		    },
-		    "copyFrom": {
-		     "!type": "fn()"
-		    },
-		    "invert": {
-		     "!type": "fn()"
-		    },
-		    "setTo": {
-		     "!type": "fn()"
-		    },
-		    "set": {
-		     "!type": "fn()"
+		    "x": {},
+		    "y": {},
+		    "prototype": {
+		     "x": {
+		      "!type": "number"
+		     },
+		     "y": {
+		      "!type": "number"
+		     },
+		     "type": {
+		      "!type": "number"
+		     },
+		     "copyFrom": {
+		      "!type": "fn()"
+		     },
+		     "invert": {
+		      "!type": "fn()"
+		     },
+		     "setTo": {
+		      "!type": "fn()"
+		     },
+		     "set": {
+		      "!type": "fn()"
+		     },
+		     "add": {
+		      "!type": "fn()"
+		     },
+		     "subtract": {
+		      "!type": "fn()"
+		     },
+		     "multiply": {
+		      "!type": "fn()"
+		     },
+		     "divide": {
+		      "!type": "fn()"
+		     },
+		     "clampX": {
+		      "!type": "fn()"
+		     },
+		     "clampY": {
+		      "!type": "fn()"
+		     },
+		     "clamp": {
+		      "!type": "fn()"
+		     },
+		     "clone": {
+		      "!type": "fn()"
+		     },
+		     "copyTo": {
+		      "!type": "fn()"
+		     },
+		     "distance": {
+		      "!type": "fn()"
+		     },
+		     "equals": {
+		      "!type": "fn()"
+		     },
+		     "angle": {
+		      "!type": "fn()"
+		     },
+		     "rotate": {
+		      "!type": "fn()"
+		     },
+		     "getMagnitude": {
+		      "!type": "fn()"
+		     },
+		     "getMagnitudeSq": {
+		      "!type": "fn()"
+		     },
+		     "setMagnitude": {
+		      "!type": "fn()"
+		     },
+		     "normalize": {
+		      "!type": "fn()"
+		     },
+		     "isZero": {
+		      "!type": "fn()"
+		     },
+		     "dot": {
+		      "!type": "fn()"
+		     },
+		     "cross": {
+		      "!type": "fn()"
+		     },
+		     "perp": {
+		      "!type": "fn()"
+		     },
+		     "rperp": {
+		      "!type": "fn()"
+		     },
+		     "normalRightHand": {
+		      "!type": "fn()"
+		     },
+		     "floor": {
+		      "!type": "fn()"
+		     },
+		     "ceil": {
+		      "!type": "fn()"
+		     }
 		    },
 		    "add": {
 		     "!type": "fn()",
 		     "out": {}
 		    },
+		    "add~out": {
+		     "x": {},
+		     "y": {}
+		    },
 		    "subtract": {
 		     "!type": "fn()",
 		     "out": {}
+		    },
+		    "subtract~out": {
+		     "x": {},
+		     "y": {}
 		    },
 		    "multiply": {
 		     "!type": "fn()",
 		     "out": {}
 		    },
+		    "multiply~out": {
+		     "x": {},
+		     "y": {}
+		    },
 		    "divide": {
 		     "!type": "fn()",
 		     "out": {}
 		    },
-		    "clampX": {
-		     "!type": "fn()"
-		    },
-		    "clampY": {
-		     "!type": "fn()"
-		    },
-		    "clamp": {
-		     "!type": "fn()"
-		    },
-		    "clone": {
-		     "!type": "fn()"
-		    },
-		    "copyTo": {
-		     "!type": "fn()"
-		    },
-		    "distance": {
-		     "!type": "fn()",
-		     "distance": {}
+		    "divide~out": {
+		     "x": {},
+		     "y": {}
 		    },
 		    "equals": {
 		     "!type": "fn()"
 		    },
 		    "angle": {
 		     "!type": "fn()"
-		    },
-		    "rotate": {
-		     "!type": "fn()",
-		     "angle": {},
-		     "s": {},
-		     "c": {},
-		     "tx": {},
-		     "ty": {},
-		     "t": {}
-		    },
-		    "getMagnitude": {
-		     "!type": "fn()"
-		    },
-		    "getMagnitudeSq": {
-		     "!type": "fn()"
-		    },
-		    "setMagnitude": {
-		     "!type": "fn()"
-		    },
-		    "normalize": {
-		     "!type": "fn()",
-		     "out": {},
-		     "m": {}
-		    },
-		    "isZero": {
-		     "!type": "fn()"
-		    },
-		    "dot": {
-		     "!type": "fn()"
-		    },
-		    "cross": {
-		     "!type": "fn()"
-		    },
-		    "perp": {
-		     "!type": "fn()",
-		     "out": {}
-		    },
-		    "rperp": {
-		     "!type": "fn()",
-		     "out": {}
-		    },
-		    "normalRightHand": {
-		     "!type": "fn()",
-		     "out": {}
-		    },
-		    "floor": {
-		     "!type": "fn()"
-		    },
-		    "ceil": {
-		     "!type": "fn()"
-		    },
-		    "add~out": {
-		     "x": {},
-		     "y": {}
-		    },
-		    "subtract~out": {
-		     "x": {},
-		     "y": {}
-		    },
-		    "multiply~out": {
-		     "x": {},
-		     "y": {}
-		    },
-		    "divide~out": {
-		     "x": {},
-		     "y": {}
 		    },
 		    "negative": {
 		     "!type": "fn()",
@@ -10330,6 +10824,18 @@
 		     "!type": "fn()",
 		     "out": {}
 		    },
+		    "perp": {
+		     "!type": "fn()",
+		     "out": {}
+		    },
+		    "rperp": {
+		     "!type": "fn()",
+		     "out": {}
+		    },
+		    "distance": {
+		     "!type": "fn()",
+		     "distance": {}
+		    },
 		    "project": {
 		     "!type": "fn()",
 		     "out": {},
@@ -10339,6 +10845,24 @@
 		     "!type": "fn()",
 		     "out": {},
 		     "amt": {}
+		    },
+		    "normalRightHand": {
+		     "!type": "fn()",
+		     "out": {}
+		    },
+		    "normalize": {
+		     "!type": "fn()",
+		     "out": {},
+		     "m": {}
+		    },
+		    "rotate": {
+		     "!type": "fn()",
+		     "angle": {},
+		     "s": {},
+		     "c": {},
+		     "tx": {},
+		     "ty": {},
+		     "t": {}
 		    },
 		    "centroid": {
 		     "!type": "fn()",
@@ -10358,38 +10882,56 @@
 		    }
 		   },
 		   "Point#setTo": {
-		    "x": {},
-		    "y": {}
+		    "prototype": {
+		     "x": {},
+		     "y": {}
+		    }
 		   },
 		   "Point#set": {
-		    "x": {},
-		    "y": {}
+		    "prototype": {
+		     "x": {},
+		     "y": {}
+		    }
 		   },
 		   "Point#add": {
-		    "x": {},
-		    "y": {}
+		    "prototype": {
+		     "x": {},
+		     "y": {}
+		    }
 		   },
 		   "Point#subtract": {
-		    "x": {},
-		    "y": {}
+		    "prototype": {
+		     "x": {},
+		     "y": {}
+		    }
 		   },
 		   "Point#multiply": {
-		    "x": {},
-		    "y": {}
+		    "prototype": {
+		     "x": {},
+		     "y": {}
+		    }
 		   },
 		   "Point#divide": {
-		    "x": {},
-		    "y": {}
+		    "prototype": {
+		     "x": {},
+		     "y": {}
+		    }
 		   },
 		   "Point#clampX": {
-		    "x": {}
+		    "prototype": {
+		     "x": {}
+		    }
 		   },
 		   "Point#clampY": {
-		    "y": {}
+		    "prototype": {
+		     "y": {}
+		    }
 		   },
 		   "Point#clamp": {
-		    "x": {},
-		    "y": {}
+		    "prototype": {
+		     "x": {},
+		     "y": {}
+		    }
 		   },
 		   "Point#clone": {
 		    "output": {}
@@ -10399,43 +10941,47 @@
 		   },
 		   "Point#normalize": {
 		    "m": {},
-		    "x": {},
-		    "y": {}
+		    "prototype": {
+		     "x": {},
+		     "y": {}
+		    }
 		   },
 		   "Polygon": {
 		    "!type": "fn(points: [?]|[?]|+Phaser.Point|number)",
-		    "area": {
-		     "!type": "number"
-		    },
-		    "_points": {
-		     "!type": "+array"
-		    },
-		    "closed": {
-		     "!type": "bool"
-		    },
-		    "type": {
-		     "!type": "number"
-		    },
-		    "toNumberArray": {
-		     "!type": "fn()"
-		    },
-		    "flatten": {
-		     "!type": "fn()"
-		    },
-		    "clone": {
-		     "!type": "fn()"
-		    },
-		    "contains": {
-		     "!type": "fn()"
-		    },
-		    "setTo": {
-		     "!type": "fn()"
-		    },
-		    "calculateArea": {
-		     "!type": "fn()"
-		    },
-		    "points": {
-		     "!type": "[?]"
+		    "prototype": {
+		     "area": {
+		      "!type": "number"
+		     },
+		     "_points": {
+		      "!type": "+array"
+		     },
+		     "closed": {
+		      "!type": "bool"
+		     },
+		     "type": {
+		      "!type": "number"
+		     },
+		     "toNumberArray": {
+		      "!type": "fn()"
+		     },
+		     "flatten": {
+		      "!type": "fn()"
+		     },
+		     "clone": {
+		      "!type": "fn()"
+		     },
+		     "contains": {
+		      "!type": "fn()"
+		     },
+		     "setTo": {
+		      "!type": "fn()"
+		     },
+		     "calculateArea": {
+		      "!type": "fn()"
+		     },
+		     "points": {
+		      "!type": "[?]"
+		     }
 		    }
 		   },
 		   "Polygon#toNumberArray": {
@@ -10443,7 +10989,9 @@
 		    "i": {}
 		   },
 		   "Polygon#flatten": {
-		    "_points": {}
+		    "prototype": {
+		     "_points": {}
+		    }
 		   },
 		   "Polygon#clone": {
 		    "points": {},
@@ -10460,8 +11008,10 @@
 		    "jy": {}
 		   },
 		   "Polygon#setTo": {
-		    "area": {},
-		    "_points": {},
+		    "prototype": {
+		     "area": {},
+		     "_points": {}
+		    },
 		    "points": {},
 		    "y0": {},
 		    "i": {},
@@ -10475,67 +11025,165 @@
 		    "width": {},
 		    "i": {},
 		    "len": {},
-		    "area": {}
+		    "prototype": {
+		     "area": {}
+		    }
 		   },
 		   "Rectangle": {
 		    "!type": "fn(x: number, y: number, width: number, height: number)",
-		    "x": {
-		     "!type": "number"
-		    },
-		    "y": {
-		     "!type": "number"
-		    },
-		    "width": {
-		     "!type": "number"
-		    },
-		    "height": {
-		     "!type": "number"
-		    },
-		    "type": {
-		     "!type": "number"
-		    },
-		    "offset": {
-		     "!type": "fn()"
-		    },
-		    "offsetPoint": {
-		     "!type": "fn()"
-		    },
-		    "setTo": {
-		     "!type": "fn()"
-		    },
-		    "scale": {
-		     "!type": "fn()"
-		    },
-		    "centerOn": {
-		     "!type": "fn()"
-		    },
-		    "floor": {
-		     "!type": "fn()"
-		    },
-		    "floorAll": {
-		     "!type": "fn()"
-		    },
-		    "ceil": {
-		     "!type": "fn()"
-		    },
-		    "ceilAll": {
-		     "!type": "fn()"
-		    },
-		    "copyFrom": {
-		     "!type": "fn()"
-		    },
-		    "copyTo": {
-		     "!type": "fn()"
+		    "x": {},
+		    "y": {},
+		    "width": {},
+		    "height": {},
+		    "prototype": {
+		     "x": {
+		      "!type": "number"
+		     },
+		     "y": {
+		      "!type": "number"
+		     },
+		     "width": {
+		      "!type": "number"
+		     },
+		     "height": {
+		      "!type": "number"
+		     },
+		     "type": {
+		      "!type": "number"
+		     },
+		     "offset": {
+		      "!type": "fn()"
+		     },
+		     "offsetPoint": {
+		      "!type": "fn()"
+		     },
+		     "setTo": {
+		      "!type": "fn()"
+		     },
+		     "scale": {
+		      "!type": "fn()"
+		     },
+		     "centerOn": {
+		      "!type": "fn()"
+		     },
+		     "floor": {
+		      "!type": "fn()"
+		     },
+		     "floorAll": {
+		      "!type": "fn()"
+		     },
+		     "ceil": {
+		      "!type": "fn()"
+		     },
+		     "ceilAll": {
+		      "!type": "fn()"
+		     },
+		     "copyFrom": {
+		      "!type": "fn()"
+		     },
+		     "copyTo": {
+		      "!type": "fn()"
+		     },
+		     "inflate": {
+		      "!type": "fn()"
+		     },
+		     "size": {
+		      "!type": "fn()"
+		     },
+		     "resize": {
+		      "!type": "fn()"
+		     },
+		     "clone": {
+		      "!type": "fn()"
+		     },
+		     "contains": {
+		      "!type": "fn()"
+		     },
+		     "containsRect": {
+		      "!type": "fn()"
+		     },
+		     "equals": {
+		      "!type": "fn()"
+		     },
+		     "intersection": {
+		      "!type": "fn()"
+		     },
+		     "intersects": {
+		      "!type": "fn()"
+		     },
+		     "intersectsRaw": {
+		      "!type": "fn()"
+		     },
+		     "union": {
+		      "!type": "fn()"
+		     },
+		     "random": {
+		      "!type": "fn()"
+		     },
+		     "halfWidth": {
+		      "!type": "number"
+		     },
+		     "halfHeight": {
+		      "!type": "number"
+		     },
+		     "bottom": {
+		      "!type": "number"
+		     },
+		     "bottomLeft": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "bottomRight": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "left": {
+		      "!type": "number"
+		     },
+		     "right": {
+		      "!type": "number"
+		     },
+		     "volume": {
+		      "!type": "number"
+		     },
+		     "perimeter": {
+		      "!type": "number"
+		     },
+		     "centerX": {
+		      "!type": "number"
+		     },
+		     "centerY": {
+		      "!type": "number"
+		     },
+		     "randomX": {
+		      "!type": "number"
+		     },
+		     "randomY": {
+		      "!type": "number"
+		     },
+		     "top": {
+		      "!type": "number"
+		     },
+		     "topLeft": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "topRight": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "empty": {
+		      "!type": "bool"
+		     },
+		     "aabb": {
+		      "!type": "fn(points: [?], out: +Phaser.Rectangle) -> ?"
+		     }
 		    },
 		    "inflate": {
+		     "!type": "fn()"
+		    },
+		    "inflatePoint": {
 		     "!type": "fn()"
 		    },
 		    "size": {
 		     "!type": "fn()",
 		     "output": {}
-		    },
-		    "resize": {
-		     "!type": "fn()"
 		    },
 		    "clone": {
 		     "!type": "fn()",
@@ -10544,15 +11192,30 @@
 		    "contains": {
 		     "!type": "fn()"
 		    },
+		    "containsRaw": {
+		     "!type": "fn()"
+		    },
+		    "containsPoint": {
+		     "!type": "fn()"
+		    },
 		    "containsRect": {
 		     "!type": "fn()"
 		    },
 		    "equals": {
 		     "!type": "fn()"
 		    },
+		    "sameDimensions": {
+		     "!type": "fn()"
+		    },
 		    "intersection": {
 		     "!type": "fn()",
 		     "output": {}
+		    },
+		    "intersection~output": {
+		     "x": {},
+		     "y": {},
+		     "width": {},
+		     "height": {}
 		    },
 		    "intersects": {
 		     "!type": "fn()"
@@ -10565,78 +11228,6 @@
 		     "!type": "fn()",
 		     "output": {}
 		    },
-		    "random": {
-		     "!type": "fn()"
-		    },
-		    "halfWidth": {
-		     "!type": "number"
-		    },
-		    "halfHeight": {
-		     "!type": "number"
-		    },
-		    "bottom": {
-		     "!type": "number"
-		    },
-		    "bottomLeft": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "bottomRight": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "left": {
-		     "!type": "number"
-		    },
-		    "right": {
-		     "!type": "number"
-		    },
-		    "volume": {
-		     "!type": "number"
-		    },
-		    "perimeter": {
-		     "!type": "number"
-		    },
-		    "centerX": {
-		     "!type": "number"
-		    },
-		    "centerY": {
-		     "!type": "number"
-		    },
-		    "randomX": {
-		     "!type": "number"
-		    },
-		    "randomY": {
-		     "!type": "number"
-		    },
-		    "top": {
-		     "!type": "number"
-		    },
-		    "topLeft": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "topRight": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "empty": {
-		     "!type": "bool"
-		    },
-		    "inflatePoint": {
-		     "!type": "fn()"
-		    },
-		    "containsRaw": {
-		     "!type": "fn()"
-		    },
-		    "containsPoint": {
-		     "!type": "fn()"
-		    },
-		    "sameDimensions": {
-		     "!type": "fn()"
-		    },
-		    "intersection~output": {
-		     "x": {},
-		     "y": {},
-		     "width": {},
-		     "height": {}
-		    },
 		    "aabb": {
 		     "!type": "fn()",
 		     "out": {},
@@ -10647,47 +11238,65 @@
 		    }
 		   },
 		   "Rectangle#offset": {
-		    "x": {},
-		    "y": {}
+		    "prototype": {
+		     "x": {},
+		     "y": {}
+		    }
 		   },
 		   "Rectangle#setTo": {
-		    "x": {},
-		    "y": {},
-		    "width": {},
-		    "height": {}
+		    "prototype": {
+		     "x": {},
+		     "y": {},
+		     "width": {},
+		     "height": {}
+		    }
 		   },
 		   "Rectangle#scale": {
 		    "y": {},
-		    "width": {},
-		    "height": {}
+		    "prototype": {
+		     "width": {},
+		     "height": {}
+		    }
 		   },
 		   "Rectangle#centerOn": {
-		    "centerX": {},
-		    "centerY": {}
+		    "prototype": {
+		     "centerX": {},
+		     "centerY": {}
+		    }
 		   },
 		   "Rectangle#floor": {
-		    "x": {},
-		    "y": {}
+		    "prototype": {
+		     "x": {},
+		     "y": {}
+		    }
 		   },
 		   "Rectangle#floorAll": {
-		    "x": {},
-		    "y": {},
-		    "width": {},
-		    "height": {}
+		    "prototype": {
+		     "x": {},
+		     "y": {},
+		     "width": {},
+		     "height": {}
+		    }
 		   },
 		   "Rectangle#ceil": {
-		    "x": {},
-		    "y": {}
+		    "prototype": {
+		     "x": {},
+		     "y": {}
+		    }
 		   },
 		   "Rectangle#ceilAll": {
-		    "x": {},
-		    "y": {},
-		    "width": {},
-		    "height": {}
+		    "prototype": {
+		     "x": {},
+		     "y": {},
+		     "width": {},
+		     "height": {}
+		    }
 		   },
 		   "Rectangle#resize": {
-		    "width": {},
-		    "height": {}
+		    "prototype": {
+		     "width": {},
+		     "height": {}
+		    }
 		   },
 		   "Rectangle#random": {
 		    "out": {}
@@ -10698,29 +11307,36 @@
 		   },
 		   "RoundedRectangle": {
 		    "!type": "fn(x: number, y: number, width: number, height: number, radius: number)",
-		    "x": {
-		     "!type": "number"
-		    },
-		    "y": {
-		     "!type": "number"
-		    },
-		    "width": {
-		     "!type": "number"
-		    },
-		    "height": {
-		     "!type": "number"
-		    },
-		    "radius": {
-		     "!type": "number"
-		    },
-		    "type": {
-		     "!type": "number"
-		    },
-		    "clone": {
-		     "!type": "fn()"
-		    },
-		    "contains": {
-		     "!type": "fn()"
+		    "x": {},
+		    "y": {},
+		    "width": {},
+		    "height": {},
+		    "radius": {},
+		    "prototype": {
+		     "x": {
+		      "!type": "number"
+		     },
+		     "y": {
+		      "!type": "number"
+		     },
+		     "width": {
+		      "!type": "number"
+		     },
+		     "height": {
+		      "!type": "number"
+		     },
+		     "radius": {
+		      "!type": "number"
+		     },
+		     "type": {
+		      "!type": "number"
+		     },
+		     "clone": {
+		      "!type": "fn()"
+		     },
+		     "contains": {
+		      "!type": "fn()"
+		     }
 		    }
 		   },
 		   "RoundedRectangle#contains": {
@@ -10729,103 +11345,109 @@
 		   },
 		   "DeviceButton": {
 		    "!type": "fn(parent: +Phaser.Pointer|+Phaser.SinglePad, buttonCode: number)",
-		    "parent": {
-		     "!type": "+Phaser.Pointer|+Phaser.SinglePad"
-		    },
-		    "game": {
-		     "!type": "+Phaser.Game"
-		    },
-		    "event": {
-		     "!type": "?"
-		    },
-		    "isDown": {
-		     "!type": "bool"
-		    },
-		    "isUp": {
-		     "!type": "bool"
-		    },
-		    "timeDown": {
-		     "!type": "number"
-		    },
-		    "duration": {
-		     "!type": "number"
-		    },
-		    "timeUp": {
-		     "!type": "number"
-		    },
-		    "repeats": {
-		     "!type": "number"
-		    },
-		    "altKey": {
-		     "!type": "bool"
-		    },
-		    "shiftKey": {
-		     "!type": "bool"
-		    },
-		    "ctrlKey": {
-		     "!type": "bool"
-		    },
-		    "value": {
-		     "!type": "number"
-		    },
-		    "buttonCode": {
-		     "!type": "number"
-		    },
-		    "onDown": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "onUp": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "onFloat": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "start": {
-		     "!type": "fn()"
-		    },
-		    "stop": {
-		     "!type": "fn()"
-		    },
-		    "padFloat": {
-		     "!type": "fn()"
-		    },
-		    "justPressed": {
-		     "!type": "fn()"
-		    },
-		    "justReleased": {
-		     "!type": "fn()"
-		    },
-		    "reset": {
-		     "!type": "fn()"
-		    },
-		    "destroy": {
-		     "!type": "fn()"
+		    "prototype": {
+		     "parent": {
+		      "!type": "+Phaser.Pointer|+Phaser.SinglePad"
+		     },
+		     "game": {
+		      "!type": "+Phaser.Game"
+		     },
+		     "event": {},
+		     "isDown": {
+		      "!type": "bool"
+		     },
+		     "isUp": {
+		      "!type": "bool"
+		     },
+		     "timeDown": {
+		      "!type": "number"
+		     },
+		     "duration": {
+		      "!type": "number"
+		     },
+		     "timeUp": {
+		      "!type": "number"
+		     },
+		     "repeats": {
+		      "!type": "number"
+		     },
+		     "altKey": {
+		      "!type": "bool"
+		     },
+		     "shiftKey": {
+		      "!type": "bool"
+		     },
+		     "ctrlKey": {
+		      "!type": "bool"
+		     },
+		     "value": {
+		      "!type": "number"
+		     },
+		     "buttonCode": {
+		      "!type": "number"
+		     },
+		     "onDown": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "onUp": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "onFloat": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "start": {
+		      "!type": "fn()"
+		     },
+		     "stop": {
+		      "!type": "fn()"
+		     },
+		     "padFloat": {
+		      "!type": "fn()"
+		     },
+		     "justPressed": {
+		      "!type": "fn()"
+		     },
+		     "justReleased": {
+		      "!type": "fn()"
+		     },
+		     "reset": {
+		      "!type": "fn()"
+		     },
+		     "destroy": {
+		      "!type": "fn()"
+		     }
 		    }
 		   },
 		   "DeviceButton#start": {
-		    "isDown": {},
-		    "isUp": {},
-		    "timeDown": {},
-		    "duration": {},
-		    "repeats": {},
-		    "event": {},
-		    "value": {},
-		    "altKey": {},
-		    "shiftKey": {},
-		    "ctrlKey": {}
+		    "prototype": {
+		     "isDown": {},
+		     "isUp": {},
+		     "timeDown": {},
+		     "duration": {},
+		     "repeats": {},
+		     "event": {},
+		     "value": {},
+		     "altKey": {},
+		     "shiftKey": {},
+		     "ctrlKey": {}
+		    }
 		   },
 		   "DeviceButton#stop": {
-		    "isDown": {},
-		    "isUp": {},
-		    "timeUp": {},
-		    "event": {},
-		    "value": {},
-		    "altKey": {},
-		    "shiftKey": {},
-		    "ctrlKey": {}
+		    "prototype": {
+		     "isDown": {},
+		     "isUp": {},
+		     "timeUp": {},
+		     "event": {},
+		     "value": {},
+		     "altKey": {},
+		     "shiftKey": {},
+		     "ctrlKey": {}
+		    }
 		   },
 		   "DeviceButton#padFloat": {
-		    "value": {}
+		    "prototype": {
+		     "value": {}
+		    }
 		   },
 		   "DeviceButton#justPressed": {
 		    "duration": {}
@@ -10834,134 +11456,136 @@
 		    "duration": {}
 		   },
 		   "DeviceButton#reset": {
-		    "isDown": {},
-		    "isUp": {},
-		    "timeDown": {},
-		    "duration": {},
-		    "repeats": {},
-		    "altKey": {},
-		    "shiftKey": {},
-		    "ctrlKey": {}
+		    "prototype": {
+		     "isDown": {},
+		     "isUp": {},
+		     "timeDown": {},
+		     "duration": {},
+		     "repeats": {},
+		     "altKey": {},
+		     "shiftKey": {},
+		     "ctrlKey": {}
+		    }
 		   },
 		   "DeviceButton#destroy": {
-		    "parent": {},
-		    "game": {}
+		    "prototype": {
+		     "parent": {},
+		     "game": {}
+		    }
 		   },
 		   "Gamepad": {
 		    "!type": "fn(game: +Phaser.Game)",
-		    "game": {
-		     "!type": "+Phaser.Game"
-		    },
-		    "_gamepadIndexMap": {
-		     "!type": "?"
-		    },
-		    "_rawPads": {
-		     "!type": "[?]"
-		    },
-		    "_active": {
-		     "!type": "bool"
-		    },
-		    "enabled": {
-		     "!type": "bool"
-		    },
-		    "_gamepadSupportAvailable": {
-		     "!type": "bool"
-		    },
-		    "_prevRawGamepadTypes": {
-		     "!type": "[?]"
-		    },
-		    "_prevTimestamps": {
-		     "!type": "[?]"
-		    },
-		    "callbackContext": {
-		     "!type": "?"
-		    },
-		    "onConnectCallback": {
-		     "!type": "+function"
-		    },
-		    "onDisconnectCallback": {
-		     "!type": "+function"
-		    },
-		    "onDownCallback": {
-		     "!type": "+function"
-		    },
-		    "onUpCallback": {
-		     "!type": "+function"
-		    },
-		    "onAxisCallback": {
-		     "!type": "+function"
-		    },
-		    "onFloatCallback": {
-		     "!type": "+function"
-		    },
-		    "_ongamepadconnected": {
-		     "!type": "+function"
-		    },
-		    "_gamepaddisconnected": {
-		     "!type": "+function"
-		    },
-		    "_gamepads": {
-		     "!type": "[?]"
-		    },
-		    "addCallbacks": {
-		     "!type": "fn()"
-		    },
-		    "start": {
-		     "!type": "fn()"
-		    },
-		    "onGamepadConnected": {
-		     "!type": "fn()"
-		    },
-		    "onGamepadDisconnected": {
-		     "!type": "fn()"
-		    },
-		    "update": {
-		     "!type": "fn()"
-		    },
-		    "_pollGamepads": {
-		     "!type": "fn()"
-		    },
-		    "setDeadZones": {
-		     "!type": "fn()"
-		    },
-		    "stop": {
-		     "!type": "fn()"
-		    },
-		    "reset": {
-		     "!type": "fn()"
-		    },
-		    "justPressed": {
-		     "!type": "fn(buttonCode: number, duration: number) -> ?"
-		    },
-		    "justReleased": {
-		     "!type": "fn()"
-		    },
-		    "isDown": {
-		     "!type": "fn()"
-		    },
-		    "destroy": {
-		     "!type": "fn()"
-		    },
-		    "active": {
-		     "!type": "bool"
-		    },
-		    "supported": {
-		     "!type": "bool"
-		    },
-		    "padsConnected": {
-		     "!type": "number"
-		    },
-		    "pad1": {
-		     "!type": "+Phaser.SinglePad"
-		    },
-		    "pad2": {
-		     "!type": "+Phaser.SinglePad"
-		    },
-		    "pad3": {
-		     "!type": "+Phaser.SinglePad"
-		    },
-		    "pad4": {
-		     "!type": "+Phaser.SinglePad"
+		    "prototype": {
+		     "game": {
+		      "!type": "+Phaser.Game"
+		     },
+		     "_gamepadIndexMap": {},
+		     "_rawPads": {
+		      "!type": "[?]"
+		     },
+		     "_active": {
+		      "!type": "bool"
+		     },
+		     "enabled": {
+		      "!type": "bool"
+		     },
+		     "_gamepadSupportAvailable": {
+		      "!type": "bool"
+		     },
+		     "_prevRawGamepadTypes": {
+		      "!type": "[?]"
+		     },
+		     "_prevTimestamps": {
+		      "!type": "[?]"
+		     },
+		     "callbackContext": {},
+		     "onConnectCallback": {
+		      "!type": "+function"
+		     },
+		     "onDisconnectCallback": {
+		      "!type": "+function"
+		     },
+		     "onDownCallback": {
+		      "!type": "+function"
+		     },
+		     "onUpCallback": {
+		      "!type": "+function"
+		     },
+		     "onAxisCallback": {
+		      "!type": "+function"
+		     },
+		     "onFloatCallback": {
+		      "!type": "+function"
+		     },
+		     "_ongamepadconnected": {
+		      "!type": "+function"
+		     },
+		     "_gamepaddisconnected": {
+		      "!type": "+function"
+		     },
+		     "_gamepads": {
+		      "!type": "[?]"
+		     },
+		     "addCallbacks": {
+		      "!type": "fn()"
+		     },
+		     "start": {
+		      "!type": "fn()"
+		     },
+		     "onGamepadConnected": {
+		      "!type": "fn()"
+		     },
+		     "onGamepadDisconnected": {
+		      "!type": "fn()"
+		     },
+		     "update": {
+		      "!type": "fn()"
+		     },
+		     "_pollGamepads": {
+		      "!type": "fn()"
+		     },
+		     "setDeadZones": {
+		      "!type": "fn()"
+		     },
+		     "stop": {
+		      "!type": "fn()"
+		     },
+		     "reset": {
+		      "!type": "fn()"
+		     },
+		     "justPressed": {
+		      "!type": "fn(buttonCode: number, duration: number) -> ?"
+		     },
+		     "justReleased": {
+		      "!type": "fn()"
+		     },
+		     "isDown": {
+		      "!type": "fn()"
+		     },
+		     "destroy": {
+		      "!type": "fn()"
+		     },
+		     "active": {
+		      "!type": "bool"
+		     },
+		     "supported": {
+		      "!type": "bool"
+		     },
+		     "padsConnected": {
+		      "!type": "number"
+		     },
+		     "pad1": {
+		      "!type": "+Phaser.SinglePad"
+		     },
+		     "pad2": {
+		      "!type": "+Phaser.SinglePad"
+		     },
+		     "pad3": {
+		      "!type": "+Phaser.SinglePad"
+		     },
+		     "pad4": {
+		      "!type": "+Phaser.SinglePad"
+		     }
 		    },
 		    "BUTTON_0": {},
 		    "BUTTON_1": {},
@@ -11031,23 +11655,27 @@
 		    "PS3XC_STICK_RIGHT_Y": {}
 		   },
 		   "Gamepad#addCallbacks": {
-		    "onConnectCallback": {},
-		    "onDisconnectCallback": {},
-		    "onDownCallback": {},
-		    "onUpCallback": {},
-		    "onAxisCallback": {},
-		    "onFloatCallback": {},
-		    "callbackContext": {}
+		    "prototype": {
+		     "onConnectCallback": {},
+		     "onDisconnectCallback": {},
+		     "onDownCallback": {},
+		     "onUpCallback": {},
+		     "onAxisCallback": {},
+		     "onFloatCallback": {},
+		     "callbackContext": {}
+		    }
 		   },
 		   "Gamepad#start": {
-		    "_active": {},
-		    "_this": {},
-		    "_onGamepadConnected": {
-		     "!type": "fn()"
+		    "prototype": {
+		     "_active": {},
+		     "_onGamepadConnected": {
+		      "!type": "fn()"
+		     },
+		     "_onGamepadDisconnected": {
+		      "!type": "fn()"
+		     }
 		    },
-		    "_onGamepadDisconnected": {
-		     "!type": "fn()"
-		    }
+		    "_this": {}
 		   },
 		   "Gamepad#onGamepadConnected": {
 		    "newPad": {}
@@ -11058,10 +11686,12 @@
 		   },
 		   "Gamepad#_pollGamepads": {
 		    "rawGamepads": {},
-		    "_rawPads": {},
+		    "prototype": {
+		     "_rawPads": {},
+		     "_prevRawGamepadTypes[undefined]": {}
+		    },
 		    "gamepadsChanged": {},
 		    "i": {},
-		    "_prevRawGamepadTypes[undefined]": {},
 		    "validConnections": {},
 		    "singlePad": {},
 		    "j": {},
@@ -11083,7 +11713,9 @@
 		    "deadZone": {}
 		   },
 		   "Gamepad#stop": {
-		    "_active": {}
+		    "prototype": {
+		     "_active": {}
+		    }
 		   },
 		   "Gamepad#reset": {
 		    "i": {}
@@ -11102,155 +11734,232 @@
 		   },
 		   "Input": {
 		    "!type": "fn(game: +Phaser.Game)",
-		    "game": {
-		     "!type": "+Phaser.Game"
-		    },
-		    "hitCanvas": {
-		     "!type": "+HTMLCanvasElement"
-		    },
-		    "hitContext": {
-		     "!type": "+CanvasRenderingContext2D"
-		    },
-		    "moveCallbacks": {
-		     "!type": "+array"
-		    },
-		    "pollRate": {
-		     "!type": "number"
-		    },
-		    "enabled": {
-		     "!type": "bool"
-		    },
-		    "multiInputOverride": {
-		     "!type": "number"
-		    },
-		    "position": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "speed": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "circle": {
-		     "!type": "+Phaser.Circle"
-		    },
-		    "scale": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "maxPointers": {
-		     "!type": "+integer"
-		    },
-		    "tapRate": {
-		     "!type": "number"
-		    },
-		    "doubleTapRate": {
-		     "!type": "number"
-		    },
-		    "holdRate": {
-		     "!type": "number"
-		    },
-		    "justPressedRate": {
-		     "!type": "number"
-		    },
-		    "justReleasedRate": {
-		     "!type": "number"
-		    },
-		    "recordPointerHistory": {
-		     "!type": "bool"
-		    },
-		    "recordRate": {
-		     "!type": "number"
-		    },
-		    "recordLimit": {
-		     "!type": "number"
-		    },
-		    "pointer1": {
-		     "!type": "+Phaser.Pointer"
-		    },
-		    "pointer2": {
-		     "!type": "+Phaser.Pointer"
-		    },
-		    "pointer3": {
-		     "!type": "+Phaser.Pointer"
-		    },
-		    "pointer4": {
-		     "!type": "+Phaser.Pointer"
-		    },
-		    "pointer5": {
-		     "!type": "+Phaser.Pointer"
-		    },
-		    "pointer6": {
-		     "!type": "+Phaser.Pointer"
-		    },
-		    "pointer7": {
-		     "!type": "+Phaser.Pointer"
-		    },
-		    "pointer8": {
-		     "!type": "+Phaser.Pointer"
-		    },
-		    "pointer9": {
-		     "!type": "+Phaser.Pointer"
-		    },
-		    "pointer10": {
-		     "!type": "+Phaser.Pointer"
-		    },
-		    "pointers": {
-		     "!type": "[?]"
-		    },
-		    "activePointer": {
-		     "!type": "+Phaser.Pointer"
-		    },
-		    "mousePointer": {
-		     "!type": "+Pointer"
-		    },
-		    "mouse": {
-		     "!type": "+Phaser.Mouse"
-		    },
-		    "keyboard": {
-		     "!type": "+Phaser.Keyboard"
-		    },
-		    "touch": {
-		     "!type": "+Phaser.Touch"
-		    },
-		    "mspointer": {
-		     "!type": "+Phaser.MSPointer"
-		    },
-		    "gamepad": {
-		     "!type": "+Phaser.Gamepad"
-		    },
-		    "resetLocked": {
-		     "!type": "bool"
-		    },
-		    "onDown": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "onUp": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "onTap": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "onHold": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "minPriorityID": {
-		     "!type": "number"
-		    },
-		    "interactiveItems": {
-		     "!type": "+Phaser.ArraySet"
-		    },
-		    "_localPoint": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "_pollCounter": {
-		     "!type": "number"
-		    },
-		    "_oldPosition": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "_x": {
-		     "!type": "number"
-		    },
-		    "_y": {
-		     "!type": "number"
+		    "prototype": {
+		     "game": {
+		      "!type": "+Phaser.Game"
+		     },
+		     "hitCanvas": {
+		      "!type": "+HTMLCanvasElement"
+		     },
+		     "hitContext": {
+		      "!type": "+CanvasRenderingContext2D"
+		     },
+		     "moveCallbacks": {
+		      "!type": "+array"
+		     },
+		     "pollRate": {
+		      "!type": "number"
+		     },
+		     "enabled": {
+		      "!type": "bool"
+		     },
+		     "multiInputOverride": {
+		      "!type": "number"
+		     },
+		     "position": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "speed": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "circle": {
+		      "!type": "+Phaser.Circle"
+		     },
+		     "scale": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "maxPointers": {
+		      "!type": "number"
+		     },
+		     "tapRate": {
+		      "!type": "number"
+		     },
+		     "doubleTapRate": {
+		      "!type": "number"
+		     },
+		     "holdRate": {
+		      "!type": "number"
+		     },
+		     "justPressedRate": {
+		      "!type": "number"
+		     },
+		     "justReleasedRate": {
+		      "!type": "number"
+		     },
+		     "recordPointerHistory": {
+		      "!type": "bool"
+		     },
+		     "recordRate": {
+		      "!type": "number"
+		     },
+		     "recordLimit": {
+		      "!type": "number"
+		     },
+		     "pointer1": {
+		      "!type": "+Phaser.Pointer"
+		     },
+		     "pointer2": {
+		      "!type": "+Phaser.Pointer"
+		     },
+		     "pointer3": {
+		      "!type": "+Phaser.Pointer"
+		     },
+		     "pointer4": {
+		      "!type": "+Phaser.Pointer"
+		     },
+		     "pointer5": {
+		      "!type": "+Phaser.Pointer"
+		     },
+		     "pointer6": {
+		      "!type": "+Phaser.Pointer"
+		     },
+		     "pointer7": {
+		      "!type": "+Phaser.Pointer"
+		     },
+		     "pointer8": {
+		      "!type": "+Phaser.Pointer"
+		     },
+		     "pointer9": {
+		      "!type": "+Phaser.Pointer"
+		     },
+		     "pointer10": {
+		      "!type": "+Phaser.Pointer"
+		     },
+		     "pointers": {
+		      "!type": "[?]"
+		     },
+		     "activePointer": {
+		      "!type": "+Phaser.Pointer"
+		     },
+		     "mousePointer": {
+		      "!type": "+Pointer"
+		     },
+		     "mouse": {
+		      "!type": "+Phaser.Mouse"
+		     },
+		     "keyboard": {
+		      "!type": "+Phaser.Keyboard"
+		     },
+		     "touch": {
+		      "!type": "+Phaser.Touch"
+		     },
+		     "mspointer": {
+		      "!type": "+Phaser.MSPointer"
+		     },
+		     "gamepad": {
+		      "!type": "+Phaser.Gamepad"
+		     },
+		     "resetLocked": {
+		      "!type": "bool"
+		     },
+		     "onDown": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "onUp": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "onTap": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "onHold": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "minPriorityID": {
+		      "!type": "number"
+		     },
+		     "interactiveItems": {
+		      "!type": "+Phaser.ArraySet"
+		     },
+		     "_localPoint": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "_pollCounter": {
+		      "!type": "number"
+		     },
+		     "_oldPosition": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "_x": {
+		      "!type": "number"
+		     },
+		     "_y": {
+		      "!type": "number"
+		     },
+		     "boot": {
+		      "!type": "fn()"
+		     },
+		     "destroy": {
+		      "!type": "fn()"
+		     },
+		     "addMoveCallback": {
+		      "!type": "fn()"
+		     },
+		     "deleteMoveCallback": {
+		      "!type": "fn()"
+		     },
+		     "addPointer": {
+		      "!type": "fn()"
+		     },
+		     "update": {
+		      "!type": "fn()"
+		     },
+		     "reset": {
+		      "!type": "fn()"
+		     },
+		     "resetSpeed": {
+		      "!type": "fn()"
+		     },
+		     "startPointer": {
+		      "!type": "fn()"
+		     },
+		     "updatePointer": {
+		      "!type": "fn()"
+		     },
+		     "stopPointer": {
+		      "!type": "fn()"
+		     },
+		     "countActivePointers": {
+		      "!type": "fn()"
+		     },
+		     "getPointer": {
+		      "!type": "fn()"
+		     },
+		     "getPointerFromIdentifier": {
+		      "!type": "fn()"
+		     },
+		     "getPointerFromId": {
+		      "!type": "fn()"
+		     },
+		     "getLocalPosition": {
+		      "!type": "fn()"
+		     },
+		     "hitTest": {
+		      "!type": "fn()"
+		     },
+		     "onClickTrampoline": {
+		      "!type": "fn()"
+		     },
+		     "x": {
+		      "!type": "number"
+		     },
+		     "y": {
+		      "!type": "number"
+		     },
+		     "pollLocked": {
+		      "!type": "bool"
+		     },
+		     "totalInactivePointers": {
+		      "!type": "number"
+		     },
+		     "totalActivePointers": {
+		      "!type": "+integers"
+		     },
+		     "worldX": {
+		      "!type": "number"
+		     },
+		     "worldY": {
+		      "!type": "number"
+		     }
 		    },
 		    "MOUSE_OVERRIDES_TOUCH": {
 		     "!type": "number"
@@ -11262,113 +11971,42 @@
 		     "!type": "number"
 		    },
 		    "MAX_POINTERS": {
-		     "!type": "+integer"
-		    },
-		    "boot": {
-		     "!type": "fn()"
-		    },
-		    "destroy": {
-		     "!type": "fn()"
-		    },
-		    "addMoveCallback": {
-		     "!type": "fn()"
-		    },
-		    "deleteMoveCallback": {
-		     "!type": "fn()"
-		    },
-		    "addPointer": {
-		     "!type": "fn()"
-		    },
-		    "update": {
-		     "!type": "fn()"
-		    },
-		    "reset": {
-		     "!type": "fn()"
-		    },
-		    "resetSpeed": {
-		     "!type": "fn()"
-		    },
-		    "startPointer": {
-		     "!type": "fn()"
-		    },
-		    "updatePointer": {
-		     "!type": "fn()"
-		    },
-		    "stopPointer": {
-		     "!type": "fn()"
-		    },
-		    "countActivePointers": {
-		     "!type": "fn()"
-		    },
-		    "getPointer": {
-		     "!type": "fn()"
-		    },
-		    "getPointerFromIdentifier": {
-		     "!type": "fn()"
-		    },
-		    "getPointerFromId": {
-		     "!type": "fn()"
-		    },
-		    "getLocalPosition": {
-		     "!type": "fn()"
-		    },
-		    "hitTest": {
-		     "!type": "fn()"
-		    },
-		    "onClickTrampoline": {
-		     "!type": "fn()"
-		    },
-		    "x": {
-		     "!type": "number"
-		    },
-		    "y": {
-		     "!type": "number"
-		    },
-		    "pollLocked": {
-		     "!type": "bool"
-		    },
-		    "totalInactivePointers": {
-		     "!type": "number"
-		    },
-		    "totalActivePointers": {
-		     "!type": "+integers"
-		    },
-		    "worldX": {
-		     "!type": "number"
-		    },
-		    "worldY": {
 		     "!type": "number"
 		    }
 		   },
 		   "Input#boot": {
-		    "mousePointer": {},
-		    "mouse": {},
-		    "touch": {},
-		    "mspointer": {},
-		    "keyboard": {},
-		    "gamepad": {},
-		    "onDown": {},
-		    "onUp": {},
-		    "onTap": {},
-		    "onHold": {},
-		    "scale": {},
-		    "speed": {},
-		    "position": {},
-		    "_oldPosition": {},
-		    "circle": {},
-		    "activePointer": {},
-		    "hitCanvas": {},
-		    "hitContext": {},
-		    "_this": {},
-		    "_onClickTrampoline": {
-		     "!type": "fn()"
-		    }
+		    "prototype": {
+		     "mousePointer": {},
+		     "mouse": {},
+		     "touch": {},
+		     "mspointer": {},
+		     "keyboard": {},
+		     "gamepad": {},
+		     "onDown": {},
+		     "onUp": {},
+		     "onTap": {},
+		     "onHold": {},
+		     "scale": {},
+		     "speed": {},
+		     "position": {},
+		     "_oldPosition": {},
+		     "circle": {},
+		     "activePointer": {},
+		     "hitCanvas": {},
+		     "hitContext": {},
+		     "_onClickTrampoline": {
+		      "!type": "fn()"
+		     }
+		    },
+		    "_this": {}
 		   },
 		   "Input#boot#mousePointer": {
 		    "active": {}
 		   },
 		   "Input#destroy": {
-		    "moveCallbacks": {}
+		    "prototype": {
+		     "moveCallbacks": {}
+		    }
 		   },
 		   "Input#deleteMoveCallback": {
 		    "i": {}
@@ -11383,17 +12021,21 @@
 		   },
 		   "Input#update": {
 		    "i": {},
-		    "_pollCounter": {}
+		    "prototype": {
+		     "_pollCounter": {}
+		    }
 		   },
 		   "Input#reset": {
 		    "hard": {},
 		    "i": {},
-		    "onDown": {},
-		    "onUp": {},
-		    "onTap": {},
-		    "onHold": {},
-		    "moveCallbacks": {},
-		    "_pollCounter": {}
+		    "prototype": {
+		     "onDown": {},
+		     "onUp": {},
+		     "onTap": {},
+		     "onHold": {},
+		     "moveCallbacks": {},
+		     "_pollCounter": {}
+		    }
 		   },
 		   "Input#reset#game": {
 		    "canvas": {
@@ -11449,257 +12091,262 @@
 		   },
 		   "InputHandler": {
 		    "!type": "fn(sprite: +Phaser.Sprite)",
-		    "sprite": {
-		     "!type": "+Phaser.Sprite"
-		    },
-		    "game": {
-		     "!type": "+Phaser.Game"
-		    },
-		    "enabled": {
-		     "!type": "bool"
-		    },
-		    "checked": {
-		     "!type": "bool"
-		    },
-		    "priorityID": {
-		     "!type": "number"
-		    },
-		    "useHandCursor": {
-		     "!type": "bool"
-		    },
-		    "_setHandCursor": {
-		     "!type": "bool"
-		    },
-		    "isDragged": {
-		     "!type": "bool"
-		    },
-		    "allowHorizontalDrag": {
-		     "!type": "bool"
-		    },
-		    "allowVerticalDrag": {
-		     "!type": "bool"
-		    },
-		    "bringToTop": {
-		     "!type": "bool"
-		    },
-		    "snapOffset": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "snapOnDrag": {
-		     "!type": "bool"
-		    },
-		    "snapOnRelease": {
-		     "!type": "bool"
-		    },
-		    "snapX": {
-		     "!type": "number"
-		    },
-		    "snapY": {
-		     "!type": "number"
-		    },
-		    "snapOffsetX": {
-		     "!type": "number"
-		    },
-		    "snapOffsetY": {
-		     "!type": "number"
-		    },
-		    "pixelPerfectOver": {
-		     "!type": "bool"
-		    },
-		    "pixelPerfectClick": {
-		     "!type": "bool"
-		    },
-		    "pixelPerfectAlpha": {
-		     "!type": "number"
-		    },
-		    "draggable": {
-		     "!type": "bool"
-		    },
-		    "boundsRect": {
-		     "!type": "+Phaser.Rectangle"
-		    },
-		    "boundsSprite": {
-		     "!type": "+Phaser.Sprite"
-		    },
-		    "consumePointerEvent": {
-		     "!type": "bool"
-		    },
-		    "scaleLayer": {
-		     "!type": "bool"
-		    },
-		    "dragOffset": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "dragFromCenter": {
-		     "!type": "bool"
-		    },
-		    "dragStartPoint": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "snapPoint": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "_dragPoint": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "_dragPhase": {
-		     "!type": "bool"
-		    },
-		    "_wasEnabled": {
-		     "!type": "bool"
-		    },
-		    "_tempPoint": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "_pointerData": {
-		     "!type": "+array"
-		    },
-		    "start": {
-		     "!type": "fn()"
-		    },
-		    "addedToGroup": {
-		     "!type": "fn()"
-		    },
-		    "removedFromGroup": {
-		     "!type": "fn()"
-		    },
-		    "reset": {
-		     "!type": "fn()"
-		    },
-		    "stop": {
-		     "!type": "fn()"
-		    },
-		    "destroy": {
-		     "!type": "fn()"
-		    },
-		    "validForInput": {
-		     "!type": "fn()"
-		    },
-		    "isPixelPerfect": {
-		     "!type": "fn()"
-		    },
-		    "pointerX": {
-		     "!type": "fn()"
-		    },
-		    "pointerY": {
-		     "!type": "fn()"
-		    },
-		    "pointerDown": {
-		     "!type": "fn()"
-		    },
-		    "pointerUp": {
-		     "!type": "fn()"
-		    },
-		    "pointerTimeDown": {
-		     "!type": "fn()"
-		    },
-		    "pointerTimeUp": {
-		     "!type": "fn()"
-		    },
-		    "pointerOver": {
-		     "!type": "fn()"
-		    },
-		    "pointerOut": {
-		     "!type": "fn()"
-		    },
-		    "pointerTimeOver": {
-		     "!type": "fn()"
-		    },
-		    "pointerTimeOut": {
-		     "!type": "fn()"
-		    },
-		    "pointerDragged": {
-		     "!type": "fn()"
-		    },
-		    "checkPointerDown": {
-		     "!type": "fn()"
-		    },
-		    "checkPointerOver": {
-		     "!type": "fn()"
-		    },
-		    "checkPixel": {
-		     "!type": "fn()"
-		    },
-		    "update": {
-		     "!type": "fn()"
-		    },
-		    "_pointerOverHandler": {
-		     "!type": "fn()"
-		    },
-		    "_pointerOutHandler": {
-		     "!type": "fn()"
-		    },
-		    "_touchedHandler": {
-		     "!type": "fn()"
-		    },
-		    "_releasedHandler": {
-		     "!type": "fn()"
-		    },
-		    "updateDrag": {
-		     "!type": "fn()"
-		    },
-		    "justOver": {
-		     "!type": "fn()"
-		    },
-		    "justOut": {
-		     "!type": "fn()"
-		    },
-		    "justPressed": {
-		     "!type": "fn()"
-		    },
-		    "justReleased": {
-		     "!type": "fn()"
-		    },
-		    "overDuration": {
-		     "!type": "fn()"
-		    },
-		    "downDuration": {
-		     "!type": "fn()"
-		    },
-		    "enableDrag": {
-		     "!type": "fn()"
-		    },
-		    "disableDrag": {
-		     "!type": "fn()"
-		    },
-		    "startDrag": {
-		     "!type": "fn()"
-		    },
-		    "globalToLocalX": {
-		     "!type": "fn()"
-		    },
-		    "globalToLocalY": {
-		     "!type": "fn()"
-		    },
-		    "stopDrag": {
-		     "!type": "fn()"
-		    },
-		    "setDragLock": {
-		     "!type": "fn()"
-		    },
-		    "enableSnap": {
-		     "!type": "fn()"
-		    },
-		    "disableSnap": {
-		     "!type": "fn()"
-		    },
-		    "checkBoundsRect": {
-		     "!type": "fn()"
-		    },
-		    "checkBoundsSprite": {
-		     "!type": "fn()"
+		    "prototype": {
+		     "sprite": {
+		      "!type": "+Phaser.Sprite"
+		     },
+		     "game": {
+		      "!type": "+Phaser.Game"
+		     },
+		     "enabled": {
+		      "!type": "bool"
+		     },
+		     "checked": {
+		      "!type": "bool"
+		     },
+		     "priorityID": {
+		      "!type": "number"
+		     },
+		     "useHandCursor": {
+		      "!type": "bool"
+		     },
+		     "_setHandCursor": {
+		      "!type": "bool"
+		     },
+		     "isDragged": {
+		      "!type": "bool"
+		     },
+		     "allowHorizontalDrag": {
+		      "!type": "bool"
+		     },
+		     "allowVerticalDrag": {
+		      "!type": "bool"
+		     },
+		     "bringToTop": {
+		      "!type": "bool"
+		     },
+		     "snapOffset": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "snapOnDrag": {
+		      "!type": "bool"
+		     },
+		     "snapOnRelease": {
+		      "!type": "bool"
+		     },
+		     "snapX": {
+		      "!type": "number"
+		     },
+		     "snapY": {
+		      "!type": "number"
+		     },
+		     "snapOffsetX": {
+		      "!type": "number"
+		     },
+		     "snapOffsetY": {
+		      "!type": "number"
+		     },
+		     "pixelPerfectOver": {
+		      "!type": "bool"
+		     },
+		     "pixelPerfectClick": {
+		      "!type": "bool"
+		     },
+		     "pixelPerfectAlpha": {
+		      "!type": "number"
+		     },
+		     "draggable": {
+		      "!type": "bool"
+		     },
+		     "boundsRect": {
+		      "!type": "+Phaser.Rectangle"
+		     },
+		     "boundsSprite": {
+		      "!type": "+Phaser.Sprite"
+		     },
+		     "consumePointerEvent": {
+		      "!type": "bool"
+		     },
+		     "scaleLayer": {
+		      "!type": "bool"
+		     },
+		     "dragOffset": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "dragFromCenter": {
+		      "!type": "bool"
+		     },
+		     "dragStartPoint": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "snapPoint": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "_dragPoint": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "_dragPhase": {
+		      "!type": "bool"
+		     },
+		     "_wasEnabled": {
+		      "!type": "bool"
+		     },
+		     "_tempPoint": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "_pointerData": {
+		      "!type": "+array"
+		     },
+		     "start": {
+		      "!type": "fn()"
+		     },
+		     "addedToGroup": {
+		      "!type": "fn()"
+		     },
+		     "removedFromGroup": {
+		      "!type": "fn()"
+		     },
+		     "reset": {
+		      "!type": "fn()"
+		     },
+		     "stop": {
+		      "!type": "fn()"
+		     },
+		     "destroy": {
+		      "!type": "fn()"
+		     },
+		     "validForInput": {
+		      "!type": "fn()"
+		     },
+		     "isPixelPerfect": {
+		      "!type": "fn()"
+		     },
+		     "pointerX": {
+		      "!type": "fn()"
+		     },
+		     "pointerY": {
+		      "!type": "fn()"
+		     },
+		     "pointerDown": {
+		      "!type": "fn()"
+		     },
+		     "pointerUp": {
+		      "!type": "fn()"
+		     },
+		     "pointerTimeDown": {
+		      "!type": "fn()"
+		     },
+		     "pointerTimeUp": {
+		      "!type": "fn()"
+		     },
+		     "pointerOver": {
+		      "!type": "fn()"
+		     },
+		     "pointerOut": {
+		      "!type": "fn()"
+		     },
+		     "pointerTimeOver": {
+		      "!type": "fn()"
+		     },
+		     "pointerTimeOut": {
+		      "!type": "fn()"
+		     },
+		     "pointerDragged": {
+		      "!type": "fn()"
+		     },
+		     "checkPointerDown": {
+		      "!type": "fn()"
+		     },
+		     "checkPointerOver": {
+		      "!type": "fn()"
+		     },
+		     "checkPixel": {
+		      "!type": "fn()"
+		     },
+		     "update": {
+		      "!type": "fn()"
+		     },
+		     "_pointerOverHandler": {
+		      "!type": "fn()"
+		     },
+		     "_pointerOutHandler": {
+		      "!type": "fn()"
+		     },
+		     "_touchedHandler": {
+		      "!type": "fn()"
+		     },
+		     "_releasedHandler": {
+		      "!type": "fn()"
+		     },
+		     "updateDrag": {
+		      "!type": "fn()"
+		     },
+		     "justOver": {
+		      "!type": "fn()"
+		     },
+		     "justOut": {
+		      "!type": "fn()"
+		     },
+		     "justPressed": {
+		      "!type": "fn()"
+		     },
+		     "justReleased": {
+		      "!type": "fn()"
+		     },
+		     "overDuration": {
+		      "!type": "fn()"
+		     },
+		     "downDuration": {
+		      "!type": "fn()"
+		     },
+		     "enableDrag": {
+		      "!type": "fn()"
+		     },
+		     "disableDrag": {
+		      "!type": "fn()"
+		     },
+		     "startDrag": {
+		      "!type": "fn()"
+		     },
+		     "globalToLocalX": {
+		      "!type": "fn()"
+		     },
+		     "globalToLocalY": {
+		      "!type": "fn()"
+		     },
+		     "stopDrag": {
+		      "!type": "fn()"
+		     },
+		     "setDragLock": {
+		      "!type": "fn()"
+		     },
+		     "enableSnap": {
+		      "!type": "fn()"
+		     },
+		     "disableSnap": {
+		      "!type": "fn()"
+		     },
+		     "checkBoundsRect": {
+		      "!type": "fn()"
+		     },
+		     "checkBoundsSprite": {
+		      "!type": "fn()"
+		     }
 		    }
 		   },
 		   "InputHandler#start": {
 		    "priority": {},
 		    "useHandCursor": {},
-		    "priorityID": {},
-		    "i": {},
-		    "_pointerData[undefined]": {},
-		    "snapOffset": {},
-		    "enabled": {},
-		    "_wasEnabled": {},
-		    "flagged": {}
+		    "prototype": {
+		     "useHandCursor": {},
+		     "priorityID": {},
+		     "_pointerData[undefined]": {},
+		     "snapOffset": {},
+		     "enabled": {},
+		     "_wasEnabled": {},
+		     "flagged": {}
+		    },
+		    "i": {}
 		   },
 		   "InputHandler#start#_pointerData[undefined]": {
 		    "id": {},
@@ -11717,13 +12364,17 @@
 		    "isDragged": {}
 		   },
 		   "InputHandler#removedFromGroup": {
-		    "_wasEnabled": {}
+		    "prototype": {
+		     "_wasEnabled": {}
+		    }
 		   },
 		   "InputHandler#reset": {
-		    "enabled": {},
-		    "flagged": {},
-		    "i": {},
-		    "_pointerData[undefined]": {}
+		    "prototype": {
+		     "enabled": {},
+		     "flagged": {},
+		     "_pointerData[undefined]": {}
+		    },
+		    "i": {}
 		   },
 		   "InputHandler#reset#_pointerData[undefined]": {
 		    "id": {},
@@ -11741,7 +12392,9 @@
 		    "isDragged": {}
 		   },
 		   "InputHandler#stop": {
-		    "enabled": {}
+		    "prototype": {
+		     "enabled": {}
+		    }
 		   },
 		   "InputHandler#destroy#game": {
 		    "canvas": {
@@ -11751,11 +12404,13 @@
 		    }
 		   },
 		   "InputHandler#destroy": {
-		    "_setHandCursor": {},
-		    "enabled": {},
-		    "boundsRect": {},
-		    "boundsSprite": {},
-		    "sprite": {}
+		    "prototype": {
+		     "_setHandCursor": {},
+		     "enabled": {},
+		     "boundsRect": {},
+		     "boundsSprite": {},
+		     "sprite": {}
+		    }
 		   },
 		   "InputHandler#destroy#_pointerData": {
 		    "length": {}
@@ -11805,8 +12460,10 @@
 		   "InputHandler#checkPixel": {
 		    "x": {},
 		    "y": {},
-		    "_dx": {},
-		    "_dy": {},
+		    "prototype": {
+		     "_dx": {},
+		     "_dy": {}
+		    },
 		    "rgb": {}
 		   },
 		   "InputHandler#update#_pointerData[undefined]": {
@@ -11815,7 +12472,9 @@
 		   },
 		   "InputHandler#_pointerOverHandler": {
 		    "data": {},
-		    "_setHandCursor": {}
+		    "prototype": {
+		     "_setHandCursor": {}
+		    }
 		   },
 		   "InputHandler#_pointerOverHandler~data": {
 		    "isOver": {},
@@ -11833,7 +12492,9 @@
 		   },
 		   "InputHandler#_pointerOutHandler": {
 		    "data": {},
-		    "_setHandCursor": {}
+		    "prototype": {
+		     "_setHandCursor": {}
+		    }
 		   },
 		   "InputHandler#_pointerOutHandler~data": {
 		    "isOver": {},
@@ -11858,7 +12519,9 @@
 		   "InputHandler#_releasedHandler": {
 		    "data": {},
 		    "isOver": {},
-		    "_setHandCursor": {}
+		    "prototype": {
+		     "_setHandCursor": {}
+		    }
 		   },
 		   "InputHandler#_releasedHandler~data": {
 		    "isDown": {},
@@ -11915,18 +12578,25 @@
 		    "alphaThreshold": {},
 		    "boundsRect": {},
 		    "boundsSprite": {},
-		    "_dragPoint": {},
-		    "draggable": {},
-		    "dragOffset": {},
-		    "dragFromCenter": {},
-		    "pixelPerfectClick": {},
-		    "pixelPerfectAlpha": {}
+		    "prototype": {
+		     "_dragPoint": {},
+		     "draggable": {},
+		     "bringToTop": {},
+		     "dragOffset": {},
+		     "dragFromCenter": {},
+		     "pixelPerfectClick": {},
+		     "pixelPerfectAlpha": {},
+		     "boundsRect": {},
+		     "boundsSprite": {}
+		    }
 		   },
 		   "InputHandler#disableDrag": {
 		    "i": {},
-		    "draggable": {},
-		    "isDragged": {},
-		    "_draggedPointerID": {}
+		    "prototype": {
+		     "draggable": {},
+		     "isDragged": {},
+		     "_draggedPointerID": {}
+		    }
 		   },
 		   "InputHandler#disableDrag#_pointerData[undefined]": {
 		    "isDragged": {}
@@ -11934,10 +12604,12 @@
 		   "InputHandler#startDrag": {
 		    "x": {},
 		    "y": {},
-		    "isDragged": {},
-		    "_draggedPointerID": {},
-		    "bounds": {},
-		    "_dragPhase": {}
+		    "prototype": {
+		     "isDragged": {},
+		     "_draggedPointerID": {},
+		     "_dragPhase": {}
+		    },
+		    "bounds": {}
 		   },
 		   "InputHandler#startDrag#_pointerData[undefined]": {
 		    "isDragged": {}
@@ -11953,9 +12625,11 @@
 		    "y": {}
 		   },
 		   "InputHandler#stopDrag": {
-		    "isDragged": {},
-		    "_draggedPointerID": {},
-		    "_dragPhase": {}
+		    "prototype": {
+		     "isDragged": {},
+		     "_draggedPointerID": {},
+		     "_dragPhase": {}
+		    }
 		   },
 		   "InputHandler#stopDrag#_pointerData[undefined]": {
 		    "isDragged": {}
@@ -11971,22 +12645,30 @@
 		   "InputHandler#setDragLock": {
 		    "allowHorizontal": {},
 		    "allowVertical": {},
-		    "allowHorizontalDrag": {},
-		    "allowVerticalDrag": {}
+		    "prototype": {
+		     "allowHorizontalDrag": {},
+		     "allowVerticalDrag": {}
+		    }
 		   },
 		   "InputHandler#enableSnap": {
 		    "onDrag": {},
 		    "onRelease": {},
 		    "snapOffsetX": {},
 		    "snapOffsetY": {},
-		    "snapX": {},
-		    "snapY": {},
-		    "snapOnDrag": {},
-		    "snapOnRelease": {}
+		    "prototype": {
+		     "snapX": {},
+		     "snapY": {},
+		     "snapOffsetX": {},
+		     "snapOffsetY": {},
+		     "snapOnDrag": {},
+		     "snapOnRelease": {}
+		    }
 		   },
 		   "InputHandler#disableSnap": {
-		    "snapOnDrag": {},
-		    "snapOnRelease": {}
+		    "prototype": {
+		     "snapOnDrag": {},
+		     "snapOnRelease": {}
+		    }
 		   },
 		   "InputHandler#checkBoundsRect#sprite": {
 		    "cameraOffset": {
@@ -12006,116 +12688,122 @@
 		   },
 		   "Key": {
 		    "!type": "fn(game: +Phaser.Game, keycode: number)",
-		    "game": {
-		     "!type": "+Phaser.Game"
-		    },
-		    "_enabled": {
-		     "!type": "bool"
-		    },
-		    "event": {
-		     "!type": "?"
-		    },
-		    "isDown": {
-		     "!type": "bool"
-		    },
-		    "isUp": {
-		     "!type": "bool"
-		    },
-		    "altKey": {
-		     "!type": "bool"
-		    },
-		    "ctrlKey": {
-		     "!type": "bool"
-		    },
-		    "shiftKey": {
-		     "!type": "bool"
-		    },
-		    "timeDown": {
-		     "!type": "number"
-		    },
-		    "duration": {
-		     "!type": "number"
-		    },
-		    "timeUp": {
-		     "!type": "number"
-		    },
-		    "repeats": {
-		     "!type": "number"
-		    },
-		    "keyCode": {
-		     "!type": "number"
-		    },
-		    "onDown": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "onHoldCallback": {
-		     "!type": "+function"
-		    },
-		    "onHoldContext": {
-		     "!type": "?"
-		    },
-		    "onUp": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "_justDown": {
-		     "!type": "bool"
-		    },
-		    "_justUp": {
-		     "!type": "bool"
-		    },
-		    "update": {
-		     "!type": "fn()"
-		    },
-		    "processKeyDown": {
-		     "!type": "fn()"
-		    },
-		    "processKeyUp": {
-		     "!type": "fn()"
-		    },
-		    "reset": {
-		     "!type": "fn()"
-		    },
-		    "downDuration": {
-		     "!type": "fn()"
-		    },
-		    "upDuration": {
-		     "!type": "fn()"
+		    "prototype": {
+		     "game": {
+		      "!type": "+Phaser.Game"
+		     },
+		     "_enabled": {
+		      "!type": "bool"
+		     },
+		     "event": {},
+		     "isDown": {
+		      "!type": "bool"
+		     },
+		     "isUp": {
+		      "!type": "bool"
+		     },
+		     "altKey": {
+		      "!type": "bool"
+		     },
+		     "ctrlKey": {
+		      "!type": "bool"
+		     },
+		     "shiftKey": {
+		      "!type": "bool"
+		     },
+		     "timeDown": {
+		      "!type": "number"
+		     },
+		     "duration": {
+		      "!type": "number"
+		     },
+		     "timeUp": {
+		      "!type": "number"
+		     },
+		     "repeats": {
+		      "!type": "number"
+		     },
+		     "keyCode": {
+		      "!type": "number"
+		     },
+		     "onDown": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "onHoldCallback": {
+		      "!type": "+function"
+		     },
+		     "onHoldContext": {},
+		     "onUp": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "_justDown": {
+		      "!type": "bool"
+		     },
+		     "_justUp": {
+		      "!type": "bool"
+		     },
+		     "update": {
+		      "!type": "fn()"
+		     },
+		     "processKeyDown": {
+		      "!type": "fn()"
+		     },
+		     "processKeyUp": {
+		      "!type": "fn()"
+		     },
+		     "reset": {
+		      "!type": "fn()"
+		     },
+		     "downDuration": {
+		      "!type": "fn()"
+		     },
+		     "upDuration": {
+		      "!type": "fn()"
+		     }
 		    }
 		   },
 		   "Key#update": {
-		    "duration": {}
+		    "prototype": {
+		     "duration": {}
+		    }
 		   },
 		   "Key#processKeyDown": {
-		    "event": {},
-		    "altKey": {},
-		    "ctrlKey": {},
-		    "shiftKey": {},
-		    "isDown": {},
-		    "isUp": {},
-		    "timeDown": {},
-		    "duration": {},
-		    "repeats": {},
-		    "_justDown": {}
+		    "prototype": {
+		     "event": {},
+		     "altKey": {},
+		     "ctrlKey": {},
+		     "shiftKey": {},
+		     "isDown": {},
+		     "isUp": {},
+		     "timeDown": {},
+		     "duration": {},
+		     "repeats": {},
+		     "_justDown": {}
+		    }
 		   },
 		   "Key#processKeyUp": {
-		    "event": {},
-		    "isDown": {},
-		    "isUp": {},
-		    "timeUp": {},
-		    "duration": {},
-		    "_justUp": {}
+		    "prototype": {
+		     "event": {},
+		     "isDown": {},
+		     "isUp": {},
+		     "timeUp": {},
+		     "duration": {},
+		     "_justUp": {}
+		    }
 		   },
 		   "Key#reset": {
 		    "hard": {},
-		    "isDown": {},
-		    "isUp": {},
-		    "timeUp": {},
-		    "duration": {},
-		    "_enabled": {},
-		    "_justDown": {},
-		    "_justUp": {},
-		    "onHoldCallback": {},
-		    "onHoldContext": {}
+		    "prototype": {
+		     "isDown": {},
+		     "isUp": {},
+		     "timeUp": {},
+		     "duration": {},
+		     "_enabled": {},
+		     "_justDown": {},
+		     "_justUp": {},
+		     "onHoldCallback": {},
+		     "onHoldContext": {}
+		    }
 		   },
 		   "Key#downDuration": {
 		    "duration": {}
@@ -12125,113 +12813,109 @@
 		   },
 		   "Keyboard": {
 		    "!type": "fn(game: +Phaser.Game)",
-		    "game": {
-		     "!type": "+Phaser.Game"
-		    },
-		    "enabled": {
-		     "!type": "bool"
-		    },
-		    "event": {
-		     "!type": "?"
-		    },
-		    "pressEvent": {
-		     "!type": "?"
-		    },
-		    "callbackContext": {
-		     "!type": "?"
-		    },
-		    "onDownCallback": {
-		     "!type": "+function"
-		    },
-		    "onPressCallback": {
-		     "!type": "+function"
-		    },
-		    "onUpCallback": {
-		     "!type": "+function"
-		    },
-		    "_keys": {
-		     "!type": "+array.<Phaser.Key>"
-		    },
-		    "_capture": {
-		     "!type": "+array"
-		    },
-		    "_onKeyDown": {
-		     "!type": "+function"
-		    },
-		    "_onKeyPress": {
-		     "!type": "+function"
-		    },
-		    "_onKeyUp": {
-		     "!type": "+function"
-		    },
-		    "_i": {
-		     "!type": "number"
-		    },
-		    "_k": {
-		     "!type": "number"
-		    },
-		    "addCallbacks": {
-		     "!type": "fn()"
-		    },
-		    "addKey": {
-		     "!type": "fn()"
-		    },
-		    "addKeys": {
-		     "!type": "fn()"
-		    },
-		    "removeKey": {
-		     "!type": "fn()"
-		    },
-		    "createCursorKeys": {
-		     "!type": "fn()"
-		    },
-		    "start": {
-		     "!type": "fn()"
-		    },
-		    "stop": {
-		     "!type": "fn()"
-		    },
-		    "destroy": {
-		     "!type": "fn()"
-		    },
-		    "addKeyCapture": {
-		     "!type": "fn()"
-		    },
-		    "removeKeyCapture": {
-		     "!type": "fn()"
-		    },
-		    "clearCaptures": {
-		     "!type": "fn()"
-		    },
-		    "update": {
-		     "!type": "fn()"
-		    },
-		    "processKeyDown": {
-		     "!type": "fn()"
-		    },
-		    "processKeyPress": {
-		     "!type": "fn()"
-		    },
-		    "processKeyUp": {
-		     "!type": "fn()"
-		    },
-		    "reset": {
-		     "!type": "fn()"
-		    },
-		    "downDuration": {
-		     "!type": "fn()"
-		    },
-		    "upDuration": {
-		     "!type": "fn()"
-		    },
-		    "isDown": {
-		     "!type": "fn()"
-		    },
-		    "lastChar": {
-		     "!type": "string"
-		    },
-		    "lastKey": {
-		     "!type": "+Phaser.Key"
+		    "prototype": {
+		     "game": {
+		      "!type": "+Phaser.Game"
+		     },
+		     "enabled": {
+		      "!type": "bool"
+		     },
+		     "event": {},
+		     "pressEvent": {},
+		     "callbackContext": {},
+		     "onDownCallback": {
+		      "!type": "+function"
+		     },
+		     "onPressCallback": {
+		      "!type": "+function"
+		     },
+		     "onUpCallback": {
+		      "!type": "+function"
+		     },
+		     "_keys": {
+		      "!type": "+array.<Phaser.Key>"
+		     },
+		     "_capture": {
+		      "!type": "+array"
+		     },
+		     "_onKeyDown": {
+		      "!type": "+function"
+		     },
+		     "_onKeyPress": {
+		      "!type": "+function"
+		     },
+		     "_onKeyUp": {
+		      "!type": "+function"
+		     },
+		     "_i": {
+		      "!type": "number"
+		     },
+		     "_k": {
+		      "!type": "number"
+		     },
+		     "addCallbacks": {
+		      "!type": "fn()"
+		     },
+		     "addKey": {
+		      "!type": "fn()"
+		     },
+		     "addKeys": {
+		      "!type": "fn()"
+		     },
+		     "removeKey": {
+		      "!type": "fn()"
+		     },
+		     "createCursorKeys": {
+		      "!type": "fn()"
+		     },
+		     "start": {
+		      "!type": "fn()"
+		     },
+		     "stop": {
+		      "!type": "fn()"
+		     },
+		     "destroy": {
+		      "!type": "fn()"
+		     },
+		     "addKeyCapture": {
+		      "!type": "fn()"
+		     },
+		     "removeKeyCapture": {
+		      "!type": "fn()"
+		     },
+		     "clearCaptures": {
+		      "!type": "fn()"
+		     },
+		     "update": {
+		      "!type": "fn()"
+		     },
+		     "processKeyDown": {
+		      "!type": "fn()"
+		     },
+		     "processKeyPress": {
+		      "!type": "fn()"
+		     },
+		     "processKeyUp": {
+		      "!type": "fn()"
+		     },
+		     "reset": {
+		      "!type": "fn()"
+		     },
+		     "downDuration": {
+		      "!type": "fn()"
+		     },
+		     "upDuration": {
+		      "!type": "fn()"
+		     },
+		     "isDown": {
+		      "!type": "fn()"
+		     },
+		     "lastChar": {
+		      "!type": "string"
+		     },
+		     "lastKey": {
+		      "!type": "+Phaser.Key"
+		     }
 		    },
 		    "A": {},
 		    "B": {},
@@ -12337,13 +13021,17 @@
 		    "NUM_LOCK": {}
 		   },
 		   "Keyboard#addCallbacks": {
-		    "callbackContext": {},
-		    "onDownCallback": {},
-		    "onUpCallback": {},
-		    "onPressCallback": {}
+		    "prototype": {
+		     "callbackContext": {},
+		     "onDownCallback": {},
+		     "onUpCallback": {},
+		     "onPressCallback": {}
+		    }
 		   },
 		   "Keyboard#addKey": {
-		    "_keys[undefined]": {}
+		    "prototype": {
+		     "_keys[undefined]": {}
+		    }
 		   },
 		   "Keyboard#addKeys": {
 		    "output": {},
@@ -12353,128 +13041,189 @@
 		    "undefined]": {}
 		   },
 		   "Keyboard#removeKey": {
-		    "_keys[undefined]": {}
+		    "prototype": {
+		     "_keys[undefined]": {}
+		    }
 		   },
 		   "Keyboard#start": {
 		    "_this": {},
-		    "_onKeyDown": {
-		     "!type": "fn()"
-		    },
-		    "_onKeyUp": {
-		     "!type": "fn()"
-		    },
-		    "_onKeyPress": {
-		     "!type": "fn()"
+		    "prototype": {
+		     "_onKeyDown": {
+		      "!type": "fn()"
+		     },
+		     "_onKeyUp": {
+		      "!type": "fn()"
+		     },
+		     "_onKeyPress": {
+		      "!type": "fn()"
+		     }
 		    }
 		   },
 		   "Keyboard#stop": {
-		    "_onKeyDown": {},
-		    "_onKeyUp": {},
-		    "_onKeyPress": {}
+		    "prototype": {
+		     "_onKeyDown": {},
+		     "_onKeyUp": {},
+		     "_onKeyPress": {}
+		    }
 		   },
 		   "Keyboard#destroy#_keys": {
 		    "length": {}
 		   },
 		   "Keyboard#destroy": {
-		    "_i": {}
+		    "prototype": {
+		     "_i": {}
+		    }
 		   },
 		   "Keyboard#addKeyCapture": {
 		    "key": {},
-		    "_capture[undefined]": {}
+		    "prototype": {
+		     "_capture[undefined]": {}
+		    }
 		   },
 		   "Keyboard#clearCaptures": {
-		    "_capture": {}
+		    "prototype": {
+		     "_capture": {}
+		    }
 		   },
 		   "Keyboard#update": {
-		    "_i": {}
+		    "prototype": {
+		     "_i": {}
+		    }
 		   },
 		   "Keyboard#processKeyDown": {
-		    "event": {},
-		    "_keys[undefined]": {},
-		    "_k": {}
+		    "prototype": {
+		     "event": {},
+		     "_keys[undefined]": {},
+		     "_k": {}
+		    }
 		   },
 		   "Keyboard#processKeyPress": {
-		    "pressEvent": {}
+		    "prototype": {
+		     "pressEvent": {}
+		    }
 		   },
 		   "Keyboard#processKeyUp": {
-		    "event": {},
-		    "_keys[undefined]": {}
+		    "prototype": {
+		     "event": {},
+		     "_keys[undefined]": {}
+		    }
 		   },
 		   "Keyboard#reset": {
 		    "hard": {},
-		    "event": {},
+		    "prototype": {
+		     "event": {}
+		    },
 		    "i": {}
 		   },
 		   "Mouse": {
 		    "!type": "fn(game: +Phaser.Game)",
-		    "game": {
-		     "!type": "+Phaser.Game"
-		    },
-		    "input": {
-		     "!type": "+Phaser.Input"
-		    },
-		    "callbackContext": {
-		     "!type": "?"
-		    },
-		    "mouseDownCallback": {
-		     "!type": "+function"
-		    },
-		    "mouseUpCallback": {
-		     "!type": "+function"
-		    },
-		    "mouseOutCallback": {
-		     "!type": "+function"
-		    },
-		    "mouseOverCallback": {
-		     "!type": "+function"
-		    },
-		    "mouseWheelCallback": {
-		     "!type": "+function"
-		    },
-		    "capture": {
-		     "!type": "bool"
-		    },
-		    "button": {
-		     "!type": "number"
-		    },
-		    "wheelDelta": {
-		     "!type": "number"
-		    },
-		    "enabled": {
-		     "!type": "bool"
-		    },
-		    "locked": {
-		     "!type": "bool"
-		    },
-		    "stopOnGameOut": {
-		     "!type": "bool"
-		    },
-		    "pointerLock": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "event": {
-		     "!type": "+MouseEvent|+null"
-		    },
-		    "_onMouseDown": {
-		     "!type": "+function"
-		    },
-		    "_onMouseMove": {
-		     "!type": "+function"
-		    },
-		    "_onMouseUp": {
-		     "!type": "+function"
-		    },
-		    "_onMouseOut": {
-		     "!type": "+function"
-		    },
-		    "_onMouseOver": {
-		     "!type": "+function"
-		    },
-		    "_onMouseWheel": {
-		     "!type": "+function"
-		    },
-		    "_wheelEvent": {
-		     "!type": "+Phaser.Mouse~WheelEventProxy"
+		    "prototype": {
+		     "game": {
+		      "!type": "+Phaser.Game"
+		     },
+		     "input": {
+		      "!type": "+Phaser.Input"
+		     },
+		     "callbackContext": {},
+		     "mouseDownCallback": {
+		      "!type": "+function"
+		     },
+		     "mouseUpCallback": {
+		      "!type": "+function"
+		     },
+		     "mouseOutCallback": {
+		      "!type": "+function"
+		     },
+		     "mouseOverCallback": {
+		      "!type": "+function"
+		     },
+		     "mouseWheelCallback": {
+		      "!type": "+function"
+		     },
+		     "capture": {
+		      "!type": "bool"
+		     },
+		     "button": {
+		      "!type": "number"
+		     },
+		     "wheelDelta": {
+		      "!type": "number"
+		     },
+		     "enabled": {
+		      "!type": "bool"
+		     },
+		     "locked": {
+		      "!type": "bool"
+		     },
+		     "stopOnGameOut": {
+		      "!type": "bool"
+		     },
+		     "pointerLock": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "event": {
+		      "!type": "+MouseEvent|+null"
+		     },
+		     "_onMouseDown": {
+		      "!type": "+function"
+		     },
+		     "_onMouseMove": {
+		      "!type": "+function"
+		     },
+		     "_onMouseUp": {
+		      "!type": "+function"
+		     },
+		     "_onMouseOut": {
+		      "!type": "+function"
+		     },
+		     "_onMouseOver": {
+		      "!type": "+function"
+		     },
+		     "_onMouseWheel": {
+		      "!type": "+function"
+		     },
+		     "_wheelEvent": {
+		      "!type": "+Phaser.Mouse~WheelEventProxy"
+		     },
+		     "start": {
+		      "!type": "fn()"
+		     },
+		     "onMouseDown": {
+		      "!type": "fn()"
+		     },
+		     "onMouseMove": {
+		      "!type": "fn()"
+		     },
+		     "onMouseUp": {
+		      "!type": "fn()"
+		     },
+		     "onMouseUpGlobal": {
+		      "!type": "fn()"
+		     },
+		     "onMouseOut": {
+		      "!type": "fn()"
+		     },
+		     "onMouseOver": {
+		      "!type": "fn()"
+		     },
+		     "onMouseWheel": {
+		      "!type": "fn()"
+		     },
+		     "requestPointerLock": {
+		      "!type": "fn()"
+		     },
+		     "pointerLockChange": {
+		      "!type": "fn()"
+		     },
+		     "releasePointerLock": {
+		      "!type": "fn()"
+		     },
+		     "stop": {
+		      "!type": "fn()"
+		     },
+		     "WheelEventProxy": {
+		      "!type": "fn(scaleFactor: number, deltaMode: number)"
+		     }
 		    },
 		    "NO_BUTTON": {
 		     "!type": "number"
@@ -12499,85 +13248,56 @@
 		    },
 		    "WHEEL_DOWN": {
 		     "!type": "number"
-		    },
-		    "start": {
-		     "!type": "fn()"
-		    },
-		    "onMouseDown": {
-		     "!type": "fn()"
-		    },
-		    "onMouseMove": {
-		     "!type": "fn()"
-		    },
-		    "onMouseUp": {
-		     "!type": "fn()"
-		    },
-		    "onMouseUpGlobal": {
-		     "!type": "fn()"
-		    },
-		    "onMouseOut": {
-		     "!type": "fn()"
-		    },
-		    "onMouseOver": {
-		     "!type": "fn()"
-		    },
-		    "onMouseWheel": {
-		     "!type": "fn()"
-		    },
-		    "requestPointerLock": {
-		     "!type": "fn()"
-		    },
-		    "pointerLockChange": {
-		     "!type": "fn()"
-		    },
-		    "releasePointerLock": {
-		     "!type": "fn()"
-		    },
-		    "stop": {
-		     "!type": "fn()"
-		    },
-		    "WheelEventProxy": {
-		     "!type": "fn(scaleFactor: number, deltaMode: +integer)"
 		    }
 		   },
 		   "Mouse#start": {
 		    "_this": {},
-		    "_onMouseDown": {
-		     "!type": "fn()"
-		    },
-		    "_onMouseMove": {
-		     "!type": "fn()"
-		    },
-		    "_onMouseUp": {
-		     "!type": "fn()"
-		    },
-		    "_onMouseUpGlobal": {
-		     "!type": "fn()"
-		    },
-		    "_onMouseOut": {
-		     "!type": "fn()"
-		    },
-		    "_onMouseOver": {
-		     "!type": "fn()"
-		    },
-		    "_onMouseWheel": {
-		     "!type": "fn()"
+		    "prototype": {
+		     "_onMouseDown": {
+		      "!type": "fn()"
+		     },
+		     "_onMouseMove": {
+		      "!type": "fn()"
+		     },
+		     "_onMouseUp": {
+		      "!type": "fn()"
+		     },
+		     "_onMouseUpGlobal": {
+		      "!type": "fn()"
+		     },
+		     "_onMouseOut": {
+		      "!type": "fn()"
+		     },
+		     "_onMouseOver": {
+		      "!type": "fn()"
+		     },
+		     "_onMouseWheel": {
+		      "!type": "fn()"
+		     },
+		     "_wheelEvent": {}
 		    },
 		    "canvas": {},
-		    "wheelEvent": {},
-		    "_wheelEvent": {}
+		    "wheelEvent": {}
 		   },
 		   "Mouse#onMouseDown": {
-		    "event": {}
+		    "prototype": {
+		     "event": {}
+		    }
 		   },
 		   "Mouse#onMouseMove": {
-		    "event": {}
+		    "prototype": {
+		     "event": {}
+		    }
 		   },
 		   "Mouse#onMouseUp": {
-		    "event": {}
+		    "prototype": {
+		     "event": {}
+		    }
 		   },
 		   "Mouse#onMouseOut": {
-		    "event": {}
+		    "prototype": {
+		     "event": {}
+		    }
 		   },
 		   "Mouse#onMouseOut#input": {
 		    "mousePointer": {
@@ -12585,7 +13305,9 @@
 		    }
 		   },
 		   "Mouse#onMouseOver": {
-		    "event": {}
+		    "prototype": {
+		     "event": {}
+		    }
 		   },
 		   "Mouse#onMouseOver#input": {
 		    "mousePointer": {
@@ -12594,13 +13316,18 @@
 		   },
 		   "Mouse#onMouseWheel": {
 		    "event": {},
-		    "wheelDelta": {}
+		    "prototype": {
+		     "event": {},
+		     "wheelDelta": {}
+		    }
 		   },
 		   "Mouse#requestPointerLock": {
 		    "element": {},
 		    "_this": {},
-		    "_pointerLockChange": {
-		     "!type": "fn()"
+		    "prototype": {
+		     "_pointerLockChange": {
+		      "!type": "fn()"
+		     }
 		    }
 		   },
 		   "Mouse#requestPointerLock~element": {
@@ -12608,7 +13335,9 @@
 		   },
 		   "Mouse#pointerLockChange": {
 		    "element": {},
-		    "locked": {}
+		    "prototype": {
+		     "locked": {}
+		    }
 		   },
 		   "Mouse#stop": {
 		    "canvas": {},
@@ -12616,98 +13345,100 @@
 		   },
 		   "MSPointer": {
 		    "!type": "fn(game: +Phaser.Game)",
-		    "game": {
-		     "!type": "+Phaser.Game"
-		    },
-		    "input": {
-		     "!type": "+Phaser.Input"
-		    },
-		    "callbackContext": {
-		     "!type": "?"
-		    },
-		    "pointerDownCallback": {
-		     "!type": "+function"
-		    },
-		    "pointerMoveCallback": {
-		     "!type": "+function"
-		    },
-		    "pointerUpCallback": {
-		     "!type": "+function"
-		    },
-		    "capture": {
-		     "!type": "bool"
-		    },
-		    "button": {
-		     "!type": "number"
-		    },
-		    "event": {
-		     "!type": "+MSPointerEvent|+null"
-		    },
-		    "enabled": {
-		     "!type": "bool"
-		    },
-		    "_onMSPointerDown": {
-		     "!type": "+function"
-		    },
-		    "_onMSPointerMove": {
-		     "!type": "+function"
-		    },
-		    "_onMSPointerUp": {
-		     "!type": "+function"
-		    },
-		    "_onMSPointerUpGlobal": {
-		     "!type": "+function"
-		    },
-		    "_onMSPointerOut": {
-		     "!type": "+function"
-		    },
-		    "_onMSPointerOver": {
-		     "!type": "+function"
-		    },
-		    "start": {
-		     "!type": "fn()"
-		    },
-		    "onPointerDown": {
-		     "!type": "fn()"
-		    },
-		    "onPointerMove": {
-		     "!type": "fn()"
-		    },
-		    "onPointerUp": {
-		     "!type": "fn()"
-		    },
-		    "onPointerUpGlobal": {
-		     "!type": "fn()"
-		    },
-		    "onPointerOut": {
-		     "!type": "fn(event: +PointerEvent)"
-		    },
-		    "onPointerOver": {
-		     "!type": "fn()"
-		    },
-		    "stop": {
-		     "!type": "fn()"
+		    "prototype": {
+		     "game": {
+		      "!type": "+Phaser.Game"
+		     },
+		     "input": {
+		      "!type": "+Phaser.Input"
+		     },
+		     "callbackContext": {},
+		     "pointerDownCallback": {
+		      "!type": "+function"
+		     },
+		     "pointerMoveCallback": {
+		      "!type": "+function"
+		     },
+		     "pointerUpCallback": {
+		      "!type": "+function"
+		     },
+		     "capture": {
+		      "!type": "bool"
+		     },
+		     "button": {
+		      "!type": "number"
+		     },
+		     "event": {
+		      "!type": "+MSPointerEvent|+null"
+		     },
+		     "enabled": {
+		      "!type": "bool"
+		     },
+		     "_onMSPointerDown": {
+		      "!type": "+function"
+		     },
+		     "_onMSPointerMove": {
+		      "!type": "+function"
+		     },
+		     "_onMSPointerUp": {
+		      "!type": "+function"
+		     },
+		     "_onMSPointerUpGlobal": {
+		      "!type": "+function"
+		     },
+		     "_onMSPointerOut": {
+		      "!type": "+function"
+		     },
+		     "_onMSPointerOver": {
+		      "!type": "+function"
+		     },
+		     "start": {
+		      "!type": "fn()"
+		     },
+		     "onPointerDown": {
+		      "!type": "fn()"
+		     },
+		     "onPointerMove": {
+		      "!type": "fn()"
+		     },
+		     "onPointerUp": {
+		      "!type": "fn()"
+		     },
+		     "onPointerUpGlobal": {
+		      "!type": "fn()"
+		     },
+		     "onPointerOut": {
+		      "!type": "fn(event: +PointerEvent)"
+		     },
+		     "onPointerOver": {
+		      "!type": "fn()"
+		     },
+		     "stop": {
+		      "!type": "fn()"
+		     }
 		    }
 		   },
 		   "MSPointer#start": {
 		    "_this": {},
-		    "_onMSPointerDown": {
-		     "!type": "fn()"
-		    },
-		    "_onMSPointerMove": {
-		     "!type": "fn()"
-		    },
-		    "_onMSPointerUp": {
-		     "!type": "fn()"
-		    },
-		    "_onMSPointerUpGlobal": {
-		     "!type": "fn()"
-		    },
-		    "_onMSPointerOut": {
-		     "!type": "fn()"
-		    },
-		    "_onMSPointerOver": {
-		     "!type": "fn()"
+		    "prototype": {
+		     "_onMSPointerDown": {
+		      "!type": "fn()"
+		     },
+		     "_onMSPointerMove": {
+		      "!type": "fn()"
+		     },
+		     "_onMSPointerUp": {
+		      "!type": "fn()"
+		     },
+		     "_onMSPointerUpGlobal": {
+		      "!type": "fn()"
+		     },
+		     "_onMSPointerOut": {
+		      "!type": "fn()"
+		     },
+		     "_onMSPointerOver": {
+		      "!type": "fn()"
+		     }
 		    },
 		    "canvas": {}
 		   },
@@ -12716,19 +13447,27 @@
 		    "style['-ms-touch-action']": {}
 		   },
 		   "MSPointer#onPointerDown": {
-		    "event": {}
+		    "prototype": {
+		     "event": {}
+		    }
 		   },
 		   "MSPointer#onPointerMove": {
-		    "event": {}
+		    "prototype": {
+		     "event": {}
+		    }
 		   },
 		   "MSPointer#onPointerUp": {
-		    "event": {}
+		    "prototype": {
+		     "event": {}
+		    }
 		   },
 		   "MSPointer#onPointerUpGlobal": {
 		    "pointer": {}
 		   },
 		   "MSPointer#onPointerOut": {
-		    "event": {},
+		    "prototype": {
+		     "event": {}
+		    },
 		    "pointer": {}
 		   },
 		   "MSPointer#onPointerOut#input": {
@@ -12740,7 +13479,9 @@
 		    "withinGame": {}
 		   },
 		   "MSPointer#onPointerOver": {
-		    "event": {},
+		    "prototype": {
+		     "event": {}
+		    },
 		    "pointer": {}
 		   },
 		   "MSPointer#onPointerOver#input": {
@@ -12756,149 +13497,206 @@
 		   },
 		   "Pointer": {
 		    "!type": "fn(game: +Phaser.Game, id: number)",
-		    "game": {
-		     "!type": "+Phaser.Game"
-		    },
-		    "id": {
-		     "!type": "number"
-		    },
-		    "type": {
-		     "!type": "number"
-		    },
-		    "exists": {
-		     "!type": "bool"
-		    },
-		    "identifier": {
-		     "!type": "number"
-		    },
-		    "pointerId": {
-		     "!type": "number"
-		    },
-		    "target": {
-		     "!type": "+any"
-		    },
-		    "button": {
-		     "!type": "+any"
-		    },
-		    "leftButton": {
-		     "!type": "+Phaser.DeviceButton"
-		    },
-		    "middleButton": {
-		     "!type": "+Phaser.DeviceButton"
-		    },
-		    "rightButton": {
-		     "!type": "+Phaser.DeviceButton"
-		    },
-		    "backButton": {
-		     "!type": "+Phaser.DeviceButton"
-		    },
-		    "forwardButton": {
-		     "!type": "+Phaser.DeviceButton"
-		    },
-		    "eraserButton": {
-		     "!type": "+Phaser.DeviceButton"
-		    },
-		    "_holdSent": {
-		     "!type": "bool"
-		    },
-		    "_history": {
-		     "!type": "+array"
-		    },
-		    "_nextDrop": {
-		     "!type": "number"
-		    },
-		    "_stateReset": {
-		     "!type": "bool"
-		    },
-		    "withinGame": {
-		     "!type": "bool"
-		    },
-		    "clientX": {
-		     "!type": "number"
-		    },
-		    "clientY": {
-		     "!type": "number"
-		    },
-		    "pageX": {
-		     "!type": "number"
-		    },
-		    "pageY": {
-		     "!type": "number"
-		    },
-		    "screenX": {
-		     "!type": "number"
-		    },
-		    "screenY": {
-		     "!type": "number"
-		    },
-		    "rawMovementX": {
-		     "!type": "number"
-		    },
-		    "rawMovementY": {
-		     "!type": "number"
-		    },
-		    "movementX": {
-		     "!type": "number"
-		    },
-		    "movementY": {
-		     "!type": "number"
-		    },
-		    "x": {
-		     "!type": "number"
-		    },
-		    "y": {
-		     "!type": "number"
-		    },
-		    "isMouse": {
-		     "!type": "bool"
-		    },
-		    "isDown": {
-		     "!type": "bool"
-		    },
-		    "isUp": {
-		     "!type": "bool"
-		    },
-		    "timeDown": {
-		     "!type": "number"
-		    },
-		    "timeUp": {
-		     "!type": "number"
-		    },
-		    "previousTapTime": {
-		     "!type": "number"
-		    },
-		    "totalTouches": {
-		     "!type": "number"
-		    },
-		    "msSinceLastClick": {
-		     "!type": "number"
-		    },
-		    "targetObject": {
-		     "!type": "+any"
-		    },
-		    "active": {
-		     "!type": "bool"
-		    },
-		    "dirty": {
-		     "!type": "bool"
-		    },
-		    "position": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "positionDown": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "positionUp": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "circle": {
-		     "!type": "+Phaser.Circle"
-		    },
-		    "_clickTrampolines": {
-		     "!type": "[?]|+null"
-		    },
-		    "_trampolineTargetObject": {
-		     "!type": "?"
+		    "prototype": {
+		     "game": {
+		      "!type": "+Phaser.Game"
+		     },
+		     "id": {
+		      "!type": "number"
+		     },
+		     "type": {
+		      "!type": "number"
+		     },
+		     "exists": {
+		      "!type": "bool"
+		     },
+		     "identifier": {
+		      "!type": "number"
+		     },
+		     "pointerId": {
+		      "!type": "number"
+		     },
+		     "target": {
+		      "!type": "+any"
+		     },
+		     "button": {
+		      "!type": "+any"
+		     },
+		     "leftButton": {
+		      "!type": "+Phaser.DeviceButton"
+		     },
+		     "middleButton": {
+		      "!type": "+Phaser.DeviceButton"
+		     },
+		     "rightButton": {
+		      "!type": "+Phaser.DeviceButton"
+		     },
+		     "backButton": {
+		      "!type": "+Phaser.DeviceButton"
+		     },
+		     "forwardButton": {
+		      "!type": "+Phaser.DeviceButton"
+		     },
+		     "eraserButton": {
+		      "!type": "+Phaser.DeviceButton"
+		     },
+		     "_holdSent": {
+		      "!type": "bool"
+		     },
+		     "_history": {
+		      "!type": "+array"
+		     },
+		     "_nextDrop": {
+		      "!type": "number"
+		     },
+		     "_stateReset": {
+		      "!type": "bool"
+		     },
+		     "withinGame": {
+		      "!type": "bool"
+		     },
+		     "clientX": {
+		      "!type": "number"
+		     },
+		     "clientY": {
+		      "!type": "number"
+		     },
+		     "pageX": {
+		      "!type": "number"
+		     },
+		     "pageY": {
+		      "!type": "number"
+		     },
+		     "screenX": {
+		      "!type": "number"
+		     },
+		     "screenY": {
+		      "!type": "number"
+		     },
+		     "rawMovementX": {
+		      "!type": "number"
+		     },
+		     "rawMovementY": {
+		      "!type": "number"
+		     },
+		     "movementX": {
+		      "!type": "number"
+		     },
+		     "movementY": {
+		      "!type": "number"
+		     },
+		     "x": {
+		      "!type": "number"
+		     },
+		     "y": {
+		      "!type": "number"
+		     },
+		     "isMouse": {
+		      "!type": "bool"
+		     },
+		     "isDown": {
+		      "!type": "bool"
+		     },
+		     "isUp": {
+		      "!type": "bool"
+		     },
+		     "timeDown": {
+		      "!type": "number"
+		     },
+		     "timeUp": {
+		      "!type": "number"
+		     },
+		     "previousTapTime": {
+		      "!type": "number"
+		     },
+		     "totalTouches": {
+		      "!type": "number"
+		     },
+		     "msSinceLastClick": {
+		      "!type": "number"
+		     },
+		     "targetObject": {
+		      "!type": "+any"
+		     },
+		     "active": {
+		      "!type": "bool"
+		     },
+		     "dirty": {
+		      "!type": "bool"
+		     },
+		     "position": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "positionDown": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "positionUp": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "circle": {
+		      "!type": "+Phaser.Circle"
+		     },
+		     "_clickTrampolines": {
+		      "!type": "[?]|+null"
+		     },
+		     "_trampolineTargetObject": {},
+		     "resetButtons": {
+		      "!type": "fn()"
+		     },
+		     "processButtonsDown": {
+		      "!type": "fn()"
+		     },
+		     "processButtonsUp": {
+		      "!type": "fn()"
+		     },
+		     "updateButtons": {
+		      "!type": "fn()"
+		     },
+		     "start": {
+		      "!type": "fn()"
+		     },
+		     "update": {
+		      "!type": "fn()"
+		     },
+		     "move": {
+		      "!type": "fn()"
+		     },
+		     "processInteractiveObjects": {
+		      "!type": "fn()"
+		     },
+		     "leave": {
+		      "!type": "fn()"
+		     },
+		     "stop": {
+		      "!type": "fn()"
+		     },
+		     "justPressed": {
+		      "!type": "fn()"
+		     },
+		     "justReleased": {
+		      "!type": "fn()"
+		     },
+		     "addClickTrampoline": {
+		      "!type": "fn()"
+		     },
+		     "processClickTrampolines": {
+		      "!type": "fn()"
+		     },
+		     "reset": {
+		      "!type": "fn()"
+		     },
+		     "resetMovement": {
+		      "!type": "fn()"
+		     },
+		     "duration": {
+		      "!type": "number"
+		     },
+		     "worldX": {
+		      "!type": "number"
+		     },
+		     "worldY": {
+		      "!type": "number"
+		     }
 		    },
 		    "NO_BUTTON": {
 		     "!type": "number"
@@ -12920,91 +13718,40 @@
 		    },
 		    "ERASER_BUTTON": {
 		     "!type": "number"
-		    },
-		    "resetButtons": {
-		     "!type": "fn()"
-		    },
-		    "processButtonsDown": {
-		     "!type": "fn()"
-		    },
-		    "processButtonsUp": {
-		     "!type": "fn()"
-		    },
-		    "updateButtons": {
-		     "!type": "fn()"
-		    },
-		    "start": {
-		     "!type": "fn()"
-		    },
-		    "update": {
-		     "!type": "fn()"
-		    },
-		    "move": {
-		     "!type": "fn()"
-		    },
-		    "processInteractiveObjects": {
-		     "!type": "fn()"
-		    },
-		    "leave": {
-		     "!type": "fn()"
-		    },
-		    "stop": {
-		     "!type": "fn()"
-		    },
-		    "justPressed": {
-		     "!type": "fn()"
-		    },
-		    "justReleased": {
-		     "!type": "fn()"
-		    },
-		    "addClickTrampoline": {
-		     "!type": "fn()"
-		    },
-		    "processClickTrampolines": {
-		     "!type": "fn()"
-		    },
-		    "reset": {
-		     "!type": "fn()"
-		    },
-		    "resetMovement": {
-		     "!type": "fn()"
-		    },
-		    "duration": {
-		     "!type": "number"
-		    },
-		    "worldX": {
-		     "!type": "number"
-		    },
-		    "worldY": {
-		     "!type": "number"
 		    }
 		   },
 		   "Pointer#resetButtons": {
-		    "isDown": {},
-		    "isUp": {}
+		    "prototype": {
+		     "isDown": {},
+		     "isUp": {}
+		    }
 		   },
 		   "Pointer#updateButtons": {
-		    "button": {},
-		    "down": {},
-		    "isUp": {},
-		    "isDown": {}
+		    "prototype": {
+		     "button": {},
+		     "isUp": {},
+		     "isDown": {}
+		    },
+		    "down": {}
 		   },
 		   "Pointer#start": {
-		    "pointerId": {},
-		    "identifier": {},
-		    "target": {},
-		    "isDown": {},
-		    "isUp": {},
-		    "active": {},
-		    "withinGame": {},
-		    "dirty": {},
-		    "_history": {},
-		    "_clickTrampolines": {},
-		    "_trampolineTargetObject": {},
-		    "msSinceLastClick": {},
-		    "timeDown": {},
-		    "_holdSent": {},
-		    "_stateReset": {}
+		    "prototype": {
+		     "pointerId": {},
+		     "identifier": {},
+		     "target": {},
+		     "isDown": {},
+		     "isUp": {},
+		     "active": {},
+		     "withinGame": {},
+		     "dirty": {},
+		     "_history": {},
+		     "_clickTrampolines": {},
+		     "_trampolineTargetObject": {},
+		     "msSinceLastClick": {},
+		     "timeDown": {},
+		     "_holdSent": {},
+		     "_stateReset": {}
+		    }
 		   },
 		   "Pointer#start#game": {
 		    "input": {
@@ -13013,29 +13760,33 @@
 		    }
 		   },
 		   "Pointer#update": {
-		    "dirty": {},
-		    "_holdSent": {},
-		    "_nextDrop": {}
+		    "prototype": {
+		     "dirty": {},
+		     "_holdSent": {},
+		     "_nextDrop": {}
+		    }
 		   },
 		   "Pointer#move": {
 		    "input": {},
 		    "fromClick": {},
-		    "button": {},
-		    "clientX": {},
-		    "clientY": {},
-		    "pageX": {},
-		    "pageY": {},
-		    "screenX": {},
-		    "screenY": {},
-		    "rawMovementX": {},
-		    "rawMovementY": {},
-		    "movementX": {},
-		    "movementY": {},
-		    "x": {},
-		    "y": {},
-		    "withinGame": {},
-		    "i": {},
-		    "targetObject": {}
+		    "prototype": {
+		     "button": {},
+		     "clientX": {},
+		     "clientY": {},
+		     "pageX": {},
+		     "pageY": {},
+		     "screenX": {},
+		     "screenY": {},
+		     "rawMovementX": {},
+		     "rawMovementY": {},
+		     "movementX": {},
+		     "movementY": {},
+		     "x": {},
+		     "y": {},
+		     "withinGame": {},
+		     "targetObject": {}
+		    },
+		    "i": {}
 		   },
 		   "Pointer#move#circle": {
 		    "x": {},
@@ -13053,25 +13804,31 @@
 		    "highestInputPriorityID": {},
 		    "candidateTarget": {},
 		    "currentNode": {},
-		    "targetObject": {}
+		    "prototype": {
+		     "targetObject": {}
+		    }
 		   },
 		   "Pointer#processInteractiveObjects~currentNode": {
 		    "checked": {}
 		   },
 		   "Pointer#leave": {
-		    "withinGame": {}
+		    "prototype": {
+		     "withinGame": {}
+		    }
 		   },
 		   "Pointer#stop": {
-		    "timeUp": {},
-		    "previousTapTime": {},
-		    "isDown": {},
-		    "isUp": {},
-		    "active": {},
-		    "withinGame": {},
-		    "pointerId": {},
-		    "identifier": {},
-		    "_trampolineTargetObject": {},
-		    "targetObject": {}
+		    "prototype": {
+		     "timeUp": {},
+		     "previousTapTime": {},
+		     "isDown": {},
+		     "isUp": {},
+		     "active": {},
+		     "withinGame": {},
+		     "pointerId": {},
+		     "identifier": {},
+		     "_trampolineTargetObject": {},
+		     "targetObject": {}
+		    }
 		   },
 		   "Pointer#justPressed": {
 		    "duration": {}
@@ -13081,320 +13838,344 @@
 		   },
 		   "Pointer#addClickTrampoline": {
 		    "trampolines": {},
-		    "_clickTrampolines": {},
+		    "prototype": {
+		     "_clickTrampolines": {}
+		    },
 		    "i": {}
 		   },
 		   "Pointer#processClickTrampolines": {
 		    "trampolines": {},
 		    "i": {},
 		    "trampoline": {},
-		    "_clickTrampolines": {},
-		    "_trampolineTargetObject": {}
+		    "prototype": {
+		     "_clickTrampolines": {},
+		     "_trampolineTargetObject": {}
+		    }
 		   },
 		   "Pointer#reset": {
-		    "active": {},
-		    "pointerId": {},
-		    "identifier": {},
-		    "dirty": {},
-		    "totalTouches": {},
-		    "_holdSent": {},
-		    "_stateReset": {},
-		    "targetObject": {}
+		    "prototype": {
+		     "active": {},
+		     "pointerId": {},
+		     "identifier": {},
+		     "dirty": {},
+		     "totalTouches": {},
+		     "_holdSent": {},
+		     "_stateReset": {},
+		     "targetObject": {}
+		    }
 		   },
 		   "Pointer#reset#_history": {
 		    "length": {}
 		   },
 		   "Pointer#resetMovement": {
-		    "movementX": {},
-		    "movementY": {}
+		    "prototype": {
+		     "movementX": {},
+		     "movementY": {}
+		    }
 		   },
 		   "SinglePad": {
 		    "!type": "fn(game: +Phaser.Game, padParent: ?)",
-		    "game": {
-		     "!type": "+Phaser.Game"
-		    },
-		    "index": {
-		     "!type": "number"
-		    },
-		    "connected": {
-		     "!type": "bool"
-		    },
-		    "callbackContext": {
-		     "!type": "?"
-		    },
-		    "onConnectCallback": {
-		     "!type": "+function"
-		    },
-		    "onDisconnectCallback": {
-		     "!type": "+function"
-		    },
-		    "onDownCallback": {
-		     "!type": "+function"
-		    },
-		    "onUpCallback": {
-		     "!type": "+function"
-		    },
-		    "onAxisCallback": {
-		     "!type": "+function"
-		    },
-		    "onFloatCallback": {
-		     "!type": "+function"
-		    },
-		    "deadZone": {
-		     "!type": "number"
-		    },
-		    "_padParent": {
-		     "!type": "+Phaser.Gamepad"
-		    },
-		    "_rawPad": {
-		     "!type": "?"
-		    },
-		    "_prevTimestamp": {
-		     "!type": "number"
-		    },
-		    "_buttons": {
-		     "!type": "[?]"
-		    },
-		    "_buttonsLen": {
-		     "!type": "number"
-		    },
-		    "_axes": {
-		     "!type": "[?]"
-		    },
-		    "_axesLen": {
-		     "!type": "number"
-		    },
-		    "addCallbacks": {
-		     "!type": "fn()"
-		    },
-		    "getButton": {
-		     "!type": "fn()"
-		    },
-		    "pollStatus": {
-		     "!type": "fn()"
-		    },
-		    "connect": {
-		     "!type": "fn()"
-		    },
-		    "disconnect": {
-		     "!type": "fn()"
-		    },
-		    "destroy": {
-		     "!type": "fn()"
-		    },
-		    "processAxisChange": {
-		     "!type": "fn()"
-		    },
-		    "processButtonDown": {
-		     "!type": "fn()"
-		    },
-		    "processButtonUp": {
-		     "!type": "fn()"
-		    },
-		    "processButtonFloat": {
-		     "!type": "fn()"
-		    },
-		    "axis": {
-		     "!type": "fn()"
-		    },
-		    "isDown": {
-		     "!type": "fn()"
-		    },
-		    "isUp": {
-		     "!type": "fn()"
-		    },
-		    "justReleased": {
-		     "!type": "fn()"
-		    },
-		    "justPressed": {
-		     "!type": "fn()"
-		    },
-		    "buttonValue": {
-		     "!type": "fn()"
-		    },
-		    "reset": {
-		     "!type": "fn()"
+		    "prototype": {
+		     "game": {
+		      "!type": "+Phaser.Game"
+		     },
+		     "index": {
+		      "!type": "number"
+		     },
+		     "connected": {
+		      "!type": "bool"
+		     },
+		     "callbackContext": {},
+		     "onConnectCallback": {
+		      "!type": "+function"
+		     },
+		     "onDisconnectCallback": {
+		      "!type": "+function"
+		     },
+		     "onDownCallback": {
+		      "!type": "+function"
+		     },
+		     "onUpCallback": {
+		      "!type": "+function"
+		     },
+		     "onAxisCallback": {
+		      "!type": "+function"
+		     },
+		     "onFloatCallback": {
+		      "!type": "+function"
+		     },
+		     "deadZone": {
+		      "!type": "number"
+		     },
+		     "_padParent": {
+		      "!type": "+Phaser.Gamepad"
+		     },
+		     "_rawPad": {},
+		     "_prevTimestamp": {
+		      "!type": "number"
+		     },
+		     "_buttons": {
+		      "!type": "[?]"
+		     },
+		     "_buttonsLen": {
+		      "!type": "number"
+		     },
+		     "_axes": {
+		      "!type": "[?]"
+		     },
+		     "_axesLen": {
+		      "!type": "number"
+		     },
+		     "addCallbacks": {
+		      "!type": "fn()"
+		     },
+		     "getButton": {
+		      "!type": "fn()"
+		     },
+		     "pollStatus": {
+		      "!type": "fn()"
+		     },
+		     "connect": {
+		      "!type": "fn()"
+		     },
+		     "disconnect": {
+		      "!type": "fn()"
+		     },
+		     "destroy": {
+		      "!type": "fn()"
+		     },
+		     "processAxisChange": {
+		      "!type": "fn()"
+		     },
+		     "processButtonDown": {
+		      "!type": "fn()"
+		     },
+		     "processButtonUp": {
+		      "!type": "fn()"
+		     },
+		     "processButtonFloat": {
+		      "!type": "fn()"
+		     },
+		     "axis": {
+		      "!type": "fn()"
+		     },
+		     "isDown": {
+		      "!type": "fn()"
+		     },
+		     "isUp": {
+		      "!type": "fn()"
+		     },
+		     "justReleased": {
+		      "!type": "fn()"
+		     },
+		     "justPressed": {
+		      "!type": "fn()"
+		     },
+		     "buttonValue": {
+		      "!type": "fn()"
+		     },
+		     "reset": {
+		      "!type": "fn()"
+		     }
 		    }
 		   },
 		   "SinglePad#addCallbacks": {
-		    "onConnectCallback": {},
-		    "onDisconnectCallback": {},
-		    "onDownCallback": {},
-		    "onUpCallback": {},
-		    "onAxisCallback": {},
-		    "onFloatCallback": {}
+		    "prototype": {
+		     "onConnectCallback": {},
+		     "onDisconnectCallback": {},
+		     "onDownCallback": {},
+		     "onUpCallback": {},
+		     "onAxisCallback": {},
+		     "onFloatCallback": {}
+		    }
 		   },
 		   "SinglePad#pollStatus": {
 		    "i": {},
 		    "rawButtonVal": {},
 		    "index": {},
 		    "value": {},
-		    "_prevTimestamp": {}
+		    "prototype": {
+		     "_prevTimestamp": {}
+		    }
 		   },
 		   "SinglePad#connect": {
 		    "triggerCallback": {},
-		    "connected": {},
-		    "index": {},
-		    "_rawPad": {},
-		    "_buttons": {},
-		    "_buttonsLen": {},
-		    "_axes": {},
-		    "_axesLen": {},
+		    "prototype": {
+		     "connected": {},
+		     "index": {},
+		     "_rawPad": {},
+		     "_buttons": {},
+		     "_buttonsLen": {},
+		     "_axes": {},
+		     "_axesLen": {},
+		     "_axes[undefined]": {},
+		     "_buttons[undefined]": {}
+		    },
 		    "a": {},
-		    "_axes[undefined]": {},
-		    "buttonCode": {},
-		    "_buttons[undefined]": {}
+		    "buttonCode": {}
 		   },
 		   "SinglePad#disconnect": {
 		    "triggerCallback": {},
 		    "disconnectingIndex": {},
-		    "connected": {},
-		    "index": {},
-		    "_rawPad": {},
-		    "i": {},
-		    "_buttons": {},
-		    "_buttonsLen": {},
-		    "_axes": {},
-		    "_axesLen": {}
+		    "prototype": {
+		     "connected": {},
+		     "index": {},
+		     "_rawPad": {},
+		     "_buttons": {},
+		     "_buttonsLen": {},
+		     "_axes": {},
+		     "_axesLen": {}
+		    },
+		    "i": {}
 		   },
 		   "SinglePad#destroy": {
-		    "_rawPad": {},
-		    "i": {},
-		    "_buttons": {},
-		    "_buttonsLen": {},
-		    "_axes": {},
-		    "_axesLen": {},
-		    "onConnectCallback": {},
-		    "onDisconnectCallback": {},
-		    "onDownCallback": {},
-		    "onUpCallback": {},
-		    "onAxisCallback": {},
-		    "onFloatCallback": {}
+		    "prototype": {
+		     "_rawPad": {},
+		     "_buttons": {},
+		     "_buttonsLen": {},
+		     "_axes": {},
+		     "_axesLen": {},
+		     "onConnectCallback": {},
+		     "onDisconnectCallback": {},
+		     "onDownCallback": {},
+		     "onUpCallback": {},
+		     "onAxisCallback": {},
+		     "onFloatCallback": {}
+		    },
+		    "i": {}
 		   },
 		   "SinglePad#processAxisChange": {
-		    "_axes[undefined]": {}
+		    "prototype": {
+		     "_axes[undefined]": {}
+		    }
 		   },
 		   "SinglePad#reset": {
 		    "j": {},
-		    "_axes[undefined]": {}
+		    "prototype": {
+		     "_axes[undefined]": {}
+		    }
 		   },
 		   "Touch": {
 		    "!type": "fn(game: +Phaser.Game)",
-		    "game": {
-		     "!type": "+Phaser.Game"
-		    },
-		    "enabled": {
-		     "!type": "bool"
-		    },
-		    "touchLockCallbacks": {
-		     "!type": "+array"
-		    },
-		    "callbackContext": {
-		     "!type": "?"
-		    },
-		    "touchStartCallback": {
-		     "!type": "+function"
-		    },
-		    "touchMoveCallback": {
-		     "!type": "+function"
-		    },
-		    "touchEndCallback": {
-		     "!type": "+function"
-		    },
-		    "touchEnterCallback": {
-		     "!type": "+function"
-		    },
-		    "touchLeaveCallback": {
-		     "!type": "+function"
-		    },
-		    "touchCancelCallback": {
-		     "!type": "+function"
-		    },
-		    "preventDefault": {
-		     "!type": "bool"
-		    },
-		    "event": {
-		     "!type": "+TouchEvent"
-		    },
-		    "_onTouchStart": {
-		     "!type": "+function"
-		    },
-		    "_onTouchMove": {
-		     "!type": "+function"
-		    },
-		    "_onTouchEnd": {
-		     "!type": "+function"
-		    },
-		    "_onTouchEnter": {
-		     "!type": "+function"
-		    },
-		    "_onTouchLeave": {
-		     "!type": "+function"
-		    },
-		    "_onTouchCancel": {
-		     "!type": "+function"
-		    },
-		    "start": {
-		     "!type": "fn()"
-		    },
-		    "consumeTouchMove": {
-		     "!type": "fn()"
-		    },
-		    "consumeDocumentTouches": {
-		     "!type": "fn()"
-		    },
-		    "addTouchLockCallback": {
-		     "!type": "fn()"
-		    },
-		    "removeTouchLockCallback": {
-		     "!type": "fn()"
-		    },
-		    "onTouchStart": {
-		     "!type": "fn()"
-		    },
-		    "onTouchCancel": {
-		     "!type": "fn()"
-		    },
-		    "onTouchEnter": {
-		     "!type": "fn()"
-		    },
-		    "onTouchLeave": {
-		     "!type": "fn()"
-		    },
-		    "onTouchMove": {
-		     "!type": "fn()"
-		    },
-		    "onTouchEnd": {
-		     "!type": "fn()"
-		    },
-		    "stop": {
-		     "!type": "fn()"
+		    "prototype": {
+		     "game": {
+		      "!type": "+Phaser.Game"
+		     },
+		     "enabled": {
+		      "!type": "bool"
+		     },
+		     "touchLockCallbacks": {
+		      "!type": "+array"
+		     },
+		     "callbackContext": {},
+		     "touchStartCallback": {
+		      "!type": "+function"
+		     },
+		     "touchMoveCallback": {
+		      "!type": "+function"
+		     },
+		     "touchEndCallback": {
+		      "!type": "+function"
+		     },
+		     "touchEnterCallback": {
+		      "!type": "+function"
+		     },
+		     "touchLeaveCallback": {
+		      "!type": "+function"
+		     },
+		     "touchCancelCallback": {
+		      "!type": "+function"
+		     },
+		     "preventDefault": {
+		      "!type": "bool"
+		     },
+		     "event": {
+		      "!type": "+TouchEvent"
+		     },
+		     "_onTouchStart": {
+		      "!type": "+function"
+		     },
+		     "_onTouchMove": {
+		      "!type": "+function"
+		     },
+		     "_onTouchEnd": {
+		      "!type": "+function"
+		     },
+		     "_onTouchEnter": {
+		      "!type": "+function"
+		     },
+		     "_onTouchLeave": {
+		      "!type": "+function"
+		     },
+		     "_onTouchCancel": {
+		      "!type": "+function"
+		     },
+		     "start": {
+		      "!type": "fn()"
+		     },
+		     "consumeTouchMove": {
+		      "!type": "fn()"
+		     },
+		     "consumeDocumentTouches": {
+		      "!type": "fn()"
+		     },
+		     "addTouchLockCallback": {
+		      "!type": "fn()"
+		     },
+		     "removeTouchLockCallback": {
+		      "!type": "fn()"
+		     },
+		     "onTouchStart": {
+		      "!type": "fn()"
+		     },
+		     "onTouchCancel": {
+		      "!type": "fn()"
+		     },
+		     "onTouchEnter": {
+		      "!type": "fn()"
+		     },
+		     "onTouchLeave": {
+		      "!type": "fn()"
+		     },
+		     "onTouchMove": {
+		      "!type": "fn()"
+		     },
+		     "onTouchEnd": {
+		      "!type": "fn()"
+		     },
+		     "stop": {
+		      "!type": "fn()"
+		     }
 		    }
 		   },
 		   "Touch#start": {
 		    "_this": {},
-		    "_onTouchStart": {
-		     "!type": "fn()"
-		    },
-		    "_onTouchMove": {
-		     "!type": "fn()"
-		    },
-		    "_onTouchEnd": {
-		     "!type": "fn()"
-		    },
-		    "_onTouchEnter": {
-		     "!type": "fn()"
-		    },
-		    "_onTouchLeave": {
-		     "!type": "fn()"
-		    },
-		    "_onTouchCancel": {
-		     "!type": "fn()"
+		    "prototype": {
+		     "_onTouchStart": {
+		      "!type": "fn()"
+		     },
+		     "_onTouchMove": {
+		      "!type": "fn()"
+		     },
+		     "_onTouchEnd": {
+		      "!type": "fn()"
+		     },
+		     "_onTouchEnter": {
+		      "!type": "fn()"
+		     },
+		     "_onTouchLeave": {
+		      "!type": "fn()"
+		     },
+		     "_onTouchCancel": {
+		      "!type": "fn()"
+		     }
 		    }
 		   },
 		   "Touch#consumeDocumentTouches": {
-		    "_documentTouchMove": {
-		     "!type": "fn()"
+		    "prototype": {
+		     "_documentTouchMove": {
+		      "!type": "fn()"
+		     }
 		    }
 		   },
 		   "Touch#removeTouchLockCallback": {
@@ -13402,53 +14183,330 @@
 		   },
 		   "Touch#onTouchStart": {
 		    "i": {},
-		    "event": {}
+		    "prototype": {
+		     "event": {}
+		    }
 		   },
 		   "Touch#onTouchCancel": {
-		    "event": {},
+		    "prototype": {
+		     "event": {}
+		    },
 		    "i": {}
 		   },
 		   "Touch#onTouchEnter": {
-		    "event": {}
+		    "prototype": {
+		     "event": {}
+		    }
 		   },
 		   "Touch#onTouchLeave": {
-		    "event": {}
+		    "prototype": {
+		     "event": {}
+		    }
 		   },
 		   "Touch#onTouchMove": {
-		    "event": {},
+		    "prototype": {
+		     "event": {}
+		    },
 		    "i": {}
 		   },
 		   "Touch#onTouchEnd": {
-		    "event": {},
+		    "prototype": {
+		     "event": {}
+		    },
 		    "i": {}
 		   },
 		   "Cache": {
 		    "!type": "fn(game: +Phaser.Game)",
-		    "game": {
-		     "!type": "+Phaser.Game"
+		    "prototype": {
+		     "game": {
+		      "!type": "+Phaser.Game"
+		     },
+		     "autoResolveURL": {
+		      "!type": "bool"
+		     },
+		     "_cache": {},
+		     "_urlMap": {},
+		     "_urlResolver": {
+		      "!type": "+Image"
+		     },
+		     "_urlTemp": {
+		      "!type": "string"
+		     },
+		     "onSoundUnlock": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "_cacheMap": {
+		      "!type": "+array"
+		     },
+		     "_cacheMap[undefined]": {},
+		     "addCanvas": {
+		      "!type": "fn()"
+		     },
+		     "addImage": {
+		      "!type": "fn()"
+		     },
+		     "addDefaultImage": {
+		      "!type": "fn()"
+		     },
+		     "addMissingImage": {
+		      "!type": "fn()"
+		     },
+		     "addSound": {
+		      "!type": "fn()"
+		     },
+		     "addText": {
+		      "!type": "fn()"
+		     },
+		     "addPhysicsData": {
+		      "!type": "fn()"
+		     },
+		     "addTilemap": {
+		      "!type": "fn()"
+		     },
+		     "addBinary": {
+		      "!type": "fn()"
+		     },
+		     "addBitmapData": {
+		      "!type": "fn()"
+		     },
+		     "addBitmapFont": {
+		      "!type": "fn()"
+		     },
+		     "addJSON": {
+		      "!type": "fn()"
+		     },
+		     "addXML": {
+		      "!type": "fn()"
+		     },
+		     "addVideo": {
+		      "!type": "fn()"
+		     },
+		     "addShader": {
+		      "!type": "fn()"
+		     },
+		     "addRenderTexture": {
+		      "!type": "fn()"
+		     },
+		     "addSpriteSheet": {
+		      "!type": "fn()"
+		     },
+		     "addTextureAtlas": {
+		      "!type": "fn()"
+		     },
+		     "reloadSound": {
+		      "!type": "fn()"
+		     },
+		     "reloadSoundComplete": {
+		      "!type": "fn()"
+		     },
+		     "updateSound": {
+		      "!type": "fn()"
+		     },
+		     "decodedSound": {
+		      "!type": "fn()"
+		     },
+		     "isSoundDecoded": {
+		      "!type": "fn()"
+		     },
+		     "isSoundReady": {
+		      "!type": "fn()"
+		     },
+		     "checkKey": {
+		      "!type": "fn()"
+		     },
+		     "checkURL": {
+		      "!type": "fn()"
+		     },
+		     "checkCanvasKey": {
+		      "!type": "fn()"
+		     },
+		     "checkImageKey": {
+		      "!type": "fn()"
+		     },
+		     "checkTextureKey": {
+		      "!type": "fn()"
+		     },
+		     "checkSoundKey": {
+		      "!type": "fn()"
+		     },
+		     "checkTextKey": {
+		      "!type": "fn()"
+		     },
+		     "checkPhysicsKey": {
+		      "!type": "fn()"
+		     },
+		     "checkTilemapKey": {
+		      "!type": "fn()"
+		     },
+		     "checkBinaryKey": {
+		      "!type": "fn()"
+		     },
+		     "checkBitmapDataKey": {
+		      "!type": "fn()"
+		     },
+		     "checkBitmapFontKey": {
+		      "!type": "fn()"
+		     },
+		     "checkJSONKey": {
+		      "!type": "fn()"
+		     },
+		     "checkXMLKey": {
+		      "!type": "fn()"
+		     },
+		     "checkVideoKey": {
+		      "!type": "fn()"
+		     },
+		     "checkShaderKey": {
+		      "!type": "fn()"
+		     },
+		     "checkRenderTextureKey": {
+		      "!type": "fn()"
+		     },
+		     "getItem": {
+		      "!type": "fn()"
+		     },
+		     "getCanvas": {
+		      "!type": "fn()"
+		     },
+		     "getImage": {
+		      "!type": "fn()"
+		     },
+		     "getTextureFrame": {
+		      "!type": "fn()"
+		     },
+		     "getSound": {
+		      "!type": "fn()"
+		     },
+		     "getSoundData": {
+		      "!type": "fn()"
+		     },
+		     "getText": {
+		      "!type": "fn()"
+		     },
+		     "getPhysicsData": {
+		      "!type": "fn()"
+		     },
+		     "getTilemapData": {
+		      "!type": "fn()"
+		     },
+		     "getBinary": {
+		      "!type": "fn()"
+		     },
+		     "getBitmapData": {
+		      "!type": "fn()"
+		     },
+		     "getBitmapFont": {
+		      "!type": "fn()"
+		     },
+		     "getJSON": {
+		      "!type": "fn()"
+		     },
+		     "getXML": {
+		      "!type": "fn()"
+		     },
+		     "getVideo": {
+		      "!type": "fn()"
+		     },
+		     "getShader": {
+		      "!type": "fn()"
+		     },
+		     "getRenderTexture": {
+		      "!type": "fn()"
+		     },
+		     "getBaseTexture": {
+		      "!type": "fn()"
+		     },
+		     "getFrame": {
+		      "!type": "fn()"
+		     },
+		     "getFrameCount": {
+		      "!type": "fn()"
+		     },
+		     "getFrameData": {
+		      "!type": "fn()"
+		     },
+		     "hasFrameData": {
+		      "!type": "fn()"
+		     },
+		     "updateFrameData": {
+		      "!type": "fn()"
+		     },
+		     "getFrameByIndex": {
+		      "!type": "fn()"
+		     },
+		     "getFrameByName": {
+		      "!type": "fn()"
+		     },
+		     "getPixiTexture": {
+		      "!type": "fn()"
+		     },
+		     "getPixiBaseTexture": {
+		      "!type": "fn()"
+		     },
+		     "getURL": {
+		      "!type": "fn()"
+		     },
+		     "getKeys": {
+		      "!type": "fn()"
+		     },
+		     "removeCanvas": {
+		      "!type": "fn()"
+		     },
+		     "removeImage": {
+		      "!type": "fn()"
+		     },
+		     "removeSound": {
+		      "!type": "fn()"
+		     },
+		     "removeText": {
+		      "!type": "fn()"
+		     },
+		     "removePhysics": {
+		      "!type": "fn()"
+		     },
+		     "removeTilemap": {
+		      "!type": "fn()"
+		     },
+		     "removeBinary": {
+		      "!type": "fn()"
+		     },
+		     "removeBitmapData": {
+		      "!type": "fn()"
+		     },
+		     "removeBitmapFont": {
+		      "!type": "fn()"
+		     },
+		     "removeJSON": {
+		      "!type": "fn()"
+		     },
+		     "removeXML": {
+		      "!type": "fn()"
+		     },
+		     "removeVideo": {
+		      "!type": "fn()"
+		     },
+		     "removeShader": {
+		      "!type": "fn()"
+		     },
+		     "removeRenderTexture": {
+		      "!type": "fn()"
+		     },
+		     "removeSpriteSheet": {
+		      "!type": "fn()"
+		     },
+		     "removeTextureAtlas": {
+		      "!type": "fn()"
+		     },
+		     "clearGLTextures": {
+		      "!type": "fn()"
+		     },
+		     "_resolveURL": {
+		      "!type": "fn()"
+		     },
+		     "destroy": {
+		      "!type": "fn()"
+		     }
 		    },
-		    "autoResolveURL": {
-		     "!type": "bool"
-		    },
-		    "_cache": {
-		     "!type": "?"
-		    },
-		    "_urlMap": {
-		     "!type": "?"
-		    },
-		    "_urlResolver": {
-		     "!type": "+Image"
-		    },
-		    "_urlTemp": {
-		     "!type": "string"
-		    },
-		    "onSoundUnlock": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "_cacheMap": {
-		     "!type": "+array"
-		    },
-		    "_cacheMap[undefined]": {},
 		    "CANVAS": {
 		     "!type": "number"
 		    },
@@ -13493,273 +14551,6 @@
 		    },
 		    "RENDER_TEXTURE": {
 		     "!type": "number"
-		    },
-		    "addCanvas": {
-		     "!type": "fn()"
-		    },
-		    "addImage": {
-		     "!type": "fn()"
-		    },
-		    "addDefaultImage": {
-		     "!type": "fn()"
-		    },
-		    "addMissingImage": {
-		     "!type": "fn()"
-		    },
-		    "addSound": {
-		     "!type": "fn()"
-		    },
-		    "addText": {
-		     "!type": "fn()"
-		    },
-		    "addPhysicsData": {
-		     "!type": "fn()"
-		    },
-		    "addTilemap": {
-		     "!type": "fn()"
-		    },
-		    "addBinary": {
-		     "!type": "fn()"
-		    },
-		    "addBitmapData": {
-		     "!type": "fn()"
-		    },
-		    "addBitmapFont": {
-		     "!type": "fn()"
-		    },
-		    "addJSON": {
-		     "!type": "fn()"
-		    },
-		    "addXML": {
-		     "!type": "fn()"
-		    },
-		    "addVideo": {
-		     "!type": "fn()"
-		    },
-		    "addShader": {
-		     "!type": "fn()"
-		    },
-		    "addRenderTexture": {
-		     "!type": "fn()"
-		    },
-		    "addSpriteSheet": {
-		     "!type": "fn()"
-		    },
-		    "addTextureAtlas": {
-		     "!type": "fn()"
-		    },
-		    "reloadSound": {
-		     "!type": "fn()"
-		    },
-		    "reloadSoundComplete": {
-		     "!type": "fn()"
-		    },
-		    "updateSound": {
-		     "!type": "fn()"
-		    },
-		    "decodedSound": {
-		     "!type": "fn()"
-		    },
-		    "isSoundDecoded": {
-		     "!type": "fn()"
-		    },
-		    "isSoundReady": {
-		     "!type": "fn()"
-		    },
-		    "checkKey": {
-		     "!type": "fn()"
-		    },
-		    "checkURL": {
-		     "!type": "fn()"
-		    },
-		    "checkCanvasKey": {
-		     "!type": "fn()"
-		    },
-		    "checkImageKey": {
-		     "!type": "fn()"
-		    },
-		    "checkTextureKey": {
-		     "!type": "fn()"
-		    },
-		    "checkSoundKey": {
-		     "!type": "fn()"
-		    },
-		    "checkTextKey": {
-		     "!type": "fn()"
-		    },
-		    "checkPhysicsKey": {
-		     "!type": "fn()"
-		    },
-		    "checkTilemapKey": {
-		     "!type": "fn()"
-		    },
-		    "checkBinaryKey": {
-		     "!type": "fn()"
-		    },
-		    "checkBitmapDataKey": {
-		     "!type": "fn()"
-		    },
-		    "checkBitmapFontKey": {
-		     "!type": "fn()"
-		    },
-		    "checkJSONKey": {
-		     "!type": "fn()"
-		    },
-		    "checkXMLKey": {
-		     "!type": "fn()"
-		    },
-		    "checkVideoKey": {
-		     "!type": "fn()"
-		    },
-		    "checkShaderKey": {
-		     "!type": "fn()"
-		    },
-		    "checkRenderTextureKey": {
-		     "!type": "fn()"
-		    },
-		    "getItem": {
-		     "!type": "fn()"
-		    },
-		    "getCanvas": {
-		     "!type": "fn()"
-		    },
-		    "getImage": {
-		     "!type": "fn()"
-		    },
-		    "getTextureFrame": {
-		     "!type": "fn()"
-		    },
-		    "getSound": {
-		     "!type": "fn()"
-		    },
-		    "getSoundData": {
-		     "!type": "fn()"
-		    },
-		    "getText": {
-		     "!type": "fn()"
-		    },
-		    "getPhysicsData": {
-		     "!type": "fn()"
-		    },
-		    "getTilemapData": {
-		     "!type": "fn()"
-		    },
-		    "getBinary": {
-		     "!type": "fn()"
-		    },
-		    "getBitmapData": {
-		     "!type": "fn()"
-		    },
-		    "getBitmapFont": {
-		     "!type": "fn()"
-		    },
-		    "getJSON": {
-		     "!type": "fn()"
-		    },
-		    "getXML": {
-		     "!type": "fn()"
-		    },
-		    "getVideo": {
-		     "!type": "fn()"
-		    },
-		    "getShader": {
-		     "!type": "fn()"
-		    },
-		    "getRenderTexture": {
-		     "!type": "fn()"
-		    },
-		    "getBaseTexture": {
-		     "!type": "fn()"
-		    },
-		    "getFrame": {
-		     "!type": "fn()"
-		    },
-		    "getFrameCount": {
-		     "!type": "fn()"
-		    },
-		    "getFrameData": {
-		     "!type": "fn()"
-		    },
-		    "hasFrameData": {
-		     "!type": "fn()"
-		    },
-		    "updateFrameData": {
-		     "!type": "fn()"
-		    },
-		    "getFrameByIndex": {
-		     "!type": "fn()"
-		    },
-		    "getFrameByName": {
-		     "!type": "fn()"
-		    },
-		    "getPixiTexture": {
-		     "!type": "fn()"
-		    },
-		    "getPixiBaseTexture": {
-		     "!type": "fn()"
-		    },
-		    "getURL": {
-		     "!type": "fn()"
-		    },
-		    "getKeys": {
-		     "!type": "fn()"
-		    },
-		    "removeCanvas": {
-		     "!type": "fn()"
-		    },
-		    "removeImage": {
-		     "!type": "fn()"
-		    },
-		    "removeSound": {
-		     "!type": "fn()"
-		    },
-		    "removeText": {
-		     "!type": "fn()"
-		    },
-		    "removePhysics": {
-		     "!type": "fn()"
-		    },
-		    "removeTilemap": {
-		     "!type": "fn()"
-		    },
-		    "removeBinary": {
-		     "!type": "fn()"
-		    },
-		    "removeBitmapData": {
-		     "!type": "fn()"
-		    },
-		    "removeBitmapFont": {
-		     "!type": "fn()"
-		    },
-		    "removeJSON": {
-		     "!type": "fn()"
-		    },
-		    "removeXML": {
-		     "!type": "fn()"
-		    },
-		    "removeVideo": {
-		     "!type": "fn()"
-		    },
-		    "removeShader": {
-		     "!type": "fn()"
-		    },
-		    "removeRenderTexture": {
-		     "!type": "fn()"
-		    },
-		    "removeSpriteSheet": {
-		     "!type": "fn()"
-		    },
-		    "removeTextureAtlas": {
-		     "!type": "fn()"
-		    },
-		    "clearGLTextures": {
-		     "!type": "fn()"
-		    },
-		    "_resolveURL": {
-		     "!type": "fn()"
-		    },
-		    "destroy": {
-		     "!type": "fn()"
 		    }
 		   },
 		   "Cache#_cache": {
@@ -14046,102 +14837,289 @@
 		    "src": {}
 		   },
 		   "Cache#_resolveURL": {
-		    "_urlTemp": {},
-		    "_urlMap[undefined]": {}
+		    "prototype": {
+		     "_urlTemp": {},
+		     "_urlMap[undefined]": {}
+		    }
 		   },
 		   "Cache#destroy": {
 		    "i": {},
 		    "cache": {},
 		    "key": {},
-		    "_urlMap": {},
-		    "_urlResolver": {},
-		    "_urlTemp": {}
+		    "prototype": {
+		     "_urlMap": {},
+		     "_urlResolver": {},
+		     "_urlTemp": {}
+		    }
 		   },
 		   "Loader": {
 		    "!type": "fn()",
-		    "game": {
-		     "!type": "+Phaser.Game"
-		    },
-		    "cache": {
-		     "!type": "+Phaser.Cache"
-		    },
-		    "resetLocked": {
-		     "!type": "bool"
-		    },
-		    "isLoading": {
-		     "!type": "bool"
-		    },
-		    "hasLoaded": {
-		     "!type": "bool"
-		    },
-		    "preloadSprite": {
-		     "!type": "?"
-		    },
-		    "crossOrigin": {
-		     "!type": "bool|string"
-		    },
-		    "baseURL": {
-		     "!type": "string"
-		    },
-		    "path": {
-		     "!type": "string"
-		    },
-		    "onLoadStart": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "onLoadComplete": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "onPackComplete": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "onFileStart": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "onFileComplete": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "onFileError": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "useXDomainRequest": {
-		     "!type": "bool"
-		    },
-		    "_warnedAboutXDomainRequest": {
-		     "!type": "bool"
-		    },
-		    "enableParallel": {
-		     "!type": "+integer"
-		    },
-		    "maxParallelDownloads": {
-		     "!type": "+integer"
-		    },
-		    "_withSyncPointDepth": {
-		     "!type": "+integer"
-		    },
-		    "_fileList": {
-		     "!type": "[?]"
-		    },
-		    "_flightQueue": {
-		     "!type": "[?]"
-		    },
-		    "_processingHead": {
-		     "!type": "+integer"
-		    },
-		    "_fileLoadStarted": {
-		     "!type": "bool"
-		    },
-		    "_totalPackCount": {
-		     "!type": "+integer"
-		    },
-		    "_totalFileCount": {
-		     "!type": "+integer"
-		    },
-		    "_loadedPackCount": {
-		     "!type": "+integer"
-		    },
-		    "_loadedFileCount": {
-		     "!type": "+integer"
+		    "prototype": {
+		     "game": {
+		      "!type": "+Phaser.Game"
+		     },
+		     "cache": {
+		      "!type": "+Phaser.Cache"
+		     },
+		     "resetLocked": {
+		      "!type": "bool"
+		     },
+		     "isLoading": {
+		      "!type": "bool"
+		     },
+		     "hasLoaded": {
+		      "!type": "bool"
+		     },
+		     "preloadSprite": {},
+		     "crossOrigin": {
+		      "!type": "bool|string"
+		     },
+		     "baseURL": {
+		      "!type": "string"
+		     },
+		     "path": {
+		      "!type": "string"
+		     },
+		     "onLoadStart": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "onLoadComplete": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "onPackComplete": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "onFileStart": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "onFileComplete": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "onFileError": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "useXDomainRequest": {
+		      "!type": "bool"
+		     },
+		     "_warnedAboutXDomainRequest": {
+		      "!type": "bool"
+		     },
+		     "enableParallel": {
+		      "!type": "number"
+		     },
+		     "maxParallelDownloads": {
+		      "!type": "number"
+		     },
+		     "_withSyncPointDepth": {
+		      "!type": "number"
+		     },
+		     "_fileList": {
+		      "!type": "[?]"
+		     },
+		     "_flightQueue": {
+		      "!type": "[?]"
+		     },
+		     "_processingHead": {
+		      "!type": "number"
+		     },
+		     "_fileLoadStarted": {
+		      "!type": "bool"
+		     },
+		     "_totalPackCount": {
+		      "!type": "number"
+		     },
+		     "_totalFileCount": {
+		      "!type": "number"
+		     },
+		     "_loadedPackCount": {
+		      "!type": "number"
+		     },
+		     "_loadedFileCount": {
+		      "!type": "number"
+		     },
+		     "setPreloadSprite": {
+		      "!type": "fn()"
+		     },
+		     "resize": {
+		      "!type": "fn()"
+		     },
+		     "checkKeyExists": {
+		      "!type": "fn()"
+		     },
+		     "getAssetIndex": {
+		      "!type": "fn()"
+		     },
+		     "getAsset": {
+		      "!type": "fn()"
+		     },
+		     "reset": {
+		      "!type": "fn()"
+		     },
+		     "addToFileList": {
+		      "!type": "fn()"
+		     },
+		     "replaceInFileList": {
+		      "!type": "fn()"
+		     },
+		     "pack": {
+		      "!type": "fn()"
+		     },
+		     "image": {
+		      "!type": "fn()"
+		     },
+		     "images": {
+		      "!type": "fn()"
+		     },
+		     "text": {
+		      "!type": "fn()"
+		     },
+		     "json": {
+		      "!type": "fn()"
+		     },
+		     "shader": {
+		      "!type": "fn()"
+		     },
+		     "xml": {
+		      "!type": "fn()"
+		     },
+		     "script": {
+		      "!type": "fn()"
+		     },
+		     "binary": {
+		      "!type": "fn()"
+		     },
+		     "spritesheet": {
+		      "!type": "fn()"
+		     },
+		     "audio": {
+		      "!type": "fn()"
+		     },
+		     "audiosprite": {
+		      "!type": "fn()"
+		     },
+		     "video": {
+		      "!type": "fn()"
+		     },
+		     "tilemap": {
+		      "!type": "fn()"
+		     },
+		     "physics": {
+		      "!type": "fn()"
+		     },
+		     "bitmapFont": {
+		      "!type": "fn()"
+		     },
+		     "atlasJSONArray": {
+		      "!type": "fn()"
+		     },
+		     "atlasJSONHash": {
+		      "!type": "fn()"
+		     },
+		     "atlasXML": {
+		      "!type": "fn()"
+		     },
+		     "atlas": {
+		      "!type": "fn()"
+		     },
+		     "withSyncPoints": {
+		      "!type": "fn(callback: +function, callbackContext: ?) -> ?"
+		     },
+		     "withSyncPoint": {
+		      "!type": "fn()"
+		     },
+		     "addSyncPoint": {
+		      "!type": "fn()"
+		     },
+		     "removeFile": {
+		      "!type": "fn()"
+		     },
+		     "removeAll": {
+		      "!type": "fn()"
+		     },
+		     "start": {
+		      "!type": "fn()"
+		     },
+		     "processLoadQueue": {
+		      "!type": "fn()"
+		     },
+		     "finishedLoading": {
+		      "!type": "fn()"
+		     },
+		     "asyncComplete": {
+		      "!type": "fn()"
+		     },
+		     "processPack": {
+		      "!type": "fn()"
+		     },
+		     "transformUrl": {
+		      "!type": "fn()"
+		     },
+		     "loadFile": {
+		      "!type": "fn()"
+		     },
+		     "loadImageTag": {
+		      "!type": "fn()"
+		     },
+		     "loadVideoTag": {
+		      "!type": "fn()"
+		     },
+		     "loadAudioTag": {
+		      "!type": "fn()"
+		     },
+		     "xhrLoad": {
+		      "!type": "fn(file: ?, url: string, type: string, onload: +function, onerror: +function)"
+		     },
+		     "xhrLoadWithXDR": {
+		      "!type": "fn()"
+		     },
+		     "getVideoURL": {
+		      "!type": "fn()"
+		     },
+		     "getAudioURL": {
+		      "!type": "fn()"
+		     },
+		     "fileError": {
+		      "!type": "fn()"
+		     },
+		     "fileComplete": {
+		      "!type": "fn()"
+		     },
+		     "jsonLoadComplete": {
+		      "!type": "fn()"
+		     },
+		     "csvLoadComplete": {
+		      "!type": "fn()"
+		     },
+		     "xmlLoadComplete": {
+		      "!type": "fn()"
+		     },
+		     "parseXml": {
+		      "!type": "fn()"
+		     },
+		     "nextFile": {
+		      "!type": "fn(previousFile: ?, success: bool)"
+		     },
+		     "updateProgress": {
+		      "!type": "fn()"
+		     },
+		     "totalLoadedFiles": {
+		      "!type": "fn()"
+		     },
+		     "totalQueuedFiles": {
+		      "!type": "fn()"
+		     },
+		     "totalLoadedPacks": {
+		      "!type": "fn()"
+		     },
+		     "totalQueuedPacks": {
+		      "!type": "fn()"
+		     },
+		     "progressFloat": {
+		      "!type": "number"
+		     },
+		     "progress": {
+		      "!type": "number"
+		     }
 		    },
 		    "TEXTURE_ATLAS_JSON_ARRAY": {
 		     "!type": "number"
@@ -14157,194 +15135,13 @@
 		    },
 		    "PHYSICS_PHASER_JSON": {
 		     "!type": "number"
-		    },
-		    "setPreloadSprite": {
-		     "!type": "fn()"
-		    },
-		    "resize": {
-		     "!type": "fn()"
-		    },
-		    "checkKeyExists": {
-		     "!type": "fn()"
-		    },
-		    "getAssetIndex": {
-		     "!type": "fn()"
-		    },
-		    "getAsset": {
-		     "!type": "fn()"
-		    },
-		    "reset": {
-		     "!type": "fn()"
-		    },
-		    "addToFileList": {
-		     "!type": "fn()"
-		    },
-		    "replaceInFileList": {
-		     "!type": "fn()"
-		    },
-		    "pack": {
-		     "!type": "fn()"
-		    },
-		    "image": {
-		     "!type": "fn()"
-		    },
-		    "images": {
-		     "!type": "fn()"
-		    },
-		    "text": {
-		     "!type": "fn()"
-		    },
-		    "json": {
-		     "!type": "fn()"
-		    },
-		    "shader": {
-		     "!type": "fn()"
-		    },
-		    "xml": {
-		     "!type": "fn()"
-		    },
-		    "script": {
-		     "!type": "fn()"
-		    },
-		    "binary": {
-		     "!type": "fn()"
-		    },
-		    "spritesheet": {
-		     "!type": "fn()"
-		    },
-		    "audio": {
-		     "!type": "fn()"
-		    },
-		    "audiosprite": {
-		     "!type": "fn()"
-		    },
-		    "video": {
-		     "!type": "fn()"
-		    },
-		    "tilemap": {
-		     "!type": "fn()"
-		    },
-		    "physics": {
-		     "!type": "fn()"
-		    },
-		    "bitmapFont": {
-		     "!type": "fn()"
-		    },
-		    "atlasJSONArray": {
-		     "!type": "fn()"
-		    },
-		    "atlasJSONHash": {
-		     "!type": "fn()"
-		    },
-		    "atlasXML": {
-		     "!type": "fn()"
-		    },
-		    "atlas": {
-		     "!type": "fn()"
-		    },
-		    "withSyncPoints": {
-		     "!type": "fn(callback: +function, callbackContext: ?) -> ?"
-		    },
-		    "withSyncPoint": {
-		     "!type": "fn()"
-		    },
-		    "addSyncPoint": {
-		     "!type": "fn()"
-		    },
-		    "removeFile": {
-		     "!type": "fn()"
-		    },
-		    "removeAll": {
-		     "!type": "fn()"
-		    },
-		    "start": {
-		     "!type": "fn()"
-		    },
-		    "processLoadQueue": {
-		     "!type": "fn()"
-		    },
-		    "finishedLoading": {
-		     "!type": "fn()"
-		    },
-		    "asyncComplete": {
-		     "!type": "fn()"
-		    },
-		    "processPack": {
-		     "!type": "fn()"
-		    },
-		    "transformUrl": {
-		     "!type": "fn()"
-		    },
-		    "loadFile": {
-		     "!type": "fn()"
-		    },
-		    "loadImageTag": {
-		     "!type": "fn()"
-		    },
-		    "loadVideoTag": {
-		     "!type": "fn()"
-		    },
-		    "loadAudioTag": {
-		     "!type": "fn()"
-		    },
-		    "xhrLoad": {
-		     "!type": "fn(file: ?, url: string, type: string, onload: +function, onerror: +function)"
-		    },
-		    "xhrLoadWithXDR": {
-		     "!type": "fn()"
-		    },
-		    "getVideoURL": {
-		     "!type": "fn()"
-		    },
-		    "getAudioURL": {
-		     "!type": "fn()"
-		    },
-		    "fileError": {
-		     "!type": "fn()"
-		    },
-		    "fileComplete": {
-		     "!type": "fn()"
-		    },
-		    "jsonLoadComplete": {
-		     "!type": "fn()"
-		    },
-		    "csvLoadComplete": {
-		     "!type": "fn()"
-		    },
-		    "xmlLoadComplete": {
-		     "!type": "fn()"
-		    },
-		    "parseXml": {
-		     "!type": "fn()"
-		    },
-		    "nextFile": {
-		     "!type": "fn(previousFile: ?, success: bool)"
-		    },
-		    "updateProgress": {
-		     "!type": "fn()"
-		    },
-		    "totalLoadedFiles": {
-		     "!type": "fn()"
-		    },
-		    "totalQueuedFiles": {
-		     "!type": "fn()"
-		    },
-		    "totalLoadedPacks": {
-		     "!type": "fn()"
-		    },
-		    "totalQueuedPacks": {
-		     "!type": "fn()"
-		    },
-		    "progressFloat": {
-		     "!type": "number"
-		    },
-		    "progress": {
-		     "!type": "+integer"
 		    }
 		   },
 		   "Loader#setPreloadSprite": {
 		    "direction": {},
-		    "preloadSprite": {}
+		    "prototype": {
+		     "preloadSprite": {}
+		    }
 		   },
 		   "Loader#setPreloadSprite#preloadSprite": {
 		    "sprite": {},
@@ -14368,14 +15165,16 @@
 		   },
 		   "Loader#reset": {
 		    "clearEvents": {},
-		    "preloadSprite": {},
-		    "isLoading": {},
-		    "_processingHead": {},
-		    "_fileLoadStarted": {},
-		    "_totalFileCount": {},
-		    "_totalPackCount": {},
-		    "_loadedPackCount": {},
-		    "_loadedFileCount": {}
+		    "prototype": {
+		     "preloadSprite": {},
+		     "isLoading": {},
+		     "_processingHead": {},
+		     "_fileLoadStarted": {},
+		     "_totalFileCount": {},
+		     "_totalPackCount": {},
+		     "_loadedPackCount": {},
+		     "_loadedFileCount": {}
+		    }
 		   },
 		   "Loader#reset#_fileList": {
 		    "length": {}
@@ -14390,7 +15189,9 @@
 		    "prop": {},
 		    "fileIndex": {},
 		    "currentFile": {},
-		    "_fileList[undefined]": {}
+		    "prototype": {
+		     "_fileList[undefined]": {}
+		    }
 		   },
 		   "Loader#addToFileList~file": {
 		    "type": {},
@@ -14500,16 +15301,20 @@
 		    "length": {}
 		   },
 		   "Loader#start": {
-		    "hasLoaded": {},
-		    "isLoading": {}
+		    "prototype": {
+		     "hasLoaded": {},
+		     "isLoading": {}
+		    }
 		   },
 		   "Loader#processLoadQueue": {
 		    "i": {},
 		    "file": {},
 		    "syncblock": {},
 		    "inflightLimit": {},
-		    "_processingHead": {},
-		    "_fileLoadStarted": {},
+		    "prototype": {
+		     "_processingHead": {},
+		     "_fileLoadStarted": {}
+		    },
 		    "_this": {}
 		   },
 		   "Loader#processLoadQueue~file": {
@@ -14518,9 +15323,11 @@
 		    "requestObject": {}
 		   },
 		   "Loader#finishedLoading": {
-		    "hasLoaded": {},
-		    "isLoading": {},
-		    "_fileLoadStarted": {}
+		    "prototype": {
+		     "hasLoaded": {},
+		     "isLoading": {},
+		     "_fileLoadStarted": {}
+		    }
 		   },
 		   "Loader#asyncComplete": {
 		    "errorMessage": {}
@@ -14560,7 +15367,9 @@
 		    }
 		   },
 		   "Loader#xhrLoadWithXDR": {
-		    "_warnedAboutXDomainRequest": {},
+		    "prototype": {
+		     "_warnedAboutXDomainRequest": {}
+		    },
 		    "xhr": {},
 		    "onerror": {},
 		    "_this": {}
@@ -14627,7 +15436,9 @@
 		    }
 		   },
 		   "Loader#updateProgress": {
-		    "preloadSprite": {}
+		    "prototype": {
+		     "preloadSprite": {}
+		    }
 		   },
 		   "LoaderParser": {
 		    "!type": "fn()",
@@ -14693,6 +15504,170 @@
 		    "!type": "fn()",
 		    "PI2": {
 		     "!type": "number"
+		    },
+		    "prototype": {
+		     "fuzzyEqual": {
+		      "!type": "fn(a: number, b: number, epsilon: number) -> ?"
+		     },
+		     "fuzzyLessThan": {
+		      "!type": "fn(a: number, b: number, epsilon: number) -> ?"
+		     },
+		     "fuzzyGreaterThan": {
+		      "!type": "fn(a: number, b: number, epsilon: number) -> ?"
+		     },
+		     "fuzzyCeil": {
+		      "!type": "fn(val: number, epsilon: number) -> ?"
+		     },
+		     "fuzzyFloor": {
+		      "!type": "fn(val: number, epsilon: number) -> ?"
+		     },
+		     "average": {
+		      "!type": "fn() -> ?"
+		     },
+		     "shear": {
+		      "!type": "fn(n: number) -> ?"
+		     },
+		     "snapTo": {
+		      "!type": "fn(input: number, gap: number, start: number) -> ?"
+		     },
+		     "snapToFloor": {
+		      "!type": "fn(input: number, gap: number, start: number) -> ?"
+		     },
+		     "snapToCeil": {
+		      "!type": "fn(input: number, gap: number, start: number) -> ?"
+		     },
+		     "roundTo": {
+		      "!type": "fn(value: number, place: number, base: number) -> ?"
+		     },
+		     "floorTo": {
+		      "!type": "fn(value: number, place: number, base: number) -> ?"
+		     },
+		     "ceilTo": {
+		      "!type": "fn(value: number, place: number, base: number) -> ?"
+		     },
+		     "angleBetween": {
+		      "!type": "fn(x1: number, y1: number, x2: number, y2: number) -> ?"
+		     },
+		     "angleBetweenY": {
+		      "!type": "fn(x1: number, y1: number, x2: number, y2: number) -> ?"
+		     },
+		     "angleBetweenPoints": {
+		      "!type": "fn(point1: +Phaser.Point, point2: +Phaser.Point) -> ?"
+		     },
+		     "angleBetweenPointsY": {
+		      "!type": "fn(point1: +Phaser.Point, point2: +Phaser.Point) -> ?"
+		     },
+		     "reverseAngle": {
+		      "!type": "fn(angleRad: number) -> ?"
+		     },
+		     "normalizeAngle": {
+		      "!type": "fn(angleRad: number) -> ?"
+		     },
+		     "maxAdd": {
+		      "!type": "fn(value: number, amount: number, max: number) -> ?"
+		     },
+		     "minSub": {
+		      "!type": "fn(value: number, amount: number, min: number) -> ?"
+		     },
+		     "wrap": {
+		      "!type": "fn(value: number, min: number, max: number) -> ?"
+		     },
+		     "wrapValue": {
+		      "!type": "fn(value: number, amount: number, max: number) -> ?"
+		     },
+		     "isOdd": {
+		      "!type": "fn(n: number) -> ?"
+		     },
+		     "isEven": {
+		      "!type": "fn(n: number) -> ?"
+		     },
+		     "min": {
+		      "!type": "fn() -> ?"
+		     },
+		     "max": {
+		      "!type": "fn() -> ?"
+		     },
+		     "minProperty": {
+		      "!type": "fn() -> ?"
+		     },
+		     "maxProperty": {
+		      "!type": "fn() -> ?"
+		     },
+		     "wrapAngle": {
+		      "!type": "fn(angle: number, radians: bool) -> ?"
+		     },
+		     "linearInterpolation": {
+		      "!type": "fn(v: [?], k: number) -> ?"
+		     },
+		     "bezierInterpolation": {
+		      "!type": "fn(v: [?], k: number) -> ?"
+		     },
+		     "catmullRomInterpolation": {
+		      "!type": "fn(v: [?], k: number) -> ?"
+		     },
+		     "linear": {
+		      "!type": "fn(p0: number, p1: number, t: number) -> ?"
+		     },
+		     "bernstein": {
+		      "!type": "fn(n: number, i: number) -> ?"
+		     },
+		     "factorial": {
+		      "!type": "fn(value: number) -> ?"
+		     },
+		     "catmullRom": {
+		      "!type": "fn(p0: number, p1: number, p2: number, p3: number, t: number) -> ?"
+		     },
+		     "difference": {
+		      "!type": "fn(a: number, b: number) -> ?"
+		     },
+		     "roundAwayFromZero": {
+		      "!type": "fn(value: number) -> ?"
+		     },
+		     "sinCosGenerator": {
+		      "!type": "fn(length: number, sinAmplitude: number, cosAmplitude: number, frequency: number) -> ?"
+		     },
+		     "distance": {
+		      "!type": "fn(x1: number, y1: number, x2: number, y2: number) -> ?"
+		     },
+		     "distanceSq": {
+		      "!type": "fn(x1: number, y1: number, x2: number, y2: number) -> ?"
+		     },
+		     "distancePow": {
+		      "!type": "fn(x1: number, y1: number, x2: number, y2: number, pow: number) -> ?"
+		     },
+		     "clamp": {
+		      "!type": "fn(x: number, a: number, b: number) -> ?"
+		     },
+		     "clampBottom": {
+		      "!type": "fn(x: number, a: number) -> ?"
+		     },
+		     "within": {
+		      "!type": "fn(a: number, b: number, tolerance: number) -> ?"
+		     },
+		     "mapLinear": {
+		      "!type": "fn(x: number, a1: number, a2: number, b1: number, b2: number) -> ?"
+		     },
+		     "smoothstep": {
+		      "!type": "fn(x: number, min: number, max: number) -> ?"
+		     },
+		     "smootherstep": {
+		      "!type": "fn(x: number, min: number, max: number) -> ?"
+		     },
+		     "sign": {
+		      "!type": "fn(x: number) -> ?"
+		     },
+		     "percent": {
+		      "!type": "fn(a: number, b: number, base: number) -> ?"
+		     },
+		     "degToRad": {
+		      "!type": "fn(degrees: number) -> ?"
+		     },
+		     "radToDeg": {
+		      "!type": "fn(radians: number) -> ?"
+		     },
+		     "chanceRoll": {
+		      "!type": "fn(chance: number) -> ?"
+		     }
 		    },
 		    "fuzzyEqual": {
 		     "!type": "fn()",
@@ -14937,64 +15912,63 @@
 		    },
 		    "radToDeg": {
 		     "!type": "fn()"
-		    },
-		    "chanceRoll": {
-		     "!type": "fn(chance: number) -> ?"
 		    }
 		   },
 		   "QuadTree": {
 		    "!type": "fn(x: number, y: number, width: number, height: number, maxObjects: number, maxLevels: number, level: number)",
-		    "maxObjects": {
-		     "!type": "number"
-		    },
-		    "maxLevels": {
-		     "!type": "number"
-		    },
-		    "level": {
-		     "!type": "number"
-		    },
-		    "bounds": {
-		     "!type": "?"
-		    },
-		    "objects": {
-		     "!type": "+array"
-		    },
-		    "nodes": {
-		     "!type": "+array"
-		    },
-		    "_empty": {
-		     "!type": "+array"
-		    },
-		    "reset": {
-		     "!type": "fn()"
-		    },
-		    "populate": {
-		     "!type": "fn()"
-		    },
-		    "populateHandler": {
-		     "!type": "fn()"
-		    },
-		    "split": {
-		     "!type": "fn()"
-		    },
-		    "insert": {
-		     "!type": "fn()"
-		    },
-		    "getIndex": {
-		     "!type": "fn()"
-		    },
-		    "retrieve": {
-		     "!type": "fn()"
-		    },
-		    "clear": {
-		     "!type": "fn()"
+		    "prototype": {
+		     "maxObjects": {
+		      "!type": "number"
+		     },
+		     "maxLevels": {
+		      "!type": "number"
+		     },
+		     "level": {
+		      "!type": "number"
+		     },
+		     "bounds": {},
+		     "objects": {
+		      "!type": "+array"
+		     },
+		     "nodes": {
+		      "!type": "+array"
+		     },
+		     "_empty": {
+		      "!type": "+array"
+		     },
+		     "reset": {
+		      "!type": "fn()"
+		     },
+		     "populate": {
+		      "!type": "fn()"
+		     },
+		     "populateHandler": {
+		      "!type": "fn()"
+		     },
+		     "split": {
+		      "!type": "fn()"
+		     },
+		     "insert": {
+		      "!type": "fn()"
+		     },
+		     "getIndex": {
+		      "!type": "fn()"
+		     },
+		     "retrieve": {
+		      "!type": "fn()"
+		     },
+		     "clear": {
+		      "!type": "fn()"
+		     }
 		    }
 		   },
 		   "QuadTree#reset": {
-		    "maxObjects": {},
-		    "maxLevels": {},
-		    "level": {},
-		    "bounds": {}
+		    "prototype": {
+		     "maxObjects": {},
+		     "maxLevels": {},
+		     "level": {},
+		     "bounds": {}
+		    }
 		   },
 		   "QuadTree#reset#bounds": {
 		    "x": {},
@@ -15013,10 +15987,12 @@
 		    "length": {}
 		   },
 		   "QuadTree#split": {
-		    "nodes[0]": {},
-		    "nodes[1]": {},
-		    "nodes[2]": {},
-		    "nodes[3]": {}
+		    "prototype": {
+		     "nodes[0]": {},
+		     "nodes[1]": {},
+		     "nodes[2]": {},
+		     "nodes[3]": {}
+		    }
 		   },
 		   "QuadTree#insert": {
 		    "i": {},
@@ -15041,76 +16017,82 @@
 		   "RandomDataGenerator": {
 		    "!type": "fn(seeds: [?])",
 		    "seeds": {},
-		    "c": {
-		     "!type": "number"
-		    },
-		    "s0": {
-		     "!type": "number"
-		    },
-		    "s1": {
-		     "!type": "number"
-		    },
-		    "s2": {
-		     "!type": "number"
-		    },
-		    "rnd": {
-		     "!type": "fn()"
-		    },
-		    "sow": {
-		     "!type": "fn()"
-		    },
-		    "hash": {
-		     "!type": "fn()"
-		    },
-		    "integer": {
-		     "!type": "fn()"
-		    },
-		    "frac": {
-		     "!type": "fn()"
-		    },
-		    "real": {
-		     "!type": "fn()"
-		    },
-		    "integerInRange": {
-		     "!type": "fn()"
-		    },
-		    "between": {
-		     "!type": "fn()"
-		    },
-		    "realInRange": {
-		     "!type": "fn()"
-		    },
-		    "normal": {
-		     "!type": "fn()"
-		    },
-		    "uuid": {
-		     "!type": "fn()"
-		    },
-		    "pick": {
-		     "!type": "fn()"
-		    },
-		    "weightedPick": {
-		     "!type": "fn()"
-		    },
-		    "timestamp": {
-		     "!type": "fn()"
-		    },
-		    "angle": {
-		     "!type": "fn()"
+		    "prototype": {
+		     "c": {
+		      "!type": "number"
+		     },
+		     "s0": {
+		      "!type": "number"
+		     },
+		     "s1": {
+		      "!type": "number"
+		     },
+		     "s2": {
+		      "!type": "number"
+		     },
+		     "rnd": {
+		      "!type": "fn()"
+		     },
+		     "sow": {
+		      "!type": "fn()"
+		     },
+		     "hash": {
+		      "!type": "fn()"
+		     },
+		     "integer": {
+		      "!type": "fn()"
+		     },
+		     "frac": {
+		      "!type": "fn()"
+		     },
+		     "real": {
+		      "!type": "fn()"
+		     },
+		     "integerInRange": {
+		      "!type": "fn()"
+		     },
+		     "between": {
+		      "!type": "fn()"
+		     },
+		     "realInRange": {
+		      "!type": "fn()"
+		     },
+		     "normal": {
+		      "!type": "fn()"
+		     },
+		     "uuid": {
+		      "!type": "fn()"
+		     },
+		     "pick": {
+		      "!type": "fn()"
+		     },
+		     "weightedPick": {
+		      "!type": "fn()"
+		     },
+		     "timestamp": {
+		      "!type": "fn()"
+		     },
+		     "angle": {
+		      "!type": "fn()"
+		     }
 		    }
 		   },
 		   "RandomDataGenerator#rnd": {
 		    "t": {},
-		    "c": {},
-		    "s0": {},
-		    "s1": {},
-		    "s2": {}
+		    "prototype": {
+		     "c": {},
+		     "s0": {},
+		     "s1": {},
+		     "s2": {}
+		    }
 		   },
 		   "RandomDataGenerator#sow": {
-		    "s0": {},
-		    "s1": {},
-		    "s2": {},
-		    "c": {},
+		    "prototype": {
+		     "s0": {},
+		     "s1": {},
+		     "s2": {},
+		     "c": {}
+		    },
 		    "i": {},
 		    "seed": {}
 		   },
@@ -15126,23 +16108,25 @@
 		   },
 		   "Net": {
 		    "!type": "fn(game: +Phaser.Game)",
-		    "game": {},
-		    "getHostName": {
-		     "!type": "fn()"
-		    },
-		    "checkDomainName": {
-		     "!type": "fn()"
-		    },
-		    "updateQueryString": {
-		     "!type": "fn()"
-		    },
-		    "getQueryString": {
-		     "!type": "fn()"
-		    },
-		    "decodeURI": {
-		     "!type": "fn()"
-		    },
-		    "isDisabled": {}
+		    "prototype": {
+		     "game": {},
+		     "getHostName": {
+		      "!type": "fn()"
+		     },
+		     "checkDomainName": {
+		      "!type": "fn()"
+		     },
+		     "updateQueryString": {
+		      "!type": "fn()"
+		     },
+		     "getQueryString": {
+		      "!type": "fn()"
+		     },
+		     "decodeURI": {
+		      "!type": "fn()"
+		     },
+		     "isDisabled": {}
+		    }
 		   },
 		   "Net#updateQueryString": {
 		    "redirect": {},
@@ -15167,455 +16151,455 @@
 		     "!type": "fn()",
 		     "Emitter": {
 		      "!type": "fn(game: +Phaser.Game, x: number, y: number, maxParticles: number)",
-		      "maxParticles": {
-		       "!type": "number"
-		      },
-		      "name": {
-		       "!type": "string"
-		      },
-		      "type": {
-		       "!type": "number"
-		      },
-		      "physicsType": {
-		       "!type": "number"
-		      },
-		      "area": {
-		       "!type": "+Phaser.Rectangle"
-		      },
-		      "minParticleSpeed": {
-		       "!type": "+Phaser.Point"
-		      },
-		      "maxParticleSpeed": {
-		       "!type": "+Phaser.Point"
-		      },
-		      "minParticleScale": {
-		       "!type": "number"
-		      },
-		      "maxParticleScale": {
-		       "!type": "number"
-		      },
-		      "scaleData": {
-		       "!type": "+array"
-		      },
-		      "minRotation": {
-		       "!type": "number"
-		      },
-		      "maxRotation": {
-		       "!type": "number"
-		      },
-		      "minParticleAlpha": {
-		       "!type": "number"
-		      },
-		      "maxParticleAlpha": {
-		       "!type": "number"
-		      },
-		      "alphaData": {
-		       "!type": "+array"
-		      },
-		      "gravity": {
-		       "!type": "number"
-		      },
-		      "particleClass": {
-		       "!type": "+any"
-		      },
-		      "particleDrag": {
-		       "!type": "+Phaser.Point"
-		      },
-		      "angularDrag": {
-		       "!type": "number"
-		      },
-		      "frequency": {
-		       "!type": "number"
-		      },
-		      "lifespan": {
-		       "!type": "number"
-		      },
-		      "bounce": {
-		       "!type": "+Phaser.Point"
-		      },
-		      "on": {
-		       "!type": "bool"
-		      },
-		      "particleAnchor": {
-		       "!type": "+Phaser.Point"
-		      },
-		      "blendMode": {
-		       "!type": "number"
-		      },
-		      "emitX": {
-		       "!type": "number"
-		      },
-		      "emitY": {
-		       "!type": "number"
-		      },
-		      "autoScale": {
-		       "!type": "bool"
-		      },
-		      "autoAlpha": {
-		       "!type": "bool"
-		      },
-		      "particleBringToTop": {
-		       "!type": "bool"
-		      },
-		      "particleSendToBack": {
-		       "!type": "bool"
-		      },
-		      "_minParticleScale": {
-		       "!type": "+Phaser.Point"
-		      },
-		      "_maxParticleScale": {
-		       "!type": "+Phaser.Point"
-		      },
-		      "_quantity": {
-		       "!type": "number"
-		      },
-		      "_timer": {
-		       "!type": "number"
-		      },
-		      "_counter": {
-		       "!type": "number"
-		      },
-		      "_flowQuantity": {
-		       "!type": "number"
-		      },
-		      "_flowTotal": {
-		       "!type": "number"
-		      },
-		      "_explode": {
-		       "!type": "bool"
-		      },
-		      "_frames": {
-		       "!type": "+any"
-		      },
-		      "update": {
-		       "!type": "fn()"
-		      },
-		      "makeParticles": {
-		       "!type": "fn()"
-		      },
-		      "kill": {
-		       "!type": "fn()"
-		      },
-		      "revive": {
-		       "!type": "fn()"
-		      },
-		      "explode": {
-		       "!type": "fn()"
-		      },
-		      "flow": {
-		       "!type": "fn()"
-		      },
-		      "start": {
-		       "!type": "fn()"
-		      },
-		      "emitParticle": {
-		       "!type": "fn()"
-		      },
-		      "destroy": {
-		       "!type": "fn()"
-		      },
-		      "setSize": {
-		       "!type": "fn()"
-		      },
-		      "setXSpeed": {
-		       "!type": "fn()"
-		      },
-		      "setYSpeed": {
-		       "!type": "fn()"
-		      },
-		      "setRotation": {
-		       "!type": "fn()"
-		      },
-		      "setAlpha": {
-		       "!type": "fn()"
-		      },
-		      "setScale": {
-		       "!type": "fn()"
-		      },
-		      "at": {
-		       "!type": "fn()"
-		      },
-		      "width": {
-		       "!type": "number"
-		      },
-		      "height": {
-		       "!type": "number"
-		      },
-		      "x": {
-		       "!type": "number"
-		      },
-		      "y": {
-		       "!type": "number"
-		      },
-		      "left": {
-		       "!type": "number"
-		      },
-		      "right": {
-		       "!type": "number"
-		      },
-		      "top": {
-		       "!type": "number"
-		      },
-		      "bottom": {
-		       "!type": "number"
-		      },
-		      "game": {
-		       "!type": "+Phaser.Game"
-		      },
-		      "z": {
-		       "!type": "+integer"
-		      },
-		      "alive": {
-		       "!type": "bool"
-		      },
-		      "exists": {
-		       "!type": "bool"
-		      },
-		      "ignoreDestroy": {
-		       "!type": "bool"
-		      },
-		      "pendingDestroy": {
-		       "!type": "bool"
-		      },
-		      "classType": {
-		       "!type": "?"
-		      },
-		      "cursor": {
-		       "!type": "+DisplayObject"
-		      },
-		      "enableBody": {
-		       "!type": "bool"
-		      },
-		      "enableBodyDebug": {
-		       "!type": "bool"
-		      },
-		      "physicsBodyType": {
-		       "!type": "+integer"
-		      },
-		      "physicsSortDirection": {
-		       "!type": "+integer"
-		      },
-		      "onDestroy": {
-		       "!type": "+Phaser.Signal"
-		      },
-		      "cursorIndex": {
-		       "!type": "+integer"
-		      },
-		      "fixedToCamera": {
-		       "!type": "bool"
-		      },
-		      "cameraOffset": {
-		       "!type": "+Phaser.Point"
-		      },
-		      "hash": {
-		       "!type": "+array"
-		      },
-		      "_sortProperty": {
-		       "!type": "string"
-		      },
-		      "add": {
-		       "!type": "fn(child: +DisplayObject, silent: bool) -> ?"
-		      },
-		      "addToHash": {
-		       "!type": "fn(child: +DisplayObject) -> ?"
-		      },
-		      "removeFromHash": {
-		       "!type": "fn(child: +DisplayObject) -> ?"
-		      },
-		      "addMultiple": {
-		       "!type": "fn(children: [?]|+Phaser.Group, silent: bool) -> ?"
-		      },
-		      "addAt": {
-		       "!type": "fn(child: +DisplayObject, index: +integer, silent: bool) -> ?"
-		      },
-		      "getAt": {
-		       "!type": "fn(index: +integer) -> ?"
-		      },
-		      "create": {
-		       "!type": "fn(x: number, y: number, key: string, frame: +integer|string, exists: bool) -> ?"
-		      },
-		      "createMultiple": {
-		       "!type": "fn(quantity: +integer, key: string, frame: +integer|string, exists: bool)"
-		      },
-		      "updateZ": {
-		       "!type": "fn()"
-		      },
-		      "resetCursor": {
-		       "!type": "fn(index: +integer) -> ?"
-		      },
-		      "next": {
-		       "!type": "fn() -> ?"
-		      },
-		      "previous": {
-		       "!type": "fn() -> ?"
-		      },
-		      "swap": {
-		       "!type": "fn(child1: +any, child2: +any)"
-		      },
-		      "bringToTop": {
-		       "!type": "fn(child: +any) -> ?"
-		      },
-		      "sendToBack": {
-		       "!type": "fn(child: +any) -> ?"
-		      },
-		      "moveUp": {
-		       "!type": "fn(child: +any) -> ?"
-		      },
-		      "moveDown": {
-		       "!type": "fn(child: +any) -> ?"
-		      },
-		      "xy": {
-		       "!type": "fn(index: +integer, x: number, y: number)"
-		      },
-		      "reverse": {
-		       "!type": "fn()"
-		      },
-		      "getIndex": {
-		       "!type": "fn(child: +any) -> ?"
-		      },
-		      "replace": {
-		       "!type": "fn(oldChild: +any, newChild: +any) -> ?"
-		      },
-		      "hasProperty": {
-		       "!type": "fn(child: +any, key: [?]) -> ?"
-		      },
-		      "setProperty": {
-		       "!type": "fn(child: +any, key: +array, value: +any, operation: +integer, force: bool) -> ?"
-		      },
-		      "checkProperty": {
-		       "!type": "fn(child: +any, key: +array, value: +any, force: bool) -> ?"
-		      },
-		      "set": {
-		       "!type": "fn(child: +Phaser.Sprite, key: string, value: +any, checkAlive: bool, checkVisible: bool, operation: +integer, force: bool) -> ?"
-		      },
-		      "setAll": {
-		       "!type": "fn(key: string, value: +any, checkAlive: bool, checkVisible: bool, operation: +integer, force: bool)"
-		      },
-		      "setAllChildren": {
-		       "!type": "fn(key: string, value: +any, checkAlive: bool, checkVisible: bool, operation: +integer, force: bool)"
-		      },
-		      "checkAll": {
-		       "!type": "fn(key: string, value: +any, checkAlive: bool, checkVisible: bool, force: bool)"
-		      },
-		      "addAll": {
-		       "!type": "fn(property: string, amount: number, checkAlive: bool, checkVisible: bool)"
-		      },
-		      "subAll": {
-		       "!type": "fn(property: string, amount: number, checkAlive: bool, checkVisible: bool)"
-		      },
-		      "multiplyAll": {
-		       "!type": "fn(property: string, amount: number, checkAlive: bool, checkVisible: bool)"
-		      },
-		      "divideAll": {
-		       "!type": "fn(property: string, amount: number, checkAlive: bool, checkVisible: bool)"
-		      },
-		      "callAllExists": {
-		       "!type": "fn(callback: string, existsValue: bool, parameter: +any)"
-		      },
-		      "callbackFromArray": {
-		       "!type": "fn(child: ?, callback: +array, length: +integer)"
-		      },
-		      "callAll": {
-		       "!type": "fn(method: string, context: string, args: +any)"
-		      },
-		      "preUpdate": {
-		       "!type": "fn()"
-		      },
-		      "postUpdate": {
-		       "!type": "fn()"
-		      },
-		      "filter": {
-		       "!type": "fn(predicate: +function, checkExists: bool) -> ?"
-		      },
-		      "forEach": {
-		       "!type": "fn(callback: +function, callbackContext: ?, checkExists: bool, args: +any)"
-		      },
-		      "forEachExists": {
-		       "!type": "fn(callback: +function, callbackContext: ?, args: +any)"
-		      },
-		      "forEachAlive": {
-		       "!type": "fn(callback: +function, callbackContext: ?, args: +any)"
-		      },
-		      "forEachDead": {
-		       "!type": "fn(callback: +function, callbackContext: ?, args: +any)"
-		      },
-		      "sort": {
-		       "!type": "fn(key: string, order: +integer)"
-		      },
-		      "customSort": {
-		       "!type": "fn(sortHandler: +function, context: ?)"
-		      },
-		      "ascendingSortHandler": {
-		       "!type": "fn(a: ?, b: ?)"
-		      },
-		      "descendingSortHandler": {
-		       "!type": "fn(a: ?, b: ?)"
-		      },
-		      "iterate": {
-		       "!type": "fn(key: string, value: +any, returnType: +integer, callback: +function, callbackContext: ?, args: [?]) -> ?"
-		      },
-		      "getFirstExists": {
-		       "!type": "fn(exists: bool) -> ?"
-		      },
-		      "getFirstAlive": {
-		       "!type": "fn() -> ?"
-		      },
-		      "getFirstDead": {
-		       "!type": "fn() -> ?"
-		      },
-		      "getTop": {
-		       "!type": "fn() -> ?"
-		      },
-		      "getBottom": {
-		       "!type": "fn() -> ?"
-		      },
-		      "countLiving": {
-		       "!type": "fn() -> ?"
-		      },
-		      "countDead": {
-		       "!type": "fn() -> ?"
-		      },
-		      "getRandom": {
-		       "!type": "fn(startIndex: +integer, length: +integer) -> ?"
-		      },
-		      "remove": {
-		       "!type": "fn(child: +any, destroy: bool, silent: bool) -> ?"
-		      },
-		      "moveAll": {
-		       "!type": "fn(group: +Phaser.Group, silent: bool) -> ?"
-		      },
-		      "removeAll": {
-		       "!type": "fn(destroy: bool, silent: bool)"
-		      },
-		      "removeBetween": {
-		       "!type": "fn(startIndex: +integer, endIndex: +integer, destroy: bool, silent: bool)"
-		      },
-		      "total": {
-		       "!type": "+integer"
-		      },
-		      "length": {
-		       "!type": "+integer"
-		      },
-		      "angle": {
-		       "!type": "number"
-		      },
-		      "rotation": {
-		       "!type": "number"
-		      },
-		      "visible": {
-		       "!type": "bool"
-		      },
-		      "alpha": {
-		       "!type": "number"
-		      },
-		      "children": {
-		       "!type": "?"
+		      "prototype": {
+		       "maxParticles": {
+		        "!type": "number"
+		       },
+		       "name": {
+		        "!type": "string"
+		       },
+		       "type": {
+		        "!type": "number"
+		       },
+		       "physicsType": {
+		        "!type": "number"
+		       },
+		       "area": {
+		        "!type": "+Phaser.Rectangle"
+		       },
+		       "minParticleSpeed": {
+		        "!type": "+Phaser.Point"
+		       },
+		       "maxParticleSpeed": {
+		        "!type": "+Phaser.Point"
+		       },
+		       "minParticleScale": {
+		        "!type": "number"
+		       },
+		       "maxParticleScale": {
+		        "!type": "number"
+		       },
+		       "scaleData": {
+		        "!type": "+array"
+		       },
+		       "minRotation": {
+		        "!type": "number"
+		       },
+		       "maxRotation": {
+		        "!type": "number"
+		       },
+		       "minParticleAlpha": {
+		        "!type": "number"
+		       },
+		       "maxParticleAlpha": {
+		        "!type": "number"
+		       },
+		       "alphaData": {
+		        "!type": "+array"
+		       },
+		       "gravity": {
+		        "!type": "number"
+		       },
+		       "particleClass": {
+		        "!type": "+any"
+		       },
+		       "particleDrag": {
+		        "!type": "+Phaser.Point"
+		       },
+		       "angularDrag": {
+		        "!type": "number"
+		       },
+		       "frequency": {
+		        "!type": "number"
+		       },
+		       "lifespan": {
+		        "!type": "number"
+		       },
+		       "bounce": {
+		        "!type": "+Phaser.Point"
+		       },
+		       "on": {
+		        "!type": "bool"
+		       },
+		       "particleAnchor": {
+		        "!type": "+Phaser.Point"
+		       },
+		       "blendMode": {
+		        "!type": "number"
+		       },
+		       "emitX": {
+		        "!type": "number"
+		       },
+		       "emitY": {
+		        "!type": "number"
+		       },
+		       "autoScale": {
+		        "!type": "bool"
+		       },
+		       "autoAlpha": {
+		        "!type": "bool"
+		       },
+		       "particleBringToTop": {
+		        "!type": "bool"
+		       },
+		       "particleSendToBack": {
+		        "!type": "bool"
+		       },
+		       "_minParticleScale": {
+		        "!type": "+Phaser.Point"
+		       },
+		       "_maxParticleScale": {
+		        "!type": "+Phaser.Point"
+		       },
+		       "_quantity": {
+		        "!type": "number"
+		       },
+		       "_timer": {
+		        "!type": "number"
+		       },
+		       "_counter": {
+		        "!type": "number"
+		       },
+		       "_flowQuantity": {
+		        "!type": "number"
+		       },
+		       "_flowTotal": {
+		        "!type": "number"
+		       },
+		       "_explode": {
+		        "!type": "bool"
+		       },
+		       "_frames": {
+		        "!type": "+any"
+		       },
+		       "update": {
+		        "!type": "fn()"
+		       },
+		       "makeParticles": {
+		        "!type": "fn()"
+		       },
+		       "kill": {
+		        "!type": "fn()"
+		       },
+		       "revive": {
+		        "!type": "fn()"
+		       },
+		       "explode": {
+		        "!type": "fn()"
+		       },
+		       "flow": {
+		        "!type": "fn()"
+		       },
+		       "start": {
+		        "!type": "fn()"
+		       },
+		       "emitParticle": {
+		        "!type": "fn()"
+		       },
+		       "destroy": {
+		        "!type": "fn()"
+		       },
+		       "setSize": {
+		        "!type": "fn()"
+		       },
+		       "setXSpeed": {
+		        "!type": "fn()"
+		       },
+		       "setYSpeed": {
+		        "!type": "fn()"
+		       },
+		       "setRotation": {
+		        "!type": "fn()"
+		       },
+		       "setAlpha": {
+		        "!type": "fn()"
+		       },
+		       "setScale": {
+		        "!type": "fn()"
+		       },
+		       "at": {
+		        "!type": "fn()"
+		       },
+		       "width": {
+		        "!type": "number"
+		       },
+		       "height": {
+		        "!type": "number"
+		       },
+		       "x": {
+		        "!type": "number"
+		       },
+		       "y": {
+		        "!type": "number"
+		       },
+		       "left": {
+		        "!type": "number"
+		       },
+		       "right": {
+		        "!type": "number"
+		       },
+		       "top": {
+		        "!type": "number"
+		       },
+		       "bottom": {
+		        "!type": "number"
+		       },
+		       "game": {
+		        "!type": "+Phaser.Game"
+		       },
+		       "z": {
+		        "!type": "number"
+		       },
+		       "alive": {
+		        "!type": "bool"
+		       },
+		       "exists": {
+		        "!type": "bool"
+		       },
+		       "ignoreDestroy": {
+		        "!type": "bool"
+		       },
+		       "pendingDestroy": {
+		        "!type": "bool"
+		       },
+		       "classType": {},
+		       "cursor": {
+		        "!type": "+DisplayObject"
+		       },
+		       "enableBody": {
+		        "!type": "bool"
+		       },
+		       "enableBodyDebug": {
+		        "!type": "bool"
+		       },
+		       "physicsBodyType": {
+		        "!type": "number"
+		       },
+		       "physicsSortDirection": {
+		        "!type": "number"
+		       },
+		       "onDestroy": {
+		        "!type": "+Phaser.Signal"
+		       },
+		       "cursorIndex": {
+		        "!type": "number"
+		       },
+		       "fixedToCamera": {
+		        "!type": "bool"
+		       },
+		       "cameraOffset": {
+		        "!type": "+Phaser.Point"
+		       },
+		       "hash": {
+		        "!type": "+array"
+		       },
+		       "_sortProperty": {
+		        "!type": "string"
+		       },
+		       "add": {
+		        "!type": "fn(child: +DisplayObject, silent: bool) -> ?"
+		       },
+		       "addToHash": {
+		        "!type": "fn(child: +DisplayObject) -> ?"
+		       },
+		       "removeFromHash": {
+		        "!type": "fn(child: +DisplayObject) -> ?"
+		       },
+		       "addMultiple": {
+		        "!type": "fn(children: [?]|+Phaser.Group, silent: bool) -> ?"
+		       },
+		       "addAt": {
+		        "!type": "fn(child: +DisplayObject, index: number, silent: bool) -> ?"
+		       },
+		       "getAt": {
+		        "!type": "fn(index: number) -> ?"
+		       },
+		       "create": {
+		        "!type": "fn(x: number, y: number, key: string, frame: number|string, exists: bool) -> ?"
+		       },
+		       "createMultiple": {
+		        "!type": "fn(quantity: number, key: string, frame: number|string, exists: bool)"
+		       },
+		       "updateZ": {
+		        "!type": "fn()"
+		       },
+		       "resetCursor": {
+		        "!type": "fn(index: number) -> ?"
+		       },
+		       "next": {
+		        "!type": "fn() -> ?"
+		       },
+		       "previous": {
+		        "!type": "fn() -> ?"
+		       },
+		       "swap": {
+		        "!type": "fn(child1: +any, child2: +any)"
+		       },
+		       "bringToTop": {
+		        "!type": "fn(child: +any) -> ?"
+		       },
+		       "sendToBack": {
+		        "!type": "fn(child: +any) -> ?"
+		       },
+		       "moveUp": {
+		        "!type": "fn(child: +any) -> ?"
+		       },
+		       "moveDown": {
+		        "!type": "fn(child: +any) -> ?"
+		       },
+		       "xy": {
+		        "!type": "fn(index: number, x: number, y: number)"
+		       },
+		       "reverse": {
+		        "!type": "fn()"
+		       },
+		       "getIndex": {
+		        "!type": "fn(child: +any) -> ?"
+		       },
+		       "replace": {
+		        "!type": "fn(oldChild: +any, newChild: +any) -> ?"
+		       },
+		       "hasProperty": {
+		        "!type": "fn(child: +any, key: [?]) -> ?"
+		       },
+		       "setProperty": {
+		        "!type": "fn(child: +any, key: +array, value: +any, operation: number, force: bool) -> ?"
+		       },
+		       "checkProperty": {
+		        "!type": "fn(child: +any, key: +array, value: +any, force: bool) -> ?"
+		       },
+		       "set": {
+		        "!type": "fn(child: +Phaser.Sprite, key: string, value: +any, checkAlive: bool, checkVisible: bool, operation: number, force: bool) -> ?"
+		       },
+		       "setAll": {
+		        "!type": "fn(key: string, value: +any, checkAlive: bool, checkVisible: bool, operation: number, force: bool)"
+		       },
+		       "setAllChildren": {
+		        "!type": "fn(key: string, value: +any, checkAlive: bool, checkVisible: bool, operation: number, force: bool)"
+		       },
+		       "checkAll": {
+		        "!type": "fn(key: string, value: +any, checkAlive: bool, checkVisible: bool, force: bool)"
+		       },
+		       "addAll": {
+		        "!type": "fn(property: string, amount: number, checkAlive: bool, checkVisible: bool)"
+		       },
+		       "subAll": {
+		        "!type": "fn(property: string, amount: number, checkAlive: bool, checkVisible: bool)"
+		       },
+		       "multiplyAll": {
+		        "!type": "fn(property: string, amount: number, checkAlive: bool, checkVisible: bool)"
+		       },
+		       "divideAll": {
+		        "!type": "fn(property: string, amount: number, checkAlive: bool, checkVisible: bool)"
+		       },
+		       "callAllExists": {
+		        "!type": "fn(callback: string, existsValue: bool, parameter: +any)"
+		       },
+		       "callbackFromArray": {
+		        "!type": "fn(child: ?, callback: +array, length: number)"
+		       },
+		       "callAll": {
+		        "!type": "fn(method: string, context: string, args: +any)"
+		       },
+		       "preUpdate": {
+		        "!type": "fn()"
+		       },
+		       "postUpdate": {
+		        "!type": "fn()"
+		       },
+		       "filter": {
+		        "!type": "fn(predicate: +function, checkExists: bool) -> ?"
+		       },
+		       "forEach": {
+		        "!type": "fn(callback: +function, callbackContext: ?, checkExists: bool, args: +any)"
+		       },
+		       "forEachExists": {
+		        "!type": "fn(callback: +function, callbackContext: ?, args: +any)"
+		       },
+		       "forEachAlive": {
+		        "!type": "fn(callback: +function, callbackContext: ?, args: +any)"
+		       },
+		       "forEachDead": {
+		        "!type": "fn(callback: +function, callbackContext: ?, args: +any)"
+		       },
+		       "sort": {
+		        "!type": "fn(key: string, order: number)"
+		       },
+		       "customSort": {
+		        "!type": "fn(sortHandler: +function, context: ?)"
+		       },
+		       "ascendingSortHandler": {
+		        "!type": "fn(a: ?, b: ?)"
+		       },
+		       "descendingSortHandler": {
+		        "!type": "fn(a: ?, b: ?)"
+		       },
+		       "iterate": {
+		        "!type": "fn(key: string, value: +any, returnType: number, callback: +function, callbackContext: ?, args: [?]) -> ?"
+		       },
+		       "getFirstExists": {
+		        "!type": "fn(exists: bool) -> ?"
+		       },
+		       "getFirstAlive": {
+		        "!type": "fn() -> ?"
+		       },
+		       "getFirstDead": {
+		        "!type": "fn() -> ?"
+		       },
+		       "getTop": {
+		        "!type": "fn() -> ?"
+		       },
+		       "getBottom": {
+		        "!type": "fn() -> ?"
+		       },
+		       "countLiving": {
+		        "!type": "fn() -> ?"
+		       },
+		       "countDead": {
+		        "!type": "fn() -> ?"
+		       },
+		       "getRandom": {
+		        "!type": "fn(startIndex: number, length: number) -> ?"
+		       },
+		       "remove": {
+		        "!type": "fn(child: +any, destroy: bool, silent: bool) -> ?"
+		       },
+		       "moveAll": {
+		        "!type": "fn(group: +Phaser.Group, silent: bool) -> ?"
+		       },
+		       "removeAll": {
+		        "!type": "fn(destroy: bool, silent: bool)"
+		       },
+		       "removeBetween": {
+		        "!type": "fn(startIndex: number, endIndex: number, destroy: bool, silent: bool)"
+		       },
+		       "total": {
+		        "!type": "number"
+		       },
+		       "length": {
+		        "!type": "number"
+		       },
+		       "angle": {
+		        "!type": "number"
+		       },
+		       "rotation": {
+		        "!type": "number"
+		       },
+		       "visible": {
+		        "!type": "bool"
+		       },
+		       "alpha": {
+		        "!type": "number"
+		       },
+		       "children": {}
 		      }
 		     },
 		     "Emitter#update": {
-		      "_timer": {},
-		      "i": {},
-		      "on": {}
+		      "prototype": {
+		       "_timer": {},
+		       "on": {}
+		      },
+		      "i": {}
 		     },
 		     "Emitter#makeParticles": {
 		      "frames": {},
@@ -15626,8 +16610,10 @@
 		      "i": {},
 		      "rndKey": {},
 		      "rndFrame": {},
-		      "_frames": {},
-		      "maxParticles": {}
+		      "prototype": {
+		       "_frames": {},
+		       "maxParticles": {}
+		      }
 		     },
 		     "Emitter#makeParticles~particle": {
 		      "body.checkCollision.any": {},
@@ -15638,26 +16624,34 @@
 		      "visible": {}
 		     },
 		     "Emitter#kill": {
-		      "on": {},
-		      "alive": {},
-		      "exists": {}
+		      "prototype": {
+		       "on": {},
+		       "alive": {},
+		       "exists": {}
+		      }
 		     },
 		     "Emitter#revive": {
-		      "alive": {},
-		      "exists": {}
+		      "prototype": {
+		       "alive": {},
+		       "exists": {}
+		      }
 		     },
 		     "Emitter#explode": {
-		      "_flowTotal": {}
+		      "prototype": {
+		       "_flowTotal": {}
+		      }
 		     },
 		     "Emitter#flow": {
 		      "quantity": {},
 		      "total": {},
 		      "immediate": {},
-		      "_counter": {},
-		      "_flowQuantity": {},
-		      "_flowTotal": {},
-		      "on": {},
-		      "_timer": {}
+		      "prototype": {
+		       "_counter": {},
+		       "_flowQuantity": {},
+		       "_flowTotal": {},
+		       "on": {},
+		       "_timer": {}
+		      }
 		     },
 		     "Emitter#start": {
 		      "explode": {},
@@ -15665,12 +16659,16 @@
 		      "frequency": {},
 		      "quantity": {},
 		      "forceQuantity": {},
-		      "visible": {},
-		      "i": {},
-		      "on": {},
-		      "_quantity": {},
-		      "_counter": {},
-		      "_timer": {}
+		      "prototype": {
+		       "visible": {},
+		       "lifespan": {},
+		       "frequency": {},
+		       "on": {},
+		       "_quantity": {},
+		       "_counter": {},
+		       "_timer": {}
+		      },
+		      "i": {}
 		     },
 		     "Emitter#emitParticle": {
 		      "particle": {}
@@ -15716,8 +16714,10 @@
 		     "Emitter#setRotation": {
 		      "min": {},
 		      "max": {},
-		      "minRotation": {},
-		      "maxRotation": {}
+		      "prototype": {
+		       "minRotation": {},
+		       "maxRotation": {}
+		      }
 		     },
 		     "Emitter#setAlpha": {
 		      "min": {},
@@ -15725,12 +16725,14 @@
 		      "rate": {},
 		      "ease": {},
 		      "yoyo": {},
-		      "minParticleAlpha": {},
-		      "maxParticleAlpha": {},
-		      "autoAlpha": {},
+		      "prototype": {
+		       "minParticleAlpha": {},
+		       "maxParticleAlpha": {},
+		       "autoAlpha": {},
+		       "alphaData": {}
+		      },
 		      "tweenData": {},
-		      "tween": {},
-		      "alphaData": {}
+		      "tween": {}
 		     },
 		     "Emitter#setAlpha~tweenData": {
 		      "v": {}
@@ -15743,44 +16745,50 @@
 		      "rate": {},
 		      "ease": {},
 		      "yoyo": {},
-		      "minParticleScale": {},
-		      "maxParticleScale": {},
-		      "autoScale": {},
+		      "prototype": {
+		       "minParticleScale": {},
+		       "maxParticleScale": {},
+		       "autoScale": {},
+		       "scaleData": {}
+		      },
 		      "tweenData": {},
-		      "tween": {},
-		      "scaleData": {}
+		      "tween": {}
 		     },
 		     "Emitter#setScale~tweenData": {
 		      "x": {},
 		      "y": {}
 		     },
 		     "Emitter#at": {
-		      "emitX": {},
-		      "emitY": {}
+		      "prototype": {
+		       "emitX": {},
+		       "emitY": {}
+		      }
 		     }
 		    },
 		    "!type": "fn(game: +Phaser.Game)",
-		    "game": {
-		     "!type": "+Phaser.Game"
-		    },
-		    "emitters": {
-		     "!type": "?"
-		    },
-		    "ID": {
-		     "!type": "number"
-		    },
-		    "add": {
-		     "!type": "fn()"
-		    },
-		    "remove": {
-		     "!type": "fn()"
-		    },
-		    "update": {
-		     "!type": "fn()"
+		    "prototype": {
+		     "game": {
+		      "!type": "+Phaser.Game"
+		     },
+		     "emitters": {},
+		     "ID": {
+		      "!type": "number"
+		     },
+		     "add": {
+		      "!type": "fn()"
+		     },
+		     "remove": {
+		      "!type": "fn()"
+		     },
+		     "update": {
+		      "!type": "fn()"
+		     }
 		    }
 		   },
 		   "Particles#add": {
-		    "emitters[undefined]": {}
+		    "prototype": {
+		     "emitters[undefined]": {}
+		    }
 		   },
 		   "Particles#update": {
 		    "key": {}
@@ -15789,230 +16797,230 @@
 		    "Arcade": {
 		     "Body": {
 		      "!type": "fn(sprite: +Phaser.Sprite)",
-		      "sprite": {
-		       "!type": "+Phaser.Sprite"
-		      },
-		      "game": {
-		       "!type": "+Phaser.Game"
-		      },
-		      "type": {
-		       "!type": "number"
-		      },
-		      "enable": {
-		       "!type": "bool"
-		      },
-		      "offset": {
-		       "!type": "+Phaser.Point"
-		      },
-		      "position": {
-		       "!type": "+Phaser.Point"
-		      },
-		      "prev": {
-		       "!type": "+Phaser.Point"
-		      },
-		      "allowRotation": {
-		       "!type": "bool"
-		      },
-		      "rotation": {
-		       "!type": "number"
-		      },
-		      "preRotation": {
-		       "!type": "number"
-		      },
-		      "width": {
-		       "!type": "number"
-		      },
-		      "height": {
-		       "!type": "number"
-		      },
-		      "sourceWidth": {
-		       "!type": "number"
-		      },
-		      "sourceHeight": {
-		       "!type": "number"
-		      },
-		      "halfWidth": {
-		       "!type": "number"
-		      },
-		      "halfHeight": {
-		       "!type": "number"
-		      },
-		      "center": {
-		       "!type": "+Phaser.Point"
-		      },
-		      "velocity": {
-		       "!type": "+Phaser.Point"
-		      },
-		      "newVelocity": {
-		       "!type": "+Phaser.Point"
-		      },
-		      "deltaMax": {
-		       "!type": "+Phaser.Point"
-		      },
-		      "acceleration": {
-		       "!type": "+Phaser.Point"
-		      },
-		      "drag": {
-		       "!type": "+Phaser.Point"
-		      },
-		      "allowGravity": {
-		       "!type": "bool"
-		      },
-		      "gravity": {
-		       "!type": "+Phaser.Point"
-		      },
-		      "bounce": {
-		       "!type": "+Phaser.Point"
-		      },
-		      "maxVelocity": {
-		       "!type": "+Phaser.Point"
-		      },
-		      "friction": {
-		       "!type": "+Phaser.Point"
-		      },
-		      "angularVelocity": {
-		       "!type": "number"
-		      },
-		      "angularAcceleration": {
-		       "!type": "number"
-		      },
-		      "angularDrag": {
-		       "!type": "number"
-		      },
-		      "maxAngular": {
-		       "!type": "number"
-		      },
-		      "mass": {
-		       "!type": "number"
-		      },
-		      "angle": {
-		       "!type": "number"
-		      },
-		      "speed": {
-		       "!type": "number"
-		      },
-		      "facing": {
-		       "!type": "number"
-		      },
-		      "immovable": {
-		       "!type": "bool"
-		      },
-		      "moves": {
-		       "!type": "bool"
-		      },
-		      "customSeparateX": {
-		       "!type": "bool"
-		      },
-		      "customSeparateY": {
-		       "!type": "bool"
-		      },
-		      "overlapX": {
-		       "!type": "number"
-		      },
-		      "overlapY": {
-		       "!type": "number"
-		      },
-		      "embedded": {
-		       "!type": "bool"
-		      },
-		      "collideWorldBounds": {
-		       "!type": "bool"
-		      },
-		      "checkCollision": {
-		       "!type": "?"
-		      },
-		      "touching": {
-		       "!type": "?"
-		      },
-		      "wasTouching": {
-		       "!type": "?"
-		      },
-		      "blocked": {
-		       "!type": "?"
-		      },
-		      "tilePadding": {
-		       "!type": "+Phaser.Point"
-		      },
-		      "dirty": {
-		       "!type": "bool"
-		      },
-		      "skipQuadTree": {
-		       "!type": "bool"
-		      },
-		      "syncBounds": {
-		       "!type": "bool"
-		      },
-		      "_reset": {
-		       "!type": "bool"
-		      },
-		      "_sx": {
-		       "!type": "number"
-		      },
-		      "_sy": {
-		       "!type": "number"
-		      },
-		      "_dx": {
-		       "!type": "number"
-		      },
-		      "_dy": {
-		       "!type": "number"
-		      },
-		      "updateBounds": {
-		       "!type": "fn()"
-		      },
-		      "preUpdate": {
-		       "!type": "fn()"
-		      },
-		      "postUpdate": {
-		       "!type": "fn()"
-		      },
-		      "destroy": {
-		       "!type": "fn()"
-		      },
-		      "checkWorldBounds": {
-		       "!type": "fn()"
-		      },
-		      "setSize": {
-		       "!type": "fn()"
-		      },
-		      "reset": {
-		       "!type": "fn()"
-		      },
-		      "hitTest": {
-		       "!type": "fn()"
-		      },
-		      "onFloor": {
-		       "!type": "fn()"
-		      },
-		      "onWall": {
-		       "!type": "fn()"
-		      },
-		      "deltaAbsX": {
-		       "!type": "fn()"
-		      },
-		      "deltaAbsY": {
-		       "!type": "fn()"
-		      },
-		      "deltaX": {
-		       "!type": "fn()"
-		      },
-		      "deltaY": {
-		       "!type": "fn()"
-		      },
-		      "deltaZ": {
-		       "!type": "fn()"
-		      },
-		      "bottom": {
-		       "!type": "number"
-		      },
-		      "right": {
-		       "!type": "number"
-		      },
-		      "x": {
-		       "!type": "number"
-		      },
-		      "y": {
-		       "!type": "number"
+		      "prototype": {
+		       "sprite": {
+		        "!type": "+Phaser.Sprite"
+		       },
+		       "game": {
+		        "!type": "+Phaser.Game"
+		       },
+		       "type": {
+		        "!type": "number"
+		       },
+		       "enable": {
+		        "!type": "bool"
+		       },
+		       "offset": {
+		        "!type": "+Phaser.Point"
+		       },
+		       "position": {
+		        "!type": "+Phaser.Point"
+		       },
+		       "prev": {
+		        "!type": "+Phaser.Point"
+		       },
+		       "allowRotation": {
+		        "!type": "bool"
+		       },
+		       "rotation": {
+		        "!type": "number"
+		       },
+		       "preRotation": {
+		        "!type": "number"
+		       },
+		       "width": {
+		        "!type": "number"
+		       },
+		       "height": {
+		        "!type": "number"
+		       },
+		       "sourceWidth": {
+		        "!type": "number"
+		       },
+		       "sourceHeight": {
+		        "!type": "number"
+		       },
+		       "halfWidth": {
+		        "!type": "number"
+		       },
+		       "halfHeight": {
+		        "!type": "number"
+		       },
+		       "center": {
+		        "!type": "+Phaser.Point"
+		       },
+		       "velocity": {
+		        "!type": "+Phaser.Point"
+		       },
+		       "newVelocity": {
+		        "!type": "+Phaser.Point"
+		       },
+		       "deltaMax": {
+		        "!type": "+Phaser.Point"
+		       },
+		       "acceleration": {
+		        "!type": "+Phaser.Point"
+		       },
+		       "drag": {
+		        "!type": "+Phaser.Point"
+		       },
+		       "allowGravity": {
+		        "!type": "bool"
+		       },
+		       "gravity": {
+		        "!type": "+Phaser.Point"
+		       },
+		       "bounce": {
+		        "!type": "+Phaser.Point"
+		       },
+		       "maxVelocity": {
+		        "!type": "+Phaser.Point"
+		       },
+		       "friction": {
+		        "!type": "+Phaser.Point"
+		       },
+		       "angularVelocity": {
+		        "!type": "number"
+		       },
+		       "angularAcceleration": {
+		        "!type": "number"
+		       },
+		       "angularDrag": {
+		        "!type": "number"
+		       },
+		       "maxAngular": {
+		        "!type": "number"
+		       },
+		       "mass": {
+		        "!type": "number"
+		       },
+		       "angle": {
+		        "!type": "number"
+		       },
+		       "speed": {
+		        "!type": "number"
+		       },
+		       "facing": {
+		        "!type": "number"
+		       },
+		       "immovable": {
+		        "!type": "bool"
+		       },
+		       "moves": {
+		        "!type": "bool"
+		       },
+		       "customSeparateX": {
+		        "!type": "bool"
+		       },
+		       "customSeparateY": {
+		        "!type": "bool"
+		       },
+		       "overlapX": {
+		        "!type": "number"
+		       },
+		       "overlapY": {
+		        "!type": "number"
+		       },
+		       "embedded": {
+		        "!type": "bool"
+		       },
+		       "collideWorldBounds": {
+		        "!type": "bool"
+		       },
+		       "checkCollision": {},
+		       "touching": {},
+		       "wasTouching": {},
+		       "blocked": {},
+		       "tilePadding": {
+		        "!type": "+Phaser.Point"
+		       },
+		       "dirty": {
+		        "!type": "bool"
+		       },
+		       "skipQuadTree": {
+		        "!type": "bool"
+		       },
+		       "syncBounds": {
+		        "!type": "bool"
+		       },
+		       "_reset": {
+		        "!type": "bool"
+		       },
+		       "_sx": {
+		        "!type": "number"
+		       },
+		       "_sy": {
+		        "!type": "number"
+		       },
+		       "_dx": {
+		        "!type": "number"
+		       },
+		       "_dy": {
+		        "!type": "number"
+		       },
+		       "updateBounds": {
+		        "!type": "fn()"
+		       },
+		       "preUpdate": {
+		        "!type": "fn()"
+		       },
+		       "postUpdate": {
+		        "!type": "fn()"
+		       },
+		       "destroy": {
+		        "!type": "fn()"
+		       },
+		       "checkWorldBounds": {
+		        "!type": "fn()"
+		       },
+		       "setSize": {
+		        "!type": "fn()"
+		       },
+		       "reset": {
+		        "!type": "fn()"
+		       },
+		       "hitTest": {
+		        "!type": "fn()"
+		       },
+		       "onFloor": {
+		        "!type": "fn()"
+		       },
+		       "onWall": {
+		        "!type": "fn()"
+		       },
+		       "deltaAbsX": {
+		        "!type": "fn()"
+		       },
+		       "deltaAbsY": {
+		        "!type": "fn()"
+		       },
+		       "deltaX": {
+		        "!type": "fn()"
+		       },
+		       "deltaY": {
+		        "!type": "fn()"
+		       },
+		       "deltaZ": {
+		        "!type": "fn()"
+		       },
+		       "bottom": {
+		        "!type": "number"
+		       },
+		       "right": {
+		        "!type": "number"
+		       },
+		       "x": {
+		        "!type": "number"
+		       },
+		       "y": {
+		        "!type": "number"
+		       },
+		       "render": {
+		        "!type": "fn(context: ?, body: +Phaser.Physics.Arcade.Body, color: string, filled: bool)"
+		       },
+		       "renderBodyInfo": {
+		        "!type": "fn(body: +Phaser.Physics.Arcade.Body, x: number, y: number, color: string)"
+		       }
 		      },
 		      "render": {
 		       "!type": "fn()",
@@ -16053,26 +17061,30 @@
 		     },
 		     "Body#updateBounds": {
 		      "b": {},
-		      "width": {},
-		      "height": {},
-		      "_reset": {},
+		      "prototype": {
+		       "width": {},
+		       "height": {},
+		       "_reset": {},
+		       "_sx": {},
+		       "_sy": {},
+		       "halfWidth": {},
+		       "halfHeight": {}
+		      },
 		      "asx": {},
-		      "asy": {},
-		      "_sx": {},
-		      "_sy": {},
-		      "halfWidth": {},
-		      "halfHeight": {}
+		      "asy": {}
 		     },
 		     "Body#preUpdate": {
-		      "dirty": {},
-		      "embedded": {},
-		      "rotation": {},
-		      "preRotation": {},
-		      "speed": {},
-		      "angle": {},
-		      "_dx": {},
-		      "_dy": {},
-		      "_reset": {}
+		      "prototype": {
+		       "dirty": {},
+		       "embedded": {},
+		       "rotation": {},
+		       "preRotation": {},
+		       "speed": {},
+		       "angle": {},
+		       "_dx": {},
+		       "_dy": {},
+		       "_reset": {}
+		      }
 		     },
 		     "Body#preUpdate#wasTouching": {
 		      "none": {},
@@ -16103,11 +17115,13 @@
 		      "y": {}
 		     },
 		     "Body#postUpdate": {
-		      "dirty": {},
-		      "facing": {},
-		      "_dx": {},
-		      "_dy": {},
-		      "_reset": {}
+		      "prototype": {
+		       "dirty": {},
+		       "facing": {},
+		       "_dx": {},
+		       "_dy": {},
+		       "_reset": {}
+		      }
 		     },
 		     "Body#postUpdate#sprite": {
 		      "position": {
@@ -16124,7 +17138,9 @@
 		      "body": {}
 		     },
 		     "Body#destroy": {
-		      "sprite": {}
+		      "prototype": {
+		       "sprite": {}
+		      }
 		     },
 		     "Body#checkWorldBounds": {
 		      "pos": {},
@@ -16148,21 +17164,25 @@
 		     "Body#setSize": {
 		      "offsetX": {},
 		      "offsetY": {},
-		      "sourceWidth": {},
-		      "sourceHeight": {},
-		      "width": {},
-		      "height": {},
-		      "halfWidth": {},
-		      "halfHeight": {}
+		      "prototype": {
+		       "sourceWidth": {},
+		       "sourceHeight": {},
+		       "width": {},
+		       "height": {},
+		       "halfWidth": {},
+		       "halfHeight": {}
+		      }
 		     },
 		     "Body#reset": {
-		      "speed": {},
-		      "angularVelocity": {},
-		      "angularAcceleration": {},
-		      "rotation": {},
-		      "preRotation": {},
-		      "_sx": {},
-		      "_sy": {}
+		      "prototype": {
+		       "speed": {},
+		       "angularVelocity": {},
+		       "angularAcceleration": {},
+		       "rotation": {},
+		       "preRotation": {},
+		       "_sx": {},
+		       "_sy": {}
+		      }
 		     },
 		     "Body#reset#position": {
 		      "x": {},
@@ -16174,46 +17194,216 @@
 		     },
 		     "TilemapCollision": {
 		      "!type": "fn()",
-		      "TILE_BIAS": {
-		       "!type": "number"
-		      },
-		      "collideSpriteVsTilemapLayer": {
-		       "!type": "fn()"
-		      },
-		      "collideGroupVsTilemapLayer": {
-		       "!type": "fn()"
-		      },
-		      "separateTile": {
-		       "!type": "fn()"
-		      },
-		      "tileCheckX": {
-		       "!type": "fn()"
-		      },
-		      "tileCheckY": {
-		       "!type": "fn()"
-		      },
-		      "processTileSeparationX": {
-		       "!type": "fn()"
-		      },
-		      "processTileSeparationY": {
-		       "!type": "fn()"
+		      "prototype": {
+		       "TILE_BIAS": {
+		        "!type": "number"
+		       },
+		       "collideSpriteVsTilemapLayer": {
+		        "!type": "fn()"
+		       },
+		       "collideGroupVsTilemapLayer": {
+		        "!type": "fn()"
+		       },
+		       "separateTile": {
+		        "!type": "fn()"
+		       },
+		       "tileCheckX": {
+		        "!type": "fn()"
+		       },
+		       "tileCheckY": {
+		        "!type": "fn()"
+		       },
+		       "processTileSeparationX": {
+		        "!type": "fn()"
+		       },
+		       "processTileSeparationY": {
+		        "!type": "fn()"
+		       }
 		      }
 		     },
-		     "collideSpriteVsTilemapLayer": {
-		      "!type": "fn(sprite: +Phaser.Sprite, tilemapLayer: +Phaser.TilemapLayer, collideCallback: +function, processCallback: +function, callbackContext: ?, overlapOnly: bool)"
+		     "prototype": {
+		      "collideSpriteVsTilemapLayer": {
+		       "!type": "fn(sprite: +Phaser.Sprite, tilemapLayer: +Phaser.TilemapLayer, collideCallback: +function, processCallback: +function, callbackContext: ?, overlapOnly: bool)"
+		      },
+		      "collideGroupVsTilemapLayer": {
+		       "!type": "fn(group: +Phaser.Group, tilemapLayer: +Phaser.TilemapLayer, collideCallback: +function, processCallback: +function, callbackContext: ?, overlapOnly: bool)"
+		      },
+		      "separateTile": {
+		       "!type": "fn(body: +Phaser.Physics.Arcade.Body, tile: +Phaser.Tile) -> ?"
+		      },
+		      "tileCheckX": {
+		       "!type": "fn(body: +Phaser.Physics.Arcade.Body, tile: +Phaser.Tile) -> ?"
+		      },
+		      "tileCheckY": {
+		       "!type": "fn(body: +Phaser.Physics.Arcade.Body, tile: +Phaser.Tile) -> ?"
+		      },
+		      "processTileSeparationX": {
+		       "!type": "fn(body: +Phaser.Physics.Arcade.Body, x: number)"
+		      },
+		      "processTileSeparationY": {
+		       "!type": "fn(body: +Phaser.Physics.Arcade.Body, y: number)"
+		      },
+		      "game": {
+		       "!type": "+Phaser.Game"
+		      },
+		      "gravity": {
+		       "!type": "+Phaser.Point"
+		      },
+		      "bounds": {
+		       "!type": "+Phaser.Rectangle"
+		      },
+		      "checkCollision": {},
+		      "maxObjects": {
+		       "!type": "number"
+		      },
+		      "maxLevels": {
+		       "!type": "number"
+		      },
+		      "OVERLAP_BIAS": {
+		       "!type": "number"
+		      },
+		      "forceX": {
+		       "!type": "bool"
+		      },
+		      "sortDirection": {
+		       "!type": "number"
+		      },
+		      "skipQuadTree": {
+		       "!type": "bool"
+		      },
+		      "isPaused": {
+		       "!type": "bool"
+		      },
+		      "quadTree": {
+		       "!type": "+Phaser.QuadTree"
+		      },
+		      "_total": {
+		       "!type": "number"
+		      },
+		      "setBounds": {
+		       "!type": "fn()"
+		      },
+		      "setBoundsToWorld": {
+		       "!type": "fn()"
+		      },
+		      "enable": {
+		       "!type": "fn()"
+		      },
+		      "enableBody": {
+		       "!type": "fn()"
+		      },
+		      "updateMotion": {
+		       "!type": "fn()"
+		      },
+		      "computeVelocity": {
+		       "!type": "fn()"
+		      },
+		      "overlap": {
+		       "!type": "fn()"
+		      },
+		      "collide": {
+		       "!type": "fn()"
+		      },
+		      "sortLeftRight": {
+		       "!type": "fn()"
+		      },
+		      "sortRightLeft": {
+		       "!type": "fn()"
+		      },
+		      "sortTopBottom": {
+		       "!type": "fn()"
+		      },
+		      "sortBottomTop": {
+		       "!type": "fn()"
+		      },
+		      "sort": {
+		       "!type": "fn()"
+		      },
+		      "collideHandler": {
+		       "!type": "fn()"
+		      },
+		      "collideSpriteVsSprite": {
+		       "!type": "fn()"
+		      },
+		      "collideSpriteVsGroup": {
+		       "!type": "fn()"
+		      },
+		      "collideGroupVsSelf": {
+		       "!type": "fn()"
+		      },
+		      "collideGroupVsGroup": {
+		       "!type": "fn()"
+		      },
+		      "separate": {
+		       "!type": "fn()"
+		      },
+		      "intersects": {
+		       "!type": "fn()"
+		      },
+		      "separateX": {
+		       "!type": "fn()"
+		      },
+		      "separateY": {
+		       "!type": "fn()"
+		      },
+		      "getObjectsUnderPointer": {
+		       "!type": "fn()"
+		      },
+		      "getObjectsAtLocation": {
+		       "!type": "fn()"
+		      },
+		      "moveToObject": {
+		       "!type": "fn()"
+		      },
+		      "moveToPointer": {
+		       "!type": "fn()"
+		      },
+		      "moveToXY": {
+		       "!type": "fn()"
+		      },
+		      "velocityFromAngle": {
+		       "!type": "fn()"
+		      },
+		      "velocityFromRotation": {
+		       "!type": "fn()"
+		      },
+		      "accelerationFromRotation": {
+		       "!type": "fn()"
+		      },
+		      "accelerateToObject": {
+		       "!type": "fn()"
+		      },
+		      "accelerateToPointer": {
+		       "!type": "fn()"
+		      },
+		      "accelerateToXY": {
+		       "!type": "fn()"
+		      },
+		      "distanceBetween": {
+		       "!type": "fn()"
+		      },
+		      "distanceToXY": {
+		       "!type": "fn()"
+		      },
+		      "distanceToPointer": {
+		       "!type": "fn()"
+		      },
+		      "angleBetween": {
+		       "!type": "fn()"
+		      },
+		      "angleToXY": {
+		       "!type": "fn()"
+		      },
+		      "angleToPointer": {
+		       "!type": "fn()"
+		      }
 		     },
 		     "TilemapCollision#collideSpriteVsTilemapLayer": {
 		      "mapData": {},
 		      "i": {}
 		     },
-		     "collideGroupVsTilemapLayer": {
-		      "!type": "fn(group: +Phaser.Group, tilemapLayer: +Phaser.TilemapLayer, collideCallback: +function, processCallback: +function, callbackContext: ?, overlapOnly: bool)"
-		     },
 		     "TilemapCollision#collideGroupVsTilemapLayer": {
 		      "i": {}
-		     },
-		     "separateTile": {
-		      "!type": "fn(body: +Phaser.Physics.Arcade.Body, tile: +Phaser.Tile) -> ?"
 		     },
 		     "TilemapCollision#separateTile": {
 		      "ox": {},
@@ -16221,64 +17411,13 @@
 		      "minX": {},
 		      "minY": {}
 		     },
-		     "tileCheckX": {
-		      "!type": "fn(body: +Phaser.Physics.Arcade.Body, tile: +Phaser.Tile) -> ?"
-		     },
 		     "TilemapCollision#tileCheckX": {
 		      "ox": {}
-		     },
-		     "tileCheckY": {
-		      "!type": "fn(body: +Phaser.Physics.Arcade.Body, tile: +Phaser.Tile) -> ?"
 		     },
 		     "TilemapCollision#tileCheckY": {
 		      "oy": {}
 		     },
-		     "processTileSeparationX": {
-		      "!type": "fn(body: +Phaser.Physics.Arcade.Body, x: number)"
-		     },
-		     "processTileSeparationY": {
-		      "!type": "fn(body: +Phaser.Physics.Arcade.Body, y: number)"
-		     },
 		     "!type": "fn(game: +Phaser.Game)",
-		     "game": {
-		      "!type": "+Phaser.Game"
-		     },
-		     "gravity": {
-		      "!type": "+Phaser.Point"
-		     },
-		     "bounds": {
-		      "!type": "+Phaser.Rectangle"
-		     },
-		     "checkCollision": {
-		      "!type": "?"
-		     },
-		     "maxObjects": {
-		      "!type": "number"
-		     },
-		     "maxLevels": {
-		      "!type": "number"
-		     },
-		     "OVERLAP_BIAS": {
-		      "!type": "number"
-		     },
-		     "forceX": {
-		      "!type": "bool"
-		     },
-		     "sortDirection": {
-		      "!type": "number"
-		     },
-		     "skipQuadTree": {
-		      "!type": "bool"
-		     },
-		     "isPaused": {
-		      "!type": "bool"
-		     },
-		     "quadTree": {
-		      "!type": "+Phaser.QuadTree"
-		     },
-		     "_total": {
-		      "!type": "number"
-		     },
 		     "SORT_NONE": {
 		      "!type": "number"
 		     },
@@ -16293,123 +17432,6 @@
 		     },
 		     "BOTTOM_TOP": {
 		      "!type": "number"
-		     },
-		     "setBounds": {
-		      "!type": "fn()"
-		     },
-		     "setBoundsToWorld": {
-		      "!type": "fn()"
-		     },
-		     "enable": {
-		      "!type": "fn()"
-		     },
-		     "enableBody": {
-		      "!type": "fn()"
-		     },
-		     "updateMotion": {
-		      "!type": "fn()"
-		     },
-		     "computeVelocity": {
-		      "!type": "fn()"
-		     },
-		     "overlap": {
-		      "!type": "fn()"
-		     },
-		     "collide": {
-		      "!type": "fn()"
-		     },
-		     "sortLeftRight": {
-		      "!type": "fn()"
-		     },
-		     "sortRightLeft": {
-		      "!type": "fn()"
-		     },
-		     "sortTopBottom": {
-		      "!type": "fn()"
-		     },
-		     "sortBottomTop": {
-		      "!type": "fn()"
-		     },
-		     "sort": {
-		      "!type": "fn()"
-		     },
-		     "collideHandler": {
-		      "!type": "fn()"
-		     },
-		     "collideSpriteVsSprite": {
-		      "!type": "fn()"
-		     },
-		     "collideSpriteVsGroup": {
-		      "!type": "fn()"
-		     },
-		     "collideGroupVsSelf": {
-		      "!type": "fn()"
-		     },
-		     "collideGroupVsGroup": {
-		      "!type": "fn()"
-		     },
-		     "separate": {
-		      "!type": "fn()"
-		     },
-		     "intersects": {
-		      "!type": "fn()"
-		     },
-		     "separateX": {
-		      "!type": "fn()"
-		     },
-		     "separateY": {
-		      "!type": "fn()"
-		     },
-		     "getObjectsUnderPointer": {
-		      "!type": "fn()"
-		     },
-		     "getObjectsAtLocation": {
-		      "!type": "fn()"
-		     },
-		     "moveToObject": {
-		      "!type": "fn()"
-		     },
-		     "moveToPointer": {
-		      "!type": "fn()"
-		     },
-		     "moveToXY": {
-		      "!type": "fn()"
-		     },
-		     "velocityFromAngle": {
-		      "!type": "fn()"
-		     },
-		     "velocityFromRotation": {
-		      "!type": "fn()"
-		     },
-		     "accelerationFromRotation": {
-		      "!type": "fn()"
-		     },
-		     "accelerateToObject": {
-		      "!type": "fn()"
-		     },
-		     "accelerateToPointer": {
-		      "!type": "fn()"
-		     },
-		     "accelerateToXY": {
-		      "!type": "fn()"
-		     },
-		     "distanceBetween": {
-		      "!type": "fn()"
-		     },
-		     "distanceToXY": {
-		      "!type": "fn()"
-		     },
-		     "distanceToPointer": {
-		      "!type": "fn()"
-		     },
-		     "angleBetween": {
-		      "!type": "fn()"
-		     },
-		     "angleToXY": {
-		      "!type": "fn()"
-		     },
-		     "angleToPointer": {
-		      "!type": "fn()"
 		     }
 		    },
 		    "Arcade#checkCollision": {
@@ -16434,7 +17456,9 @@
 		     "overlapCallback": {},
 		     "processCallback": {},
 		     "callbackContext": {},
-		     "_total": {},
+		     "prototype": {
+		      "_total": {}
+		     },
 		     "i": {},
 		     "j": {}
 		    },
@@ -16442,7 +17466,9 @@
 		     "collideCallback": {},
 		     "processCallback": {},
 		     "callbackContext": {},
-		     "_total": {},
+		     "prototype": {
+		      "_total": {}
+		     },
 		     "i": {},
 		     "j": {}
 		    },
@@ -16566,106 +17592,106 @@
 		    "Ninja": {
 		     "AABB": {
 		      "!type": "fn(body: +Phaser.Physics.Ninja.Body, x: number, y: number, width: number, height: number)",
-		      "body": {
-		       "!type": "+Phaser.Physics.Ninja.Body"
+		      "prototype": {
+		       "body": {
+		        "!type": "+Phaser.Physics.Ninja.Body"
+		       },
+		       "system": {
+		        "!type": "+Phaser.Physics.Ninja"
+		       },
+		       "pos": {
+		        "!type": "+Phaser.Point"
+		       },
+		       "oldpos": {
+		        "!type": "+Phaser.Point"
+		       },
+		       "xw": {
+		        "!type": "number"
+		       },
+		       "yw": {
+		        "!type": "number"
+		       },
+		       "width": {
+		        "!type": "number"
+		       },
+		       "height": {
+		        "!type": "number"
+		       },
+		       "oH": {
+		        "!type": "number"
+		       },
+		       "oV": {
+		        "!type": "number"
+		       },
+		       "velocity": {
+		        "!type": "+Phaser.Point"
+		       },
+		       "aabbTileProjections": {},
+		       "aabbTileProjections[undefined]": {},
+		       "integrate": {
+		        "!type": "fn()"
+		       },
+		       "reportCollision": {
+		        "!type": "fn()"
+		       },
+		       "reportCollisionVsWorld": {
+		        "!type": "fn()"
+		       },
+		       "reverse": {
+		        "!type": "fn()"
+		       },
+		       "reportCollisionVsBody": {
+		        "!type": "fn()"
+		       },
+		       "collideWorldBounds": {
+		        "!type": "fn()"
+		       },
+		       "collideAABBVsAABB": {
+		        "!type": "fn()"
+		       },
+		       "collideAABBVsTile": {
+		        "!type": "fn()"
+		       },
+		       "resolveTile": {
+		        "!type": "fn()"
+		       },
+		       "projAABB_Full": {
+		        "!type": "fn()"
+		       },
+		       "projAABB_Half": {
+		        "!type": "fn()"
+		       },
+		       "projAABB_45Deg": {
+		        "!type": "fn()"
+		       },
+		       "projAABB_22DegS": {
+		        "!type": "fn()"
+		       },
+		       "projAABB_22DegB": {
+		        "!type": "fn()"
+		       },
+		       "projAABB_67DegS": {
+		        "!type": "fn()"
+		       },
+		       "projAABB_67DegB": {
+		        "!type": "fn()"
+		       },
+		       "projAABB_Convex": {
+		        "!type": "fn()"
+		       },
+		       "projAABB_Concave": {
+		        "!type": "fn()"
+		       },
+		       "destroy": {
+		        "!type": "fn()"
+		       },
+		       "render": {
+		        "!type": "fn()"
+		       }
 		      },
-		      "system": {
-		       "!type": "+Phaser.Physics.Ninja"
-		      },
-		      "pos": {
-		       "!type": "+Phaser.Point"
-		      },
-		      "oldpos": {
-		       "!type": "+Phaser.Point"
-		      },
-		      "xw": {
-		       "!type": "number"
-		      },
-		      "yw": {
-		       "!type": "number"
-		      },
-		      "width": {
-		       "!type": "number"
-		      },
-		      "height": {
-		       "!type": "number"
-		      },
-		      "oH": {
-		       "!type": "number"
-		      },
-		      "oV": {
-		       "!type": "number"
-		      },
-		      "velocity": {
-		       "!type": "+Phaser.Point"
-		      },
-		      "aabbTileProjections": {
-		       "!type": "?"
-		      },
-		      "aabbTileProjections[undefined]": {},
 		      "COL_NONE": {},
 		      "COL_AXIS": {},
-		      "COL_OTHER": {},
-		      "integrate": {
-		       "!type": "fn()"
-		      },
-		      "reportCollision": {
-		       "!type": "fn()"
-		      },
-		      "reportCollisionVsWorld": {
-		       "!type": "fn()"
-		      },
-		      "reverse": {
-		       "!type": "fn()"
-		      },
-		      "reportCollisionVsBody": {
-		       "!type": "fn()"
-		      },
-		      "collideWorldBounds": {
-		       "!type": "fn()"
-		      },
-		      "collideAABBVsAABB": {
-		       "!type": "fn()"
-		      },
-		      "collideAABBVsTile": {
-		       "!type": "fn()"
-		      },
-		      "resolveTile": {
-		       "!type": "fn()"
-		      },
-		      "projAABB_Full": {
-		       "!type": "fn()"
-		      },
-		      "projAABB_Half": {
-		       "!type": "fn()"
-		      },
-		      "projAABB_45Deg": {
-		       "!type": "fn()"
-		      },
-		      "projAABB_22DegS": {
-		       "!type": "fn()"
-		      },
-		      "projAABB_22DegB": {
-		       "!type": "fn()"
-		      },
-		      "projAABB_67DegS": {
-		       "!type": "fn()"
-		      },
-		      "projAABB_67DegB": {
-		       "!type": "fn()"
-		      },
-		      "projAABB_Convex": {
-		       "!type": "fn()"
-		      },
-		      "projAABB_Concave": {
-		       "!type": "fn()"
-		      },
-		      "destroy": {
-		       "!type": "fn()"
-		      },
-		      "render": {
-		       "!type": "fn()"
-		      }
+		      "COL_OTHER": {}
 		     },
 		     "AABB#integrate": {
 		      "px": {},
@@ -16844,8 +17870,10 @@
 		      "lenP": {}
 		     },
 		     "AABB#destroy": {
-		      "body": {},
-		      "system": {}
+		      "prototype": {
+		       "body": {},
+		       "system": {}
+		      }
 		     },
 		     "AABB#render": {
 		      "left": {},
@@ -16853,137 +17881,140 @@
 		     },
 		     "Body": {
 		      "!type": "fn(system: +Phaser.Physics.Ninja, sprite: +Phaser.Sprite, type: number, id: number, radius: number, x: number, y: number, width: number, height: number)",
-		      "sprite": {
-		       "!type": "+Phaser.Sprite"
-		      },
-		      "type": {
-		       "!type": "number"
-		      },
+		      "sprite": {},
+		      "type": {},
 		      "id": {},
 		      "radius": {},
-		      "game": {
-		       "!type": "+Phaser.Game"
+		      "prototype": {
+		       "sprite": {
+		        "!type": "+Phaser.Sprite"
+		       },
+		       "game": {
+		        "!type": "+Phaser.Game"
+		       },
+		       "type": {
+		        "!type": "number"
+		       },
+		       "system": {
+		        "!type": "+Phaser.Physics.Ninja"
+		       },
+		       "aabb": {
+		        "!type": "+Phaser.Physics.Ninja.AABB"
+		       },
+		       "tile": {
+		        "!type": "+Phaser.Physics.Ninja.Tile"
+		       },
+		       "circle": {
+		        "!type": "+Phaser.Physics.Ninja.Circle"
+		       },
+		       "shape": {},
+		       "drag": {
+		        "!type": "number"
+		       },
+		       "friction": {
+		        "!type": "number"
+		       },
+		       "gravityScale": {
+		        "!type": "number"
+		       },
+		       "bounce": {
+		        "!type": "number"
+		       },
+		       "velocity": {
+		        "!type": "+Phaser.Point"
+		       },
+		       "facing": {
+		        "!type": "number"
+		       },
+		       "immovable": {
+		        "!type": "bool"
+		       },
+		       "collideWorldBounds": {
+		        "!type": "bool"
+		       },
+		       "checkCollision": {},
+		       "touching": {},
+		       "wasTouching": {},
+		       "maxSpeed": {
+		        "!type": "number"
+		       },
+		       "preUpdate": {
+		        "!type": "fn()"
+		       },
+		       "postUpdate": {
+		        "!type": "fn()"
+		       },
+		       "setZeroVelocity": {
+		        "!type": "fn()"
+		       },
+		       "moveTo": {
+		        "!type": "fn()"
+		       },
+		       "moveFrom": {
+		        "!type": "fn()"
+		       },
+		       "moveLeft": {
+		        "!type": "fn()"
+		       },
+		       "moveRight": {
+		        "!type": "fn()"
+		       },
+		       "moveUp": {
+		        "!type": "fn()"
+		       },
+		       "moveDown": {
+		        "!type": "fn()"
+		       },
+		       "reset": {
+		        "!type": "fn()"
+		       },
+		       "deltaAbsX": {
+		        "!type": "fn()"
+		       },
+		       "deltaAbsY": {
+		        "!type": "fn()"
+		       },
+		       "deltaX": {
+		        "!type": "fn()"
+		       },
+		       "deltaY": {
+		        "!type": "fn()"
+		       },
+		       "destroy": {
+		        "!type": "fn()"
+		       },
+		       "x": {
+		        "!type": "number"
+		       },
+		       "y": {
+		        "!type": "number"
+		       },
+		       "width": {
+		        "!type": "number"
+		       },
+		       "height": {
+		        "!type": "number"
+		       },
+		       "bottom": {
+		        "!type": "number"
+		       },
+		       "right": {
+		        "!type": "number"
+		       },
+		       "speed": {
+		        "!type": "number"
+		       },
+		       "angle": {
+		        "!type": "number"
+		       },
+		       "render": {
+		        "!type": "fn(context: ?, body: +Phaser.Physics.Ninja.Body, color: string, filled: bool)"
+		       }
 		      },
-		      "system": {
-		       "!type": "+Phaser.Physics.Ninja"
-		      },
-		      "aabb": {
-		       "!type": "+Phaser.Physics.Ninja.AABB"
-		      },
-		      "tile": {
-		       "!type": "+Phaser.Physics.Ninja.Tile"
-		      },
-		      "circle": {
-		       "!type": "+Phaser.Physics.Ninja.Circle"
-		      },
-		      "shape": {
-		       "!type": "?"
-		      },
-		      "drag": {
-		       "!type": "number"
-		      },
-		      "friction": {
-		       "!type": "number"
-		      },
-		      "gravityScale": {
-		       "!type": "number"
-		      },
-		      "bounce": {
-		       "!type": "number"
-		      },
-		      "velocity": {
-		       "!type": "+Phaser.Point"
-		      },
-		      "facing": {
-		       "!type": "number"
-		      },
-		      "immovable": {
-		       "!type": "bool"
-		      },
-		      "collideWorldBounds": {
-		       "!type": "bool"
-		      },
-		      "checkCollision": {
-		       "!type": "?"
-		      },
-		      "touching": {
-		       "!type": "?"
-		      },
-		      "wasTouching": {
-		       "!type": "?"
-		      },
-		      "maxSpeed": {
-		       "!type": "number"
-		      },
-		      "x": {
-		       "!type": "number"
-		      },
-		      "y": {
-		       "!type": "number"
-		      },
-		      "width": {
-		       "!type": "number"
-		      },
-		      "height": {
-		       "!type": "number"
-		      },
-		      "preUpdate": {
-		       "!type": "fn()"
-		      },
-		      "postUpdate": {
-		       "!type": "fn()"
-		      },
-		      "setZeroVelocity": {
-		       "!type": "fn()"
-		      },
-		      "moveTo": {
-		       "!type": "fn()"
-		      },
-		      "moveFrom": {
-		       "!type": "fn()"
-		      },
-		      "moveLeft": {
-		       "!type": "fn()"
-		      },
-		      "moveRight": {
-		       "!type": "fn()"
-		      },
-		      "moveUp": {
-		       "!type": "fn()"
-		      },
-		      "moveDown": {
-		       "!type": "fn()"
-		      },
-		      "reset": {
-		       "!type": "fn()"
-		      },
-		      "deltaAbsX": {
-		       "!type": "fn()"
-		      },
-		      "deltaAbsY": {
-		       "!type": "fn()"
-		      },
-		      "deltaX": {
-		       "!type": "fn()"
-		      },
-		      "deltaY": {
-		       "!type": "fn()"
-		      },
-		      "destroy": {
-		       "!type": "fn()"
-		      },
-		      "bottom": {
-		       "!type": "number"
-		      },
-		      "right": {
-		       "!type": "number"
-		      },
-		      "speed": {
-		       "!type": "number"
-		      },
-		      "angle": {
-		       "!type": "number"
-		      },
+		      "x": {},
+		      "y": {},
+		      "width": {},
+		      "height": {},
 		      "render": {
 		       "!type": "fn()",
 		       "color": {},
@@ -17031,7 +18062,9 @@
 		      "y": {}
 		     },
 		     "Body#postUpdate": {
-		      "facing": {}
+		      "prototype": {
+		       "facing": {}
+		      }
 		     },
 		     "Body#setZeroVelocity#shape": {
 		      "oldpos": {
@@ -17098,106 +18131,108 @@
 		      }
 		     },
 		     "Body#destroy": {
-		      "sprite": {},
-		      "system": {},
-		      "aabb": {},
-		      "tile": {},
-		      "circle": {},
-		      "shape": {}
+		      "prototype": {
+		       "sprite": {},
+		       "system": {},
+		       "aabb": {},
+		       "tile": {},
+		       "circle": {},
+		       "shape": {}
+		      }
 		     },
 		     "Circle": {
 		      "!type": "fn(body: +Phaser.Physics.Ninja.Body, x: number, y: number, radius: number)",
-		      "body": {
-		       "!type": "+Phaser.Physics.Ninja.Body"
+		      "prototype": {
+		       "body": {
+		        "!type": "+Phaser.Physics.Ninja.Body"
+		       },
+		       "system": {
+		        "!type": "+Phaser.Physics.Ninja"
+		       },
+		       "pos": {
+		        "!type": "+Phaser.Point"
+		       },
+		       "oldpos": {
+		        "!type": "+Phaser.Point"
+		       },
+		       "radius": {
+		        "!type": "number"
+		       },
+		       "xw": {
+		        "!type": "number"
+		       },
+		       "yw": {
+		        "!type": "number"
+		       },
+		       "width": {
+		        "!type": "number"
+		       },
+		       "height": {
+		        "!type": "number"
+		       },
+		       "oH": {
+		        "!type": "number"
+		       },
+		       "oV": {
+		        "!type": "number"
+		       },
+		       "velocity": {
+		        "!type": "+Phaser.Point"
+		       },
+		       "circleTileProjections": {},
+		       "circleTileProjections[undefined]": {},
+		       "integrate": {
+		        "!type": "fn()"
+		       },
+		       "reportCollisionVsWorld": {
+		        "!type": "fn()"
+		       },
+		       "collideWorldBounds": {
+		        "!type": "fn()"
+		       },
+		       "collideCircleVsTile": {
+		        "!type": "fn()"
+		       },
+		       "resolveCircleTile": {
+		        "!type": "fn()"
+		       },
+		       "projCircle_Full": {
+		        "!type": "fn()"
+		       },
+		       "projCircle_45Deg": {
+		        "!type": "fn()"
+		       },
+		       "projCircle_Concave": {
+		        "!type": "fn()"
+		       },
+		       "projCircle_Convex": {
+		        "!type": "fn()"
+		       },
+		       "projCircle_Half": {
+		        "!type": "fn()"
+		       },
+		       "projCircle_22DegS": {
+		        "!type": "fn()"
+		       },
+		       "projCircle_22DegB": {
+		        "!type": "fn()"
+		       },
+		       "projCircle_67DegS": {
+		        "!type": "fn()"
+		       },
+		       "projCircle_67DegB": {
+		        "!type": "fn()"
+		       },
+		       "destroy": {
+		        "!type": "fn()"
+		       },
+		       "render": {
+		        "!type": "fn()"
+		       }
 		      },
-		      "system": {
-		       "!type": "+Phaser.Physics.Ninja"
-		      },
-		      "pos": {
-		       "!type": "+Phaser.Point"
-		      },
-		      "oldpos": {
-		       "!type": "+Phaser.Point"
-		      },
-		      "radius": {
-		       "!type": "number"
-		      },
-		      "xw": {
-		       "!type": "number"
-		      },
-		      "yw": {
-		       "!type": "number"
-		      },
-		      "width": {
-		       "!type": "number"
-		      },
-		      "height": {
-		       "!type": "number"
-		      },
-		      "oH": {
-		       "!type": "number"
-		      },
-		      "oV": {
-		       "!type": "number"
-		      },
-		      "velocity": {
-		       "!type": "+Phaser.Point"
-		      },
-		      "circleTileProjections": {
-		       "!type": "?"
-		      },
-		      "circleTileProjections[undefined]": {},
 		      "COL_NONE": {},
 		      "COL_AXIS": {},
-		      "COL_OTHER": {},
-		      "integrate": {
-		       "!type": "fn()"
-		      },
-		      "reportCollisionVsWorld": {
-		       "!type": "fn()"
-		      },
-		      "collideWorldBounds": {
-		       "!type": "fn()"
-		      },
-		      "collideCircleVsTile": {
-		       "!type": "fn()"
-		      },
-		      "resolveCircleTile": {
-		       "!type": "fn()"
-		      },
-		      "projCircle_Full": {
-		       "!type": "fn()"
-		      },
-		      "projCircle_45Deg": {
-		       "!type": "fn()"
-		      },
-		      "projCircle_Concave": {
-		       "!type": "fn()"
-		      },
-		      "projCircle_Convex": {
-		       "!type": "fn()"
-		      },
-		      "projCircle_Half": {
-		       "!type": "fn()"
-		      },
-		      "projCircle_22DegS": {
-		       "!type": "fn()"
-		      },
-		      "projCircle_22DegB": {
-		       "!type": "fn()"
-		      },
-		      "projCircle_67DegS": {
-		       "!type": "fn()"
-		      },
-		      "projCircle_67DegB": {
-		       "!type": "fn()"
-		      },
-		      "destroy": {
-		       "!type": "fn()"
-		      },
-		      "render": {
-		       "!type": "fn()"
-		      }
+		      "COL_OTHER": {}
 		     },
 		     "Circle#integrate": {
 		      "px": {},
@@ -17261,8 +18296,10 @@
 		      "px": {},
 		      "dy": {},
 		      "py": {},
-		      "oH": {},
-		      "oV": {}
+		      "prototype": {
+		       "oH": {},
+		       "oV": {}
+		      }
 		     },
 		     "Circle#projCircle_Full": {
 		      "dx": {},
@@ -17432,8 +18469,10 @@
 		      "dy": {}
 		     },
 		     "Circle#destroy": {
-		      "body": {},
-		      "system": {}
+		      "prototype": {
+		       "body": {},
+		       "system": {}
+		      }
 		     },
 		     "Circle#render": {
 		      "x": {},
@@ -17441,84 +18480,88 @@
 		     },
 		     "Tile": {
 		      "!type": "fn(body: +Phaser.Physics.Ninja.Body, x: number, y: number, width: number, height: number, type: number)",
-		      "type": {
-		       "!type": "number"
+		      "type": {},
+		      "prototype": {
+		       "body": {
+		        "!type": "+Phaser.Physics.Ninja.Body"
+		       },
+		       "system": {
+		        "!type": "+Phaser.Physics.Ninja"
+		       },
+		       "id": {
+		        "!type": "number"
+		       },
+		       "type": {
+		        "!type": "number"
+		       },
+		       "pos": {
+		        "!type": "+Phaser.Point"
+		       },
+		       "oldpos": {
+		        "!type": "+Phaser.Point"
+		       },
+		       "xw": {
+		        "!type": "number"
+		       },
+		       "yw": {
+		        "!type": "number"
+		       },
+		       "width": {
+		        "!type": "number"
+		       },
+		       "height": {
+		        "!type": "number"
+		       },
+		       "velocity": {
+		        "!type": "+Phaser.Point"
+		       },
+		       "signx": {
+		        "!type": "number"
+		       },
+		       "signy": {
+		        "!type": "number"
+		       },
+		       "sx": {
+		        "!type": "number"
+		       },
+		       "sy": {
+		        "!type": "number"
+		       },
+		       "integrate": {
+		        "!type": "fn()"
+		       },
+		       "collideWorldBounds": {
+		        "!type": "fn()"
+		       },
+		       "reportCollisionVsWorld": {
+		        "!type": "fn()"
+		       },
+		       "setType": {
+		        "!type": "fn()"
+		       },
+		       "clear": {
+		        "!type": "fn()"
+		       },
+		       "destroy": {
+		        "!type": "fn()"
+		       },
+		       "updateType": {
+		        "!type": "fn()"
+		       },
+		       "x": {
+		        "!type": "number"
+		       },
+		       "y": {
+		        "!type": "number"
+		       },
+		       "bottom": {
+		        "!type": "number"
+		       },
+		       "right": {
+		        "!type": "number"
+		       }
 		      },
-		      "body": {
-		       "!type": "+Phaser.Physics.Ninja.Body"
-		      },
-		      "system": {
-		       "!type": "+Phaser.Physics.Ninja"
-		      },
-		      "id": {
-		       "!type": "number"
-		      },
-		      "pos": {
-		       "!type": "+Phaser.Point"
-		      },
-		      "oldpos": {
-		       "!type": "+Phaser.Point"
-		      },
-		      "height": {
-		       "!type": "number"
-		      },
-		      "xw": {
-		       "!type": "number"
-		      },
-		      "yw": {
-		       "!type": "number"
-		      },
-		      "width": {
-		       "!type": "number"
-		      },
-		      "velocity": {
-		       "!type": "+Phaser.Point"
-		      },
-		      "signx": {
-		       "!type": "number"
-		      },
-		      "signy": {
-		       "!type": "number"
-		      },
-		      "sx": {
-		       "!type": "number"
-		      },
-		      "sy": {
-		       "!type": "number"
-		      },
-		      "integrate": {
-		       "!type": "fn()"
-		      },
-		      "collideWorldBounds": {
-		       "!type": "fn()"
-		      },
-		      "reportCollisionVsWorld": {
-		       "!type": "fn()"
-		      },
-		      "setType": {
-		       "!type": "fn()"
-		      },
-		      "clear": {
-		       "!type": "fn()"
-		      },
-		      "destroy": {
-		       "!type": "fn()"
-		      },
-		      "updateType": {
-		       "!type": "fn()"
-		      },
-		      "x": {
-		       "!type": "number"
-		      },
-		      "y": {
-		       "!type": "number"
-		      },
-		      "bottom": {
-		       "!type": "number"
-		      },
-		      "right": {
-		       "!type": "number"
-		      },
+		      "height": {},
 		      "EMPTY": {},
 		      "FULL": {},
 		      "SLOPE_45DEGpn": {},
@@ -17619,115 +18662,127 @@
 		      "y": {}
 		     },
 		     "Tile#setType": {
-		      "id": {}
+		      "prototype": {
+		       "id": {}
+		      }
 		     },
 		     "Tile#clear": {
-		      "id": {}
+		      "prototype": {
+		       "id": {}
+		      }
 		     },
 		     "Tile#destroy": {
-		      "body": {},
-		      "system": {}
+		      "prototype": {
+		       "body": {},
+		       "system": {}
+		      }
 		     },
 		     "Tile#updateType": {
-		      "type": {},
-		      "signx": {},
-		      "signy": {},
-		      "sx": {},
-		      "sy": {},
+		      "prototype": {
+		       "type": {},
+		       "signx": {},
+		       "signy": {},
+		       "sx": {},
+		       "sy": {}
+		      },
 		      "slen": {}
 		     },
 		     "!type": "fn(game: +Phaser.Game)",
-		     "game": {
-		      "!type": "+Phaser.Game"
-		     },
-		     "time": {
-		      "!type": "+Phaser.Time"
-		     },
-		     "gravity": {
-		      "!type": "number"
-		     },
-		     "bounds": {
-		      "!type": "+Phaser.Rectangle"
-		     },
-		     "maxObjects": {
-		      "!type": "number"
-		     },
-		     "maxLevels": {
-		      "!type": "number"
-		     },
-		     "quadTree": {
-		      "!type": "+Phaser.QuadTree"
-		     },
-		     "enableAABB": {
-		      "!type": "fn()"
-		     },
-		     "enableCircle": {
-		      "!type": "fn()"
-		     },
-		     "enableTile": {
-		      "!type": "fn()"
-		     },
-		     "enable": {
-		      "!type": "fn()"
-		     },
-		     "enableBody": {
-		      "!type": "fn()"
-		     },
-		     "setBounds": {
-		      "!type": "fn()"
-		     },
-		     "setBoundsToWorld": {
-		      "!type": "fn()"
-		     },
-		     "clearTilemapLayerBodies": {
-		      "!type": "fn()"
-		     },
-		     "convertTilemap": {
-		      "!type": "fn()"
-		     },
-		     "overlap": {
-		      "!type": "fn()"
-		     },
-		     "collide": {
-		      "!type": "fn()"
-		     },
-		     "collideHandler": {
-		      "!type": "fn()"
-		     },
-		     "collideSpriteVsSprite": {
-		      "!type": "fn()"
-		     },
-		     "collideSpriteVsGroup": {
-		      "!type": "fn()"
-		     },
-		     "collideGroupVsSelf": {
-		      "!type": "fn()"
-		     },
-		     "collideGroupVsGroup": {
-		      "!type": "fn()"
-		     },
-		     "separate": {
-		      "!type": "fn()"
+		     "prototype": {
+		      "game": {
+		       "!type": "+Phaser.Game"
+		      },
+		      "time": {
+		       "!type": "+Phaser.Time"
+		      },
+		      "gravity": {
+		       "!type": "number"
+		      },
+		      "bounds": {
+		       "!type": "+Phaser.Rectangle"
+		      },
+		      "maxObjects": {
+		       "!type": "number"
+		      },
+		      "maxLevels": {
+		       "!type": "number"
+		      },
+		      "quadTree": {
+		       "!type": "+Phaser.QuadTree"
+		      },
+		      "enableAABB": {
+		       "!type": "fn()"
+		      },
+		      "enableCircle": {
+		       "!type": "fn()"
+		      },
+		      "enableTile": {
+		       "!type": "fn()"
+		      },
+		      "enable": {
+		       "!type": "fn()"
+		      },
+		      "enableBody": {
+		       "!type": "fn()"
+		      },
+		      "setBounds": {
+		       "!type": "fn()"
+		      },
+		      "setBoundsToWorld": {
+		       "!type": "fn()"
+		      },
+		      "clearTilemapLayerBodies": {
+		       "!type": "fn()"
+		      },
+		      "convertTilemap": {
+		       "!type": "fn()"
+		      },
+		      "overlap": {
+		       "!type": "fn()"
+		      },
+		      "collide": {
+		       "!type": "fn()"
+		      },
+		      "collideHandler": {
+		       "!type": "fn()"
+		      },
+		      "collideSpriteVsSprite": {
+		       "!type": "fn()"
+		      },
+		      "collideSpriteVsGroup": {
+		       "!type": "fn()"
+		      },
+		      "collideGroupVsSelf": {
+		       "!type": "fn()"
+		      },
+		      "collideGroupVsGroup": {
+		       "!type": "fn()"
+		      },
+		      "separate": {
+		       "!type": "fn()"
+		      }
 		     }
 		    },
 		    "Body": {
-		     "moveTo": {
-		      "!type": "fn(speed: number, angle: number)"
-		     },
-		     "moveBackward": {
-		      "!type": "fn(speed: number, angle: number)"
-		     },
-		     "moveLeft": {
-		      "!type": "fn(speed: number)"
-		     },
-		     "moveRight": {
-		      "!type": "fn(speed: number)"
-		     },
-		     "moveUp": {
-		      "!type": "fn(speed: number)"
-		     },
-		     "moveDown": {
-		      "!type": "fn(speed: number)"
+		     "prototype": {
+		      "moveTo": {
+		       "!type": "fn(speed: number, angle: number)"
+		      },
+		      "moveBackward": {
+		       "!type": "fn(speed: number, angle: number)"
+		      },
+		      "moveLeft": {
+		       "!type": "fn(speed: number)"
+		      },
+		      "moveRight": {
+		       "!type": "fn(speed: number)"
+		      },
+		      "moveUp": {
+		       "!type": "fn(speed: number)"
+		      },
+		      "moveDown": {
+		       "!type": "fn(speed: number)"
+		      }
 		     }
 		    },
 		    "Ninja#enable": {
@@ -17754,8 +18809,10 @@
 		     "overlapCallback": {},
 		     "processCallback": {},
 		     "callbackContext": {},
-		     "_result": {},
-		     "_total": {},
+		     "prototype": {
+		      "_result": {},
+		      "_total": {}
+		     },
 		     "i": {},
 		     "len": {}
 		    },
@@ -17763,8 +18820,10 @@
 		     "collideCallback": {},
 		     "processCallback": {},
 		     "callbackContext": {},
-		     "_result": {},
-		     "_total": {},
+		     "prototype": {
+		      "_result": {},
+		      "_total": {}
+		     },
 		     "i": {},
 		     "len": {}
 		    },
@@ -17784,309 +18843,305 @@
 		    "P2": {
 		     "Body": {
 		      "!type": "fn(game: +Phaser.Game, sprite: +Phaser.Sprite, x: number, y: number, mass: number)",
-		      "sprite": {
-		       "!type": "+Phaser.Sprite"
-		      },
-		      "x": {
-		       "!type": "number"
-		      },
-		      "y": {
-		       "!type": "number"
-		      },
-		      "mass": {
-		       "!type": "number"
-		      },
-		      "game": {
-		       "!type": "+Phaser.Game"
-		      },
-		      "world": {
-		       "!type": "+Phaser.Physics.P2"
-		      },
-		      "type": {
-		       "!type": "number"
-		      },
-		      "offset": {
-		       "!type": "+Phaser.Point"
-		      },
-		      "data": {
-		       "!type": "+p2.Body"
-		      },
-		      "velocity": {
-		       "!type": "+Phaser.Physics.P2.InversePointProxy"
-		      },
-		      "force": {
-		       "!type": "+Phaser.Physics.P2.InversePointProxy"
-		      },
-		      "gravity": {
-		       "!type": "+Phaser.Point"
-		      },
-		      "onBeginContact": {
-		       "!type": "+Phaser.Signal"
-		      },
-		      "onEndContact": {
-		       "!type": "+Phaser.Signal"
-		      },
-		      "collidesWith": {
-		       "!type": "+array"
-		      },
-		      "removeNextStep": {
-		       "!type": "bool"
-		      },
-		      "debugBody": {
-		       "!type": "+Phaser.Physics.P2.BodyDebug"
-		      },
-		      "dirty": {
-		       "!type": "bool"
-		      },
-		      "_collideWorldBounds": {
-		       "!type": "bool"
-		      },
-		      "_bodyCallbacks": {
-		       "!type": "?"
-		      },
-		      "_bodyCallbackContext": {
-		       "!type": "?"
-		      },
-		      "_groupCallbacks": {
-		       "!type": "?"
-		      },
-		      "_groupCallbackContext": {
-		       "!type": "?"
-		      },
-		      "_reset": {
-		       "!type": "bool"
-		      },
-		      "createBodyCallback": {
-		       "!type": "fn()"
-		      },
-		      "createGroupCallback": {
-		       "!type": "fn()"
-		      },
-		      "getCollisionMask": {
-		       "!type": "fn()"
-		      },
-		      "updateCollisionMask": {
-		       "!type": "fn()"
-		      },
-		      "setCollisionGroup": {
-		       "!type": "fn()"
-		      },
-		      "clearCollision": {
-		       "!type": "fn()"
-		      },
-		      "collides": {
-		       "!type": "fn()"
-		      },
-		      "adjustCenterOfMass": {
-		       "!type": "fn()"
-		      },
-		      "getVelocityAtPoint": {
-		       "!type": "fn()"
-		      },
-		      "applyDamping": {
-		       "!type": "fn()"
-		      },
-		      "applyImpulse": {
-		       "!type": "fn()"
-		      },
-		      "applyImpulseLocal": {
-		       "!type": "fn()"
-		      },
-		      "applyForce": {
-		       "!type": "fn()"
-		      },
-		      "setZeroForce": {
-		       "!type": "fn()"
-		      },
-		      "setZeroRotation": {
-		       "!type": "fn()"
-		      },
-		      "setZeroVelocity": {
-		       "!type": "fn()"
-		      },
-		      "setZeroDamping": {
-		       "!type": "fn()"
-		      },
-		      "toLocalFrame": {
-		       "!type": "fn()"
-		      },
-		      "toWorldFrame": {
-		       "!type": "fn()"
-		      },
-		      "rotateLeft": {
-		       "!type": "fn()"
-		      },
-		      "rotateRight": {
-		       "!type": "fn()"
-		      },
-		      "moveForward": {
-		       "!type": "fn()"
-		      },
-		      "moveBackward": {
-		       "!type": "fn()"
-		      },
-		      "thrust": {
-		       "!type": "fn()"
-		      },
-		      "reverse": {
-		       "!type": "fn()"
-		      },
-		      "moveLeft": {
-		       "!type": "fn()"
-		      },
-		      "moveRight": {
-		       "!type": "fn()"
-		      },
-		      "moveUp": {
-		       "!type": "fn()"
-		      },
-		      "moveDown": {
-		       "!type": "fn()"
-		      },
-		      "preUpdate": {
-		       "!type": "fn()"
-		      },
-		      "postUpdate": {
-		       "!type": "fn()"
-		      },
-		      "reset": {
-		       "!type": "fn()"
-		      },
-		      "addToWorld": {
-		       "!type": "fn()"
-		      },
-		      "removeFromWorld": {
-		       "!type": "fn()"
-		      },
-		      "destroy": {
-		       "!type": "fn()"
-		      },
-		      "clearShapes": {
-		       "!type": "fn()"
-		      },
-		      "addShape": {
-		       "!type": "fn()"
-		      },
-		      "addCircle": {
-		       "!type": "fn()"
-		      },
-		      "addRectangle": {
-		       "!type": "fn()"
-		      },
-		      "addPlane": {
-		       "!type": "fn()"
-		      },
-		      "addParticle": {
-		       "!type": "fn()"
-		      },
-		      "addLine": {
-		       "!type": "fn()"
-		      },
-		      "addCapsule": {
-		       "!type": "fn()"
-		      },
-		      "addPolygon": {
-		       "!type": "fn()"
-		      },
-		      "removeShape": {
-		       "!type": "fn()"
-		      },
-		      "setCircle": {
-		       "!type": "fn()"
-		      },
-		      "setRectangle": {
-		       "!type": "fn()"
-		      },
-		      "setRectangleFromSprite": {
-		       "!type": "fn()"
-		      },
-		      "setMaterial": {
-		       "!type": "fn()"
-		      },
-		      "shapeChanged": {
-		       "!type": "fn()"
-		      },
-		      "addPhaserPolygon": {
-		       "!type": "fn()"
-		      },
-		      "addFixture": {
-		       "!type": "fn()"
-		      },
-		      "loadPolygon": {
-		       "!type": "fn()"
-		      },
-		      "DYNAMIC": {
-		       "!type": "?"
-		      },
-		      "STATIC": {
-		       "!type": "?"
-		      },
-		      "KINEMATIC": {
-		       "!type": "?"
-		      },
-		      "static": {
-		       "!type": "bool"
-		      },
-		      "dynamic": {
-		       "!type": "bool"
-		      },
-		      "kinematic": {
-		       "!type": "bool"
-		      },
-		      "allowSleep": {
-		       "!type": "bool"
-		      },
-		      "angle": {
-		       "!type": "number"
-		      },
-		      "angularDamping": {
-		       "!type": "number"
-		      },
-		      "angularForce": {
-		       "!type": "number"
-		      },
-		      "angularVelocity": {
-		       "!type": "number"
-		      },
-		      "damping": {
-		       "!type": "number"
-		      },
-		      "fixedRotation": {
-		       "!type": "bool"
-		      },
-		      "inertia": {
-		       "!type": "number"
-		      },
-		      "motionState": {
-		       "!type": "number"
-		      },
-		      "rotation": {
-		       "!type": "number"
-		      },
-		      "sleepSpeedLimit": {
-		       "!type": "number"
-		      },
-		      "id": {
-		       "!type": "number"
-		      },
-		      "debug": {
-		       "!type": "bool"
-		      },
-		      "collideWorldBounds": {
-		       "!type": "bool"
-		      }
+		      "sprite": {},
+		      "x": {},
+		      "y": {},
+		      "mass": {},
+		      "prototype": {
+		       "game": {
+		        "!type": "+Phaser.Game"
+		       },
+		       "world": {
+		        "!type": "+Phaser.Physics.P2"
+		       },
+		       "sprite": {
+		        "!type": "+Phaser.Sprite"
+		       },
+		       "type": {
+		        "!type": "number"
+		       },
+		       "offset": {
+		        "!type": "+Phaser.Point"
+		       },
+		       "data": {
+		        "!type": "+p2.Body"
+		       },
+		       "velocity": {
+		        "!type": "+Phaser.Physics.P2.InversePointProxy"
+		       },
+		       "force": {
+		        "!type": "+Phaser.Physics.P2.InversePointProxy"
+		       },
+		       "gravity": {
+		        "!type": "+Phaser.Point"
+		       },
+		       "onBeginContact": {
+		        "!type": "+Phaser.Signal"
+		       },
+		       "onEndContact": {
+		        "!type": "+Phaser.Signal"
+		       },
+		       "collidesWith": {
+		        "!type": "+array"
+		       },
+		       "removeNextStep": {
+		        "!type": "bool"
+		       },
+		       "debugBody": {
+		        "!type": "+Phaser.Physics.P2.BodyDebug"
+		       },
+		       "dirty": {
+		        "!type": "bool"
+		       },
+		       "_collideWorldBounds": {
+		        "!type": "bool"
+		       },
+		       "_bodyCallbacks": {},
+		       "_bodyCallbackContext": {},
+		       "_groupCallbacks": {},
+		       "_groupCallbackContext": {},
+		       "_reset": {
+		        "!type": "bool"
+		       },
+		       "createBodyCallback": {
+		        "!type": "fn()"
+		       },
+		       "createGroupCallback": {
+		        "!type": "fn()"
+		       },
+		       "getCollisionMask": {
+		        "!type": "fn()"
+		       },
+		       "updateCollisionMask": {
+		        "!type": "fn()"
+		       },
+		       "setCollisionGroup": {
+		        "!type": "fn()"
+		       },
+		       "clearCollision": {
+		        "!type": "fn()"
+		       },
+		       "collides": {
+		        "!type": "fn()"
+		       },
+		       "adjustCenterOfMass": {
+		        "!type": "fn()"
+		       },
+		       "getVelocityAtPoint": {
+		        "!type": "fn()"
+		       },
+		       "applyDamping": {
+		        "!type": "fn()"
+		       },
+		       "applyImpulse": {
+		        "!type": "fn()"
+		       },
+		       "applyImpulseLocal": {
+		        "!type": "fn()"
+		       },
+		       "applyForce": {
+		        "!type": "fn()"
+		       },
+		       "setZeroForce": {
+		        "!type": "fn()"
+		       },
+		       "setZeroRotation": {
+		        "!type": "fn()"
+		       },
+		       "setZeroVelocity": {
+		        "!type": "fn()"
+		       },
+		       "setZeroDamping": {
+		        "!type": "fn()"
+		       },
+		       "toLocalFrame": {
+		        "!type": "fn()"
+		       },
+		       "toWorldFrame": {
+		        "!type": "fn()"
+		       },
+		       "rotateLeft": {
+		        "!type": "fn()"
+		       },
+		       "rotateRight": {
+		        "!type": "fn()"
+		       },
+		       "moveForward": {
+		        "!type": "fn()"
+		       },
+		       "moveBackward": {
+		        "!type": "fn()"
+		       },
+		       "thrust": {
+		        "!type": "fn()"
+		       },
+		       "reverse": {
+		        "!type": "fn()"
+		       },
+		       "moveLeft": {
+		        "!type": "fn()"
+		       },
+		       "moveRight": {
+		        "!type": "fn()"
+		       },
+		       "moveUp": {
+		        "!type": "fn()"
+		       },
+		       "moveDown": {
+		        "!type": "fn()"
+		       },
+		       "preUpdate": {
+		        "!type": "fn()"
+		       },
+		       "postUpdate": {
+		        "!type": "fn()"
+		       },
+		       "reset": {
+		        "!type": "fn()"
+		       },
+		       "addToWorld": {
+		        "!type": "fn()"
+		       },
+		       "removeFromWorld": {
+		        "!type": "fn()"
+		       },
+		       "destroy": {
+		        "!type": "fn()"
+		       },
+		       "clearShapes": {
+		        "!type": "fn()"
+		       },
+		       "addShape": {
+		        "!type": "fn()"
+		       },
+		       "addCircle": {
+		        "!type": "fn()"
+		       },
+		       "addRectangle": {
+		        "!type": "fn()"
+		       },
+		       "addPlane": {
+		        "!type": "fn()"
+		       },
+		       "addParticle": {
+		        "!type": "fn()"
+		       },
+		       "addLine": {
+		        "!type": "fn()"
+		       },
+		       "addCapsule": {
+		        "!type": "fn()"
+		       },
+		       "addPolygon": {
+		        "!type": "fn()"
+		       },
+		       "removeShape": {
+		        "!type": "fn()"
+		       },
+		       "setCircle": {
+		        "!type": "fn()"
+		       },
+		       "setRectangle": {
+		        "!type": "fn()"
+		       },
+		       "setRectangleFromSprite": {
+		        "!type": "fn()"
+		       },
+		       "setMaterial": {
+		        "!type": "fn()"
+		       },
+		       "shapeChanged": {
+		        "!type": "fn()"
+		       },
+		       "addPhaserPolygon": {
+		        "!type": "fn()"
+		       },
+		       "addFixture": {
+		        "!type": "fn()"
+		       },
+		       "loadPolygon": {
+		        "!type": "fn()"
+		       },
+		       "static": {
+		        "!type": "bool"
+		       },
+		       "dynamic": {
+		        "!type": "bool"
+		       },
+		       "kinematic": {
+		        "!type": "bool"
+		       },
+		       "allowSleep": {
+		        "!type": "bool"
+		       },
+		       "angle": {
+		        "!type": "number"
+		       },
+		       "angularDamping": {
+		        "!type": "number"
+		       },
+		       "angularForce": {
+		        "!type": "number"
+		       },
+		       "angularVelocity": {
+		        "!type": "number"
+		       },
+		       "damping": {
+		        "!type": "number"
+		       },
+		       "fixedRotation": {
+		        "!type": "bool"
+		       },
+		       "inertia": {
+		        "!type": "number"
+		       },
+		       "mass": {
+		        "!type": "number"
+		       },
+		       "motionState": {
+		        "!type": "number"
+		       },
+		       "rotation": {
+		        "!type": "number"
+		       },
+		       "sleepSpeedLimit": {
+		        "!type": "number"
+		       },
+		       "x": {
+		        "!type": "number"
+		       },
+		       "y": {
+		        "!type": "number"
+		       },
+		       "id": {
+		        "!type": "number"
+		       },
+		       "debug": {
+		        "!type": "bool"
+		       },
+		       "collideWorldBounds": {
+		        "!type": "bool"
+		       }
+		      },
+		      "DYNAMIC": {},
+		      "STATIC": {},
+		      "KINEMATIC": {}
 		     },
 		     "Body#data": {
 		      "parent": {}
 		     },
 		     "Body#createBodyCallback": {
 		      "id": {},
-		      "_bodyCallbacks[undefined]": {},
-		      "_bodyCallbackContext[undefined]": {}
+		      "prototype": {
+		       "_bodyCallbacks[undefined]": {},
+		       "_bodyCallbackContext[undefined]": {}
+		      }
 		     },
 		     "Body#createGroupCallback": {
-		      "_groupCallbacks[undefined]": {},
-		      "_groupCallbackContext[undefined]": {}
+		      "prototype": {
+		       "_groupCallbacks[undefined]": {},
+		       "_groupCallbackContext[undefined]": {}
+		      }
 		     },
 		     "Body#getCollisionMask": {
 		      "mask": {},
@@ -18196,8 +19251,10 @@
 		      "velocity[1]": {}
 		     },
 		     "Body#preUpdate": {
-		      "dirty": {},
-		      "removeNextStep": {}
+		      "prototype": {
+		       "dirty": {},
+		       "removeNextStep": {}
+		      }
 		     },
 		     "Body#postUpdate#sprite": {
 		      "x": {},
@@ -18205,25 +19262,31 @@
 		      "rotation": {}
 		     },
 		     "Body#postUpdate": {
-		      "dirty": {}
+		      "prototype": {
+		       "dirty": {}
+		      }
 		     },
 		     "Body#reset": {
 		      "resetDamping": {},
 		      "resetMass": {},
-		      "mass": {},
-		      "x": {},
-		      "y": {}
+		      "prototype": {
+		       "mass": {},
+		       "x": {},
+		       "y": {}
+		      }
 		     },
 		     "Body#addToWorld": {
 		      "i": {}
 		     },
 		     "Body#destroy": {
-		      "_bodyCallbacks": {},
-		      "_bodyCallbackContext": {},
-		      "_groupCallbacks": {},
-		      "_groupCallbackContext": {},
-		      "debugBody": {},
-		      "sprite": {}
+		      "prototype": {
+		       "_bodyCallbacks": {},
+		       "_bodyCallbackContext": {},
+		       "_groupCallbacks": {},
+		       "_groupCallbackContext": {},
+		       "debugBody": {},
+		       "sprite": {}
+		      }
 		     },
 		     "Body#destroy#sprite": {
 		      "body": {}
@@ -18344,327 +19407,323 @@
 		     },
 		     "BodyDebug": {
 		      "!type": "fn(game: +Phaser.Game, body: +Phaser.Physics.P2.Body, settings: ?)",
-		      "defaultSettings": {
-		       "!type": "?"
-		      },
-		      "settings": {},
-		      "ppu": {
-		       "!type": "number"
-		      },
-		      "body": {
-		       "!type": "+Phaser.Physics.P2.Body"
-		      },
-		      "canvas": {
-		       "!type": "+Phaser.Graphics"
-		      },
-		      "updateSpriteTransform": {
-		       "!type": "fn()"
-		      },
-		      "draw": {
-		       "!type": "fn()"
-		      },
-		      "drawRectangle": {
-		       "!type": "fn()"
-		      },
-		      "drawCircle": {
-		       "!type": "fn()"
-		      },
-		      "drawLine": {
-		       "!type": "fn()"
-		      },
-		      "drawConvex": {
-		       "!type": "fn()"
-		      },
-		      "drawPath": {
-		       "!type": "fn()"
-		      },
-		      "drawPlane": {
-		       "!type": "fn()"
-		      },
-		      "drawCapsule": {
-		       "!type": "fn()"
-		      },
-		      "randomPastelHex": {
-		       "!type": "fn()"
-		      },
-		      "rgbToHex": {
-		       "!type": "fn()"
-		      },
-		      "componentToHex": {
-		       "!type": "fn()"
-		      },
-		      "game": {
-		       "!type": "+Phaser.Game"
-		      },
-		      "name": {
-		       "!type": "string"
-		      },
-		      "z": {
-		       "!type": "+integer"
-		      },
-		      "type": {
-		       "!type": "+integer"
-		      },
-		      "physicsType": {
-		       "!type": "number"
-		      },
-		      "alive": {
-		       "!type": "bool"
-		      },
-		      "exists": {
-		       "!type": "bool"
-		      },
-		      "ignoreDestroy": {
-		       "!type": "bool"
-		      },
-		      "pendingDestroy": {
-		       "!type": "bool"
-		      },
-		      "classType": {
-		       "!type": "?"
-		      },
-		      "cursor": {
-		       "!type": "+DisplayObject"
-		      },
-		      "enableBody": {
-		       "!type": "bool"
-		      },
-		      "enableBodyDebug": {
-		       "!type": "bool"
-		      },
-		      "physicsBodyType": {
-		       "!type": "+integer"
-		      },
-		      "physicsSortDirection": {
-		       "!type": "+integer"
-		      },
-		      "onDestroy": {
-		       "!type": "+Phaser.Signal"
-		      },
-		      "cursorIndex": {
-		       "!type": "+integer"
-		      },
-		      "fixedToCamera": {
-		       "!type": "bool"
-		      },
-		      "cameraOffset": {
-		       "!type": "+Phaser.Point"
-		      },
-		      "hash": {
-		       "!type": "+array"
-		      },
-		      "_sortProperty": {
-		       "!type": "string"
-		      },
-		      "add": {
-		       "!type": "fn(child: +DisplayObject, silent: bool) -> ?"
-		      },
-		      "addToHash": {
-		       "!type": "fn(child: +DisplayObject) -> ?"
-		      },
-		      "removeFromHash": {
-		       "!type": "fn(child: +DisplayObject) -> ?"
-		      },
-		      "addMultiple": {
-		       "!type": "fn(children: [?]|+Phaser.Group, silent: bool) -> ?"
-		      },
-		      "addAt": {
-		       "!type": "fn(child: +DisplayObject, index: +integer, silent: bool) -> ?"
-		      },
-		      "getAt": {
-		       "!type": "fn(index: +integer) -> ?"
-		      },
-		      "create": {
-		       "!type": "fn(x: number, y: number, key: string, frame: +integer|string, exists: bool) -> ?"
-		      },
-		      "createMultiple": {
-		       "!type": "fn(quantity: +integer, key: string, frame: +integer|string, exists: bool)"
-		      },
-		      "updateZ": {
-		       "!type": "fn()"
-		      },
-		      "resetCursor": {
-		       "!type": "fn(index: +integer) -> ?"
-		      },
-		      "next": {
-		       "!type": "fn() -> ?"
-		      },
-		      "previous": {
-		       "!type": "fn() -> ?"
-		      },
-		      "swap": {
-		       "!type": "fn(child1: +any, child2: +any)"
-		      },
-		      "bringToTop": {
-		       "!type": "fn(child: +any) -> ?"
-		      },
-		      "sendToBack": {
-		       "!type": "fn(child: +any) -> ?"
-		      },
-		      "moveUp": {
-		       "!type": "fn(child: +any) -> ?"
-		      },
-		      "moveDown": {
-		       "!type": "fn(child: +any) -> ?"
-		      },
-		      "xy": {
-		       "!type": "fn(index: +integer, x: number, y: number)"
-		      },
-		      "reverse": {
-		       "!type": "fn()"
-		      },
-		      "getIndex": {
-		       "!type": "fn(child: +any) -> ?"
-		      },
-		      "replace": {
-		       "!type": "fn(oldChild: +any, newChild: +any) -> ?"
-		      },
-		      "hasProperty": {
-		       "!type": "fn(child: +any, key: [?]) -> ?"
-		      },
-		      "setProperty": {
-		       "!type": "fn(child: +any, key: +array, value: +any, operation: +integer, force: bool) -> ?"
-		      },
-		      "checkProperty": {
-		       "!type": "fn(child: +any, key: +array, value: +any, force: bool) -> ?"
-		      },
-		      "set": {
-		       "!type": "fn(child: +Phaser.Sprite, key: string, value: +any, checkAlive: bool, checkVisible: bool, operation: +integer, force: bool) -> ?"
-		      },
-		      "setAll": {
-		       "!type": "fn(key: string, value: +any, checkAlive: bool, checkVisible: bool, operation: +integer, force: bool)"
-		      },
-		      "setAllChildren": {
-		       "!type": "fn(key: string, value: +any, checkAlive: bool, checkVisible: bool, operation: +integer, force: bool)"
-		      },
-		      "checkAll": {
-		       "!type": "fn(key: string, value: +any, checkAlive: bool, checkVisible: bool, force: bool)"
-		      },
-		      "addAll": {
-		       "!type": "fn(property: string, amount: number, checkAlive: bool, checkVisible: bool)"
-		      },
-		      "subAll": {
-		       "!type": "fn(property: string, amount: number, checkAlive: bool, checkVisible: bool)"
-		      },
-		      "multiplyAll": {
-		       "!type": "fn(property: string, amount: number, checkAlive: bool, checkVisible: bool)"
-		      },
-		      "divideAll": {
-		       "!type": "fn(property: string, amount: number, checkAlive: bool, checkVisible: bool)"
-		      },
-		      "callAllExists": {
-		       "!type": "fn(callback: string, existsValue: bool, parameter: +any)"
-		      },
-		      "callbackFromArray": {
-		       "!type": "fn(child: ?, callback: +array, length: +integer)"
-		      },
-		      "callAll": {
-		       "!type": "fn(method: string, context: string, args: +any)"
-		      },
-		      "preUpdate": {
-		       "!type": "fn()"
-		      },
-		      "update": {
-		       "!type": "fn()"
-		      },
-		      "postUpdate": {
-		       "!type": "fn()"
-		      },
-		      "filter": {
-		       "!type": "fn(predicate: +function, checkExists: bool) -> ?"
-		      },
-		      "forEach": {
-		       "!type": "fn(callback: +function, callbackContext: ?, checkExists: bool, args: +any)"
-		      },
-		      "forEachExists": {
-		       "!type": "fn(callback: +function, callbackContext: ?, args: +any)"
-		      },
-		      "forEachAlive": {
-		       "!type": "fn(callback: +function, callbackContext: ?, args: +any)"
-		      },
-		      "forEachDead": {
-		       "!type": "fn(callback: +function, callbackContext: ?, args: +any)"
-		      },
-		      "sort": {
-		       "!type": "fn(key: string, order: +integer)"
-		      },
-		      "customSort": {
-		       "!type": "fn(sortHandler: +function, context: ?)"
-		      },
-		      "ascendingSortHandler": {
-		       "!type": "fn(a: ?, b: ?)"
-		      },
-		      "descendingSortHandler": {
-		       "!type": "fn(a: ?, b: ?)"
-		      },
-		      "iterate": {
-		       "!type": "fn(key: string, value: +any, returnType: +integer, callback: +function, callbackContext: ?, args: [?]) -> ?"
-		      },
-		      "getFirstExists": {
-		       "!type": "fn(exists: bool) -> ?"
-		      },
-		      "getFirstAlive": {
-		       "!type": "fn() -> ?"
-		      },
-		      "getFirstDead": {
-		       "!type": "fn() -> ?"
-		      },
-		      "getTop": {
-		       "!type": "fn() -> ?"
-		      },
-		      "getBottom": {
-		       "!type": "fn() -> ?"
-		      },
-		      "countLiving": {
-		       "!type": "fn() -> ?"
-		      },
-		      "countDead": {
-		       "!type": "fn() -> ?"
-		      },
-		      "getRandom": {
-		       "!type": "fn(startIndex: +integer, length: +integer) -> ?"
-		      },
-		      "remove": {
-		       "!type": "fn(child: +any, destroy: bool, silent: bool) -> ?"
-		      },
-		      "moveAll": {
-		       "!type": "fn(group: +Phaser.Group, silent: bool) -> ?"
-		      },
-		      "removeAll": {
-		       "!type": "fn(destroy: bool, silent: bool)"
-		      },
-		      "removeBetween": {
-		       "!type": "fn(startIndex: +integer, endIndex: +integer, destroy: bool, silent: bool)"
-		      },
-		      "destroy": {
-		       "!type": "fn(destroyChildren: bool, soft: bool)"
-		      },
-		      "total": {
-		       "!type": "+integer"
-		      },
-		      "length": {
-		       "!type": "+integer"
-		      },
-		      "angle": {
-		       "!type": "number"
-		      },
-		      "x": {
-		       "!type": "number"
-		      },
-		      "y": {
-		       "!type": "number"
-		      },
-		      "rotation": {
-		       "!type": "number"
-		      },
-		      "visible": {
-		       "!type": "bool"
-		      },
-		      "alpha": {
-		       "!type": "number"
-		      },
-		      "children": {
-		       "!type": "?"
+		      "defaultSettings": {},
+		      "prototype": {
+		       "settings": {},
+		       "ppu": {
+		        "!type": "number"
+		       },
+		       "body": {
+		        "!type": "+Phaser.Physics.P2.Body"
+		       },
+		       "canvas": {
+		        "!type": "+Phaser.Graphics"
+		       },
+		       "updateSpriteTransform": {
+		        "!type": "fn()"
+		       },
+		       "draw": {
+		        "!type": "fn()"
+		       },
+		       "drawRectangle": {
+		        "!type": "fn()"
+		       },
+		       "drawCircle": {
+		        "!type": "fn()"
+		       },
+		       "drawLine": {
+		        "!type": "fn()"
+		       },
+		       "drawConvex": {
+		        "!type": "fn()"
+		       },
+		       "drawPath": {
+		        "!type": "fn()"
+		       },
+		       "drawPlane": {
+		        "!type": "fn()"
+		       },
+		       "drawCapsule": {
+		        "!type": "fn()"
+		       },
+		       "randomPastelHex": {
+		        "!type": "fn()"
+		       },
+		       "rgbToHex": {
+		        "!type": "fn()"
+		       },
+		       "componentToHex": {
+		        "!type": "fn()"
+		       },
+		       "game": {
+		        "!type": "+Phaser.Game"
+		       },
+		       "name": {
+		        "!type": "string"
+		       },
+		       "z": {
+		        "!type": "number"
+		       },
+		       "type": {
+		        "!type": "number"
+		       },
+		       "physicsType": {
+		        "!type": "number"
+		       },
+		       "alive": {
+		        "!type": "bool"
+		       },
+		       "exists": {
+		        "!type": "bool"
+		       },
+		       "ignoreDestroy": {
+		        "!type": "bool"
+		       },
+		       "pendingDestroy": {
+		        "!type": "bool"
+		       },
+		       "classType": {},
+		       "cursor": {
+		        "!type": "+DisplayObject"
+		       },
+		       "enableBody": {
+		        "!type": "bool"
+		       },
+		       "enableBodyDebug": {
+		        "!type": "bool"
+		       },
+		       "physicsBodyType": {
+		        "!type": "number"
+		       },
+		       "physicsSortDirection": {
+		        "!type": "number"
+		       },
+		       "onDestroy": {
+		        "!type": "+Phaser.Signal"
+		       },
+		       "cursorIndex": {
+		        "!type": "number"
+		       },
+		       "fixedToCamera": {
+		        "!type": "bool"
+		       },
+		       "cameraOffset": {
+		        "!type": "+Phaser.Point"
+		       },
+		       "hash": {
+		        "!type": "+array"
+		       },
+		       "_sortProperty": {
+		        "!type": "string"
+		       },
+		       "add": {
+		        "!type": "fn(child: +DisplayObject, silent: bool) -> ?"
+		       },
+		       "addToHash": {
+		        "!type": "fn(child: +DisplayObject) -> ?"
+		       },
+		       "removeFromHash": {
+		        "!type": "fn(child: +DisplayObject) -> ?"
+		       },
+		       "addMultiple": {
+		        "!type": "fn(children: [?]|+Phaser.Group, silent: bool) -> ?"
+		       },
+		       "addAt": {
+		        "!type": "fn(child: +DisplayObject, index: number, silent: bool) -> ?"
+		       },
+		       "getAt": {
+		        "!type": "fn(index: number) -> ?"
+		       },
+		       "create": {
+		        "!type": "fn(x: number, y: number, key: string, frame: number|string, exists: bool) -> ?"
+		       },
+		       "createMultiple": {
+		        "!type": "fn(quantity: number, key: string, frame: number|string, exists: bool)"
+		       },
+		       "updateZ": {
+		        "!type": "fn()"
+		       },
+		       "resetCursor": {
+		        "!type": "fn(index: number) -> ?"
+		       },
+		       "next": {
+		        "!type": "fn() -> ?"
+		       },
+		       "previous": {
+		        "!type": "fn() -> ?"
+		       },
+		       "swap": {
+		        "!type": "fn(child1: +any, child2: +any)"
+		       },
+		       "bringToTop": {
+		        "!type": "fn(child: +any) -> ?"
+		       },
+		       "sendToBack": {
+		        "!type": "fn(child: +any) -> ?"
+		       },
+		       "moveUp": {
+		        "!type": "fn(child: +any) -> ?"
+		       },
+		       "moveDown": {
+		        "!type": "fn(child: +any) -> ?"
+		       },
+		       "xy": {
+		        "!type": "fn(index: number, x: number, y: number)"
+		       },
+		       "reverse": {
+		        "!type": "fn()"
+		       },
+		       "getIndex": {
+		        "!type": "fn(child: +any) -> ?"
+		       },
+		       "replace": {
+		        "!type": "fn(oldChild: +any, newChild: +any) -> ?"
+		       },
+		       "hasProperty": {
+		        "!type": "fn(child: +any, key: [?]) -> ?"
+		       },
+		       "setProperty": {
+		        "!type": "fn(child: +any, key: +array, value: +any, operation: number, force: bool) -> ?"
+		       },
+		       "checkProperty": {
+		        "!type": "fn(child: +any, key: +array, value: +any, force: bool) -> ?"
+		       },
+		       "set": {
+		        "!type": "fn(child: +Phaser.Sprite, key: string, value: +any, checkAlive: bool, checkVisible: bool, operation: number, force: bool) -> ?"
+		       },
+		       "setAll": {
+		        "!type": "fn(key: string, value: +any, checkAlive: bool, checkVisible: bool, operation: number, force: bool)"
+		       },
+		       "setAllChildren": {
+		        "!type": "fn(key: string, value: +any, checkAlive: bool, checkVisible: bool, operation: number, force: bool)"
+		       },
+		       "checkAll": {
+		        "!type": "fn(key: string, value: +any, checkAlive: bool, checkVisible: bool, force: bool)"
+		       },
+		       "addAll": {
+		        "!type": "fn(property: string, amount: number, checkAlive: bool, checkVisible: bool)"
+		       },
+		       "subAll": {
+		        "!type": "fn(property: string, amount: number, checkAlive: bool, checkVisible: bool)"
+		       },
+		       "multiplyAll": {
+		        "!type": "fn(property: string, amount: number, checkAlive: bool, checkVisible: bool)"
+		       },
+		       "divideAll": {
+		        "!type": "fn(property: string, amount: number, checkAlive: bool, checkVisible: bool)"
+		       },
+		       "callAllExists": {
+		        "!type": "fn(callback: string, existsValue: bool, parameter: +any)"
+		       },
+		       "callbackFromArray": {
+		        "!type": "fn(child: ?, callback: +array, length: number)"
+		       },
+		       "callAll": {
+		        "!type": "fn(method: string, context: string, args: +any)"
+		       },
+		       "preUpdate": {
+		        "!type": "fn()"
+		       },
+		       "update": {
+		        "!type": "fn()"
+		       },
+		       "postUpdate": {
+		        "!type": "fn()"
+		       },
+		       "filter": {
+		        "!type": "fn(predicate: +function, checkExists: bool) -> ?"
+		       },
+		       "forEach": {
+		        "!type": "fn(callback: +function, callbackContext: ?, checkExists: bool, args: +any)"
+		       },
+		       "forEachExists": {
+		        "!type": "fn(callback: +function, callbackContext: ?, args: +any)"
+		       },
+		       "forEachAlive": {
+		        "!type": "fn(callback: +function, callbackContext: ?, args: +any)"
+		       },
+		       "forEachDead": {
+		        "!type": "fn(callback: +function, callbackContext: ?, args: +any)"
+		       },
+		       "sort": {
+		        "!type": "fn(key: string, order: number)"
+		       },
+		       "customSort": {
+		        "!type": "fn(sortHandler: +function, context: ?)"
+		       },
+		       "ascendingSortHandler": {
+		        "!type": "fn(a: ?, b: ?)"
+		       },
+		       "descendingSortHandler": {
+		        "!type": "fn(a: ?, b: ?)"
+		       },
+		       "iterate": {
+		        "!type": "fn(key: string, value: +any, returnType: number, callback: +function, callbackContext: ?, args: [?]) -> ?"
+		       },
+		       "getFirstExists": {
+		        "!type": "fn(exists: bool) -> ?"
+		       },
+		       "getFirstAlive": {
+		        "!type": "fn() -> ?"
+		       },
+		       "getFirstDead": {
+		        "!type": "fn() -> ?"
+		       },
+		       "getTop": {
+		        "!type": "fn() -> ?"
+		       },
+		       "getBottom": {
+		        "!type": "fn() -> ?"
+		       },
+		       "countLiving": {
+		        "!type": "fn() -> ?"
+		       },
+		       "countDead": {
+		        "!type": "fn() -> ?"
+		       },
+		       "getRandom": {
+		        "!type": "fn(startIndex: number, length: number) -> ?"
+		       },
+		       "remove": {
+		        "!type": "fn(child: +any, destroy: bool, silent: bool) -> ?"
+		       },
+		       "moveAll": {
+		        "!type": "fn(group: +Phaser.Group, silent: bool) -> ?"
+		       },
+		       "removeAll": {
+		        "!type": "fn(destroy: bool, silent: bool)"
+		       },
+		       "removeBetween": {
+		        "!type": "fn(startIndex: number, endIndex: number, destroy: bool, silent: bool)"
+		       },
+		       "destroy": {
+		        "!type": "fn(destroyChildren: bool, soft: bool)"
+		       },
+		       "total": {
+		        "!type": "number"
+		       },
+		       "length": {
+		        "!type": "number"
+		       },
+		       "angle": {
+		        "!type": "number"
+		       },
+		       "x": {
+		        "!type": "number"
+		       },
+		       "y": {
+		        "!type": "number"
+		       },
+		       "rotation": {
+		        "!type": "number"
+		       },
+		       "visible": {
+		        "!type": "bool"
+		       },
+		       "alpha": {
+		        "!type": "number"
+		       },
+		       "children": {}
 		      }
 		     },
 		     "BodyDebug~defaultSettings": {
@@ -18678,12 +19737,15 @@
 		     },
 		     "CollisionGroup": {
 		      "!type": "fn(bitmask: number)",
-		      "mask": {
-		       "!type": "number"
+		      "prototype": {
+		       "mask": {
+		        "!type": "number"
+		       }
 		      }
 		     },
 		     "ContactMaterial": {
-		      "!type": "fn(materialA: +Phaser.Physics.P2.Material, materialB: +Phaser.Physics.P2.Material, options: ?)"
+		      "!type": "fn(materialA: +Phaser.Physics.P2.Material, materialB: +Phaser.Physics.P2.Material, options: ?)",
+		      "prototype": {}
 		     },
 		     "DistanceConstraint": {
 		      "!type": "fn(world: +Phaser.Physics.P2, bodyA: +p2.Body, bodyB: +p2.Body, distance: number, localAnchorA: [?], localAnchorB: [?], maxForce: ?)",
@@ -18691,11 +19753,13 @@
 		      "localAnchorA": {},
 		      "localAnchorB": {},
 		      "maxForce": {},
-		      "game": {
-		       "!type": "+Phaser.Game"
-		      },
-		      "world": {
-		       "!type": "+Phaser.Physics.P2"
+		      "prototype": {
+		       "game": {
+		        "!type": "+Phaser.Game"
+		       },
+		       "world": {
+		        "!type": "+Phaser.Physics.P2"
+		       }
 		      },
 		      "options": {}
 		     },
@@ -18708,47 +19772,49 @@
 		     "FixtureList": {
 		      "!type": "fn(list: [?])",
 		      "list": {},
-		      "rawList": {},
-		      "init": {
-		       "!type": "fn()"
-		      },
-		      "setCategory": {
-		       "!type": "fn()"
-		      },
-		      "setMask": {
-		       "!type": "fn()"
-		      },
-		      "setSensor": {
-		       "!type": "fn()"
-		      },
-		      "setMaterial": {
-		       "!type": "fn()"
-		      },
-		      "getFixtures": {
-		       "!type": "fn()"
-		      },
-		      "getFixtureByKey": {
-		       "!type": "fn()"
-		      },
-		      "getGroup": {
-		       "!type": "fn()"
-		      },
-		      "parse": {
-		       "!type": "fn()"
-		      },
-		      "flatten": {
-		       "!type": "fn()"
+		      "prototype": {
+		       "rawList": {},
+		       "init": {
+		        "!type": "fn()"
+		       },
+		       "setCategory": {
+		        "!type": "fn()"
+		       },
+		       "setMask": {
+		        "!type": "fn()"
+		       },
+		       "setSensor": {
+		        "!type": "fn()"
+		       },
+		       "setMaterial": {
+		        "!type": "fn()"
+		       },
+		       "getFixtures": {
+		        "!type": "fn()"
+		       },
+		       "getFixtureByKey": {
+		        "!type": "fn()"
+		       },
+		       "getGroup": {
+		        "!type": "fn()"
+		       },
+		       "parse": {
+		        "!type": "fn()"
+		       },
+		       "flatten": {
+		        "!type": "fn()"
+		       }
 		      }
 		     },
 		     "FixtureList#init": {
-		      "namedFixtures": {
-		       "!type": "?"
-		      },
-		      "groupedFixtures": {
-		       "!type": "[?]"
-		      },
-		      "allFixtures": {
-		       "!type": "[?]"
+		      "prototype": {
+		       "namedFixtures": {},
+		       "groupedFixtures": {
+		        "!type": "[?]"
+		       },
+		       "allFixtures": {
+		        "!type": "[?]"
+		       }
 		      }
 		     },
 		     "FixtureList#setCategory": {
@@ -18781,9 +19847,11 @@
 		      "value": {},
 		      "_ref": {},
 		      "_results": {},
-		      "groupedFixtures[undefined]": {},
-		      "namedFixtures[undefined]": {},
-		      "allFixtures": {}
+		      "prototype": {
+		       "groupedFixtures[undefined]": {},
+		       "namedFixtures[undefined]": {},
+		       "allFixtures": {}
+		      }
 		     },
 		     "FixtureList#flatten": {
 		      "result": {},
@@ -18793,11 +19861,13 @@
 		      "!type": "fn(world: +Phaser.Physics.P2, bodyA: +p2.Body, bodyB: +p2.Body, angle: number, ratio: number)",
 		      "angle": {},
 		      "ratio": {},
-		      "game": {
-		       "!type": "+Phaser.Game"
-		      },
-		      "world": {
-		       "!type": "+Phaser.Physics.P2"
+		      "prototype": {
+		       "game": {
+		        "!type": "+Phaser.Game"
+		       },
+		       "world": {
+		        "!type": "+Phaser.Physics.P2"
+		       }
 		      },
 		      "options": {}
 		     },
@@ -18807,19 +19877,21 @@
 		     },
 		     "InversePointProxy": {
 		      "!type": "fn(world: +Phaser.Physics.P2, destination: +any)",
-		      "world": {},
-		      "destination": {},
-		      "x": {
-		       "!type": "number"
-		      },
-		      "y": {
-		       "!type": "number"
-		      },
-		      "mx": {
-		       "!type": "number"
-		      },
-		      "my": {
-		       "!type": "number"
+		      "prototype": {
+		       "world": {},
+		       "destination": {},
+		       "x": {
+		        "!type": "number"
+		       },
+		       "y": {
+		        "!type": "number"
+		       },
+		       "mx": {
+		        "!type": "number"
+		       },
+		       "my": {
+		        "!type": "number"
+		       }
 		      }
 		     },
 		     "LockConstraint": {
@@ -18827,11 +19899,13 @@
 		      "offset": {},
 		      "angle": {},
 		      "maxForce": {},
-		      "game": {
-		       "!type": "+Phaser.Game"
-		      },
-		      "world": {
-		       "!type": "+Phaser.Physics.P2"
+		      "prototype": {
+		       "game": {
+		        "!type": "+Phaser.Game"
+		       },
+		       "world": {
+		        "!type": "+Phaser.Physics.P2"
+		       }
 		      },
 		      "options": {}
 		     },
@@ -18842,25 +19916,29 @@
 		     },
 		     "Material": {
 		      "!type": "fn(name: string)",
-		      "name": {
-		       "!type": "string"
+		      "prototype": {
+		       "name": {
+		        "!type": "string"
+		       }
 		      }
 		     },
 		     "PointProxy": {
 		      "!type": "fn(world: +Phaser.Physics.P2, destination: +any)",
-		      "world": {},
-		      "destination": {},
-		      "x": {
-		       "!type": "number"
-		      },
-		      "y": {
-		       "!type": "number"
-		      },
-		      "mx": {
-		       "!type": "number"
-		      },
-		      "my": {
-		       "!type": "number"
+		      "prototype": {
+		       "world": {},
+		       "destination": {},
+		       "x": {
+		        "!type": "number"
+		       },
+		       "y": {
+		        "!type": "number"
+		       },
+		       "mx": {
+		        "!type": "number"
+		       },
+		       "my": {
+		        "!type": "number"
+		       }
 		      }
 		     },
 		     "PrismaticConstraint": {
@@ -18870,11 +19948,13 @@
 		      "anchorB": {},
 		      "axis": {},
 		      "maxForce": {},
-		      "game": {
-		       "!type": "+Phaser.Game"
-		      },
-		      "world": {
-		       "!type": "+Phaser.Physics.P2"
+		      "prototype": {
+		       "game": {
+		        "!type": "+Phaser.Game"
+		       },
+		       "world": {
+		        "!type": "+Phaser.Physics.P2"
+		       }
 		      },
 		      "options": {}
 		     },
@@ -18889,11 +19969,13 @@
 		      "!type": "fn(world: +Phaser.Physics.P2, bodyA: +p2.Body, pivotA: +Float32Array, bodyB: +p2.Body, pivotB: +Float32Array, maxForce: number, worldPivot: +Float32Array)",
 		      "maxForce": {},
 		      "worldPivot": {},
-		      "game": {
-		       "!type": "+Phaser.Game"
-		      },
-		      "world": {
-		       "!type": "+Phaser.Physics.P2"
+		      "prototype": {
+		       "game": {
+		        "!type": "+Phaser.Game"
+		       },
+		       "world": {
+		        "!type": "+Phaser.Physics.P2"
+		       }
 		      },
 		      "pivotA": {},
 		      "pivotB": {},
@@ -18907,19 +19989,21 @@
 		     },
 		     "RotationalSpring": {
 		      "!type": "fn(world: +Phaser.Physics.P2, bodyA: +p2.Body, bodyB: +p2.Body, restAngle: number, stiffness: number, damping: number)",
-		      "game": {
-		       "!type": "+Phaser.Game"
-		      },
-		      "world": {
-		       "!type": "+Phaser.Physics.P2"
+		      "prototype": {
+		       "game": {
+		        "!type": "+Phaser.Game"
+		       },
+		       "world": {
+		        "!type": "+Phaser.Physics.P2"
+		       },
+		       "data": {
+		        "!type": "+p2.RotationalSpring"
+		       }
 		      },
 		      "restAngle": {},
 		      "stiffness": {},
 		      "damping": {},
-		      "options": {},
-		      "data": {
-		       "!type": "+p2.RotationalSpring"
-		      }
+		      "options": {}
 		     },
 		     "RotationalSpring~options": {
 		      "restAngle": {},
@@ -18930,20 +20014,22 @@
 		      "parent": {}
 		     },
 		     "Spring": {
+		      "prototype": {
+		       "game": {
+		        "!type": "+Phaser.Game"
+		       },
+		       "world": {
+		        "!type": "+Phaser.Physics.P2"
+		       },
+		       "data": {
+		        "!type": "+p2.LinearSpring"
+		       }
+		      },
 		      "!type": "fn(world: +Phaser.Physics.P2, bodyA: +p2.Body, bodyB: +p2.Body, restLength: number, stiffness: number, damping: number, worldA: [?], worldB: [?], localA: [?], localB: [?])",
-		      "game": {
-		       "!type": "+Phaser.Game"
-		      },
-		      "world": {
-		       "!type": "+Phaser.Physics.P2"
-		      },
 		      "restLength": {},
 		      "stiffness": {},
 		      "damping": {},
-		      "options": {},
-		      "data": {
-		       "!type": "+p2.LinearSpring"
-		      }
+		      "options": {}
 		     },
 		     "Spring~options": {
 		      "restLength": {},
@@ -18958,306 +20044,303 @@
 		      "parent": {}
 		     },
 		     "!type": "fn(game: +Phaser.Game, config: ?)",
-		     "game": {
-		      "!type": "+Phaser.Game"
-		     },
-		     "config": {
-		      "!type": "?"
-		     },
-		     "world": {
-		      "!type": "+p2.World"
-		     },
-		     "frameRate": {
-		      "!type": "number"
-		     },
-		     "useElapsedTime": {
-		      "!type": "bool"
-		     },
-		     "paused": {
-		      "!type": "bool"
-		     },
-		     "materials": {
-		      "!type": "+array.<Phaser.Physics.P2.Material>"
-		     },
-		     "gravity": {
-		      "!type": "+Phaser.Physics.P2.InversePointProxy"
-		     },
-		     "walls": {
-		      "!type": "?"
-		     },
-		     "onBodyAdded": {
-		      "!type": "+Phaser.Signal"
-		     },
-		     "onBodyRemoved": {
-		      "!type": "+Phaser.Signal"
-		     },
-		     "onSpringAdded": {
-		      "!type": "+Phaser.Signal"
-		     },
-		     "onSpringRemoved": {
-		      "!type": "+Phaser.Signal"
-		     },
-		     "onConstraintAdded": {
-		      "!type": "+Phaser.Signal"
-		     },
-		     "onConstraintRemoved": {
-		      "!type": "+Phaser.Signal"
-		     },
-		     "onContactMaterialAdded": {
-		      "!type": "+Phaser.Signal"
-		     },
-		     "onContactMaterialRemoved": {
-		      "!type": "+Phaser.Signal"
-		     },
-		     "postBroadphaseCallback": {
-		      "!type": "+function"
-		     },
-		     "callbackContext": {
-		      "!type": "?"
-		     },
-		     "onBeginContact": {
-		      "!type": "+Phaser.Signal"
-		     },
-		     "onEndContact": {
-		      "!type": "+Phaser.Signal"
-		     },
-		     "mpx": {
-		      "!type": "fn()"
-		     },
-		     "mpxi": {
-		      "!type": "fn()"
-		     },
-		     "pxm": {
-		      "!type": "fn()"
-		     },
-		     "pxmi": {
-		      "!type": "fn()"
-		     },
-		     "collisionGroups": {
-		      "!type": "+array"
-		     },
-		     "nothingCollisionGroup": {
-		      "!type": "+Phaser.Physics.P2.CollisionGroup"
-		     },
-		     "boundsCollisionGroup": {
-		      "!type": "+Phaser.Physics.P2.CollisionGroup"
-		     },
-		     "everythingCollisionGroup": {
-		      "!type": "+Phaser.Physics.P2.CollisionGroup"
-		     },
-		     "boundsCollidesWith": {
-		      "!type": "+array"
-		     },
-		     "_toRemove": {
-		      "!type": "+array"
-		     },
-		     "_collisionGroupID": {
-		      "!type": "number"
-		     },
-		     "_boundsLeft": {
-		      "!type": "bool"
-		     },
-		     "_boundsRight": {
-		      "!type": "bool"
-		     },
-		     "_boundsTop": {
-		      "!type": "bool"
-		     },
-		     "_boundsBottom": {
-		      "!type": "bool"
-		     },
-		     "_boundsOwnGroup": {
-		      "!type": "bool"
-		     },
-		     "removeBodyNextStep": {
-		      "!type": "fn()"
-		     },
-		     "preUpdate": {
-		      "!type": "fn()"
-		     },
-		     "enable": {
-		      "!type": "fn()"
-		     },
-		     "enableBody": {
-		      "!type": "fn()"
-		     },
-		     "setImpactEvents": {
-		      "!type": "fn()"
-		     },
-		     "setPostBroadphaseCallback": {
-		      "!type": "fn()"
-		     },
-		     "postBroadphaseHandler": {
-		      "!type": "fn()"
-		     },
-		     "impactHandler": {
-		      "!type": "fn()"
-		     },
-		     "beginContactHandler": {
-		      "!type": "fn()"
-		     },
-		     "endContactHandler": {
-		      "!type": "fn()"
-		     },
-		     "setBoundsToWorld": {
-		      "!type": "fn()"
-		     },
-		     "setWorldMaterial": {
-		      "!type": "fn()"
-		     },
-		     "updateBoundsCollisionGroup": {
-		      "!type": "fn()"
-		     },
-		     "setBounds": {
-		      "!type": "fn()"
-		     },
-		     "pause": {
-		      "!type": "fn()"
-		     },
-		     "resume": {
-		      "!type": "fn()"
-		     },
-		     "update": {
-		      "!type": "fn()"
-		     },
-		     "reset": {
-		      "!type": "fn()"
-		     },
-		     "clear": {
-		      "!type": "fn()"
-		     },
-		     "destroy": {
-		      "!type": "fn()"
-		     },
-		     "addBody": {
-		      "!type": "fn()"
-		     },
-		     "removeBody": {
-		      "!type": "fn()"
-		     },
-		     "addSpring": {
-		      "!type": "fn()"
-		     },
-		     "removeSpring": {
-		      "!type": "fn()"
-		     },
-		     "createDistanceConstraint": {
-		      "!type": "fn()"
-		     },
-		     "createGearConstraint": {
-		      "!type": "fn()"
-		     },
-		     "createRevoluteConstraint": {
-		      "!type": "fn()"
-		     },
-		     "createLockConstraint": {
-		      "!type": "fn()"
-		     },
-		     "createPrismaticConstraint": {
-		      "!type": "fn()"
-		     },
-		     "addConstraint": {
-		      "!type": "fn()"
-		     },
-		     "removeConstraint": {
-		      "!type": "fn()"
-		     },
-		     "addContactMaterial": {
-		      "!type": "fn()"
-		     },
-		     "removeContactMaterial": {
-		      "!type": "fn()"
-		     },
-		     "getContactMaterial": {
-		      "!type": "fn()"
-		     },
-		     "setMaterial": {
-		      "!type": "fn()"
-		     },
-		     "createMaterial": {
-		      "!type": "fn()"
-		     },
-		     "createContactMaterial": {
-		      "!type": "fn()"
-		     },
-		     "getBodies": {
-		      "!type": "fn()"
-		     },
-		     "getBody": {
-		      "!type": "fn()"
-		     },
-		     "getSprings": {
-		      "!type": "fn()"
-		     },
-		     "getConstraints": {
-		      "!type": "fn()"
-		     },
-		     "hitTest": {
-		      "!type": "fn()"
-		     },
-		     "toJSON": {
-		      "!type": "fn()"
-		     },
-		     "createCollisionGroup": {
-		      "!type": "fn()"
-		     },
-		     "setCollisionGroup": {
-		      "!type": "fn()"
-		     },
-		     "createSpring": {
-		      "!type": "fn()"
-		     },
-		     "createRotationalSpring": {
-		      "!type": "fn()"
-		     },
-		     "createBody": {
-		      "!type": "fn()"
-		     },
-		     "createParticle": {
-		      "!type": "fn()"
-		     },
-		     "convertCollisionObjects": {
-		      "!type": "fn()"
-		     },
-		     "clearTilemapLayerBodies": {
-		      "!type": "fn()"
-		     },
-		     "convertTilemap": {
-		      "!type": "fn()"
-		     },
-		     "friction": {
-		      "!type": "number"
-		     },
-		     "restitution": {
-		      "!type": "number"
-		     },
-		     "contactMaterial": {
-		      "!type": "+p2.ContactMaterial"
-		     },
-		     "applySpringForces": {
-		      "!type": "bool"
-		     },
-		     "applyDamping": {
-		      "!type": "bool"
-		     },
-		     "applyGravity": {
-		      "!type": "bool"
-		     },
-		     "solveConstraints": {
-		      "!type": "bool"
-		     },
-		     "time": {
-		      "!type": "bool"
-		     },
-		     "emitImpactEvent": {
-		      "!type": "bool"
-		     },
-		     "sleepMode": {
-		      "!type": "number"
-		     },
-		     "total": {
-		      "!type": "number"
-		     }
+		     "prototype": {
+		      "game": {
+		       "!type": "+Phaser.Game"
+		      },
+		      "config": {},
+		      "world": {
+		       "!type": "+p2.World"
+		      },
+		      "frameRate": {
+		       "!type": "number"
+		      },
+		      "useElapsedTime": {
+		       "!type": "bool"
+		      },
+		      "paused": {
+		       "!type": "bool"
+		      },
+		      "materials": {
+		       "!type": "+array.<Phaser.Physics.P2.Material>"
+		      },
+		      "gravity": {
+		       "!type": "+Phaser.Physics.P2.InversePointProxy"
+		      },
+		      "walls": {},
+		      "onBodyAdded": {
+		       "!type": "+Phaser.Signal"
+		      },
+		      "onBodyRemoved": {
+		       "!type": "+Phaser.Signal"
+		      },
+		      "onSpringAdded": {
+		       "!type": "+Phaser.Signal"
+		      },
+		      "onSpringRemoved": {
+		       "!type": "+Phaser.Signal"
+		      },
+		      "onConstraintAdded": {
+		       "!type": "+Phaser.Signal"
+		      },
+		      "onConstraintRemoved": {
+		       "!type": "+Phaser.Signal"
+		      },
+		      "onContactMaterialAdded": {
+		       "!type": "+Phaser.Signal"
+		      },
+		      "onContactMaterialRemoved": {
+		       "!type": "+Phaser.Signal"
+		      },
+		      "postBroadphaseCallback": {
+		       "!type": "+function"
+		      },
+		      "callbackContext": {},
+		      "onBeginContact": {
+		       "!type": "+Phaser.Signal"
+		      },
+		      "onEndContact": {
+		       "!type": "+Phaser.Signal"
+		      },
+		      "mpx": {
+		       "!type": "fn()"
+		      },
+		      "mpxi": {
+		       "!type": "fn()"
+		      },
+		      "pxm": {
+		       "!type": "fn()"
+		      },
+		      "pxmi": {
+		       "!type": "fn()"
+		      },
+		      "collisionGroups": {
+		       "!type": "+array"
+		      },
+		      "nothingCollisionGroup": {
+		       "!type": "+Phaser.Physics.P2.CollisionGroup"
+		      },
+		      "boundsCollisionGroup": {
+		       "!type": "+Phaser.Physics.P2.CollisionGroup"
+		      },
+		      "everythingCollisionGroup": {
+		       "!type": "+Phaser.Physics.P2.CollisionGroup"
+		      },
+		      "boundsCollidesWith": {
+		       "!type": "+array"
+		      },
+		      "_toRemove": {
+		       "!type": "+array"
+		      },
+		      "_collisionGroupID": {
+		       "!type": "number"
+		      },
+		      "_boundsLeft": {
+		       "!type": "bool"
+		      },
+		      "_boundsRight": {
+		       "!type": "bool"
+		      },
+		      "_boundsTop": {
+		       "!type": "bool"
+		      },
+		      "_boundsBottom": {
+		       "!type": "bool"
+		      },
+		      "_boundsOwnGroup": {
+		       "!type": "bool"
+		      },
+		      "removeBodyNextStep": {
+		       "!type": "fn()"
+		      },
+		      "preUpdate": {
+		       "!type": "fn()"
+		      },
+		      "enable": {
+		       "!type": "fn()"
+		      },
+		      "enableBody": {
+		       "!type": "fn()"
+		      },
+		      "setImpactEvents": {
+		       "!type": "fn()"
+		      },
+		      "setPostBroadphaseCallback": {
+		       "!type": "fn()"
+		      },
+		      "postBroadphaseHandler": {
+		       "!type": "fn()"
+		      },
+		      "impactHandler": {
+		       "!type": "fn()"
+		      },
+		      "beginContactHandler": {
+		       "!type": "fn()"
+		      },
+		      "endContactHandler": {
+		       "!type": "fn()"
+		      },
+		      "setBoundsToWorld": {
+		       "!type": "fn()"
+		      },
+		      "setWorldMaterial": {
+		       "!type": "fn()"
+		      },
+		      "updateBoundsCollisionGroup": {
+		       "!type": "fn()"
+		      },
+		      "setBounds": {
+		       "!type": "fn()"
+		      },
+		      "pause": {
+		       "!type": "fn()"
+		      },
+		      "resume": {
+		       "!type": "fn()"
+		      },
+		      "update": {
+		       "!type": "fn()"
+		      },
+		      "reset": {
+		       "!type": "fn()"
+		      },
+		      "clear": {
+		       "!type": "fn()"
+		      },
+		      "destroy": {
+		       "!type": "fn()"
+		      },
+		      "addBody": {
+		       "!type": "fn()"
+		      },
+		      "removeBody": {
+		       "!type": "fn()"
+		      },
+		      "addSpring": {
+		       "!type": "fn()"
+		      },
+		      "removeSpring": {
+		       "!type": "fn()"
+		      },
+		      "createDistanceConstraint": {
+		       "!type": "fn()"
+		      },
+		      "createGearConstraint": {
+		       "!type": "fn()"
+		      },
+		      "createRevoluteConstraint": {
+		       "!type": "fn()"
+		      },
+		      "createLockConstraint": {
+		       "!type": "fn()"
+		      },
+		      "createPrismaticConstraint": {
+		       "!type": "fn()"
+		      },
+		      "addConstraint": {
+		       "!type": "fn()"
+		      },
+		      "removeConstraint": {
+		       "!type": "fn()"
+		      },
+		      "addContactMaterial": {
+		       "!type": "fn()"
+		      },
+		      "removeContactMaterial": {
+		       "!type": "fn()"
+		      },
+		      "getContactMaterial": {
+		       "!type": "fn()"
+		      },
+		      "setMaterial": {
+		       "!type": "fn()"
+		      },
+		      "createMaterial": {
+		       "!type": "fn()"
+		      },
+		      "createContactMaterial": {
+		       "!type": "fn()"
+		      },
+		      "getBodies": {
+		       "!type": "fn()"
+		      },
+		      "getBody": {
+		       "!type": "fn()"
+		      },
+		      "getSprings": {
+		       "!type": "fn()"
+		      },
+		      "getConstraints": {
+		       "!type": "fn()"
+		      },
+		      "hitTest": {
+		       "!type": "fn()"
+		      },
+		      "toJSON": {
+		       "!type": "fn()"
+		      },
+		      "createCollisionGroup": {
+		       "!type": "fn()"
+		      },
+		      "setCollisionGroup": {
+		       "!type": "fn()"
+		      },
+		      "createSpring": {
+		       "!type": "fn()"
+		      },
+		      "createRotationalSpring": {
+		       "!type": "fn()"
+		      },
+		      "createBody": {
+		       "!type": "fn()"
+		      },
+		      "createParticle": {
+		       "!type": "fn()"
+		      },
+		      "convertCollisionObjects": {
+		       "!type": "fn()"
+		      },
+		      "clearTilemapLayerBodies": {
+		       "!type": "fn()"
+		      },
+		      "convertTilemap": {
+		       "!type": "fn()"
+		      },
+		      "friction": {
+		       "!type": "number"
+		      },
+		      "restitution": {
+		       "!type": "number"
+		      },
+		      "contactMaterial": {
+		       "!type": "+p2.ContactMaterial"
+		      },
+		      "applySpringForces": {
+		       "!type": "bool"
+		      },
+		      "applyDamping": {
+		       "!type": "bool"
+		      },
+		      "applyGravity": {
+		       "!type": "bool"
+		      },
+		      "solveConstraints": {
+		       "!type": "bool"
+		      },
+		      "time": {
+		       "!type": "bool"
+		      },
+		      "emitImpactEvent": {
+		       "!type": "bool"
+		      },
+		      "sleepMode": {
+		       "!type": "number"
+		      },
+		      "total": {
+		       "!type": "number"
+		      }
+		     },
+		     "config": {}
 		    },
 		    "P2~config": {
 		     "gravity": {},
@@ -19281,8 +20364,10 @@
 		     "i": {}
 		    },
 		    "P2#setPostBroadphaseCallback": {
-		     "postBroadphaseCallback": {},
-		     "callbackContext": {}
+		     "prototype": {
+		      "postBroadphaseCallback": {},
+		      "callbackContext": {}
+		     }
 		    },
 		    "P2#postBroadphaseHandler": {
 		     "i": {}
@@ -19291,11 +20376,59 @@
 		     "a": {},
 		     "b": {}
 		    },
-		    "setBoundsToWorld": {
-		     "!type": "fn()"
-		    },
-		    "setWorldMaterial": {
-		     "!type": "fn(material: +Phaser.Physics.P2.Material, left: bool, right: bool, top: bool, bottom: bool)"
+		    "prototype": {
+		     "setBoundsToWorld": {
+		      "!type": "fn()"
+		     },
+		     "setWorldMaterial": {
+		      "!type": "fn(material: +Phaser.Physics.P2.Material, left: bool, right: bool, top: bool, bottom: bool)"
+		     },
+		     "game": {
+		      "!type": "+Phaser.Game"
+		     },
+		     "config": {},
+		     "arcade": {
+		      "!type": "+Phaser.Physics.Arcade"
+		     },
+		     "p2": {
+		      "!type": "+Phaser.Physics.P2"
+		     },
+		     "ninja": {
+		      "!type": "+Phaser.Physics.Ninja"
+		     },
+		     "box2d": {
+		      "!type": "+Phaser.Physics.Box2D"
+		     },
+		     "chipmunk": {
+		      "!type": "+Phaser.Physics.Chipmunk"
+		     },
+		     "matter": {
+		      "!type": "+Phaser.Physics.Matter"
+		     },
+		     "parseConfig": {
+		      "!type": "fn()"
+		     },
+		     "startSystem": {
+		      "!type": "fn()"
+		     },
+		     "enable": {
+		      "!type": "fn()"
+		     },
+		     "preUpdate": {
+		      "!type": "fn()"
+		     },
+		     "update": {
+		      "!type": "fn()"
+		     },
+		     "clear": {
+		      "!type": "fn()"
+		     },
+		     "reset": {
+		      "!type": "fn()"
+		     },
+		     "destroy": {
+		      "!type": "fn()"
+		     }
 		    },
 		    "P2#setWorldMaterial": {
 		     "left": {},
@@ -19356,11 +20489,13 @@
 		     "top": {},
 		     "bottom": {},
 		     "setCollisionGroup": {},
-		     "_boundsLeft": {},
-		     "_boundsRight": {},
-		     "_boundsTop": {},
-		     "_boundsBottom": {},
-		     "_boundsOwnGroup": {}
+		     "prototype": {
+		      "_boundsLeft": {},
+		      "_boundsRight": {},
+		      "_boundsTop": {},
+		      "_boundsBottom": {},
+		      "_boundsOwnGroup": {}
+		     }
 		    },
 		    "P2#setBounds#walls": {
 		     "left": {
@@ -19385,16 +20520,22 @@
 		     }
 		    },
 		    "P2#pause": {
-		     "paused": {}
+		     "prototype": {
+		      "paused": {}
+		     }
 		    },
 		    "P2#resume": {
-		     "paused": {}
+		     "prototype": {
+		      "paused": {}
+		     }
 		    },
 		    "P2#reset": {
-		     "nothingCollisionGroup": {},
-		     "boundsCollisionGroup": {},
-		     "everythingCollisionGroup": {},
-		     "_collisionGroupID": {}
+		     "prototype": {
+		      "nothingCollisionGroup": {},
+		      "boundsCollisionGroup": {},
+		      "everythingCollisionGroup": {},
+		      "_collisionGroupID": {}
+		     }
 		    },
 		    "P2#clear#world": {
 		     "time": {},
@@ -19406,15 +20547,19 @@
 		     "bodies": {},
 		     "springs": {},
 		     "cms": {},
-		     "postBroadphaseCallback": {},
-		     "callbackContext": {},
-		     "impactCallback": {},
-		     "collisionGroups": {},
-		     "_toRemove": {},
-		     "boundsCollidesWith": {}
+		     "prototype": {
+		      "postBroadphaseCallback": {},
+		      "callbackContext": {},
+		      "impactCallback": {},
+		      "collisionGroups": {},
+		      "_toRemove": {},
+		      "boundsCollidesWith": {}
+		     }
 		    },
 		    "P2#destroy": {
-		     "game": {}
+		     "prototype": {
+		      "game": {}
+		     }
 		    },
 		    "P2#createDistanceConstraint": {
 		     "bodyA": {},
@@ -19495,8 +20640,10 @@
 		     }
 		    },
 		    "P2y": {
-		     "setCollisionGroup": {
-		      "!type": "fn(object: +Phaser.Group|+Phaser.Sprite, group: +Phaser.Physics.CollisionGroup)"
+		     "prototype": {
+		      "setCollisionGroup": {
+		       "!type": "fn(object: +Phaser.Group|+Phaser.Sprite, group: +Phaser.Physics.CollisionGroup)"
+		      }
 		     }
 		    },
 		    "P2#setCollisionGroup": {
@@ -19554,30 +20701,7 @@
 		     "v": {}
 		    },
 		    "!type": "fn(game: +Phaser.Game, physicsConfig: ?)",
-		    "config": {
-		     "!type": "?"
-		    },
-		    "game": {
-		     "!type": "+Phaser.Game"
-		    },
-		    "arcade": {
-		     "!type": "+Phaser.Physics.Arcade"
-		    },
-		    "p2": {
-		     "!type": "+Phaser.Physics.P2"
-		    },
-		    "ninja": {
-		     "!type": "+Phaser.Physics.Ninja"
-		    },
-		    "box2d": {
-		     "!type": "+Phaser.Physics.Box2D"
-		    },
-		    "chipmunk": {
-		     "!type": "+Phaser.Physics.Chipmunk"
-		    },
-		    "matter": {
-		     "!type": "+Phaser.Physics.Matter"
-		    },
+		    "config": {},
 		    "ARCADE": {
 		     "!type": "number"
 		    },
@@ -19595,99 +20719,81 @@
 		    },
 		    "MATTERJS": {
 		     "!type": "number"
-		    },
-		    "parseConfig": {
-		     "!type": "fn()"
-		    },
-		    "startSystem": {
-		     "!type": "fn()"
-		    },
-		    "enable": {
-		     "!type": "fn()"
-		    },
-		    "preUpdate": {
-		     "!type": "fn()"
-		    },
-		    "update": {
-		     "!type": "fn()"
-		    },
-		    "clear": {
-		     "!type": "fn()"
-		    },
-		    "reset": {
-		     "!type": "fn()"
-		    },
-		    "destroy": {
-		     "!type": "fn()"
 		    }
 		   },
 		   "Phyiscs": {
 		    "Ninja": {
 		     "AABB": {
-		      "reportCollision": {
-		       "!type": "fn(px: number, py: number, dx: number, dy: number)"
+		      "prototype": {
+		       "reportCollision": {
+		        "!type": "fn(px: number, py: number, dx: number, dy: number)"
+		       }
 		      }
 		     }
 		    }
 		   },
 		   "Physics#parseConfig": {
-		    "arcade": {},
-		    "ninja": {},
-		    "p2": {},
-		    "box2d": {},
-		    "matter": {}
+		    "prototype": {
+		     "arcade": {},
+		     "ninja": {},
+		     "p2": {},
+		     "box2d": {},
+		     "matter": {}
+		    }
 		   },
 		   "Physics#startSystem": {
-		    "arcade": {},
-		    "p2": {},
-		    "ninja": {},
-		    "box2d": {},
-		    "matter": {}
+		    "prototype": {
+		     "arcade": {},
+		     "p2": {},
+		     "ninja": {},
+		     "box2d": {},
+		     "matter": {}
+		    }
 		   },
 		   "Physics#enable": {
 		    "system": {},
 		    "debug": {}
 		   },
 		   "Physics#destroy": {
-		    "arcade": {},
-		    "ninja": {},
-		    "p2": {},
-		    "box2d": {},
-		    "matter": {}
+		    "prototype": {
+		     "arcade": {},
+		     "ninja": {},
+		     "p2": {},
+		     "box2d": {},
+		     "matter": {}
+		    }
 		   },
 		   "AudioSprite": {
 		    "!type": "fn(game: +Phaser.Game, key: string)",
-		    "game": {
-		     "!type": "+Phaser.Game"
-		    },
-		    "key": {
-		     "!type": "string"
-		    },
-		    "config": {
-		     "!type": "?"
-		    },
-		    "autoplayKey": {
-		     "!type": "string"
-		    },
-		    "autoplay": {
-		     "!type": "bool"
-		    },
-		    "sounds": {
-		     "!type": "?"
+		    "prototype": {
+		     "game": {
+		      "!type": "+Phaser.Game"
+		     },
+		     "key": {
+		      "!type": "string"
+		     },
+		     "config": {},
+		     "autoplayKey": {
+		      "!type": "string"
+		     },
+		     "autoplay": {
+		      "!type": "bool"
+		     },
+		     "sounds": {},
+		     "sounds[undefined]": {},
+		     "play": {
+		      "!type": "fn()"
+		     },
+		     "stop": {
+		      "!type": "fn()"
+		     },
+		     "get": {
+		      "!type": "fn()"
+		     }
 		    },
 		    "k": {},
 		    "marker": {},
-		    "sound": {},
-		    "sounds[undefined]": {},
-		    "play": {
-		     "!type": "fn()"
-		    },
-		    "stop": {
-		     "!type": "fn()"
-		    },
-		    "get": {
-		     "!type": "fn()"
-		    }
+		    "sound": {}
 		   },
 		   "AudioSprite#play": {
 		    "volume": {}
@@ -19697,210 +20803,204 @@
 		   },
 		   "Sound": {
 		    "!type": "fn(game: +Phaser.Game, key: string, volume: number, loop: bool)",
-		    "volume": {
-		     "!type": "number"
-		    },
-		    "loop": {
-		     "!type": "bool"
-		    },
+		    "volume": {},
+		    "loop": {},
 		    "connect": {},
-		    "game": {
-		     "!type": "+Phaser.Game"
-		    },
-		    "name": {
-		     "!type": "string"
-		    },
-		    "key": {
-		     "!type": "string"
-		    },
-		    "markers": {
-		     "!type": "?"
-		    },
-		    "context": {
-		     "!type": "+AudioContext"
-		    },
-		    "autoplay": {
-		     "!type": "bool"
-		    },
-		    "totalDuration": {
-		     "!type": "number"
-		    },
-		    "startTime": {
-		     "!type": "number"
-		    },
-		    "currentTime": {
-		     "!type": "number"
-		    },
-		    "duration": {
-		     "!type": "number"
-		    },
-		    "durationMS": {
-		     "!type": "number"
-		    },
-		    "position": {
-		     "!type": "number"
-		    },
-		    "stopTime": {
-		     "!type": "number"
-		    },
-		    "paused": {
-		     "!type": "bool"
-		    },
-		    "pausedPosition": {
-		     "!type": "number"
-		    },
-		    "pausedTime": {
-		     "!type": "number"
-		    },
-		    "isPlaying": {
-		     "!type": "bool"
-		    },
-		    "currentMarker": {
-		     "!type": "string"
-		    },
-		    "fadeTween": {
-		     "!type": "+Phaser.Tween"
-		    },
-		    "pendingPlayback": {
-		     "!type": "bool"
-		    },
-		    "override": {
-		     "!type": "bool"
-		    },
-		    "allowMultiple": {
-		     "!type": "bool"
-		    },
-		    "usingWebAudio": {
-		     "!type": "bool"
-		    },
-		    "usingAudioTag": {
-		     "!type": "bool"
-		    },
-		    "externalNode": {
-		     "!type": "?"
-		    },
-		    "masterGainNode": {
-		     "!type": "?"
-		    },
-		    "gainNode": {
-		     "!type": "?"
-		    },
-		    "_sound": {
-		     "!type": "?"
-		    },
-		    "onDecoded": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "onPlay": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "onPause": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "onResume": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "onLoop": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "onStop": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "onMute": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "onMarkerComplete": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "onFadeComplete": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "_volume": {
-		     "!type": "number"
-		    },
-		    "_buffer": {
-		     "!type": "+any"
-		    },
-		    "_muted": {
-		     "!type": "bool"
-		    },
-		    "_tempMarker": {
-		     "!type": "number"
-		    },
-		    "_tempPosition": {
-		     "!type": "number"
-		    },
-		    "_tempVolume": {
-		     "!type": "number"
-		    },
-		    "_muteVolume": {
-		     "!type": "number"
-		    },
-		    "_tempLoop": {
-		     "!type": "bool"
-		    },
-		    "_paused": {
-		     "!type": "bool"
-		    },
-		    "_onDecodedEventDispatched": {
-		     "!type": "bool"
-		    },
-		    "soundHasUnlocked": {
-		     "!type": "fn()"
-		    },
-		    "addMarker": {
-		     "!type": "fn()"
-		    },
-		    "removeMarker": {
-		     "!type": "fn()"
-		    },
-		    "onEndedHandler": {
-		     "!type": "fn()"
-		    },
-		    "update": {
-		     "!type": "fn()"
-		    },
-		    "loopFull": {
-		     "!type": "fn()"
-		    },
-		    "play": {
-		     "!type": "fn()"
-		    },
-		    "restart": {
-		     "!type": "fn()"
-		    },
-		    "pause": {
-		     "!type": "fn()"
-		    },
-		    "resume": {
-		     "!type": "fn()"
-		    },
-		    "stop": {
-		     "!type": "fn()"
-		    },
-		    "fadeIn": {
-		     "!type": "fn()"
-		    },
-		    "fadeOut": {
-		     "!type": "fn()"
-		    },
-		    "fadeTo": {
-		     "!type": "fn()"
-		    },
-		    "fadeComplete": {
-		     "!type": "fn()"
-		    },
-		    "destroy": {
-		     "!type": "fn()"
-		    },
-		    "isDecoding": {
-		     "!type": "bool"
-		    },
-		    "isDecoded": {
-		     "!type": "bool"
-		    },
-		    "mute": {
-		     "!type": "bool"
+		    "prototype": {
+		     "game": {
+		      "!type": "+Phaser.Game"
+		     },
+		     "name": {
+		      "!type": "string"
+		     },
+		     "key": {
+		      "!type": "string"
+		     },
+		     "loop": {
+		      "!type": "bool"
+		     },
+		     "volume": {
+		      "!type": "number"
+		     },
+		     "markers": {},
+		     "context": {
+		      "!type": "+AudioContext"
+		     },
+		     "autoplay": {
+		      "!type": "bool"
+		     },
+		     "totalDuration": {
+		      "!type": "number"
+		     },
+		     "startTime": {
+		      "!type": "number"
+		     },
+		     "currentTime": {
+		      "!type": "number"
+		     },
+		     "duration": {
+		      "!type": "number"
+		     },
+		     "durationMS": {
+		      "!type": "number"
+		     },
+		     "position": {
+		      "!type": "number"
+		     },
+		     "stopTime": {
+		      "!type": "number"
+		     },
+		     "paused": {
+		      "!type": "bool"
+		     },
+		     "pausedPosition": {
+		      "!type": "number"
+		     },
+		     "pausedTime": {
+		      "!type": "number"
+		     },
+		     "isPlaying": {
+		      "!type": "bool"
+		     },
+		     "currentMarker": {
+		      "!type": "string"
+		     },
+		     "fadeTween": {
+		      "!type": "+Phaser.Tween"
+		     },
+		     "pendingPlayback": {
+		      "!type": "bool"
+		     },
+		     "override": {
+		      "!type": "bool"
+		     },
+		     "allowMultiple": {
+		      "!type": "bool"
+		     },
+		     "usingWebAudio": {
+		      "!type": "bool"
+		     },
+		     "usingAudioTag": {
+		      "!type": "bool"
+		     },
+		     "externalNode": {},
+		     "masterGainNode": {},
+		     "gainNode": {},
+		     "_sound": {},
+		     "onDecoded": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "onPlay": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "onPause": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "onResume": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "onLoop": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "onStop": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "onMute": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "onMarkerComplete": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "onFadeComplete": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "_volume": {
+		      "!type": "number"
+		     },
+		     "_buffer": {
+		      "!type": "+any"
+		     },
+		     "_muted": {
+		      "!type": "bool"
+		     },
+		     "_tempMarker": {
+		      "!type": "number"
+		     },
+		     "_tempPosition": {
+		      "!type": "number"
+		     },
+		     "_tempVolume": {
+		      "!type": "number"
+		     },
+		     "_muteVolume": {
+		      "!type": "number"
+		     },
+		     "_tempLoop": {
+		      "!type": "bool"
+		     },
+		     "_paused": {
+		      "!type": "bool"
+		     },
+		     "_onDecodedEventDispatched": {
+		      "!type": "bool"
+		     },
+		     "soundHasUnlocked": {
+		      "!type": "fn()"
+		     },
+		     "addMarker": {
+		      "!type": "fn()"
+		     },
+		     "removeMarker": {
+		      "!type": "fn()"
+		     },
+		     "onEndedHandler": {
+		      "!type": "fn()"
+		     },
+		     "update": {
+		      "!type": "fn()"
+		     },
+		     "loopFull": {
+		      "!type": "fn()"
+		     },
+		     "play": {
+		      "!type": "fn()"
+		     },
+		     "restart": {
+		      "!type": "fn()"
+		     },
+		     "pause": {
+		      "!type": "fn()"
+		     },
+		     "resume": {
+		      "!type": "fn()"
+		     },
+		     "stop": {
+		      "!type": "fn()"
+		     },
+		     "fadeIn": {
+		      "!type": "fn()"
+		     },
+		     "fadeOut": {
+		      "!type": "fn()"
+		     },
+		     "fadeTo": {
+		      "!type": "fn()"
+		     },
+		     "fadeComplete": {
+		      "!type": "fn()"
+		     },
+		     "destroy": {
+		      "!type": "fn()"
+		     },
+		     "isDecoding": {
+		      "!type": "bool"
+		     },
+		     "isDecoded": {
+		      "!type": "bool"
+		     },
+		     "mute": {
+		      "!type": "bool"
+		     }
 		    }
 		   },
 		   "Sound#gainNode": {
@@ -19909,13 +21009,17 @@
 		    }
 		   },
 		   "Sound#soundHasUnlocked": {
-		    "_sound": {},
-		    "totalDuration": {}
+		    "prototype": {
+		     "_sound": {},
+		     "totalDuration": {}
+		    }
 		   },
 		   "Sound#addMarker": {
 		    "volume": {},
 		    "loop": {},
-		    "markers[undefined]": {}
+		    "prototype": {
+		     "markers[undefined]": {}
+		    }
 		   },
 		   "Sound#addMarker#markers[undefined]": {
 		    "name": {},
@@ -19927,35 +21031,44 @@
 		    "loop": {}
 		   },
 		   "Sound#onEndedHandler": {
-		    "isPlaying": {}
+		    "prototype": {
+		     "isPlaying": {}
+		    }
 		   },
 		   "Sound#update": {
-		    "_onDecodedEventDispatched": {},
-		    "pendingPlayback": {},
-		    "currentTime": {},
-		    "startTime": {}
+		    "prototype": {
+		     "_onDecodedEventDispatched": {},
+		     "pendingPlayback": {},
+		     "currentTime": {},
+		     "startTime": {}
+		    }
 		   },
 		   "Sound#play": {
 		    "marker": {},
 		    "forceRestart": {},
-		    "currentMarker": {},
+		    "prototype": {
+		     "currentMarker": {},
+		     "position": {},
+		     "volume": {},
+		     "loop": {},
+		     "duration": {},
+		     "durationMS": {},
+		     "_tempMarker": {},
+		     "_tempPosition": {},
+		     "_tempVolume": {},
+		     "_tempLoop": {},
+		     "_sound": {},
+		     "_buffer": {},
+		     "totalDuration": {},
+		     "isPlaying": {},
+		     "startTime": {},
+		     "currentTime": {},
+		     "stopTime": {},
+		     "pendingPlayback": {}
+		    },
 		    "position": {},
 		    "volume": {},
-		    "loop": {},
-		    "duration": {},
-		    "durationMS": {},
-		    "_tempMarker": {},
-		    "_tempPosition": {},
-		    "_tempVolume": {},
-		    "_tempLoop": {},
-		    "_sound": {},
-		    "_buffer": {},
-		    "totalDuration": {},
-		    "isPlaying": {},
-		    "startTime": {},
-		    "currentTime": {},
-		    "stopTime": {},
-		    "pendingPlayback": {}
+		    "loop": {}
 		   },
 		   "Sound#play#_sound": {
 		    "currentTime": {},
@@ -19972,17 +21085,21 @@
 		    "loop": {}
 		   },
 		   "Sound#pause": {
-		    "paused": {},
-		    "pausedPosition": {},
-		    "pausedTime": {}
+		    "prototype": {
+		     "paused": {},
+		     "pausedPosition": {},
+		     "pausedTime": {}
+		    }
 		   },
 		   "Sound#resume": {
 		    "p": {},
-		    "_sound": {},
-		    "duration": {},
-		    "isPlaying": {},
-		    "paused": {},
-		    "startTime": {}
+		    "prototype": {
+		     "_sound": {},
+		     "isPlaying": {},
+		     "paused": {},
+		     "startTime": {}
+		    },
+		    "duration": {}
 		   },
 		   "Sound#resume#_sound": {
 		    "buffer": {},
@@ -19993,10 +21110,12 @@
 		    "currentTime": {}
 		   },
 		   "Sound#stop": {
-		    "pendingPlayback": {},
-		    "isPlaying": {},
-		    "prevMarker": {},
-		    "currentMarker": {}
+		    "prototype": {
+		     "pendingPlayback": {},
+		     "isPlaying": {},
+		     "currentMarker": {}
+		    },
+		    "prevMarker": {}
 		   },
 		   "Sound#fadeIn": {
 		    "loop": {},
@@ -20004,146 +21123,152 @@
 		   },
 		   "Sound#fadeTo": {
 		    "duration": {},
-		    "fadeTween": {}
+		    "prototype": {
+		     "fadeTween": {}
+		    }
 		   },
 		   "Sound#destroy": {
 		    "remove": {},
-		    "markers": {},
-		    "context": {},
-		    "_buffer": {},
-		    "externalNode": {}
+		    "prototype": {
+		     "markers": {},
+		     "context": {},
+		     "_buffer": {},
+		     "externalNode": {}
+		    }
 		   },
 		   "SoundManager": {
 		    "!type": "fn()",
-		    "game": {
-		     "!type": "+Phaser.Game"
-		    },
-		    "onSoundDecode": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "onVolumeChange": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "onMute": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "onUnMute": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "context": {
-		     "!type": "+AudioContext"
-		    },
-		    "usingWebAudio": {
-		     "!type": "bool"
-		    },
-		    "usingAudioTag": {
-		     "!type": "bool"
-		    },
-		    "noAudio": {
-		     "!type": "bool"
-		    },
-		    "connectToMaster": {
-		     "!type": "bool"
-		    },
-		    "touchLocked": {
-		     "!type": "bool"
-		    },
-		    "channels": {
-		     "!type": "number"
-		    },
-		    "_codeMuted": {
-		     "!type": "bool"
-		    },
-		    "_muted": {
-		     "!type": "bool"
-		    },
-		    "_unlockSource": {
-		     "!type": "+AudioContext"
-		    },
-		    "_volume": {
-		     "!type": "number"
-		    },
-		    "_sounds": {
-		     "!type": "+array"
-		    },
-		    "_watchList": {
-		     "!type": "+Phaser.ArraySet"
-		    },
-		    "_watching": {
-		     "!type": "bool"
-		    },
-		    "_watchCallback": {
-		     "!type": "+function"
-		    },
-		    "_watchContext": {
-		     "!type": "?"
-		    },
-		    "boot": {
-		     "!type": "fn()"
-		    },
-		    "setTouchLock": {
-		     "!type": "fn()"
-		    },
-		    "unlock": {
-		     "!type": "fn()"
-		    },
-		    "stopAll": {
-		     "!type": "fn()"
-		    },
-		    "pauseAll": {
-		     "!type": "fn()"
-		    },
-		    "resumeAll": {
-		     "!type": "fn()"
-		    },
-		    "decode": {
-		     "!type": "fn()"
-		    },
-		    "setDecodedCallback": {
-		     "!type": "fn()"
-		    },
-		    "update": {
-		     "!type": "fn()"
-		    },
-		    "add": {
-		     "!type": "fn()"
-		    },
-		    "addSprite": {
-		     "!type": "fn()"
-		    },
-		    "remove": {
-		     "!type": "fn()"
-		    },
-		    "removeByKey": {
-		     "!type": "fn()"
-		    },
-		    "play": {
-		     "!type": "fn()"
-		    },
-		    "setMute": {
-		     "!type": "fn()"
-		    },
-		    "unsetMute": {
-		     "!type": "fn()"
-		    },
-		    "destroy": {
-		     "!type": "fn()"
-		    },
-		    "mute": {
-		     "!type": "bool"
-		    },
-		    "volume": {
-		     "!type": "number"
+		    "prototype": {
+		     "game": {
+		      "!type": "+Phaser.Game"
+		     },
+		     "onSoundDecode": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "onVolumeChange": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "onMute": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "onUnMute": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "context": {
+		      "!type": "+AudioContext"
+		     },
+		     "usingWebAudio": {
+		      "!type": "bool"
+		     },
+		     "usingAudioTag": {
+		      "!type": "bool"
+		     },
+		     "noAudio": {
+		      "!type": "bool"
+		     },
+		     "connectToMaster": {
+		      "!type": "bool"
+		     },
+		     "touchLocked": {
+		      "!type": "bool"
+		     },
+		     "channels": {
+		      "!type": "number"
+		     },
+		     "_codeMuted": {
+		      "!type": "bool"
+		     },
+		     "_muted": {
+		      "!type": "bool"
+		     },
+		     "_unlockSource": {
+		      "!type": "+AudioContext"
+		     },
+		     "_volume": {
+		      "!type": "number"
+		     },
+		     "_sounds": {
+		      "!type": "+array"
+		     },
+		     "_watchList": {
+		      "!type": "+Phaser.ArraySet"
+		     },
+		     "_watching": {
+		      "!type": "bool"
+		     },
+		     "_watchCallback": {
+		      "!type": "+function"
+		     },
+		     "_watchContext": {},
+		     "boot": {
+		      "!type": "fn()"
+		     },
+		     "setTouchLock": {
+		      "!type": "fn()"
+		     },
+		     "unlock": {
+		      "!type": "fn()"
+		     },
+		     "stopAll": {
+		      "!type": "fn()"
+		     },
+		     "pauseAll": {
+		      "!type": "fn()"
+		     },
+		     "resumeAll": {
+		      "!type": "fn()"
+		     },
+		     "decode": {
+		      "!type": "fn()"
+		     },
+		     "setDecodedCallback": {
+		      "!type": "fn()"
+		     },
+		     "update": {
+		      "!type": "fn()"
+		     },
+		     "add": {
+		      "!type": "fn()"
+		     },
+		     "addSprite": {
+		      "!type": "fn()"
+		     },
+		     "remove": {
+		      "!type": "fn()"
+		     },
+		     "removeByKey": {
+		      "!type": "fn()"
+		     },
+		     "play": {
+		      "!type": "fn()"
+		     },
+		     "setMute": {
+		      "!type": "fn()"
+		     },
+		     "unsetMute": {
+		      "!type": "fn()"
+		     },
+		     "destroy": {
+		      "!type": "fn()"
+		     },
+		     "mute": {
+		      "!type": "bool"
+		     },
+		     "volume": {
+		      "!type": "number"
+		     }
 		    }
 		   },
 		   "SoundManager#boot": {
-		    "channels": {},
-		    "noAudio": {},
-		    "touchLocked": {},
-		    "usingAudioTag": {},
-		    "context": {},
-		    "usingWebAudio": {},
-		    "masterGain": {}
+		    "prototype": {
+		     "channels": {},
+		     "noAudio": {},
+		     "touchLocked": {},
+		     "usingAudioTag": {},
+		     "context": {},
+		     "usingWebAudio": {},
+		     "masterGain": {}
+		    }
 		   },
 		   "SoundManager#boot#masterGain": {
 		    "gain": {
@@ -20151,11 +21276,15 @@
 		    }
 		   },
 		   "SoundManager#setTouchLock": {
-		    "touchLocked": {}
+		    "prototype": {
+		     "touchLocked": {}
+		    }
 		   },
 		   "SoundManager#unlock": {
-		    "touchLocked": {},
-		    "_unlockSource": {},
+		    "prototype": {
+		     "touchLocked": {},
+		     "_unlockSource": {}
+		    },
 		    "buffer": {}
 		   },
 		   "SoundManager#unlock#_unlockSource": {
@@ -20178,16 +21307,20 @@
 		   "SoundManager#setDecodedCallback": {
 		    "files": {},
 		    "i": {},
-		    "_watching": {},
-		    "_watchCallback": {},
-		    "_watchContext": {}
+		    "prototype": {
+		     "_watching": {},
+		     "_watchCallback": {},
+		     "_watchContext": {}
+		    }
 		   },
 		   "SoundManager#update": {
-		    "touchLocked": {},
-		    "_unlockSource": {},
+		    "prototype": {
+		     "touchLocked": {},
+		     "_unlockSource": {},
+		     "_watching": {}
+		    },
 		    "i": {},
-		    "key": {},
-		    "_watching": {}
+		    "key": {}
 		   },
 		   "SoundManager#add": {
 		    "volume": {},
@@ -20209,8 +21342,10 @@
 		    "sound": {}
 		   },
 		   "SoundManager#setMute": {
-		    "_muted": {},
-		    "_muteVolume": {},
+		    "prototype": {
+		     "_muted": {},
+		     "_muteVolume": {}
+		    },
 		    "i": {}
 		   },
 		   "SoundManager#setMute#masterGain": {
@@ -20222,7 +21357,9 @@
 		    "mute": {}
 		   },
 		   "SoundManager#unsetMute": {
-		    "_muted": {},
+		    "prototype": {
+		     "_muted": {}
+		    },
 		    "i": {}
 		   },
 		   "SoundManager#unsetMute#masterGain": {
@@ -20235,154 +21372,165 @@
 		   },
 		   "SoundManager#destroy": {
 		    "i": {},
-		    "_sounds": {}
+		    "prototype": {
+		     "_sounds": {}
+		    }
 		   },
 		   "Utils": {
 		    "Debug": {
-		     "isDisabled": {},
-		     "boot": {
-		      "!type": "fn()"
+		     "prototype": {
+		      "isDisabled": {},
+		      "boot": {
+		       "!type": "fn()"
+		      },
+		      "preUpdate": {
+		       "!type": "fn()"
+		      },
+		      "reset": {
+		       "!type": "fn()"
+		      },
+		      "start": {
+		       "!type": "fn()"
+		      },
+		      "stop": {
+		       "!type": "fn()"
+		      },
+		      "line": {
+		       "!type": "fn()"
+		      },
+		      "soundInfo": {
+		       "!type": "fn()"
+		      },
+		      "cameraInfo": {
+		       "!type": "fn()"
+		      },
+		      "timer": {
+		       "!type": "fn()"
+		      },
+		      "pointer": {
+		       "!type": "fn()"
+		      },
+		      "spriteInputInfo": {
+		       "!type": "fn()"
+		      },
+		      "key": {
+		       "!type": "fn()"
+		      },
+		      "inputInfo": {
+		       "!type": "fn()"
+		      },
+		      "spriteBounds": {
+		       "!type": "fn()"
+		      },
+		      "ropeSegments": {
+		       "!type": "fn()"
+		      },
+		      "spriteInfo": {
+		       "!type": "fn()"
+		      },
+		      "spriteCoords": {
+		       "!type": "fn()"
+		      },
+		      "lineInfo": {
+		       "!type": "fn()"
+		      },
+		      "pixel": {
+		       "!type": "fn()"
+		      },
+		      "geom": {
+		       "!type": "fn(object: +Phaser.Rectangle|?, color: string, filled: bool)"
+		      },
+		      "rectangle": {
+		       "!type": "fn()"
+		      },
+		      "text": {
+		       "!type": "fn()"
+		      },
+		      "quadTree": {
+		       "!type": "fn()"
+		      },
+		      "body": {
+		       "!type": "fn()"
+		      },
+		      "bodyInfo": {
+		       "!type": "fn()"
+		      },
+		      "box2dWorld": {
+		       "!type": "fn()"
+		      },
+		      "box2dBody": {
+		       "!type": "fn()"
+		      },
+		      "game": {
+		       "!type": "+Phaser.Game"
+		      },
+		      "sprite": {
+		       "!type": "+Phaser.Image"
+		      },
+		      "bmd": {
+		       "!type": "+Phaser.BitmapData"
+		      },
+		      "canvas": {
+		       "!type": "+HTMLCanvasElement"
+		      },
+		      "context": {
+		       "!type": "+CanvasRenderingContext2D"
+		      },
+		      "font": {
+		       "!type": "string"
+		      },
+		      "columnWidth": {
+		       "!type": "number"
+		      },
+		      "lineHeight": {
+		       "!type": "number"
+		      },
+		      "renderShadow": {
+		       "!type": "bool"
+		      },
+		      "currentX": {
+		       "!type": "number"
+		      },
+		      "currentY": {
+		       "!type": "number"
+		      },
+		      "currentAlpha": {
+		       "!type": "number"
+		      },
+		      "dirty": {
+		       "!type": "bool"
+		      },
+		      "destroy": {
+		       "!type": "fn()"
+		      }
 		     },
-		     "preUpdate": {
-		      "!type": "fn()"
-		     },
-		     "reset": {
-		      "!type": "fn()"
-		     },
-		     "start": {
-		      "!type": "fn()"
-		     },
-		     "stop": {
-		      "!type": "fn()"
-		     },
-		     "line": {
-		      "!type": "fn()"
-		     },
-		     "soundInfo": {
-		      "!type": "fn()"
-		     },
-		     "cameraInfo": {
-		      "!type": "fn()"
-		     },
-		     "timer": {
-		      "!type": "fn()"
-		     },
-		     "pointer": {
-		      "!type": "fn()"
-		     },
-		     "spriteInputInfo": {
-		      "!type": "fn()"
-		     },
-		     "key": {
-		      "!type": "fn()"
-		     },
-		     "inputInfo": {
-		      "!type": "fn()"
-		     },
-		     "spriteBounds": {
-		      "!type": "fn()"
-		     },
-		     "ropeSegments": {
-		      "!type": "fn()"
-		     },
-		     "spriteInfo": {
-		      "!type": "fn()"
-		     },
-		     "spriteCoords": {
-		      "!type": "fn()"
-		     },
-		     "lineInfo": {
-		      "!type": "fn()"
-		     },
-		     "pixel": {
-		      "!type": "fn()"
-		     },
-		     "geom": {
-		      "!type": "fn(object: +Phaser.Rectangle|?, color: string, filled: bool)"
-		     },
-		     "rectangle": {
-		      "!type": "fn()"
-		     },
-		     "text": {
-		      "!type": "fn()"
-		     },
-		     "quadTree": {
-		      "!type": "fn()"
-		     },
-		     "body": {
-		      "!type": "fn()"
-		     },
-		     "bodyInfo": {
-		      "!type": "fn()"
-		     },
-		     "box2dWorld": {
-		      "!type": "fn()"
-		     },
-		     "box2dBody": {
-		      "!type": "fn()"
-		     },
-		     "!type": "fn(game: +Phaser.Game)",
-		     "game": {
-		      "!type": "+Phaser.Game"
-		     },
-		     "sprite": {
-		      "!type": "+Phaser.Image"
-		     },
-		     "bmd": {
-		      "!type": "+Phaser.BitmapData"
-		     },
-		     "canvas": {
-		      "!type": "+HTMLCanvasElement"
-		     },
-		     "context": {
-		      "!type": "+CanvasRenderingContext2D"
-		     },
-		     "font": {
-		      "!type": "string"
-		     },
-		     "columnWidth": {
-		      "!type": "number"
-		     },
-		     "lineHeight": {
-		      "!type": "number"
-		     },
-		     "renderShadow": {
-		      "!type": "bool"
-		     },
-		     "currentX": {
-		      "!type": "number"
-		     },
-		     "currentY": {
-		      "!type": "number"
-		     },
-		     "currentAlpha": {
-		      "!type": "number"
-		     },
-		     "dirty": {
-		      "!type": "bool"
-		     },
-		     "destroy": {
-		      "!type": "fn()"
-		     }
+		     "!type": "fn(game: +Phaser.Game)"
 		    },
 		    "Debug#boot": {
-		     "context": {},
-		     "bmd": {},
-		     "sprite": {},
-		     "canvas": {}
+		     "prototype": {
+		      "context": {},
+		      "bmd": {},
+		      "sprite": {},
+		      "canvas": {}
+		     }
 		    },
 		    "Debug#preUpdate": {
-		     "dirty": {}
+		     "prototype": {
+		      "dirty": {}
+		     }
 		    },
 		    "Debug#start": {
 		     "x": {},
 		     "y": {},
 		     "color": {},
 		     "columnWidth": {},
-		     "currentX": {},
-		     "currentY": {},
-		     "currentColor": {},
-		     "dirty": {}
+		     "prototype": {
+		      "currentX": {},
+		      "currentY": {},
+		      "currentColor": {},
+		      "columnWidth": {},
+		      "dirty": {}
+		     }
 		    },
 		    "Debug#start#context": {
 		     "strokeStyle": {},
@@ -20393,7 +21541,9 @@
 		    "Debug#line": {
 		     "x": {},
 		     "i": {},
-		     "currentY": {}
+		     "prototype": {
+		      "currentY": {}
+		     }
 		    },
 		    "Debug#line#context": {
 		     "fillStyle": {}
@@ -20484,6 +21634,11 @@
 		     "!type": "fn()",
 		     "chance": {}
 		    },
+		    "prototype": {
+		     "randomChoice": {
+		      "!type": "fn(choice1: +any, choice2: +any) -> ?"
+		     }
+		    },
 		    "randomChoice": {
 		     "!type": "fn()"
 		    },
@@ -20538,54 +21693,56 @@
 		   },
 		   "TweenManager": {
 		    "!type": "fn(game: +Phaser.Game)",
-		    "update": {
-		     "!type": "fn()"
-		    },
-		    "game": {
-		     "!type": "+Phaser.Game"
-		    },
-		    "frameBased": {
-		     "!type": "bool"
-		    },
-		    "_tweens": {
-		     "!type": "+array.<Phaser.Tween>"
-		    },
-		    "_add": {
-		     "!type": "+array.<Phaser.Tween>"
-		    },
-		    "easeMap": {},
-		    "getAll": {
-		     "!type": "fn()"
-		    },
-		    "removeAll": {
-		     "!type": "fn()"
-		    },
-		    "removeFrom": {
-		     "!type": "fn()"
-		    },
-		    "add": {
-		     "!type": "fn()"
-		    },
-		    "create": {
-		     "!type": "fn()"
-		    },
-		    "remove": {
-		     "!type": "fn()"
-		    },
-		    "isTweening": {
-		     "!type": "fn()"
-		    },
-		    "_pauseAll": {
-		     "!type": "fn()"
-		    },
-		    "_resumeAll": {
-		     "!type": "fn()"
-		    },
-		    "pauseAll": {
-		     "!type": "fn()"
-		    },
-		    "resumeAll": {
-		     "!type": "fn()"
+		    "prototype": {
+		     "update": {
+		      "!type": "fn()"
+		     },
+		     "game": {
+		      "!type": "+Phaser.Game"
+		     },
+		     "frameBased": {
+		      "!type": "bool"
+		     },
+		     "_tweens": {
+		      "!type": "+array.<Phaser.Tween>"
+		     },
+		     "_add": {
+		      "!type": "+array.<Phaser.Tween>"
+		     },
+		     "easeMap": {},
+		     "getAll": {
+		      "!type": "fn()"
+		     },
+		     "removeAll": {
+		      "!type": "fn()"
+		     },
+		     "removeFrom": {
+		      "!type": "fn()"
+		     },
+		     "add": {
+		      "!type": "fn()"
+		     },
+		     "create": {
+		      "!type": "fn()"
+		     },
+		     "remove": {
+		      "!type": "fn()"
+		     },
+		     "isTweening": {
+		      "!type": "fn()"
+		     },
+		     "_pauseAll": {
+		      "!type": "fn()"
+		     },
+		     "_resumeAll": {
+		      "!type": "fn()"
+		     },
+		     "pauseAll": {
+		      "!type": "fn()"
+		     },
+		     "resumeAll": {
+		      "!type": "fn()"
+		     }
 		    }
 		   },
 		   "Canvas": {
@@ -20646,230 +21803,244 @@
 		   },
 		   "Device": {
 		    "!type": "fn()",
-		    "deviceReadyAt": {
-		     "!type": "+integer"
-		    },
-		    "initialized": {
-		     "!type": "bool"
-		    },
-		    "desktop": {
-		     "!type": "bool"
-		    },
-		    "iOS": {
-		     "!type": "bool"
-		    },
-		    "cocoonJS": {
-		     "!type": "bool"
-		    },
-		    "cocoonJSApp": {
-		     "!type": "bool"
-		    },
-		    "cordova": {
-		     "!type": "bool"
-		    },
-		    "node": {
-		     "!type": "bool"
-		    },
-		    "nodeWebkit": {
-		     "!type": "bool"
-		    },
-		    "electron": {
-		     "!type": "bool"
-		    },
-		    "ejecta": {
-		     "!type": "bool"
-		    },
-		    "crosswalk": {
-		     "!type": "bool"
-		    },
-		    "android": {
-		     "!type": "bool"
-		    },
-		    "chromeOS": {
-		     "!type": "bool"
-		    },
-		    "linux": {
-		     "!type": "bool"
-		    },
-		    "macOS": {
-		     "!type": "bool"
-		    },
-		    "windows": {
-		     "!type": "bool"
-		    },
-		    "windowsPhone": {
-		     "!type": "bool"
-		    },
-		    "canvas": {
-		     "!type": "bool"
-		    },
-		    "canvasBitBltShift": {
-		     "!type": "bool"
-		    },
-		    "webGL": {
-		     "!type": "bool"
-		    },
-		    "file": {
-		     "!type": "bool"
-		    },
-		    "fileSystem": {
-		     "!type": "bool"
-		    },
-		    "localStorage": {
-		     "!type": "bool"
-		    },
-		    "worker": {
-		     "!type": "bool"
-		    },
-		    "css3D": {
-		     "!type": "bool"
-		    },
-		    "pointerLock": {
-		     "!type": "bool"
-		    },
-		    "typedArray": {
-		     "!type": "bool"
-		    },
-		    "vibration": {
-		     "!type": "bool"
-		    },
-		    "getUserMedia": {
-		     "!type": "bool"
-		    },
-		    "quirksMode": {
-		     "!type": "bool"
-		    },
-		    "touch": {
-		     "!type": "bool"
-		    },
-		    "mspointer": {
-		     "!type": "bool"
-		    },
-		    "wheelEvent": {
-		     "!type": "string"
-		    },
-		    "arora": {
-		     "!type": "bool"
-		    },
-		    "chrome": {
-		     "!type": "bool"
-		    },
-		    "chromeVersion": {
-		     "!type": "number"
-		    },
-		    "epiphany": {
-		     "!type": "bool"
-		    },
-		    "firefox": {
-		     "!type": "bool"
-		    },
-		    "firefoxVersion": {
-		     "!type": "number"
-		    },
-		    "ie": {
-		     "!type": "bool"
-		    },
-		    "ieVersion": {
-		     "!type": "number"
-		    },
-		    "trident": {
-		     "!type": "bool"
-		    },
-		    "tridentVersion": {
-		     "!type": "number"
-		    },
-		    "mobileSafari": {
-		     "!type": "bool"
-		    },
-		    "midori": {
-		     "!type": "bool"
-		    },
-		    "opera": {
-		     "!type": "bool"
-		    },
-		    "safari": {
-		     "!type": "bool"
-		    },
-		    "webApp": {
-		     "!type": "bool"
-		    },
-		    "silk": {
-		     "!type": "bool"
-		    },
-		    "audioData": {
-		     "!type": "bool"
-		    },
-		    "webAudio": {
-		     "!type": "bool"
-		    },
-		    "ogg": {
-		     "!type": "bool"
-		    },
-		    "opus": {
-		     "!type": "bool"
-		    },
-		    "mp3": {
-		     "!type": "bool"
-		    },
-		    "wav": {
-		     "!type": "bool"
-		    },
-		    "m4a": {
-		     "!type": "bool"
-		    },
-		    "webm": {
-		     "!type": "bool"
-		    },
-		    "oggVideo": {
-		     "!type": "bool"
-		    },
-		    "h264Video": {
-		     "!type": "bool"
-		    },
-		    "mp4Video": {
-		     "!type": "bool"
-		    },
-		    "webmVideo": {
-		     "!type": "bool"
-		    },
-		    "vp9Video": {
-		     "!type": "bool"
-		    },
-		    "hlsVideo": {
-		     "!type": "bool"
-		    },
-		    "iPhone": {
-		     "!type": "bool"
-		    },
-		    "iPhone4": {
-		     "!type": "bool"
-		    },
-		    "iPad": {
-		     "!type": "bool"
-		    },
-		    "pixelRatio": {
-		     "!type": "number"
-		    },
-		    "littleEndian": {
-		     "!type": "bool"
-		    },
-		    "LITTLE_ENDIAN": {
-		     "!type": "bool"
-		    },
-		    "support32bit": {
-		     "!type": "bool"
-		    },
-		    "fullscreen": {
-		     "!type": "bool"
-		    },
-		    "requestFullscreen": {
-		     "!type": "string"
-		    },
-		    "cancelFullscreen": {
-		     "!type": "string"
-		    },
-		    "fullscreenKeyboard": {
-		     "!type": "bool"
+		    "prototype": {
+		     "deviceReadyAt": {
+		      "!type": "number"
+		     },
+		     "initialized": {
+		      "!type": "bool"
+		     },
+		     "desktop": {
+		      "!type": "bool"
+		     },
+		     "iOS": {
+		      "!type": "bool"
+		     },
+		     "cocoonJS": {
+		      "!type": "bool"
+		     },
+		     "cocoonJSApp": {
+		      "!type": "bool"
+		     },
+		     "cordova": {
+		      "!type": "bool"
+		     },
+		     "node": {
+		      "!type": "bool"
+		     },
+		     "nodeWebkit": {
+		      "!type": "bool"
+		     },
+		     "electron": {
+		      "!type": "bool"
+		     },
+		     "ejecta": {
+		      "!type": "bool"
+		     },
+		     "crosswalk": {
+		      "!type": "bool"
+		     },
+		     "android": {
+		      "!type": "bool"
+		     },
+		     "chromeOS": {
+		      "!type": "bool"
+		     },
+		     "linux": {
+		      "!type": "bool"
+		     },
+		     "macOS": {
+		      "!type": "bool"
+		     },
+		     "windows": {
+		      "!type": "bool"
+		     },
+		     "windowsPhone": {
+		      "!type": "bool"
+		     },
+		     "canvas": {
+		      "!type": "bool"
+		     },
+		     "canvasBitBltShift": {
+		      "!type": "bool"
+		     },
+		     "webGL": {
+		      "!type": "bool"
+		     },
+		     "file": {
+		      "!type": "bool"
+		     },
+		     "fileSystem": {
+		      "!type": "bool"
+		     },
+		     "localStorage": {
+		      "!type": "bool"
+		     },
+		     "worker": {
+		      "!type": "bool"
+		     },
+		     "css3D": {
+		      "!type": "bool"
+		     },
+		     "pointerLock": {
+		      "!type": "bool"
+		     },
+		     "typedArray": {
+		      "!type": "bool"
+		     },
+		     "vibration": {
+		      "!type": "bool"
+		     },
+		     "getUserMedia": {
+		      "!type": "bool"
+		     },
+		     "quirksMode": {
+		      "!type": "bool"
+		     },
+		     "touch": {
+		      "!type": "bool"
+		     },
+		     "mspointer": {
+		      "!type": "bool"
+		     },
+		     "wheelEvent": {
+		      "!type": "string"
+		     },
+		     "arora": {
+		      "!type": "bool"
+		     },
+		     "chrome": {
+		      "!type": "bool"
+		     },
+		     "chromeVersion": {
+		      "!type": "number"
+		     },
+		     "epiphany": {
+		      "!type": "bool"
+		     },
+		     "firefox": {
+		      "!type": "bool"
+		     },
+		     "firefoxVersion": {
+		      "!type": "number"
+		     },
+		     "ie": {
+		      "!type": "bool"
+		     },
+		     "ieVersion": {
+		      "!type": "number"
+		     },
+		     "trident": {
+		      "!type": "bool"
+		     },
+		     "tridentVersion": {
+		      "!type": "number"
+		     },
+		     "mobileSafari": {
+		      "!type": "bool"
+		     },
+		     "midori": {
+		      "!type": "bool"
+		     },
+		     "opera": {
+		      "!type": "bool"
+		     },
+		     "safari": {
+		      "!type": "bool"
+		     },
+		     "webApp": {
+		      "!type": "bool"
+		     },
+		     "silk": {
+		      "!type": "bool"
+		     },
+		     "audioData": {
+		      "!type": "bool"
+		     },
+		     "webAudio": {
+		      "!type": "bool"
+		     },
+		     "ogg": {
+		      "!type": "bool"
+		     },
+		     "opus": {
+		      "!type": "bool"
+		     },
+		     "mp3": {
+		      "!type": "bool"
+		     },
+		     "wav": {
+		      "!type": "bool"
+		     },
+		     "m4a": {
+		      "!type": "bool"
+		     },
+		     "webm": {
+		      "!type": "bool"
+		     },
+		     "oggVideo": {
+		      "!type": "bool"
+		     },
+		     "h264Video": {
+		      "!type": "bool"
+		     },
+		     "mp4Video": {
+		      "!type": "bool"
+		     },
+		     "webmVideo": {
+		      "!type": "bool"
+		     },
+		     "vp9Video": {
+		      "!type": "bool"
+		     },
+		     "hlsVideo": {
+		      "!type": "bool"
+		     },
+		     "iPhone": {
+		      "!type": "bool"
+		     },
+		     "iPhone4": {
+		      "!type": "bool"
+		     },
+		     "iPad": {
+		      "!type": "bool"
+		     },
+		     "pixelRatio": {
+		      "!type": "number"
+		     },
+		     "littleEndian": {
+		      "!type": "bool"
+		     },
+		     "LITTLE_ENDIAN": {
+		      "!type": "bool"
+		     },
+		     "support32bit": {
+		      "!type": "bool"
+		     },
+		     "fullscreen": {
+		      "!type": "bool"
+		     },
+		     "requestFullscreen": {
+		      "!type": "string"
+		     },
+		     "cancelFullscreen": {
+		      "!type": "string"
+		     },
+		     "fullscreenKeyboard": {
+		      "!type": "bool"
+		     },
+		     "canPlayAudio": {
+		      "!type": "fn(type: string) -> ?"
+		     },
+		     "canPlayVideo": {
+		      "!type": "fn(type: string) -> ?"
+		     },
+		     "isConsoleOpen": {
+		      "!type": "fn()"
+		     },
+		     "isAndroidStockBrowser": {
+		      "!type": "fn()"
+		     }
 		    },
 		    "onInitialized": {},
 		    "whenReady": {
@@ -20885,14 +22056,16 @@
 		    "_readyCheck": {
 		     "!type": "fn()",
 		     "readyCheck": {},
-		     "deviceReadyAt": {},
-		     "initialized": {},
+		     "prototype": {
+		      "deviceReadyAt": {},
+		      "initialized": {},
+		      "_readyCheck": {},
+		      "_initialize": {},
+		      "onInitialized": {}
+		     },
 		     "item": {},
 		     "callback": {},
-		     "context": {},
-		     "_readyCheck": {},
-		     "_initialize": {},
-		     "onInitialized": {}
+		     "context": {}
 		    },
 		    "_initialize": {
 		     "!type": "fn()",
@@ -21149,341 +22322,499 @@
 		   },
 		   "RequestAnimationFrame": {
 		    "!type": "fn(game: +Phaser.Game, forceSetTimeOut: bool)",
-		    "forceSetTimeOut": {
-		     "!type": "bool"
-		    },
-		    "game": {
-		     "!type": "+Phaser.Game"
-		    },
-		    "isRunning": {
-		     "!type": "bool"
+		    "forceSetTimeOut": {},
+		    "prototype": {
+		     "game": {
+		      "!type": "+Phaser.Game"
+		     },
+		     "isRunning": {
+		      "!type": "bool"
+		     },
+		     "forceSetTimeOut": {
+		      "!type": "bool"
+		     },
+		     "_isSetTimeOut": {
+		      "!type": "bool"
+		     },
+		     "_onLoop": {
+		      "!type": "+function"
+		     },
+		     "_timeOutID": {
+		      "!type": "number"
+		     },
+		     "start": {
+		      "!type": "fn()"
+		     },
+		     "updateRAF": {
+		      "!type": "fn()"
+		     },
+		     "updateSetTimeout": {
+		      "!type": "fn()"
+		     },
+		     "stop": {
+		      "!type": "fn()"
+		     },
+		     "isSetTimeOut": {
+		      "!type": "fn()"
+		     },
+		     "isRAF": {
+		      "!type": "fn()"
+		     }
 		    },
 		    "vendors": {},
-		    "x": {},
-		    "_isSetTimeOut": {
-		     "!type": "bool"
-		    },
-		    "_onLoop": {
-		     "!type": "+function"
-		    },
-		    "_timeOutID": {
-		     "!type": "number"
-		    },
-		    "start": {
-		     "!type": "fn()"
-		    },
-		    "updateRAF": {
-		     "!type": "fn()"
-		    },
-		    "updateSetTimeout": {
-		     "!type": "fn()"
-		    },
-		    "stop": {
-		     "!type": "fn()"
-		    },
-		    "isSetTimeOut": {
-		     "!type": "fn()"
-		    },
-		    "isRAF": {
-		     "!type": "fn()"
-		    }
+		    "x": {}
 		   },
 		   "RequestAnimationFrame#start": {
-		    "isRunning": {},
-		    "_this": {},
-		    "_isSetTimeOut": {},
-		    "_onLoop": {
-		     "!type": "fn()"
+		    "prototype": {
+		     "isRunning": {},
+		     "_isSetTimeOut": {},
+		     "_onLoop": {
+		      "!type": "fn()"
+		     },
+		     "_timeOutID": {}
 		    },
-		    "_timeOutID": {}
+		    "_this": {}
 		   },
 		   "RequestAnimationFrame#updateRAF": {
-		    "_timeOutID": {}
+		    "prototype": {
+		     "_timeOutID": {}
+		    }
 		   },
 		   "RequestAnimationFrame#updateSetTimeout": {
-		    "_timeOutID": {}
+		    "prototype": {
+		     "_timeOutID": {}
+		    }
 		   },
 		   "RequestAnimationFrame#stop": {
-		    "isRunning": {}
+		    "prototype": {
+		     "isRunning": {}
+		    }
 		   },
 		   "ImageCollection": {
-		    "!type": "fn(name: string, firstgid: +integer, width: +integer, height: +integer, margin: +integer, spacing: +integer, properties: ?)",
+		    "!type": "fn(name: string, firstgid: number, width: number, height: number, margin: number, spacing: number, properties: ?)",
 		    "width": {},
 		    "height": {},
 		    "margin": {},
 		    "spacing": {},
-		    "name": {
-		     "!type": "string"
-		    },
-		    "firstgid": {
-		     "!type": "+integer"
-		    },
-		    "imageWidth": {
-		     "!type": "+integer"
-		    },
-		    "imageHeight": {
-		     "!type": "+integer"
-		    },
-		    "imageMargin": {
-		     "!type": "+integer"
-		    },
-		    "imageSpacing": {
-		     "!type": "+integer"
-		    },
-		    "properties": {
-		     "!type": "?"
-		    },
-		    "images": {
-		     "!type": "+array"
-		    },
-		    "total": {
-		     "!type": "+integer"
-		    },
-		    "containsImageIndex": {
-		     "!type": "fn()"
-		    },
-		    "addImage": {
-		     "!type": "fn()"
+		    "prototype": {
+		     "name": {
+		      "!type": "string"
+		     },
+		     "firstgid": {
+		      "!type": "number"
+		     },
+		     "imageWidth": {
+		      "!type": "number"
+		     },
+		     "imageHeight": {
+		      "!type": "number"
+		     },
+		     "imageMargin": {
+		      "!type": "number"
+		     },
+		     "imageSpacing": {
+		      "!type": "number"
+		     },
+		     "properties": {},
+		     "images": {
+		      "!type": "+array"
+		     },
+		     "total": {
+		      "!type": "number"
+		     },
+		     "containsImageIndex": {
+		      "!type": "fn()"
+		     },
+		     "addImage": {
+		      "!type": "fn()"
+		     }
 		    }
 		   },
 		   "Tile": {
 		    "!type": "fn(layer: ?, index: number, x: number, y: number, width: number, height: number)",
-		    "layer": {
-		     "!type": "?"
-		    },
-		    "index": {
-		     "!type": "number"
-		    },
-		    "x": {
-		     "!type": "number"
-		    },
-		    "y": {
-		     "!type": "number"
-		    },
-		    "rotation": {
-		     "!type": "number"
-		    },
-		    "flipped": {
-		     "!type": "bool"
-		    },
-		    "worldX": {
-		     "!type": "number"
-		    },
-		    "worldY": {
-		     "!type": "number"
-		    },
-		    "width": {
-		     "!type": "number"
-		    },
-		    "height": {
-		     "!type": "number"
-		    },
-		    "centerX": {
-		     "!type": "number"
-		    },
-		    "centerY": {
-		     "!type": "number"
-		    },
-		    "alpha": {
-		     "!type": "number"
-		    },
-		    "properties": {
-		     "!type": "?"
-		    },
-		    "scanned": {
-		     "!type": "bool"
-		    },
-		    "faceTop": {
-		     "!type": "bool"
-		    },
-		    "faceBottom": {
-		     "!type": "bool"
-		    },
-		    "faceLeft": {
-		     "!type": "bool"
-		    },
-		    "faceRight": {
-		     "!type": "bool"
-		    },
-		    "collideLeft": {
-		     "!type": "bool"
-		    },
-		    "collideRight": {
-		     "!type": "bool"
-		    },
-		    "collideUp": {
-		     "!type": "bool"
-		    },
-		    "collideDown": {
-		     "!type": "bool"
-		    },
-		    "collisionCallback": {
-		     "!type": "+function"
-		    },
-		    "collisionCallbackContext": {
-		     "!type": "?"
-		    },
-		    "containsPoint": {
-		     "!type": "fn()"
-		    },
-		    "intersects": {
-		     "!type": "fn()"
-		    },
-		    "setCollisionCallback": {
-		     "!type": "fn()"
-		    },
-		    "destroy": {
-		     "!type": "fn()"
-		    },
-		    "setCollision": {
-		     "!type": "fn()"
-		    },
-		    "resetCollision": {
-		     "!type": "fn()"
-		    },
-		    "isInteresting": {
-		     "!type": "fn()"
-		    },
-		    "copy": {
-		     "!type": "fn()"
-		    },
-		    "collides": {
-		     "!type": "bool"
-		    },
-		    "canCollide": {
-		     "!type": "bool"
-		    },
-		    "left": {
-		     "!type": "number"
-		    },
-		    "right": {
-		     "!type": "number"
-		    },
-		    "top": {
-		     "!type": "number"
-		    },
-		    "bottom": {
-		     "!type": "number"
+		    "prototype": {
+		     "layer": {},
+		     "index": {
+		      "!type": "number"
+		     },
+		     "x": {
+		      "!type": "number"
+		     },
+		     "y": {
+		      "!type": "number"
+		     },
+		     "rotation": {
+		      "!type": "number"
+		     },
+		     "flipped": {
+		      "!type": "bool"
+		     },
+		     "worldX": {
+		      "!type": "number"
+		     },
+		     "worldY": {
+		      "!type": "number"
+		     },
+		     "width": {
+		      "!type": "number"
+		     },
+		     "height": {
+		      "!type": "number"
+		     },
+		     "centerX": {
+		      "!type": "number"
+		     },
+		     "centerY": {
+		      "!type": "number"
+		     },
+		     "alpha": {
+		      "!type": "number"
+		     },
+		     "properties": {},
+		     "scanned": {
+		      "!type": "bool"
+		     },
+		     "faceTop": {
+		      "!type": "bool"
+		     },
+		     "faceBottom": {
+		      "!type": "bool"
+		     },
+		     "faceLeft": {
+		      "!type": "bool"
+		     },
+		     "faceRight": {
+		      "!type": "bool"
+		     },
+		     "collideLeft": {
+		      "!type": "bool"
+		     },
+		     "collideRight": {
+		      "!type": "bool"
+		     },
+		     "collideUp": {
+		      "!type": "bool"
+		     },
+		     "collideDown": {
+		      "!type": "bool"
+		     },
+		     "collisionCallback": {
+		      "!type": "+function"
+		     },
+		     "collisionCallbackContext": {},
+		     "containsPoint": {
+		      "!type": "fn()"
+		     },
+		     "intersects": {
+		      "!type": "fn()"
+		     },
+		     "setCollisionCallback": {
+		      "!type": "fn()"
+		     },
+		     "destroy": {
+		      "!type": "fn()"
+		     },
+		     "setCollision": {
+		      "!type": "fn()"
+		     },
+		     "resetCollision": {
+		      "!type": "fn()"
+		     },
+		     "isInteresting": {
+		      "!type": "fn()"
+		     },
+		     "copy": {
+		      "!type": "fn()"
+		     },
+		     "collides": {
+		      "!type": "bool"
+		     },
+		     "canCollide": {
+		      "!type": "bool"
+		     },
+		     "left": {
+		      "!type": "number"
+		     },
+		     "right": {
+		      "!type": "number"
+		     },
+		     "top": {
+		      "!type": "number"
+		     },
+		     "bottom": {
+		      "!type": "number"
+		     }
 		    }
 		   },
 		   "Tile#setCollisionCallback": {
-		    "collisionCallback": {},
-		    "collisionCallbackContext": {}
+		    "prototype": {
+		     "collisionCallback": {},
+		     "collisionCallbackContext": {}
+		    }
 		   },
 		   "Tile#destroy": {
-		    "collisionCallback": {},
-		    "collisionCallbackContext": {},
-		    "properties": {}
+		    "prototype": {
+		     "collisionCallback": {},
+		     "collisionCallbackContext": {},
+		     "properties": {}
+		    }
 		   },
 		   "Tile#setCollision": {
-		    "collideLeft": {},
-		    "collideRight": {},
-		    "collideUp": {},
-		    "collideDown": {},
-		    "faceLeft": {},
-		    "faceRight": {},
-		    "faceTop": {},
-		    "faceBottom": {}
+		    "prototype": {
+		     "collideLeft": {},
+		     "collideRight": {},
+		     "collideUp": {},
+		     "collideDown": {},
+		     "faceLeft": {},
+		     "faceRight": {},
+		     "faceTop": {},
+		     "faceBottom": {}
+		    }
 		   },
 		   "Tile#resetCollision": {
-		    "collideLeft": {},
-		    "collideRight": {},
-		    "collideUp": {},
-		    "collideDown": {},
-		    "faceTop": {},
-		    "faceBottom": {},
-		    "faceLeft": {},
-		    "faceRight": {}
+		    "prototype": {
+		     "collideLeft": {},
+		     "collideRight": {},
+		     "collideUp": {},
+		     "collideDown": {},
+		     "faceTop": {},
+		     "faceBottom": {},
+		     "faceLeft": {},
+		     "faceRight": {}
+		    }
 		   },
 		   "Tile#copy": {
-		    "index": {},
-		    "alpha": {},
-		    "properties": {},
-		    "collideUp": {},
-		    "collideDown": {},
-		    "collideLeft": {},
-		    "collideRight": {},
-		    "collisionCallback": {},
-		    "collisionCallbackContext": {}
+		    "prototype": {
+		     "index": {},
+		     "alpha": {},
+		     "properties": {},
+		     "collideUp": {},
+		     "collideDown": {},
+		     "collideLeft": {},
+		     "collideRight": {},
+		     "collisionCallback": {},
+		     "collisionCallbackContext": {}
+		    }
 		   },
 		   "Tilemap": {
 		    "!type": "fn(game: +Phaser.Game, key: string, tileWidth: number, tileHeight: number, width: number, height: number)",
-		    "game": {
-		     "!type": "+Phaser.Game"
-		    },
-		    "key": {
-		     "!type": "string"
+		    "prototype": {
+		     "game": {
+		      "!type": "+Phaser.Game"
+		     },
+		     "key": {
+		      "!type": "string"
+		     },
+		     "width": {
+		      "!type": "number"
+		     },
+		     "height": {
+		      "!type": "number"
+		     },
+		     "tileWidth": {
+		      "!type": "number"
+		     },
+		     "tileHeight": {
+		      "!type": "number"
+		     },
+		     "orientation": {
+		      "!type": "string"
+		     },
+		     "format": {
+		      "!type": "number"
+		     },
+		     "version": {
+		      "!type": "number"
+		     },
+		     "properties": {},
+		     "widthInPixels": {
+		      "!type": "number"
+		     },
+		     "heightInPixels": {
+		      "!type": "number"
+		     },
+		     "layers": {
+		      "!type": "+array"
+		     },
+		     "tilesets": {
+		      "!type": "+array"
+		     },
+		     "imagecollections": {
+		      "!type": "+array"
+		     },
+		     "tiles": {
+		      "!type": "+array"
+		     },
+		     "objects": {
+		      "!type": "+array"
+		     },
+		     "collideIndexes": {
+		      "!type": "+array"
+		     },
+		     "collision": {
+		      "!type": "+array"
+		     },
+		     "images": {
+		      "!type": "+array"
+		     },
+		     "currentLayer": {
+		      "!type": "number"
+		     },
+		     "debugMap": {
+		      "!type": "+array"
+		     },
+		     "_results": {
+		      "!type": "+array"
+		     },
+		     "_tempA": {
+		      "!type": "number"
+		     },
+		     "_tempB": {
+		      "!type": "number"
+		     },
+		     "create": {
+		      "!type": "fn()"
+		     },
+		     "setTileSize": {
+		      "!type": "fn()"
+		     },
+		     "addTilesetImage": {
+		      "!type": "fn()"
+		     },
+		     "createFromObjects": {
+		      "!type": "fn()"
+		     },
+		     "createFromTiles": {
+		      "!type": "fn()"
+		     },
+		     "createLayer": {
+		      "!type": "fn()"
+		     },
+		     "createBlankLayer": {
+		      "!type": "fn()"
+		     },
+		     "getIndex": {
+		      "!type": "fn()"
+		     },
+		     "getLayerIndex": {
+		      "!type": "fn()"
+		     },
+		     "getTilesetIndex": {
+		      "!type": "fn()"
+		     },
+		     "getImageIndex": {
+		      "!type": "fn()"
+		     },
+		     "getObjectIndex": {
+		      "!type": "fn()"
+		     },
+		     "setTileIndexCallback": {
+		      "!type": "fn()"
+		     },
+		     "setTileLocationCallback": {
+		      "!type": "fn()"
+		     },
+		     "setCollision": {
+		      "!type": "fn()"
+		     },
+		     "setCollisionBetween": {
+		      "!type": "fn()"
+		     },
+		     "setCollisionByExclusion": {
+		      "!type": "fn()"
+		     },
+		     "setCollisionByIndex": {
+		      "!type": "fn()"
+		     },
+		     "getLayer": {
+		      "!type": "fn()"
+		     },
+		     "setPreventRecalculate": {
+		      "!type": "fn()"
+		     },
+		     "calculateFaces": {
+		      "!type": "fn()"
+		     },
+		     "getTileAbove": {
+		      "!type": "fn()"
+		     },
+		     "getTileBelow": {
+		      "!type": "fn()"
+		     },
+		     "getTileLeft": {
+		      "!type": "fn()"
+		     },
+		     "getTileRight": {
+		      "!type": "fn()"
+		     },
+		     "setLayer": {
+		      "!type": "fn()"
+		     },
+		     "hasTile": {
+		      "!type": "fn()"
+		     },
+		     "removeTile": {
+		      "!type": "fn()"
+		     },
+		     "removeTileWorldXY": {
+		      "!type": "fn()"
+		     },
+		     "putTile": {
+		      "!type": "fn()"
+		     },
+		     "putTileWorldXY": {
+		      "!type": "fn()"
+		     },
+		     "searchTileIndex": {
+		      "!type": "fn()"
+		     },
+		     "getTile": {
+		      "!type": "fn()"
+		     },
+		     "getTileWorldXY": {
+		      "!type": "fn()"
+		     },
+		     "copy": {
+		      "!type": "fn()"
+		     },
+		     "paste": {
+		      "!type": "fn()"
+		     },
+		     "swap": {
+		      "!type": "fn()"
+		     },
+		     "swapHandler": {
+		      "!type": "fn()"
+		     },
+		     "forEach": {
+		      "!type": "fn()"
+		     },
+		     "replace": {
+		      "!type": "fn()"
+		     },
+		     "random": {
+		      "!type": "fn()"
+		     },
+		     "shuffle": {
+		      "!type": "fn()"
+		     },
+		     "fill": {
+		      "!type": "fn()"
+		     },
+		     "removeAllLayers": {
+		      "!type": "fn()"
+		     },
+		     "dump": {
+		      "!type": "fn()"
+		     },
+		     "destroy": {
+		      "!type": "fn()"
+		     },
+		     "layer": {
+		      "!type": "number|string|+Phaser.TilemapLayer"
+		     }
 		    },
 		    "data": {},
-		    "width": {
-		     "!type": "number"
-		    },
-		    "height": {
-		     "!type": "number"
-		    },
-		    "tileWidth": {
-		     "!type": "number"
-		    },
-		    "tileHeight": {
-		     "!type": "number"
-		    },
-		    "orientation": {
-		     "!type": "string"
-		    },
-		    "format": {
-		     "!type": "number"
-		    },
-		    "version": {
-		     "!type": "number"
-		    },
-		    "properties": {
-		     "!type": "?"
-		    },
-		    "widthInPixels": {
-		     "!type": "number"
-		    },
-		    "heightInPixels": {
-		     "!type": "number"
-		    },
-		    "layers": {
-		     "!type": "+array"
-		    },
-		    "tilesets": {
-		     "!type": "+array"
-		    },
-		    "imagecollections": {
-		     "!type": "+array"
-		    },
-		    "tiles": {
-		     "!type": "+array"
-		    },
-		    "objects": {
-		     "!type": "+array"
-		    },
-		    "collideIndexes": {
-		     "!type": "+array"
-		    },
-		    "collision": {
-		     "!type": "+array"
-		    },
-		    "images": {
-		     "!type": "+array"
-		    },
-		    "currentLayer": {
-		     "!type": "number"
-		    },
-		    "debugMap": {
-		     "!type": "+array"
-		    },
-		    "_results": {
-		     "!type": "+array"
-		    },
-		    "_tempA": {
-		     "!type": "number"
-		    },
-		    "_tempB": {
-		     "!type": "number"
-		    },
 		    "CSV": {
 		     "!type": "number"
 		    },
@@ -21501,162 +22832,25 @@
 		    },
 		    "WEST": {
 		     "!type": "number"
-		    },
-		    "create": {
-		     "!type": "fn()"
-		    },
-		    "setTileSize": {
-		     "!type": "fn()"
-		    },
-		    "addTilesetImage": {
-		     "!type": "fn()"
-		    },
-		    "createFromObjects": {
-		     "!type": "fn()"
-		    },
-		    "createFromTiles": {
-		     "!type": "fn()"
-		    },
-		    "createLayer": {
-		     "!type": "fn()"
-		    },
-		    "createBlankLayer": {
-		     "!type": "fn()"
-		    },
-		    "getIndex": {
-		     "!type": "fn()"
-		    },
-		    "getLayerIndex": {
-		     "!type": "fn()"
-		    },
-		    "getTilesetIndex": {
-		     "!type": "fn()"
-		    },
-		    "getImageIndex": {
-		     "!type": "fn()"
-		    },
-		    "getObjectIndex": {
-		     "!type": "fn()"
-		    },
-		    "setTileIndexCallback": {
-		     "!type": "fn()"
-		    },
-		    "setTileLocationCallback": {
-		     "!type": "fn()"
-		    },
-		    "setCollision": {
-		     "!type": "fn()"
-		    },
-		    "setCollisionBetween": {
-		     "!type": "fn()"
-		    },
-		    "setCollisionByExclusion": {
-		     "!type": "fn()"
-		    },
-		    "setCollisionByIndex": {
-		     "!type": "fn()"
-		    },
-		    "getLayer": {
-		     "!type": "fn()"
-		    },
-		    "setPreventRecalculate": {
-		     "!type": "fn()"
-		    },
-		    "calculateFaces": {
-		     "!type": "fn()"
-		    },
-		    "getTileAbove": {
-		     "!type": "fn()"
-		    },
-		    "getTileBelow": {
-		     "!type": "fn()"
-		    },
-		    "getTileLeft": {
-		     "!type": "fn()"
-		    },
-		    "getTileRight": {
-		     "!type": "fn()"
-		    },
-		    "setLayer": {
-		     "!type": "fn()"
-		    },
-		    "hasTile": {
-		     "!type": "fn()"
-		    },
-		    "removeTile": {
-		     "!type": "fn()"
-		    },
-		    "removeTileWorldXY": {
-		     "!type": "fn()"
-		    },
-		    "putTile": {
-		     "!type": "fn()"
-		    },
-		    "putTileWorldXY": {
-		     "!type": "fn()"
-		    },
-		    "searchTileIndex": {
-		     "!type": "fn()"
-		    },
-		    "getTile": {
-		     "!type": "fn()"
-		    },
-		    "getTileWorldXY": {
-		     "!type": "fn()"
-		    },
-		    "copy": {
-		     "!type": "fn()"
-		    },
-		    "paste": {
-		     "!type": "fn()"
-		    },
-		    "swap": {
-		     "!type": "fn()"
-		    },
-		    "swapHandler": {
-		     "!type": "fn()"
-		    },
-		    "forEach": {
-		     "!type": "fn()"
-		    },
-		    "replace": {
-		     "!type": "fn()"
-		    },
-		    "random": {
-		     "!type": "fn()"
-		    },
-		    "shuffle": {
-		     "!type": "fn()"
-		    },
-		    "fill": {
-		     "!type": "fn()"
-		    },
-		    "removeAllLayers": {
-		     "!type": "fn()"
-		    },
-		    "dump": {
-		     "!type": "fn()"
-		    },
-		    "destroy": {
-		     "!type": "fn()"
-		    },
-		    "layer": {
-		     "!type": "number|string|+Phaser.TilemapLayer"
 		    }
 		   },
 		   "Tilemap#create": {
 		    "group": {},
-		    "width": {},
-		    "height": {}
+		    "prototype": {
+		     "width": {},
+		     "height": {}
+		    }
 		   },
 		   "Tilemap#create#layers": {
 		    "length": {}
 		   },
 		   "Tilemap#setTileSize": {
-		    "tileWidth": {},
-		    "tileHeight": {},
-		    "widthInPixels": {},
-		    "heightInPixels": {}
+		    "prototype": {
+		     "tileWidth": {},
+		     "tileHeight": {},
+		     "widthInPixels": {},
+		     "heightInPixels": {}
+		    }
 		   },
 		   "Tilemap#addTilesetImage": {
 		    "tileWidth": {},
@@ -21675,7 +22869,9 @@
 		    "countX": {},
 		    "countY": {},
 		    "t": {},
-		    "tiles[undefined]": {}
+		    "prototype": {
+		     "tiles[undefined]": {}
+		    }
 		   },
 		   "Tilemap#createFromObjects": {
 		    "exists": {},
@@ -21733,7 +22929,9 @@
 		    "output": {},
 		    "y": {},
 		    "x": {},
-		    "currentLayer": {},
+		    "prototype": {
+		     "currentLayer": {}
+		    },
 		    "w": {},
 		    "h": {}
 		   },
@@ -21812,12 +23010,16 @@
 		    "layer": {}
 		   },
 		   "Tilemap#setPreventRecalculate": {
-		    "preventingRecalculate": {},
-		    "needToRecalculate": {},
+		    "prototype": {
+		     "preventingRecalculate": {},
+		     "needToRecalculate": {}
+		    },
 		    "i": {}
 		   },
 		   "Tilemap#calculateFaces": {
-		    "needToRecalculate[undefined]": {},
+		    "prototype": {
+		     "needToRecalculate[undefined]": {}
+		    },
 		    "above": {},
 		    "below": {},
 		    "left": {},
@@ -21836,7 +23038,9 @@
 		   },
 		   "Tilemap#setLayer": {
 		    "layer": {},
-		    "currentLayer": {}
+		    "prototype": {
+		     "currentLayer": {}
+		    }
 		   },
 		   "Tilemap#hasTile": {
 		    "layer": {}
@@ -21913,8 +23117,10 @@
 		   },
 		   "Tilemap#swap": {
 		    "layer": {},
-		    "_tempA": {},
-		    "_tempB": {}
+		    "prototype": {
+		     "_tempA": {},
+		     "_tempB": {}
+		    }
 		   },
 		   "Tilemap#forEach": {
 		    "layer": {}
@@ -21956,7 +23162,9 @@
 		    "length": {}
 		   },
 		   "Tilemap#removeAllLayers": {
-		    "currentLayer": {}
+		    "prototype": {
+		     "currentLayer": {}
+		    }
 		   },
 		   "Tilemap#dump": {
 		    "txt": {},
@@ -21968,393 +23176,376 @@
 		    "0]": {}
 		   },
 		   "Tilemap#destroy": {
-		    "data": {},
-		    "game": {}
+		    "prototype": {
+		     "data": {},
+		     "game": {}
+		    }
 		   },
 		   "TilemapLayer": {
-		    "!type": "fn(game: +Phaser.Game, tilemap: +Phaser.Tilemap, index: +integer, width: +integer, height: +integer)",
+		    "!type": "fn(game: +Phaser.Game, tilemap: +Phaser.Tilemap, index: number, width: number, height: number)",
 		    "width": {},
 		    "height": {},
-		    "map": {
-		     "!type": "+Phaser.Tilemap"
+		    "prototype": {
+		     "map": {
+		      "!type": "+Phaser.Tilemap"
+		     },
+		     "index": {
+		      "!type": "number"
+		     },
+		     "layer": {},
+		     "canvas": {
+		      "!type": "+HTMLCanvasElement"
+		     },
+		     "context": {
+		      "!type": "+CanvasRenderingContext2D"
+		     },
+		     "type": {
+		      "!type": "number"
+		     },
+		     "physicsType": {
+		      "!type": "number"
+		     },
+		     "renderSettings": {
+		      "!type": "bool"
+		     },
+		     "debug": {
+		      "!type": "bool"
+		     },
+		     "exists": {
+		      "!type": "bool"
+		     },
+		     "debugSettings": {
+		      "!type": "string"
+		     },
+		     "scrollFactorX": {
+		      "!type": "number"
+		     },
+		     "scrollFactorY": {
+		      "!type": "number"
+		     },
+		     "dirty": {
+		      "!type": "bool"
+		     },
+		     "rayStepRate": {
+		      "!type": "number"
+		     },
+		     "_wrap": {
+		      "!type": "bool"
+		     },
+		     "_mc": {},
+		     "_scrollX": {
+		      "!type": "number"
+		     },
+		     "_scrollY": {},
+		     "_results": {
+		      "!type": "[?]"
+		     },
+		     "fixedToCamera": {
+		      "!type": "bool"
+		     },
+		     "preUpdateCore": {},
+		     "ensureSharedCopyCanvas": {
+		      "!type": "fn()"
+		     },
+		     "preUpdate": {
+		      "!type": "fn()"
+		     },
+		     "postUpdate": {
+		      "!type": "fn()"
+		     },
+		     "destroy": {
+		      "!type": "fn()"
+		     },
+		     "resize": {
+		      "!type": "fn()"
+		     },
+		     "resizeWorld": {
+		      "!type": "fn()"
+		     },
+		     "_fixX": {
+		      "!type": "fn()"
+		     },
+		     "_unfixX": {
+		      "!type": "fn()"
+		     },
+		     "_fixY": {
+		      "!type": "fn()"
+		     },
+		     "_unfixY": {
+		      "!type": "fn()"
+		     },
+		     "getTileX": {
+		      "!type": "fn()"
+		     },
+		     "getTileY": {
+		      "!type": "fn()"
+		     },
+		     "getTileXY": {
+		      "!type": "fn()"
+		     },
+		     "getRayCastTiles": {
+		      "!type": "fn()"
+		     },
+		     "getTiles": {
+		      "!type": "fn()"
+		     },
+		     "resolveTileset": {
+		      "!type": "fn()"
+		     },
+		     "resetTilesetCache": {
+		      "!type": "fn()"
+		     },
+		     "setScale": {
+		      "!type": "fn()"
+		     },
+		     "shiftCanvas": {
+		      "!type": "fn()"
+		     },
+		     "renderRegion": {
+		      "!type": "fn()"
+		     },
+		     "renderDeltaScroll": {
+		      "!type": "fn()"
+		     },
+		     "renderFull": {
+		      "!type": "fn()"
+		     },
+		     "render": {
+		      "!type": "fn()"
+		     },
+		     "renderDebug": {
+		      "!type": "fn()"
+		     },
+		     "anchor": {},
+		     "texture": {},
+		     "_width": {},
+		     "_height": {},
+		     "tint": {},
+		     "cachedTint": {},
+		     "tintedTexture": {},
+		     "blendMode": {},
+		     "shader": {},
+		     "game": {
+		      "!type": "+Phaser.Game"
+		     },
+		     "name": {
+		      "!type": "string"
+		     },
+		     "components": {},
+		     "z": {
+		      "!type": "number"
+		     },
+		     "events": {
+		      "!type": "+Phaser.Events"
+		     },
+		     "animations": {
+		      "!type": "+Phaser.AnimationManager"
+		     },
+		     "key": {
+		      "!type": "string|+Phaser.RenderTexture|+Phaser.BitmapData|+Phaser.Video|+PIXI.Texture"
+		     },
+		     "world": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "previousPosition": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "previousRotation": {
+		      "!type": "number"
+		     },
+		     "renderOrderID": {
+		      "!type": "number"
+		     },
+		     "fresh": {
+		      "!type": "bool"
+		     },
+		     "pendingDestroy": {
+		      "!type": "bool"
+		     },
+		     "_bounds": {
+		      "!type": "+Phaser.Rectangle"
+		     },
+		     "_exists": {
+		      "!type": "bool"
+		     },
+		     "update": {
+		      "!type": "fn()"
+		     },
+		     "angle": {
+		      "!type": "number"
+		     },
+		     "play": {
+		      "!type": "fn(name: string, frameRate: number, loop: bool, killOnComplete: bool) -> ?"
+		     },
+		     "autoCull": {
+		      "!type": "bool"
+		     },
+		     "inCamera": {
+		      "!type": "bool"
+		     },
+		     "offsetX": {
+		      "!type": "number"
+		     },
+		     "offsetY": {
+		      "!type": "number"
+		     },
+		     "left": {
+		      "!type": "number"
+		     },
+		     "right": {
+		      "!type": "number"
+		     },
+		     "top": {
+		      "!type": "number"
+		     },
+		     "bottom": {
+		      "!type": "number"
+		     },
+		     "bringToTop": {
+		      "!type": "fn() -> ?"
+		     },
+		     "sendToBack": {
+		      "!type": "fn() -> ?"
+		     },
+		     "moveUp": {
+		      "!type": "fn() -> ?"
+		     },
+		     "moveDown": {
+		      "!type": "fn() -> ?"
+		     },
+		     "cropRect": {
+		      "!type": "+Phaser.Rectangle"
+		     },
+		     "_crop": {
+		      "!type": "+Phaser.Rectangle"
+		     },
+		     "crop": {
+		      "!type": "fn(rect: +Phaser.Rectangle, copy: bool)"
+		     },
+		     "updateCrop": {
+		      "!type": "fn()"
+		     },
+		     "deltaX": {
+		      "!type": "number"
+		     },
+		     "deltaY": {
+		      "!type": "number"
+		     },
+		     "deltaZ": {
+		      "!type": "number"
+		     },
+		     "destroyPhase": {
+		      "!type": "bool"
+		     },
+		     "_fixedToCamera": {
+		      "!type": "bool"
+		     },
+		     "cameraOffset": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "health": {
+		      "!type": "number"
+		     },
+		     "maxHealth": {
+		      "!type": "number"
+		     },
+		     "damage": {},
+		     "heal": {},
+		     "input": {
+		      "!type": "+Phaser.InputHandler|+null"
+		     },
+		     "inputEnabled": {
+		      "!type": "bool"
+		     },
+		     "checkWorldBounds": {
+		      "!type": "bool"
+		     },
+		     "outOfBoundsKill": {
+		      "!type": "bool"
+		     },
+		     "_outOfBoundsFired": {
+		      "!type": "bool"
+		     },
+		     "inWorld": {
+		      "!type": "bool"
+		     },
+		     "alive": {
+		      "!type": "bool"
+		     },
+		     "lifespan": {
+		      "!type": "number"
+		     },
+		     "revive": {
+		      "!type": "fn(health: number) -> ?"
+		     },
+		     "kill": {
+		      "!type": "fn() -> ?"
+		     },
+		     "customRender": {
+		      "!type": "bool"
+		     },
+		     "_frame": {
+		      "!type": "+Phaser.Rectangle"
+		     },
+		     "loadTexture": {
+		      "!type": "fn(key: string|+Phaser.RenderTexture|+Phaser.BitmapData|+Phaser.Video|+PIXI.Texture, frame: string|number, stopAnimation: bool)"
+		     },
+		     "setFrame": {
+		      "!type": "fn(frame: +Phaser.Frame)"
+		     },
+		     "resizeFrame": {
+		      "!type": "fn(parent: ?, width: number, height: number)"
+		     },
+		     "resetFrame": {
+		      "!type": "fn()"
+		     },
+		     "frame": {
+		      "!type": "number"
+		     },
+		     "frameName": {
+		      "!type": "string"
+		     },
+		     "overlap": {
+		      "!type": "fn(displayObject: +Phaser.Sprite|+Phaser.Image|+Phaser.TileSprite|+Phaser.Button|+PIXI.DisplayObject) -> ?"
+		     },
+		     "body": {
+		      "!type": "+Phaser.Physics.Arcade.Body|+Phaser.Physics.P2.Body|+Phaser.Physics.Ninja.Body|+null"
+		     },
+		     "x": {
+		      "!type": "number"
+		     },
+		     "y": {
+		      "!type": "number"
+		     },
+		     "reset": {
+		      "!type": "fn(x: number, y: number, health: number) -> ?"
+		     },
+		     "transformCallback": {
+		      "!type": "+function"
+		     },
+		     "transformCallbackContext": {},
+		     "scaleMin": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "scaleMax": {
+		      "!type": "+Phaser.Point"
+		     },
+		     "checkTransform": {
+		      "!type": "fn(wt: +PIXI.Matrix)"
+		     },
+		     "setScaleMinMax": {
+		      "!type": "fn(minX: number|+null, minY: number|+null, maxX: number|+null, maxY: number|+null)"
+		     },
+		     "smoothed": {
+		      "!type": "bool"
+		     }
 		    },
-		    "index": {
-		     "!type": "number"
-		    },
-		    "layer": {
-		     "!type": "?"
-		    },
-		    "canvas": {
-		     "!type": "+HTMLCanvasElement"
-		    },
-		    "context": {
-		     "!type": "+CanvasRenderingContext2D"
-		    },
-		    "type": {
-		     "!type": "number"
-		    },
-		    "physicsType": {
-		     "!type": "number"
-		    },
-		    "renderSettings": {
-		     "!type": "bool"
-		    },
-		    "debug": {
-		     "!type": "bool"
-		    },
-		    "exists": {
-		     "!type": "bool"
-		    },
-		    "debugSettings": {
-		     "!type": "string"
-		    },
-		    "scrollFactorX": {
-		     "!type": "number"
-		    },
-		    "scrollFactorY": {
-		     "!type": "number"
-		    },
-		    "dirty": {
-		     "!type": "bool"
-		    },
-		    "rayStepRate": {
-		     "!type": "+integer"
-		    },
-		    "_wrap": {
-		     "!type": "bool"
-		    },
-		    "_mc": {
-		     "!type": "?"
-		    },
-		    "_scrollX": {
-		     "!type": "number"
-		    },
-		    "_scrollY": {},
-		    "_results": {
-		     "!type": "[?]"
-		    },
-		    "fixedToCamera": {
-		     "!type": "bool"
-		    },
-		    "preUpdateCore": {},
 		    "sharedCopyCanvas": {},
 		    "ensureSharedCopyCanvas": {
 		     "!type": "fn()",
-		     "sharedCopyCanvas": {}
-		    },
-		    "preUpdate": {
-		     "!type": "fn()"
-		    },
-		    "postUpdate": {
-		     "!type": "fn()"
-		    },
-		    "destroy": {
-		     "!type": "fn()"
-		    },
-		    "resize": {
-		     "!type": "fn()"
-		    },
-		    "resizeWorld": {
-		     "!type": "fn()"
-		    },
-		    "_fixX": {
-		     "!type": "fn()"
-		    },
-		    "_unfixX": {
-		     "!type": "fn()"
-		    },
-		    "_fixY": {
-		     "!type": "fn()"
-		    },
-		    "_unfixY": {
-		     "!type": "fn()"
-		    },
-		    "getTileX": {
-		     "!type": "fn()"
-		    },
-		    "getTileY": {
-		     "!type": "fn()"
-		    },
-		    "getTileXY": {
-		     "!type": "fn()"
-		    },
-		    "getRayCastTiles": {
-		     "!type": "fn()"
-		    },
-		    "getTiles": {
-		     "!type": "fn()"
-		    },
-		    "resolveTileset": {
-		     "!type": "fn()"
-		    },
-		    "resetTilesetCache": {
-		     "!type": "fn()"
-		    },
-		    "setScale": {
-		     "!type": "fn()"
-		    },
-		    "shiftCanvas": {
-		     "!type": "fn()"
-		    },
-		    "renderRegion": {
-		     "!type": "fn()"
-		    },
-		    "renderDeltaScroll": {
-		     "!type": "fn()"
-		    },
-		    "renderFull": {
-		     "!type": "fn()"
-		    },
-		    "render": {
-		     "!type": "fn()"
-		    },
-		    "renderDebug": {
-		     "!type": "fn()"
-		    },
-		    "anchor": {
-		     "!type": "?"
-		    },
-		    "texture": {
-		     "!type": "?"
-		    },
-		    "_width": {
-		     "!type": "?"
-		    },
-		    "_height": {
-		     "!type": "?"
-		    },
-		    "tint": {
-		     "!type": "?"
-		    },
-		    "cachedTint": {
-		     "!type": "?"
-		    },
-		    "tintedTexture": {
-		     "!type": "?"
-		    },
-		    "blendMode": {
-		     "!type": "?"
-		    },
-		    "shader": {
-		     "!type": "?"
-		    },
-		    "game": {
-		     "!type": "+Phaser.Game"
-		    },
-		    "name": {
-		     "!type": "string"
-		    },
-		    "components": {
-		     "!type": "?"
-		    },
-		    "z": {
-		     "!type": "number"
-		    },
-		    "events": {
-		     "!type": "+Phaser.Events"
-		    },
-		    "animations": {
-		     "!type": "+Phaser.AnimationManager"
-		    },
-		    "key": {
-		     "!type": "string|+Phaser.RenderTexture|+Phaser.BitmapData|+Phaser.Video|+PIXI.Texture"
-		    },
-		    "world": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "previousPosition": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "previousRotation": {
-		     "!type": "number"
-		    },
-		    "renderOrderID": {
-		     "!type": "number"
-		    },
-		    "fresh": {
-		     "!type": "bool"
-		    },
-		    "pendingDestroy": {
-		     "!type": "bool"
-		    },
-		    "_bounds": {
-		     "!type": "+Phaser.Rectangle"
-		    },
-		    "_exists": {
-		     "!type": "bool"
-		    },
-		    "update": {
-		     "!type": "fn()"
-		    },
-		    "angle": {
-		     "!type": "number"
-		    },
-		    "play": {
-		     "!type": "fn(name: string, frameRate: number, loop: bool, killOnComplete: bool) -> ?"
-		    },
-		    "autoCull": {
-		     "!type": "bool"
-		    },
-		    "inCamera": {
-		     "!type": "bool"
-		    },
-		    "offsetX": {
-		     "!type": "number"
-		    },
-		    "offsetY": {
-		     "!type": "number"
-		    },
-		    "left": {
-		     "!type": "number"
-		    },
-		    "right": {
-		     "!type": "number"
-		    },
-		    "top": {
-		     "!type": "number"
-		    },
-		    "bottom": {
-		     "!type": "number"
-		    },
-		    "bringToTop": {
-		     "!type": "fn() -> ?"
-		    },
-		    "sendToBack": {
-		     "!type": "fn() -> ?"
-		    },
-		    "moveUp": {
-		     "!type": "fn() -> ?"
-		    },
-		    "moveDown": {
-		     "!type": "fn() -> ?"
-		    },
-		    "cropRect": {
-		     "!type": "+Phaser.Rectangle"
-		    },
-		    "_crop": {
-		     "!type": "+Phaser.Rectangle"
-		    },
-		    "crop": {
-		     "!type": "fn(rect: +Phaser.Rectangle, copy: bool)"
-		    },
-		    "updateCrop": {
-		     "!type": "fn()"
-		    },
-		    "deltaX": {
-		     "!type": "number"
-		    },
-		    "deltaY": {
-		     "!type": "number"
-		    },
-		    "deltaZ": {
-		     "!type": "number"
-		    },
-		    "destroyPhase": {
-		     "!type": "bool"
-		    },
-		    "_fixedToCamera": {
-		     "!type": "bool"
-		    },
-		    "cameraOffset": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "health": {
-		     "!type": "number"
-		    },
-		    "maxHealth": {
-		     "!type": "number"
-		    },
-		    "damage": {},
-		    "heal": {},
-		    "input": {
-		     "!type": "+Phaser.InputHandler|+null"
-		    },
-		    "inputEnabled": {
-		     "!type": "bool"
-		    },
-		    "checkWorldBounds": {
-		     "!type": "bool"
-		    },
-		    "outOfBoundsKill": {
-		     "!type": "bool"
-		    },
-		    "_outOfBoundsFired": {
-		     "!type": "bool"
-		    },
-		    "inWorld": {
-		     "!type": "bool"
-		    },
-		    "alive": {
-		     "!type": "bool"
-		    },
-		    "lifespan": {
-		     "!type": "number"
-		    },
-		    "revive": {
-		     "!type": "fn(health: number) -> ?"
-		    },
-		    "kill": {
-		     "!type": "fn() -> ?"
-		    },
-		    "customRender": {
-		     "!type": "bool"
-		    },
-		    "_frame": {
-		     "!type": "+Phaser.Rectangle"
-		    },
-		    "loadTexture": {
-		     "!type": "fn(key: string|+Phaser.RenderTexture|+Phaser.BitmapData|+Phaser.Video|+PIXI.Texture, frame: string|number, stopAnimation: bool)"
-		    },
-		    "setFrame": {
-		     "!type": "fn(frame: +Phaser.Frame)"
-		    },
-		    "resizeFrame": {
-		     "!type": "fn(parent: ?, width: +integer, height: +integer)"
-		    },
-		    "resetFrame": {
-		     "!type": "fn()"
-		    },
-		    "frame": {
-		     "!type": "+integer"
-		    },
-		    "frameName": {
-		     "!type": "string"
-		    },
-		    "overlap": {
-		     "!type": "fn(displayObject: +Phaser.Sprite|+Phaser.Image|+Phaser.TileSprite|+Phaser.Button|+PIXI.DisplayObject) -> ?"
-		    },
-		    "body": {
-		     "!type": "+Phaser.Physics.Arcade.Body|+Phaser.Physics.P2.Body|+Phaser.Physics.Ninja.Body|+null"
-		    },
-		    "x": {
-		     "!type": "number"
-		    },
-		    "y": {
-		     "!type": "number"
-		    },
-		    "reset": {
-		     "!type": "fn(x: number, y: number, health: number) -> ?"
-		    },
-		    "transformCallback": {
-		     "!type": "+function"
-		    },
-		    "transformCallbackContext": {
-		     "!type": "?"
-		    },
-		    "scaleMin": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "scaleMax": {
-		     "!type": "+Phaser.Point"
-		    },
-		    "checkTransform": {
-		     "!type": "fn(wt: +PIXI.Matrix)"
-		    },
-		    "setScaleMinMax": {
-		     "!type": "fn(minX: number|+null, minY: number|+null, maxX: number|+null, maxY: number|+null)"
-		    },
-		    "smoothed": {
-		     "!type": "bool"
+		     "prototype": {
+		      "sharedCopyCanvas": {}
+		     }
 		    }
 		   },
 		   "TilemapLayer#renderSettings": {
@@ -22383,8 +23574,10 @@
 		   },
 		   "TilemapLayer#postUpdate": {
 		    "camera": {},
-		    "scrollX": {},
-		    "scrollY": {}
+		    "prototype": {
+		     "scrollX": {},
+		     "scrollY": {}
+		    }
 		   },
 		   "TilemapLayer#resize#canvas": {
 		    "width": {},
@@ -22404,7 +23597,9 @@
 		    "requiresUpdate": {}
 		   },
 		   "TilemapLayer#resize": {
-		    "dirty": {}
+		    "prototype": {
+		     "dirty": {}
+		    }
 		   },
 		   "TilemapLayer#_fixX": {
 		    "x": {}
@@ -22546,7 +23741,9 @@
 		    "mc": {},
 		    "shiftX": {},
 		    "shiftY": {},
-		    "dirty": {}
+		    "prototype": {
+		     "dirty": {}
+		    }
 		   },
 		   "TilemapLayer#render#layer": {
 		    "dirty": {}
@@ -22805,79 +24002,83 @@
 		    }
 		   },
 		   "Tileset": {
-		    "!type": "fn(name: string, firstgid: +integer, width: +integer, height: +integer, margin: +integer, spacing: +integer, properties: ?)",
+		    "!type": "fn(name: string, firstgid: number, width: number, height: number, margin: number, spacing: number, properties: ?)",
 		    "width": {},
 		    "height": {},
 		    "margin": {},
 		    "spacing": {},
-		    "name": {
-		     "!type": "string"
-		    },
-		    "firstgid": {
-		     "!type": "+integer"
-		    },
-		    "tileWidth": {
-		     "!type": "+integer"
-		    },
-		    "tileHeight": {
-		     "!type": "+integer"
-		    },
-		    "tileMargin": {
-		     "!type": "+integer"
-		    },
-		    "tileSpacing": {
-		     "!type": "+integer"
-		    },
-		    "properties": {
-		     "!type": "?"
-		    },
-		    "image": {
-		     "!type": "?"
-		    },
-		    "rows": {
-		     "!type": "+integer"
-		    },
-		    "columns": {
-		     "!type": "+integer"
-		    },
-		    "total": {
-		     "!type": "+integer"
-		    },
-		    "drawCoords": {
-		     "!type": "[?]"
-		    },
-		    "draw": {
-		     "!type": "fn()"
-		    },
-		    "containsTileIndex": {
-		     "!type": "fn()"
-		    },
-		    "setImage": {
-		     "!type": "fn()"
-		    },
-		    "setSpacing": {
-		     "!type": "fn()"
-		    },
-		    "updateTileData": {
-		     "!type": "fn()"
+		    "prototype": {
+		     "name": {
+		      "!type": "string"
+		     },
+		     "firstgid": {
+		      "!type": "number"
+		     },
+		     "tileWidth": {
+		      "!type": "number"
+		     },
+		     "tileHeight": {
+		      "!type": "number"
+		     },
+		     "tileMargin": {
+		      "!type": "number"
+		     },
+		     "tileSpacing": {
+		      "!type": "number"
+		     },
+		     "properties": {},
+		     "image": {},
+		     "rows": {
+		      "!type": "number"
+		     },
+		     "columns": {
+		      "!type": "number"
+		     },
+		     "total": {
+		      "!type": "number"
+		     },
+		     "drawCoords": {
+		      "!type": "[?]"
+		     },
+		     "draw": {
+		      "!type": "fn()"
+		     },
+		     "containsTileIndex": {
+		      "!type": "fn()"
+		     },
+		     "setImage": {
+		      "!type": "fn()"
+		     },
+		     "setSpacing": {
+		      "!type": "fn()"
+		     },
+		     "updateTileData": {
+		      "!type": "fn()"
+		     }
 		    }
 		   },
 		   "Tileset#draw": {
 		    "coordIndex": {}
 		   },
 		   "Tileset#setImage": {
-		    "image": {}
+		    "prototype": {
+		     "image": {}
+		    }
 		   },
 		   "Tileset#setSpacing": {
-		    "tileMargin": {},
-		    "tileSpacing": {}
+		    "prototype": {
+		     "tileMargin": {},
+		     "tileSpacing": {}
+		    }
 		   },
 		   "Tileset#updateTileData": {
 		    "rowCount": {},
 		    "colCount": {},
-		    "rows": {},
-		    "columns": {},
-		    "total": {},
+		    "prototype": {
+		     "rows": {},
+		     "columns": {},
+		     "total": {}
+		    },
 		    "tx": {},
 		    "ty": {},
 		    "y": {},
@@ -22888,142 +24089,146 @@
 		   },
 		   "Time": {
 		    "!type": "fn(game: +Phaser.Game)",
-		    "game": {
-		     "!type": "+Phaser.Game"
-		    },
-		    "time": {
-		     "!type": "+integer"
-		    },
-		    "prevTime": {
-		     "!type": "number"
-		    },
-		    "now": {
-		     "!type": "number"
-		    },
-		    "elapsed": {
-		     "!type": "number"
-		    },
-		    "elapsedMS": {
-		     "!type": "+integer"
-		    },
-		    "physicsElapsed": {
-		     "!type": "number"
-		    },
-		    "physicsElapsedMS": {
-		     "!type": "number"
-		    },
-		    "desiredFps": {
-		     "!type": "number"
-		    },
-		    "suggestedFps": {
-		     "!type": "number"
-		    },
-		    "slowMotion": {
-		     "!type": "number"
-		    },
-		    "advancedTiming": {
-		     "!type": "bool"
-		    },
-		    "frames": {
-		     "!type": "+integer"
-		    },
-		    "fps": {
-		     "!type": "number"
-		    },
-		    "fpsMin": {
-		     "!type": "number"
-		    },
-		    "fpsMax": {
-		     "!type": "number"
-		    },
-		    "msMin": {
-		     "!type": "number"
-		    },
-		    "msMax": {
-		     "!type": "number"
-		    },
-		    "pauseDuration": {
-		     "!type": "number"
-		    },
-		    "timeToCall": {
-		     "!type": "number"
-		    },
-		    "timeExpected": {
-		     "!type": "number"
-		    },
-		    "events": {
-		     "!type": "+Phaser.Timer"
-		    },
-		    "_frameCount": {
-		     "!type": "number"
-		    },
-		    "_elapsedAccumulator": {
-		     "!type": "number"
-		    },
-		    "_started": {
-		     "!type": "number"
-		    },
-		    "_timeLastSecond": {
-		     "!type": "number"
-		    },
-		    "_pauseStarted": {
-		     "!type": "number"
-		    },
-		    "_justResumed": {
-		     "!type": "bool"
-		    },
-		    "_timers": {
-		     "!type": "[?]"
-		    },
-		    "boot": {
-		     "!type": "fn()"
-		    },
-		    "add": {
-		     "!type": "fn()"
-		    },
-		    "create": {
-		     "!type": "fn()"
-		    },
-		    "removeAll": {
-		     "!type": "fn()"
-		    },
-		    "update": {
-		     "!type": "fn()"
-		    },
-		    "updateSetTimeout": {
-		     "!type": "fn()"
-		    },
-		    "updateRAF": {
-		     "!type": "fn()"
-		    },
-		    "updateTimers": {
-		     "!type": "fn()"
-		    },
-		    "updateAdvancedTiming": {
-		     "!type": "fn()"
-		    },
-		    "gamePaused": {
-		     "!type": "fn()"
-		    },
-		    "gameResumed": {
-		     "!type": "fn()"
-		    },
-		    "totalElapsedSeconds": {
-		     "!type": "fn()"
-		    },
-		    "elapsedSince": {
-		     "!type": "fn()"
-		    },
-		    "elapsedSecondsSince": {
-		     "!type": "fn()"
-		    },
-		    "reset": {
-		     "!type": "fn()"
+		    "prototype": {
+		     "game": {
+		      "!type": "+Phaser.Game"
+		     },
+		     "time": {
+		      "!type": "number"
+		     },
+		     "prevTime": {
+		      "!type": "number"
+		     },
+		     "now": {
+		      "!type": "number"
+		     },
+		     "elapsed": {
+		      "!type": "number"
+		     },
+		     "elapsedMS": {
+		      "!type": "number"
+		     },
+		     "physicsElapsed": {
+		      "!type": "number"
+		     },
+		     "physicsElapsedMS": {
+		      "!type": "number"
+		     },
+		     "desiredFps": {
+		      "!type": "number"
+		     },
+		     "suggestedFps": {
+		      "!type": "number"
+		     },
+		     "slowMotion": {
+		      "!type": "number"
+		     },
+		     "advancedTiming": {
+		      "!type": "bool"
+		     },
+		     "frames": {
+		      "!type": "number"
+		     },
+		     "fps": {
+		      "!type": "number"
+		     },
+		     "fpsMin": {
+		      "!type": "number"
+		     },
+		     "fpsMax": {
+		      "!type": "number"
+		     },
+		     "msMin": {
+		      "!type": "number"
+		     },
+		     "msMax": {
+		      "!type": "number"
+		     },
+		     "pauseDuration": {
+		      "!type": "number"
+		     },
+		     "timeToCall": {
+		      "!type": "number"
+		     },
+		     "timeExpected": {
+		      "!type": "number"
+		     },
+		     "events": {
+		      "!type": "+Phaser.Timer"
+		     },
+		     "_frameCount": {
+		      "!type": "number"
+		     },
+		     "_elapsedAccumulator": {
+		      "!type": "number"
+		     },
+		     "_started": {
+		      "!type": "number"
+		     },
+		     "_timeLastSecond": {
+		      "!type": "number"
+		     },
+		     "_pauseStarted": {
+		      "!type": "number"
+		     },
+		     "_justResumed": {
+		      "!type": "bool"
+		     },
+		     "_timers": {
+		      "!type": "[?]"
+		     },
+		     "boot": {
+		      "!type": "fn()"
+		     },
+		     "add": {
+		      "!type": "fn()"
+		     },
+		     "create": {
+		      "!type": "fn()"
+		     },
+		     "removeAll": {
+		      "!type": "fn()"
+		     },
+		     "update": {
+		      "!type": "fn()"
+		     },
+		     "updateSetTimeout": {
+		      "!type": "fn()"
+		     },
+		     "updateRAF": {
+		      "!type": "fn()"
+		     },
+		     "updateTimers": {
+		      "!type": "fn()"
+		     },
+		     "updateAdvancedTiming": {
+		      "!type": "fn()"
+		     },
+		     "gamePaused": {
+		      "!type": "fn()"
+		     },
+		     "gameResumed": {
+		      "!type": "fn()"
+		     },
+		     "totalElapsedSeconds": {
+		      "!type": "fn()"
+		     },
+		     "elapsedSince": {
+		      "!type": "fn()"
+		     },
+		     "elapsedSecondsSince": {
+		      "!type": "fn()"
+		     },
+		     "reset": {
+		      "!type": "fn()"
+		     }
 		    }
 		   },
 		   "Time#boot": {
-		    "_started": {},
-		    "time": {}
+		    "prototype": {
+		     "_started": {},
+		     "time": {}
+		    }
 		   },
 		   "Time#create": {
 		    "autoDestroy": {},
@@ -23031,199 +24236,216 @@
 		   },
 		   "Time#removeAll": {
 		    "i": {},
-		    "_timers": {}
+		    "prototype": {
+		     "_timers": {}
+		    }
 		   },
 		   "Time#updateSetTimeout": {
 		    "previousDateNow": {},
-		    "time": {},
-		    "elapsedMS": {},
-		    "prevTime": {},
-		    "now": {},
-		    "elapsed": {},
-		    "timeToCall": {},
-		    "timeCallExpected": {},
-		    "physicsElapsed": {},
-		    "physicsElapsedMS": {}
+		    "prototype": {
+		     "time": {},
+		     "elapsedMS": {},
+		     "prevTime": {},
+		     "now": {},
+		     "elapsed": {},
+		     "timeToCall": {},
+		     "timeCallExpected": {},
+		     "physicsElapsed": {},
+		     "physicsElapsedMS": {}
+		    }
 		   },
 		   "Time#updateRAF": {
 		    "previousDateNow": {},
-		    "time": {},
-		    "elapsedMS": {},
-		    "prevTime": {},
-		    "now": {},
-		    "elapsed": {},
-		    "physicsElapsed": {},
-		    "physicsElapsedMS": {}
+		    "prototype": {
+		     "time": {},
+		     "elapsedMS": {},
+		     "prevTime": {},
+		     "now": {},
+		     "elapsed": {},
+		     "physicsElapsed": {},
+		     "physicsElapsedMS": {}
+		    }
 		   },
 		   "Time#updateTimers": {
 		    "i": {},
 		    "len": {}
 		   },
 		   "Time#updateAdvancedTiming": {
-		    "_elapsedAccumulator": {},
-		    "suggestedFps": {},
-		    "_frameCount": {},
-		    "msMin": {},
-		    "msMax": {},
-		    "fps": {},
-		    "fpsMin": {},
-		    "fpsMax": {},
-		    "_timeLastSecond": {},
-		    "frames": {}
+		    "prototype": {
+		     "_elapsedAccumulator": {},
+		     "suggestedFps": {},
+		     "_frameCount": {},
+		     "msMin": {},
+		     "msMax": {},
+		     "fps": {},
+		     "fpsMin": {},
+		     "fpsMax": {},
+		     "_timeLastSecond": {},
+		     "frames": {}
+		    }
 		   },
 		   "Time#gamePaused": {
-		    "_pauseStarted": {},
+		    "prototype": {
+		     "_pauseStarted": {}
+		    },
 		    "i": {}
 		   },
 		   "Time#gameResumed": {
-		    "time": {},
-		    "pauseDuration": {},
+		    "prototype": {
+		     "time": {},
+		     "pauseDuration": {}
+		    },
 		    "i": {}
 		   },
 		   "Time#reset": {
-		    "_started": {}
+		    "prototype": {
+		     "_started": {}
+		    }
 		   },
 		   "Timer": {
 		    "!type": "fn(game: +Phaser.Game, autoDestroy: bool)",
-		    "autoDestroy": {
-		     "!type": "bool"
-		    },
-		    "game": {
-		     "!type": "+Phaser.Game"
-		    },
-		    "running": {
-		     "!type": "bool"
-		    },
-		    "expired": {
-		     "!type": "bool"
-		    },
-		    "elapsed": {
-		     "!type": "number"
-		    },
-		    "events": {
-		     "!type": "[?]"
-		    },
-		    "onComplete": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "nextTick": {
-		     "!type": "number"
-		    },
-		    "timeCap": {
-		     "!type": "number"
-		    },
-		    "paused": {
-		     "!type": "bool"
-		    },
-		    "_codePaused": {
-		     "!type": "bool"
-		    },
-		    "_started": {
-		     "!type": "number"
-		    },
-		    "_pauseStarted": {
-		     "!type": "number"
-		    },
-		    "_pauseTotal": {
-		     "!type": "number"
-		    },
-		    "_now": {
-		     "!type": "number"
-		    },
-		    "_len": {
-		     "!type": "number"
-		    },
-		    "_marked": {
-		     "!type": "number"
-		    },
-		    "_i": {
-		     "!type": "number"
-		    },
-		    "_diff": {
-		     "!type": "number"
-		    },
-		    "_newTick": {
-		     "!type": "number"
+		    "autoDestroy": {},
+		    "prototype": {
+		     "game": {
+		      "!type": "+Phaser.Game"
+		     },
+		     "running": {
+		      "!type": "bool"
+		     },
+		     "autoDestroy": {
+		      "!type": "bool"
+		     },
+		     "expired": {
+		      "!type": "bool"
+		     },
+		     "elapsed": {
+		      "!type": "number"
+		     },
+		     "events": {
+		      "!type": "[?]"
+		     },
+		     "onComplete": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "nextTick": {
+		      "!type": "number"
+		     },
+		     "timeCap": {
+		      "!type": "number"
+		     },
+		     "paused": {
+		      "!type": "bool"
+		     },
+		     "_codePaused": {
+		      "!type": "bool"
+		     },
+		     "_started": {
+		      "!type": "number"
+		     },
+		     "_pauseStarted": {
+		      "!type": "number"
+		     },
+		     "_pauseTotal": {
+		      "!type": "number"
+		     },
+		     "_now": {
+		      "!type": "number"
+		     },
+		     "_len": {
+		      "!type": "number"
+		     },
+		     "_marked": {
+		      "!type": "number"
+		     },
+		     "_i": {
+		      "!type": "number"
+		     },
+		     "_diff": {
+		      "!type": "number"
+		     },
+		     "_newTick": {
+		      "!type": "number"
+		     },
+		     "create": {
+		      "!type": "fn()"
+		     },
+		     "add": {
+		      "!type": "fn()"
+		     },
+		     "repeat": {
+		      "!type": "fn()"
+		     },
+		     "loop": {
+		      "!type": "fn()"
+		     },
+		     "start": {
+		      "!type": "fn()"
+		     },
+		     "stop": {
+		      "!type": "fn()"
+		     },
+		     "remove": {
+		      "!type": "fn()"
+		     },
+		     "order": {
+		      "!type": "fn()"
+		     },
+		     "sortHandler": {
+		      "!type": "fn()"
+		     },
+		     "clearPendingEvents": {
+		      "!type": "fn()"
+		     },
+		     "update": {
+		      "!type": "fn()"
+		     },
+		     "pause": {
+		      "!type": "fn()"
+		     },
+		     "_pause": {
+		      "!type": "fn()"
+		     },
+		     "adjustEvents": {
+		      "!type": "fn()"
+		     },
+		     "resume": {
+		      "!type": "fn()"
+		     },
+		     "_resume": {
+		      "!type": "fn()"
+		     },
+		     "removeAll": {
+		      "!type": "fn()"
+		     },
+		     "destroy": {
+		      "!type": "fn()"
+		     },
+		     "next": {
+		      "!type": "number"
+		     },
+		     "duration": {
+		      "!type": "number"
+		     },
+		     "length": {
+		      "!type": "number"
+		     },
+		     "ms": {
+		      "!type": "number"
+		     },
+		     "seconds": {
+		      "!type": "number"
+		     }
 		    },
 		    "MINUTE": {
-		     "!type": "+integer"
+		     "!type": "number"
 		    },
 		    "SECOND": {
-		     "!type": "+integer"
+		     "!type": "number"
 		    },
 		    "HALF": {
-		     "!type": "+integer"
+		     "!type": "number"
 		    },
 		    "QUARTER": {
-		     "!type": "+integer"
-		    },
-		    "create": {
-		     "!type": "fn()"
-		    },
-		    "add": {
-		     "!type": "fn()"
-		    },
-		    "repeat": {
-		     "!type": "fn()"
-		    },
-		    "loop": {
-		     "!type": "fn()"
-		    },
-		    "start": {
-		     "!type": "fn()"
-		    },
-		    "stop": {
-		     "!type": "fn()"
-		    },
-		    "remove": {
-		     "!type": "fn()"
-		    },
-		    "order": {
-		     "!type": "fn()"
-		    },
-		    "sortHandler": {
-		     "!type": "fn()"
-		    },
-		    "clearPendingEvents": {
-		     "!type": "fn()"
-		    },
-		    "update": {
-		     "!type": "fn()"
-		    },
-		    "pause": {
-		     "!type": "fn()"
-		    },
-		    "_pause": {
-		     "!type": "fn()"
-		    },
-		    "adjustEvents": {
-		     "!type": "fn()"
-		    },
-		    "resume": {
-		     "!type": "fn()"
-		    },
-		    "_resume": {
-		     "!type": "fn()"
-		    },
-		    "removeAll": {
-		     "!type": "fn()"
-		    },
-		    "destroy": {
-		     "!type": "fn()"
-		    },
-		    "next": {
-		     "!type": "number"
-		    },
-		    "duration": {
-		     "!type": "number"
-		    },
-		    "length": {
-		     "!type": "number"
-		    },
-		    "ms": {
-		     "!type": "number"
-		    },
-		    "seconds": {
 		     "!type": "number"
 		    }
 		   },
@@ -23231,18 +24453,24 @@
 		    "delay": {},
 		    "tick": {},
 		    "event": {},
-		    "expired": {}
+		    "prototype": {
+		     "expired": {}
+		    }
 		   },
 		   "Timer#start": {
-		    "_started": {},
-		    "running": {},
+		    "prototype": {
+		     "_started": {},
+		     "running": {}
+		    },
 		    "i": {}
 		   },
 		   "Timer#start#events[undefined]": {
 		    "tick": {}
 		   },
 		   "Timer#stop": {
-		    "running": {},
+		    "prototype": {
+		     "running": {}
+		    },
 		    "clearEvents": {}
 		   },
 		   "Timer#stop#events": {
@@ -23255,101 +24483,135 @@
 		    "pendingDelete": {}
 		   },
 		   "Timer#order": {
-		    "nextTick": {}
+		    "prototype": {
+		     "nextTick": {}
+		    }
 		   },
 		   "Timer#clearPendingEvents": {
-		    "_i": {},
-		    "_len": {}
+		    "prototype": {
+		     "_i": {},
+		     "_len": {}
+		    }
 		   },
 		   "Timer#update": {
-		    "elapsed": {},
-		    "_now": {},
-		    "_marked": {},
-		    "_newTick": {},
-		    "expired": {}
+		    "prototype": {
+		     "elapsed": {},
+		     "_now": {},
+		     "_marked": {},
+		     "_newTick": {},
+		     "expired": {}
+		    }
 		   },
 		   "Timer#update#events[undefined]": {
 		    "tick": {},
 		    "pendingDelete": {}
 		   },
 		   "Timer#pause": {
-		    "_codePaused": {},
-		    "_pauseStarted": {},
-		    "paused": {}
+		    "prototype": {
+		     "_codePaused": {},
+		     "_pauseStarted": {},
+		     "paused": {}
+		    }
 		   },
 		   "Timer#_pause": {
-		    "_pauseStarted": {},
-		    "paused": {}
+		    "prototype": {
+		     "_pauseStarted": {},
+		     "paused": {}
+		    }
 		   },
 		   "Timer#adjustEvents": {
 		    "i": {},
 		    "t": {},
 		    "d": {},
-		    "nextTick": {}
+		    "prototype": {
+		     "nextTick": {}
+		    }
 		   },
 		   "Timer#adjustEvents#events[undefined]": {
 		    "tick": {}
 		   },
 		   "Timer#resume": {
 		    "now": {},
-		    "_pauseTotal": {},
-		    "_now": {},
-		    "paused": {},
-		    "_codePaused": {}
+		    "prototype": {
+		     "_pauseTotal": {},
+		     "_now": {},
+		     "paused": {},
+		     "_codePaused": {}
+		    }
 		   },
 		   "Timer#removeAll#events": {
 		    "length": {}
 		   },
 		   "Timer#removeAll": {
-		    "_len": {},
-		    "_i": {}
+		    "prototype": {
+		     "_len": {},
+		     "_i": {}
+		    }
 		   },
 		   "Timer#destroy": {
-		    "running": {},
-		    "events": {},
-		    "_len": {},
-		    "_i": {}
+		    "prototype": {
+		     "running": {},
+		     "events": {},
+		     "_len": {},
+		     "_i": {}
+		    }
 		   },
 		   "TimerEvent": {
 		    "!type": "fn(timer: +Phaser.Timer, delay: number, tick: number, repeatCount: number, loop: bool, callback: +function, callbackContext: ?, arguments: [?])",
-		    "timer": {
-		     "!type": "+Phaser.Timer"
-		    },
-		    "delay": {
-		     "!type": "number"
-		    },
-		    "tick": {
-		     "!type": "number"
-		    },
-		    "repeatCount": {
-		     "!type": "number"
-		    },
-		    "loop": {
-		     "!type": "bool"
-		    },
-		    "callback": {
-		     "!type": "+function"
-		    },
-		    "callbackContext": {
-		     "!type": "?"
-		    },
-		    "args": {
-		     "!type": "[?]"
-		    },
-		    "pendingDelete": {
-		     "!type": "bool"
+		    "prototype": {
+		     "timer": {
+		      "!type": "+Phaser.Timer"
+		     },
+		     "delay": {
+		      "!type": "number"
+		     },
+		     "tick": {
+		      "!type": "number"
+		     },
+		     "repeatCount": {
+		      "!type": "number"
+		     },
+		     "loop": {
+		      "!type": "bool"
+		     },
+		     "callback": {
+		      "!type": "+function"
+		     },
+		     "callbackContext": {},
+		     "args": {
+		      "!type": "[?]"
+		     },
+		     "pendingDelete": {
+		      "!type": "bool"
+		     }
 		    }
 		   },
 		   "Easing": {
 		    "!type": "fn()",
 		    "Linear": {
 		     "!type": "fn()",
+		     "prototype": {
+		      "None": {
+		       "!type": "fn(k: number) -> ?"
+		      }
+		     },
 		     "None": {
 		      "!type": "fn()"
 		     }
 		    },
 		    "Quadratic": {
 		     "!type": "fn()",
+		     "prototype": {
+		      "In": {
+		       "!type": "fn(k: number) -> ?"
+		      },
+		      "Out": {
+		       "!type": "fn(k: number) -> ?"
+		      },
+		      "InOut": {
+		       "!type": "fn(k: number) -> ?"
+		      }
+		     },
 		     "In": {
 		      "!type": "fn()"
 		     },
@@ -23363,6 +24625,17 @@
 		    },
 		    "Cubic": {
 		     "!type": "fn()",
+		     "prototype": {
+		      "In": {
+		       "!type": "fn(k: number) -> ?"
+		      },
+		      "Out": {
+		       "!type": "fn(k: number) -> ?"
+		      },
+		      "InOut": {
+		       "!type": "fn(k: number) -> ?"
+		      }
+		     },
 		     "In": {
 		      "!type": "fn()"
 		     },
@@ -23376,6 +24649,17 @@
 		    },
 		    "Quartic": {
 		     "!type": "fn()",
+		     "prototype": {
+		      "In": {
+		       "!type": "fn(k: number) -> ?"
+		      },
+		      "Out": {
+		       "!type": "fn(k: number) -> ?"
+		      },
+		      "InOut": {
+		       "!type": "fn(k: number) -> ?"
+		      }
+		     },
 		     "In": {
 		      "!type": "fn()"
 		     },
@@ -23389,6 +24673,17 @@
 		    },
 		    "Quintic": {
 		     "!type": "fn()",
+		     "prototype": {
+		      "In": {
+		       "!type": "fn(k: number) -> ?"
+		      },
+		      "Out": {
+		       "!type": "fn(k: number) -> ?"
+		      },
+		      "InOut": {
+		       "!type": "fn(k: number) -> ?"
+		      }
+		     },
 		     "In": {
 		      "!type": "fn()"
 		     },
@@ -23402,6 +24697,17 @@
 		    },
 		    "Sinusoidal": {
 		     "!type": "fn()",
+		     "prototype": {
+		      "In": {
+		       "!type": "fn(k: number) -> ?"
+		      },
+		      "Out": {
+		       "!type": "fn(k: number) -> ?"
+		      },
+		      "InOut": {
+		       "!type": "fn(k: number) -> ?"
+		      }
+		     },
 		     "In": {
 		      "!type": "fn()"
 		     },
@@ -23414,6 +24720,17 @@
 		    },
 		    "Exponential": {
 		     "!type": "fn()",
+		     "prototype": {
+		      "In": {
+		       "!type": "fn(k: number) -> ?"
+		      },
+		      "Out": {
+		       "!type": "fn(k: number) -> ?"
+		      },
+		      "InOut": {
+		       "!type": "fn(k: number) -> ?"
+		      }
+		     },
 		     "In": {
 		      "!type": "fn()"
 		     },
@@ -23427,6 +24744,17 @@
 		    },
 		    "Circular": {
 		     "!type": "fn()",
+		     "prototype": {
+		      "In": {
+		       "!type": "fn(k: number) -> ?"
+		      },
+		      "Out": {
+		       "!type": "fn(k: number) -> ?"
+		      },
+		      "InOut": {
+		       "!type": "fn(k: number) -> ?"
+		      }
+		     },
 		     "In": {
 		      "!type": "fn()"
 		     },
@@ -23440,6 +24768,17 @@
 		    },
 		    "Elastic": {
 		     "!type": "fn()",
+		     "prototype": {
+		      "In": {
+		       "!type": "fn(k: number) -> ?"
+		      },
+		      "Out": {
+		       "!type": "fn(k: number) -> ?"
+		      },
+		      "InOut": {
+		       "!type": "fn(k: number) -> ?"
+		      }
+		     },
 		     "In": {
 		      "!type": "fn()",
 		      "s": {},
@@ -23463,6 +24802,17 @@
 		    },
 		    "Back": {
 		     "!type": "fn()",
+		     "prototype": {
+		      "In": {
+		       "!type": "fn(k: number) -> ?"
+		      },
+		      "Out": {
+		       "!type": "fn(k: number) -> ?"
+		      },
+		      "InOut": {
+		       "!type": "fn(k: number) -> ?"
+		      }
+		     },
 		     "In": {
 		      "!type": "fn()",
 		      "s": {}
@@ -23479,6 +24829,17 @@
 		    },
 		    "Bounce": {
 		     "!type": "fn()",
+		     "prototype": {
+		      "In": {
+		       "!type": "fn(k: number) -> ?"
+		      },
+		      "Out": {
+		       "!type": "fn(k: number) -> ?"
+		      },
+		      "InOut": {
+		       "!type": "fn(k: number) -> ?"
+		      }
+		     },
 		     "In": {
 		      "!type": "fn()"
 		     },
@@ -23499,146 +24860,142 @@
 		   },
 		   "Tween": {
 		    "!type": "fn(target: ?, game: +Phaser.Game, manager: +Phaser.TweenManager)",
-		    "game": {
-		     "!type": "+Phaser.Game"
-		    },
-		    "target": {
-		     "!type": "?"
-		    },
-		    "manager": {
-		     "!type": "+Phaser.TweenManager"
-		    },
-		    "timeline": {
-		     "!type": "[?]"
-		    },
-		    "reverse": {
-		     "!type": "bool"
-		    },
-		    "timeScale": {
-		     "!type": "number"
-		    },
-		    "repeatCounter": {
-		     "!type": "number"
-		    },
-		    "pendingDelete": {
-		     "!type": "bool"
-		    },
-		    "onStart": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "onLoop": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "onRepeat": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "onChildComplete": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "onComplete": {
-		     "!type": "+Phaser.Signal"
-		    },
-		    "isRunning": {
-		     "!type": "bool"
-		    },
-		    "current": {
-		     "!type": "number"
-		    },
-		    "properties": {
-		     "!type": "?"
-		    },
-		    "chainedTween": {
-		     "!type": "+Phaser.Tween"
-		    },
-		    "isPaused": {
-		     "!type": "bool"
-		    },
-		    "frameBased": {
-		     "!type": "bool"
-		    },
-		    "_onUpdateCallback": {
-		     "!type": "+function"
-		    },
-		    "_onUpdateCallbackContext": {
-		     "!type": "?"
-		    },
-		    "_pausedTime": {
-		     "!type": "number"
-		    },
-		    "_codePaused": {
-		     "!type": "bool"
-		    },
-		    "_hasStarted": {
-		     "!type": "bool"
-		    },
-		    "to": {
-		     "!type": "fn()"
-		    },
-		    "from": {
-		     "!type": "fn()"
-		    },
-		    "start": {
-		     "!type": "fn()"
-		    },
-		    "stop": {
-		     "!type": "fn()"
-		    },
-		    "updateTweenData": {
-		     "!type": "fn()"
-		    },
-		    "delay": {
-		     "!type": "fn()"
-		    },
-		    "repeat": {
-		     "!type": "fn(total: number) -> ?"
-		    },
-		    "repeatDelay": {
-		     "!type": "fn()"
-		    },
-		    "yoyo": {
-		     "!type": "fn()"
-		    },
-		    "yoyoDelay": {
-		     "!type": "fn()"
-		    },
-		    "easing": {
-		     "!type": "fn()"
-		    },
-		    "interpolation": {
-		     "!type": "fn()"
-		    },
-		    "repeatAll": {
-		     "!type": "fn()"
-		    },
-		    "chain": {
-		     "!type": "fn()"
-		    },
-		    "loop": {
-		     "!type": "fn()"
-		    },
-		    "onUpdateCallback": {
-		     "!type": "fn()"
-		    },
-		    "pause": {
-		     "!type": "fn()"
-		    },
-		    "_pause": {
-		     "!type": "fn()"
-		    },
-		    "resume": {
-		     "!type": "fn()"
-		    },
-		    "_resume": {
-		     "!type": "fn()"
-		    },
-		    "update": {
-		     "!type": "fn()"
-		    },
-		    "generateData": {
-		     "!type": "fn()"
-		    },
-		    "totalDuration": {
-		     "!type": "+Phaser.TweenData"
+		    "prototype": {
+		     "game": {
+		      "!type": "+Phaser.Game"
+		     },
+		     "target": {},
+		     "manager": {
+		      "!type": "+Phaser.TweenManager"
+		     },
+		     "timeline": {
+		      "!type": "[?]"
+		     },
+		     "reverse": {
+		      "!type": "bool"
+		     },
+		     "timeScale": {
+		      "!type": "number"
+		     },
+		     "repeatCounter": {
+		      "!type": "number"
+		     },
+		     "pendingDelete": {
+		      "!type": "bool"
+		     },
+		     "onStart": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "onLoop": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "onRepeat": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "onChildComplete": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "onComplete": {
+		      "!type": "+Phaser.Signal"
+		     },
+		     "isRunning": {
+		      "!type": "bool"
+		     },
+		     "current": {
+		      "!type": "number"
+		     },
+		     "properties": {},
+		     "chainedTween": {
+		      "!type": "+Phaser.Tween"
+		     },
+		     "isPaused": {
+		      "!type": "bool"
+		     },
+		     "frameBased": {
+		      "!type": "bool"
+		     },
+		     "_onUpdateCallback": {
+		      "!type": "+function"
+		     },
+		     "_onUpdateCallbackContext": {},
+		     "_pausedTime": {
+		      "!type": "number"
+		     },
+		     "_codePaused": {
+		      "!type": "bool"
+		     },
+		     "_hasStarted": {
+		      "!type": "bool"
+		     },
+		     "to": {
+		      "!type": "fn()"
+		     },
+		     "from": {
+		      "!type": "fn()"
+		     },
+		     "start": {
+		      "!type": "fn()"
+		     },
+		     "stop": {
+		      "!type": "fn()"
+		     },
+		     "updateTweenData": {
+		      "!type": "fn()"
+		     },
+		     "delay": {
+		      "!type": "fn()"
+		     },
+		     "repeat": {
+		      "!type": "fn(total: number) -> ?"
+		     },
+		     "repeatDelay": {
+		      "!type": "fn()"
+		     },
+		     "yoyo": {
+		      "!type": "fn()"
+		     },
+		     "yoyoDelay": {
+		      "!type": "fn()"
+		     },
+		     "easing": {
+		      "!type": "fn()"
+		     },
+		     "interpolation": {
+		      "!type": "fn()"
+		     },
+		     "repeatAll": {
+		      "!type": "fn()"
+		     },
+		     "chain": {
+		      "!type": "fn()"
+		     },
+		     "loop": {
+		      "!type": "fn()"
+		     },
+		     "onUpdateCallback": {
+		      "!type": "fn()"
+		     },
+		     "pause": {
+		      "!type": "fn()"
+		     },
+		     "_pause": {
+		      "!type": "fn()"
+		     },
+		     "resume": {
+		      "!type": "fn()"
+		     },
+		     "_resume": {
+		      "!type": "fn()"
+		     },
+		     "update": {
+		      "!type": "fn()"
+		     },
+		     "generateData": {
+		      "!type": "fn()"
+		     },
+		     "totalDuration": {
+		      "!type": "+Phaser.TweenData"
+		     }
 		    }
 		   },
 		   "Tween#to": {
@@ -23661,20 +25018,26 @@
 		    "index": {},
 		    "i": {},
 		    "property": {},
-		    "properties[undefined]": {},
-		    "isRunning": {},
-		    "current": {}
+		    "prototype": {
+		     "properties[undefined]": {},
+		     "isRunning": {},
+		     "current": {}
+		    }
 		   },
 		   "Tween#stop": {
 		    "complete": {},
-		    "isRunning": {},
-		    "_onUpdateCallback": {},
-		    "_onUpdateCallbackContext": {}
+		    "prototype": {
+		     "isRunning": {},
+		     "_onUpdateCallback": {},
+		     "_onUpdateCallbackContext": {}
+		    }
 		   },
 		   "Tween#updateTweenData": {
 		    "index": {},
 		    "i": {},
-		    "timeline[undefined][undefined]": {}
+		    "prototype": {
+		     "timeline[undefined][undefined]": {}
+		    }
 		   },
 		   "Tween#repeat": {
 		    "repeatDelay": {}
@@ -23690,32 +25053,46 @@
 		   },
 		   "Tween#repeatAll": {
 		    "total": {},
-		    "repeatCounter": {}
+		    "prototype": {
+		     "repeatCounter": {}
+		    }
 		   },
 		   "Tween#chain": {
 		    "i": {},
-		    "chainedTween": {}
+		    "prototype": {
+		     "chainedTween": {}
+		    }
 		   },
 		   "Tween#loop": {
 		    "value": {},
-		    "repeatCounter": {}
+		    "prototype": {
+		     "repeatCounter": {}
+		    }
 		   },
 		   "Tween#onUpdateCallback": {
-		    "_onUpdateCallback": {},
-		    "_onUpdateCallbackContext": {}
+		    "prototype": {
+		     "_onUpdateCallback": {},
+		     "_onUpdateCallbackContext": {}
+		    }
 		   },
 		   "Tween#pause": {
-		    "isPaused": {},
-		    "_codePaused": {},
-		    "_pausedTime": {}
+		    "prototype": {
+		     "isPaused": {},
+		     "_codePaused": {},
+		     "_pausedTime": {}
+		    }
 		   },
 		   "Tween#_pause": {
-		    "isPaused": {},
-		    "_pausedTime": {}
+		    "prototype": {
+		     "isPaused": {},
+		     "_pausedTime": {}
+		    }
 		   },
 		   "Tween#resume": {
-		    "isPaused": {},
-		    "_codePaused": {},
+		    "prototype": {
+		     "isPaused": {},
+		     "_codePaused": {}
+		    },
 		    "i": {}
 		   },
 		   "Tween#resume#timeline[undefined]": {
@@ -23723,88 +25100,105 @@
 		   },
 		   "Tween#update": {
 		    "status": {},
-		    "_hasStarted": {},
-		    "complete": {},
-		    "current": {},
-		    "isRunning": {}
+		    "prototype": {
+		     "_hasStarted": {},
+		     "current": {},
+		     "isRunning": {}
+		    },
+		    "complete": {}
 		   },
 		   "Tween#generateData": {
 		    "frameRate": {},
 		    "data": {},
 		    "i": {},
 		    "property": {},
-		    "properties[undefined]": {}
+		    "prototype": {
+		     "properties[undefined]": {}
+		    }
 		   },
 		   "TweenData": {
 		    "!type": "fn(parent: +Phaser.Tween)",
-		    "parent": {
-		     "!type": "+Phaser.Tween"
-		    },
-		    "game": {
-		     "!type": "+Phaser.Game"
-		    },
-		    "vStart": {
-		     "!type": "?"
-		    },
-		    "vStartCache": {
-		     "!type": "?"
-		    },
-		    "vEnd": {
-		     "!type": "?"
-		    },
-		    "vEndCache": {
-		     "!type": "?"
-		    },
-		    "duration": {
-		     "!type": "number"
-		    },
-		    "percent": {
-		     "!type": "number"
-		    },
-		    "value": {
-		     "!type": "number"
-		    },
-		    "repeatCounter": {
-		     "!type": "number"
-		    },
-		    "repeatDelay": {
-		     "!type": "number"
-		    },
-		    "interpolate": {
-		     "!type": "bool"
-		    },
-		    "yoyo": {
-		     "!type": "bool"
-		    },
-		    "yoyoDelay": {
-		     "!type": "number"
-		    },
-		    "inReverse": {
-		     "!type": "bool"
-		    },
-		    "delay": {
-		     "!type": "number"
-		    },
-		    "dt": {
-		     "!type": "number"
-		    },
-		    "startTime": {
-		     "!type": "number"
-		    },
-		    "easingFunction": {
-		     "!type": "+function"
-		    },
-		    "interpolationFunction": {
-		     "!type": "+function"
-		    },
-		    "interpolationContext": {
-		     "!type": "?"
-		    },
-		    "isRunning": {
-		     "!type": "bool"
-		    },
-		    "isFrom": {
-		     "!type": "bool"
+		    "prototype": {
+		     "parent": {
+		      "!type": "+Phaser.Tween"
+		     },
+		     "game": {
+		      "!type": "+Phaser.Game"
+		     },
+		     "vStart": {},
+		     "vStartCache": {},
+		     "vEnd": {},
+		     "vEndCache": {},
+		     "duration": {
+		      "!type": "number"
+		     },
+		     "percent": {
+		      "!type": "number"
+		     },
+		     "value": {
+		      "!type": "number"
+		     },
+		     "repeatCounter": {
+		      "!type": "number"
+		     },
+		     "repeatDelay": {
+		      "!type": "number"
+		     },
+		     "interpolate": {
+		      "!type": "bool"
+		     },
+		     "yoyo": {
+		      "!type": "bool"
+		     },
+		     "yoyoDelay": {
+		      "!type": "number"
+		     },
+		     "inReverse": {
+		      "!type": "bool"
+		     },
+		     "delay": {
+		      "!type": "number"
+		     },
+		     "dt": {
+		      "!type": "number"
+		     },
+		     "startTime": {
+		      "!type": "number"
+		     },
+		     "easingFunction": {
+		      "!type": "+function"
+		     },
+		     "interpolationFunction": {
+		      "!type": "+function"
+		     },
+		     "interpolationContext": {},
+		     "isRunning": {
+		      "!type": "bool"
+		     },
+		     "isFrom": {
+		      "!type": "bool"
+		     },
+		     "to": {
+		      "!type": "fn()"
+		     },
+		     "from": {
+		      "!type": "fn()"
+		     },
+		     "start": {
+		      "!type": "fn()"
+		     },
+		     "loadValues": {
+		      "!type": "fn()"
+		     },
+		     "update": {
+		      "!type": "fn()"
+		     },
+		     "generateData": {
+		      "!type": "fn()"
+		     },
+		     "repeat": {
+		      "!type": "fn()"
+		     }
 		    },
 		    "PENDING": {
 		     "!type": "number"
@@ -23817,76 +25211,65 @@
 		    },
 		    "COMPLETE": {
 		     "!type": "number"
-		    },
-		    "to": {
-		     "!type": "fn()"
-		    },
-		    "from": {
-		     "!type": "fn()"
-		    },
-		    "start": {
-		     "!type": "fn()"
-		    },
-		    "loadValues": {
-		     "!type": "fn()"
-		    },
-		    "update": {
-		     "!type": "fn()"
-		    },
-		    "generateData": {
-		     "!type": "fn()"
-		    },
-		    "repeat": {
-		     "!type": "fn()"
 		    }
 		   },
 		   "TweenData#to": {
-		    "vEnd": {},
-		    "duration": {},
-		    "easingFunction": {},
-		    "delay": {},
-		    "repeatCounter": {},
-		    "yoyo": {},
-		    "isFrom": {}
+		    "prototype": {
+		     "vEnd": {},
+		     "duration": {},
+		     "easingFunction": {},
+		     "delay": {},
+		     "repeatCounter": {},
+		     "yoyo": {},
+		     "isFrom": {}
+		    }
 		   },
 		   "TweenData#from": {
-		    "vEnd": {},
-		    "duration": {},
-		    "easingFunction": {},
-		    "delay": {},
-		    "repeatCounter": {},
-		    "yoyo": {},
-		    "isFrom": {}
+		    "prototype": {
+		     "vEnd": {},
+		     "duration": {},
+		     "easingFunction": {},
+		     "delay": {},
+		     "repeatCounter": {},
+		     "yoyo": {},
+		     "isFrom": {}
+		    }
 		   },
 		   "TweenData#start": {
-		    "startTime": {},
-		    "dt": {},
-		    "isRunning": {},
-		    "property": {},
-		    "vStart[undefined]": {},
-		    "vEnd[undefined]": {},
-		    "value": {},
-		    "yoyoCounter": {}
+		    "prototype": {
+		     "startTime": {},
+		     "dt": {},
+		     "isRunning": {},
+		     "vStart[undefined]": {},
+		     "vEnd[undefined]": {},
+		     "value": {},
+		     "yoyoCounter": {}
+		    },
+		    "property": {}
 		   },
 		   "TweenData#start#parent": {
 		    "target[undefined]": {}
 		   },
 		   "TweenData#loadValues": {
 		    "property": {},
-		    "vStart[undefined]": {},
-		    "vEnd[undefined]": {},
-		    "vStartCache[undefined]": {},
-		    "vEndCache[undefined]": {}
+		    "prototype": {
+		     "vStart[undefined]": {},
+		     "vEnd[undefined]": {},
+		     "vStartCache[undefined]": {},
+		     "vEndCache[undefined]": {}
+		    }
 		   },
 		   "TweenData#loadValues#parent": {
 		    "properties[undefined]": {}
 		   },
 		   "TweenData#update": {
-		    "isRunning": {},
+		    "prototype": {
+		     "isRunning": {},
+		     "dt": {},
+		     "percent": {},
+		     "value": {}
+		    },
 		    "ms": {},
-		    "dt": {},
-		    "percent": {},
-		    "value": {},
 		    "property": {},
 		    "start": {},
 		    "end": {}
@@ -23895,12 +25278,14 @@
 		    "target[undefined]": {}
 		   },
 		   "TweenData#generateData": {
-		    "dt": {},
+		    "prototype": {
+		     "dt": {},
+		     "percent": {},
+		     "value": {}
+		    },
 		    "data": {},
 		    "complete": {},
 		    "fps": {},
-		    "percent": {},
-		    "value": {},
 		    "blob": {},
 		    "property": {},
 		    "start": {},
@@ -23911,12 +25296,14 @@
 		    "undefined]": {}
 		   },
 		   "TweenData#repeat": {
-		    "inReverse": {},
-		    "property": {},
-		    "vStart[undefined]": {},
-		    "vEnd[undefined]": {},
-		    "startTime": {},
-		    "dt": {}
+		    "prototype": {
+		     "inReverse": {},
+		     "vStart[undefined]": {},
+		     "vEnd[undefined]": {},
+		     "startTime": {},
+		     "dt": {}
+		    },
+		    "property": {}
 		   },
 		   "TweenManager#easeMap": {
 		    "Power0": {},
@@ -23968,7 +25355,9 @@
 		   },
 		   "TweenManager#removeAll": {
 		    "i": {},
-		    "_add": {}
+		    "prototype": {
+		     "_add": {}
+		    }
 		   },
 		   "TweenManager#removeAll#_tweens[undefined]": {
 		    "pendingDelete": {}
@@ -23991,7 +25380,9 @@
 		    "addTweens": {},
 		    "numTweens": {},
 		    "i": {},
-		    "_tweens": {}
+		    "prototype": {
+		     "_tweens": {}
+		    }
 		   },
 		   "TweenManager#update#_add": {
 		    "length": {}
@@ -24010,47 +25401,49 @@
 		   },
 		   "ArraySet": {
 		    "!type": "fn(list: [?])",
-		    "position": {
-		     "!type": "+integer"
-		    },
-		    "list": {
-		     "!type": "[?]"
-		    },
-		    "add": {
-		     "!type": "fn()"
-		    },
-		    "getIndex": {
-		     "!type": "fn()"
-		    },
-		    "getByKey": {
-		     "!type": "fn()"
-		    },
-		    "exists": {
-		     "!type": "fn()"
-		    },
-		    "reset": {
-		     "!type": "fn()"
-		    },
-		    "remove": {
-		     "!type": "fn()"
-		    },
-		    "setAll": {
-		     "!type": "fn()"
-		    },
-		    "callAll": {
-		     "!type": "fn()"
-		    },
-		    "removeAll": {
-		     "!type": "fn()"
-		    },
-		    "total": {
-		     "!type": "+integer"
-		    },
-		    "first": {
-		     "!type": "+any"
-		    },
-		    "next": {
-		     "!type": "+any"
+		    "prototype": {
+		     "position": {
+		      "!type": "number"
+		     },
+		     "list": {
+		      "!type": "[?]"
+		     },
+		     "add": {
+		      "!type": "fn()"
+		     },
+		     "getIndex": {
+		      "!type": "fn()"
+		     },
+		     "getByKey": {
+		      "!type": "fn()"
+		     },
+		     "exists": {
+		      "!type": "fn()"
+		     },
+		     "reset": {
+		      "!type": "fn()"
+		     },
+		     "remove": {
+		      "!type": "fn()"
+		     },
+		     "setAll": {
+		      "!type": "fn()"
+		     },
+		     "callAll": {
+		      "!type": "fn()"
+		     },
+		     "removeAll": {
+		      "!type": "fn()"
+		     },
+		     "total": {
+		      "!type": "number"
+		     },
+		     "first": {
+		      "!type": "+any"
+		     },
+		     "next": {
+		      "!type": "+any"
+		     }
 		    }
 		   },
 		   "ArraySet#getByKey": {
@@ -24064,7 +25457,9 @@
 		   },
 		   "ArraySet#setAll": {
 		    "i": {},
-		    "list[undefined][undefined]": {}
+		    "prototype": {
+		     "list[undefined][undefined]": {}
+		    }
 		   },
 		   "ArraySet#callAll": {
 		    "args": {},
@@ -24074,19 +25469,21 @@
 		    "destroy": {},
 		    "i": {},
 		    "item": {},
-		    "position": {},
-		    "list": {}
+		    "prototype": {
+		     "position": {},
+		     "list": {}
+		    }
 		   },
 		   "ArrayUtils": {
 		    "!type": "fn()",
 		    "getRandomItem": {
-		     "!type": "fn(objects: [?], startIndex: +integer, length: +integer) -> ?",
+		     "!type": "fn(objects: [?], startIndex: number, length: number) -> ?",
 		     "startIndex": {},
 		     "length": {},
 		     "randomIndex": {}
 		    },
 		    "removeRandomItem": {
-		     "!type": "fn(objects: [?], startIndex: +integer, length: +integer) -> ?",
+		     "!type": "fn(objects: [?], startIndex: number, length: number) -> ?",
 		     "startIndex": {},
 		     "length": {},
 		     "randomIndex": {},
@@ -24125,6 +25522,14 @@
 		    "rotate": {
 		     "!type": "fn()",
 		     "s": {}
+		    },
+		    "prototype": {
+		     "numberArray": {
+		      "!type": "fn(start: number, end: number) -> ?"
+		     },
+		     "numberArrayStep": {
+		      "!type": "fn(start: number, end: number, step: number) -> ?"
+		     }
 		    },
 		    "numberArray": {
 		     "!type": "fn()",
@@ -24456,52 +25861,52 @@
 		   },
 		   "LinkedList": {
 		    "!type": "fn()",
-		    "next": {
-		     "!type": "?"
-		    },
-		    "prev": {
-		     "!type": "?"
-		    },
-		    "first": {
-		     "!type": "?"
-		    },
-		    "last": {
-		     "!type": "?"
-		    },
-		    "total": {
-		     "!type": "+integer"
-		    },
-		    "add": {
-		     "!type": "fn()"
-		    },
-		    "reset": {
-		     "!type": "fn()"
-		    },
-		    "remove": {
-		     "!type": "fn()"
-		    },
-		    "callAll": {
-		     "!type": "fn()"
+		    "prototype": {
+		     "next": {},
+		     "prev": {},
+		     "first": {},
+		     "last": {},
+		     "total": {
+		      "!type": "number"
+		     },
+		     "add": {
+		      "!type": "fn()"
+		     },
+		     "reset": {
+		      "!type": "fn()"
+		     },
+		     "remove": {
+		      "!type": "fn()"
+		     },
+		     "callAll": {
+		      "!type": "fn()"
+		     }
 		    }
 		   },
 		   "LinkedList#add": {
-		    "first": {},
-		    "last": {},
-		    "next": {}
+		    "prototype": {
+		     "first": {},
+		     "last": {},
+		     "next": {}
+		    }
 		   },
 		   "LinkedList#add#last": {
 		    "next": {}
 		   },
 		   "LinkedList#reset": {
-		    "first": {},
-		    "last": {},
-		    "next": {},
-		    "prev": {},
-		    "total": {}
+		    "prototype": {
+		     "first": {},
+		     "last": {},
+		     "next": {},
+		     "prev": {},
+		     "total": {}
+		    }
 		   },
 		   "LinkedList#remove": {
-		    "first": {},
-		    "last": {}
+		    "prototype": {
+		     "first": {},
+		     "last": {}
+		    }
 		   },
 		   "LinkedList#callAll": {
 		    "entity": {}
@@ -24512,35 +25917,43 @@
 		   "paused": {}
 		  },
 		  "dualQuat": {
-		   "reset": {
-		    "!type": "fn()"
-		   },
-		   "createFromData": {
-		    "!type": "fn()"
-		   },
-		   "add": {
-		    "!type": "fn()"
-		   },
-		   "normalize": {
-		    "!type": "fn()"
-		   },
-		   "transform": {
-		    "!type": "fn()"
+		   "prototype": {
+		    "reset": {
+		     "!type": "fn()"
+		    },
+		    "createFromData": {
+		     "!type": "fn()"
+		    },
+		    "add": {
+		     "!type": "fn()"
+		    },
+		    "normalize": {
+		     "!type": "fn()"
+		    },
+		    "transform": {
+		     "!type": "fn()"
+		    }
 		   }
 		  },
 		  "dualQuat#reset": {
-		   "real[undefined]": {},
-		   "imaginary[undefined]": {}
+		   "prototype": {
+		    "real[undefined]": {},
+		    "imaginary[undefined]": {}
+		   }
 		  },
 		  "dualQuat#createFromData": {
-		   "real": {},
-		   "imaginary": {},
-		   "imaginary[undefined]": {}
+		   "prototype": {
+		    "real": {},
+		    "imaginary": {},
+		    "imaginary[undefined]": {}
+		   }
 		  },
 		  "dualQuat#normalize": {
 		   "norm": {},
-		   "real": {},
-		   "imaginary": {}
+		   "prototype": {
+		    "real": {},
+		    "imaginary": {}
+		   }
 		  },
 		  "dualQuat#transform": {
 		   "tmpVec1": {},
@@ -24646,156 +26059,174 @@
 		   }
 		  },
 		  "MeshBone": {
-		   "setRestParentMat": {
-		    "!type": "fn()"
-		   },
-		   "setParentWorldMat": {
-		    "!type": "fn()"
-		   },
-		   "setParentWorldInvMat": {
-		    "!type": "fn()"
-		   },
-		   "getLocalRestStartPt": {
-		    "!type": "fn()"
-		   },
-		   "getLocalRestEndPt": {
-		    "!type": "fn()"
-		   },
-		   "setLocalRestStartPt": {
-		    "!type": "fn()"
-		   },
-		   "setLocalRestEndPt": {
-		    "!type": "fn()"
-		   },
-		   "calcRestData": {
-		    "!type": "fn()"
-		   },
-		   "setWorldStartPt": {
-		    "!type": "fn()"
-		   },
-		   "setWorldEndPt": {
-		    "!type": "fn()"
-		   },
-		   "fixDQs": {
-		    "!type": "fn()"
-		   },
-		   "initWorldPts": {
-		    "!type": "fn()"
-		   },
-		   "getWorldRestStartPt": {
-		    "!type": "fn()"
-		   },
-		   "getWorldRestEndPt": {
-		    "!type": "fn()"
-		   },
-		   "getWorldRestAngle": {
-		    "!type": "fn()"
-		   },
-		   "getWorldRestPos": {
-		    "!type": "fn()"
-		   },
-		   "getWorldStartPt": {
-		    "!type": "fn()"
-		   },
-		   "getWorldEndPt": {
-		    "!type": "fn()"
-		   },
-		   "getRestParentMat": {
-		    "!type": "fn()"
-		   },
-		   "getRestWorldMat": {
-		    "!type": "fn()"
-		   },
-		   "getWorldDeltaMat": {
-		    "!type": "fn()"
-		   },
-		   "getParentWorldMat": {
-		    "!type": "fn()"
-		   },
-		   "getParentWorldInvMat": {
-		    "!type": "fn()"
-		   },
-		   "getWorldDq": {
-		    "!type": "fn()"
-		   },
-		   "computeRestParentTransforms": {
-		    "!type": "fn()"
-		   },
-		   "computeParentTransforms": {
-		    "!type": "fn()"
-		   },
-		   "computeWorldDeltaTransforms": {
-		    "!type": "fn()"
-		   },
-		   "addChild": {
-		    "!type": "fn()"
-		   },
-		   "getChildren": {
-		    "!type": "fn()"
-		   },
-		   "hasBone": {
-		    "!type": "fn()"
-		   },
-		   "getChildByKey": {
-		    "!type": "fn()"
-		   },
-		   "getKey": {
-		    "!type": "fn()"
-		   },
-		   "getAllBoneKeys": {
-		    "!type": "fn()"
-		   },
-		   "getAllChildren": {
-		    "!type": "fn()"
-		   },
-		   "getBoneDepth": {
-		    "!type": "fn()"
-		   },
-		   "isLeaf": {
-		    "!type": "fn()"
-		   },
-		   "deleteChildren": {
-		    "!type": "fn()"
-		   },
-		   "setTagId": {
-		    "!type": "fn()"
-		   },
-		   "getTagId": {
-		    "!type": "fn()"
-		   },
-		   "computeDirs": {
-		    "!type": "fn()"
-		   },
-		   "computeRestLength": {
-		    "!type": "fn()"
+		   "prototype": {
+		    "setRestParentMat": {
+		     "!type": "fn()"
+		    },
+		    "setParentWorldMat": {
+		     "!type": "fn()"
+		    },
+		    "setParentWorldInvMat": {
+		     "!type": "fn()"
+		    },
+		    "getLocalRestStartPt": {
+		     "!type": "fn()"
+		    },
+		    "getLocalRestEndPt": {
+		     "!type": "fn()"
+		    },
+		    "setLocalRestStartPt": {
+		     "!type": "fn()"
+		    },
+		    "setLocalRestEndPt": {
+		     "!type": "fn()"
+		    },
+		    "calcRestData": {
+		     "!type": "fn()"
+		    },
+		    "setWorldStartPt": {
+		     "!type": "fn()"
+		    },
+		    "setWorldEndPt": {
+		     "!type": "fn()"
+		    },
+		    "fixDQs": {
+		     "!type": "fn()"
+		    },
+		    "initWorldPts": {
+		     "!type": "fn()"
+		    },
+		    "getWorldRestStartPt": {
+		     "!type": "fn()"
+		    },
+		    "getWorldRestEndPt": {
+		     "!type": "fn()"
+		    },
+		    "getWorldRestAngle": {
+		     "!type": "fn()"
+		    },
+		    "getWorldRestPos": {
+		     "!type": "fn()"
+		    },
+		    "getWorldStartPt": {
+		     "!type": "fn()"
+		    },
+		    "getWorldEndPt": {
+		     "!type": "fn()"
+		    },
+		    "getRestParentMat": {
+		     "!type": "fn()"
+		    },
+		    "getRestWorldMat": {
+		     "!type": "fn()"
+		    },
+		    "getWorldDeltaMat": {
+		     "!type": "fn()"
+		    },
+		    "getParentWorldMat": {
+		     "!type": "fn()"
+		    },
+		    "getParentWorldInvMat": {
+		     "!type": "fn()"
+		    },
+		    "getWorldDq": {
+		     "!type": "fn()"
+		    },
+		    "computeRestParentTransforms": {
+		     "!type": "fn()"
+		    },
+		    "computeParentTransforms": {
+		     "!type": "fn()"
+		    },
+		    "computeWorldDeltaTransforms": {
+		     "!type": "fn()"
+		    },
+		    "addChild": {
+		     "!type": "fn()"
+		    },
+		    "getChildren": {
+		     "!type": "fn()"
+		    },
+		    "hasBone": {
+		     "!type": "fn()"
+		    },
+		    "getChildByKey": {
+		     "!type": "fn()"
+		    },
+		    "getKey": {
+		     "!type": "fn()"
+		    },
+		    "getAllBoneKeys": {
+		     "!type": "fn()"
+		    },
+		    "getAllChildren": {
+		     "!type": "fn()"
+		    },
+		    "getBoneDepth": {
+		     "!type": "fn()"
+		    },
+		    "isLeaf": {
+		     "!type": "fn()"
+		    },
+		    "deleteChildren": {
+		     "!type": "fn()"
+		    },
+		    "setTagId": {
+		     "!type": "fn()"
+		    },
+		    "getTagId": {
+		     "!type": "fn()"
+		    },
+		    "computeDirs": {
+		     "!type": "fn()"
+		    },
+		    "computeRestLength": {
+		     "!type": "fn()"
+		    }
 		   }
 		  },
 		  "MeshBone#setRestParentMat": {
-		   "rest_parent_mat": {},
-		   "rest_parent_inv_mat": {}
+		   "prototype": {
+		    "rest_parent_mat": {},
+		    "rest_parent_inv_mat": {}
+		   }
 		  },
 		  "MeshBone#setParentWorldMat": {
-		   "parent_world_mat": {}
+		   "prototype": {
+		    "parent_world_mat": {}
+		   }
 		  },
 		  "MeshBone#setParentWorldInvMat": {
-		   "parent_world_inv_mat": {}
+		   "prototype": {
+		    "parent_world_inv_mat": {}
+		   }
 		  },
 		  "MeshBone#setLocalRestStartPt": {
-		   "local_rest_start_pt": {}
+		   "prototype": {
+		    "local_rest_start_pt": {}
+		   }
 		  },
 		  "MeshBone#setLocalRestEndPt": {
-		   "local_rest_end_pt": {}
+		   "prototype": {
+		    "local_rest_end_pt": {}
+		   }
 		  },
 		  "MeshBone#calcRestData": {
 		   "calc": {},
-		   "local_rest_dir": {},
-		   "local_rest_normal_dir": {}
+		   "prototype": {
+		    "local_rest_dir": {},
+		    "local_rest_normal_dir": {}
+		   }
 		  },
 		  "MeshBone#setWorldStartPt": {
-		   "world_start_pt": {}
+		   "prototype": {
+		    "world_start_pt": {}
+		   }
 		  },
 		  "MeshBone#setWorldEndPt": {
-		   "world_end_pt": {}
+		   "prototype": {
+		    "world_end_pt": {}
+		   }
 		  },
 		  "MeshBone#fixDQs#world_dq": {
 		   "real": {},
@@ -24823,16 +26254,18 @@
 		   "cur_translate": {},
 		   "cur_rotate": {},
 		   "cur_final": {},
-		   "rest_world_mat": {},
-		   "rest_world_inv_mat": {},
+		   "prototype": {
+		    "rest_world_mat": {},
+		    "rest_world_inv_mat": {},
+		    "world_rest_pos": {},
+		    "bind_world_mat": {},
+		    "bind_world_inv_mat": {}
+		   },
 		   "world_rest_dir": {},
-		   "world_rest_pos": {},
 		   "bind_translate": {},
 		   "tVec": {},
 		   "bind_rotate": {},
 		   "cur_bind_final": {},
-		   "bind_world_mat": {},
-		   "bind_world_inv_mat": {},
 		   "i": {},
 		   "cur_bone": {}
 		  },
@@ -24852,10 +26285,12 @@
 		   "cur_binormal": {},
 		   "cur_rotate": {},
 		   "cur_translate": {},
-		   "world_delta_mat": {},
+		   "prototype": {
+		    "world_delta_mat": {},
+		    "world_dq": {}
+		   },
 		   "cur_quat": {},
 		   "tmp_pos": {},
-		   "world_dq": {},
 		   "i": {},
 		   "cur_bone": {}
 		  },
@@ -24887,10 +26322,14 @@
 		  "MeshBone#deleteChildren": {
 		   "i": {},
 		   "cur_bone": {},
-		   "children": {}
+		   "prototype": {
+		    "children": {}
+		   }
 		  },
 		  "MeshBone#setTagId": {
-		   "tag_id": {}
+		   "prototype": {
+		    "tag_id": {}
+		   }
 		  },
 		  "MeshBone#computeDirs": {
 		   "tangent": {},
@@ -24903,119 +26342,123 @@
 		  },
 		  "MeshBone#computeRestLength": {
 		   "tmp_dir": {},
-		   "rest_length": {}
+		   "prototype": {
+		    "rest_length": {}
+		   }
 		  },
 		  "MeshRenderRegion": {
-		   "getIndicesIndex": {
-		    "!type": "fn()"
-		   },
-		   "getRestPtsIndex": {
-		    "!type": "fn()"
-		   },
-		   "getUVsIndex": {
-		    "!type": "fn()"
-		   },
-		   "getNumPts": {
-		    "!type": "fn()"
-		   },
-		   "getStartPtIndex": {
-		    "!type": "fn()"
-		   },
-		   "getEndPtIndex": {
-		    "!type": "fn()"
-		   },
-		   "getNumIndices": {
-		    "!type": "fn()"
-		   },
-		   "getStartIndex": {
-		    "!type": "fn()"
-		   },
-		   "getEndIndex": {
-		    "!type": "fn()"
-		   },
-		   "poseFinalPts": {
-		    "!type": "fn()"
-		   },
-		   "setMainBoneKey": {
-		    "!type": "fn()"
-		   },
-		   "determineMainBone": {
-		    "!type": "fn()"
-		   },
-		   "setUseDq": {
-		    "!type": "fn()"
-		   },
-		   "setName": {
-		    "!type": "fn()"
-		   },
-		   "getName": {
-		    "!type": "fn()"
-		   },
-		   "setUseLocalDisplacements": {
-		    "!type": "fn()"
-		   },
-		   "getUseLocalDisplacements": {
-		    "!type": "fn()"
-		   },
-		   "setUsePostDisplacements": {
-		    "!type": "fn()"
-		   },
-		   "getUsePostDisplacements": {
-		    "!type": "fn()"
-		   },
-		   "getRestLocalPt": {
-		    "!type": "fn()"
-		   },
-		   "getLocalIndex": {
-		    "!type": "fn()"
-		   },
-		   "clearLocalDisplacements": {
-		    "!type": "fn()"
-		   },
-		   "clearPostDisplacements": {
-		    "!type": "fn()"
-		   },
-		   "setUseUvWarp": {
-		    "!type": "fn()"
-		   },
-		   "getUseUvWarp": {
-		    "!type": "fn()"
-		   },
-		   "setUvWarpLocalOffset": {
-		    "!type": "fn()"
-		   },
-		   "setUvWarpGlobalOffset": {
-		    "!type": "fn()"
-		   },
-		   "setUvWarpScale": {
-		    "!type": "fn()"
-		   },
-		   "getUvWarpLocalOffset": {
-		    "!type": "fn()"
-		   },
-		   "getUvWarpGlobalOffset": {
-		    "!type": "fn()"
-		   },
-		   "getUvWarpScale": {
-		    "!type": "fn()"
-		   },
-		   "runUvWarp": {
-		    "!type": "fn()"
-		   },
-		   "restoreRefUv": {
-		    "!type": "fn()"
-		   },
-		   "getTagId": {
-		    "!type": "fn()"
-		   },
-		   "setTagId": {
-		    "!type": "fn()"
-		   },
-		   "initFastNormalWeightMap": {
-		    "!type": "fn()"
-		   },
-		   "initUvWarp": {
-		    "!type": "fn()"
+		   "prototype": {
+		    "getIndicesIndex": {
+		     "!type": "fn()"
+		    },
+		    "getRestPtsIndex": {
+		     "!type": "fn()"
+		    },
+		    "getUVsIndex": {
+		     "!type": "fn()"
+		    },
+		    "getNumPts": {
+		     "!type": "fn()"
+		    },
+		    "getStartPtIndex": {
+		     "!type": "fn()"
+		    },
+		    "getEndPtIndex": {
+		     "!type": "fn()"
+		    },
+		    "getNumIndices": {
+		     "!type": "fn()"
+		    },
+		    "getStartIndex": {
+		     "!type": "fn()"
+		    },
+		    "getEndIndex": {
+		     "!type": "fn()"
+		    },
+		    "poseFinalPts": {
+		     "!type": "fn()"
+		    },
+		    "setMainBoneKey": {
+		     "!type": "fn()"
+		    },
+		    "determineMainBone": {
+		     "!type": "fn()"
+		    },
+		    "setUseDq": {
+		     "!type": "fn()"
+		    },
+		    "setName": {
+		     "!type": "fn()"
+		    },
+		    "getName": {
+		     "!type": "fn()"
+		    },
+		    "setUseLocalDisplacements": {
+		     "!type": "fn()"
+		    },
+		    "getUseLocalDisplacements": {
+		     "!type": "fn()"
+		    },
+		    "setUsePostDisplacements": {
+		     "!type": "fn()"
+		    },
+		    "getUsePostDisplacements": {
+		     "!type": "fn()"
+		    },
+		    "getRestLocalPt": {
+		     "!type": "fn()"
+		    },
+		    "getLocalIndex": {
+		     "!type": "fn()"
+		    },
+		    "clearLocalDisplacements": {
+		     "!type": "fn()"
+		    },
+		    "clearPostDisplacements": {
+		     "!type": "fn()"
+		    },
+		    "setUseUvWarp": {
+		     "!type": "fn()"
+		    },
+		    "getUseUvWarp": {
+		     "!type": "fn()"
+		    },
+		    "setUvWarpLocalOffset": {
+		     "!type": "fn()"
+		    },
+		    "setUvWarpGlobalOffset": {
+		     "!type": "fn()"
+		    },
+		    "setUvWarpScale": {
+		     "!type": "fn()"
+		    },
+		    "getUvWarpLocalOffset": {
+		     "!type": "fn()"
+		    },
+		    "getUvWarpGlobalOffset": {
+		     "!type": "fn()"
+		    },
+		    "getUvWarpScale": {
+		     "!type": "fn()"
+		    },
+		    "runUvWarp": {
+		     "!type": "fn()"
+		    },
+		    "restoreRefUv": {
+		     "!type": "fn()"
+		    },
+		    "getTagId": {
+		     "!type": "fn()"
+		    },
+		    "setTagId": {
+		     "!type": "fn()"
+		    },
+		    "initFastNormalWeightMap": {
+		     "!type": "fn()"
+		    },
+		    "initUvWarp": {
+		     "!type": "fn()"
+		    }
 		   }
 		  },
 		  "MeshRenderRegion#poseFinalPts": {
@@ -25042,25 +26485,37 @@
 		   "undefined]": {}
 		  },
 		  "MeshRenderRegion#setMainBoneKey": {
-		   "main_bone_key": {}
+		   "prototype": {
+		    "main_bone_key": {}
+		   }
 		  },
 		  "MeshRenderRegion#determineMainBone": {
-		   "main_bone": {}
+		   "prototype": {
+		    "main_bone": {}
+		   }
 		  },
 		  "MeshRenderRegion#setUseDq": {
-		   "use_dq": {}
+		   "prototype": {
+		    "use_dq": {}
+		   }
 		  },
 		  "MeshRenderRegion#setName": {
-		   "name": {}
+		   "prototype": {
+		    "name": {}
+		   }
 		  },
 		  "MeshRenderRegion#setUseLocalDisplacements": {
-		   "use_local_displacements": {},
-		   "local_displacements": {},
+		   "prototype": {
+		    "use_local_displacements": {},
+		    "local_displacements": {}
+		   },
 		   "i": {}
 		  },
 		  "MeshRenderRegion#setUsePostDisplacements": {
-		   "use_post_displacements": {},
-		   "post_displacements": {},
+		   "prototype": {
+		    "use_post_displacements": {},
+		    "post_displacements": {}
+		   },
 		   "i": {}
 		  },
 		  "MeshRenderRegion#getRestLocalPt": {
@@ -25072,29 +26527,43 @@
 		  },
 		  "MeshRenderRegion#clearLocalDisplacements": {
 		   "i": {},
-		   "local_displacements[undefined]": {}
+		   "prototype": {
+		    "local_displacements[undefined]": {}
+		   }
 		  },
 		  "MeshRenderRegion#clearPostDisplacements": {
 		   "i": {},
-		   "post_displacements[undefined]": {}
+		   "prototype": {
+		    "post_displacements[undefined]": {}
+		   }
 		  },
 		  "MeshRenderRegion#setUseUvWarp": {
-		   "use_uv_warp": {}
+		   "prototype": {
+		    "use_uv_warp": {}
+		   }
 		  },
 		  "MeshRenderRegion#setUvWarpLocalOffset": {
-		   "uv_warp_local_offset": {}
+		   "prototype": {
+		    "uv_warp_local_offset": {}
+		   }
 		  },
 		  "MeshRenderRegion#setUvWarpGlobalOffset": {
-		   "uv_warp_global_offset": {}
+		   "prototype": {
+		    "uv_warp_global_offset": {}
+		   }
 		  },
 		  "MeshRenderRegion#setUvWarpScale": {
-		   "uv_warp_scale": {}
+		   "prototype": {
+		    "uv_warp_scale": {}
+		   }
 		  },
 		  "MeshRenderRegion#runUvWarp": {
 		   "cur_uvs_index": {},
 		   "i": {},
 		   "set_uv": {},
-		   "store_uvs[undefined]": {}
+		   "prototype": {
+		    "store_uvs[undefined]": {}
+		   }
 		  },
 		  "MeshRenderRegion#runUvWarp~set_uv": {
 		   "undefined]": {}
@@ -25103,13 +26572,19 @@
 		   "cur_uvs_index": {},
 		   "i": {},
 		   "set_uv": {},
-		   "store_uvs[undefined]": {}
+		   "prototype": {
+		    "store_uvs[undefined]": {}
+		   }
 		  },
 		  "MeshRenderRegion#setTagId": {
-		   "tag_id": {}
+		   "prototype": {
+		    "tag_id": {}
+		   }
 		  },
 		  "MeshRenderRegion#initFastNormalWeightMap": {
-		   "relevant_bones_indices": {},
+		   "prototype": {
+		    "relevant_bones_indices": {}
+		   },
 		   "cur_key": {},
 		   "values": {},
 		   "cutoff_val": {},
@@ -25121,25 +26596,47 @@
 		  },
 		  "MeshRenderRegion#initUvWarp": {
 		   "cur_uvs_index": {},
-		   "uv_warp_ref_uvs": {},
-		   "i": {},
-		   "uv_warp_ref_uvs[undefined]": {}
+		   "prototype": {
+		    "uv_warp_ref_uvs": {},
+		    "uv_warp_ref_uvs[undefined]": {}
+		   },
+		   "i": {}
 		  },
 		  "MeshRenderBoneComposition": {
-		   "addRegion": {
-		    "!type": "fn()"
-		   },
-		   "setRootBone": {
-		    "!type": "fn()"
-		   },
-		   "getRootBone": {
-		    "!type": "fn()"
-		   },
-		   "initBoneMap": {
-		    "!type": "fn()"
-		   },
-		   "initRegionsMap": {
-		    "!type": "fn()"
+		   "prototype": {
+		    "addRegion": {
+		     "!type": "fn()"
+		    },
+		    "setRootBone": {
+		     "!type": "fn()"
+		    },
+		    "getRootBone": {
+		     "!type": "fn()"
+		    },
+		    "initBoneMap": {
+		     "!type": "fn()"
+		    },
+		    "initRegionsMap": {
+		     "!type": "fn()"
+		    },
+		    "getBonesMap": {
+		     "!type": "fn()"
+		    },
+		    "getRegionsMap": {
+		     "!type": "fn()"
+		    },
+		    "getRegions": {
+		     "!type": "fn()"
+		    },
+		    "getRegionWithId": {
+		     "!type": "fn()"
+		    },
+		    "resetToWorldRestPts": {
+		     "!type": "fn()"
+		    },
+		    "updateAllTransforms": {
+		     "!type": "fn()"
+		    }
 		   },
 		   "genBoneMap": {
 		    "!type": "fn()",
@@ -25150,160 +26647,174 @@
 		   },
 		   "genBoneMap~ret_map": {
 		    "undefined]": {}
-		   },
-		   "getBonesMap": {
-		    "!type": "fn()"
-		   },
-		   "getRegionsMap": {
-		    "!type": "fn()"
-		   },
-		   "getRegions": {
-		    "!type": "fn()"
-		   },
-		   "getRegionWithId": {
-		    "!type": "fn()"
-		   },
-		   "resetToWorldRestPts": {
-		    "!type": "fn()"
-		   },
-		   "updateAllTransforms": {
-		    "!type": "fn()"
 		   }
 		  },
 		  "MeshRenderBoneComposition#setRootBone": {
-		   "root_bone": {}
+		   "prototype": {
+		    "root_bone": {}
+		   }
 		  },
 		  "MeshRenderBoneComposition#initBoneMap": {
-		   "bones_map": {}
+		   "prototype": {
+		    "bones_map": {}
+		   }
 		  },
 		  "MeshRenderBoneComposition#initRegionsMap": {
-		   "regions_map": {},
+		   "prototype": {
+		    "regions_map": {},
+		    "regions_map[undefined]": {}
+		   },
 		   "i": {},
-		   "cur_key": {},
-		   "regions_map[undefined]": {}
+		   "cur_key": {}
 		  },
 		  "MeshRenderBoneComposition#getRegionWithId": {
 		   "i": {},
 		   "cur_region": {}
 		  },
 		  "MeshBoneCache": {
-		   "setWorldStartPt": {
-		    "!type": "fn()"
-		   },
-		   "setWorldEndPt": {
-		    "!type": "fn()"
-		   },
-		   "getWorldStartPt": {
-		    "!type": "fn()"
-		   },
-		   "getWorldEndPt": {
-		    "!type": "fn()"
-		   },
-		   "getKey": {
-		    "!type": "fn()"
+		   "prototype": {
+		    "setWorldStartPt": {
+		     "!type": "fn()"
+		    },
+		    "setWorldEndPt": {
+		     "!type": "fn()"
+		    },
+		    "getWorldStartPt": {
+		     "!type": "fn()"
+		    },
+		    "getWorldEndPt": {
+		     "!type": "fn()"
+		    },
+		    "getKey": {
+		     "!type": "fn()"
+		    }
 		   }
 		  },
 		  "MeshBoneCache#setWorldStartPt": {
-		   "world_start_pt": {}
+		   "prototype": {
+		    "world_start_pt": {}
+		   }
 		  },
 		  "MeshBoneCache#setWorldEndPt": {
-		   "world_end_pt": {}
+		   "prototype": {
+		    "world_end_pt": {}
+		   }
 		  },
 		  "MeshDisplacementCache": {
-		   "setLocalDisplacements": {
-		    "!type": "fn()"
-		   },
-		   "setPostDisplacements": {
-		    "!type": "fn()"
-		   },
-		   "getKey": {
-		    "!type": "fn()"
-		   },
-		   "getLocalDisplacements": {
-		    "!type": "fn()"
-		   },
-		   "getPostDisplacements": {
-		    "!type": "fn()"
+		   "prototype": {
+		    "setLocalDisplacements": {
+		     "!type": "fn()"
+		    },
+		    "setPostDisplacements": {
+		     "!type": "fn()"
+		    },
+		    "getKey": {
+		     "!type": "fn()"
+		    },
+		    "getLocalDisplacements": {
+		     "!type": "fn()"
+		    },
+		    "getPostDisplacements": {
+		     "!type": "fn()"
+		    }
 		   }
 		  },
 		  "MeshDisplacementCache#setLocalDisplacements": {
-		   "local_displacements": {}
+		   "prototype": {
+		    "local_displacements": {}
+		   }
 		  },
 		  "MeshDisplacementCache#setPostDisplacements": {
-		   "post_displacements": {}
+		   "prototype": {
+		    "post_displacements": {}
+		   }
 		  },
 		  "MeshUVWarpCache": {
-		   "setUvWarpLocalOffset": {
-		    "!type": "fn()"
-		   },
-		   "setUvWarpGlobalOffset": {
-		    "!type": "fn()"
-		   },
-		   "setUvWarpScale": {
-		    "!type": "fn()"
-		   },
-		   "getUvWarpLocalOffset": {
-		    "!type": "fn()"
-		   },
-		   "getUvWarpGlobalOffset": {
-		    "!type": "fn()"
-		   },
-		   "getUvWarpScale": {
-		    "!type": "fn()"
-		   },
-		   "getKey": {
-		    "!type": "fn()"
-		   },
-		   "setEnabled": {
-		    "!type": "fn()"
-		   },
-		   "getEnabled": {
-		    "!type": "fn()"
+		   "prototype": {
+		    "setUvWarpLocalOffset": {
+		     "!type": "fn()"
+		    },
+		    "setUvWarpGlobalOffset": {
+		     "!type": "fn()"
+		    },
+		    "setUvWarpScale": {
+		     "!type": "fn()"
+		    },
+		    "getUvWarpLocalOffset": {
+		     "!type": "fn()"
+		    },
+		    "getUvWarpGlobalOffset": {
+		     "!type": "fn()"
+		    },
+		    "getUvWarpScale": {
+		     "!type": "fn()"
+		    },
+		    "getKey": {
+		     "!type": "fn()"
+		    },
+		    "setEnabled": {
+		     "!type": "fn()"
+		    },
+		    "getEnabled": {
+		     "!type": "fn()"
+		    }
 		   }
 		  },
 		  "MeshUVWarpCache#setUvWarpLocalOffset": {
-		   "uv_warp_local_offset": {}
+		   "prototype": {
+		    "uv_warp_local_offset": {}
+		   }
 		  },
 		  "MeshUVWarpCache#setUvWarpGlobalOffset": {
-		   "uv_warp_global_offset": {}
+		   "prototype": {
+		    "uv_warp_global_offset": {}
+		   }
 		  },
 		  "MeshUVWarpCache#setUvWarpScale": {
-		   "uv_warp_scale": {}
+		   "prototype": {
+		    "uv_warp_scale": {}
+		   }
 		  },
 		  "MeshUVWarpCache#setEnabled": {
-		   "enabled": {}
+		   "prototype": {
+		    "enabled": {}
+		   }
 		  },
 		  "MeshBoneCacheManager": {
-		   "init": {
-		    "!type": "fn()"
-		   },
-		   "getStartTime": {
-		    "!type": "fn()"
-		   },
-		   "getEndime": {
-		    "!type": "fn()"
-		   },
-		   "getIndexByTime": {
-		    "!type": "fn()"
-		   },
-		   "retrieveValuesAtTime": {
-		    "!type": "fn()"
-		   },
-		   "allReady": {
-		    "!type": "fn()"
-		   },
-		   "makeAllReady": {
-		    "!type": "fn()"
+		   "prototype": {
+		    "init": {
+		     "!type": "fn()"
+		    },
+		    "getStartTime": {
+		     "!type": "fn()"
+		    },
+		    "getEndime": {
+		     "!type": "fn()"
+		    },
+		    "getIndexByTime": {
+		     "!type": "fn()"
+		    },
+		    "retrieveValuesAtTime": {
+		     "!type": "fn()"
+		    },
+		    "allReady": {
+		     "!type": "fn()"
+		    },
+		    "makeAllReady": {
+		     "!type": "fn()"
+		    }
 		   }
 		  },
 		  "MeshBoneCacheManager#init": {
-		   "start_time": {},
-		   "end_time": {},
+		   "prototype": {
+		    "start_time": {},
+		    "end_time": {},
+		    "bone_cache_table": {},
+		    "bone_cache_data_ready": {},
+		    "is_ready": {}
+		   },
 		   "num_frames": {},
-		   "bone_cache_table": {},
-		   "bone_cache_data_ready": {},
-		   "i": {},
-		   "is_ready": {}
+		   "i": {}
 		  },
 		  "MeshBoneCacheManager#getIndexByTime": {
 		   "retval": {}
@@ -25326,43 +26837,51 @@
 		   "num_frames": {},
 		   "ready_cnt": {},
 		   "i": {},
-		   "is_ready": {}
+		   "prototype": {
+		    "is_ready": {}
+		   }
 		  },
 		  "MeshBoneCacheManager#makeAllReady": {
 		   "i": {},
-		   "bone_cache_data_ready[undefined]": {}
+		   "prototype": {
+		    "bone_cache_data_ready[undefined]": {}
+		   }
 		  },
 		  "MeshDisplacementCacheManager": {
-		   "init": {
-		    "!type": "fn()"
-		   },
-		   "getStartTime": {
-		    "!type": "fn()"
-		   },
-		   "getEndime": {
-		    "!type": "fn()"
-		   },
-		   "getIndexByTime": {
-		    "!type": "fn()"
-		   },
-		   "retrieveValuesAtTime": {
-		    "!type": "fn()"
-		   },
-		   "allReady": {
-		    "!type": "fn()"
-		   },
-		   "makeAllReady": {
-		    "!type": "fn()"
+		   "prototype": {
+		    "init": {
+		     "!type": "fn()"
+		    },
+		    "getStartTime": {
+		     "!type": "fn()"
+		    },
+		    "getEndime": {
+		     "!type": "fn()"
+		    },
+		    "getIndexByTime": {
+		     "!type": "fn()"
+		    },
+		    "retrieveValuesAtTime": {
+		     "!type": "fn()"
+		    },
+		    "allReady": {
+		     "!type": "fn()"
+		    },
+		    "makeAllReady": {
+		     "!type": "fn()"
+		    }
 		   }
 		  },
 		  "MeshDisplacementCacheManager#init": {
-		   "start_time": {},
-		   "end_time": {},
+		   "prototype": {
+		    "start_time": {},
+		    "end_time": {},
+		    "displacement_cache_table": {},
+		    "displacement_cache_data_ready": {},
+		    "is_ready": {}
+		   },
 		   "num_frames": {},
-		   "displacement_cache_table": {},
-		   "displacement_cache_data_ready": {},
-		   "i": {},
-		   "is_ready": {}
+		   "i": {}
 		  },
 		  "MeshDisplacementCacheManager#getIndexByTime": {
 		   "retval": {}
@@ -25390,43 +26909,51 @@
 		   "num_frames": {},
 		   "ready_cnt": {},
 		   "i": {},
-		   "is_ready": {}
+		   "prototype": {
+		    "is_ready": {}
+		   }
 		  },
 		  "MeshDisplacementCacheManager#makeAllReady": {
 		   "i": {},
-		   "displacement_cache_data_ready[undefined]": {}
+		   "prototype": {
+		    "displacement_cache_data_ready[undefined]": {}
+		   }
 		  },
 		  "MeshUVWarpCacheManager": {
-		   "init": {
-		    "!type": "fn()"
-		   },
-		   "getStartTime": {
-		    "!type": "fn()"
-		   },
-		   "getEndime": {
-		    "!type": "fn()"
-		   },
-		   "getIndexByTime": {
-		    "!type": "fn()"
-		   },
-		   "retrieveValuesAtTime": {
-		    "!type": "fn()"
-		   },
-		   "allReady": {
-		    "!type": "fn()"
-		   },
-		   "makeAllReady": {
-		    "!type": "fn()"
+		   "prototype": {
+		    "init": {
+		     "!type": "fn()"
+		    },
+		    "getStartTime": {
+		     "!type": "fn()"
+		    },
+		    "getEndime": {
+		     "!type": "fn()"
+		    },
+		    "getIndexByTime": {
+		     "!type": "fn()"
+		    },
+		    "retrieveValuesAtTime": {
+		     "!type": "fn()"
+		    },
+		    "allReady": {
+		     "!type": "fn()"
+		    },
+		    "makeAllReady": {
+		     "!type": "fn()"
+		    }
 		   }
 		  },
 		  "MeshUVWarpCacheManager#init": {
-		   "start_time": {},
-		   "end_time": {},
+		   "prototype": {
+		    "start_time": {},
+		    "end_time": {},
+		    "uv_cache_table": {},
+		    "uv_cache_data_ready": {},
+		    "is_ready": {}
+		   },
 		   "num_frames": {},
-		   "uv_cache_table": {},
-		   "uv_cache_data_ready": {},
-		   "i": {},
-		   "is_ready": {}
+		   "i": {}
 		  },
 		  "MeshUVWarpCacheManager#getIndexByTime": {
 		   "retval": {}
@@ -25450,11 +26977,15 @@
 		   "num_frames": {},
 		   "ready_cnt": {},
 		   "i": {},
-		   "is_ready": {}
+		   "prototype": {
+		    "is_ready": {}
+		   }
 		  },
 		  "MeshUVWarpCacheManager#makeAllReady": {
 		   "i": {},
-		   "uv_cache_data_ready[undefined]": {}
+		   "prototype": {
+		    "uv_cache_data_ready[undefined]": {}
+		   }
 		  },
 		  "CreatureModuleUtils": {
 		   "GetAllAnimationNames": {
@@ -25626,23 +27157,27 @@
 		   "uv_cache_table[undefined]": {}
 		  },
 		  "Creature": {
-		   "FillRenderColours": {
-		    "!type": "fn()"
-		   },
-		   "ComputeBoundaryIndices": {
-		    "!type": "fn()"
-		   },
-		   "ComputeBoundaryMinMax": {
-		    "!type": "fn()"
-		   },
-		   "LoadFromData": {
-		    "!type": "fn()"
+		   "prototype": {
+		    "FillRenderColours": {
+		     "!type": "fn()"
+		    },
+		    "ComputeBoundaryIndices": {
+		     "!type": "fn()"
+		    },
+		    "ComputeBoundaryMinMax": {
+		     "!type": "fn()"
+		    },
+		    "LoadFromData": {
+		     "!type": "fn()"
+		    }
 		   }
 		  },
 		  "Creature#FillRenderColours": {
 		   "i": {},
 		   "cur_colour_index": {},
-		   "render_colours[undefined]": {}
+		   "prototype": {
+		    "render_colours[undefined]": {}
+		   }
 		  },
 		  "Creature#ComputeBoundaryIndices": {
 		   "freq_table": {},
@@ -25654,7 +27189,9 @@
 		   "cur_region": {},
 		   "cur_start_index": {},
 		   "cur_end_index": {},
-		   "boundary_indices": {}
+		   "prototype": {
+		    "boundary_indices": {}
+		   }
 		  },
 		  "Creature#ComputeBoundaryIndices~freq_table": {
 		   "undefined]": {}
@@ -25667,8 +27204,10 @@
 		   "ref_idx": {},
 		   "ref_x": {},
 		   "ref_y": {},
-		   "boundary_min": {},
-		   "boundary_max": {}
+		   "prototype": {
+		    "boundary_min": {},
+		    "boundary_max": {}
+		   }
 		  },
 		  "Creature#ComputeBoundaryMinMax~minPt": {
 		   "0]": {},
@@ -25680,45 +27219,53 @@
 		  },
 		  "Creature#LoadFromData": {
 		   "json_mesh": {},
-		   "global_pts": {},
-		   "total_num_pts": {},
-		   "global_indices": {},
-		   "total_num_indices": {},
-		   "global_uvs": {},
-		   "render_colours": {},
+		   "prototype": {
+		    "global_pts": {},
+		    "total_num_pts": {},
+		    "global_indices": {},
+		    "total_num_indices": {},
+		    "global_uvs": {},
+		    "render_colours": {},
+		    "render_pts": {},
+		    "render_composition": {}
+		   },
 		   "i": {},
-		   "render_pts": {},
 		   "root_bone": {},
 		   "regions": {},
-		   "render_composition": {},
 		   "cur_region": {}
 		  },
 		  "CreatureAnimation": {
-		   "LoadFromData": {
-		    "!type": "fn()"
-		   },
-		   "getIndexByTime": {
-		    "!type": "fn()"
-		   },
-		   "verifyFillCache": {
-		    "!type": "fn()"
-		   },
-		   "poseFromCachePts": {
-		    "!type": "fn()"
+		   "prototype": {
+		    "LoadFromData": {
+		     "!type": "fn()"
+		    },
+		    "getIndexByTime": {
+		     "!type": "fn()"
+		    },
+		    "verifyFillCache": {
+		     "!type": "fn()"
+		    },
+		    "poseFromCachePts": {
+		     "!type": "fn()"
+		    }
 		   }
 		  },
 		  "CreatureAnimation#LoadFromData": {
 		   "json_anim_base": {},
 		   "json_clip": {},
 		   "start_end_times": {},
-		   "start_time": {},
-		   "end_time": {}
+		   "prototype": {
+		    "start_time": {},
+		    "end_time": {}
+		   }
 		  },
 		  "CreatureAnimation#getIndexByTime": {
 		   "retval": {}
 		  },
 		  "CreatureAnimation#verifyFillCache": {
-		   "cache_pts": {}
+		   "prototype": {
+		    "cache_pts": {}
+		   }
 		  },
 		  "CreatureAnimation#poseFromCachePts": {
 		   "cur_floor_time": {},
@@ -25736,95 +27283,97 @@
 		   "undefined]": {}
 		  },
 		  "CreatureManager": {
-		   "CreateAnimation": {
-		    "!type": "fn()"
-		   },
-		   "CreateAllAnimations": {
-		    "!type": "fn()"
-		   },
-		   "AddAnimation": {
-		    "!type": "fn()"
-		   },
-		   "GetAnimation": {
-		    "!type": "fn()"
-		   },
-		   "GetCreature": {
-		    "!type": "fn()"
-		   },
-		   "GetAnimationNames": {
-		    "!type": "fn()"
-		   },
-		   "SetActiveAnimationName": {
-		    "!type": "fn()"
-		   },
-		   "GetActiveAnimationName": {
-		    "!type": "fn()"
-		   },
-		   "GetAllAnimations": {
-		    "!type": "fn()"
-		   },
-		   "MakePointCache": {
-		    "!type": "fn()"
-		   },
-		   "FillSinglePointCacheFrame": {
-		    "!type": "fn()"
-		   },
-		   "GetIsPlaying": {
-		    "!type": "fn()"
-		   },
-		   "SetShouldLoop": {
-		    "!type": "fn()"
-		   },
-		   "SetUseCustomTimeRange": {
-		    "!type": "fn()"
-		   },
-		   "SetCustomTimeRange": {
-		    "!type": "fn()"
-		   },
-		   "SetIsPlaying": {
-		    "!type": "fn()"
-		   },
-		   "ResetToStartTimes": {
-		    "!type": "fn()"
-		   },
-		   "setRunTime": {
-		    "!type": "fn()"
-		   },
-		   "increRunTime": {
-		    "!type": "fn()"
-		   },
-		   "correctTime": {
-		    "!type": "fn()"
-		   },
-		   "getRunTime": {
-		    "!type": "fn()"
-		   },
-		   "Update": {
-		    "!type": "fn()"
-		   },
-		   "RunAtTime": {
-		    "!type": "fn()"
-		   },
-		   "RunCreature": {
-		    "!type": "fn()"
-		   },
-		   "SetTimeScale": {
-		    "!type": "fn()"
-		   },
-		   "SetBlending": {
-		    "!type": "fn()"
-		   },
-		   "SetBlendingAnimations": {
-		    "!type": "fn()"
-		   },
-		   "SetBlendingFactor": {
-		    "!type": "fn()"
-		   },
-		   "IsContactBone": {
-		    "!type": "fn()"
-		   },
-		   "PoseCreature": {
-		    "!type": "fn()"
+		   "prototype": {
+		    "CreateAnimation": {
+		     "!type": "fn()"
+		    },
+		    "CreateAllAnimations": {
+		     "!type": "fn()"
+		    },
+		    "AddAnimation": {
+		     "!type": "fn()"
+		    },
+		    "GetAnimation": {
+		     "!type": "fn()"
+		    },
+		    "GetCreature": {
+		     "!type": "fn()"
+		    },
+		    "GetAnimationNames": {
+		     "!type": "fn()"
+		    },
+		    "SetActiveAnimationName": {
+		     "!type": "fn()"
+		    },
+		    "GetActiveAnimationName": {
+		     "!type": "fn()"
+		    },
+		    "GetAllAnimations": {
+		     "!type": "fn()"
+		    },
+		    "MakePointCache": {
+		     "!type": "fn()"
+		    },
+		    "FillSinglePointCacheFrame": {
+		     "!type": "fn()"
+		    },
+		    "GetIsPlaying": {
+		     "!type": "fn()"
+		    },
+		    "SetShouldLoop": {
+		     "!type": "fn()"
+		    },
+		    "SetUseCustomTimeRange": {
+		     "!type": "fn()"
+		    },
+		    "SetCustomTimeRange": {
+		     "!type": "fn()"
+		    },
+		    "SetIsPlaying": {
+		     "!type": "fn()"
+		    },
+		    "ResetToStartTimes": {
+		     "!type": "fn()"
+		    },
+		    "setRunTime": {
+		     "!type": "fn()"
+		    },
+		    "increRunTime": {
+		     "!type": "fn()"
+		    },
+		    "correctTime": {
+		     "!type": "fn()"
+		    },
+		    "getRunTime": {
+		     "!type": "fn()"
+		    },
+		    "Update": {
+		     "!type": "fn()"
+		    },
+		    "RunAtTime": {
+		     "!type": "fn()"
+		    },
+		    "RunCreature": {
+		     "!type": "fn()"
+		    },
+		    "SetTimeScale": {
+		     "!type": "fn()"
+		    },
+		    "SetBlending": {
+		     "!type": "fn()"
+		    },
+		    "SetBlendingAnimations": {
+		     "!type": "fn()"
+		    },
+		    "SetBlendingFactor": {
+		     "!type": "fn()"
+		    },
+		    "IsContactBone": {
+		     "!type": "fn()"
+		    },
+		    "PoseCreature": {
+		     "!type": "fn()"
+		    }
 		   }
 		  },
 		  "CreatureManager#CreateAnimation": {
@@ -25836,16 +27385,20 @@
 		   "cur_name": {}
 		  },
 		  "CreatureManager#AddAnimation": {
-		   "animations[undefined]": {}
+		   "prototype": {
+		    "animations[undefined]": {}
+		   }
 		  },
 		  "CreatureManager#GetAnimationNames": {
 		   "ret_names": {},
 		   "cur_name": {}
 		  },
 		  "CreatureManager#SetActiveAnimationName": {
-		   "active_animation_name": {},
+		   "prototype": {
+		    "active_animation_name": {},
+		    "run_time": {}
+		   },
 		   "cur_animation": {},
-		   "run_time": {},
 		   "displacement_cache_manager": {},
 		   "displacement_table": {},
 		   "uv_warp_cache_manager": {},
@@ -25879,33 +27432,49 @@
 		   "undefined]": {}
 		  },
 		  "CreatureManager#SetShouldLoop": {
-		   "should_loop": {}
+		   "prototype": {
+		    "should_loop": {}
+		   }
 		  },
 		  "CreatureManager#SetUseCustomTimeRange": {
-		   "use_custom_time_range": {}
+		   "prototype": {
+		    "use_custom_time_range": {}
+		   }
 		  },
 		  "CreatureManager#SetCustomTimeRange": {
-		   "custom_start_time": {},
-		   "custom_end_time": {}
+		   "prototype": {
+		    "custom_start_time": {},
+		    "custom_end_time": {}
+		   }
 		  },
 		  "CreatureManager#SetIsPlaying": {
-		   "is_playing": {}
+		   "prototype": {
+		    "is_playing": {}
+		   }
 		  },
 		  "CreatureManager#ResetToStartTimes": {
 		   "cur_animation": {},
-		   "run_time": {}
+		   "prototype": {
+		    "run_time": {}
+		   }
 		  },
 		  "CreatureManager#setRunTime": {
-		   "run_time": {}
+		   "prototype": {
+		    "run_time": {}
+		   }
 		  },
 		  "CreatureManager#increRunTime": {
-		   "run_time": {}
+		   "prototype": {
+		    "run_time": {}
+		   }
 		  },
 		  "CreatureManager#correctTime": {
 		   "cur_animation": {},
 		   "anim_start_time": {},
 		   "anim_end_time": {},
-		   "run_time": {}
+		   "prototype": {
+		    "run_time": {}
+		   }
 		  },
 		  "CreatureManager#RunCreature": {
 		   "i": {},
@@ -25916,20 +27485,28 @@
 		   "read_data_2": {}
 		  },
 		  "CreatureManager#SetTimeScale": {
-		   "time_scale": {}
+		   "prototype": {
+		    "time_scale": {}
+		   }
 		  },
 		  "CreatureManager#SetBlending": {
-		   "do_blending": {},
+		   "prototype": {
+		    "do_blending": {},
+		    "blend_render_pts[1]": {}
+		   },
 		   "new_vec": {},
-		   "i": {},
-		   "blend_render_pts[1]": {}
+		   "i": {}
 		  },
 		  "CreatureManager#SetBlendingAnimations": {
-		   "active_blend_animation_names[0]": {},
-		   "active_blend_animation_names[1]": {}
+		   "prototype": {
+		    "active_blend_animation_names[0]": {},
+		    "active_blend_animation_names[1]": {}
+		   }
 		  },
 		  "CreatureManager#SetBlendingFactor": {
-		   "blending_factor": {}
+		   "prototype": {
+		    "blending_factor": {}
+		   }
 		  },
 		  "CreatureManager#IsContactBone": {
 		   "cur_bone": {}
@@ -25997,7 +27574,7 @@
 		    "!type": "fn()"
 		   },
 		   "Line": {
-		    "!type": "fn(options: ?, option_length: number)"
+		    "!type": "fn(options: ?, options_length: number)"
 		   },
 		   "Point": {
 		    "!type": "fn()"
@@ -26016,24 +27593,24 @@
 		    "!type": "fn()"
 		   },
 		   "AABB": {
-		    "!type": "fn(options: ?, option_upperBound: [?], option_lowerBound: [?])"
+		    "!type": "fn(options: ?, options_upperBound: [?], options_lowerBound: [?])"
 		   },
 		   "tmp": {},
 		   "Body": {
-		    "!type": "fn(option_force: [?], option_position: [?], option_velocity: [?], option_allowSleep: bool, option_collisionResponse: bool, option_angle: number, option_angularForce: number, option_angularVelocity: number, option_ccdIterations: number, option_ccdSpeedThreshold: number, option_fixedRotation: number, option_gravityScale: number, option_id: number, option_mass: number, option_sleepSpeedLimit: number, option_sleepTimeLimit: number, options: ?)"
+		    "!type": "fn(options_force: [?], options_position: [?], options_velocity: [?], options_allowSleep: bool, options_collisionResponse: bool, options_angle: number, options_angularForce: number, options_angularVelocity: number, options_ccdIterations: number, options_ccdSpeedThreshold: number, options_fixedRotation: number, options_gravityScale: number, options_id: number, options_mass: number, options_sleepSpeedLimit: number, options_sleepTimeLimit: number, options: ?)"
 		   },
 		   "Broadphase": {
 		    "!type": "fn()"
 		   },
 		   "dist": {},
 		   "Circle": {
-		    "!type": "fn(options: +options, option_radius: number)"
+		    "!type": "fn(options: +options, options_radius: number)"
 		   },
 		   "Plane": {
 		    "!type": "fn(options: ?)"
 		   },
 		   "Shape": {
-		    "!type": "fn(options: ?, option_position: +array, option_angle: number, option_collisionGroup: number, option_collisionMask: number, option_sensor: bool, option_collisionResponse: bool, option_type: ?)"
+		    "!type": "fn(options: ?, options_position: +array, options_angle: number, options_collisionGroup: number, options_collisionMask: number, options_sensor: bool, options_collisionResponse: bool, options_type: ?)"
 		   },
 		   "Particle": {
 		    "!type": "fn(options: ?)"
@@ -26062,10 +27639,10 @@
 		    "!type": "fn(bodyA: +Body, bodyB: +Body, slipForce: number)"
 		   },
 		   "Convex": {
-		    "!type": "fn(options: ?, option_vertices: [?], option_axes: [?])"
+		    "!type": "fn(options: ?, options_vertices: [?], options_axes: [?])"
 		   },
 		   "Box": {
-		    "!type": "fn(options: ?, option_width: number, option_height: number)"
+		    "!type": "fn(options: ?, options_width: number, options_height: number)"
 		   },
 		   "yAxis": {},
 		   "tmp1": {},
@@ -26136,7 +27713,7 @@
 		    "!type": "fn()"
 		   },
 		   "Ray": {
-		    "!type": "fn(options: ?, option_from: +array, option_to: +array, option_checkCollisionResponse: bool, option_skipBackfaces: bool, option_collisionMask: number, option_collisionGroup: number, option_mode: number, option_callback: number)"
+		    "!type": "fn(options: ?, options_from: +array, options_to: +array, options_checkCollisionResponse: bool, options_skipBackfaces: bool, options_collisionMask: number, options_collisionGroup: number, options_mode: number, options_callback: number)"
 		   },
 		   "intersectBody_worldPosition": {},
 		   "hitPointWorld": {},
@@ -26149,30 +27726,30 @@
 		    "!type": "fn()"
 		   },
 		   "Constraint": {
-		    "!type": "fn(bodyA: +Body, bodyB: +Body, type: number, options: ?, option_collideConnected: ?)"
+		    "!type": "fn(bodyA: +Body, bodyB: +Body, type: number, options: ?, options_collideConnected: ?)"
 		   },
 		   "DistanceConstraint": {
-		    "!type": "fn(bodyA: +Body, bodyB: +Body, options: ?, option_distance: number, option_localAnchorA: [?], option_localAnchorB: [?], option_maxForce: ?)"
+		    "!type": "fn(bodyA: +Body, bodyB: +Body, options: ?, options_distance: number, options_localAnchorA: [?], options_localAnchorB: [?], options_maxForce: ?)"
 		   },
 		   "ri": {},
 		   "rj": {},
 		   "AngleLockEquation": {
-		    "!type": "fn(bodyA: +Body, bodyB: +Body, options: ?, option_angle: number, option_ratio: number)"
+		    "!type": "fn(bodyA: +Body, bodyB: +Body, options: ?, options_angle: number, options_ratio: number)"
 		   },
 		   "GearConstraint": {
-		    "!type": "fn(bodyA: +Body, bodyB: +Body, options: ?, option_angle: number, option_ratio: number, option_maxTorque: number)"
+		    "!type": "fn(bodyA: +Body, bodyB: +Body, options: ?, options_angle: number, options_ratio: number, options_maxTorque: number)"
 		   },
 		   "LockConstraint": {
-		    "!type": "fn(bodyA: +Body, bodyB: +Body, options: ?, option_localOffsetB: [?], option_localAngleB: number, option_maxForce: number)"
+		    "!type": "fn(bodyA: +Body, bodyB: +Body, options: ?, options_localOffsetB: [?], options_localAngleB: number, options_maxForce: number)"
 		   },
 		   "r": {},
 		   "t": {},
 		   "xAxis": {},
 		   "RotationalLockEquation": {
-		    "!type": "fn(bodyA: +Body, bodyB: +Body, options: ?, option_angle: number)"
+		    "!type": "fn(bodyA: +Body, bodyB: +Body, options: ?, options_angle: number)"
 		   },
 		   "PrismaticConstraint": {
-		    "!type": "fn(bodyA: +Body, bodyB: +Body, options: ?, option_maxForce: number, option_localAnchorA: [?], option_localAnchorB: [?], option_localAxisA: [?], option_disableRotationalLock: bool, option_upperLimit: number, option_lowerLimit: number)"
+		    "!type": "fn(bodyA: +Body, bodyB: +Body, options: ?, options_maxForce: number, options_localAnchorA: [?], options_localAnchorB: [?], options_localAxisA: [?], options_disableRotationalLock: bool, options_upperLimit: number, options_lowerLimit: number)"
 		   },
 		   "worldAxisA": {},
 		   "worldAnchorA": {},
@@ -26186,7 +27763,7 @@
 		   "worldPivotB": {},
 		   "g": {},
 		   "RevoluteConstraint": {
-		    "!type": "fn(bodyA: +Body, bodyB: +Body, options: ?, option_worldPivot: [?], option_localPivotA: [?], option_localPivotB: [?], option_maxForce: number)"
+		    "!type": "fn(bodyA: +Body, bodyB: +Body, options: ?, options_worldPivot: [?], options_localPivotA: [?], options_localPivotB: [?], options_maxForce: number)"
 		   },
 		   "qi": {},
 		   "qj": {},
@@ -26207,7 +27784,7 @@
 		    "!type": "fn(id: number)"
 		   },
 		   "ContactMaterial": {
-		    "!type": "fn(materialA: +Material, materialB: +Material, options: ?, option_friction: number, option_restitution: number, option_stiffness: number, option_relaxation: number, option_frictionStiffness: number, option_frictionRelaxation: number, option_surfaceVelocity: number)"
+		    "!type": "fn(materialA: +Material, materialB: +Material, options: ?, options_friction: number, options_restitution: number, options_stiffness: number, options_relaxation: number, options_frictionStiffness: number, options_frictionRelaxation: number, options_surfaceVelocity: number)"
 		   },
 		   "PolyK": {},
 		   "decomp": {},
@@ -26233,10 +27810,10 @@
 		   "startToEnd": {},
 		   "rememberPosition": {},
 		   "Spring": {
-		    "!type": "fn(bodyA: +Body, bodyB: +Body, options: ?, option_stiffness: number, option_damping: number, option_localAnchorA: [?], option_localAnchorB: [?], option_worldAnchorA: [?], option_worldAnchorB: [?])"
+		    "!type": "fn(bodyA: +Body, bodyB: +Body, options: ?, options_stiffness: number, options_damping: number, options_localAnchorA: [?], options_localAnchorB: [?], options_worldAnchorA: [?], options_worldAnchorB: [?])"
 		   },
 		   "LinearSpring": {
-		    "!type": "fn(bodyA: +Body, bodyB: +Body, options: ?, option_restLength: number, option_stiffness: number, option_damping: number, option_worldAnchorA: [?], option_worldAnchorB: [?], option_localAnchorA: [?], option_localAnchorB: [?])"
+		    "!type": "fn(bodyA: +Body, bodyB: +Body, options: ?, options_restLength: number, options_stiffness: number, options_damping: number, options_worldAnchorA: [?], options_worldAnchorB: [?], options_localAnchorA: [?], options_localAnchorB: [?])"
 		   },
 		   "applyForce_r": {},
 		   "applyForce_r_unit": {},
@@ -26248,13 +27825,13 @@
 		   "applyForce_rj": {},
 		   "applyForce_tmp": {},
 		   "RotationalSpring": {
-		    "!type": "fn(bodyA: +Body, bodyB: +Body, options: ?, option_restAngle: number, option_stiffness: number, option_damping: number)"
+		    "!type": "fn(bodyA: +Body, bodyB: +Body, options: ?, options_restAngle: number, options_stiffness: number, options_damping: number)"
 		   },
 		   "TopDownVehicle": {
 		    "!type": "fn(chassisBody: +Body, options: ?)"
 		   },
 		   "WheelConstraint": {
-		    "!type": "fn(vehicle: +Vehicle, options: ?, option_localForwardVector: [?], option_localPosition: [?], option_sideFriction: [?])"
+		    "!type": "fn(vehicle: +Vehicle, options: ?, options_localForwardVector: [?], options_localPosition: [?], options_sideFriction: [?])"
 		   },
 		   "worldVelocity": {},
 		   "relativePoint": {},
@@ -26265,7 +27842,7 @@
 		   "corner3": {},
 		   "corner4": {},
 		   "Capsule": {
-		    "!type": "fn(options: ?, option_length: number, option_radius: number)"
+		    "!type": "fn(options: ?, options_length: number, options_radius: number)"
 		   },
 		   "intersectCapsule_hitPointWorld": {},
 		   "intersectCapsule_normal": {},
@@ -26290,7 +27867,7 @@
 		   "intersectConvex_rayEnd": {},
 		   "intersectConvex_normal": {},
 		   "Heightfield": {
-		    "!type": "fn(options: ?, option_heights: +array, option_minValue: number, option_maxValue: number, option_elementWidth: number)"
+		    "!type": "fn(options: ?, options_heights: +array, options_minValue: number, options_maxValue: number, options_elementWidth: number)"
 		   },
 		   "points": {},
 		   "intersectHeightfield_hitPointWorld": {},
@@ -26317,7 +27894,7 @@
 		    "!type": "fn()"
 		   },
 		   "GSSolver": {
-		    "!type": "fn(options: ?, option_iterations: number, option_tolerance: number)"
+		    "!type": "fn(options: ?, options_iterations: number, options_tolerance: number)"
 		   },
 		   "setArrayZero": {
 		    "!type": "fn()"
@@ -26353,7 +27930,7 @@
 		   },
 		   "pkg": {},
 		   "World": {
-		    "!type": "fn(options: ?, option_solver: +Solver, option_gravity: [?], option_broadphase: +Broadphase, option_islandSplit: bool)"
+		    "!type": "fn(options: ?, options_solver: +Solver, options_gravity: [?], options_broadphase: +Broadphase, options_islandSplit: bool)"
 		   },
 		   "step_r": {},
 		   "step_runit": {},
@@ -28006,146 +29583,100 @@
 		   },
 		   "DisplayObject": {
 		    "!type": "fn()",
-		    "position": {
-		     "!type": "?"
-		    },
-		    "scale": {
-		     "!type": "?"
-		    },
-		    "transformCallback": {
-		     "!type": "?"
-		    },
-		    "transformCallbackContext": {
-		     "!type": "?"
-		    },
-		    "pivot": {
-		     "!type": "?"
-		    },
-		    "rotation": {
-		     "!type": "?"
-		    },
-		    "alpha": {
-		     "!type": "?"
-		    },
-		    "visible": {
-		     "!type": "?"
-		    },
-		    "hitArea": {
-		     "!type": "?"
-		    },
-		    "renderable": {
-		     "!type": "?"
-		    },
-		    "parent": {
-		     "!type": "?"
-		    },
-		    "stage": {
-		     "!type": "?"
-		    },
-		    "worldAlpha": {
-		     "!type": "?"
-		    },
-		    "worldTransform": {
-		     "!type": "?"
-		    },
-		    "worldPosition": {
-		     "!type": "?"
-		    },
-		    "worldScale": {
-		     "!type": "?"
-		    },
-		    "worldRotation": {
-		     "!type": "?"
-		    },
-		    "_sr": {
-		     "!type": "?"
-		    },
-		    "_cr": {
-		     "!type": "?"
-		    },
-		    "filterArea": {
-		     "!type": "?"
-		    },
-		    "_bounds": {
-		     "!type": "?"
-		    },
-		    "_currentBounds": {
-		     "!type": "?"
-		    },
-		    "_mask": {
-		     "!type": "?"
-		    },
-		    "_cacheAsBitmap": {
-		     "!type": "?"
-		    },
-		    "_cacheIsDirty": {
-		     "!type": "?"
-		    },
-		    "destroy": {
-		     "!type": "fn()"
-		    },
-		    "updateTransform": {
-		     "!type": "fn()"
-		    },
-		    "displayObjectUpdateTransform": {},
-		    "getBounds": {
-		     "!type": "fn()"
-		    },
-		    "getLocalBounds": {
-		     "!type": "fn()"
-		    },
-		    "setStageReference": {
-		     "!type": "fn()"
-		    },
-		    "preUpdate": {
-		     "!type": "fn()"
-		    },
-		    "generateTexture": {
-		     "!type": "fn()"
+		    "prototype": {
+		     "position": {},
+		     "scale": {},
+		     "transformCallback": {},
+		     "transformCallbackContext": {},
+		     "pivot": {},
+		     "rotation": {},
+		     "alpha": {},
+		     "visible": {},
+		     "hitArea": {},
+		     "renderable": {},
+		     "parent": {},
+		     "stage": {},
+		     "worldAlpha": {},
+		     "worldTransform": {},
+		     "worldPosition": {},
+		     "worldScale": {},
+		     "worldRotation": {},
+		     "_sr": {},
+		     "_cr": {},
+		     "filterArea": {},
+		     "_bounds": {},
+		     "_currentBounds": {},
+		     "_mask": {},
+		     "_cacheAsBitmap": {},
+		     "_cacheIsDirty": {},
+		     "destroy": {
+		      "!type": "fn()"
+		     },
+		     "updateTransform": {
+		      "!type": "fn()"
+		     },
+		     "displayObjectUpdateTransform": {},
+		     "getBounds": {
+		      "!type": "fn()"
+		     },
+		     "getLocalBounds": {
+		      "!type": "fn()"
+		     },
+		     "setStageReference": {
+		      "!type": "fn()"
+		     },
+		     "preUpdate": {
+		      "!type": "fn()"
+		     },
+		     "generateTexture": {
+		      "!type": "fn()"
+		     },
+		     "updateCache": {
+		      "!type": "fn()"
+		     },
+		     "toGlobal": {
+		      "!type": "fn()"
+		     },
+		     "toLocal": {
+		      "!type": "fn()"
+		     },
+		     "_renderCachedSprite": {
+		      "!type": "fn()"
+		     },
+		     "_generateCachedSprite": {
+		      "!type": "fn()"
+		     },
+		     "_destroyCachedSprite": {
+		      "!type": "fn()"
+		     },
+		     "_renderWebGL": {
+		      "!type": "fn()"
+		     },
+		     "_renderCanvas": {
+		      "!type": "fn()"
+		     }
 		    },
 		    "_tempMatrix": {
 		     "tx": {},
 		     "ty": {}
-		    },
-		    "updateCache": {
-		     "!type": "fn()"
-		    },
-		    "toGlobal": {
-		     "!type": "fn()"
-		    },
-		    "toLocal": {
-		     "!type": "fn()"
-		    },
-		    "_renderCachedSprite": {
-		     "!type": "fn()"
-		    },
-		    "_generateCachedSprite": {
-		     "!type": "fn()"
-		    },
-		    "_destroyCachedSprite": {
-		     "!type": "fn()"
-		    },
-		    "_renderWebGL": {
-		     "!type": "fn()"
-		    },
-		    "_renderCanvas": {
-		     "!type": "fn()"
 		    }
 		   },
 		   "DisplayObject#destroy": {
 		    "i": {},
-		    "children": {},
-		    "transformCallback": {},
-		    "transformCallbackContext": {},
-		    "hitArea": {},
-		    "parent": {},
-		    "stage": {},
-		    "worldTransform": {},
-		    "filterArea": {},
-		    "_bounds": {},
-		    "_currentBounds": {},
-		    "_mask": {},
-		    "renderable": {}
+		    "prototype": {
+		     "children": {},
+		     "transformCallback": {},
+		     "transformCallbackContext": {},
+		     "hitArea": {},
+		     "parent": {},
+		     "stage": {},
+		     "worldTransform": {},
+		     "filterArea": {},
+		     "_bounds": {},
+		     "_currentBounds": {},
+		     "_mask": {},
+		     "renderable": {}
+		    }
 		   },
 		   "DisplayObject#updateTransform": {
 		    "p": {},
@@ -28157,12 +29688,14 @@
 		    "d": {},
 		    "tx": {},
 		    "ty": {},
-		    "rotationCache": {},
-		    "_sr": {},
-		    "_cr": {},
-		    "worldAlpha": {},
-		    "worldRotation": {},
-		    "_currentBounds": {}
+		    "prototype": {
+		     "rotationCache": {},
+		     "_sr": {},
+		     "_cr": {},
+		     "worldAlpha": {},
+		     "worldRotation": {},
+		     "_currentBounds": {}
+		    }
 		   },
 		   "DisplayObject#updateTransform~wt": {
 		    "a": {},
@@ -28176,7 +29709,9 @@
 		    "matrix": {}
 		   },
 		   "DisplayObject#setStageReference": {
-		    "stage": {}
+		    "prototype": {
+		     "stage": {}
+		    }
 		   },
 		   "DisplayObject#generateTexture": {
 		    "bounds": {},
@@ -28189,12 +29724,14 @@
 		    "worldAlpha": {}
 		   },
 		   "DisplayObject#_generateCachedSprite": {
-		    "_cacheAsBitmap": {},
+		    "prototype": {
+		     "_cacheAsBitmap": {},
+		     "_cachedSprite": {},
+		     "_filters": {}
+		    },
 		    "bounds": {},
 		    "renderTexture": {},
-		    "_cachedSprite": {},
-		    "tempFilters": {},
-		    "_filters": {}
+		    "tempFilters": {}
 		   },
 		   "DisplayObject#_generateCachedSprite#_cachedSprite": {
 		    "worldTransform": {},
@@ -28205,7 +29742,9 @@
 		    }
 		   },
 		   "DisplayObject#_destroyCachedSprite": {
-		    "_cachedSprite": {}
+		    "prototype": {
+		     "_cachedSprite": {}
+		    }
 		   },
 		   "DisplayObject#_renderWebGL": {
 		    "renderSession": {}
@@ -28215,63 +29754,65 @@
 		   },
 		   "DisplayObjectContainer": {
 		    "!type": "fn()",
-		    "children": {
-		     "!type": "?"
-		    },
-		    "addChild": {
-		     "!type": "fn()"
-		    },
-		    "addChildAt": {
-		     "!type": "fn()"
-		    },
-		    "swapChildren": {
-		     "!type": "fn()"
-		    },
-		    "getChildIndex": {
-		     "!type": "fn()"
-		    },
-		    "setChildIndex": {
-		     "!type": "fn()"
-		    },
-		    "getChildAt": {
-		     "!type": "fn()"
-		    },
-		    "removeChild": {
-		     "!type": "fn()"
-		    },
-		    "removeChildAt": {
-		     "!type": "fn()"
-		    },
-		    "removeChildren": {
-		     "!type": "fn()"
-		    },
-		    "updateTransform": {
-		     "!type": "fn()"
-		    },
-		    "displayObjectContainerUpdateTransform": {},
-		    "getBounds": {
-		     "!type": "fn()"
-		    },
-		    "getLocalBounds": {
-		     "!type": "fn()"
-		    },
-		    "setStageReference": {
-		     "!type": "fn()"
-		    },
-		    "removeStageReference": {
-		     "!type": "fn()"
-		    },
-		    "_renderWebGL": {
-		     "!type": "fn()"
-		    },
-		    "_renderCanvas": {
-		     "!type": "fn()"
+		    "prototype": {
+		     "children": {},
+		     "addChild": {
+		      "!type": "fn()"
+		     },
+		     "addChildAt": {
+		      "!type": "fn()"
+		     },
+		     "swapChildren": {
+		      "!type": "fn()"
+		     },
+		     "getChildIndex": {
+		      "!type": "fn()"
+		     },
+		     "setChildIndex": {
+		      "!type": "fn()"
+		     },
+		     "getChildAt": {
+		      "!type": "fn()"
+		     },
+		     "removeChild": {
+		      "!type": "fn()"
+		     },
+		     "removeChildAt": {
+		      "!type": "fn()"
+		     },
+		     "removeChildren": {
+		      "!type": "fn()"
+		     },
+		     "updateTransform": {
+		      "!type": "fn()"
+		     },
+		     "displayObjectContainerUpdateTransform": {},
+		     "getBounds": {
+		      "!type": "fn()"
+		     },
+		     "getLocalBounds": {
+		      "!type": "fn()"
+		     },
+		     "setStageReference": {
+		      "!type": "fn()"
+		     },
+		     "removeStageReference": {
+		      "!type": "fn()"
+		     },
+		     "_renderWebGL": {
+		      "!type": "fn()"
+		     },
+		     "_renderCanvas": {
+		      "!type": "fn()"
+		     }
 		    }
 		   },
 		   "DisplayObjectContainer#swapChildren": {
 		    "index1": {},
 		    "index2": {},
-		    "children[undefined]": {}
+		    "prototype": {
+		     "children[undefined]": {}
+		    }
 		   },
 		   "DisplayObjectContainer#getChildIndex": {
 		    "index": {}
@@ -28324,18 +29865,24 @@
 		   },
 		   "DisplayObjectContainer#getLocalBounds": {
 		    "matrixCache": {},
-		    "worldTransform": {},
+		    "prototype": {
+		     "worldTransform": {}
+		    },
 		    "i": {},
 		    "j": {},
 		    "bounds": {}
 		   },
 		   "DisplayObjectContainer#setStageReference": {
-		    "stage": {},
+		    "prototype": {
+		     "stage": {}
+		    },
 		    "i": {}
 		   },
 		   "DisplayObjectContainer#removeStageReference": {
 		    "i": {},
-		    "stage": {}
+		    "prototype": {
+		     "stage": {}
+		    }
 		   },
 		   "DisplayObjectContainer#_renderWebGL": {
 		    "i": {}
@@ -28345,48 +29892,32 @@
 		   },
 		   "Sprite": {
 		    "!type": "fn(texture: +Texture)",
-		    "anchor": {
-		     "!type": "?"
-		    },
-		    "texture": {
-		     "!type": "?"
-		    },
-		    "_width": {
-		     "!type": "?"
-		    },
-		    "_height": {
-		     "!type": "?"
-		    },
-		    "tint": {
-		     "!type": "?"
-		    },
-		    "cachedTint": {
-		     "!type": "?"
-		    },
-		    "tintedTexture": {
-		     "!type": "?"
-		    },
-		    "blendMode": {
-		     "!type": "?"
-		    },
-		    "shader": {
-		     "!type": "?"
-		    },
-		    "renderable": {},
-		    "setTexture": {
-		     "!type": "fn()"
-		    },
-		    "onTextureUpdate": {
-		     "!type": "fn()"
-		    },
-		    "getBounds": {
-		     "!type": "fn()"
-		    },
-		    "_renderWebGL": {
-		     "!type": "fn()"
-		    },
-		    "_renderCanvas": {
-		     "!type": "fn()"
+		    "prototype": {
+		     "anchor": {},
+		     "texture": {},
+		     "_width": {},
+		     "_height": {},
+		     "tint": {},
+		     "cachedTint": {},
+		     "tintedTexture": {},
+		     "blendMode": {},
+		     "shader": {},
+		     "renderable": {},
+		     "setTexture": {
+		      "!type": "fn()"
+		     },
+		     "onTextureUpdate": {
+		      "!type": "fn()"
+		     },
+		     "getBounds": {
+		      "!type": "fn()"
+		     },
+		     "_renderWebGL": {
+		      "!type": "fn()"
+		     },
+		     "_renderCanvas": {
+		      "!type": "fn()"
+		     }
 		    },
 		    "fromFrame": {
 		     "!type": "fn()",
@@ -28398,7 +29929,9 @@
 		    }
 		   },
 		   "Sprite#setTexture": {
-		    "texture": {}
+		    "prototype": {
+		     "texture": {}
+		    }
 		   },
 		   "Sprite#setTexture#texture": {
 		    "valid": {}
@@ -28434,7 +29967,9 @@
 		    "x4": {},
 		    "y4": {},
 		    "bounds": {},
-		    "_currentBounds": {}
+		    "prototype": {
+		     "_currentBounds": {}
+		    }
 		   },
 		   "Sprite#getBounds~bounds": {
 		    "x": {},
@@ -28454,32 +29989,38 @@
 		    "dy": {},
 		    "cw": {},
 		    "ch": {},
-		    "tintedTexture": {},
-		    "cachedTint": {},
+		    "prototype": {
+		     "tintedTexture": {},
+		     "cachedTint": {}
+		    },
 		    "cx": {},
 		    "cy": {},
 		    "i": {}
 		   },
 		   "SpriteBatch": {
 		    "!type": "fn(texture: +Texture)",
-		    "textureThing": {},
-		    "ready": {},
-		    "initWebGL": {
-		     "!type": "fn()"
-		    },
-		    "updateTransform": {
-		     "!type": "fn()"
-		    },
-		    "_renderWebGL": {
-		     "!type": "fn()"
-		    },
-		    "_renderCanvas": {
-		     "!type": "fn()"
+		    "prototype": {
+		     "textureThing": {},
+		     "ready": {},
+		     "initWebGL": {
+		      "!type": "fn()"
+		     },
+		     "updateTransform": {
+		      "!type": "fn()"
+		     },
+		     "_renderWebGL": {
+		      "!type": "fn()"
+		     },
+		     "_renderCanvas": {
+		      "!type": "fn()"
+		     }
 		    }
 		   },
 		   "SpriteBatch#initWebGL": {
-		    "fastSpriteBatch": {},
-		    "ready": {}
+		    "prototype": {
+		     "fastSpriteBatch": {},
+		     "ready": {}
+		    }
 		   },
 		   "SpriteBatch#_renderCanvas": {
 		    "context": {},
@@ -28496,42 +30037,48 @@
 		   },
 		   "Stage": {
 		    "!type": "fn(backgroundColor: number)",
-		    "worldTransform": {
-		     "!type": "?"
-		    },
-		    "stage": {},
-		    "updateTransform": {
-		     "!type": "fn()"
-		    },
-		    "setBackgroundColor": {
-		     "!type": "fn()"
+		    "prototype": {
+		     "worldTransform": {},
+		     "stage": {},
+		     "updateTransform": {
+		      "!type": "fn()"
+		     },
+		     "setBackgroundColor": {
+		      "!type": "fn()"
+		     }
 		    }
 		   },
 		   "Stage#updateTransform": {
-		    "worldAlpha": {},
+		    "prototype": {
+		     "worldAlpha": {}
+		    },
 		    "i": {}
 		   },
 		   "Stage#setBackgroundColor": {
-		    "backgroundColor": {},
-		    "backgroundColorSplit": {},
-		    "hex": {},
-		    "backgroundColorString": {}
+		    "prototype": {
+		     "backgroundColor": {},
+		     "backgroundColorSplit": {},
+		     "backgroundColorString": {}
+		    },
+		    "hex": {}
 		   },
 		   "Rope": {
 		    "!type": "fn(texture: +Texture, points: [?])",
-		    "points": {},
-		    "vertices": {},
-		    "uvs": {},
-		    "colors": {},
-		    "indices": {},
-		    "refresh": {
-		     "!type": "fn()"
-		    },
-		    "updateTransform": {
-		     "!type": "fn()"
-		    },
-		    "setTexture": {
-		     "!type": "fn()"
+		    "prototype": {
+		     "points": {},
+		     "vertices": {},
+		     "uvs": {},
+		     "colors": {},
+		     "indices": {},
+		     "refresh": {
+		      "!type": "fn()"
+		     },
+		     "updateTransform": {
+		      "!type": "fn()"
+		     },
+		     "setTexture": {
+		      "!type": "fn()"
+		     }
 		    }
 		   },
 		   "Rope#refresh": {
@@ -28540,7 +30087,9 @@
 		    "lastPoint": {},
 		    "indices": {},
 		    "colors": {},
-		    "count": {},
+		    "prototype": {
+		     "count": {}
+		    },
 		    "total": {},
 		    "point": {},
 		    "index": {},
@@ -28569,7 +30118,9 @@
 		    "lastPoint": {},
 		    "nextPoint": {},
 		    "perp": {},
-		    "count": {},
+		    "prototype": {
+		     "count": {}
+		    },
 		    "vertices": {},
 		    "total": {},
 		    "point": {},
@@ -28587,56 +30138,52 @@
 		    "undefined]": {}
 		   },
 		   "Rope#setTexture": {
-		    "texture": {}
+		    "prototype": {
+		     "texture": {}
+		    }
 		   },
 		   "Strip": {
 		    "!type": "fn(texture: +Texture, width: number, height: number)",
-		    "texture": {
-		     "!type": "?"
-		    },
-		    "uvs": {},
-		    "vertices": {},
-		    "colors": {},
-		    "indices": {},
-		    "dirty": {
-		     "!type": "?"
-		    },
-		    "blendMode": {
-		     "!type": "?"
-		    },
-		    "canvasPadding": {
-		     "!type": "?"
-		    },
-		    "drawMode": {},
-		    "_renderWebGL": {
-		     "!type": "fn()"
-		    },
-		    "_initWebGL": {
-		     "!type": "fn()"
-		    },
-		    "_renderStrip": {
-		     "!type": "fn()"
-		    },
-		    "_renderCanvas": {
-		     "!type": "fn()"
-		    },
-		    "_renderCanvasTriangleStrip": {
-		     "!type": "fn()"
-		    },
-		    "_renderCanvasTriangles": {
-		     "!type": "fn()"
-		    },
-		    "_renderCanvasDrawTriangle": {
-		     "!type": "fn()"
-		    },
-		    "renderStripFlat": {
-		     "!type": "fn()"
-		    },
-		    "onTextureUpdate": {
-		     "!type": "fn()"
-		    },
-		    "getBounds": {
-		     "!type": "fn()"
+		    "prototype": {
+		     "texture": {},
+		     "uvs": {},
+		     "vertices": {},
+		     "colors": {},
+		     "indices": {},
+		     "dirty": {},
+		     "blendMode": {},
+		     "canvasPadding": {},
+		     "drawMode": {},
+		     "_renderWebGL": {
+		      "!type": "fn()"
+		     },
+		     "_initWebGL": {
+		      "!type": "fn()"
+		     },
+		     "_renderStrip": {
+		      "!type": "fn()"
+		     },
+		     "_renderCanvas": {
+		      "!type": "fn()"
+		     },
+		     "_renderCanvasTriangleStrip": {
+		      "!type": "fn()"
+		     },
+		     "_renderCanvasTriangles": {
+		      "!type": "fn()"
+		     },
+		     "_renderCanvasDrawTriangle": {
+		      "!type": "fn()"
+		     },
+		     "renderStripFlat": {
+		      "!type": "fn()"
+		     },
+		     "onTextureUpdate": {
+		      "!type": "fn()"
+		     },
+		     "getBounds": {
+		      "!type": "fn()"
+		     }
 		    },
 		    "DrawModes": {
 		     "TRIANGLE_STRIP": {},
@@ -28645,10 +30192,12 @@
 		   },
 		   "Strip#_initWebGL": {
 		    "gl": {},
-		    "_vertexBuffer": {},
-		    "_indexBuffer": {},
-		    "_uvBuffer": {},
-		    "_colorBuffer": {}
+		    "prototype": {
+		     "_vertexBuffer": {},
+		     "_indexBuffer": {},
+		     "_uvBuffer": {},
+		     "_colorBuffer": {}
+		    }
 		   },
 		   "Strip#_renderStrip": {
 		    "gl": {},
@@ -28656,7 +30205,9 @@
 		    "offset": {},
 		    "shader": {},
 		    "drawMode": {},
-		    "dirty": {}
+		    "prototype": {
+		     "dirty": {}
+		    }
 		   },
 		   "Strip#_renderCanvas": {
 		    "context": {},
@@ -28727,7 +30278,9 @@
 		    "fillStyle": {}
 		   },
 		   "Strip#onTextureUpdate": {
-		    "updateFrame": {}
+		    "prototype": {
+		     "updateFrame": {}
+		    }
 		   },
 		   "Strip#getBounds": {
 		    "worldTransform": {},
@@ -28749,7 +30302,9 @@
 		    "x": {},
 		    "y": {},
 		    "bounds": {},
-		    "_currentBounds": {}
+		    "prototype": {
+		     "_currentBounds": {}
+		    }
 		   },
 		   "Strip#getBounds~bounds": {
 		    "x": {},
@@ -28759,73 +30314,51 @@
 		   },
 		   "TilingSprite": {
 		    "!type": "fn(texture: +Texture, width: number, height: number)",
-		    "_width": {
-		     "!type": "?"
-		    },
-		    "_height": {
-		     "!type": "?"
-		    },
-		    "tileScale": {
-		     "!type": "?"
-		    },
-		    "tileScaleOffset": {
-		     "!type": "?"
-		    },
-		    "tilePosition": {
-		     "!type": "?"
-		    },
-		    "renderable": {
-		     "!type": "?"
-		    },
-		    "tint": {
-		     "!type": "?"
-		    },
-		    "textureDebug": {
-		     "!type": "?"
-		    },
-		    "blendMode": {
-		     "!type": "?"
-		    },
-		    "canvasBuffer": {
-		     "!type": "?"
-		    },
-		    "tilingTexture": {
-		     "!type": "?"
-		    },
-		    "tilePattern": {
-		     "!type": "?"
-		    },
-		    "refreshTexture": {
-		     "!type": "?"
-		    },
-		    "frameWidth": {},
-		    "frameHeight": {},
-		    "setTexture": {
-		     "!type": "fn()"
-		    },
-		    "_renderWebGL": {
-		     "!type": "fn()"
-		    },
-		    "_renderCanvas": {
-		     "!type": "fn()"
-		    },
-		    "onTextureUpdate": {
-		     "!type": "fn()"
-		    },
-		    "generateTilingTexture": {
-		     "!type": "fn()"
-		    },
-		    "getBounds": {
-		     "!type": "fn()"
-		    },
-		    "destroy": {
-		     "!type": "fn()"
+		    "prototype": {
+		     "_width": {},
+		     "_height": {},
+		     "tileScale": {},
+		     "tileScaleOffset": {},
+		     "tilePosition": {},
+		     "renderable": {},
+		     "tint": {},
+		     "textureDebug": {},
+		     "blendMode": {},
+		     "canvasBuffer": {},
+		     "tilingTexture": {},
+		     "tilePattern": {},
+		     "refreshTexture": {},
+		     "frameWidth": {},
+		     "frameHeight": {},
+		     "setTexture": {
+		      "!type": "fn()"
+		     },
+		     "_renderWebGL": {
+		      "!type": "fn()"
+		     },
+		     "_renderCanvas": {
+		      "!type": "fn()"
+		     },
+		     "onTextureUpdate": {
+		      "!type": "fn()"
+		     },
+		     "generateTilingTexture": {
+		      "!type": "fn()"
+		     },
+		     "getBounds": {
+		      "!type": "fn()"
+		     },
+		     "destroy": {
+		      "!type": "fn()"
+		     }
 		    }
 		   },
 		   "TilingSprite#setTexture": {
-		    "texture": {},
-		    "refreshTexture": {},
-		    "cachedTint": {}
+		    "prototype": {
+		     "texture": {},
+		     "refreshTexture": {},
+		     "cachedTint": {}
+		    }
 		   },
 		   "TilingSprite#_renderWebGL#tilingTexture": {
 		    "needsUpdate": {}
@@ -28837,7 +30370,9 @@
 		    "context": {},
 		    "wt": {},
 		    "resolution": {},
-		    "tilePattern": {},
+		    "prototype": {
+		     "tilePattern": {}
+		    },
 		    "sessionBlendMode": {},
 		    "tilePosition": {},
 		    "tileScale": {},
@@ -28863,11 +30398,13 @@
 		    "targetHeight": {},
 		    "dx": {},
 		    "dy": {},
-		    "canvasBuffer": {},
-		    "tilingTexture": {},
+		    "prototype": {
+		     "canvasBuffer": {},
+		     "tilingTexture": {},
+		     "refreshTexture": {}
+		    },
 		    "w": {},
-		    "h": {},
-		    "refreshTexture": {}
+		    "h": {}
 		   },
 		   "TilingSprite#generateTilingTexture#tilingTexture": {
 		    "baseTexture": {
@@ -28914,7 +30451,9 @@
 		    "minX": {},
 		    "minY": {},
 		    "bounds": {},
-		    "_currentBounds": {}
+		    "prototype": {
+		     "_currentBounds": {}
+		    }
 		   },
 		   "TilingSprite#getBounds~bounds": {
 		    "x": {},
@@ -28923,33 +30462,25 @@
 		    "height": {}
 		   },
 		   "TilingSprite#destroy": {
-		    "tileScale": {},
-		    "tileScaleOffset": {},
-		    "tilePosition": {},
-		    "tilingTexture": {}
+		    "prototype": {
+		     "tileScale": {},
+		     "tileScaleOffset": {},
+		     "tilePosition": {},
+		     "tilingTexture": {}
+		    }
 		   },
 		   "AbstractFilter": {
 		    "!type": "fn(fragmentSrc: [?], uniforms: ?)",
-		    "passes": {
-		     "!type": "?"
-		    },
-		    "shaders": {
-		     "!type": "?"
-		    },
-		    "dirty": {
-		     "!type": "?"
-		    },
-		    "padding": {
-		     "!type": "?"
-		    },
-		    "uniforms": {
-		     "!type": "?"
-		    },
-		    "fragmentSrc": {
-		     "!type": "?"
-		    },
-		    "syncUniforms": {
-		     "!type": "fn()"
+		    "prototype": {
+		     "passes": {},
+		     "shaders": {},
+		     "dirty": {},
+		     "padding": {},
+		     "uniforms": {},
+		     "fragmentSrc": {},
+		     "syncUniforms": {
+		      "!type": "fn()"
+		     }
 		    }
 		   },
 		   "AbstractFilter#syncUniforms": {
@@ -28961,16 +30492,18 @@
 		   },
 		   "GraphicsData": {
 		    "!type": "fn(lineWidth: number, lineColor: number, lineAlpha: number, fillColor: number, fillAlpha: number, fill: bool, shape: +Circle|+Rectangle|+Ellipse|+Line|+Polygon)",
-		    "lineWidth": {},
-		    "lineColor": {},
-		    "lineAlpha": {},
-		    "_lineTint": {},
-		    "fillColor": {},
-		    "fillAlpha": {},
-		    "_fillTint": {},
-		    "fill": {},
-		    "shape": {},
-		    "type": {}
+		    "prototype": {
+		     "lineWidth": {},
+		     "lineColor": {},
+		     "lineAlpha": {},
+		     "_lineTint": {},
+		     "fillColor": {},
+		     "fillAlpha": {},
+		     "_fillTint": {},
+		     "fill": {},
+		     "shape": {},
+		     "type": {}
+		    }
 		   }
 		  },
 		  "set": {
@@ -29065,8 +30598,10 @@
 		   "target": {}
 		  },
 		  "WheelEventProxy": {
-		   "bindEvent": {
-		    "!type": "fn()"
+		   "prototype": {
+		    "bindEvent": {
+		     "!type": "fn()"
+		    }
 		   },
 		   "_stubsGenerated": {}
 		  },
@@ -29075,7 +30610,9 @@
 		    "!type": "fn()"
 		   },
 		   "prop": {},
-		   "originalEvent": {}
+		   "prototype": {
+		    "originalEvent": {}
+		   }
 		  },
 		  "type": {
 		   "value": {}
@@ -29479,20 +31016,22 @@
 		    "t": {}
 		   },
 		   "options": {},
-		   "length": {
-		    "!type": "number"
-		   },
-		   "computeMomentOfInertia": {
-		    "!type": "fn()"
-		   },
-		   "updateBoundingRadius": {
-		    "!type": "fn()"
-		   },
-		   "computeAABB": {
-		    "!type": "fn()"
-		   },
-		   "raycast": {
-		    "!type": "fn()"
+		   "prototype": {
+		    "length": {
+		     "!type": "number"
+		    },
+		    "computeMomentOfInertia": {
+		     "!type": "fn()"
+		    },
+		    "updateBoundingRadius": {
+		     "!type": "fn()"
+		    },
+		    "computeAABB": {
+		     "!type": "fn()"
+		    },
+		    "raycast": {
+		     "!type": "fn()"
+		    }
 		   }
 		  },
 		  "<anonymous>~Point": {
@@ -29535,56 +31074,56 @@
 		   }
 		  },
 		  "<anonymous>~Polygon": {
-		   "vertices": {
-		    "!type": "?"
-		   },
-		   "at": {
-		    "!type": "fn()"
-		   },
-		   "first": {
-		    "!type": "fn()"
-		   },
-		   "last": {
-		    "!type": "fn()"
-		   },
-		   "clear": {
-		    "!type": "fn()"
-		   },
-		   "append": {
-		    "!type": "fn()"
-		   },
-		   "makeCCW": {
-		    "!type": "fn()"
-		   },
-		   "reverse": {
-		    "!type": "fn()"
-		   },
-		   "isReflex": {
-		    "!type": "fn()"
-		   },
-		   "canSee": {
-		    "!type": "fn()"
-		   },
-		   "copy": {
-		    "!type": "fn()"
-		   },
-		   "getCutEdges": {
-		    "!type": "fn()"
-		   },
-		   "decomp": {
-		    "!type": "fn()"
-		   },
-		   "slice": {
-		    "!type": "fn()"
-		   },
-		   "isSimple": {
-		    "!type": "fn()"
-		   },
-		   "quickDecomp": {
-		    "!type": "fn()"
-		   },
-		   "removeCollinearPoints": {
-		    "!type": "fn()"
+		   "prototype": {
+		    "vertices": {},
+		    "at": {
+		     "!type": "fn()"
+		    },
+		    "first": {
+		     "!type": "fn()"
+		    },
+		    "last": {
+		     "!type": "fn()"
+		    },
+		    "clear": {
+		     "!type": "fn()"
+		    },
+		    "append": {
+		     "!type": "fn()"
+		    },
+		    "makeCCW": {
+		     "!type": "fn()"
+		    },
+		    "reverse": {
+		     "!type": "fn()"
+		    },
+		    "isReflex": {
+		     "!type": "fn()"
+		    },
+		    "canSee": {
+		     "!type": "fn()"
+		    },
+		    "copy": {
+		     "!type": "fn()"
+		    },
+		    "getCutEdges": {
+		     "!type": "fn()"
+		    },
+		    "decomp": {
+		     "!type": "fn()"
+		    },
+		    "slice": {
+		     "!type": "fn()"
+		    },
+		    "isSimple": {
+		     "!type": "fn()"
+		    },
+		    "quickDecomp": {
+		     "!type": "fn()"
+		    },
+		    "removeCollinearPoints": {
+		     "!type": "fn()"
+		    }
 		   }
 		  },
 		  "<anonymous>~Polygon#at": {
@@ -29606,7 +31145,9 @@
 		   "tmp": {},
 		   "i": {},
 		   "N": {},
-		   "vertices": {}
+		   "prototype": {
+		    "vertices": {}
+		   }
 		  },
 		  "<anonymous>~Polygon#canSee": {
 		   "p": {},
@@ -29702,29 +31243,27 @@
 		   }
 		  },
 		  "<anonymous>~AABB": {
-		   "lowerBound": {
-		    "!type": "?"
-		   },
-		   "upperBound": {
-		    "!type": "?"
-		   },
-		   "setFromPoints": {
-		    "!type": "fn()"
-		   },
-		   "copy": {
-		    "!type": "fn()"
-		   },
-		   "extend": {
-		    "!type": "fn()"
-		   },
-		   "overlaps": {
-		    "!type": "fn()"
-		   },
-		   "containsPoint": {
-		    "!type": "fn()"
-		   },
-		   "overlapsRay": {
-		    "!type": "fn()"
+		   "prototype": {
+		    "lowerBound": {},
+		    "upperBound": {},
+		    "setFromPoints": {
+		     "!type": "fn()"
+		    },
+		    "copy": {
+		     "!type": "fn()"
+		    },
+		    "extend": {
+		     "!type": "fn()"
+		    },
+		    "overlaps": {
+		     "!type": "fn()"
+		    },
+		    "containsPoint": {
+		     "!type": "fn()"
+		    },
+		    "overlapsRay": {
+		     "!type": "fn()"
+		    }
 		   }
 		  },
 		  "<anonymous>~AABB#setFromPoints": {
@@ -29738,10 +31277,12 @@
 		   "x": {},
 		   "y": {},
 		   "j": {},
-		   "lowerBound[0]": {},
-		   "lowerBound[1]": {},
-		   "upperBound[0]": {},
-		   "upperBound[1]": {}
+		   "prototype": {
+		    "lowerBound[0]": {},
+		    "lowerBound[1]": {},
+		    "upperBound[0]": {},
+		    "upperBound[1]": {}
+		   }
 		  },
 		  "<anonymous>~tmp": {
 		   "0]": {},
@@ -29756,9 +31297,11 @@
 		  "<anonymous>~AABB#extend": {
 		   "i": {},
 		   "l": {},
-		   "lowerBound[undefined]": {},
-		   "u": {},
-		   "upperBound[undefined]": {}
+		   "prototype": {
+		    "lowerBound[undefined]": {},
+		    "upperBound[undefined]": {}
+		   },
+		   "u": {}
 		  },
 		  "<anonymous>~AABB#overlaps": {
 		   "l1": {},
@@ -29782,15 +31325,22 @@
 		   "tmax": {}
 		  },
 		  "<anonymous>~Broadphase": {
-		   "type": {},
-		   "result": {
-		    "!type": "?"
-		   },
-		   "world": {
-		    "!type": "?"
-		   },
-		   "boundingVolumeType": {
-		    "!type": "number"
+		   "prototype": {
+		    "type": {},
+		    "result": {},
+		    "world": {},
+		    "boundingVolumeType": {
+		     "!type": "number"
+		    },
+		    "setWorld": {
+		     "!type": "fn()"
+		    },
+		    "getCollisionPairs": {
+		     "!type": "fn()"
+		    },
+		    "boundingVolumeCheck": {
+		     "!type": "fn()"
+		    }
 		   },
 		   "AABB": {
 		    "!type": "number"
@@ -29798,21 +31348,12 @@
 		   "BOUNDING_CIRCLE": {
 		    "!type": "number"
 		   },
-		   "setWorld": {
-		    "!type": "fn()"
-		   },
-		   "getCollisionPairs": {
-		    "!type": "fn()"
-		   },
 		   "boundingRadiusCheck": {
 		    "!type": "fn()",
 		    "d2": {},
 		    "r": {}
 		   },
 		   "aabbCheck": {
-		    "!type": "fn()"
-		   },
-		   "boundingVolumeCheck": {
 		    "!type": "fn()"
 		   },
 		   "canCollide": {
@@ -29824,17 +31365,21 @@
 		   "SAP": {}
 		  },
 		  "<anonymous>~Broadphase#setWorld": {
-		   "world": {}
+		   "prototype": {
+		    "world": {}
+		   }
 		  },
 		  "<anonymous>~Broadphase#boundingVolumeCheck": {
 		   "result": {}
 		  },
 		  "<anonymous>~NaiveBroadphase": {
-		   "getCollisionPairs": {
-		    "!type": "fn()"
-		   },
-		   "aabbQuery": {
-		    "!type": "fn()"
+		   "prototype": {
+		    "getCollisionPairs": {
+		     "!type": "fn()"
+		    },
+		    "aabbQuery": {
+		     "!type": "fn()"
+		    }
 		   }
 		  },
 		  "<anonymous>~NaiveBroadphase#getCollisionPairs": {
@@ -29856,120 +31401,103 @@
 		   "b": {}
 		  },
 		  "<anonymous>~Narrowphase": {
-		   "contactEquations": {
-		    "!type": "?"
-		   },
-		   "frictionEquations": {
-		    "!type": "?"
-		   },
-		   "enableFriction": {
-		    "!type": "?"
-		   },
-		   "enabledEquations": {
-		    "!type": "?"
-		   },
-		   "slipForce": {
-		    "!type": "?"
-		   },
-		   "frictionCoefficient": {
-		    "!type": "?"
-		   },
-		   "surfaceVelocity": {
-		    "!type": "number"
-		   },
-		   "contactEquationPool": {
-		    "!type": "+ContactEquationPool"
-		   },
-		   "frictionEquationPool": {
-		    "!type": "+FrictionEquationPool"
-		   },
-		   "restitution": {
-		    "!type": "?"
-		   },
-		   "stiffness": {
-		    "!type": "number"
-		   },
-		   "relaxation": {
-		    "!type": "number"
-		   },
-		   "frictionStiffness": {
-		    "!type": "?"
-		   },
-		   "frictionRelaxation": {
-		    "!type": "?"
-		   },
-		   "enableFrictionReduction": {
-		    "!type": "?"
-		   },
-		   "collidingBodiesLastStep": {
-		    "!type": "?"
-		   },
-		   "contactSkinSize": {
-		    "!type": "number"
-		   },
-		   "bodiesOverlap": {
-		    "!type": "fn()"
-		   },
-		   "collidedLastStep": {
-		    "!type": "fn()"
-		   },
-		   "reset": {
-		    "!type": "fn()"
-		   },
-		   "createContactEquation": {
-		    "!type": "fn()"
-		   },
-		   "createFrictionEquation": {
-		    "!type": "fn()"
-		   },
-		   "createFrictionFromContact": {
-		    "!type": "fn()"
-		   },
-		   "createFrictionFromAverage": {
-		    "!type": "fn()"
-		   },
-		   "[undefined]": {},
-		   "convexLine": {
-		    "!type": "fn()"
-		   },
-		   "lineBox": {
-		    "!type": "fn()"
-		   },
-		   "lineCapsule": {
-		    "!type": "fn()"
-		   },
-		   "capsuleCapsule": {
-		    "!type": "fn()"
-		   },
-		   "lineLine": {
-		    "!type": "fn()"
-		   },
-		   "planeLine": {
-		    "!type": "fn()"
-		   },
-		   "particleCapsule": {
-		    "!type": "fn()"
-		   },
-		   "circleLine": {
-		    "!type": "fn()"
-		   },
-		   "circleCapsule": {
-		    "!type": "fn()"
-		   },
-		   "circleCircle": {
-		    "!type": "fn()"
-		   },
-		   "particlePlane": {
-		    "!type": "fn()"
-		   },
-		   "circleParticle": {
-		    "!type": "fn()"
-		   },
-		   "planeCapsule": {
-		    "!type": "fn()"
-		   },
-		   "circlePlane": {
-		    "!type": "fn()"
+		   "prototype": {
+		    "contactEquations": {},
+		    "frictionEquations": {},
+		    "enableFriction": {},
+		    "enabledEquations": {},
+		    "slipForce": {},
+		    "frictionCoefficient": {},
+		    "surfaceVelocity": {
+		     "!type": "number"
+		    },
+		    "contactEquationPool": {
+		     "!type": "+ContactEquationPool"
+		    },
+		    "frictionEquationPool": {
+		     "!type": "+FrictionEquationPool"
+		    },
+		    "restitution": {},
+		    "stiffness": {
+		     "!type": "number"
+		    },
+		    "relaxation": {
+		     "!type": "number"
+		    },
+		    "frictionStiffness": {},
+		    "frictionRelaxation": {},
+		    "enableFrictionReduction": {},
+		    "collidingBodiesLastStep": {},
+		    "contactSkinSize": {
+		     "!type": "number"
+		    },
+		    "bodiesOverlap": {
+		     "!type": "fn()"
+		    },
+		    "collidedLastStep": {
+		     "!type": "fn()"
+		    },
+		    "reset": {
+		     "!type": "fn()"
+		    },
+		    "createContactEquation": {
+		     "!type": "fn()"
+		    },
+		    "createFrictionEquation": {
+		     "!type": "fn()"
+		    },
+		    "createFrictionFromContact": {
+		     "!type": "fn()"
+		    },
+		    "createFrictionFromAverage": {
+		     "!type": "fn()"
+		    },
+		    "[undefined]": {},
+		    "convexLine": {
+		     "!type": "fn()"
+		    },
+		    "lineBox": {
+		     "!type": "fn()"
+		    },
+		    "lineCapsule": {
+		     "!type": "fn()"
+		    },
+		    "capsuleCapsule": {
+		     "!type": "fn()"
+		    },
+		    "lineLine": {
+		     "!type": "fn()"
+		    },
+		    "planeLine": {
+		     "!type": "fn()"
+		    },
+		    "particleCapsule": {
+		     "!type": "fn()"
+		    },
+		    "circleLine": {
+		     "!type": "fn()"
+		    },
+		    "circleCapsule": {
+		     "!type": "fn()"
+		    },
+		    "circleCircle": {
+		     "!type": "fn()"
+		    },
+		    "particlePlane": {
+		     "!type": "fn()"
+		    },
+		    "circleParticle": {
+		     "!type": "fn()"
+		    },
+		    "planeCapsule": {
+		     "!type": "fn()"
+		    },
+		    "circlePlane": {
+		     "!type": "fn()"
+		    },
+		    "circleHeightfield": {
+		     "!type": "fn()"
+		    }
 		   },
 		   "projectConvexOntoAxis": {
 		    "!type": "fn()",
@@ -30012,9 +31540,6 @@
 		    "maxDot": {},
 		    "i": {},
 		    "d": {}
-		   },
-		   "circleHeightfield": {
-		    "!type": "fn()"
 		   }
 		  },
 		  "<anonymous>~Narrowphase#bodiesOverlap": {
@@ -30243,7 +31768,9 @@
 		   "numContacts": {},
 		   "i": {},
 		   "j": {},
-		   "enableFriction": {},
+		   "prototype": {
+		    "enableFriction": {}
+		   },
 		   "result": {},
 		   "rect": {},
 		   "result1": {},
@@ -30338,7 +31865,9 @@
 		   "circle": {},
 		   "dst": {},
 		   "enableFrictionBefore": {},
-		   "enableFriction": {},
+		   "prototype": {
+		    "enableFriction": {}
+		   },
 		   "numContacts1": {},
 		   "numContacts2": {},
 		   "numTotal": {}
@@ -30382,35 +31911,55 @@
 		  },
 		  "<anonymous>~Ray": {
 		   "options": {},
-		   "from": {
-		    "!type": "+array"
-		   },
-		   "to": {
-		    "!type": "+array"
-		   },
-		   "checkCollisionResponse": {
-		    "!type": "bool"
-		   },
-		   "skipBackfaces": {
-		    "!type": "bool"
-		   },
-		   "collisionMask": {
-		    "!type": "number"
-		   },
-		   "collisionGroup": {
-		    "!type": "number"
-		   },
-		   "mode": {
-		    "!type": "number"
-		   },
-		   "callback": {
-		    "!type": "+function"
-		   },
-		   "direction": {
-		    "!type": "+array"
-		   },
-		   "length": {
-		    "!type": "number"
+		   "prototype": {
+		    "from": {
+		     "!type": "+array"
+		    },
+		    "to": {
+		     "!type": "+array"
+		    },
+		    "checkCollisionResponse": {
+		     "!type": "bool"
+		    },
+		    "skipBackfaces": {
+		     "!type": "bool"
+		    },
+		    "collisionMask": {
+		     "!type": "number"
+		    },
+		    "collisionGroup": {
+		     "!type": "number"
+		    },
+		    "mode": {
+		     "!type": "number"
+		    },
+		    "callback": {
+		     "!type": "+function"
+		    },
+		    "direction": {
+		     "!type": "+array"
+		    },
+		    "length": {
+		     "!type": "number"
+		    },
+		    "update": {
+		     "!type": "fn()"
+		    },
+		    "intersectBodies": {
+		     "!type": "fn()"
+		    },
+		    "intersectBody": {
+		     "!type": "fn()"
+		    },
+		    "intersectShape": {
+		     "!type": "fn()"
+		    },
+		    "getAABB": {
+		     "!type": "fn()"
+		    },
+		    "reportIntersection": {
+		     "!type": "fn()"
+		    }
 		   },
 		   "CLOSEST": {
 		    "!type": "number"
@@ -30420,29 +31969,13 @@
 		   },
 		   "ALL": {
 		    "!type": "number"
-		   },
-		   "update": {
-		    "!type": "fn()"
-		   },
-		   "intersectBodies": {
-		    "!type": "fn()"
-		   },
-		   "intersectBody": {
-		    "!type": "fn()"
-		   },
-		   "intersectShape": {
-		    "!type": "fn()"
-		   },
-		   "getAABB": {
-		    "!type": "fn()"
-		   },
-		   "reportIntersection": {
-		    "!type": "fn()"
 		   }
 		  },
 		  "<anonymous>~Ray#update": {
 		   "d": {},
-		   "length": {}
+		   "prototype": {
+		    "length": {}
+		   }
 		  },
 		  "<anonymous>~Ray#intersectBodies": {
 		   "i": {},
@@ -30461,8 +31994,10 @@
 		  "<anonymous>~Ray#intersectShape": {
 		   "from": {},
 		   "distance": {},
-		   "_currentBody": {},
-		   "_currentShape": {}
+		   "prototype": {
+		    "_currentBody": {},
+		    "_currentShape": {}
+		   }
 		  },
 		  "<anonymous>~Ray#getAABB": {
 		   "to": {},
@@ -30478,79 +32013,94 @@
 		   "dot": {}
 		  },
 		  "<anonymous>~RaycastResult": {
-		   "normal": {
-		    "!type": "+array"
-		   },
-		   "shape": {
-		    "!type": "+Shape"
-		   },
-		   "body": {
-		    "!type": "+Body"
-		   },
-		   "faceIndex": {
-		    "!type": "number"
-		   },
-		   "fraction": {
-		    "!type": "number"
-		   },
-		   "isStopped": {
-		    "!type": "bool"
-		   },
-		   "reset": {
-		    "!type": "fn()"
-		   },
-		   "getHitDistance": {
-		    "!type": "fn()"
-		   },
-		   "hasHit": {
-		    "!type": "fn()"
-		   },
-		   "getHitPoint": {
-		    "!type": "fn()"
-		   },
-		   "stop": {
-		    "!type": "fn()"
-		   },
-		   "shouldStop": {
-		    "!type": "fn()"
-		   },
-		   "set": {
-		    "!type": "fn()"
+		   "prototype": {
+		    "normal": {
+		     "!type": "+array"
+		    },
+		    "shape": {
+		     "!type": "+Shape"
+		    },
+		    "body": {
+		     "!type": "+Body"
+		    },
+		    "faceIndex": {
+		     "!type": "number"
+		    },
+		    "fraction": {
+		     "!type": "number"
+		    },
+		    "isStopped": {
+		     "!type": "bool"
+		    },
+		    "reset": {
+		     "!type": "fn()"
+		    },
+		    "getHitDistance": {
+		     "!type": "fn()"
+		    },
+		    "hasHit": {
+		     "!type": "fn()"
+		    },
+		    "getHitPoint": {
+		     "!type": "fn()"
+		    },
+		    "stop": {
+		     "!type": "fn()"
+		    },
+		    "shouldStop": {
+		     "!type": "fn()"
+		    },
+		    "set": {
+		     "!type": "fn()"
+		    }
 		   }
 		  },
 		  "<anonymous>~RaycastResult#reset": {
-		   "shape": {},
-		   "body": {},
-		   "faceIndex": {},
-		   "fraction": {},
-		   "isStopped": {}
+		   "prototype": {
+		    "shape": {},
+		    "body": {},
+		    "faceIndex": {},
+		    "fraction": {},
+		    "isStopped": {}
+		   }
 		  },
 		  "<anonymous>~RaycastResult#stop": {
-		   "isStopped": {}
+		   "prototype": {
+		    "isStopped": {}
+		   }
 		  },
 		  "<anonymous>~RaycastResult#set": {
-		   "shape": {},
-		   "body": {},
-		   "fraction": {},
-		   "faceIndex": {}
+		   "prototype": {
+		    "shape": {},
+		    "body": {},
+		    "fraction": {},
+		    "faceIndex": {}
+		   }
 		  },
 		  "<anonymous>~SAPBroadphase": {
-		   "axisList": {
-		    "!type": "?"
-		   },
-		   "axisIndex": {
-		    "!type": "?"
+		   "prototype": {
+		    "axisList": {},
+		    "axisIndex": {},
+		    "_addBodyHandler": {
+		     "!type": "fn()"
+		    },
+		    "_removeBodyHandler": {
+		     "!type": "fn()"
+		    },
+		    "setWorld": {
+		     "!type": "fn()"
+		    },
+		    "sortList": {
+		     "!type": "fn()"
+		    },
+		    "getCollisionPairs": {
+		     "!type": "fn()"
+		    },
+		    "aabbQuery": {
+		     "!type": "fn()"
+		    }
 		   },
 		   "that": {},
-		   "_addBodyHandler": {
-		    "!type": "fn()"
-		   },
-		   "_removeBodyHandler": {
-		    "!type": "fn()"
-		   },
-		   "setWorld": {
-		    "!type": "fn()"
-		   },
 		   "sortAxisList": {
 		    "!type": "fn()",
 		    "axisIndex": {},
@@ -30558,15 +32108,6 @@
 		    "l": {},
 		    "v": {},
 		    "j": {}
-		   },
-		   "sortList": {
-		    "!type": "fn()"
-		   },
-		   "getCollisionPairs": {
-		    "!type": "fn()"
-		   },
-		   "aabbQuery": {
-		    "!type": "fn()"
 		   }
 		  },
 		  "<anonymous>~SAPBroadphase#_removeBodyHandler": {
@@ -30576,7 +32117,9 @@
 		   "length": {}
 		  },
 		  "<anonymous>~SAPBroadphase#setWorld": {
-		   "world": {}
+		   "prototype": {
+		    "world": {}
+		   }
 		  },
 		  "<anonymous>~SAPBroadphase#sortList": {
 		   "bodies": {},
@@ -30609,25 +32152,25 @@
 		   "b": {}
 		  },
 		  "<anonymous>~Constraint": {
-		   "type": {
-		    "!type": "number"
+		   "prototype": {
+		    "type": {
+		     "!type": "number"
+		    },
+		    "equations": {},
+		    "bodyA": {},
+		    "bodyB": {},
+		    "collideConnected": {},
+		    "update": {
+		     "!type": "fn()"
+		    },
+		    "setStiffness": {
+		     "!type": "fn()"
+		    },
+		    "setRelaxation": {
+		     "!type": "fn()"
+		    }
 		   },
 		   "options": {},
-		   "equations": {
-		    "!type": "?"
-		   },
-		   "bodyA": {
-		    "!type": "?"
-		   },
-		   "bodyB": {
-		    "!type": "?"
-		   },
-		   "collideConnected": {
-		    "!type": "?"
-		   },
-		   "update": {
-		    "!type": "fn()"
-		   },
 		   "DISTANCE": {
 		    "!type": "number"
 		   },
@@ -30642,12 +32185,6 @@
 		   },
 		   "REVOLUTE": {
 		    "!type": "number"
-		   },
-		   "setStiffness": {
-		    "!type": "fn()"
-		   },
-		   "setRelaxation": {
-		    "!type": "fn()"
 		   }
 		  },
 		  "<anonymous>~Constraint#setStiffness": {
@@ -30670,50 +32207,49 @@
 		  },
 		  "<anonymous>~DistanceConstraint": {
 		   "options": {},
-		   "localAnchorA": {
-		    "!type": "?"
+		   "prototype": {
+		    "localAnchorA": {},
+		    "localAnchorB": {},
+		    "distance": {},
+		    "equations": {},
+		    "maxForce": {
+		     "!type": "number"
+		    },
+		    "upperLimitEnabled": {
+		     "!type": "bool"
+		    },
+		    "upperLimit": {
+		     "!type": "number"
+		    },
+		    "lowerLimitEnabled": {
+		     "!type": "bool"
+		    },
+		    "lowerLimit": {
+		     "!type": "number"
+		    },
+		    "position": {
+		     "!type": "number"
+		    },
+		    "update": {
+		     "!type": "fn()"
+		    },
+		    "setMaxForce": {
+		     "!type": "fn()"
+		    },
+		    "getMaxForce": {
+		     "!type": "fn()"
+		    }
 		   },
-		   "localAnchorB": {
-		    "!type": "?"
-		   },
-		   "distance": {
-		    "!type": "?"
-		   },
+		   "localAnchorA": {},
+		   "localAnchorB": {},
 		   "worldAnchorA": {},
 		   "worldAnchorB": {},
 		   "r": {},
-		   "maxForce": {
-		    "!type": "number"
-		   },
+		   "maxForce": {},
 		   "normal": {},
-		   "equations": {},
 		   "ri": {},
 		   "rj": {},
-		   "that": {},
-		   "upperLimitEnabled": {
-		    "!type": "bool"
-		   },
-		   "upperLimit": {
-		    "!type": "number"
-		   },
-		   "lowerLimitEnabled": {
-		    "!type": "bool"
-		   },
-		   "lowerLimit": {
-		    "!type": "number"
-		   },
-		   "position": {
-		    "!type": "number"
-		   },
-		   "update": {
-		    "!type": "fn()"
-		   },
-		   "setMaxForce": {
-		    "!type": "fn()"
-		   },
-		   "getMaxForce": {
-		    "!type": "fn()"
-		   }
+		   "that": {}
 		  },
 		  "<anonymous>~DistanceConstraint~normal": {
 		   "computeGq": {
@@ -30733,7 +32269,10 @@
 		   "xj": {},
 		   "normalEquation": {},
 		   "G": {},
-		   "position": {},
+		   "prototype": {
+		    "position": {},
+		    "distance": {}
+		   },
 		   "violating": {},
 		   "rixn": {},
 		   "rjxn": {}
@@ -30763,21 +32302,19 @@
 		  },
 		  "<anonymous>~GearConstraint": {
 		   "options": {},
-		   "ratio": {
-		    "!type": "?"
-		   },
-		   "angle": {
-		    "!type": "?"
-		   },
-		   "equations": {},
-		   "update": {
-		    "!type": "fn()"
-		   },
-		   "setMaxTorque": {
-		    "!type": "fn()"
-		   },
-		   "getMaxTorque": {
-		    "!type": "fn()"
+		   "prototype": {
+		    "ratio": {},
+		    "angle": {},
+		    "equations": {},
+		    "update": {
+		     "!type": "fn()"
+		    },
+		    "setMaxTorque": {
+		     "!type": "fn()"
+		    },
+		    "getMaxTorque": {
+		     "!type": "fn()"
+		    }
 		   }
 		  },
 		  "<anonymous>~GearConstraint~options": {
@@ -30793,9 +32330,7 @@
 		  "<anonymous>~LockConstraint": {
 		   "options": {},
 		   "maxForce": {},
-		   "localAngleB": {
-		    "!type": "number"
-		   },
+		   "localAngleB": {},
 		   "x": {},
 		   "y": {},
 		   "rot": {},
@@ -30804,17 +32339,22 @@
 		   "that": {},
 		   "r": {},
 		   "t": {},
-		   "localOffsetB": {
-		    "!type": "[?]"
-		   },
-		   "setMaxForce": {
-		    "!type": "fn()"
-		   },
-		   "getMaxForce": {
-		    "!type": "fn()"
-		   },
-		   "update": {
-		    "!type": "fn()"
+		   "prototype": {
+		    "localOffsetB": {
+		     "!type": "[?]"
+		    },
+		    "localAngleB": {
+		     "!type": "number"
+		    },
+		    "setMaxForce": {
+		     "!type": "fn()"
+		    },
+		    "getMaxForce": {
+		     "!type": "fn()"
+		    },
+		    "update": {
+		     "!type": "fn()"
+		    }
 		   }
 		  },
 		  "<anonymous>~LockConstraint~x": {
@@ -30868,14 +32408,37 @@
 		  },
 		  "<anonymous>~PrismaticConstraint": {
 		   "options": {},
-		   "localAnchorA": {
-		    "!type": "?"
-		   },
-		   "localAxisA": {
-		    "!type": "?"
-		   },
-		   "localAnchorB": {
-		    "!type": "?"
+		   "localAnchorA": {},
+		   "localAxisA": {},
+		   "localAnchorB": {},
+		   "prototype": {
+		    "localAnchorA": {},
+		    "localAnchorB": {},
+		    "localAxisA": {},
+		    "maxForce": {},
+		    "position": {},
+		    "velocity": {},
+		    "lowerLimitEnabled": {},
+		    "upperLimitEnabled": {},
+		    "lowerLimit": {},
+		    "upperLimit": {},
+		    "upperLimitEquation": {},
+		    "lowerLimitEquation": {},
+		    "motorEquation": {},
+		    "motorEnabled": {},
+		    "motorSpeed": {},
+		    "update": {
+		     "!type": "fn()"
+		    },
+		    "enableMotor": {
+		     "!type": "fn()"
+		    },
+		    "disableMotor": {
+		     "!type": "fn()"
+		    },
+		    "setLimits": {
+		     "!type": "fn()"
+		    }
 		   },
 		   "maxForce": {},
 		   "trans": {},
@@ -30884,47 +32447,9 @@
 		   "gg": {},
 		   "t": {},
 		   "rot": {},
-		   "position": {
-		    "!type": "?"
-		   },
-		   "velocity": {},
-		   "lowerLimitEnabled": {
-		    "!type": "?"
-		   },
-		   "upperLimitEnabled": {
-		    "!type": "?"
-		   },
-		   "lowerLimit": {
-		    "!type": "?"
-		   },
-		   "upperLimit": {
-		    "!type": "?"
-		   },
-		   "upperLimitEquation": {},
-		   "lowerLimitEquation": {},
-		   "motorEquation": {
-		    "!type": "?"
-		   },
-		   "motorEnabled": {
-		    "!type": "?"
-		   },
-		   "motorSpeed": {
-		    "!type": "?"
-		   },
 		   "that": {},
-		   "old": {},
-		   "update": {
-		    "!type": "fn()"
-		   },
-		   "enableMotor": {
-		    "!type": "fn()"
-		   },
-		   "disableMotor": {
-		    "!type": "fn()"
-		   },
-		   "setLimits": {
-		    "!type": "fn()"
-		   }
+		   "motorEquation": {},
+		   "old": {}
 		  },
 		  "<anonymous>~PrismaticConstraint~trans": {
 		   "computeGq": {
@@ -30981,7 +32506,9 @@
 		   "localAnchorA": {},
 		   "localAnchorB": {},
 		   "relPosition": {},
-		   "position": {},
+		   "prototype": {
+		    "position": {}
+		   },
 		   "G": {},
 		   "idx": {}
 		  },
@@ -30994,74 +32521,73 @@
 		   "5]": {}
 		  },
 		  "<anonymous>~PrismaticConstraint#enableMotor": {
-		   "motorEnabled": {}
+		   "prototype": {
+		    "motorEnabled": {}
+		   }
 		  },
 		  "<anonymous>~PrismaticConstraint#disableMotor": {
 		   "i": {},
-		   "motorEnabled": {}
+		   "prototype": {
+		    "motorEnabled": {}
+		   }
 		  },
 		  "<anonymous>~PrismaticConstraint#setLimits": {
-		   "lowerLimit": {},
-		   "lowerLimitEnabled": {},
-		   "upperLimit": {},
-		   "upperLimitEnabled": {}
+		   "prototype": {
+		    "lowerLimit": {},
+		    "lowerLimitEnabled": {},
+		    "upperLimit": {},
+		    "upperLimitEnabled": {}
+		   }
 		  },
 		  "<anonymous>~RevoluteConstraint": {
 		   "options": {},
 		   "maxForce": {},
-		   "pivotA": {
-		    "!type": "[?]"
-		   },
-		   "pivotB": {
-		    "!type": "[?]"
+		   "prototype": {
+		    "maxForce": {},
+		    "pivotA": {
+		     "!type": "[?]"
+		    },
+		    "pivotB": {
+		     "!type": "[?]"
+		    },
+		    "equations": {},
+		    "motorEquation": {},
+		    "motorEnabled": {
+		     "!type": "bool"
+		    },
+		    "angle": {},
+		    "lowerLimitEnabled": {},
+		    "upperLimitEnabled": {},
+		    "lowerLimit": {},
+		    "upperLimit": {},
+		    "upperLimitEquation": {},
+		    "lowerLimitEquation": {},
+		    "setLimits": {
+		     "!type": "fn()"
+		    },
+		    "update": {
+		     "!type": "fn()"
+		    },
+		    "enableMotor": {
+		     "!type": "fn()"
+		    },
+		    "disableMotor": {
+		     "!type": "fn()"
+		    },
+		    "motorIsEnabled": {
+		     "!type": "fn()"
+		    },
+		    "setMotorSpeed": {
+		     "!type": "fn()"
+		    },
+		    "getMotorSpeed": {
+		     "!type": "fn()"
+		    }
 		   },
 		   "eqs": {},
-		   "equations": {},
 		   "x": {},
 		   "y": {},
-		   "that": {},
-		   "motorEquation": {},
-		   "motorEnabled": {
-		    "!type": "bool"
-		   },
-		   "angle": {
-		    "!type": "?"
-		   },
-		   "lowerLimitEnabled": {
-		    "!type": "?"
-		   },
-		   "upperLimitEnabled": {
-		    "!type": "?"
-		   },
-		   "lowerLimit": {
-		    "!type": "?"
-		   },
-		   "upperLimit": {
-		    "!type": "?"
-		   },
-		   "upperLimitEquation": {},
-		   "lowerLimitEquation": {},
-		   "setLimits": {
-		    "!type": "fn()"
-		   },
-		   "update": {
-		    "!type": "fn()"
-		   },
-		   "enableMotor": {
-		    "!type": "fn()"
-		   },
-		   "disableMotor": {
-		    "!type": "fn()"
-		   },
-		   "motorIsEnabled": {
-		    "!type": "fn()"
-		   },
-		   "setMotorSpeed": {
-		    "!type": "fn()"
-		   },
-		   "getMotorSpeed": {
-		    "!type": "fn()"
-		   }
+		   "that": {}
 		  },
 		  "<anonymous>~RevoluteConstraint~x": {
 		   "computeGq": {
@@ -31084,10 +32610,12 @@
 		   "maxForce": {}
 		  },
 		  "<anonymous>~RevoluteConstraint#setLimits": {
-		   "lowerLimit": {},
-		   "lowerLimitEnabled": {},
-		   "upperLimit": {},
-		   "upperLimitEnabled": {}
+		   "prototype": {
+		    "lowerLimit": {},
+		    "lowerLimitEnabled": {},
+		    "upperLimit": {},
+		    "upperLimitEnabled": {}
+		   }
 		  },
 		  "<anonymous>~RevoluteConstraint#update": {
 		   "bodyA": {},
@@ -31104,7 +32632,9 @@
 		   "upperLimitEquation": {},
 		   "lowerLimitEquation": {},
 		   "relAngle": {},
-		   "angle": {},
+		   "prototype": {
+		    "angle": {}
+		   },
 		   "idx": {}
 		  },
 		  "<anonymous>~RevoluteConstraint#update~upperLimitEquation": {
@@ -31130,11 +32660,15 @@
 		   "G[5]": {}
 		  },
 		  "<anonymous>~RevoluteConstraint#enableMotor": {
-		   "motorEnabled": {}
+		   "prototype": {
+		    "motorEnabled": {}
+		   }
 		  },
 		  "<anonymous>~RevoluteConstraint#disableMotor": {
 		   "i": {},
-		   "motorEnabled": {}
+		   "prototype": {
+		    "motorEnabled": {}
+		   }
 		  },
 		  "<anonymous>~RevoluteConstraint#setMotorSpeed": {
 		   "i": {}
@@ -31144,57 +32678,51 @@
 		  },
 		  "<anonymous>~AngleLockEquation": {
 		   "options": {},
-		   "angle": {},
-		   "ratio": {
-		    "!type": "number"
-		   },
-		   "computeGq": {
-		    "!type": "fn()"
-		   },
-		   "setRatio": {
-		    "!type": "fn()"
-		   },
-		   "setMaxTorque": {
-		    "!type": "fn()"
+		   "prototype": {
+		    "angle": {},
+		    "ratio": {
+		     "!type": "number"
+		    },
+		    "computeGq": {
+		     "!type": "fn()"
+		    },
+		    "setRatio": {
+		     "!type": "fn()"
+		    },
+		    "setMaxTorque": {
+		     "!type": "fn()"
+		    }
 		   }
 		  },
 		  "<anonymous>~AngleLockEquation#setRatio": {
 		   "G": {},
-		   "ratio": {}
+		   "prototype": {
+		    "ratio": {}
+		   }
 		  },
 		  "<anonymous>~AngleLockEquation#setRatio~G": {
 		   "2]": {},
 		   "5]": {}
 		  },
 		  "<anonymous>~AngleLockEquation#setMaxTorque": {
-		   "maxForce": {},
-		   "minForce": {}
+		   "prototype": {
+		    "maxForce": {},
+		    "minForce": {}
+		   }
 		  },
 		  "<anonymous>~ContactEquation": {
-		   "contactPointA": {
-		    "!type": "?"
-		   },
-		   "penetrationVec": {},
-		   "contactPointB": {
-		    "!type": "?"
-		   },
-		   "normalA": {
-		    "!type": "?"
-		   },
-		   "restitution": {
-		    "!type": "?"
-		   },
-		   "firstImpact": {
-		    "!type": "?"
-		   },
-		   "shapeA": {
-		    "!type": "?"
-		   },
-		   "shapeB": {
-		    "!type": "?"
-		   },
-		   "computeB": {
-		    "!type": "fn()"
+		   "prototype": {
+		    "contactPointA": {},
+		    "penetrationVec": {},
+		    "contactPointB": {},
+		    "normalA": {},
+		    "restitution": {},
+		    "firstImpact": {},
+		    "shapeA": {},
+		    "shapeB": {},
+		    "computeB": {
+		     "!type": "fn()"
+		    }
 		   }
 		  },
 		  "<anonymous>~ContactEquation#computeB": {
@@ -31223,91 +32751,79 @@
 		   "5]": {}
 		  },
 		  "<anonymous>~Equation": {
-		   "minForce": {
-		    "!type": "?"
-		   },
-		   "maxForce": {
-		    "!type": "?"
-		   },
-		   "bodyA": {
-		    "!type": "?"
-		   },
-		   "bodyB": {
-		    "!type": "?"
-		   },
-		   "stiffness": {
-		    "!type": "?"
-		   },
-		   "relaxation": {
-		    "!type": "?"
-		   },
-		   "G": {
-		    "!type": "?"
+		   "prototype": {
+		    "minForce": {},
+		    "maxForce": {},
+		    "bodyA": {},
+		    "bodyB": {},
+		    "stiffness": {},
+		    "relaxation": {},
+		    "G": {},
+		    "G[undefined]": {},
+		    "offset": {},
+		    "a": {},
+		    "b": {},
+		    "epsilon": {},
+		    "timeStep": {},
+		    "needsUpdate": {
+		     "!type": "bool"
+		    },
+		    "multiplier": {},
+		    "relativeVelocity": {
+		     "!type": "number"
+		    },
+		    "enabled": {
+		     "!type": "bool"
+		    },
+		    "update": {
+		     "!type": "fn()"
+		    },
+		    "gmult": {
+		     "!type": "fn()"
+		    },
+		    "computeB": {
+		     "!type": "fn()"
+		    },
+		    "computeGq": {
+		     "!type": "fn()"
+		    },
+		    "computeGW": {
+		     "!type": "fn()"
+		    },
+		    "computeGWlambda": {
+		     "!type": "fn()"
+		    },
+		    "computeGiMf": {
+		     "!type": "fn()"
+		    },
+		    "computeGiMGt": {
+		     "!type": "fn()"
+		    },
+		    "addToWlambda": {
+		     "!type": "fn()"
+		    },
+		    "computeInvC": {
+		     "!type": "fn()"
+		    }
 		   },
 		   "i": {},
-		   "G[undefined]": {},
-		   "offset": {},
-		   "a": {},
-		   "b": {},
-		   "epsilon": {},
-		   "timeStep": {},
-		   "needsUpdate": {
-		    "!type": "bool"
-		   },
-		   "multiplier": {
-		    "!type": "?"
-		   },
-		   "relativeVelocity": {
-		    "!type": "number"
-		   },
-		   "enabled": {
-		    "!type": "bool"
-		   },
 		   "DEFAULT_STIFFNESS": {
 		    "!type": "number"
 		   },
 		   "DEFAULT_RELAXATION": {
 		    "!type": "number"
-		   },
-		   "update": {
-		    "!type": "fn()"
-		   },
-		   "gmult": {
-		    "!type": "fn()"
-		   },
-		   "computeB": {
-		    "!type": "fn()"
-		   },
-		   "computeGq": {
-		    "!type": "fn()"
-		   },
-		   "computeGW": {
-		    "!type": "fn()"
-		   },
-		   "computeGWlambda": {
-		    "!type": "fn()"
-		   },
-		   "computeGiMf": {
-		    "!type": "fn()"
-		   },
-		   "computeGiMGt": {
-		    "!type": "fn()"
-		   },
-		   "addToWlambda": {
-		    "!type": "fn()"
-		   },
-		   "computeInvC": {
-		    "!type": "fn()"
 		   }
 		  },
 		  "<anonymous>~Equation#update": {
 		   "k": {},
 		   "d": {},
 		   "h": {},
-		   "a": {},
-		   "b": {},
-		   "epsilon": {},
-		   "needsUpdate": {}
+		   "prototype": {
+		    "a": {},
+		    "b": {},
+		    "epsilon": {},
+		    "needsUpdate": {}
+		   }
 		  },
 		  "<anonymous>~Equation#computeB": {
 		   "GW": {},
@@ -31393,40 +32909,30 @@
 		   "wlambda": {}
 		  },
 		  "<anonymous>~FrictionEquation": {
-		   "contactPointA": {
-		    "!type": "?"
-		   },
-		   "contactPointB": {
-		    "!type": "?"
-		   },
-		   "t": {
-		    "!type": "?"
-		   },
-		   "contactEquations": {
-		    "!type": "?"
-		   },
-		   "shapeA": {
-		    "!type": "?"
-		   },
-		   "shapeB": {
-		    "!type": "?"
-		   },
-		   "frictionCoefficient": {
-		    "!type": "?"
-		   },
-		   "setSlipForce": {
-		    "!type": "fn()"
-		   },
-		   "getSlipForce": {
-		    "!type": "fn()"
-		   },
-		   "computeB": {
-		    "!type": "fn()"
+		   "prototype": {
+		    "contactPointA": {},
+		    "contactPointB": {},
+		    "t": {},
+		    "contactEquations": {},
+		    "shapeA": {},
+		    "shapeB": {},
+		    "frictionCoefficient": {},
+		    "setSlipForce": {
+		     "!type": "fn()"
+		    },
+		    "getSlipForce": {
+		     "!type": "fn()"
+		    },
+		    "computeB": {
+		     "!type": "fn()"
+		    }
 		   }
 		  },
 		  "<anonymous>~FrictionEquation#setSlipForce": {
-		   "maxForce": {},
-		   "minForce": {}
+		   "prototype": {
+		    "maxForce": {},
+		    "minForce": {}
+		   }
 		  },
 		  "<anonymous>~FrictionEquation#computeB": {
 		   "bi": {},
@@ -31449,23 +32955,27 @@
 		  },
 		  "<anonymous>~RotationalLockEquation": {
 		   "options": {},
-		   "angle": {
-		    "!type": "number"
+		   "prototype": {
+		    "angle": {
+		     "!type": "number"
+		    },
+		    "computeGq": {
+		     "!type": "fn()"
+		    }
 		   },
-		   "G": {},
-		   "computeGq": {
-		    "!type": "fn()"
-		   }
+		   "G": {}
 		  },
 		  "<anonymous>~RotationalLockEquation~G": {
 		   "2]": {},
 		   "5]": {}
 		  },
 		  "<anonymous>~RotationalVelocityEquation": {
-		   "relativeVelocity": {},
-		   "ratio": {},
-		   "computeB": {
-		    "!type": "fn()"
+		   "prototype": {
+		    "relativeVelocity": {},
+		    "ratio": {},
+		    "computeB": {
+		     "!type": "fn()"
+		    }
 		   }
 		  },
 		  "<anonymous>~RotationalVelocityEquation#computeB": {
@@ -31479,24 +32989,28 @@
 		   "5]": {}
 		  },
 		  "<anonymous>~EventEmitter": {
-		   "on": {
-		    "!type": "fn()"
-		   },
-		   "has": {
-		    "!type": "fn()"
-		   },
-		   "off": {
-		    "!type": "fn()"
-		   },
-		   "emit": {
-		    "!type": "fn()"
+		   "prototype": {
+		    "on": {
+		     "!type": "fn()"
+		    },
+		    "has": {
+		     "!type": "fn()"
+		    },
+		    "off": {
+		     "!type": "fn()"
+		    },
+		    "emit": {
+		     "!type": "fn()"
+		    }
 		   }
 		  },
 		  "listener": {
 		   "context": {}
 		  },
 		  "<anonymous>~EventEmitter#on": {
-		   "_listeners": {},
+		   "prototype": {
+		    "_listeners": {}
+		   },
 		   "listeners": {}
 		  },
 		  "<anonymous>~EventEmitter#on~listeners": {
@@ -31518,44 +33032,26 @@
 		  },
 		  "<anonymous>~ContactMaterial": {
 		   "options": {},
-		   "id": {
-		    "!type": "?"
-		   },
-		   "materialA": {
-		    "!type": "?"
-		   },
-		   "materialB": {
-		    "!type": "?"
-		   },
-		   "friction": {
-		    "!type": "?"
-		   },
-		   "restitution": {
-		    "!type": "?"
-		   },
-		   "stiffness": {
-		    "!type": "?"
-		   },
-		   "relaxation": {
-		    "!type": "?"
-		   },
-		   "frictionStiffness": {
-		    "!type": "?"
-		   },
-		   "frictionRelaxation": {
-		    "!type": "?"
-		   },
-		   "surfaceVelocity": {
-		    "!type": "number"
-		   },
-		   "contactSkinSize": {
-		    "!type": "?"
+		   "prototype": {
+		    "id": {},
+		    "materialA": {},
+		    "materialB": {},
+		    "friction": {},
+		    "restitution": {},
+		    "stiffness": {},
+		    "relaxation": {},
+		    "frictionStiffness": {},
+		    "frictionRelaxation": {},
+		    "surfaceVelocity": {
+		     "!type": "number"
+		    },
+		    "contactSkinSize": {}
 		   },
 		   "idCounter": {}
 		  },
 		  "<anonymous>~Material": {
-		   "id": {
-		    "!type": "?"
+		   "prototype": {
+		    "id": {}
 		   },
 		   "idCounter": {}
 		  },
@@ -31609,219 +33105,161 @@
 		  },
 		  "<anonymous>~Body": {
 		   "options": {},
-		   "id": {
-		    "!type": "?"
+		   "prototype": {
+		    "id": {},
+		    "world": {},
+		    "shapes": {},
+		    "mass": {},
+		    "invMass": {},
+		    "inertia": {},
+		    "invInertia": {},
+		    "invMassSolve": {},
+		    "invInertiaSolve": {},
+		    "fixedRotation": {},
+		    "fixedX": {
+		     "!type": "bool"
+		    },
+		    "fixedY": {
+		     "!type": "bool"
+		    },
+		    "massMultiplier": {
+		     "!type": "+array"
+		    },
+		    "position": {},
+		    "interpolatedPosition": {},
+		    "interpolatedAngle": {},
+		    "previousPosition": {},
+		    "previousAngle": {},
+		    "velocity": {},
+		    "vlambda": {},
+		    "wlambda": {},
+		    "angle": {},
+		    "angularVelocity": {},
+		    "force": {},
+		    "angularForce": {},
+		    "damping": {},
+		    "angularDamping": {},
+		    "type": {},
+		    "boundingRadius": {},
+		    "aabb": {},
+		    "aabbNeedsUpdate": {},
+		    "allowSleep": {},
+		    "wantsToSleep": {},
+		    "sleepState": {},
+		    "sleepSpeedLimit": {},
+		    "sleepTimeLimit": {},
+		    "gravityScale": {
+		     "!type": "number"
+		    },
+		    "collisionResponse": {
+		     "!type": "bool"
+		    },
+		    "idleTime": {
+		     "!type": "number"
+		    },
+		    "timeLastSleepy": {
+		     "!type": "number"
+		    },
+		    "ccdSpeedThreshold": {
+		     "!type": "number"
+		    },
+		    "ccdIterations": {
+		     "!type": "number"
+		    },
+		    "concavePath": {},
+		    "_wakeUpAfterNarrowphase": {},
+		    "updateSolveMassProperties": {
+		     "!type": "fn()"
+		    },
+		    "setDensity": {
+		     "!type": "fn()"
+		    },
+		    "getArea": {
+		     "!type": "fn()"
+		    },
+		    "getAABB": {
+		     "!type": "fn()"
+		    },
+		    "updateAABB": {
+		     "!type": "fn()"
+		    },
+		    "updateBoundingRadius": {
+		     "!type": "fn()"
+		    },
+		    "addShape": {
+		     "!type": "fn()"
+		    },
+		    "removeShape": {
+		     "!type": "fn()"
+		    },
+		    "updateMassProperties": {
+		     "!type": "fn()"
+		    },
+		    "applyForce": {
+		     "!type": "fn()"
+		    },
+		    "applyForceLocal": {
+		     "!type": "fn()"
+		    },
+		    "applyImpulse": {
+		     "!type": "fn()"
+		    },
+		    "applyImpulseLocal": {
+		     "!type": "fn()"
+		    },
+		    "toLocalFrame": {
+		     "!type": "fn()"
+		    },
+		    "toWorldFrame": {
+		     "!type": "fn()"
+		    },
+		    "vectorToLocalFrame": {
+		     "!type": "fn()"
+		    },
+		    "vectorToWorldFrame": {
+		     "!type": "fn()"
+		    },
+		    "fromPolygon": {
+		     "!type": "fn()"
+		    },
+		    "adjustCenterOfMass": {
+		     "!type": "fn()"
+		    },
+		    "setZeroForce": {
+		     "!type": "fn()"
+		    },
+		    "resetConstraintVelocity": {
+		     "!type": "fn()"
+		    },
+		    "addConstraintVelocity": {
+		     "!type": "fn()"
+		    },
+		    "applyDamping": {
+		     "!type": "fn()"
+		    },
+		    "wakeUp": {
+		     "!type": "fn()"
+		    },
+		    "sleep": {
+		     "!type": "fn()"
+		    },
+		    "sleepTick": {
+		     "!type": "fn()"
+		    },
+		    "overlaps": {
+		     "!type": "fn()"
+		    },
+		    "integrate": {
+		     "!type": "fn()"
+		    },
+		    "integrateToTimeOfImpact": {
+		     "!type": "fn()"
+		    },
+		    "getVelocityAtPoint": {
+		     "!type": "fn()"
+		    }
 		   },
-		   "world": {
-		    "!type": "?"
-		   },
-		   "shapes": {
-		    "!type": "?"
-		   },
-		   "mass": {
-		    "!type": "?"
-		   },
-		   "invMass": {
-		    "!type": "?"
-		   },
-		   "inertia": {
-		    "!type": "?"
-		   },
-		   "invInertia": {
-		    "!type": "?"
-		   },
-		   "invMassSolve": {},
-		   "invInertiaSolve": {},
-		   "fixedRotation": {
-		    "!type": "?"
-		   },
-		   "fixedX": {
-		    "!type": "bool"
-		   },
-		   "fixedY": {
-		    "!type": "bool"
-		   },
-		   "massMultiplier": {
-		    "!type": "+array"
-		   },
-		   "position": {
-		    "!type": "?"
-		   },
-		   "interpolatedPosition": {
-		    "!type": "?"
-		   },
-		   "interpolatedAngle": {
-		    "!type": "?"
-		   },
-		   "previousPosition": {
-		    "!type": "?"
-		   },
-		   "previousAngle": {
-		    "!type": "?"
-		   },
-		   "velocity": {
-		    "!type": "?"
-		   },
-		   "vlambda": {
-		    "!type": "?"
-		   },
-		   "wlambda": {
-		    "!type": "?"
-		   },
-		   "angle": {
-		    "!type": "?"
-		   },
-		   "angularVelocity": {
-		    "!type": "?"
-		   },
-		   "force": {
-		    "!type": "?"
-		   },
-		   "angularForce": {
-		    "!type": "?"
-		   },
-		   "damping": {
-		    "!type": "?"
-		   },
-		   "angularDamping": {
-		    "!type": "?"
-		   },
-		   "type": {
-		    "!type": "?"
-		   },
-		   "boundingRadius": {
-		    "!type": "?"
-		   },
-		   "aabb": {
-		    "!type": "?"
-		   },
-		   "aabbNeedsUpdate": {
-		    "!type": "?"
-		   },
-		   "allowSleep": {
-		    "!type": "?"
-		   },
-		   "wantsToSleep": {},
-		   "sleepState": {
-		    "!type": "?"
-		   },
-		   "sleepSpeedLimit": {
-		    "!type": "?"
-		   },
-		   "sleepTimeLimit": {
-		    "!type": "?"
-		   },
-		   "gravityScale": {
-		    "!type": "number"
-		   },
-		   "collisionResponse": {
-		    "!type": "bool"
-		   },
-		   "idleTime": {
-		    "!type": "number"
-		   },
-		   "timeLastSleepy": {
-		    "!type": "number"
-		   },
-		   "ccdSpeedThreshold": {
-		    "!type": "number"
-		   },
-		   "ccdIterations": {
-		    "!type": "number"
-		   },
-		   "concavePath": {},
-		   "_wakeUpAfterNarrowphase": {},
 		   "_idCounter": {},
-		   "updateSolveMassProperties": {
-		    "!type": "fn()"
-		   },
-		   "setDensity": {
-		    "!type": "fn()"
-		   },
-		   "getArea": {
-		    "!type": "fn()"
-		   },
-		   "getAABB": {
-		    "!type": "fn()"
-		   },
-		   "updateAABB": {
-		    "!type": "fn()"
-		   },
-		   "updateBoundingRadius": {
-		    "!type": "fn()"
-		   },
-		   "addShape": {
-		    "!type": "fn()"
-		   },
-		   "removeShape": {
-		    "!type": "fn()"
-		   },
-		   "updateMassProperties": {
-		    "!type": "fn()"
-		   },
-		   "applyForce": {
-		    "!type": "fn()"
-		   },
-		   "applyForceLocal": {
-		    "!type": "fn()"
-		   },
-		   "applyImpulse": {
-		    "!type": "fn()"
-		   },
-		   "applyImpulseLocal": {
-		    "!type": "fn()"
-		   },
-		   "toLocalFrame": {
-		    "!type": "fn()"
-		   },
-		   "toWorldFrame": {
-		    "!type": "fn()"
-		   },
-		   "vectorToLocalFrame": {
-		    "!type": "fn()"
-		   },
-		   "vectorToWorldFrame": {
-		    "!type": "fn()"
-		   },
-		   "fromPolygon": {
-		    "!type": "fn()"
-		   },
-		   "adjustCenterOfMass": {
-		    "!type": "fn()"
-		   },
-		   "setZeroForce": {
-		    "!type": "fn()"
-		   },
-		   "resetConstraintVelocity": {
-		    "!type": "fn()"
-		   },
-		   "addConstraintVelocity": {
-		    "!type": "fn()"
-		   },
-		   "applyDamping": {
-		    "!type": "fn()"
-		   },
-		   "wakeUp": {
-		    "!type": "fn()"
-		   },
-		   "sleep": {
-		    "!type": "fn()"
-		   },
-		   "sleepTick": {
-		    "!type": "fn()"
-		   },
-		   "overlaps": {
-		    "!type": "fn()"
-		   },
-		   "integrate": {
-		    "!type": "fn()"
-		   },
-		   "integrateToTimeOfImpact": {
-		    "!type": "fn()"
-		   },
-		   "getVelocityAtPoint": {
-		    "!type": "fn()"
-		   },
 		   "sleepyEvent": {
 		    "type": {}
 		   },
@@ -31831,32 +33269,24 @@
 		   "wakeUpEvent": {
 		    "type": {}
 		   },
-		   "DYNAMIC": {
-		    "!type": "?"
-		   },
-		   "STATIC": {
-		    "!type": "?"
-		   },
-		   "KINEMATIC": {
-		    "!type": "?"
-		   },
-		   "AWAKE": {
-		    "!type": "?"
-		   },
-		   "SLEEPY": {
-		    "!type": "?"
-		   },
-		   "SLEEPING": {
-		    "!type": "?"
-		   }
+		   "DYNAMIC": {},
+		   "STATIC": {},
+		   "KINEMATIC": {},
+		   "AWAKE": {},
+		   "SLEEPY": {},
+		   "SLEEPING": {}
 		  },
 		  "<anonymous>~Body#updateSolveMassProperties": {
-		   "invMassSolve": {},
-		   "invInertiaSolve": {}
+		   "prototype": {
+		    "invMassSolve": {},
+		    "invInertiaSolve": {}
+		   }
 		  },
 		  "<anonymous>~Body#setDensity": {
 		   "totalArea": {},
-		   "mass": {}
+		   "prototype": {
+		    "mass": {}
+		   }
 		  },
 		  "<anonymous>~Body#getArea": {
 		   "totalArea": {},
@@ -31870,7 +33300,9 @@
 		   "i": {},
 		   "shape": {},
 		   "angle": {},
-		   "aabbNeedsUpdate": {}
+		   "prototype": {
+		    "aabbNeedsUpdate": {}
+		   }
 		  },
 		  "<anonymous>~Body#updateBoundingRadius": {
 		   "shapes": {},
@@ -31880,20 +33312,28 @@
 		   "shape": {},
 		   "offset": {},
 		   "r": {},
-		   "boundingRadius": {}
+		   "prototype": {
+		    "boundingRadius": {}
+		   }
 		  },
 		  "<anonymous>~Body#addShape": {
-		   "aabbNeedsUpdate": {}
+		   "prototype": {
+		    "aabbNeedsUpdate": {}
+		   }
 		  },
 		  "<anonymous>~Body#removeShape": {
 		   "idx": {},
-		   "aabbNeedsUpdate": {}
+		   "prototype": {
+		    "aabbNeedsUpdate": {}
+		   }
 		  },
 		  "<anonymous>~Body#updateMassProperties": {
-		   "mass": {},
-		   "invMass": {},
-		   "inertia": {},
-		   "invInertia": {},
+		   "prototype": {
+		    "mass": {},
+		    "invMass": {},
+		    "inertia": {},
+		    "invInertia": {}
+		   },
 		   "shapes": {},
 		   "N": {},
 		   "m": {},
@@ -31905,7 +33345,9 @@
 		  },
 		  "<anonymous>~Body#applyForce": {
 		   "rotForce": {},
-		   "angularForce": {}
+		   "prototype": {
+		    "angularForce": {}
+		   }
 		  },
 		  "<anonymous>~Body#applyForceLocal": {
 		   "localPoint": {},
@@ -31915,7 +33357,9 @@
 		  "<anonymous>~Body#applyImpulse": {
 		   "velo": {},
 		   "rotVelo": {},
-		   "angularVelocity": {}
+		   "prototype": {
+		    "angularVelocity": {}
+		   }
 		  },
 		  "<anonymous>~Body#applyImpulseLocal": {
 		   "localPoint": {},
@@ -31926,14 +33370,16 @@
 		   "options": {},
 		   "i": {},
 		   "p": {},
-		   "concavePath": {},
+		   "prototype": {
+		    "concavePath": {},
+		    "concavePath[undefined]": {},
+		    "aabbNeedsUpdate": {}
+		   },
 		   "v": {},
-		   "concavePath[undefined]": {},
 		   "convexes": {},
 		   "cm": {},
 		   "c": {},
-		   "j": {},
-		   "aabbNeedsUpdate": {}
+		   "j": {}
 		  },
 		  "<anonymous>~Body#fromPolygon~p": {
 		   "vertices": {}
@@ -31947,7 +33393,9 @@
 		   "s": {}
 		  },
 		  "<anonymous>~Body#setZeroForce": {
-		   "angularForce": {}
+		   "prototype": {
+		    "angularForce": {}
+		   }
 		  },
 		  "<anonymous>~Body#resetConstraintVelocity": {
 		   "b": {},
@@ -31965,34 +33413,45 @@
 		  },
 		  "<anonymous>~Body#applyDamping": {
 		   "v": {},
-		   "angularVelocity": {}
+		   "prototype": {
+		    "angularVelocity": {}
+		   }
 		  },
 		  "<anonymous>~Body#wakeUp": {
 		   "s": {},
-		   "sleepState": {},
-		   "idleTime": {}
+		   "prototype": {
+		    "sleepState": {},
+		    "idleTime": {}
+		   }
 		  },
 		  "<anonymous>~Body#sleep": {
-		   "sleepState": {},
-		   "angularVelocity": {},
-		   "angularForce": {}
+		   "prototype": {
+		    "sleepState": {},
+		    "angularVelocity": {},
+		    "angularForce": {}
+		   }
 		  },
 		  "<anonymous>~Body#sleepTick": {
-		   "wantsToSleep": {},
+		   "prototype": {
+		    "wantsToSleep": {},
+		    "idleTime": {},
+		    "sleepState": {}
+		   },
 		   "sleepState": {},
 		   "speedSquared": {},
-		   "speedLimitSquared": {},
-		   "idleTime": {}
+		   "speedLimitSquared": {}
 		  },
 		  "<anonymous>~Body#integrate": {
 		   "minv": {},
 		   "f": {},
 		   "pos": {},
 		   "velo": {},
-		   "previousAngle": {},
-		   "angularVelocity": {},
-		   "angle": {},
-		   "aabbNeedsUpdate": {}
+		   "prototype": {
+		    "previousAngle": {},
+		    "angularVelocity": {},
+		    "angle": {},
+		    "aabbNeedsUpdate": {}
+		   }
 		  },
 		  "<anonymous>~Body#integrateToTimeOfImpact": {
 		   "startToEndAngle": {},
@@ -32005,7 +33464,9 @@
 		   "tmin": {},
 		   "tmid": {},
 		   "tmax": {},
-		   "angle": {},
+		   "prototype": {
+		    "angle": {}
+		   },
 		   "overlaps": {}
 		  },
 		  "<anonymous>~ray": {
@@ -32017,33 +33478,29 @@
 		  },
 		  "<anonymous>~LinearSpring": {
 		   "options": {},
-		   "localAnchorA": {
-		    "!type": "?"
-		   },
-		   "localAnchorB": {
-		    "!type": "?"
+		   "prototype": {
+		    "localAnchorA": {},
+		    "localAnchorB": {},
+		    "restLength": {},
+		    "setWorldAnchorA": {
+		     "!type": "fn()"
+		    },
+		    "setWorldAnchorB": {
+		     "!type": "fn()"
+		    },
+		    "getWorldAnchorA": {
+		     "!type": "fn()"
+		    },
+		    "getWorldAnchorB": {
+		     "!type": "fn()"
+		    },
+		    "applyForce": {
+		     "!type": "fn()"
+		    }
 		   },
 		   "worldAnchorA": {},
 		   "worldAnchorB": {},
-		   "worldDistance": {},
-		   "restLength": {
-		    "!type": "?"
-		   },
-		   "setWorldAnchorA": {
-		    "!type": "fn()"
-		   },
-		   "setWorldAnchorB": {
-		    "!type": "fn()"
-		   },
-		   "getWorldAnchorA": {
-		    "!type": "fn()"
-		   },
-		   "getWorldAnchorB": {
-		    "!type": "fn()"
-		   },
-		   "applyForce": {
-		    "!type": "fn()"
-		   }
+		   "worldDistance": {}
 		  },
 		  "<anonymous>~LinearSpring#applyForce": {
 		   "k": {},
@@ -32072,11 +33529,11 @@
 		  },
 		  "<anonymous>~RotationalSpring": {
 		   "options": {},
-		   "restAngle": {
-		    "!type": "?"
-		   },
-		   "applyForce": {
-		    "!type": "fn()"
+		   "prototype": {
+		    "restAngle": {},
+		    "applyForce": {
+		     "!type": "fn()"
+		    }
 		   }
 		  },
 		  "<anonymous>~RotationalSpring#applyForce": {
@@ -32097,58 +33554,59 @@
 		  },
 		  "<anonymous>~Spring": {
 		   "options": {},
-		   "stiffness": {
-		    "!type": "?"
-		   },
-		   "damping": {
-		    "!type": "?"
-		   },
-		   "bodyA": {
-		    "!type": "?"
-		   },
-		   "bodyB": {
-		    "!type": "?"
-		   },
-		   "applyForce": {
-		    "!type": "fn()"
+		   "prototype": {
+		    "stiffness": {},
+		    "damping": {},
+		    "bodyA": {},
+		    "bodyB": {},
+		    "applyForce": {
+		     "!type": "fn()"
+		    }
 		   }
 		  },
 		  "<anonymous>~TopDownVehicle": {
 		   "options": {},
-		   "chassisBody": {
-		    "!type": "+Body"
+		   "prototype": {
+		    "chassisBody": {
+		     "!type": "+Body"
+		    },
+		    "wheels": {
+		     "!type": "[?]"
+		    },
+		    "groundBody": {},
+		    "world": {},
+		    "preStepCallback": {
+		     "!type": "fn()"
+		    },
+		    "addToWorld": {
+		     "!type": "fn()"
+		    },
+		    "removeFromWorld": {
+		     "!type": "fn()"
+		    },
+		    "addWheel": {
+		     "!type": "fn()"
+		    },
+		    "update": {
+		     "!type": "fn()"
+		    }
 		   },
-		   "wheels": {
-		    "!type": "[?]"
-		   },
-		   "groundBody": {},
-		   "world": {},
-		   "that": {},
-		   "preStepCallback": {
-		    "!type": "fn()"
-		   },
-		   "addToWorld": {
-		    "!type": "fn()"
-		   },
-		   "removeFromWorld": {
-		    "!type": "fn()"
-		   },
-		   "addWheel": {
-		    "!type": "fn()"
-		   },
-		   "update": {
-		    "!type": "fn()"
-		   }
+		   "that": {}
 		  },
 		  "<anonymous>~TopDownVehicle#addToWorld": {
-		   "world": {},
+		   "prototype": {
+		    "world": {}
+		   },
 		   "i": {},
 		   "wheel": {}
 		  },
 		  "<anonymous>~TopDownVehicle#removeFromWorld": {
 		   "world": {},
 		   "i": {},
-		   "wheel": {}
+		   "wheel": {},
+		   "prototype": {
+		    "world": {}
+		   }
 		  },
 		  "<anonymous>~TopDownVehicle#addWheel": {
 		   "wheel": {}
@@ -32158,56 +33616,58 @@
 		  },
 		  "<anonymous>~WheelConstraint": {
 		   "options": {},
-		   "vehicle": {},
-		   "forwardEquation": {},
-		   "sideEquation": {},
-		   "steerValue": {
-		    "!type": "number"
-		   },
-		   "engineForce": {
-		    "!type": "number"
-		   },
-		   "localForwardVector": {
-		    "!type": "[?]"
-		   },
-		   "localPosition": {
-		    "!type": "[?]"
-		   },
-		   "setBrakeForce": {
-		    "!type": "fn()"
-		   },
-		   "setSideFriction": {
-		    "!type": "fn()"
-		   },
-		   "getSpeed": {
-		    "!type": "fn()"
-		   },
-		   "update": {
-		    "!type": "fn()"
+		   "prototype": {
+		    "vehicle": {},
+		    "forwardEquation": {},
+		    "sideEquation": {},
+		    "steerValue": {
+		     "!type": "number"
+		    },
+		    "engineForce": {
+		     "!type": "number"
+		    },
+		    "localForwardVector": {
+		     "!type": "[?]"
+		    },
+		    "localPosition": {
+		     "!type": "[?]"
+		    },
+		    "setBrakeForce": {
+		     "!type": "fn()"
+		    },
+		    "setSideFriction": {
+		     "!type": "fn()"
+		    },
+		    "getSpeed": {
+		     "!type": "fn()"
+		    },
+		    "update": {
+		     "!type": "fn()"
+		    }
 		   }
 		  },
 		  "<anonymous>~Box": {
 		   "options": {},
-		   "width": {
-		    "!type": "?"
+		   "width": {},
+		   "prototype": {
+		    "width": {},
+		    "height": {},
+		    "computeMomentOfInertia": {
+		     "!type": "fn()"
+		    },
+		    "updateBoundingRadius": {
+		     "!type": "fn()"
+		    },
+		    "computeAABB": {
+		     "!type": "fn()"
+		    },
+		    "updateArea": {
+		     "!type": "fn()"
+		    }
 		   },
-		   "height": {
-		    "!type": "?"
-		   },
+		   "height": {},
 		   "verts": {},
-		   "axes": {},
-		   "computeMomentOfInertia": {
-		    "!type": "fn()"
-		   },
-		   "updateBoundingRadius": {
-		    "!type": "fn()"
-		   },
-		   "computeAABB": {
-		    "!type": "fn()"
-		   },
-		   "updateArea": {
-		    "!type": "fn()"
-		   }
+		   "axes": {}
 		  },
 		  "<anonymous>~Box~options": {
 		   "width": {},
@@ -32223,33 +33683,39 @@
 		  "<anonymous>~Box#updateBoundingRadius": {
 		   "w": {},
 		   "h": {},
-		   "boundingRadius": {}
+		   "prototype": {
+		    "boundingRadius": {}
+		   }
 		  },
 		  "<anonymous>~Box#updateArea": {
-		   "area": {}
+		   "prototype": {
+		    "area": {}
+		   }
 		  },
 		  "<anonymous>~Capsule": {
 		   "options": {},
-		   "length": {
-		    "!type": "number"
-		   },
-		   "radius": {
-		    "!type": "number"
-		   },
-		   "computeMomentOfInertia": {
-		    "!type": "fn()"
-		   },
-		   "updateBoundingRadius": {
-		    "!type": "fn()"
-		   },
-		   "updateArea": {
-		    "!type": "fn()"
-		   },
-		   "computeAABB": {
-		    "!type": "fn()"
-		   },
-		   "raycast": {
-		    "!type": "fn()"
+		   "prototype": {
+		    "length": {
+		     "!type": "number"
+		    },
+		    "radius": {
+		     "!type": "number"
+		    },
+		    "computeMomentOfInertia": {
+		     "!type": "fn()"
+		    },
+		    "updateBoundingRadius": {
+		     "!type": "fn()"
+		    },
+		    "updateArea": {
+		     "!type": "fn()"
+		    },
+		    "computeAABB": {
+		     "!type": "fn()"
+		    },
+		    "raycast": {
+		     "!type": "fn()"
+		    }
 		   }
 		  },
 		  "<anonymous>~Capsule~options": {
@@ -32263,10 +33729,14 @@
 		   "h": {}
 		  },
 		  "<anonymous>~Capsule#updateBoundingRadius": {
-		   "boundingRadius": {}
+		   "prototype": {
+		    "boundingRadius": {}
+		   }
 		  },
 		  "<anonymous>~Capsule#updateArea": {
-		   "area": {}
+		   "prototype": {
+		    "area": {}
+		   }
 		  },
 		  "<anonymous>~Capsule#computeAABB": {
 		   "radius": {}
@@ -32294,23 +33764,23 @@
 		  },
 		  "<anonymous>~Circle": {
 		   "options": {},
-		   "radius": {
-		    "!type": "?"
-		   },
-		   "computeMomentOfInertia": {
-		    "!type": "fn()"
-		   },
-		   "updateBoundingRadius": {
-		    "!type": "fn()"
-		   },
-		   "updateArea": {
-		    "!type": "fn()"
-		   },
-		   "computeAABB": {
-		    "!type": "fn()"
-		   },
-		   "raycast": {
-		    "!type": "fn()"
+		   "prototype": {
+		    "radius": {},
+		    "computeMomentOfInertia": {
+		     "!type": "fn()"
+		    },
+		    "updateBoundingRadius": {
+		     "!type": "fn()"
+		    },
+		    "updateArea": {
+		     "!type": "fn()"
+		    },
+		    "computeAABB": {
+		     "!type": "fn()"
+		    },
+		    "raycast": {
+		     "!type": "fn()"
+		    }
 		   }
 		  },
 		  "<anonymous>~Circle~options": {
@@ -32321,10 +33791,14 @@
 		   "r": {}
 		  },
 		  "<anonymous>~Circle#updateBoundingRadius": {
-		   "boundingRadius": {}
+		   "prototype": {
+		    "boundingRadius": {}
+		   }
 		  },
 		  "<anonymous>~Circle#updateArea": {
-		   "area": {}
+		   "prototype": {
+		    "area": {}
+		   }
 		  },
 		  "<anonymous>~Circle#computeAABB": {
 		   "r": {}
@@ -32346,55 +33820,48 @@
 		  },
 		  "<anonymous>~Convex": {
 		   "options": {},
-		   "vertices": {
-		    "!type": "?"
+		   "prototype": {
+		    "vertices": {},
+		    "axes": {},
+		    "centerOfMass": {},
+		    "triangles": {},
+		    "boundingRadius": {},
+		    "projectOntoLocalAxis": {
+		     "!type": "fn()"
+		    },
+		    "projectOntoWorldAxis": {
+		     "!type": "fn()"
+		    },
+		    "updateTriangles": {
+		     "!type": "fn()"
+		    },
+		    "updateCenterOfMass": {
+		     "!type": "fn()"
+		    },
+		    "computeMomentOfInertia": {
+		     "!type": "fn()"
+		    },
+		    "updateBoundingRadius": {
+		     "!type": "fn()"
+		    },
+		    "updateArea": {
+		     "!type": "fn()"
+		    },
+		    "computeAABB": {
+		     "!type": "fn()"
+		    },
+		    "raycast": {
+		     "!type": "fn()"
+		    }
 		   },
+		   "vertices": {},
 		   "i": {},
 		   "v": {},
-		   "axes": {
-		    "!type": "?"
-		   },
 		   "axis": {},
 		   "worldPoint0": {},
 		   "worldPoint1": {},
 		   "normal": {},
-		   "centerOfMass": {
-		    "!type": "?"
-		   },
-		   "triangles": {
-		    "!type": "?"
-		   },
-		   "boundingRadius": {
-		    "!type": "?"
-		   },
-		   "projectOntoLocalAxis": {
-		    "!type": "fn()"
-		   },
-		   "projectOntoWorldAxis": {
-		    "!type": "fn()"
-		   },
-		   "updateTriangles": {
-		    "!type": "fn()"
-		   },
-		   "updateCenterOfMass": {
-		    "!type": "fn()"
-		   },
-		   "computeMomentOfInertia": {
-		    "!type": "fn()"
-		   },
-		   "updateBoundingRadius": {
-		    "!type": "fn()"
-		   },
 		   "triangleArea": {
-		    "!type": "fn()"
-		   },
-		   "updateArea": {
-		    "!type": "fn()"
-		   },
-		   "computeAABB": {
-		    "!type": "fn()"
-		   },
-		   "raycast": {
 		    "!type": "fn()"
 		   }
 		  },
@@ -32462,10 +33929,14 @@
 		   "r2": {},
 		   "i": {},
 		   "l2": {},
-		   "boundingRadius": {}
+		   "prototype": {
+		    "boundingRadius": {}
+		   }
 		  },
 		  "<anonymous>~Convex#updateArea": {
-		   "area": {},
+		   "prototype": {
+		    "area": {}
+		   },
 		   "triangles": {},
 		   "verts": {},
 		   "i": {},
@@ -32489,44 +33960,46 @@
 		  "<anonymous>~Heightfield": {
 		   "options": {},
 		   "key": {},
-		   "heights": {
-		    "!type": "+array"
-		   },
-		   "maxValue": {
-		    "!type": "number"
-		   },
-		   "minValue": {
-		    "!type": "number"
-		   },
-		   "elementWidth": {
-		    "!type": "number"
-		   },
-		   "updateMaxMinValues": {
-		    "!type": "fn()"
-		   },
-		   "computeMomentOfInertia": {
-		    "!type": "fn()"
-		   },
-		   "updateBoundingRadius": {
-		    "!type": "fn()"
-		   },
-		   "updateArea": {
-		    "!type": "fn()"
-		   },
-		   "computeAABB": {
-		    "!type": "fn()"
-		   },
-		   "getLineSegment": {
-		    "!type": "fn()"
-		   },
-		   "getSegmentIndex": {
-		    "!type": "fn()"
-		   },
-		   "getClampedSegmentIndex": {
-		    "!type": "fn()"
-		   },
-		   "raycast": {
-		    "!type": "fn()"
+		   "prototype": {
+		    "heights": {
+		     "!type": "+array"
+		    },
+		    "maxValue": {
+		     "!type": "number"
+		    },
+		    "minValue": {
+		     "!type": "number"
+		    },
+		    "elementWidth": {
+		     "!type": "number"
+		    },
+		    "updateMaxMinValues": {
+		     "!type": "fn()"
+		    },
+		    "computeMomentOfInertia": {
+		     "!type": "fn()"
+		    },
+		    "updateBoundingRadius": {
+		     "!type": "fn()"
+		    },
+		    "updateArea": {
+		     "!type": "fn()"
+		    },
+		    "computeAABB": {
+		     "!type": "fn()"
+		    },
+		    "getLineSegment": {
+		     "!type": "fn()"
+		    },
+		    "getSegmentIndex": {
+		     "!type": "fn()"
+		    },
+		    "getClampedSegmentIndex": {
+		     "!type": "fn()"
+		    },
+		    "raycast": {
+		     "!type": "fn()"
+		    }
 		   }
 		  },
 		  "<anonymous>~Heightfield~options": {
@@ -32539,15 +34012,24 @@
 		   "maxValue": {},
 		   "minValue": {},
 		   "i": {},
-		   "v": {}
+		   "v": {},
+		   "prototype": {
+		    "maxValue": {},
+		    "minValue": {}
+		   }
 		  },
 		  "<anonymous>~Heightfield#updateBoundingRadius": {
-		   "boundingRadius": {}
+		   "prototype": {
+		    "boundingRadius": {}
+		   }
 		  },
 		  "<anonymous>~Heightfield#updateArea": {
 		   "data": {},
 		   "area": {},
-		   "i": {}
+		   "i": {},
+		   "prototype": {
+		    "area": {}
+		   }
 		  },
 		  "<anonymous>~Heightfield#getLineSegment": {
 		   "data": {},
@@ -32587,7 +34069,9 @@
 		   "type": {}
 		  },
 		  "<anonymous>~Line#updateBoundingRadius": {
-		   "boundingRadius": {}
+		   "prototype": {
+		    "boundingRadius": {}
+		   }
 		  },
 		  "<anonymous>~Line#computeAABB": {
 		   "l2": {}
@@ -32603,45 +34087,53 @@
 		  },
 		  "<anonymous>~Particle": {
 		   "options": {},
-		   "computeMomentOfInertia": {
-		    "!type": "fn()"
-		   },
-		   "updateBoundingRadius": {
-		    "!type": "fn()"
-		   },
-		   "computeAABB": {
-		    "!type": "fn()"
+		   "prototype": {
+		    "computeMomentOfInertia": {
+		     "!type": "fn()"
+		    },
+		    "updateBoundingRadius": {
+		     "!type": "fn()"
+		    },
+		    "computeAABB": {
+		     "!type": "fn()"
+		    }
 		   }
 		  },
 		  "<anonymous>~Particle~options": {
 		   "type": {}
 		  },
 		  "<anonymous>~Particle#updateBoundingRadius": {
-		   "boundingRadius": {}
+		   "prototype": {
+		    "boundingRadius": {}
+		   }
 		  },
 		  "<anonymous>~Plane": {
 		   "options": {},
-		   "computeMomentOfInertia": {
-		    "!type": "fn()"
-		   },
-		   "updateBoundingRadius": {
-		    "!type": "fn()"
-		   },
-		   "computeAABB": {
-		    "!type": "fn()"
-		   },
-		   "updateArea": {
-		    "!type": "fn()"
-		   },
-		   "raycast": {
-		    "!type": "fn()"
+		   "prototype": {
+		    "computeMomentOfInertia": {
+		     "!type": "fn()"
+		    },
+		    "updateBoundingRadius": {
+		     "!type": "fn()"
+		    },
+		    "computeAABB": {
+		     "!type": "fn()"
+		    },
+		    "updateArea": {
+		     "!type": "fn()"
+		    },
+		    "raycast": {
+		     "!type": "fn()"
+		    }
 		   }
 		  },
 		  "<anonymous>~Plane~options": {
 		   "type": {}
 		  },
 		  "<anonymous>~Plane#updateBoundingRadius": {
-		   "boundingRadius": {}
+		   "prototype": {
+		    "boundingRadius": {}
+		   }
 		  },
 		  "<anonymous>~Plane#computeAABB": {
 		   "a": {},
@@ -32651,7 +34143,9 @@
 		   "upperBound": {}
 		  },
 		  "<anonymous>~Plane#updateArea": {
-		   "area": {}
+		   "prototype": {
+		    "area": {}
+		   }
 		  },
 		  "<anonymous>~Plane#raycast": {
 		   "from": {},
@@ -32669,41 +34163,46 @@
 		  },
 		  "<anonymous>~Shape": {
 		   "options": {},
-		   "body": {
-		    "!type": "+Body"
-		   },
-		   "position": {
-		    "!type": "[?]"
-		   },
-		   "angle": {
-		    "!type": "number"
-		   },
-		   "type": {
-		    "!type": "number"
-		   },
-		   "id": {
-		    "!type": "?"
-		   },
-		   "boundingRadius": {
-		    "!type": "?"
-		   },
-		   "collisionGroup": {
-		    "!type": "?"
-		   },
-		   "collisionResponse": {
-		    "!type": "bool"
-		   },
-		   "collisionMask": {
-		    "!type": "?"
-		   },
-		   "material": {
-		    "!type": "?"
-		   },
-		   "area": {
-		    "!type": "?"
-		   },
-		   "sensor": {
-		    "!type": "bool"
+		   "prototype": {
+		    "body": {
+		     "!type": "+Body"
+		    },
+		    "position": {
+		     "!type": "[?]"
+		    },
+		    "angle": {
+		     "!type": "number"
+		    },
+		    "type": {
+		     "!type": "number"
+		    },
+		    "id": {},
+		    "boundingRadius": {},
+		    "collisionGroup": {},
+		    "collisionResponse": {
+		     "!type": "bool"
+		    },
+		    "collisionMask": {},
+		    "material": {},
+		    "area": {},
+		    "sensor": {
+		     "!type": "bool"
+		    },
+		    "computeMomentOfInertia": {
+		     "!type": "fn()"
+		    },
+		    "updateBoundingRadius": {
+		     "!type": "fn()"
+		    },
+		    "updateArea": {
+		     "!type": "fn()"
+		    },
+		    "computeAABB": {
+		     "!type": "fn()"
+		    },
+		    "raycast": {
+		     "!type": "fn()"
+		    }
 		   },
 		   "idCounter": {},
 		   "CIRCLE": {
@@ -32729,46 +34228,25 @@
 		   },
 		   "HEIGHTFIELD": {
 		    "!type": "number"
-		   },
-		   "computeMomentOfInertia": {
-		    "!type": "fn()"
-		   },
-		   "updateBoundingRadius": {
-		    "!type": "fn()"
-		   },
-		   "updateArea": {
-		    "!type": "fn()"
-		   },
-		   "computeAABB": {
-		    "!type": "fn()"
-		   },
-		   "raycast": {
-		    "!type": "fn()"
 		   }
 		  },
 		  "<anonymous>~GSSolver": {
 		   "options": {},
-		   "iterations": {
-		    "!type": "?"
-		   },
-		   "tolerance": {
-		    "!type": "?"
-		   },
-		   "arrayStep": {},
-		   "lambda": {},
-		   "Bs": {},
-		   "invCs": {},
-		   "useZeroRHS": {
-		    "!type": "?"
-		   },
-		   "frictionIterations": {
-		    "!type": "?"
-		   },
-		   "usedIterations": {
-		    "!type": "number"
-		   },
-		   "solve": {
-		    "!type": "fn()"
+		   "prototype": {
+		    "iterations": {},
+		    "tolerance": {},
+		    "arrayStep": {},
+		    "lambda": {},
+		    "Bs": {},
+		    "invCs": {},
+		    "useZeroRHS": {},
+		    "frictionIterations": {},
+		    "usedIterations": {
+		     "!type": "number"
+		    },
+		    "solve": {
+		     "!type": "fn()"
+		    }
 		   },
 		   "updateMultipliers": {
 		    "!type": "fn()",
@@ -32802,11 +34280,16 @@
 		   "set": {},
 		   "useZeroRHS": {},
 		   "lambda": {},
-		   "usedIterations": {},
+		   "prototype": {
+		    "usedIterations": {},
+		    "lambda": {},
+		    "Bs": {},
+		    "invCs": {}
+		   },
 		   "i": {},
 		   "b": {},
-		   "Bs": {},
 		   "invCs": {},
+		   "Bs": {},
 		   "c": {},
 		   "q": {},
 		   "B": {},
@@ -32835,33 +34318,31 @@
 		  },
 		  "<anonymous>~Solver": {
 		   "options": {},
-		   "type": {},
-		   "equations": {
-		    "!type": "?"
-		   },
-		   "equationSortFunction": {
-		    "!type": "?"
-		   },
-		   "solve": {
-		    "!type": "fn()"
-		   },
-		   "solveIsland": {
-		    "!type": "fn()"
-		   },
-		   "sortEquations": {
-		    "!type": "fn()"
-		   },
-		   "addEquation": {
-		    "!type": "fn()"
-		   },
-		   "addEquations": {
-		    "!type": "fn()"
-		   },
-		   "removeEquation": {
-		    "!type": "fn()"
-		   },
-		   "removeAllEquations": {
-		    "!type": "fn()"
+		   "prototype": {
+		    "type": {},
+		    "equations": {},
+		    "equationSortFunction": {},
+		    "solve": {
+		     "!type": "fn()"
+		    },
+		    "solveIsland": {
+		     "!type": "fn()"
+		    },
+		    "sortEquations": {
+		     "!type": "fn()"
+		    },
+		    "addEquation": {
+		     "!type": "fn()"
+		    },
+		    "addEquations": {
+		     "!type": "fn()"
+		    },
+		    "removeEquation": {
+		     "!type": "fn()"
+		    },
+		    "removeAllEquations": {
+		     "!type": "fn()"
+		    }
 		   },
 		   "GS": {},
 		   "ISLAND": {}
@@ -32882,11 +34363,13 @@
 		   "length": {}
 		  },
 		  "<anonymous>~ContactEquationPool": {
-		   "create": {
-		    "!type": "fn()"
-		   },
-		   "destroy": {
-		    "!type": "fn()"
+		   "prototype": {
+		    "create": {
+		     "!type": "fn()"
+		    },
+		    "destroy": {
+		     "!type": "fn()"
+		    }
 		   }
 		  },
 		  "equation": {
@@ -32894,64 +34377,72 @@
 		   "bodyB": {}
 		  },
 		  "<anonymous>~FrictionEquationPool": {
-		   "create": {
-		    "!type": "fn()"
-		   },
-		   "destroy": {
-		    "!type": "fn()"
+		   "prototype": {
+		    "create": {
+		     "!type": "fn()"
+		    },
+		    "destroy": {
+		     "!type": "fn()"
+		    }
 		   }
 		  },
 		  "<anonymous>~IslandNodePool": {
-		   "create": {
-		    "!type": "fn()"
-		   },
-		   "destroy": {
-		    "!type": "fn()"
+		   "prototype": {
+		    "create": {
+		     "!type": "fn()"
+		    },
+		    "destroy": {
+		     "!type": "fn()"
+		    }
 		   }
 		  },
 		  "<anonymous>~IslandPool": {
-		   "create": {
-		    "!type": "fn()"
-		   },
-		   "destroy": {
-		    "!type": "fn()"
+		   "prototype": {
+		    "create": {
+		     "!type": "fn()"
+		    },
+		    "destroy": {
+		     "!type": "fn()"
+		    }
 		   }
 		  },
 		  "<anonymous>~OverlapKeeper": {
-		   "overlappingShapesLastState": {},
-		   "overlappingShapesCurrentState": {},
-		   "recordPool": {},
-		   "tmpDict": {},
-		   "tmpArray1": {},
-		   "tick": {
-		    "!type": "fn()"
-		   },
-		   "setOverlapping": {
-		    "!type": "fn()"
-		   },
-		   "getNewOverlaps": {
-		    "!type": "fn()"
-		   },
-		   "getEndOverlaps": {
-		    "!type": "fn()"
-		   },
-		   "bodiesAreOverlapping": {
-		    "!type": "fn()"
-		   },
-		   "getDiff": {
-		    "!type": "fn()"
-		   },
-		   "isNewOverlap": {
-		    "!type": "fn()"
-		   },
-		   "getNewBodyOverlaps": {
-		    "!type": "fn()"
-		   },
-		   "getEndBodyOverlaps": {
-		    "!type": "fn()"
-		   },
-		   "getBodyDiff": {
-		    "!type": "fn()"
+		   "prototype": {
+		    "overlappingShapesLastState": {},
+		    "overlappingShapesCurrentState": {},
+		    "recordPool": {},
+		    "tmpDict": {},
+		    "tmpArray1": {},
+		    "tick": {
+		     "!type": "fn()"
+		    },
+		    "setOverlapping": {
+		     "!type": "fn()"
+		    },
+		    "getNewOverlaps": {
+		     "!type": "fn()"
+		    },
+		    "getEndOverlaps": {
+		     "!type": "fn()"
+		    },
+		    "bodiesAreOverlapping": {
+		     "!type": "fn()"
+		    },
+		    "getDiff": {
+		     "!type": "fn()"
+		    },
+		    "isNewOverlap": {
+		     "!type": "fn()"
+		    },
+		    "getNewBodyOverlaps": {
+		     "!type": "fn()"
+		    },
+		    "getEndBodyOverlaps": {
+		     "!type": "fn()"
+		    },
+		    "getBodyDiff": {
+		     "!type": "fn()"
+		    }
 		   }
 		  },
 		  "<anonymous>~OverlapKeeper#tick": {
@@ -33010,28 +34501,32 @@
 		   "data": {}
 		  },
 		  "<anonymous>~OverlapKeeperRecord": {
-		   "shapeA": {
-		    "!type": "+Shape"
-		   },
-		   "shapeB": {
-		    "!type": "+Shape"
-		   },
-		   "bodyA": {
-		    "!type": "+Body"
-		   },
-		   "bodyB": {
-		    "!type": "+Body"
-		   },
-		   "set": {
-		    "!type": "fn()"
+		   "prototype": {
+		    "shapeA": {
+		     "!type": "+Shape"
+		    },
+		    "shapeB": {
+		     "!type": "+Shape"
+		    },
+		    "bodyA": {
+		     "!type": "+Body"
+		    },
+		    "bodyB": {
+		     "!type": "+Body"
+		    },
+		    "set": {
+		     "!type": "fn()"
+		    }
 		   }
 		  },
 		  "<anonymous>~OverlapKeeperRecordPool": {
-		   "create": {
-		    "!type": "fn()"
-		   },
-		   "destroy": {
-		    "!type": "fn()"
+		   "prototype": {
+		    "create": {
+		     "!type": "fn()"
+		    },
+		    "destroy": {
+		     "!type": "fn()"
+		    }
 		   }
 		  },
 		  "record": {
@@ -33044,17 +34539,19 @@
 		  },
 		  "<anonymous>~Pool": {
 		   "options": {},
-		   "objects": {
-		    "!type": "[?]"
-		   },
-		   "resize": {
-		    "!type": "fn()"
-		   },
-		   "get": {
-		    "!type": "fn()"
-		   },
-		   "release": {
-		    "!type": "fn()"
+		   "prototype": {
+		    "objects": {
+		     "!type": "[?]"
+		    },
+		    "resize": {
+		     "!type": "fn()"
+		    },
+		    "get": {
+		     "!type": "fn()"
+		    },
+		    "release": {
+		     "!type": "fn()"
+		    }
 		   }
 		  },
 		  "<anonymous>~Pool#resize": {
@@ -33064,29 +34561,29 @@
 		   "objects": {}
 		  },
 		  "<anonymous>~TupleDictionary": {
-		   "data": {
-		    "!type": "?"
-		   },
-		   "keys": {
-		    "!type": "[?]"
-		   },
-		   "getKey": {
-		    "!type": "fn()"
-		   },
-		   "getByKey": {
-		    "!type": "fn()"
-		   },
-		   "get": {
-		    "!type": "fn()"
-		   },
-		   "set": {
-		    "!type": "fn()"
-		   },
-		   "reset": {
-		    "!type": "fn()"
-		   },
-		   "copy": {
-		    "!type": "fn()"
+		   "prototype": {
+		    "data": {},
+		    "keys": {
+		     "!type": "[?]"
+		    },
+		    "getKey": {
+		     "!type": "fn()"
+		    },
+		    "getByKey": {
+		     "!type": "fn()"
+		    },
+		    "get": {
+		     "!type": "fn()"
+		    },
+		    "set": {
+		     "!type": "fn()"
+		    },
+		    "reset": {
+		     "!type": "fn()"
+		    },
+		    "copy": {
+		     "!type": "fn()"
+		    }
 		   }
 		  },
 		  "<anonymous>~TupleDictionary#getKey": {
@@ -33098,7 +34595,9 @@
 		  },
 		  "<anonymous>~TupleDictionary#set": {
 		   "key": {},
-		   "data[undefined]": {}
+		   "prototype": {
+		    "data[undefined]": {}
+		   }
 		  },
 		  "<anonymous>~TupleDictionary#reset": {
 		   "data": {},
@@ -33111,7 +34610,9 @@
 		  "<anonymous>~TupleDictionary#copy": {
 		   "l": {},
 		   "key": {},
-		   "data[undefined]": {}
+		   "prototype": {
+		    "data[undefined]": {}
+		   }
 		  },
 		  "<anonymous>~Utils": {
 		   "appendArray": {
@@ -33143,23 +34644,21 @@
 		   "length": {}
 		  },
 		  "<anonymous>~Island": {
-		   "equations": {
-		    "!type": "?"
-		   },
-		   "bodies": {
-		    "!type": "?"
-		   },
-		   "reset": {
-		    "!type": "fn()"
-		   },
-		   "getBodies": {
-		    "!type": "fn()"
-		   },
-		   "wantsToSleep": {
-		    "!type": "fn()"
-		   },
-		   "sleep": {
-		    "!type": "fn()"
+		   "prototype": {
+		    "equations": {},
+		    "bodies": {},
+		    "reset": {
+		     "!type": "fn()"
+		    },
+		    "getBodies": {
+		     "!type": "fn()"
+		    },
+		    "wantsToSleep": {
+		     "!type": "fn()"
+		    },
+		    "sleep": {
+		     "!type": "fn()"
+		    }
 		   }
 		  },
 		  "<anonymous>~Island#reset#equations": {
@@ -33186,38 +34685,36 @@
 		   "b": {}
 		  },
 		  "<anonymous>~IslandManager": {
-		   "nodePool": {
-		    "!type": "?"
-		   },
-		   "islandPool": {
-		    "!type": "?"
-		   },
-		   "equations": {
-		    "!type": "[?]"
-		   },
-		   "islands": {
-		    "!type": "[?]"
-		   },
-		   "nodes": {
-		    "!type": "[?]"
-		   },
-		   "queue": {
-		    "!type": "[?]"
+		   "prototype": {
+		    "nodePool": {},
+		    "islandPool": {},
+		    "equations": {
+		     "!type": "[?]"
+		    },
+		    "islands": {
+		     "!type": "[?]"
+		    },
+		    "nodes": {
+		     "!type": "[?]"
+		    },
+		    "queue": {
+		     "!type": "[?]"
+		    },
+		    "visit": {
+		     "!type": "fn()"
+		    },
+		    "bfs": {
+		     "!type": "fn()"
+		    },
+		    "split": {
+		     "!type": "fn()"
+		    }
 		   },
 		   "getUnvisitedNode": {
 		    "!type": "fn()",
 		    "Nnodes": {},
 		    "i": {},
 		    "node": {}
-		   },
-		   "visit": {
-		    "!type": "fn()"
-		   },
-		   "bfs": {
-		    "!type": "fn()"
-		   },
-		   "split": {
-		    "!type": "fn()"
 		   }
 		  },
 		  "<anonymous>~IslandManager#visit": {
@@ -33261,20 +34758,20 @@
 		   "length": {}
 		  },
 		  "<anonymous>~IslandNode": {
-		   "body": {
-		    "!type": "+Body"
-		   },
-		   "neighbors": {
-		    "!type": "[?]"
-		   },
-		   "equations": {
-		    "!type": "[?]"
-		   },
-		   "visited": {
-		    "!type": "?"
-		   },
-		   "reset": {
-		    "!type": "fn()"
+		   "prototype": {
+		    "body": {
+		     "!type": "+Body"
+		    },
+		    "neighbors": {
+		     "!type": "[?]"
+		    },
+		    "equations": {
+		     "!type": "[?]"
+		    },
+		    "visited": {},
+		    "reset": {
+		     "!type": "fn()"
+		    }
 		   }
 		  },
 		  "<anonymous>~IslandNode#reset#equations": {
@@ -33284,105 +34781,141 @@
 		   "length": {}
 		  },
 		  "<anonymous>~IslandNode#reset": {
-		   "visited": {},
-		   "body": {}
+		   "prototype": {
+		    "visited": {},
+		    "body": {}
+		   }
 		  },
 		  "<anonymous>~World": {
 		   "options": {},
-		   "springs": {
-		    "!type": "?"
-		   },
-		   "bodies": {
-		    "!type": "[?]"
-		   },
-		   "disabledBodyCollisionPairs": {
-		    "!type": "[?]"
-		   },
-		   "solver": {
-		    "!type": "+Solver"
-		   },
-		   "narrowphase": {
-		    "!type": "?"
-		   },
-		   "islandManager": {
-		    "!type": "+IslandManager"
-		   },
-		   "gravity": {
-		    "!type": "?"
-		   },
-		   "frictionGravity": {
-		    "!type": "number"
-		   },
-		   "useWorldGravityAsFrictionGravity": {
-		    "!type": "bool"
-		   },
-		   "useFrictionGravityOnZeroGravity": {
-		    "!type": "bool"
-		   },
-		   "broadphase": {
-		    "!type": "?"
-		   },
-		   "constraints": {
-		    "!type": "?"
-		   },
-		   "defaultMaterial": {
-		    "!type": "+Material"
-		   },
-		   "defaultContactMaterial": {
-		    "!type": "+ContactMaterial"
-		   },
-		   "lastTimeStep": {
-		    "!type": "?"
-		   },
-		   "applySpringForces": {
-		    "!type": "?"
-		   },
-		   "applyDamping": {
-		    "!type": "?"
-		   },
-		   "applyGravity": {
-		    "!type": "?"
-		   },
-		   "solveConstraints": {
-		    "!type": "?"
-		   },
-		   "contactMaterials": {
-		    "!type": "?"
-		   },
-		   "time": {
-		    "!type": "?"
-		   },
-		   "accumulator": {},
-		   "stepping": {
-		    "!type": "bool"
-		   },
-		   "bodiesToBeRemoved": {
-		    "!type": "[?]"
-		   },
-		   "islandSplit": {
-		    "!type": "bool"
-		   },
-		   "emitImpactEvent": {
-		    "!type": "?"
-		   },
-		   "_constraintIdCounter": {},
-		   "_bodyIdCounter": {},
-		   "postStepEvent": {},
-		   "addBodyEvent": {},
-		   "removeBodyEvent": {},
-		   "addSpringEvent": {},
-		   "impactEvent": {},
-		   "postBroadphaseEvent": {},
-		   "sleepMode": {
-		    "!type": "?"
-		   },
-		   "beginContactEvent": {},
-		   "endContactEvent": {},
-		   "preSolveEvent": {},
-		   "overlappingShapesLastState": {},
-		   "overlappingShapesCurrentState": {},
-		   "overlapKeeper": {
-		    "!type": "+OverlapKeeper"
+		   "prototype": {
+		    "springs": {},
+		    "bodies": {
+		     "!type": "[?]"
+		    },
+		    "disabledBodyCollisionPairs": {
+		     "!type": "[?]"
+		    },
+		    "solver": {
+		     "!type": "+Solver"
+		    },
+		    "narrowphase": {},
+		    "islandManager": {
+		     "!type": "+IslandManager"
+		    },
+		    "gravity": {},
+		    "frictionGravity": {
+		     "!type": "number"
+		    },
+		    "useWorldGravityAsFrictionGravity": {
+		     "!type": "bool"
+		    },
+		    "useFrictionGravityOnZeroGravity": {
+		     "!type": "bool"
+		    },
+		    "broadphase": {},
+		    "constraints": {},
+		    "defaultMaterial": {
+		     "!type": "+Material"
+		    },
+		    "defaultContactMaterial": {
+		     "!type": "+ContactMaterial"
+		    },
+		    "lastTimeStep": {},
+		    "applySpringForces": {},
+		    "applyDamping": {},
+		    "applyGravity": {},
+		    "solveConstraints": {},
+		    "contactMaterials": {},
+		    "time": {},
+		    "accumulator": {},
+		    "stepping": {
+		     "!type": "bool"
+		    },
+		    "bodiesToBeRemoved": {
+		     "!type": "[?]"
+		    },
+		    "islandSplit": {
+		     "!type": "bool"
+		    },
+		    "emitImpactEvent": {},
+		    "_constraintIdCounter": {},
+		    "_bodyIdCounter": {},
+		    "postStepEvent": {},
+		    "addBodyEvent": {},
+		    "removeBodyEvent": {},
+		    "addSpringEvent": {},
+		    "impactEvent": {},
+		    "postBroadphaseEvent": {},
+		    "sleepMode": {},
+		    "beginContactEvent": {},
+		    "endContactEvent": {},
+		    "preSolveEvent": {},
+		    "overlappingShapesLastState": {},
+		    "overlappingShapesCurrentState": {},
+		    "overlapKeeper": {
+		     "!type": "+OverlapKeeper"
+		    },
+		    "addConstraint": {
+		     "!type": "fn()"
+		    },
+		    "addContactMaterial": {
+		     "!type": "fn()"
+		    },
+		    "removeContactMaterial": {
+		     "!type": "fn()"
+		    },
+		    "getContactMaterial": {
+		     "!type": "fn()"
+		    },
+		    "removeConstraint": {
+		     "!type": "fn()"
+		    },
+		    "step": {
+		     "!type": "fn()"
+		    },
+		    "internalStep": {
+		     "!type": "fn()"
+		    },
+		    "runNarrowphase": {
+		     "!type": "fn()"
+		    },
+		    "addSpring": {
+		     "!type": "fn()"
+		    },
+		    "removeSpring": {
+		     "!type": "fn()"
+		    },
+		    "addBody": {
+		     "!type": "fn()"
+		    },
+		    "removeBody": {
+		     "!type": "fn()"
+		    },
+		    "getBodyById": {
+		     "!type": "fn()"
+		    },
+		    "disableBodyCollision": {
+		     "!type": "fn()"
+		    },
+		    "enableBodyCollision": {
+		     "!type": "fn()"
+		    },
+		    "clear": {
+		     "!type": "fn()"
+		    },
+		    "hitTest": {
+		     "!type": "fn()"
+		    },
+		    "setGlobalStiffness": {
+		     "!type": "fn()"
+		    },
+		    "setGlobalRelaxation": {
+		     "!type": "fn()"
+		    },
+		    "raycast": {
+		     "!type": "fn()"
+		    }
 		   },
 		   "NO_SLEEPING": {
 		    "!type": "number"
@@ -33392,66 +34925,6 @@
 		   },
 		   "ISLAND_SLEEPING": {
 		    "!type": "number"
-		   },
-		   "addConstraint": {
-		    "!type": "fn()"
-		   },
-		   "addContactMaterial": {
-		    "!type": "fn()"
-		   },
-		   "removeContactMaterial": {
-		    "!type": "fn()"
-		   },
-		   "getContactMaterial": {
-		    "!type": "fn()"
-		   },
-		   "removeConstraint": {
-		    "!type": "fn()"
-		   },
-		   "step": {
-		    "!type": "fn()"
-		   },
-		   "internalStep": {
-		    "!type": "fn()"
-		   },
-		   "runNarrowphase": {
-		    "!type": "fn()"
-		   },
-		   "addSpring": {
-		    "!type": "fn()"
-		   },
-		   "removeSpring": {
-		    "!type": "fn()"
-		   },
-		   "addBody": {
-		    "!type": "fn()"
-		   },
-		   "removeBody": {
-		    "!type": "fn()"
-		   },
-		   "getBodyById": {
-		    "!type": "fn()"
-		   },
-		   "disableBodyCollision": {
-		    "!type": "fn()"
-		   },
-		   "enableBodyCollision": {
-		    "!type": "fn()"
-		   },
-		   "clear": {
-		    "!type": "fn()"
-		   },
-		   "hitTest": {
-		    "!type": "fn()"
-		   },
-		   "setGlobalStiffness": {
-		    "!type": "fn()"
-		   },
-		   "setGlobalRelaxation": {
-		    "!type": "fn()"
-		   },
-		   "raycast": {
-		    "!type": "fn()"
 		   }
 		  },
 		  "<anonymous>~World#postStepEvent": {
@@ -33522,8 +34995,10 @@
 		  "<anonymous>~World#step": {
 		   "maxSubSteps": {},
 		   "timeSinceLastCalled": {},
-		   "time": {},
-		   "accumulator": {},
+		   "prototype": {
+		    "time": {},
+		    "accumulator": {}
+		   },
 		   "substeps": {},
 		   "t": {},
 		   "j": {},
@@ -33533,7 +35008,11 @@
 		   "interpolatedAngle": {}
 		  },
 		  "<anonymous>~World#internalStep": {
-		   "stepping": {},
+		   "prototype": {
+		    "stepping": {},
+		    "lastTimeStep": {},
+		    "frictionGravity": {}
+		   },
 		   "that": {},
 		   "Nsprings": {},
 		   "springs": {},
@@ -33553,9 +35032,7 @@
 		   "add": {},
 		   "rotate": {},
 		   "islandManager": {},
-		   "lastTimeStep": {},
 		   "gravityLen": {},
-		   "frictionGravity": {},
 		   "i": {},
 		   "b": {},
 		   "fi": {},
@@ -33695,7 +35172,9 @@
 		   "i": {}
 		  },
 		  "<anonymous>~World#clear": {
-		   "time": {},
+		   "prototype": {
+		    "time": {}
+		   },
 		   "cs": {},
 		   "i": {},
 		   "bodies": {},
@@ -33756,10 +35235,14 @@
 		  },
 		  "p2": {
 		   "Body": {
-		    "parent": {}
+		    "prototype": {
+		     "parent": {}
+		    }
 		   },
 		   "Spring": {
-		    "parent": {}
+		    "prototype": {
+		     "parent": {}
+		    }
 		   }
 		  },
 		  "world": {
@@ -33826,7 +35309,6 @@
 		    "!type": "string"
 		   },
 		   "defaultRenderOptions": {
-		    
 		    "view": {},
 		    "transparent": {},
 		    "antialias": {},
@@ -33837,54 +35319,32 @@
 		   },
 		   "Graphics": {
 		    "!type": "fn()",
-		    "renderable": {},
-		    "fillAlpha": {
-		     "!type": "?"
-		    },
-		    "lineWidth": {
-		     "!type": "?"
-		    },
-		    "lineColor": {
-		     "!type": "?"
-		    },
-		    "graphicsData": {
-		     "!type": "?"
-		    },
-		    "tint": {
-		     "!type": "?"
-		    },
-		    "blendMode": {
-		     "!type": "?"
-		    },
-		    "currentPath": {
-		     "!type": "?"
-		    },
-		    "_webGL": {
-		     "!type": "?"
-		    },
-		    "isMask": {
-		     "!type": "?"
-		    },
-		    "boundsPadding": {
-		     "!type": "?"
-		    },
-		    "_localBounds": {},
-		    "dirty": {
-		     "!type": "?"
-		    },
-		    "webGLDirty": {
-		     "!type": "?"
-		    },
-		    "cachedSpriteDirty": {
-		     "!type": "?"
+		    "prototype": {
+		     "renderable": {},
+		     "fillAlpha": {},
+		     "lineWidth": {},
+		     "lineColor": {},
+		     "graphicsData": {},
+		     "tint": {},
+		     "blendMode": {},
+		     "currentPath": {},
+		     "_webGL": {},
+		     "isMask": {},
+		     "boundsPadding": {},
+		     "_localBounds": {},
+		     "dirty": {},
+		     "webGLDirty": {},
+		     "cachedSpriteDirty": {}
 		    }
 		   },
 		   "Graphics#constructor": {},
 		   "Graphics#lineStyle": {
 		    "!type": "fn()",
-		    "lineWidth": {},
-		    "lineColor": {},
-		    "lineAlpha": {}
+		    "prototype": {
+		     "lineWidth": {},
+		     "lineColor": {},
+		     "lineAlpha": {}
+		    }
 		   },
 		   "Graphics#lineStyle#currentPath": {
 		    "lineWidth": {},
@@ -33896,7 +35356,9 @@
 		   },
 		   "Graphics#lineTo": {
 		    "!type": "fn()",
-		    "dirty": {}
+		    "prototype": {
+		     "dirty": {}
+		    }
 		   },
 		   "Graphics#quadraticCurveTo": {
 		    "!type": "fn()",
@@ -33908,7 +35370,9 @@
 		    "fromY": {},
 		    "j": {},
 		    "i": {},
-		    "dirty": {}
+		    "prototype": {
+		     "dirty": {}
+		    }
 		   },
 		   "Graphics#quadraticCurveTo#currentPath": {
 		    "shape": {
@@ -33928,7 +35392,9 @@
 		    "fromY": {},
 		    "j": {},
 		    "i": {},
-		    "dirty": {}
+		    "prototype": {
+		     "dirty": {}
+		    }
 		   },
 		   "Graphics#bezierCurveTo#currentPath": {
 		    "shape": {
@@ -33960,7 +35426,9 @@
 		    "qy": {},
 		    "startAngle": {},
 		    "endAngle": {},
-		    "dirty": {}
+		    "prototype": {
+		     "dirty": {}
+		    }
 		   },
 		   "Graphics#arc": {
 		    "!type": "fn()",
@@ -33983,13 +35451,17 @@
 		    "angle": {},
 		    "c": {},
 		    "s": {},
-		    "dirty": {}
+		    "prototype": {
+		     "dirty": {}
+		    }
 		   },
 		   "Graphics#beginFill": {
 		    "!type": "fn()",
-		    "filling": {},
-		    "fillColor": {},
-		    "fillAlpha": {}
+		    "prototype": {
+		     "filling": {},
+		     "fillColor": {},
+		     "fillAlpha": {}
+		    }
 		   },
 		   "Graphics#beginFill#currentPath": {
 		    "fill": {},
@@ -33998,9 +35470,11 @@
 		   },
 		   "Graphics#endFill": {
 		    "!type": "fn()",
-		    "filling": {},
-		    "fillColor": {},
-		    "fillAlpha": {}
+		    "prototype": {
+		     "filling": {},
+		     "fillColor": {},
+		     "fillAlpha": {}
+		    }
 		   },
 		   "Graphics#drawRect": {
 		    "!type": "fn()"
@@ -34025,11 +35499,13 @@
 		   },
 		   "Graphics#clear": {
 		    "!type": "fn()",
-		    "lineWidth": {},
-		    "filling": {},
-		    "dirty": {},
-		    "clearDirty": {},
-		    "graphicsData": {}
+		    "prototype": {
+		     "lineWidth": {},
+		     "filling": {},
+		     "dirty": {},
+		     "clearDirty": {},
+		     "graphicsData": {}
+		    }
 		   },
 		   "Graphics#generateTexture": {
 		    "!type": "fn()",
@@ -34043,10 +35519,12 @@
 		   },
 		   "Graphics#_renderWebGL": {
 		    "!type": "fn()",
-		    "cachedSpriteDirty": {},
-		    "dirty": {},
+		    "prototype": {
+		     "cachedSpriteDirty": {},
+		     "dirty": {},
+		     "webGLDirty": {}
+		    },
 		    "blendModeWebGL": {},
-		    "webGLDirty": {},
 		    "i": {}
 		   },
 		   "Graphics#_renderWebGL#_cachedSprite": {
@@ -34054,9 +35532,11 @@
 		   },
 		   "Graphics#_renderCanvas": {
 		    "!type": "fn()",
-		    "dirty": {},
-		    "_prevTint": {},
-		    "cachedSpriteDirty": {},
+		    "prototype": {
+		     "dirty": {},
+		     "_prevTint": {},
+		     "cachedSpriteDirty": {}
+		    },
 		    "context": {},
 		    "transform": {},
 		    "resolution": {},
@@ -34070,9 +35550,12 @@
 		   },
 		   "Graphics#getBounds": {
 		    "!type": "fn()",
-		    "webGLDirty": {},
-		    "cachedSpriteDirty": {},
-		    "dirty": {},
+		    "prototype": {
+		     "webGLDirty": {},
+		     "cachedSpriteDirty": {},
+		     "dirty": {},
+		     "_currentBounds": {}
+		    },
 		    "bounds": {},
 		    "w0": {},
 		    "w1": {},
@@ -34096,8 +35579,7 @@
 		    "maxX": {},
 		    "maxY": {},
 		    "minX": {},
-		    "minY": {},
-		    "_currentBounds": {}
+		    "minY": {}
 		   },
 		   "Graphics#getBounds#_bounds": {
 		    "x": {},
@@ -34141,8 +35623,10 @@
 		    "bounds": {},
 		    "canvasBuffer": {},
 		    "texture": {},
-		    "_cachedSprite": {},
-		    "worldAlpha": {}
+		    "prototype": {
+		     "_cachedSprite": {},
+		     "worldAlpha": {}
+		    }
 		   },
 		   "Graphics#_generateCachedSprite#_cachedSprite": {
 		    "buffer": {},
@@ -34173,14 +35657,18 @@
 		   },
 		   "Graphics#destroyCachedSprite": {
 		    "!type": "fn()",
-		    "_cachedSprite": {}
+		    "prototype": {
+		     "_cachedSprite": {}
+		    }
 		   },
 		   "Graphics#drawShape": {
 		    "!type": "fn()",
-		    "currentPath": {},
+		    "prototype": {
+		     "currentPath": {},
+		     "dirty": {}
+		    },
 		    "shape": {},
-		    "data": {},
-		    "dirty": {}
+		    "data": {}
 		   },
 		   "Graphics#drawShape~data": {
 		    "shape.closed": {}
@@ -34267,47 +35755,23 @@
 		    "!type": "fn()"
 		   },
 		   "CanvasRenderer": {
-		    "!type": "fn(width: number, height: number, options: ?, option_view: +HTMLCanvasElement, option_transparent: bool, option_autoResize: bool, option_resolution: number, option_clearBeforeRender: bool)",
+		    "!type": "fn(width: number, height: number, options: ?, options_view: +HTMLCanvasElement, options_transparent: bool, options_autoResize: bool, options_resolution: number, options_clearBeforeRender: bool)",
 		    "i": {},
 		    "options": {},
-		    "type": {
-		     "!type": "?"
-		    },
-		    "resolution": {
-		     "!type": "?"
-		    },
-		    "clearBeforeRender": {
-		     "!type": "?"
-		    },
-		    "transparent": {
-		     "!type": "?"
-		    },
-		    "autoResize": {
-		     "!type": "?"
-		    },
-		    "width": {
-		     "!type": "?"
-		    },
-		    "height": {
-		     "!type": "?"
-		    },
-		    "view": {
-		     "!type": "?"
-		    },
-		    "context": {
-		     "!type": "?"
-		    },
-		    "refresh": {
-		     "!type": "?"
-		    },
-		    "count": {
-		     "!type": "?"
-		    },
-		    "maskManager": {
-		     "!type": "?"
-		    },
-		    "renderSession": {
-		     "!type": "?"
+		    "prototype": {
+		     "type": {},
+		     "resolution": {},
+		     "clearBeforeRender": {},
+		     "transparent": {},
+		     "autoResize": {},
+		     "width": {},
+		     "height": {},
+		     "view": {},
+		     "context": {},
+		     "refresh": {},
+		     "count": {},
+		     "maskManager": {},
+		     "renderSession": {}
 		    }
 		   },
 		   "defaultRenderer": {},
@@ -34337,15 +35801,19 @@
 		   "CanvasRenderer#destroy": {
 		    "!type": "fn()",
 		    "removeView": {},
-		    "view": {},
-		    "context": {},
-		    "maskManager": {},
-		    "renderSession": {}
+		    "prototype": {
+		     "view": {},
+		     "context": {},
+		     "maskManager": {},
+		     "renderSession": {}
+		    }
 		   },
 		   "CanvasRenderer#resize": {
 		    "!type": "fn()",
-		    "width": {},
-		    "height": {}
+		    "prototype": {
+		     "width": {},
+		     "height": {}
+		    }
 		   },
 		   "CanvasRenderer#resize#view": {
 		    "width": {},
@@ -34369,17 +35837,11 @@
 		   "blendModesCanvas[undefined]": {},
 		   "CanvasBuffer": {
 		    "!type": "fn(width: number, height: number)",
-		    "width": {
-		     "!type": "?"
-		    },
-		    "height": {
-		     "!type": "?"
-		    },
-		    "canvas": {
-		     "!type": "?"
-		    },
-		    "context": {
-		     "!type": "?"
+		    "prototype": {
+		     "width": {},
+		     "height": {},
+		     "canvas": {},
+		     "context": {}
 		    }
 		   },
 		   "CanvasBuffer#canvas": {
@@ -34392,8 +35854,10 @@
 		   },
 		   "CanvasBuffer#resize": {
 		    "!type": "fn()",
-		    "width": {},
-		    "height": {}
+		    "prototype": {
+		     "width": {},
+		     "height": {}
+		    }
 		   },
 		   "CanvasBuffer#resize#canvas": {
 		    "width": {},
@@ -34455,12 +35919,8 @@
 		    "checkInverseAlpha~canvas": {
 		     "context.fillStyle": {}
 		    },
-		    "canHandleAlpha": {
-		     "!type": "?"
-		    },
-		    "canUseMultiply": {
-		     "!type": "?"
-		    }
+		    "canHandleAlpha": {},
+		    "canUseMultiply": {}
 		   },
 		   "CanvasTinter.getTintedTexture": {
 		    "!type": "fn()"
@@ -34477,20 +35937,12 @@
 		   "CanvasTinter.tintMethod": {},
 		   "ComplexPrimitiveShader": {
 		    "!type": "fn(gl: +WebGLContext)",
-		    "_UID": {
-		     "!type": "?"
-		    },
-		    "gl": {
-		     "!type": "?"
-		    },
-		    "program": {
-		     "!type": "?"
-		    },
-		    "fragmentSrc": {
-		     "!type": "?"
-		    },
-		    "vertexSrc": {
-		     "!type": "?"
+		    "prototype": {
+		     "_UID": {},
+		     "gl": {},
+		     "program": {},
+		     "fragmentSrc": {},
+		     "vertexSrc": {}
 		    }
 		   },
 		   "ComplexPrimitiveShader#constructor": {},
@@ -34498,41 +35950,36 @@
 		    "!type": "fn()",
 		    "gl": {},
 		    "program": {},
-		    "projectionVector": {},
-		    "offsetVector": {},
-		    "tintColor": {},
-		    "color": {},
-		    "flipY": {},
-		    "aVertexPosition": {},
-		    "attributes": {},
-		    "translationMatrix": {},
-		    "alpha": {}
+		    "prototype": {
+		     "projectionVector": {},
+		     "offsetVector": {},
+		     "tintColor": {},
+		     "color": {},
+		     "flipY": {},
+		     "aVertexPosition": {},
+		     "attributes": {},
+		     "translationMatrix": {},
+		     "alpha": {},
+		     "program": {}
+		    }
 		   },
 		   "ComplexPrimitiveShader#destroy": {
 		    "!type": "fn()",
-		    "uniforms": {},
-		    "gl": {},
-		    "attribute": {}
+		    "prototype": {
+		     "uniforms": {},
+		     "gl": {},
+		     "attribute": {}
+		    }
 		   },
 		   "PixiFastShader": {
 		    "!type": "fn(gl: +WebGLContext)",
-		    "_UID": {
-		     "!type": "?"
-		    },
-		    "gl": {
-		     "!type": "?"
-		    },
-		    "program": {
-		     "!type": "?"
-		    },
-		    "fragmentSrc": {
-		     "!type": "?"
-		    },
-		    "vertexSrc": {
-		     "!type": "?"
-		    },
-		    "textureCount": {
-		     "!type": "?"
+		    "prototype": {
+		     "_UID": {},
+		     "gl": {},
+		     "program": {},
+		     "fragmentSrc": {},
+		     "vertexSrc": {},
+		     "textureCount": {}
 		    }
 		   },
 		   "PixiFastShader#constructor": {},
@@ -34540,50 +35987,41 @@
 		    "!type": "fn()",
 		    "gl": {},
 		    "program": {},
-		    "uSampler": {},
-		    "projectionVector": {},
-		    "offsetVector": {},
-		    "dimensions": {},
-		    "uMatrix": {},
-		    "aVertexPosition": {},
-		    "aPositionCoord": {},
-		    "aScale": {},
-		    "aRotation": {},
-		    "aTextureCoord": {},
-		    "colorAttribute": {},
-		    "attributes": {}
+		    "prototype": {
+		     "uSampler": {},
+		     "projectionVector": {},
+		     "offsetVector": {},
+		     "dimensions": {},
+		     "uMatrix": {},
+		     "aVertexPosition": {},
+		     "aPositionCoord": {},
+		     "aScale": {},
+		     "aRotation": {},
+		     "aTextureCoord": {},
+		     "colorAttribute": {},
+		     "attributes": {},
+		     "program": {}
+		    }
 		   },
 		   "PixiFastShader#destroy": {
 		    "!type": "fn()",
-		    "uniforms": {},
-		    "gl": {},
-		    "attributes": {}
+		    "prototype": {
+		     "uniforms": {},
+		     "gl": {},
+		     "attributes": {}
+		    }
 		   },
 		   "PixiShader": {
 		    "!type": "fn(gl: +WebGLContext)",
-		    "_UID": {
-		     "!type": "?"
-		    },
-		    "gl": {
-		     "!type": "?"
-		    },
-		    "program": {
-		     "!type": "?"
-		    },
-		    "fragmentSrc": {
-		     "!type": "?"
-		    },
-		    "textureCount": {
-		     "!type": "?"
-		    },
-		    "firstRun": {
-		     "!type": "?"
-		    },
-		    "dirty": {
-		     "!type": "?"
-		    },
-		    "attributes": {
-		     "!type": "?"
+		    "prototype": {
+		     "_UID": {},
+		     "gl": {},
+		     "program": {},
+		     "fragmentSrc": {},
+		     "textureCount": {},
+		     "firstRun": {},
+		     "dirty": {},
+		     "attributes": {}
 		    }
 		   },
 		   "PixiShader#constructor": {},
@@ -34591,14 +36029,17 @@
 		    "!type": "fn()",
 		    "gl": {},
 		    "program": {},
-		    "uSampler": {},
-		    "projectionVector": {},
-		    "offsetVector": {},
-		    "dimensions": {},
-		    "aVertexPosition": {},
-		    "aTextureCoord": {},
-		    "colorAttribute": {},
-		    "attributes": {},
+		    "prototype": {
+		     "uSampler": {},
+		     "projectionVector": {},
+		     "offsetVector": {},
+		     "dimensions": {},
+		     "aVertexPosition": {},
+		     "aTextureCoord": {},
+		     "colorAttribute": {},
+		     "attributes": {},
+		     "program": {}
+		    },
 		    "key": {}
 		   },
 		   "PixiShader#init#uniforms[undefined]": {
@@ -34606,7 +36047,9 @@
 		   },
 		   "PixiShader#initUniforms": {
 		    "!type": "fn()",
-		    "textureCount": {},
+		    "prototype": {
+		     "textureCount": {}
+		    },
 		    "gl": {},
 		    "uniform": {},
 		    "key": {},
@@ -34633,36 +36076,30 @@
 		   },
 		   "PixiShader#syncUniforms": {
 		    "!type": "fn()",
-		    "textureCount": {},
+		    "prototype": {
+		     "textureCount": {}
+		    },
 		    "uniform": {},
 		    "gl": {},
 		    "key": {}
 		   },
 		   "PixiShader#destroy": {
 		    "!type": "fn()",
-		    "uniforms": {},
-		    "gl": {},
-		    "attributes": {}
+		    "prototype": {
+		     "uniforms": {},
+		     "gl": {},
+		     "attributes": {}
+		    }
 		   },
-		   "PixiShader.defaultVertexSrc": {
-		    "!type": "?"
-		   },
+		   "PixiShader.defaultVertexSrc": {},
 		   "PrimitiveShader": {
 		    "!type": "fn(gl: +WebGLContext)",
-		    "_UID": {
-		     "!type": "?"
-		    },
-		    "gl": {
-		     "!type": "?"
-		    },
-		    "program": {
-		     "!type": "?"
-		    },
-		    "fragmentSrc": {
-		     "!type": "?"
-		    },
-		    "vertexSrc": {
-		     "!type": "?"
+		    "prototype": {
+		     "_UID": {},
+		     "gl": {},
+		     "program": {},
+		     "fragmentSrc": {},
+		     "vertexSrc": {}
 		    }
 		   },
 		   "PrimitiveShader#constructor": {},
@@ -34670,38 +36107,35 @@
 		    "!type": "fn()",
 		    "gl": {},
 		    "program": {},
-		    "projectionVector": {},
-		    "offsetVector": {},
-		    "tintColor": {},
-		    "flipY": {},
-		    "aVertexPosition": {},
-		    "colorAttribute": {},
-		    "attributes": {},
-		    "translationMatrix": {},
-		    "alpha": {}
+		    "prototype": {
+		     "projectionVector": {},
+		     "offsetVector": {},
+		     "tintColor": {},
+		     "flipY": {},
+		     "aVertexPosition": {},
+		     "colorAttribute": {},
+		     "attributes": {},
+		     "translationMatrix": {},
+		     "alpha": {},
+		     "program": {}
+		    }
 		   },
 		   "PrimitiveShader#destroy": {
 		    "!type": "fn()",
-		    "uniforms": {},
-		    "gl": {},
-		    "attributes": {}
+		    "prototype": {
+		     "uniforms": {},
+		     "gl": {},
+		     "attributes": {}
+		    }
 		   },
 		   "StripShader": {
 		    "!type": "fn(gl: +WebGLContext)",
-		    "_UID": {
-		     "!type": "?"
-		    },
-		    "gl": {
-		     "!type": "?"
-		    },
-		    "program": {
-		     "!type": "?"
-		    },
-		    "fragmentSrc": {
-		     "!type": "?"
-		    },
-		    "vertexSrc": {
-		     "!type": "?"
+		    "prototype": {
+		     "_UID": {},
+		     "gl": {},
+		     "program": {},
+		     "fragmentSrc": {},
+		     "vertexSrc": {}
 		    }
 		   },
 		   "StripShader#constructor": {},
@@ -34709,37 +36143,36 @@
 		    "!type": "fn()",
 		    "gl": {},
 		    "program": {},
-		    "uSampler": {},
-		    "projectionVector": {},
-		    "offsetVector": {},
-		    "colorAttribute": {},
-		    "aVertexPosition": {},
-		    "aTextureCoord": {},
-		    "attributes": {},
-		    "translationMatrix": {},
-		    "alpha": {}
+		    "prototype": {
+		     "uSampler": {},
+		     "projectionVector": {},
+		     "offsetVector": {},
+		     "colorAttribute": {},
+		     "aVertexPosition": {},
+		     "aTextureCoord": {},
+		     "attributes": {},
+		     "translationMatrix": {},
+		     "alpha": {},
+		     "program": {}
+		    }
 		   },
 		   "StripShader#destroy": {
 		    "!type": "fn()",
-		    "uniforms": {},
-		    "gl": {},
-		    "attribute": {}
+		    "prototype": {
+		     "uniforms": {},
+		     "gl": {},
+		     "attribute": {}
+		    }
 		   },
 		   "FilterTexture": {
 		    "!type": "fn(gl: +WebGLContext, width: number, height: number, scaleMode: number)",
-		    "gl": {
-		     "!type": "?"
+		    "prototype": {
+		     "gl": {},
+		     "frameBuffer": {},
+		     "texture": {},
+		     "renderBuffer": {}
 		    },
-		    "frameBuffer": {
-		     "!type": "?"
-		    },
-		    "texture": {
-		     "!type": "?"
-		    },
-		    "scaleMode": {
-		     "!type": "?"
-		    },
-		    "renderBuffer": {}
+		    "scaleMode": {}
 		   },
 		   "FilterTexture#constructor": {},
 		   "FilterTexture#clear": {
@@ -34748,101 +36181,87 @@
 		   },
 		   "FilterTexture#resize": {
 		    "!type": "fn()",
-		    "width": {},
-		    "height": {},
+		    "prototype": {
+		     "width": {},
+		     "height": {}
+		    },
 		    "gl": {}
 		   },
 		   "FilterTexture#destroy": {
 		    "!type": "fn()",
 		    "gl": {},
-		    "frameBuffer": {},
-		    "texture": {}
+		    "prototype": {
+		     "frameBuffer": {},
+		     "texture": {}
+		    }
 		   },
 		   "WebGLBlendModeManager": {
 		    "!type": "fn(gl: +WebGLContext)",
-		    "currentBlendMode": {
-		     "!type": "?"
+		    "prototype": {
+		     "currentBlendMode": {}
 		    }
 		   },
 		   "WebGLBlendModeManager#constructor": {},
 		   "WebGLBlendModeManager#setContext": {
 		    "!type": "fn()",
-		    "gl": {}
+		    "prototype": {
+		     "gl": {}
+		    }
 		   },
 		   "WebGLBlendModeManager#setBlendMode": {
 		    "!type": "fn()",
-		    "currentBlendMode": {},
+		    "prototype": {
+		     "currentBlendMode": {}
+		    },
 		    "blendModeWebGL": {}
 		   },
 		   "WebGLBlendModeManager#destroy": {
 		    "!type": "fn()",
-		    "gl": {}
+		    "prototype": {
+		     "gl": {}
+		    }
 		   },
 		   "WebGLFastSpriteBatch": {
 		    "!type": "fn()",
-		    "vertSize": {
-		     "!type": "?"
-		    },
-		    "maxSize": {
-		     "!type": "?"
-		    },
-		    "size": {
-		     "!type": "?"
+		    "prototype": {
+		     "vertSize": {},
+		     "maxSize": {},
+		     "size": {},
+		     "vertices": {},
+		     "indices": {},
+		     "vertexBuffer": {},
+		     "indexBuffer": {},
+		     "lastIndexCount": {},
+		     "indices[undefined]": {},
+		     "drawing": {},
+		     "currentBatchSize": {},
+		     "currentBaseTexture": {},
+		     "currentBlendMode": {},
+		     "renderSession": {},
+		     "shader": {},
+		     "matrix": {}
 		    },
 		    "numVerts": {},
 		    "numIndices": {},
-		    "vertices": {
-		     "!type": "?"
-		    },
-		    "indices": {
-		     "!type": "?"
-		    },
-		    "vertexBuffer": {
-		     "!type": "?"
-		    },
-		    "indexBuffer": {
-		     "!type": "?"
-		    },
-		    "lastIndexCount": {
-		     "!type": "?"
-		    },
 		    "i": {},
-		    "j": {},
-		    "indices[undefined]": {},
-		    "drawing": {
-		     "!type": "?"
-		    },
-		    "currentBatchSize": {
-		     "!type": "?"
-		    },
-		    "currentBaseTexture": {
-		     "!type": "?"
-		    },
-		    "currentBlendMode": {
-		     "!type": "?"
-		    },
-		    "renderSession": {
-		     "!type": "?"
-		    },
-		    "shader": {
-		     "!type": "?"
-		    },
-		    "matrix": {
-		     "!type": "?"
-		    }
+		    "j": {}
 		   },
 		   "WebGLFastSpriteBatch#constructor": {},
 		   "WebGLFastSpriteBatch#setContext": {
 		    "!type": "fn()",
-		    "gl": {},
-		    "vertexBuffer": {},
-		    "indexBuffer": {}
+		    "prototype": {
+		     "gl": {},
+		     "vertexBuffer": {},
+		     "indexBuffer": {}
+		    }
 		   },
 		   "WebGLFastSpriteBatch#begin": {
 		    "!type": "fn()",
-		    "renderSession": {},
-		    "shader": {},
-		    "matrix": {}
+		    "prototype": {
+		     "renderSession": {},
+		     "shader": {},
+		     "matrix": {}
+		    }
 		   },
 		   "WebGLFastSpriteBatch#end": {
 		    "!type": "fn()"
@@ -34851,13 +36270,17 @@
 		    "!type": "fn()",
 		    "children": {},
 		    "sprite": {},
-		    "currentBaseTexture": {},
+		    "prototype": {
+		     "currentBaseTexture": {}
+		    },
 		    "i": {},
 		    "j": {}
 		   },
 		   "WebGLFastSpriteBatch#renderSprite": {
 		    "!type": "fn()",
-		    "currentBaseTexture": {},
+		    "prototype": {
+		     "currentBaseTexture": {}
+		    },
 		    "uvs": {},
 		    "vertices": {},
 		    "width": {},
@@ -34876,7 +36299,9 @@
 		    "!type": "fn()",
 		    "gl": {},
 		    "view": {},
-		    "currentBatchSize": {}
+		    "prototype": {
+		     "currentBatchSize": {}
+		    }
 		   },
 		   "WebGLFastSpriteBatch#stop": {
 		    "!type": "fn()"
@@ -34889,30 +36314,30 @@
 		   },
 		   "WebGLFilterManager": {
 		    "!type": "fn()",
-		    "filterStack": {
-		     "!type": "?"
-		    },
-		    "offsetX": {
-		     "!type": "?"
-		    },
-		    "offsetY": {
-		     "!type": "?"
+		    "prototype": {
+		     "filterStack": {},
+		     "offsetX": {},
+		     "offsetY": {}
 		    }
 		   },
 		   "WebGLFilterManager#constructor": {},
 		   "WebGLFilterManager#setContext": {
 		    "!type": "fn()",
-		    "gl": {},
-		    "texturePool": {}
+		    "prototype": {
+		     "gl": {},
+		     "texturePool": {}
+		    }
 		   },
 		   "WebGLFilterManager#begin": {
 		    "!type": "fn()",
-		    "renderSession": {},
-		    "defaultShader": {},
-		    "projection": {},
-		    "width": {},
-		    "height": {},
-		    "buffer": {}
+		    "prototype": {
+		     "renderSession": {},
+		     "defaultShader": {},
+		     "width": {},
+		     "height": {},
+		     "buffer": {}
+		    },
+		    "projection": {}
 		   },
 		   "WebGLFilterManager#pushFilter": {
 		    "!type": "fn()",
@@ -34920,8 +36345,10 @@
 		    "projection": {},
 		    "offset": {},
 		    "filter": {},
-		    "offsetX": {},
-		    "offsetY": {},
+		    "prototype": {
+		     "offsetX": {},
+		     "offsetY": {}
+		    },
 		    "texture": {},
 		    "filterArea": {},
 		    "padding": {}
@@ -34948,28 +36375,32 @@
 		    "texture": {},
 		    "projection": {},
 		    "offset": {},
-		    "vertexArray[0]": {},
-		    "vertexArray[1]": {},
-		    "vertexArray[2]": {},
-		    "vertexArray[3]": {},
-		    "vertexArray[4]": {},
-		    "vertexArray[5]": {},
-		    "vertexArray[6]": {},
-		    "vertexArray[7]": {},
-		    "uvArray[2]": {},
-		    "uvArray[5]": {},
-		    "uvArray[6]": {},
-		    "uvArray[7]": {},
+		    "prototype": {
+		     "vertexArray[0]": {},
+		     "vertexArray[1]": {},
+		     "vertexArray[2]": {},
+		     "vertexArray[3]": {},
+		     "vertexArray[4]": {},
+		     "vertexArray[5]": {},
+		     "vertexArray[6]": {},
+		     "vertexArray[7]": {},
+		     "uvArray[2]": {},
+		     "uvArray[5]": {},
+		     "uvArray[6]": {},
+		     "uvArray[7]": {},
+		     "offsetX": {},
+		     "offsetY": {}
+		    },
 		    "inputTexture": {},
 		    "outputTexture": {},
 		    "i": {},
 		    "filterPass": {},
 		    "temp": {},
 		    "filter": {},
-		    "offsetX": {},
-		    "offsetY": {},
 		    "sizeX": {},
 		    "sizeY": {},
+		    "offsetX": {},
+		    "offsetY": {},
 		    "buffer": {},
 		    "currentFilter": {},
 		    "x": {},
@@ -34998,22 +36429,26 @@
 		   "WebGLFilterManager#initShaderBuffers": {
 		    "!type": "fn()",
 		    "gl": {},
-		    "vertexBuffer": {},
-		    "uvBuffer": {},
-		    "colorBuffer": {},
-		    "indexBuffer": {},
-		    "vertexArray": {},
-		    "uvArray": {},
-		    "colorArray": {}
+		    "prototype": {
+		     "vertexBuffer": {},
+		     "uvBuffer": {},
+		     "colorBuffer": {},
+		     "indexBuffer": {},
+		     "vertexArray": {},
+		     "uvArray": {},
+		     "colorArray": {}
+		    }
 		   },
 		   "WebGLFilterManager#destroy": {
 		    "!type": "fn()",
 		    "gl": {},
-		    "filterStack": {},
-		    "offsetX": {},
-		    "offsetY": {},
-		    "i": {},
-		    "texturePool": {}
+		    "prototype": {
+		     "filterStack": {},
+		     "offsetX": {},
+		     "offsetY": {},
+		     "texturePool": {}
+		    },
+		    "i": {}
 		   },
 		   "WebGLGraphics": {
 		    "!type": "fn()",
@@ -35226,27 +36661,33 @@
 		   "WebGLGraphics.graphicsDataPool": {},
 		   "WebGLGraphicsData": {
 		    "!type": "fn()",
-		    "gl": {},
-		    "color": {},
-		    "points": {},
-		    "indices": {},
-		    "buffer": {},
-		    "indexBuffer": {},
-		    "mode": {},
-		    "alpha": {},
-		    "dirty": {}
+		    "prototype": {
+		     "gl": {},
+		     "color": {},
+		     "points": {},
+		     "indices": {},
+		     "buffer": {},
+		     "indexBuffer": {},
+		     "mode": {},
+		     "alpha": {},
+		     "dirty": {}
+		    }
 		   },
 		   "WebGLGraphicsData#reset": {
 		    "!type": "fn()",
-		    "points": {},
-		    "indices": {}
+		    "prototype": {
+		     "points": {},
+		     "indices": {}
+		    }
 		   },
 		   "WebGLGraphicsData#upload": {
 		    "!type": "fn()",
 		    "gl": {},
-		    "glPoints": {},
-		    "glIndicies": {},
-		    "dirty": {}
+		    "prototype": {
+		     "glPoints": {},
+		     "glIndicies": {},
+		     "dirty": {}
+		    }
 		   },
 		   "WebGLMaskManager": {
 		    "!type": "fn()"
@@ -35254,7 +36695,9 @@
 		   "WebGLMaskManager#constructor": {},
 		   "WebGLMaskManager#setContext": {
 		    "!type": "fn()",
-		    "gl": {}
+		    "prototype": {
+		     "gl": {}
+		    }
 		   },
 		   "WebGLMaskManager#pushMask": {
 		    "!type": "fn()",
@@ -35266,53 +36709,57 @@
 		   },
 		   "WebGLMaskManager#destroy": {
 		    "!type": "fn()",
-		    "gl": {}
+		    "prototype": {
+		     "gl": {}
+		    }
 		   },
 		   "WebGLShaderManager": {
 		    "!type": "fn()",
-		    "maxAttibs": {
-		     "!type": "?"
+		    "prototype": {
+		     "maxAttibs": {},
+		     "attribState": {},
+		     "tempAttribState": {},
+		     "attribState[undefined]": {},
+		     "stack": {}
 		    },
-		    "attribState": {
-		     "!type": "?"
-		    },
-		    "tempAttribState": {
-		     "!type": "?"
-		    },
-		    "i": {},
-		    "attribState[undefined]": {},
-		    "stack": {
-		     "!type": "?"
-		    }
+		    "i": {}
 		   },
 		   "WebGLShaderManager#constructor": {},
 		   "WebGLShaderManager#setContext": {
 		    "!type": "fn()",
-		    "gl": {},
-		    "primitiveShader": {},
-		    "complexPrimitiveShader": {},
-		    "defaultShader": {},
-		    "fastShader": {},
-		    "stripShader": {}
+		    "prototype": {
+		     "gl": {},
+		     "primitiveShader": {},
+		     "complexPrimitiveShader": {},
+		     "defaultShader": {},
+		     "fastShader": {},
+		     "stripShader": {}
+		    }
 		   },
 		   "WebGLShaderManager#setAttribs": {
 		    "!type": "fn()",
 		    "i": {},
-		    "tempAttribState[undefined]": {},
+		    "prototype": {
+		     "tempAttribState[undefined]": {},
+		     "attribState[undefined]": {}
+		    },
 		    "attribId": {},
-		    "gl": {},
-		    "attribState[undefined]": {}
+		    "gl": {}
 		   },
 		   "WebGLShaderManager#setShader": {
 		    "!type": "fn()",
-		    "_currentId": {},
-		    "currentShader": {}
+		    "prototype": {
+		     "_currentId": {},
+		     "currentShader": {}
+		    }
 		   },
 		   "WebGLShaderManager#destroy": {
 		    "!type": "fn()",
-		    "attribState": {},
-		    "tempAttribState": {},
-		    "gl": {}
+		    "prototype": {
+		     "attribState": {},
+		     "tempAttribState": {},
+		     "gl": {}
+		    }
 		   },
 		   "initDefaultShaders": {
 		    "!type": "fn()"
@@ -35336,66 +36783,38 @@
 		   },
 		   "WebGLSpriteBatch": {
 		    "!type": "fn()",
-		    "vertSize": {
-		     "!type": "?"
-		    },
-		    "size": {
-		     "!type": "?"
+		    "prototype": {
+		     "vertSize": {},
+		     "size": {},
+		     "vertices": {},
+		     "positions": {},
+		     "colors": {},
+		     "indices": {},
+		     "lastIndexCount": {},
+		     "indices[undefined]": {},
+		     "drawing": {},
+		     "currentBatchSize": {},
+		     "currentBaseTexture": {},
+		     "dirty": {},
+		     "textures": {},
+		     "blendModes": {},
+		     "shaders": {},
+		     "sprites": {},
+		     "defaultShader": {}
 		    },
 		    "numVerts": {},
 		    "numIndices": {},
-		    "vertices": {
-		     "!type": "?"
-		    },
-		    "positions": {
-		     "!type": "?"
-		    },
-		    "colors": {
-		     "!type": "?"
-		    },
-		    "indices": {
-		     "!type": "?"
-		    },
-		    "lastIndexCount": {
-		     "!type": "?"
-		    },
 		    "i": {},
-		    "j": {},
-		    "indices[undefined]": {},
-		    "drawing": {
-		     "!type": "?"
-		    },
-		    "currentBatchSize": {
-		     "!type": "?"
-		    },
-		    "currentBaseTexture": {
-		     "!type": "?"
-		    },
-		    "dirty": {
-		     "!type": "?"
-		    },
-		    "textures": {
-		     "!type": "?"
-		    },
-		    "blendModes": {
-		     "!type": "?"
-		    },
-		    "shaders": {
-		     "!type": "?"
-		    },
-		    "sprites": {
-		     "!type": "?"
-		    },
-		    "defaultShader": {
-		     "!type": "?"
-		    }
+		    "j": {}
 		   },
 		   "WebGLSpriteBatch#setContext": {
 		    "!type": "fn()",
-		    "gl": {},
-		    "vertexBuffer": {},
-		    "indexBuffer": {},
-		    "currentBlendMode": {},
+		    "prototype": {
+		     "gl": {},
+		     "vertexBuffer": {},
+		     "indexBuffer": {},
+		     "currentBlendMode": {}
+		    },
 		    "shader": {}
 		   },
 		   "WebGLSpriteBatch#setContext~shader": {
@@ -35407,8 +36826,10 @@
 		   },
 		   "WebGLSpriteBatch#begin": {
 		    "!type": "fn()",
-		    "renderSession": {},
-		    "shader": {}
+		    "prototype": {
+		     "renderSession": {},
+		     "shader": {}
+		    }
 		   },
 		   "WebGLSpriteBatch#end": {
 		    "!type": "fn()"
@@ -35417,7 +36838,10 @@
 		    "!type": "fn()",
 		    "texture": {},
 		    "wt": {},
-		    "currentBaseTexture": {},
+		    "prototype": {
+		     "currentBaseTexture": {},
+		     "sprites[undefined]": {}
+		    },
 		    "uvs": {},
 		    "aX": {},
 		    "aY": {},
@@ -35436,8 +36860,7 @@
 		    "ty": {},
 		    "colors": {},
 		    "positions": {},
-		    "tint": {},
-		    "sprites[undefined]": {}
+		    "tint": {}
 		   },
 		   "WebGLSpriteBatch#render~positions": {
 		    "undefined]": {}
@@ -35450,7 +36873,10 @@
 		   "WebGLSpriteBatch#renderTilingSprite": {
 		    "!type": "fn()",
 		    "texture": {},
-		    "currentBaseTexture": {},
+		    "prototype": {
+		     "currentBaseTexture": {},
+		     "sprites[undefined]": {}
+		    },
 		    "uvs": {},
 		    "w": {},
 		    "h": {},
@@ -35478,8 +36904,7 @@
 		    "c": {},
 		    "d": {},
 		    "tx": {},
-		    "ty": {},
-		    "sprites[undefined]": {}
+		    "ty": {}
 		   },
 		   "WebGLSpriteBatch#renderTilingSprite~uvs": {
 		    "x0": {},
@@ -35501,7 +36926,10 @@
 		    "!type": "fn()",
 		    "gl": {},
 		    "shader": {},
-		    "dirty": {},
+		    "prototype": {
+		     "dirty": {},
+		     "currentBatchSize": {}
+		    },
 		    "stride": {},
 		    "view": {},
 		    "nextTexture": {},
@@ -35518,8 +36946,7 @@
 		    "i": {},
 		    "j": {},
 		    "projection": {},
-		    "offsetVector": {},
-		    "currentBatchSize": {}
+		    "offsetVector": {}
 		   },
 		   "WebGLSpriteBatch#flush~shader": {
 		    "fragmentSrc": {},
@@ -35534,39 +36961,53 @@
 		   },
 		   "WebGLSpriteBatch#stop": {
 		    "!type": "fn()",
-		    "dirty": {}
+		    "prototype": {
+		     "dirty": {}
+		    }
 		   },
 		   "WebGLSpriteBatch#start": {
 		    "!type": "fn()",
-		    "dirty": {}
+		    "prototype": {
+		     "dirty": {}
+		    }
 		   },
 		   "WebGLSpriteBatch#destroy": {
 		    "!type": "fn()",
-		    "vertices": {},
-		    "indices": {},
-		    "currentBaseTexture": {},
-		    "gl": {}
+		    "prototype": {
+		     "vertices": {},
+		     "indices": {},
+		     "currentBaseTexture": {},
+		     "gl": {}
+		    }
 		   },
 		   "WebGLStencilManager": {
 		    "!type": "fn()",
-		    "stencilStack": {},
-		    "reverse": {},
-		    "count": {}
+		    "prototype": {
+		     "stencilStack": {},
+		     "reverse": {},
+		     "count": {}
+		    }
 		   },
 		   "WebGLStencilManager#setContext": {
 		    "!type": "fn()",
-		    "gl": {}
+		    "prototype": {
+		     "gl": {}
+		    }
 		   },
 		   "WebGLStencilManager#pushStencil": {
 		    "!type": "fn()",
 		    "gl": {},
-		    "reverse": {},
-		    "count": {},
+		    "prototype": {
+		     "reverse": {},
+		     "count": {}
+		    },
 		    "level": {}
 		   },
 		   "WebGLStencilManager#bindGraphics": {
 		    "!type": "fn()",
-		    "_currentGraphics": {},
+		    "prototype": {
+		     "_currentGraphics": {}
+		    },
 		    "gl": {},
 		    "projection": {},
 		    "offset": {},
@@ -35576,75 +37017,43 @@
 		    "!type": "fn()",
 		    "gl": {},
 		    "level": {},
-		    "reverse": {}
+		    "prototype": {
+		     "reverse": {}
+		    }
 		   },
 		   "WebGLStencilManager#destroy": {
 		    "!type": "fn()",
-		    "stencilStack": {},
-		    "gl": {}
+		    "prototype": {
+		     "stencilStack": {},
+		     "gl": {}
+		    }
 		   },
 		   "glContexts": {},
 		   "instances": {},
 		   "WebGLRenderer": {
-		    "!type": "fn(width: number, height: number, options: ?, option_view: +HTMLCanvasElement, option_transparent: bool, option_autoResize: bool, option_antialias: bool, option_preserveDrawingBuffer: bool, option_resolution: number)",
+		    "!type": "fn(width: number, height: number, options: ?, options_view: +HTMLCanvasElement, options_transparent: bool, options_autoResize: bool, options_antialias: bool, options_preserveDrawingBuffer: bool, options_resolution: number)",
 		    "i": {},
 		    "options": {},
-		    "type": {
-		     "!type": "?"
-		    },
-		    "resolution": {
-		     "!type": "?"
-		    },
-		    "transparent": {
-		     "!type": "?"
-		    },
-		    "autoResize": {
-		     "!type": "?"
-		    },
-		    "preserveDrawingBuffer": {
-		     "!type": "?"
-		    },
-		    "clearBeforeRender": {
-		     "!type": "?"
-		    },
-		    "width": {
-		     "!type": "?"
-		    },
-		    "height": {
-		     "!type": "?"
-		    },
-		    "view": {
-		     "!type": "?"
-		    },
-		    "_contextOptions": {
-		     "!type": "?"
-		    },
-		    "projection": {
-		     "!type": "?"
-		    },
-		    "offset": {
-		     "!type": "?"
-		    },
-		    "shaderManager": {
-		     "!type": "?"
-		    },
-		    "spriteBatch": {
-		     "!type": "?"
-		    },
-		    "maskManager": {
-		     "!type": "?"
-		    },
-		    "filterManager": {
-		     "!type": "?"
-		    },
-		    "stencilManager": {
-		     "!type": "?"
-		    },
-		    "blendModeManager": {
-		     "!type": "?"
-		    },
-		    "renderSession": {
-		     "!type": "?"
+		    "prototype": {
+		     "type": {},
+		     "resolution": {},
+		     "transparent": {},
+		     "autoResize": {},
+		     "preserveDrawingBuffer": {},
+		     "clearBeforeRender": {},
+		     "width": {},
+		     "height": {},
+		     "view": {},
+		     "_contextOptions": {},
+		     "projection": {},
+		     "offset": {},
+		     "shaderManager": {},
+		     "spriteBatch": {},
+		     "maskManager": {},
+		     "filterManager": {},
+		     "stencilManager": {},
+		     "blendModeManager": {},
+		     "renderSession": {}
 		    }
 		   },
 		   "WebGLRenderer#_contextOptions": {
@@ -35670,7 +37079,10 @@
 		   "WebGLRenderer#initContext": {
 		    "!type": "fn()",
 		    "gl": {},
-		    "glContextId": {}
+		    "prototype": {
+		     "gl": {},
+		     "glContextId": {}
+		    }
 		   },
 		   "WebGLRenderer#initContext~gl": {
 		    "id": {}
@@ -35682,7 +37094,9 @@
 		   },
 		   "WebGLRenderer#render": {
 		    "!type": "fn()",
-		    "__stage": {},
+		    "prototype": {
+		     "__stage": {}
+		    },
 		    "gl": {}
 		   },
 		   "WebGLRenderer#renderDisplayObject": {
@@ -35696,8 +37110,10 @@
 		   },
 		   "WebGLRenderer#resize": {
 		    "!type": "fn()",
-		    "width": {},
-		    "height": {}
+		    "prototype": {
+		     "width": {},
+		     "height": {}
+		    }
 		   },
 		   "WebGLRenderer#resize#view": {
 		    "width": {},
@@ -35717,14 +37133,16 @@
 		   },
 		   "WebGLRenderer#destroy": {
 		    "!type": "fn()",
-		    "projection": {},
-		    "offset": {},
-		    "shaderManager": {},
-		    "spriteBatch": {},
-		    "maskManager": {},
-		    "filterManager": {},
-		    "gl": {},
-		    "renderSession": {}
+		    "prototype": {
+		     "projection": {},
+		     "offset": {},
+		     "shaderManager": {},
+		     "spriteBatch": {},
+		     "maskManager": {},
+		     "filterManager": {},
+		     "gl": {},
+		     "renderSession": {}
+		    }
 		   },
 		   "WebGLRenderer#mapBlendModes": {
 		    "!type": "fn()",
@@ -35737,42 +37155,20 @@
 		   "BaseTextureCacheIdGenerator": {},
 		   "BaseTexture": {
 		    "!type": "fn(source: string, scaleMode: number)",
-		    "resolution": {
-		     "!type": "?"
-		    },
-		    "width": {
-		     "!type": "?"
-		    },
-		    "height": {
-		     "!type": "?"
-		    },
-		    "scaleMode": {
-		     "!type": "?"
-		    },
-		    "hasLoaded": {
-		     "!type": "?"
-		    },
-		    "source": {
-		     "!type": "?"
-		    },
-		    "_UID": {},
-		    "premultipliedAlpha": {
-		     "!type": "?"
-		    },
-		    "_glTextures": {
-		     "!type": "?"
-		    },
-		    "mipmap": {
-		     "!type": "?"
-		    },
-		    "_dirty": {
-		     "!type": "?"
-		    },
-		    "imageUrl": {
-		     "!type": "?"
-		    },
-		    "_powerOf2": {
-		     "!type": "?"
+		    "prototype": {
+		     "resolution": {},
+		     "width": {},
+		     "height": {},
+		     "scaleMode": {},
+		     "hasLoaded": {},
+		     "source": {},
+		     "_UID": {},
+		     "premultipliedAlpha": {},
+		     "_glTextures": {},
+		     "mipmap": {},
+		     "_dirty": {},
+		     "imageUrl": {},
+		     "_powerOf2": {}
 		    },
 		    "fromImage": {
 		     "baseTexture": {},
@@ -35794,21 +37190,27 @@
 		   "BaseTexture#constructor": {},
 		   "BaseTexture#forceLoaded": {
 		    "!type": "fn()",
-		    "hasLoaded": {},
-		    "width": {},
-		    "height": {}
+		    "prototype": {
+		     "hasLoaded": {},
+		     "width": {},
+		     "height": {}
+		    }
 		   },
 		   "BaseTexture#destroy": {
 		    "!type": "fn()",
-		    "imageUrl": {},
-		    "source": {}
+		    "prototype": {
+		     "imageUrl": {},
+		     "source": {}
+		    }
 		   },
 		   "BaseTexture#destroy#source": {
 		    "src": {}
 		   },
 		   "BaseTexture#updateSourceImage": {
 		    "!type": "fn()",
-		    "hasLoaded": {}
+		    "prototype": {
+		     "hasLoaded": {}
+		    }
 		   },
 		   "BaseTexture#updateSourceImage#source": {
 		    "src": {}
@@ -35816,7 +37218,9 @@
 		   "BaseTexture#dirty": {
 		    "!type": "fn()",
 		    "i": {},
-		    "_dirty[undefined]": {}
+		    "prototype": {
+		     "_dirty[undefined]": {}
+		    }
 		   },
 		   "BaseTexture#unloadFromGPU": {
 		    "!type": "fn()",
@@ -35836,35 +37240,21 @@
 		   },
 		   "RenderTexture": {
 		    "!type": "fn(width: number, height: number, renderer: +CanvasRenderer|+WebGLRenderer, scaleMode: number, resolution: number)",
-		    "width": {
-		     "!type": "?"
+		    "prototype": {
+		     "width": {},
+		     "height": {},
+		     "resolution": {},
+		     "frame": {},
+		     "crop": {},
+		     "baseTexture": {},
+		     "renderer": {},
+		     "textureBuffer": {},
+		     "render": {},
+		     "projection": {},
+		     "valid": {},
+		     "tempMatrix": {}
 		    },
-		    "height": {
-		     "!type": "?"
-		    },
-		    "resolution": {
-		     "!type": "?"
-		    },
-		    "frame": {
-		     "!type": "?"
-		    },
-		    "crop": {
-		     "!type": "?"
-		    },
-		    "baseTexture": {
-		     "!type": "?"
-		    },
-		    "renderer": {
-		     "!type": "?"
-		    },
-		    "gl": {},
-		    "textureBuffer": {},
-		    "render": {},
-		    "projection": {},
-		    "valid": {
-		     "!type": "?"
-		    },
-		    "tempMatrix": {}
+		    "gl": {}
 		   },
 		   "RenderTexture#baseTexture": {
 		    "width": {},
@@ -35880,9 +37270,11 @@
 		   "RenderTexture#constructor": {},
 		   "RenderTexture#resize": {
 		    "!type": "fn()",
-		    "valid": {},
-		    "width": {},
-		    "height": {}
+		    "prototype": {
+		     "valid": {},
+		     "width": {},
+		     "height": {}
+		    }
 		   },
 		   "RenderTexture#resize#frame": {
 		    "width": {},
@@ -35948,42 +37340,22 @@
 		   "TextureCacheIdGenerator": {},
 		   "Texture": {
 		    "!type": "fn(baseTexture: +BaseTexture, frame: +Rectangle, crop: +Rectangle, trim: +Rectangle)",
-		    "noFrame": {
-		     "!type": "?"
+		    "prototype": {
+		     "noFrame": {},
+		     "baseTexture": {},
+		     "frame": {},
+		     "trim": {},
+		     "valid": {},
+		     "isTiling": {},
+		     "requiresUpdate": {},
+		     "requiresReTint": {},
+		     "_uvs": {},
+		     "width": {},
+		     "height": {},
+		     "crop": {}
 		    },
-		    "frame": {
-		     "!type": "?"
-		    },
-		    "baseTexture": {
-		     "!type": "?"
-		    },
-		    "trim": {
-		     "!type": "?"
-		    },
-		    "valid": {
-		     "!type": "?"
-		    },
-		    "isTiling": {
-		     "!type": "?"
-		    },
-		    "requiresUpdate": {
-		     "!type": "?"
-		    },
-		    "requiresReTint": {
-		     "!type": "?"
-		    },
-		    "_uvs": {
-		     "!type": "?"
-		    },
-		    "width": {
-		     "!type": "?"
-		    },
-		    "height": {
-		     "!type": "?"
-		    },
-		    "crop": {
-		     "!type": "?"
-		    },
+		    "frame": {},
+		    "baseTexture": {},
 		    "fromImage": {
 		     "texture": {}
 		    },
@@ -36001,19 +37373,25 @@
 		   "Texture#onBaseTextureLoaded": {
 		    "!type": "fn()",
 		    "baseTexture": {},
-		    "frame": {}
+		    "prototype": {
+		     "frame": {}
+		    }
 		   },
 		   "Texture#destroy": {
 		    "!type": "fn()",
-		    "valid": {}
+		    "prototype": {
+		     "valid": {}
+		    }
 		   },
 		   "Texture#setFrame": {
 		    "!type": "fn()",
-		    "noFrame": {},
-		    "frame": {},
-		    "width": {},
-		    "height": {},
-		    "valid": {}
+		    "prototype": {
+		     "noFrame": {},
+		     "frame": {},
+		     "width": {},
+		     "height": {},
+		     "valid": {}
+		    }
 		   },
 		   "Texture#setFrame#crop": {
 		    "x": {},
@@ -36027,7 +37405,9 @@
 		   },
 		   "Texture#_updateUvs": {
 		    "!type": "fn()",
-		    "_uvs": {},
+		    "prototype": {
+		     "_uvs": {}
+		    },
 		    "frame": {},
 		    "tw": {},
 		    "th": {}
@@ -36060,14 +37440,16 @@
 		   },
 		   "TextureUvs": {
 		    "!type": "fn()",
-		    "x0": {},
-		    "y0": {},
-		    "x1": {},
-		    "y1": {},
-		    "x2": {},
-		    "y2": {},
-		    "x3": {},
-		    "y3": {}
+		    "prototype": {
+		     "x0": {},
+		     "y0": {},
+		     "x1": {},
+		     "y1": {},
+		     "x2": {},
+		     "y2": {},
+		     "x3": {},
+		     "y3": {}
+		    }
 		   },
 		   "CanvasPool": {
 		    "create": {
@@ -36117,9 +37499,7 @@
 		     "c": {},
 		     "i": {}
 		    },
-		    "pool": {
-		     "!type": "?"
-		    }
+		    "pool": {}
 		   },
 		   "CanvasPool.pool[undefined].parent": {},
 		   "EventTarget": {
@@ -36133,34 +37513,28 @@
 		   },
 		   "Event": {
 		    "!type": "fn(target: ?, name: string, data: ?)",
-		    "__isEventObject": {},
-		    "stopped": {
-		     "!type": "?"
-		    },
-		    "stoppedImmediate": {
-		     "!type": "?"
-		    },
-		    "target": {
-		     "!type": "?"
-		    },
-		    "type": {
-		     "!type": "?"
-		    },
-		    "data": {
-		     "!type": "?"
-		    },
-		    "content": {},
-		    "timeStamp": {
-		     "!type": "?"
+		    "prototype": {
+		     "__isEventObject": {},
+		     "stopped": {},
+		     "stoppedImmediate": {},
+		     "target": {},
+		     "type": {},
+		     "data": {},
+		     "content": {},
+		     "timeStamp": {}
 		    }
 		   },
 		   "Event#stopPropagation": {
 		    "!type": "fn()",
-		    "stopped": {}
+		    "prototype": {
+		     "stopped": {}
+		    }
 		   },
 		   "Event#stopImmediatePropagation": {
 		    "!type": "fn()",
-		    "stoppedImmediate": {}
+		    "prototype": {
+		     "stoppedImmediate": {}
+		    }
 		   },
 		   "PolyK": {
 		    "Triangulate": {
@@ -36317,12 +37691,16 @@
 		  "obj": {
 		   "listeners": {
 		    "!type": "fn()",
-		    "_listeners": {}
+		    "prototype": {
+		     "_listeners": {}
+		    }
 		   },
 		   "emit": {},
 		   "dispatchEvent": {
 		    "!type": "fn()",
-		    "_listeners": {},
+		    "prototype": {
+		     "_listeners": {}
+		    },
 		    "data": {},
 		    "eventName": {},
 		    "listeners": {},
@@ -36333,12 +37711,16 @@
 		   "on": {},
 		   "addEventListener": {
 		    "!type": "fn()",
-		    "_listeners": {},
-		    "_listeners[undefined]": {}
+		    "prototype": {
+		     "_listeners": {},
+		     "_listeners[undefined]": {}
+		    }
 		   },
 		   "once": {
 		    "!type": "fn()",
-		    "_listeners": {},
+		    "prototype": {
+		     "_listeners": {}
+		    },
 		    "self": {},
 		    "onceHandlerWrapper": {
 		     "!type": "fn()"
@@ -36350,13 +37732,17 @@
 		   "off": {},
 		   "removeEventListener": {
 		    "!type": "fn()",
-		    "_listeners": {},
+		    "prototype": {
+		     "_listeners": {}
+		    },
 		    "list": {},
 		    "i": {}
 		   },
 		   "removeAllListeners": {
 		    "!type": "fn()",
-		    "_listeners": {}
+		    "prototype": {
+		     "_listeners": {}
+		    }
 		   }
 		  },
 		  "Math": {
@@ -36365,7 +37751,9 @@
 		   }
 		  },
 		  "Function": {
-		   "bind": {}
+		   "prototype": {
+		    "bind": {}
+		   }
 		  },
 		  "<anonymous>~bound": {
 		   "args": {}
@@ -36374,8 +37762,10 @@
 		   "isArray": {
 		    "!type": "fn()"
 		   },
-		   "forEach": {
-		    "!type": "fn()"
+		   "prototype": {
+		    "forEach": {
+		     "!type": "fn()"
+		    }
 		   }
 		  },
 		  "Array#forEach": {
