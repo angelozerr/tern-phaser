@@ -710,7 +710,7 @@
 		      "!type": "+Phaser.Signal"
 		     },
 		     "play": {
-		      "!type": "fn(frameRate: number, loop: bool, killOnComplete: bool) -> ?"
+		      "!type": "fn(frameRate: number, loop: bool, killOnComplete: bool) -> +Phaser.Animation"
 		     },
 		     "restart": {
 		      "!type": "fn()"
@@ -762,7 +762,7 @@
 		     }
 		    },
 		    "generateFrameNames": {
-		     "!type": "fn(prefix: string, start: number, stop: number, suffix: string, zeroPad: number) -> ?"
+		     "!type": "fn(prefix: string, start: number, stop: number, suffix: string, zeroPad: number) -> [?]"
 		    }
 		   },
 		   "AnimationManager": {
@@ -787,19 +787,19 @@
 		      "!type": "bool"
 		     },
 		     "add": {
-		      "!type": "fn(name: string, frames: [?], frameRate: number, loop: bool, useNumericIndex: bool) -> ?"
+		      "!type": "fn(name: string, frames: [?], frameRate: number, loop: bool, useNumericIndex: bool) -> +Phaser.Animation"
 		     },
 		     "validateFrames": {
-		      "!type": "fn(frames: [?], useNumericIndex: bool) -> ?"
+		      "!type": "fn(frames: [?], useNumericIndex: bool) -> bool"
 		     },
 		     "play": {
-		      "!type": "fn(name: string, frameRate: number, loop: bool, killOnComplete: bool) -> ?"
+		      "!type": "fn(name: string, frameRate: number, loop: bool, killOnComplete: bool) -> +Phaser.Animation"
 		     },
 		     "stop": {
 		      "!type": "fn(name: string, resetFrame: bool)"
 		     },
 		     "update": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> bool"
 		     },
 		     "next": {
 		      "!type": "fn(quantity: number)"
@@ -808,7 +808,7 @@
 		      "!type": "fn(quantity: number)"
 		     },
 		     "getAnimation": {
-		      "!type": "fn(name: string) -> ?"
+		      "!type": "fn(name: string) -> +Phaser.Animation"
 		     },
 		     "refreshFrame": {
 		      "!type": "fn()"
@@ -839,16 +839,16 @@
 		   "AnimationParser": {
 		    "!type": "fn()",
 		    "spriteSheet": {
-		     "!type": "fn(game: +Phaser.Game, key: string|+Image, frameWidth: number, frameHeight: number, frameMax: number, margin: number, spacing: number) -> ?"
+		     "!type": "fn(game: +Phaser.Game, key: string|+Image, frameWidth: number, frameHeight: number, frameMax: number, margin: number, spacing: number) -> +Phaser.FrameData"
 		    },
 		    "JSONData": {
-		     "!type": "fn(game: +Phaser.Game, json: ?) -> ?"
+		     "!type": "fn(game: +Phaser.Game, json: ?) -> +Phaser.FrameData"
 		    },
 		    "JSONDataHash": {
-		     "!type": "fn(game: +Phaser.Game, json: ?) -> ?"
+		     "!type": "fn(game: +Phaser.Game, json: ?) -> +Phaser.FrameData"
 		    },
 		    "XMLData": {
-		     "!type": "fn(game: +Phaser.Game, xml: ?) -> ?"
+		     "!type": "fn(game: +Phaser.Game, xml: ?) -> +Phaser.FrameData"
 		    }
 		   },
 		   "Frame": {
@@ -921,10 +921,10 @@
 		      "!type": "fn(trimmed: bool, actualWidth: number, actualHeight: number, destX: number, destY: number, destWidth: number, destHeight: number)"
 		     },
 		     "clone": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +Phaser.Frame"
 		     },
 		     "getRect": {
-		      "!type": "fn(out: +Phaser.Rectangle) -> ?"
+		      "!type": "fn(out: +Phaser.Rectangle) -> +Phaser.Rectangle"
 		     }
 		    }
 		   },
@@ -932,28 +932,28 @@
 		    "!type": "fn()",
 		    "prototype": {
 		     "addFrame": {
-		      "!type": "fn(frame: +Phaser.Frame) -> ?"
+		      "!type": "fn(frame: +Phaser.Frame) -> +Phaser.Frame"
 		     },
 		     "getFrame": {
-		      "!type": "fn(index: number) -> ?"
+		      "!type": "fn(index: number) -> +Phaser.Frame"
 		     },
 		     "getFrameByName": {
-		      "!type": "fn(name: string) -> ?"
+		      "!type": "fn(name: string) -> +Phaser.Frame"
 		     },
 		     "checkFrameName": {
-		      "!type": "fn(name: string) -> ?"
+		      "!type": "fn(name: string) -> bool"
 		     },
 		     "clone": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +Phaser.FrameData"
 		     },
 		     "getFrameRange": {
-		      "!type": "fn(start: number, end: number, output: [?]) -> ?"
+		      "!type": "fn(start: number, end: number, output: [?]) -> [?]"
 		     },
 		     "getFrames": {
-		      "!type": "fn(frames: [?], useNumericIndex: bool, output: [?]) -> ?"
+		      "!type": "fn(frames: [?], useNumericIndex: bool, output: [?]) -> [?]"
 		     },
 		     "getFrameIndexes": {
-		      "!type": "fn(frames: [?], useNumericIndex: bool, output: [?]) -> ?"
+		      "!type": "fn(frames: [?], useNumericIndex: bool, output: [?]) -> [?]"
 		     },
 		     "total": {
 		      "!type": "number"
@@ -1083,10 +1083,10 @@
 		      "!type": "+array"
 		     },
 		     "texture": {
-		      "!type": "fn(key: string, data: +array, pixelWidth: number, pixelHeight: number, palette: number) -> ?"
+		      "!type": "fn(key: string, data: +array, pixelWidth: number, pixelHeight: number, palette: number) -> +PIXI.Texture"
 		     },
 		     "grid": {
-		      "!type": "fn(key: string, width: number, height: number, cellWidth: number, cellHeight: number, color: string) -> ?"
+		      "!type": "fn(key: string, width: number, height: number, cellWidth: number, cellHeight: number, color: string) -> +PIXI.Texture"
 		     }
 		    },
 		    "PALETTE_ARNE": {
@@ -1166,16 +1166,16 @@
 		      "!type": "fn(width: number, height: number)"
 		     },
 		     "createCustomLayer": {
-		      "!type": "fn(width: number, height: number, children: [?]) -> ?"
+		      "!type": "fn(width: number, height: number, children: [?]) -> +Phaser.FlexLayer"
 		     },
 		     "createFluidLayer": {
-		      "!type": "fn(children: +array) -> ?"
+		      "!type": "fn(children: +array) -> +Phaser.FlexLayer"
 		     },
 		     "createFullLayer": {
-		      "!type": "fn(children: +array) -> ?"
+		      "!type": "fn(children: +array) -> +Phaser.FlexLayer"
 		     },
 		     "createFixedLayer": {
-		      "!type": "fn(children: [?]) -> ?"
+		      "!type": "fn(children: [?]) -> +Phaser.FlexLayer"
 		     },
 		     "reset": {
 		      "!type": "fn()"
@@ -1296,25 +1296,25 @@
 		      "!type": "+array"
 		     },
 		     "add": {
-		      "!type": "fn(child: +DisplayObject, silent: bool) -> ?"
+		      "!type": "fn(child: +DisplayObject, silent: bool) -> +DisplayObject"
 		     },
 		     "addToHash": {
-		      "!type": "fn(child: +DisplayObject) -> ?"
+		      "!type": "fn(child: +DisplayObject) -> bool"
 		     },
 		     "removeFromHash": {
-		      "!type": "fn(child: +DisplayObject) -> ?"
+		      "!type": "fn(child: +DisplayObject) -> bool"
 		     },
 		     "addMultiple": {
-		      "!type": "fn(children: [?]|+Phaser.Group, silent: bool) -> ?"
+		      "!type": "fn(children: [?]|+Phaser.Group, silent: bool) -> [?]|+Phaser.Group"
 		     },
 		     "addAt": {
-		      "!type": "fn(child: +DisplayObject, index: number, silent: bool) -> ?"
+		      "!type": "fn(child: +DisplayObject, index: number, silent: bool) -> +DisplayObject"
 		     },
 		     "getAt": {
-		      "!type": "fn(index: number) -> ?"
+		      "!type": "fn(index: number) -> +DisplayObject|number"
 		     },
 		     "create": {
-		      "!type": "fn(x: number, y: number, key: string, frame: number|string, exists: bool) -> ?"
+		      "!type": "fn(x: number, y: number, key: string, frame: number|string, exists: bool) -> +DisplayObject"
 		     },
 		     "createMultiple": {
 		      "!type": "fn(quantity: number, key: string, frame: number|string, exists: bool)"
@@ -1323,28 +1323,28 @@
 		      "!type": "fn()"
 		     },
 		     "resetCursor": {
-		      "!type": "fn(index: number) -> ?"
+		      "!type": "fn(index: number) -> +any"
 		     },
 		     "next": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +any"
 		     },
 		     "previous": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +any"
 		     },
 		     "swap": {
 		      "!type": "fn(child1: +any, child2: +any)"
 		     },
 		     "bringToTop": {
-		      "!type": "fn(child: +any) -> ?"
+		      "!type": "fn(child: +any) -> +any"
 		     },
 		     "sendToBack": {
-		      "!type": "fn(child: +any) -> ?"
+		      "!type": "fn(child: +any) -> +any"
 		     },
 		     "moveUp": {
-		      "!type": "fn(child: +any) -> ?"
+		      "!type": "fn(child: +any) -> +any"
 		     },
 		     "moveDown": {
-		      "!type": "fn(child: +any) -> ?"
+		      "!type": "fn(child: +any) -> +any"
 		     },
 		     "xy": {
 		      "!type": "fn(index: number, x: number, y: number)"
@@ -1353,22 +1353,22 @@
 		      "!type": "fn()"
 		     },
 		     "getIndex": {
-		      "!type": "fn(child: +any) -> ?"
+		      "!type": "fn(child: +any) -> number"
 		     },
 		     "replace": {
-		      "!type": "fn(oldChild: +any, newChild: +any) -> ?"
+		      "!type": "fn(oldChild: +any, newChild: +any) -> +any"
 		     },
 		     "hasProperty": {
-		      "!type": "fn(child: +any, key: [?]) -> ?"
+		      "!type": "fn(child: +any, key: [?]) -> bool"
 		     },
 		     "setProperty": {
-		      "!type": "fn(child: +any, key: +array, value: +any, operation: number, force: bool) -> ?"
+		      "!type": "fn(child: +any, key: +array, value: +any, operation: number, force: bool) -> bool"
 		     },
 		     "checkProperty": {
-		      "!type": "fn(child: +any, key: +array, value: +any, force: bool) -> ?"
+		      "!type": "fn(child: +any, key: +array, value: +any, force: bool) -> bool"
 		     },
 		     "set": {
-		      "!type": "fn(child: +Phaser.Sprite, key: string, value: +any, checkAlive: bool, checkVisible: bool, operation: number, force: bool) -> ?"
+		      "!type": "fn(child: +Phaser.Sprite, key: string, value: +any, checkAlive: bool, checkVisible: bool, operation: number, force: bool) -> bool"
 		     },
 		     "setAll": {
 		      "!type": "fn(key: string, value: +any, checkAlive: bool, checkVisible: bool, operation: number, force: bool)"
@@ -1410,7 +1410,7 @@
 		      "!type": "fn()"
 		     },
 		     "filter": {
-		      "!type": "fn(predicate: fn(), checkExists: bool) -> ?"
+		      "!type": "fn(predicate: fn(), checkExists: bool) -> +Phaser.ArraySet"
 		     },
 		     "forEach": {
 		      "!type": "fn(callback: fn(), callbackContext: ?, checkExists: bool, args: +any)"
@@ -1437,37 +1437,37 @@
 		      "!type": "fn(a: ?, b: ?)"
 		     },
 		     "iterate": {
-		      "!type": "fn(key: string, value: +any, returnType: number, callback: fn(), callbackContext: ?, args: [?]) -> ?"
+		      "!type": "fn(key: string, value: +any, returnType: number, callback: fn(), callbackContext: ?, args: [?]) -> +any"
 		     },
 		     "getFirstExists": {
-		      "!type": "fn(exists: bool) -> ?"
+		      "!type": "fn(exists: bool) -> +any"
 		     },
 		     "getFirstAlive": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +any"
 		     },
 		     "getFirstDead": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +any"
 		     },
 		     "getTop": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +any"
 		     },
 		     "getBottom": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +any"
 		     },
 		     "countLiving": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> number"
 		     },
 		     "countDead": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> number"
 		     },
 		     "getRandom": {
-		      "!type": "fn(startIndex: number, length: number) -> ?"
+		      "!type": "fn(startIndex: number, length: number) -> +any"
 		     },
 		     "remove": {
-		      "!type": "fn(child: +any, destroy: bool, silent: bool) -> ?"
+		      "!type": "fn(child: +any, destroy: bool, silent: bool) -> bool"
 		     },
 		     "moveAll": {
-		      "!type": "fn(group: +Phaser.Group, silent: bool) -> ?"
+		      "!type": "fn(group: +Phaser.Group, silent: bool) -> +Phaser.Group"
 		     },
 		     "removeAll": {
 		      "!type": "fn(destroy: bool, silent: bool)"
@@ -1769,25 +1769,25 @@
 		      "!type": "+array"
 		     },
 		     "add": {
-		      "!type": "fn(child: +DisplayObject, silent: bool) -> ?"
+		      "!type": "fn(child: +DisplayObject, silent: bool) -> +DisplayObject"
 		     },
 		     "addToHash": {
-		      "!type": "fn(child: +DisplayObject) -> ?"
+		      "!type": "fn(child: +DisplayObject) -> bool"
 		     },
 		     "removeFromHash": {
-		      "!type": "fn(child: +DisplayObject) -> ?"
+		      "!type": "fn(child: +DisplayObject) -> bool"
 		     },
 		     "addMultiple": {
-		      "!type": "fn(children: [?]|+Phaser.Group, silent: bool) -> ?"
+		      "!type": "fn(children: [?]|+Phaser.Group, silent: bool) -> [?]|+Phaser.Group"
 		     },
 		     "addAt": {
-		      "!type": "fn(child: +DisplayObject, index: number, silent: bool) -> ?"
+		      "!type": "fn(child: +DisplayObject, index: number, silent: bool) -> +DisplayObject"
 		     },
 		     "getAt": {
-		      "!type": "fn(index: number) -> ?"
+		      "!type": "fn(index: number) -> +DisplayObject|number"
 		     },
 		     "create": {
-		      "!type": "fn(x: number, y: number, key: string, frame: number|string, exists: bool) -> ?"
+		      "!type": "fn(x: number, y: number, key: string, frame: number|string, exists: bool) -> +DisplayObject"
 		     },
 		     "createMultiple": {
 		      "!type": "fn(quantity: number, key: string, frame: number|string, exists: bool)"
@@ -1796,28 +1796,28 @@
 		      "!type": "fn()"
 		     },
 		     "resetCursor": {
-		      "!type": "fn(index: number) -> ?"
+		      "!type": "fn(index: number) -> +any"
 		     },
 		     "next": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +any"
 		     },
 		     "previous": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +any"
 		     },
 		     "swap": {
 		      "!type": "fn(child1: +any, child2: +any)"
 		     },
 		     "bringToTop": {
-		      "!type": "fn(child: +any) -> ?"
+		      "!type": "fn(child: +any) -> +any"
 		     },
 		     "sendToBack": {
-		      "!type": "fn(child: +any) -> ?"
+		      "!type": "fn(child: +any) -> +any"
 		     },
 		     "moveUp": {
-		      "!type": "fn(child: +any) -> ?"
+		      "!type": "fn(child: +any) -> +any"
 		     },
 		     "moveDown": {
-		      "!type": "fn(child: +any) -> ?"
+		      "!type": "fn(child: +any) -> +any"
 		     },
 		     "xy": {
 		      "!type": "fn(index: number, x: number, y: number)"
@@ -1826,22 +1826,22 @@
 		      "!type": "fn()"
 		     },
 		     "getIndex": {
-		      "!type": "fn(child: +any) -> ?"
+		      "!type": "fn(child: +any) -> number"
 		     },
 		     "replace": {
-		      "!type": "fn(oldChild: +any, newChild: +any) -> ?"
+		      "!type": "fn(oldChild: +any, newChild: +any) -> +any"
 		     },
 		     "hasProperty": {
-		      "!type": "fn(child: +any, key: [?]) -> ?"
+		      "!type": "fn(child: +any, key: [?]) -> bool"
 		     },
 		     "setProperty": {
-		      "!type": "fn(child: +any, key: +array, value: +any, operation: number, force: bool) -> ?"
+		      "!type": "fn(child: +any, key: +array, value: +any, operation: number, force: bool) -> bool"
 		     },
 		     "checkProperty": {
-		      "!type": "fn(child: +any, key: +array, value: +any, force: bool) -> ?"
+		      "!type": "fn(child: +any, key: +array, value: +any, force: bool) -> bool"
 		     },
 		     "set": {
-		      "!type": "fn(child: +Phaser.Sprite, key: string, value: +any, checkAlive: bool, checkVisible: bool, operation: number, force: bool) -> ?"
+		      "!type": "fn(child: +Phaser.Sprite, key: string, value: +any, checkAlive: bool, checkVisible: bool, operation: number, force: bool) -> bool"
 		     },
 		     "setAll": {
 		      "!type": "fn(key: string, value: +any, checkAlive: bool, checkVisible: bool, operation: number, force: bool)"
@@ -1883,7 +1883,7 @@
 		      "!type": "fn()"
 		     },
 		     "filter": {
-		      "!type": "fn(predicate: fn(), checkExists: bool) -> ?"
+		      "!type": "fn(predicate: fn(), checkExists: bool) -> +Phaser.ArraySet"
 		     },
 		     "forEach": {
 		      "!type": "fn(callback: fn(), callbackContext: ?, checkExists: bool, args: +any)"
@@ -1910,37 +1910,37 @@
 		      "!type": "fn(a: ?, b: ?)"
 		     },
 		     "iterate": {
-		      "!type": "fn(key: string, value: +any, returnType: number, callback: fn(), callbackContext: ?, args: [?]) -> ?"
+		      "!type": "fn(key: string, value: +any, returnType: number, callback: fn(), callbackContext: ?, args: [?]) -> +any"
 		     },
 		     "getFirstExists": {
-		      "!type": "fn(exists: bool) -> ?"
+		      "!type": "fn(exists: bool) -> +any"
 		     },
 		     "getFirstAlive": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +any"
 		     },
 		     "getFirstDead": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +any"
 		     },
 		     "getTop": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +any"
 		     },
 		     "getBottom": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +any"
 		     },
 		     "countLiving": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> number"
 		     },
 		     "countDead": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> number"
 		     },
 		     "getRandom": {
-		      "!type": "fn(startIndex: number, length: number) -> ?"
+		      "!type": "fn(startIndex: number, length: number) -> +any"
 		     },
 		     "remove": {
-		      "!type": "fn(child: +any, destroy: bool, silent: bool) -> ?"
+		      "!type": "fn(child: +any, destroy: bool, silent: bool) -> bool"
 		     },
 		     "moveAll": {
-		      "!type": "fn(group: +Phaser.Group, silent: bool) -> ?"
+		      "!type": "fn(group: +Phaser.Group, silent: bool) -> +Phaser.Group"
 		     },
 		     "removeAll": {
 		      "!type": "fn(destroy: bool, silent: bool)"
@@ -2050,7 +2050,7 @@
 		      "!type": "[?]"
 		     },
 		     "add": {
-		      "!type": "fn(plugin: ?|+Phaser.Plugin, parameter: ?) -> ?"
+		      "!type": "fn(plugin: ?|+Phaser.Plugin, parameter: ?) -> +Phaser.Plugin"
 		     },
 		     "remove": {
 		      "!type": "fn(plugin: +Phaser.Plugin)"
@@ -2214,19 +2214,19 @@
 		      "!type": "fn()"
 		     },
 		     "getParentBounds": {
-		      "!type": "fn(target: +Phaser.Rectangle) -> ?"
+		      "!type": "fn(target: +Phaser.Rectangle) -> +Phaser.Rectangle"
 		     },
 		     "createFullScreenTarget": {
 		      "!type": "fn()"
 		     },
 		     "startFullScreen": {
-		      "!type": "fn(antialias: bool, allowTrampoline: bool) -> ?"
+		      "!type": "fn(antialias: bool, allowTrampoline: bool) -> bool"
 		     },
 		     "stopFullScreen": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> bool"
 		     },
 		     "scaleSprite": {
-		      "!type": "fn(sprite: +Phaser.Sprite|+Phaser.Image, width: number, height: number, letterBox: bool) -> ?"
+		      "!type": "fn(sprite: +Phaser.Sprite|+Phaser.Image, width: number, height: number, letterBox: bool) -> +Phaser.Sprite|+Phaser.Image"
 		     },
 		     "destroy": {
 		      "!type": "fn()"
@@ -2291,22 +2291,22 @@
 		      "!type": "bool"
 		     },
 		     "has": {
-		      "!type": "fn(listener: fn(), context: ?) -> ?"
+		      "!type": "fn(listener: fn(), context: ?) -> bool"
 		     },
 		     "add": {
-		      "!type": "fn(listener: fn(), listenerContext: ?, priority: number, args: +any) -> ?"
+		      "!type": "fn(listener: fn(), listenerContext: ?, priority: number, args: +any) -> +Phaser.SignalBinding"
 		     },
 		     "addOnce": {
-		      "!type": "fn(listener: fn(), listenerContext: ?, priority: number, args: +any) -> ?"
+		      "!type": "fn(listener: fn(), listenerContext: ?, priority: number, args: +any) -> +Phaser.SignalBinding"
 		     },
 		     "remove": {
-		      "!type": "fn(listener: fn(), context: ?) -> ?"
+		      "!type": "fn(listener: fn(), context: ?) -> fn()"
 		     },
 		     "removeAll": {
 		      "!type": "fn(context: ?)"
 		     },
 		     "getNumListeners": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> number"
 		     },
 		     "halt": {
 		      "!type": "fn()"
@@ -2336,22 +2336,22 @@
 		      "!type": "+array|+null"
 		     },
 		     "execute": {
-		      "!type": "fn(paramsArr: [?]) -> ?"
+		      "!type": "fn(paramsArr: [?]) -> +any"
 		     },
 		     "detach": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> fn()|+null"
 		     },
 		     "isBound": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> bool"
 		     },
 		     "isOnce": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> bool"
 		     },
 		     "getListener": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> fn()"
 		     },
 		     "getSignal": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +Phaser.Signal"
 		     }
 		    }
 		   },
@@ -2577,7 +2577,7 @@
 		      "!type": "fn()"
 		     },
 		     "checkState": {
-		      "!type": "fn(key: string) -> ?"
+		      "!type": "fn(key: string) -> bool"
 		     },
 		     "link": {
 		      "!type": "fn(key: string)"
@@ -2733,25 +2733,25 @@
 		      "!type": "+array"
 		     },
 		     "add": {
-		      "!type": "fn(child: +DisplayObject, silent: bool) -> ?"
+		      "!type": "fn(child: +DisplayObject, silent: bool) -> +DisplayObject"
 		     },
 		     "addToHash": {
-		      "!type": "fn(child: +DisplayObject) -> ?"
+		      "!type": "fn(child: +DisplayObject) -> bool"
 		     },
 		     "removeFromHash": {
-		      "!type": "fn(child: +DisplayObject) -> ?"
+		      "!type": "fn(child: +DisplayObject) -> bool"
 		     },
 		     "addMultiple": {
-		      "!type": "fn(children: [?]|+Phaser.Group, silent: bool) -> ?"
+		      "!type": "fn(children: [?]|+Phaser.Group, silent: bool) -> [?]|+Phaser.Group"
 		     },
 		     "addAt": {
-		      "!type": "fn(child: +DisplayObject, index: number, silent: bool) -> ?"
+		      "!type": "fn(child: +DisplayObject, index: number, silent: bool) -> +DisplayObject"
 		     },
 		     "getAt": {
-		      "!type": "fn(index: number) -> ?"
+		      "!type": "fn(index: number) -> +DisplayObject|number"
 		     },
 		     "create": {
-		      "!type": "fn(x: number, y: number, key: string, frame: number|string, exists: bool) -> ?"
+		      "!type": "fn(x: number, y: number, key: string, frame: number|string, exists: bool) -> +DisplayObject"
 		     },
 		     "createMultiple": {
 		      "!type": "fn(quantity: number, key: string, frame: number|string, exists: bool)"
@@ -2760,28 +2760,28 @@
 		      "!type": "fn()"
 		     },
 		     "resetCursor": {
-		      "!type": "fn(index: number) -> ?"
+		      "!type": "fn(index: number) -> +any"
 		     },
 		     "next": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +any"
 		     },
 		     "previous": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +any"
 		     },
 		     "swap": {
 		      "!type": "fn(child1: +any, child2: +any)"
 		     },
 		     "bringToTop": {
-		      "!type": "fn(child: +any) -> ?"
+		      "!type": "fn(child: +any) -> +any"
 		     },
 		     "sendToBack": {
-		      "!type": "fn(child: +any) -> ?"
+		      "!type": "fn(child: +any) -> +any"
 		     },
 		     "moveUp": {
-		      "!type": "fn(child: +any) -> ?"
+		      "!type": "fn(child: +any) -> +any"
 		     },
 		     "moveDown": {
-		      "!type": "fn(child: +any) -> ?"
+		      "!type": "fn(child: +any) -> +any"
 		     },
 		     "xy": {
 		      "!type": "fn(index: number, x: number, y: number)"
@@ -2790,22 +2790,22 @@
 		      "!type": "fn()"
 		     },
 		     "getIndex": {
-		      "!type": "fn(child: +any) -> ?"
+		      "!type": "fn(child: +any) -> number"
 		     },
 		     "replace": {
-		      "!type": "fn(oldChild: +any, newChild: +any) -> ?"
+		      "!type": "fn(oldChild: +any, newChild: +any) -> +any"
 		     },
 		     "hasProperty": {
-		      "!type": "fn(child: +any, key: [?]) -> ?"
+		      "!type": "fn(child: +any, key: [?]) -> bool"
 		     },
 		     "setProperty": {
-		      "!type": "fn(child: +any, key: +array, value: +any, operation: number, force: bool) -> ?"
+		      "!type": "fn(child: +any, key: +array, value: +any, operation: number, force: bool) -> bool"
 		     },
 		     "checkProperty": {
-		      "!type": "fn(child: +any, key: +array, value: +any, force: bool) -> ?"
+		      "!type": "fn(child: +any, key: +array, value: +any, force: bool) -> bool"
 		     },
 		     "set": {
-		      "!type": "fn(child: +Phaser.Sprite, key: string, value: +any, checkAlive: bool, checkVisible: bool, operation: number, force: bool) -> ?"
+		      "!type": "fn(child: +Phaser.Sprite, key: string, value: +any, checkAlive: bool, checkVisible: bool, operation: number, force: bool) -> bool"
 		     },
 		     "setAll": {
 		      "!type": "fn(key: string, value: +any, checkAlive: bool, checkVisible: bool, operation: number, force: bool)"
@@ -2847,7 +2847,7 @@
 		      "!type": "fn()"
 		     },
 		     "filter": {
-		      "!type": "fn(predicate: fn(), checkExists: bool) -> ?"
+		      "!type": "fn(predicate: fn(), checkExists: bool) -> +Phaser.ArraySet"
 		     },
 		     "forEach": {
 		      "!type": "fn(callback: fn(), callbackContext: ?, checkExists: bool, args: +any)"
@@ -2874,37 +2874,37 @@
 		      "!type": "fn(a: ?, b: ?)"
 		     },
 		     "iterate": {
-		      "!type": "fn(key: string, value: +any, returnType: number, callback: fn(), callbackContext: ?, args: [?]) -> ?"
+		      "!type": "fn(key: string, value: +any, returnType: number, callback: fn(), callbackContext: ?, args: [?]) -> +any"
 		     },
 		     "getFirstExists": {
-		      "!type": "fn(exists: bool) -> ?"
+		      "!type": "fn(exists: bool) -> +any"
 		     },
 		     "getFirstAlive": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +any"
 		     },
 		     "getFirstDead": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +any"
 		     },
 		     "getTop": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +any"
 		     },
 		     "getBottom": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +any"
 		     },
 		     "countLiving": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> number"
 		     },
 		     "countDead": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> number"
 		     },
 		     "getRandom": {
-		      "!type": "fn(startIndex: number, length: number) -> ?"
+		      "!type": "fn(startIndex: number, length: number) -> +any"
 		     },
 		     "remove": {
-		      "!type": "fn(child: +any, destroy: bool, silent: bool) -> ?"
+		      "!type": "fn(child: +any, destroy: bool, silent: bool) -> bool"
 		     },
 		     "moveAll": {
-		      "!type": "fn(group: +Phaser.Group, silent: bool) -> ?"
+		      "!type": "fn(group: +Phaser.Group, silent: bool) -> +Phaser.Group"
 		     },
 		     "removeAll": {
 		      "!type": "fn(destroy: bool, silent: bool)"
@@ -2994,202 +2994,202 @@
 		      "!type": "bool"
 		     },
 		     "move": {
-		      "!type": "fn(x: number, y: number) -> ?"
+		      "!type": "fn(x: number, y: number) -> +Phaser.BitmapData"
 		     },
 		     "moveH": {
-		      "!type": "fn(distance: number) -> ?"
+		      "!type": "fn(distance: number) -> +Phaser.BitmapData"
 		     },
 		     "moveV": {
-		      "!type": "fn(distance: number) -> ?"
+		      "!type": "fn(distance: number) -> +Phaser.BitmapData"
 		     },
 		     "add": {
-		      "!type": "fn(object: +Phaser.Sprite|[?]|+Phaser.Image|[?]) -> ?"
+		      "!type": "fn(object: +Phaser.Sprite|[?]|+Phaser.Image|[?]) -> +Phaser.BitmapData"
 		     },
 		     "load": {
-		      "!type": "fn(source: +Phaser.Sprite|+Phaser.Image|+Phaser.Text|+Phaser.BitmapData|+Image|+HTMLCanvasElement|string) -> ?"
+		      "!type": "fn(source: +Phaser.Sprite|+Phaser.Image|+Phaser.Text|+Phaser.BitmapData|+Image|+HTMLCanvasElement|string) -> +Phaser.BitmapData"
 		     },
 		     "clear": {
-		      "!type": "fn(x: number, y: number, width: number, height: number) -> ?"
+		      "!type": "fn(x: number, y: number, width: number, height: number) -> +Phaser.BitmapData"
 		     },
 		     "cls": {
 		      "!type": "fn()"
 		     },
 		     "fill": {
-		      "!type": "fn(r: number, g: number, b: number, a: number) -> ?"
+		      "!type": "fn(r: number, g: number, b: number, a: number) -> +Phaser.BitmapData"
 		     },
 		     "generateTexture": {
-		      "!type": "fn(key: string) -> ?"
+		      "!type": "fn(key: string) -> +PIXI.Texture"
 		     },
 		     "resize": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +Phaser.BitmapData"
 		     },
 		     "update": {
-		      "!type": "fn(x: number, y: number, width: number, height: number) -> ?"
+		      "!type": "fn(x: number, y: number, width: number, height: number) -> +Phaser.BitmapData"
 		     },
 		     "processPixelRGB": {
-		      "!type": "fn(callback: fn(), callbackContext: ?, x: number, y: number, width: number, height: number) -> ?"
+		      "!type": "fn(callback: fn(), callbackContext: ?, x: number, y: number, width: number, height: number) -> +Phaser.BitmapData"
 		     },
 		     "processPixel": {
-		      "!type": "fn(callback: fn(), callbackContext: ?, x: number, y: number, width: number, height: number) -> ?"
+		      "!type": "fn(callback: fn(), callbackContext: ?, x: number, y: number, width: number, height: number) -> +Phaser.BitmapData"
 		     },
 		     "replaceRGB": {
-		      "!type": "fn(r1: number, g1: number, b1: number, a1: number, r2: number, g2: number, b2: number, a2: number, region: +Phaser.Rectangle) -> ?"
+		      "!type": "fn(r1: number, g1: number, b1: number, a1: number, r2: number, g2: number, b2: number, a2: number, region: +Phaser.Rectangle) -> +Phaser.BitmapData"
 		     },
 		     "setHSL": {
-		      "!type": "fn(h: number, s: number, l: number, region: +Phaser.Rectangle) -> ?"
+		      "!type": "fn(h: number, s: number, l: number, region: +Phaser.Rectangle) -> +Phaser.BitmapData"
 		     },
 		     "shiftHSL": {
-		      "!type": "fn(h: number, s: number, l: number, region: +Phaser.Rectangle) -> ?"
+		      "!type": "fn(h: number, s: number, l: number, region: +Phaser.Rectangle) -> +Phaser.BitmapData"
 		     },
 		     "setPixel32": {
-		      "!type": "fn(x: number, y: number, red: number, green: number, blue: number, alpha: number, immediate: bool) -> ?"
+		      "!type": "fn(x: number, y: number, red: number, green: number, blue: number, alpha: number, immediate: bool) -> +Phaser.BitmapData"
 		     },
 		     "setPixel": {
-		      "!type": "fn(x: number, y: number, red: number, green: number, blue: number, immediate: bool) -> ?"
+		      "!type": "fn(x: number, y: number, red: number, green: number, blue: number, immediate: bool) -> +Phaser.BitmapData"
 		     },
 		     "getPixel": {
 		      "!type": "fn(x: number, y: number, out: ?) -> ?"
 		     },
 		     "getPixel32": {
-		      "!type": "fn(x: number, y: number) -> ?"
+		      "!type": "fn(x: number, y: number) -> number"
 		     },
 		     "getPixelRGB": {
 		      "!type": "fn(x: number, y: number, out: ?, hsl: bool, hsv: bool) -> ?"
 		     },
 		     "getPixels": {
-		      "!type": "fn(rect: +Phaser.Rectangle) -> ?"
+		      "!type": "fn(rect: +Phaser.Rectangle) -> +ImageData"
 		     },
 		     "getFirstPixel": {
 		      "!type": "fn(direction: number) -> ?"
 		     },
 		     "getBounds": {
-		      "!type": "fn(rect: +Phaser.Rectangle) -> ?"
+		      "!type": "fn(rect: +Phaser.Rectangle) -> +Phaser.Rectangle"
 		     },
 		     "addToWorld": {
-		      "!type": "fn(x: number, y: number, anchorX: number, anchorY: number, scaleX: number, scaleY: number) -> ?"
+		      "!type": "fn(x: number, y: number, anchorX: number, anchorY: number, scaleX: number, scaleY: number) -> +Phaser.Image"
 		     },
 		     "copy": {
-		      "!type": "fn(source: +Phaser.Sprite|+Phaser.Image|+Phaser.Text|+Phaser.BitmapData|+Image|+HTMLCanvasElement|string, x: number, y: number, width: number, height: number, tx: number, ty: number, newWidth: number, newHeight: number, rotate: number, anchorX: number, anchorY: number, scaleX: number, scaleY: number, alpha: number, blendMode: string, roundPx: bool) -> ?"
+		      "!type": "fn(source: +Phaser.Sprite|+Phaser.Image|+Phaser.Text|+Phaser.BitmapData|+Image|+HTMLCanvasElement|string, x: number, y: number, width: number, height: number, tx: number, ty: number, newWidth: number, newHeight: number, rotate: number, anchorX: number, anchorY: number, scaleX: number, scaleY: number, alpha: number, blendMode: string, roundPx: bool) -> +Phaser.BitmapData"
 		     },
 		     "copyRect": {
-		      "!type": "fn(source: +Phaser.Sprite|+Phaser.Image|+Phaser.Text|+Phaser.BitmapData|+Image|string, area: +Phaser.Rectangle, x: number, y: number, alpha: number, blendMode: string, roundPx: bool) -> ?"
+		      "!type": "fn(source: +Phaser.Sprite|+Phaser.Image|+Phaser.Text|+Phaser.BitmapData|+Image|string, area: +Phaser.Rectangle, x: number, y: number, alpha: number, blendMode: string, roundPx: bool) -> +Phaser.BitmapData"
 		     },
 		     "draw": {
-		      "!type": "fn(source: +Phaser.Sprite|+Phaser.Image|+Phaser.Text, x: number, y: number, width: number, height: number, blendMode: string, roundPx: bool) -> ?"
+		      "!type": "fn(source: +Phaser.Sprite|+Phaser.Image|+Phaser.Text, x: number, y: number, width: number, height: number, blendMode: string, roundPx: bool) -> +Phaser.BitmapData"
 		     },
 		     "drawGroup": {
-		      "!type": "fn(group: +Phaser.Group, blendMode: string, roundPx: bool) -> ?"
+		      "!type": "fn(group: +Phaser.Group, blendMode: string, roundPx: bool) -> +Phaser.BitmapData"
 		     },
 		     "drawFull": {
-		      "!type": "fn(parent: +Phaser.World|+Phaser.Group|+Phaser.Sprite|+Phaser.Image|+Phaser.Text|+Phaser.BitmapText, blendMode: string, roundPx: bool) -> ?"
+		      "!type": "fn(parent: +Phaser.World|+Phaser.Group|+Phaser.Sprite|+Phaser.Image|+Phaser.Text|+Phaser.BitmapText, blendMode: string, roundPx: bool) -> +Phaser.BitmapData"
 		     },
 		     "shadow": {
-		      "!type": "fn(color: string, blur: number, x: number, y: number) -> ?"
+		      "!type": "fn(color: string, blur: number, x: number, y: number) -> +Phaser.BitmapData"
 		     },
 		     "alphaMask": {
-		      "!type": "fn(source: +Phaser.Sprite|+Phaser.Image|+Phaser.Text|+Phaser.BitmapData|+Image|+HTMLCanvasElement|string, mask: +Phaser.Sprite|+Phaser.Image|+Phaser.Text|+Phaser.BitmapData|+Image|+HTMLCanvasElement|string, sourceRect: +Phaser.Rectangle, maskRect: +Phaser.Rectangle) -> ?"
+		      "!type": "fn(source: +Phaser.Sprite|+Phaser.Image|+Phaser.Text|+Phaser.BitmapData|+Image|+HTMLCanvasElement|string, mask: +Phaser.Sprite|+Phaser.Image|+Phaser.Text|+Phaser.BitmapData|+Image|+HTMLCanvasElement|string, sourceRect: +Phaser.Rectangle, maskRect: +Phaser.Rectangle) -> +Phaser.BitmapData"
 		     },
 		     "extract": {
-		      "!type": "fn(destination: +Phaser.BitmapData, r: number, g: number, b: number, a: number, resize: bool, r2: number, g2: number, b2: number) -> ?"
+		      "!type": "fn(destination: +Phaser.BitmapData, r: number, g: number, b: number, a: number, resize: bool, r2: number, g2: number, b2: number) -> +Phaser.BitmapData"
 		     },
 		     "rect": {
-		      "!type": "fn(x: number, y: number, width: number, height: number, fillStyle: string) -> ?"
+		      "!type": "fn(x: number, y: number, width: number, height: number, fillStyle: string) -> +Phaser.BitmapData"
 		     },
 		     "text": {
-		      "!type": "fn(text: string, x: number, y: number, font: string, color: string, shadow: bool) -> ?"
+		      "!type": "fn(text: string, x: number, y: number, font: string, color: string, shadow: bool) -> +Phaser.BitmapData"
 		     },
 		     "circle": {
-		      "!type": "fn(x: number, y: number, radius: number, fillStyle: string) -> ?"
+		      "!type": "fn(x: number, y: number, radius: number, fillStyle: string) -> +Phaser.BitmapData"
 		     },
 		     "line": {
-		      "!type": "fn(x1: number, y1: number, x2: number, y2: number, color: string, width: number) -> ?"
+		      "!type": "fn(x1: number, y1: number, x2: number, y2: number, color: string, width: number) -> +Phaser.BitmapData"
 		     },
 		     "textureLine": {
-		      "!type": "fn(line: +Phaser.Line, image: string|+Image, repeat: string) -> ?"
+		      "!type": "fn(line: +Phaser.Line, image: string|+Image, repeat: string) -> +Phaser.BitmapData"
 		     },
 		     "render": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +Phaser.BitmapData"
 		     },
 		     "destroy": {
 		      "!type": "fn()"
 		     },
 		     "blendReset": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +Phaser.BitmapData"
 		     },
 		     "blendSourceOver": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +Phaser.BitmapData"
 		     },
 		     "blendSourceIn": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +Phaser.BitmapData"
 		     },
 		     "blendSourceOut": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +Phaser.BitmapData"
 		     },
 		     "blendSourceAtop": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +Phaser.BitmapData"
 		     },
 		     "blendDestinationOver": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +Phaser.BitmapData"
 		     },
 		     "blendDestinationIn": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +Phaser.BitmapData"
 		     },
 		     "blendDestinationOut": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +Phaser.BitmapData"
 		     },
 		     "blendDestinationAtop": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +Phaser.BitmapData"
 		     },
 		     "blendXor": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +Phaser.BitmapData"
 		     },
 		     "blendAdd": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +Phaser.BitmapData"
 		     },
 		     "blendMultiply": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +Phaser.BitmapData"
 		     },
 		     "blendScreen": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +Phaser.BitmapData"
 		     },
 		     "blendOverlay": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +Phaser.BitmapData"
 		     },
 		     "blendDarken": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +Phaser.BitmapData"
 		     },
 		     "blendLighten": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +Phaser.BitmapData"
 		     },
 		     "blendColorDodge": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +Phaser.BitmapData"
 		     },
 		     "blendColorBurn": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +Phaser.BitmapData"
 		     },
 		     "blendHardLight": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +Phaser.BitmapData"
 		     },
 		     "blendSoftLight": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +Phaser.BitmapData"
 		     },
 		     "blendDifference": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +Phaser.BitmapData"
 		     },
 		     "blendExclusion": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +Phaser.BitmapData"
 		     },
 		     "blendHue": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +Phaser.BitmapData"
 		     },
 		     "blendSaturation": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +Phaser.BitmapData"
 		     },
 		     "blendColor": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +Phaser.BitmapData"
 		     },
 		     "blendLuminosity": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +Phaser.BitmapData"
 		     }
 		    },
 		    "getTransform": {
@@ -3218,7 +3218,7 @@
 		      "!type": "bool"
 		     },
 		     "preUpdate": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> bool"
 		     },
 		     "postUpdate": {
 		      "!type": "fn()"
@@ -3227,7 +3227,7 @@
 		      "!type": "fn(text: string)"
 		     },
 		     "purgeGlyphs": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> number"
 		     },
 		     "align": {
 		      "!type": "string"
@@ -3358,10 +3358,10 @@
 		      "!type": "number"
 		     },
 		     "revive": {
-		      "!type": "fn(health: number) -> ?"
+		      "!type": "fn(health: number) -> +PIXI.DisplayObject"
 		     },
 		     "kill": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +PIXI.DisplayObject"
 		     },
 		     "body": {
 		      "!type": "+Phaser.Physics.Arcade.Body|+Phaser.Physics.P2.Body|+Phaser.Physics.Ninja.Body|+null"
@@ -3373,7 +3373,7 @@
 		      "!type": "number"
 		     },
 		     "reset": {
-		      "!type": "fn(x: number, y: number, health: number) -> ?"
+		      "!type": "fn(x: number, y: number, health: number) -> +PIXI.DisplayObject"
 		     }
 		    }
 		   },
@@ -3529,7 +3529,7 @@
 		      "!type": "number"
 		     },
 		     "play": {
-		      "!type": "fn(name: string, frameRate: number, loop: bool, killOnComplete: bool) -> ?"
+		      "!type": "fn(name: string, frameRate: number, loop: bool, killOnComplete: bool) -> +Phaser.Animation"
 		     },
 		     "autoCull": {
 		      "!type": "bool"
@@ -3556,16 +3556,16 @@
 		      "!type": "number"
 		     },
 		     "bringToTop": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +PIXI.DisplayObject"
 		     },
 		     "sendToBack": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +PIXI.DisplayObject"
 		     },
 		     "moveUp": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +PIXI.DisplayObject"
 		     },
 		     "moveDown": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +PIXI.DisplayObject"
 		     },
 		     "cropRect": {
 		      "!type": "+Phaser.Rectangle"
@@ -3601,10 +3601,10 @@
 		      "!type": "number"
 		     },
 		     "revive": {
-		      "!type": "fn(health: number) -> ?"
+		      "!type": "fn(health: number) -> +PIXI.DisplayObject"
 		     },
 		     "kill": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +PIXI.DisplayObject"
 		     },
 		     "loadTexture": {
 		      "!type": "fn(key: string|+Phaser.RenderTexture|+Phaser.BitmapData|+Phaser.Video|+PIXI.Texture, frame: string|number, stopAnimation: bool)"
@@ -3625,10 +3625,10 @@
 		      "!type": "string"
 		     },
 		     "overlap": {
-		      "!type": "fn(displayObject: +Phaser.Sprite|+Phaser.Image|+Phaser.TileSprite|+Phaser.Button|+PIXI.DisplayObject) -> ?"
+		      "!type": "fn(displayObject: +Phaser.Sprite|+Phaser.Image|+Phaser.TileSprite|+Phaser.Button|+PIXI.DisplayObject) -> bool"
 		     },
 		     "reset": {
-		      "!type": "fn(x: number, y: number, health: number) -> ?"
+		      "!type": "fn(x: number, y: number, health: number) -> +PIXI.DisplayObject"
 		     },
 		     "smoothed": {
 		      "!type": "bool"
@@ -3648,7 +3648,7 @@
 		     "!type": "fn()",
 		     "prototype": {
 		      "play": {
-		       "!type": "fn(name: string, frameRate: number, loop: bool, killOnComplete: bool) -> ?"
+		       "!type": "fn(name: string, frameRate: number, loop: bool, killOnComplete: bool) -> +Phaser.Animation"
 		      }
 		     }
 		    },
@@ -3690,16 +3690,16 @@
 		     "!type": "fn()",
 		     "prototype": {
 		      "bringToTop": {
-		       "!type": "fn() -> ?"
+		       "!type": "fn() -> +PIXI.DisplayObject"
 		      },
 		      "sendToBack": {
-		       "!type": "fn() -> ?"
+		       "!type": "fn() -> +PIXI.DisplayObject"
 		      },
 		      "moveUp": {
-		       "!type": "fn() -> ?"
+		       "!type": "fn() -> +PIXI.DisplayObject"
 		      },
 		      "moveDown": {
-		       "!type": "fn() -> ?"
+		       "!type": "fn() -> +PIXI.DisplayObject"
 		      }
 		     }
 		    },
@@ -3879,10 +3879,10 @@
 		       "!type": "number"
 		      },
 		      "revive": {
-		       "!type": "fn(health: number) -> ?"
+		       "!type": "fn(health: number) -> +PIXI.DisplayObject"
 		      },
 		      "kill": {
-		       "!type": "fn() -> ?"
+		       "!type": "fn() -> +PIXI.DisplayObject"
 		      }
 		     }
 		    },
@@ -3913,7 +3913,7 @@
 		     "!type": "fn()",
 		     "prototype": {
 		      "overlap": {
-		       "!type": "fn(displayObject: +Phaser.Sprite|+Phaser.Image|+Phaser.TileSprite|+Phaser.Button|+PIXI.DisplayObject) -> ?"
+		       "!type": "fn(displayObject: +Phaser.Sprite|+Phaser.Image|+Phaser.TileSprite|+Phaser.Button|+PIXI.DisplayObject) -> bool"
 		      }
 		     }
 		    },
@@ -3941,7 +3941,7 @@
 		     "!type": "fn()",
 		     "prototype": {
 		      "reset": {
-		       "!type": "fn(x: number, y: number, health: number) -> ?"
+		       "!type": "fn(x: number, y: number, health: number) -> +PIXI.DisplayObject"
 		      }
 		     }
 		    },
@@ -4151,16 +4151,16 @@
 		      "!type": "bool"
 		     },
 		     "bringToTop": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +PIXI.DisplayObject"
 		     },
 		     "sendToBack": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +PIXI.DisplayObject"
 		     },
 		     "moveUp": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +PIXI.DisplayObject"
 		     },
 		     "moveDown": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +PIXI.DisplayObject"
 		     },
 		     "destroyPhase": {
 		      "!type": "bool"
@@ -4181,13 +4181,13 @@
 		      "!type": "number"
 		     },
 		     "revive": {
-		      "!type": "fn(health: number) -> ?"
+		      "!type": "fn(health: number) -> +PIXI.DisplayObject"
 		     },
 		     "kill": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +PIXI.DisplayObject"
 		     },
 		     "reset": {
-		      "!type": "fn(x: number, y: number, health: number) -> ?"
+		      "!type": "fn(x: number, y: number, health: number) -> +PIXI.DisplayObject"
 		     }
 		    }
 		   },
@@ -4201,64 +4201,64 @@
 		      "!type": "+Phaser.World"
 		     },
 		     "image": {
-		      "!type": "fn(x: number, y: number, key: string|+Phaser.RenderTexture|+PIXI.Texture, frame: string|number) -> ?"
+		      "!type": "fn(x: number, y: number, key: string|+Phaser.RenderTexture|+PIXI.Texture, frame: string|number) -> +Phaser.Image"
 		     },
 		     "sprite": {
-		      "!type": "fn(x: number, y: number, key: string|+Phaser.RenderTexture|+PIXI.Texture, frame: string|number) -> ?"
+		      "!type": "fn(x: number, y: number, key: string|+Phaser.RenderTexture|+PIXI.Texture, frame: string|number) -> +Phaser.Sprite"
 		     },
 		     "tween": {
-		      "!type": "fn(obj: ?) -> ?"
+		      "!type": "fn(obj: ?) -> +Phaser.Tween"
 		     },
 		     "group": {
-		      "!type": "fn(parent: +any, name: string, addToStage: bool, enableBody: bool, physicsBodyType: number) -> ?"
+		      "!type": "fn(parent: +any, name: string, addToStage: bool, enableBody: bool, physicsBodyType: number) -> +Phaser.Group"
 		     },
 		     "spriteBatch": {
-		      "!type": "fn(parent: +any, name: string, addToStage: bool) -> ?"
+		      "!type": "fn(parent: +any, name: string, addToStage: bool) -> +Phaser.SpriteBatch"
 		     },
 		     "audio": {
-		      "!type": "fn(key: string, volume: number, loop: bool, connect: bool) -> ?"
+		      "!type": "fn(key: string, volume: number, loop: bool, connect: bool) -> +Phaser.Sound"
 		     },
 		     "audioSprite": {
-		      "!type": "fn(key: string) -> ?"
+		      "!type": "fn(key: string) -> +Phaser.AudioSprite"
 		     },
 		     "sound": {
-		      "!type": "fn(key: string, volume: number, loop: bool, connect: bool) -> ?"
+		      "!type": "fn(key: string, volume: number, loop: bool, connect: bool) -> +Phaser.Sound"
 		     },
 		     "tileSprite": {
-		      "!type": "fn(x: number, y: number, width: number, height: number, key: string|+Phaser.RenderTexture|+Phaser.BitmapData|+PIXI.Texture, frame: string|number) -> ?"
+		      "!type": "fn(x: number, y: number, width: number, height: number, key: string|+Phaser.RenderTexture|+Phaser.BitmapData|+PIXI.Texture, frame: string|number) -> +Phaser.TileSprite"
 		     },
 		     "rope": {
-		      "!type": "fn(x: number, y: number, width: number, height: number, key: string|+Phaser.RenderTexture|+Phaser.BitmapData|+PIXI.Texture, frame: string|number) -> ?"
+		      "!type": "fn(x: number, y: number, width: number, height: number, key: string|+Phaser.RenderTexture|+Phaser.BitmapData|+PIXI.Texture, frame: string|number) -> +Phaser.Rope"
 		     },
 		     "text": {
-		      "!type": "fn(x: number, y: number, text: string, style: ?) -> ?"
+		      "!type": "fn(x: number, y: number, text: string, style: ?) -> +Phaser.Text"
 		     },
 		     "button": {
-		      "!type": "fn(x: number, y: number, key: string, callback: fn(), callbackContext: ?, overFrame: string|number, outFrame: string|number, downFrame: string|number, upFrame: string|number) -> ?"
+		      "!type": "fn(x: number, y: number, key: string, callback: fn(), callbackContext: ?, overFrame: string|number, outFrame: string|number, downFrame: string|number, upFrame: string|number) -> +Phaser.Button"
 		     },
 		     "graphics": {
-		      "!type": "fn(x: number, y: number) -> ?"
+		      "!type": "fn(x: number, y: number) -> +Phaser.Graphics"
 		     },
 		     "emitter": {
-		      "!type": "fn(x: number, y: number, maxParticles: number) -> ?"
+		      "!type": "fn(x: number, y: number, maxParticles: number) -> +Phaser.Emitter"
 		     },
 		     "retroFont": {
-		      "!type": "fn(font: string, characterWidth: number, characterHeight: number, chars: string, charsPerRow: number, xSpacing: number, ySpacing: number, xOffset: number, yOffset: number) -> ?"
+		      "!type": "fn(font: string, characterWidth: number, characterHeight: number, chars: string, charsPerRow: number, xSpacing: number, ySpacing: number, xOffset: number, yOffset: number) -> +Phaser.RetroFont"
 		     },
 		     "bitmapText": {
-		      "!type": "fn(x: number, y: number, font: string, text: string, size: number, align: string) -> ?"
+		      "!type": "fn(x: number, y: number, font: string, text: string, size: number, align: string) -> +Phaser.BitmapText"
 		     },
 		     "tilemap": {
 		      "!type": "fn(key: string, tileWidth: number, tileHeight: number, width: number, height: number)"
 		     },
 		     "renderTexture": {
-		      "!type": "fn(width: number, height: number, key: string, addToCache: bool) -> ?"
+		      "!type": "fn(width: number, height: number, key: string, addToCache: bool) -> +Phaser.RenderTexture"
 		     },
 		     "bitmapData": {
-		      "!type": "fn(width: number, height: number, key: string, addToCache: bool) -> ?"
+		      "!type": "fn(width: number, height: number, key: string, addToCache: bool) -> +Phaser.BitmapData"
 		     },
 		     "filter": {
-		      "!type": "fn(filter: string, arg1: +any) -> ?"
+		      "!type": "fn(filter: string, arg1: +any) -> +Phaser.Filter"
 		     }
 		    }
 		   },
@@ -4272,79 +4272,79 @@
 		      "!type": "+Phaser.World"
 		     },
 		     "existing": {
-		      "!type": "fn(object: +any) -> ?"
+		      "!type": "fn(object: +any) -> +any"
 		     },
 		     "image": {
-		      "!type": "fn(x: number, y: number, key: string|+Phaser.RenderTexture|+Phaser.BitmapData|+Phaser.Video|+PIXI.Texture, frame: string|number, group: +Phaser.Group) -> ?"
+		      "!type": "fn(x: number, y: number, key: string|+Phaser.RenderTexture|+Phaser.BitmapData|+Phaser.Video|+PIXI.Texture, frame: string|number, group: +Phaser.Group) -> +Phaser.Image"
 		     },
 		     "sprite": {
-		      "!type": "fn(x: number, y: number, key: string|+Phaser.RenderTexture|+Phaser.BitmapData|+Phaser.Video|+PIXI.Texture, frame: string|number, group: +Phaser.Group) -> ?"
+		      "!type": "fn(x: number, y: number, key: string|+Phaser.RenderTexture|+Phaser.BitmapData|+Phaser.Video|+PIXI.Texture, frame: string|number, group: +Phaser.Group) -> +Phaser.Sprite"
 		     },
 		     "creature": {
-		      "!type": "fn(x: number, y: number, key: string|+PIXI.Texture, group: +Phaser.Group) -> ?"
+		      "!type": "fn(x: number, y: number, key: string|+PIXI.Texture, group: +Phaser.Group) -> +Phaser.Creature"
 		     },
 		     "tween": {
-		      "!type": "fn(object: ?) -> ?"
+		      "!type": "fn(object: ?) -> +Phaser.Tween"
 		     },
 		     "group": {
-		      "!type": "fn(parent: +any, name: string, addToStage: bool, enableBody: bool, physicsBodyType: number) -> ?"
+		      "!type": "fn(parent: +any, name: string, addToStage: bool, enableBody: bool, physicsBodyType: number) -> +Phaser.Group"
 		     },
 		     "physicsGroup": {
-		      "!type": "fn(physicsBodyType: number, parent: +any, name: string, addToStage: bool) -> ?"
+		      "!type": "fn(physicsBodyType: number, parent: +any, name: string, addToStage: bool) -> +Phaser.Group"
 		     },
 		     "spriteBatch": {
-		      "!type": "fn(parent: +Phaser.Group|+null, name: string, addToStage: bool) -> ?"
+		      "!type": "fn(parent: +Phaser.Group|+null, name: string, addToStage: bool) -> +Phaser.SpriteBatch"
 		     },
 		     "audio": {
-		      "!type": "fn(key: string, volume: number, loop: bool, connect: bool) -> ?"
+		      "!type": "fn(key: string, volume: number, loop: bool, connect: bool) -> +Phaser.Sound"
 		     },
 		     "sound": {
-		      "!type": "fn(key: string, volume: number, loop: bool, connect: bool) -> ?"
+		      "!type": "fn(key: string, volume: number, loop: bool, connect: bool) -> +Phaser.Sound"
 		     },
 		     "audioSprite": {
-		      "!type": "fn(key: string) -> ?"
+		      "!type": "fn(key: string) -> +Phaser.AudioSprite"
 		     },
 		     "tileSprite": {
-		      "!type": "fn(x: number, y: number, width: number, height: number, key: string|+Phaser.RenderTexture|+Phaser.BitmapData|+Phaser.Video|+PIXI.Texture, frame: string|number, group: +Phaser.Group) -> ?"
+		      "!type": "fn(x: number, y: number, width: number, height: number, key: string|+Phaser.RenderTexture|+Phaser.BitmapData|+Phaser.Video|+PIXI.Texture, frame: string|number, group: +Phaser.Group) -> +Phaser.TileSprite"
 		     },
 		     "rope": {
-		      "!type": "fn(x: number, y: number, key: string|+Phaser.RenderTexture|+Phaser.BitmapData|+Phaser.Video|+PIXI.Texture, frame: string|number, points: [?], group: +Phaser.Group) -> ?"
+		      "!type": "fn(x: number, y: number, key: string|+Phaser.RenderTexture|+Phaser.BitmapData|+Phaser.Video|+PIXI.Texture, frame: string|number, points: [?], group: +Phaser.Group) -> +Phaser.Rope"
 		     },
 		     "text": {
-		      "!type": "fn(x: number, y: number, text: string, style: ?, group: +Phaser.Group) -> ?"
+		      "!type": "fn(x: number, y: number, text: string, style: ?, group: +Phaser.Group) -> +Phaser.Text"
 		     },
 		     "button": {
-		      "!type": "fn(x: number, y: number, key: string, callback: fn(), callbackContext: ?, overFrame: string|number, outFrame: string|number, downFrame: string|number, upFrame: string|number, group: +Phaser.Group) -> ?"
+		      "!type": "fn(x: number, y: number, key: string, callback: fn(), callbackContext: ?, overFrame: string|number, outFrame: string|number, downFrame: string|number, upFrame: string|number, group: +Phaser.Group) -> +Phaser.Button"
 		     },
 		     "graphics": {
-		      "!type": "fn(x: number, y: number, group: +Phaser.Group) -> ?"
+		      "!type": "fn(x: number, y: number, group: +Phaser.Group) -> +Phaser.Graphics"
 		     },
 		     "emitter": {
-		      "!type": "fn(x: number, y: number, maxParticles: number) -> ?"
+		      "!type": "fn(x: number, y: number, maxParticles: number) -> +Phaser.Particles.Arcade.Emitter"
 		     },
 		     "retroFont": {
-		      "!type": "fn(font: string, characterWidth: number, characterHeight: number, chars: string, charsPerRow: number, xSpacing: number, ySpacing: number, xOffset: number, yOffset: number) -> ?"
+		      "!type": "fn(font: string, characterWidth: number, characterHeight: number, chars: string, charsPerRow: number, xSpacing: number, ySpacing: number, xOffset: number, yOffset: number) -> +Phaser.RetroFont"
 		     },
 		     "bitmapText": {
-		      "!type": "fn(x: number, y: number, font: string, text: string, size: number, group: +Phaser.Group) -> ?"
+		      "!type": "fn(x: number, y: number, font: string, text: string, size: number, group: +Phaser.Group) -> +Phaser.BitmapText"
 		     },
 		     "tilemap": {
-		      "!type": "fn(key: string, tileWidth: number, tileHeight: number, width: number, height: number) -> ?"
+		      "!type": "fn(key: string, tileWidth: number, tileHeight: number, width: number, height: number) -> +Phaser.Tilemap"
 		     },
 		     "renderTexture": {
-		      "!type": "fn(width: number, height: number, key: string, addToCache: bool) -> ?"
+		      "!type": "fn(width: number, height: number, key: string, addToCache: bool) -> +Phaser.RenderTexture"
 		     },
 		     "video": {
-		      "!type": "fn(key: string|+null, url: string|+null) -> ?"
+		      "!type": "fn(key: string|+null, url: string|+null) -> +Phaser.Video"
 		     },
 		     "bitmapData": {
-		      "!type": "fn(width: number, height: number, key: string, addToCache: bool) -> ?"
+		      "!type": "fn(width: number, height: number, key: string, addToCache: bool) -> +Phaser.BitmapData"
 		     },
 		     "filter": {
-		      "!type": "fn(filter: string, arg1: +any) -> ?"
+		      "!type": "fn(filter: string, arg1: +any) -> +Phaser.Filter"
 		     },
 		     "plugin": {
-		      "!type": "fn(plugin: ?|+Phaser.Plugin, parameter: ?) -> ?"
+		      "!type": "fn(plugin: ?|+Phaser.Plugin, parameter: ?) -> +Phaser.Plugin"
 		     }
 		    }
 		   },
@@ -4470,10 +4470,10 @@
 		      "!type": "number"
 		     },
 		     "revive": {
-		      "!type": "fn(health: number) -> ?"
+		      "!type": "fn(health: number) -> +PIXI.DisplayObject"
 		     },
 		     "kill": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +PIXI.DisplayObject"
 		     },
 		     "body": {
 		      "!type": "+Phaser.Physics.Arcade.Body|+Phaser.Physics.P2.Body|+Phaser.Physics.Ninja.Body|+null"
@@ -4485,7 +4485,7 @@
 		      "!type": "number"
 		     },
 		     "reset": {
-		      "!type": "fn(x: number, y: number, health: number) -> ?"
+		      "!type": "fn(x: number, y: number, health: number) -> +PIXI.DisplayObject"
 		     }
 		    }
 		   },
@@ -4557,7 +4557,7 @@
 		      "!type": "number"
 		     },
 		     "play": {
-		      "!type": "fn(name: string, frameRate: number, loop: bool, killOnComplete: bool) -> ?"
+		      "!type": "fn(name: string, frameRate: number, loop: bool, killOnComplete: bool) -> +Phaser.Animation"
 		     },
 		     "autoCull": {
 		      "!type": "bool"
@@ -4584,16 +4584,16 @@
 		      "!type": "number"
 		     },
 		     "bringToTop": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +PIXI.DisplayObject"
 		     },
 		     "sendToBack": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +PIXI.DisplayObject"
 		     },
 		     "moveUp": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +PIXI.DisplayObject"
 		     },
 		     "moveDown": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +PIXI.DisplayObject"
 		     },
 		     "cropRect": {
 		      "!type": "+Phaser.Rectangle"
@@ -4629,10 +4629,10 @@
 		      "!type": "number"
 		     },
 		     "revive": {
-		      "!type": "fn(health: number) -> ?"
+		      "!type": "fn(health: number) -> +PIXI.DisplayObject"
 		     },
 		     "kill": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +PIXI.DisplayObject"
 		     },
 		     "loadTexture": {
 		      "!type": "fn(key: string|+Phaser.RenderTexture|+Phaser.BitmapData|+Phaser.Video|+PIXI.Texture, frame: string|number, stopAnimation: bool)"
@@ -4653,10 +4653,10 @@
 		      "!type": "string"
 		     },
 		     "overlap": {
-		      "!type": "fn(displayObject: +Phaser.Sprite|+Phaser.Image|+Phaser.TileSprite|+Phaser.Button|+PIXI.DisplayObject) -> ?"
+		      "!type": "fn(displayObject: +Phaser.Sprite|+Phaser.Image|+Phaser.TileSprite|+Phaser.Button|+PIXI.DisplayObject) -> bool"
 		     },
 		     "reset": {
-		      "!type": "fn(x: number, y: number, health: number) -> ?"
+		      "!type": "fn(x: number, y: number, health: number) -> +PIXI.DisplayObject"
 		     },
 		     "smoothed": {
 		      "!type": "bool"
@@ -4700,7 +4700,7 @@
 		      "!type": "number"
 		     },
 		     "preUpdate": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> bool"
 		     },
 		     "anchor": {},
 		     "texture": {},
@@ -4758,7 +4758,7 @@
 		      "!type": "number"
 		     },
 		     "play": {
-		      "!type": "fn(name: string, frameRate: number, loop: bool, killOnComplete: bool) -> ?"
+		      "!type": "fn(name: string, frameRate: number, loop: bool, killOnComplete: bool) -> +Phaser.Animation"
 		     },
 		     "autoCull": {
 		      "!type": "bool"
@@ -4785,16 +4785,16 @@
 		      "!type": "number"
 		     },
 		     "bringToTop": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +PIXI.DisplayObject"
 		     },
 		     "sendToBack": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +PIXI.DisplayObject"
 		     },
 		     "moveUp": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +PIXI.DisplayObject"
 		     },
 		     "moveDown": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +PIXI.DisplayObject"
 		     },
 		     "cropRect": {
 		      "!type": "+Phaser.Rectangle"
@@ -4856,10 +4856,10 @@
 		      "!type": "number"
 		     },
 		     "revive": {
-		      "!type": "fn(health: number) -> ?"
+		      "!type": "fn(health: number) -> +PIXI.DisplayObject"
 		     },
 		     "kill": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +PIXI.DisplayObject"
 		     },
 		     "loadTexture": {
 		      "!type": "fn(key: string|+Phaser.RenderTexture|+Phaser.BitmapData|+Phaser.Video|+PIXI.Texture, frame: string|number, stopAnimation: bool)"
@@ -4880,7 +4880,7 @@
 		      "!type": "string"
 		     },
 		     "overlap": {
-		      "!type": "fn(displayObject: +Phaser.Sprite|+Phaser.Image|+Phaser.TileSprite|+Phaser.Button|+PIXI.DisplayObject) -> ?"
+		      "!type": "fn(displayObject: +Phaser.Sprite|+Phaser.Image|+Phaser.TileSprite|+Phaser.Button|+PIXI.DisplayObject) -> bool"
 		     },
 		     "body": {
 		      "!type": "+Phaser.Physics.Arcade.Body|+Phaser.Physics.P2.Body|+Phaser.Physics.Ninja.Body|+null"
@@ -4999,10 +4999,10 @@
 		      "!type": "fn(line: string, x: number, y: number, customSpacingX: number)"
 		     },
 		     "getLongestLine": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> number"
 		     },
 		     "removeUnsupportedCharacters": {
-		      "!type": "fn(stripCR: bool) -> ?"
+		      "!type": "fn(stripCR: bool) -> string"
 		     },
 		     "updateOffset": {
 		      "!type": "fn(xOffset: number, yOffset: number)"
@@ -5143,7 +5143,7 @@
 		      "!type": "number"
 		     },
 		     "play": {
-		      "!type": "fn(name: string, frameRate: number, loop: bool, killOnComplete: bool) -> ?"
+		      "!type": "fn(name: string, frameRate: number, loop: bool, killOnComplete: bool) -> +Phaser.Animation"
 		     },
 		     "autoCull": {
 		      "!type": "bool"
@@ -5170,16 +5170,16 @@
 		      "!type": "number"
 		     },
 		     "bringToTop": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +PIXI.DisplayObject"
 		     },
 		     "sendToBack": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +PIXI.DisplayObject"
 		     },
 		     "moveUp": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +PIXI.DisplayObject"
 		     },
 		     "moveDown": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +PIXI.DisplayObject"
 		     },
 		     "cropRect": {
 		      "!type": "+Phaser.Rectangle"
@@ -5233,10 +5233,10 @@
 		      "!type": "number"
 		     },
 		     "revive": {
-		      "!type": "fn(health: number) -> ?"
+		      "!type": "fn(health: number) -> +PIXI.DisplayObject"
 		     },
 		     "kill": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +PIXI.DisplayObject"
 		     },
 		     "loadTexture": {
 		      "!type": "fn(key: string|+Phaser.RenderTexture|+Phaser.BitmapData|+Phaser.Video|+PIXI.Texture, frame: string|number, stopAnimation: bool)"
@@ -5257,7 +5257,7 @@
 		      "!type": "string"
 		     },
 		     "overlap": {
-		      "!type": "fn(displayObject: +Phaser.Sprite|+Phaser.Image|+Phaser.TileSprite|+Phaser.Button|+PIXI.DisplayObject) -> ?"
+		      "!type": "fn(displayObject: +Phaser.Sprite|+Phaser.Image|+Phaser.TileSprite|+Phaser.Button|+PIXI.DisplayObject) -> bool"
 		     },
 		     "body": {
 		      "!type": "+Phaser.Physics.Arcade.Body|+Phaser.Physics.P2.Body|+Phaser.Physics.Ninja.Body|+null"
@@ -5296,7 +5296,7 @@
 		      "!type": "number"
 		     },
 		     "preUpdate": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> bool"
 		     },
 		     "anchor": {},
 		     "texture": {},
@@ -5357,7 +5357,7 @@
 		      "!type": "number"
 		     },
 		     "play": {
-		      "!type": "fn(name: string, frameRate: number, loop: bool, killOnComplete: bool) -> ?"
+		      "!type": "fn(name: string, frameRate: number, loop: bool, killOnComplete: bool) -> +Phaser.Animation"
 		     },
 		     "autoCull": {
 		      "!type": "bool"
@@ -5384,16 +5384,16 @@
 		      "!type": "number"
 		     },
 		     "bringToTop": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +PIXI.DisplayObject"
 		     },
 		     "sendToBack": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +PIXI.DisplayObject"
 		     },
 		     "moveUp": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +PIXI.DisplayObject"
 		     },
 		     "moveDown": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +PIXI.DisplayObject"
 		     },
 		     "cropRect": {
 		      "!type": "+Phaser.Rectangle"
@@ -5455,10 +5455,10 @@
 		      "!type": "number"
 		     },
 		     "revive": {
-		      "!type": "fn(health: number) -> ?"
+		      "!type": "fn(health: number) -> +PIXI.DisplayObject"
 		     },
 		     "kill": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +PIXI.DisplayObject"
 		     },
 		     "loadTexture": {
 		      "!type": "fn(key: string|+Phaser.RenderTexture|+Phaser.BitmapData|+Phaser.Video|+PIXI.Texture, frame: string|number, stopAnimation: bool)"
@@ -5479,7 +5479,7 @@
 		      "!type": "string"
 		     },
 		     "overlap": {
-		      "!type": "fn(displayObject: +Phaser.Sprite|+Phaser.Image|+Phaser.TileSprite|+Phaser.Button|+PIXI.DisplayObject) -> ?"
+		      "!type": "fn(displayObject: +Phaser.Sprite|+Phaser.Image|+Phaser.TileSprite|+Phaser.Button|+PIXI.DisplayObject) -> bool"
 		     },
 		     "body": {
 		      "!type": "+Phaser.Physics.Arcade.Body|+Phaser.Physics.P2.Body|+Phaser.Physics.Ninja.Body|+null"
@@ -5491,7 +5491,7 @@
 		      "!type": "number"
 		     },
 		     "reset": {
-		      "!type": "fn(x: number, y: number, health: number) -> ?"
+		      "!type": "fn(x: number, y: number, health: number) -> +PIXI.DisplayObject"
 		     },
 		     "transformCallback": {
 		      "!type": "fn()"
@@ -5573,25 +5573,25 @@
 		      "!type": "+array"
 		     },
 		     "add": {
-		      "!type": "fn(child: +DisplayObject, silent: bool) -> ?"
+		      "!type": "fn(child: +DisplayObject, silent: bool) -> +DisplayObject"
 		     },
 		     "addToHash": {
-		      "!type": "fn(child: +DisplayObject) -> ?"
+		      "!type": "fn(child: +DisplayObject) -> bool"
 		     },
 		     "removeFromHash": {
-		      "!type": "fn(child: +DisplayObject) -> ?"
+		      "!type": "fn(child: +DisplayObject) -> bool"
 		     },
 		     "addMultiple": {
-		      "!type": "fn(children: [?]|+Phaser.Group, silent: bool) -> ?"
+		      "!type": "fn(children: [?]|+Phaser.Group, silent: bool) -> [?]|+Phaser.Group"
 		     },
 		     "addAt": {
-		      "!type": "fn(child: +DisplayObject, index: number, silent: bool) -> ?"
+		      "!type": "fn(child: +DisplayObject, index: number, silent: bool) -> +DisplayObject"
 		     },
 		     "getAt": {
-		      "!type": "fn(index: number) -> ?"
+		      "!type": "fn(index: number) -> +DisplayObject|number"
 		     },
 		     "create": {
-		      "!type": "fn(x: number, y: number, key: string, frame: number|string, exists: bool) -> ?"
+		      "!type": "fn(x: number, y: number, key: string, frame: number|string, exists: bool) -> +DisplayObject"
 		     },
 		     "createMultiple": {
 		      "!type": "fn(quantity: number, key: string, frame: number|string, exists: bool)"
@@ -5600,28 +5600,28 @@
 		      "!type": "fn()"
 		     },
 		     "resetCursor": {
-		      "!type": "fn(index: number) -> ?"
+		      "!type": "fn(index: number) -> +any"
 		     },
 		     "next": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +any"
 		     },
 		     "previous": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +any"
 		     },
 		     "swap": {
 		      "!type": "fn(child1: +any, child2: +any)"
 		     },
 		     "bringToTop": {
-		      "!type": "fn(child: +any) -> ?"
+		      "!type": "fn(child: +any) -> +any"
 		     },
 		     "sendToBack": {
-		      "!type": "fn(child: +any) -> ?"
+		      "!type": "fn(child: +any) -> +any"
 		     },
 		     "moveUp": {
-		      "!type": "fn(child: +any) -> ?"
+		      "!type": "fn(child: +any) -> +any"
 		     },
 		     "moveDown": {
-		      "!type": "fn(child: +any) -> ?"
+		      "!type": "fn(child: +any) -> +any"
 		     },
 		     "xy": {
 		      "!type": "fn(index: number, x: number, y: number)"
@@ -5630,22 +5630,22 @@
 		      "!type": "fn()"
 		     },
 		     "getIndex": {
-		      "!type": "fn(child: +any) -> ?"
+		      "!type": "fn(child: +any) -> number"
 		     },
 		     "replace": {
-		      "!type": "fn(oldChild: +any, newChild: +any) -> ?"
+		      "!type": "fn(oldChild: +any, newChild: +any) -> +any"
 		     },
 		     "hasProperty": {
-		      "!type": "fn(child: +any, key: [?]) -> ?"
+		      "!type": "fn(child: +any, key: [?]) -> bool"
 		     },
 		     "setProperty": {
-		      "!type": "fn(child: +any, key: +array, value: +any, operation: number, force: bool) -> ?"
+		      "!type": "fn(child: +any, key: +array, value: +any, operation: number, force: bool) -> bool"
 		     },
 		     "checkProperty": {
-		      "!type": "fn(child: +any, key: +array, value: +any, force: bool) -> ?"
+		      "!type": "fn(child: +any, key: +array, value: +any, force: bool) -> bool"
 		     },
 		     "set": {
-		      "!type": "fn(child: +Phaser.Sprite, key: string, value: +any, checkAlive: bool, checkVisible: bool, operation: number, force: bool) -> ?"
+		      "!type": "fn(child: +Phaser.Sprite, key: string, value: +any, checkAlive: bool, checkVisible: bool, operation: number, force: bool) -> bool"
 		     },
 		     "setAll": {
 		      "!type": "fn(key: string, value: +any, checkAlive: bool, checkVisible: bool, operation: number, force: bool)"
@@ -5687,7 +5687,7 @@
 		      "!type": "fn()"
 		     },
 		     "filter": {
-		      "!type": "fn(predicate: fn(), checkExists: bool) -> ?"
+		      "!type": "fn(predicate: fn(), checkExists: bool) -> +Phaser.ArraySet"
 		     },
 		     "forEach": {
 		      "!type": "fn(callback: fn(), callbackContext: ?, checkExists: bool, args: +any)"
@@ -5714,37 +5714,37 @@
 		      "!type": "fn(a: ?, b: ?)"
 		     },
 		     "iterate": {
-		      "!type": "fn(key: string, value: +any, returnType: number, callback: fn(), callbackContext: ?, args: [?]) -> ?"
+		      "!type": "fn(key: string, value: +any, returnType: number, callback: fn(), callbackContext: ?, args: [?]) -> +any"
 		     },
 		     "getFirstExists": {
-		      "!type": "fn(exists: bool) -> ?"
+		      "!type": "fn(exists: bool) -> +any"
 		     },
 		     "getFirstAlive": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +any"
 		     },
 		     "getFirstDead": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +any"
 		     },
 		     "getTop": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +any"
 		     },
 		     "getBottom": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +any"
 		     },
 		     "countLiving": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> number"
 		     },
 		     "countDead": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> number"
 		     },
 		     "getRandom": {
-		      "!type": "fn(startIndex: number, length: number) -> ?"
+		      "!type": "fn(startIndex: number, length: number) -> +any"
 		     },
 		     "remove": {
-		      "!type": "fn(child: +any, destroy: bool, silent: bool) -> ?"
+		      "!type": "fn(child: +any, destroy: bool, silent: bool) -> bool"
 		     },
 		     "moveAll": {
-		      "!type": "fn(group: +Phaser.Group, silent: bool) -> ?"
+		      "!type": "fn(group: +Phaser.Group, silent: bool) -> +Phaser.Group"
 		     },
 		     "removeAll": {
 		      "!type": "fn(destroy: bool, silent: bool)"
@@ -5828,43 +5828,43 @@
 		      "!type": "fn(destroyChildren: bool)"
 		     },
 		     "setShadow": {
-		      "!type": "fn(x: number, y: number, color: string, blur: number, shadowStroke: bool, shadowFill: bool) -> ?"
+		      "!type": "fn(x: number, y: number, color: string, blur: number, shadowStroke: bool, shadowFill: bool) -> +Phaser.Text"
 		     },
 		     "setStyle": {
-		      "!type": "fn(style: +PhaserTextsetStyleStyle) -> ?"
+		      "!type": "fn(style: +PhaserTextsetStyleStyle) -> +Phaser.Text"
 		     },
 		     "updateShadow": {
 		      "!type": "fn(state: bool)"
 		     },
 		     "clearColors": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +Phaser.Text"
 		     },
 		     "clearFontValues": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +Phaser.Text"
 		     },
 		     "addColor": {
-		      "!type": "fn(color: string, position: number) -> ?"
+		      "!type": "fn(color: string, position: number) -> +Phaser.Text"
 		     },
 		     "addStrokeColor": {
-		      "!type": "fn(color: string, position: number) -> ?"
+		      "!type": "fn(color: string, position: number) -> +Phaser.Text"
 		     },
 		     "addFontStyle": {
-		      "!type": "fn(style: string, position: number) -> ?"
+		      "!type": "fn(style: string, position: number) -> +Phaser.Text"
 		     },
 		     "addFontWeight": {
-		      "!type": "fn(style: string, position: number) -> ?"
+		      "!type": "fn(style: string, position: number) -> +Phaser.Text"
 		     },
 		     "setText": {
-		      "!type": "fn(text: string) -> ?"
+		      "!type": "fn(text: string) -> +Phaser.Text"
 		     },
 		     "parseList": {
-		      "!type": "fn(list: +array) -> ?"
+		      "!type": "fn(list: +array) -> +Phaser.Text"
 		     },
 		     "setTextBounds": {
-		      "!type": "fn(x: number, y: number, width: number, height: number) -> ?"
+		      "!type": "fn(x: number, y: number, width: number, height: number) -> +Phaser.Text"
 		     },
 		     "getBounds": {
-		      "!type": "fn(matrix: +Phaser.Matrix) -> ?"
+		      "!type": "fn(matrix: +Phaser.Matrix) -> +Phaser.Rectangle"
 		     },
 		     "text": {
 		      "!type": "string"
@@ -5998,7 +5998,7 @@
 		      "!type": "number"
 		     },
 		     "play": {
-		      "!type": "fn(name: string, frameRate: number, loop: bool, killOnComplete: bool) -> ?"
+		      "!type": "fn(name: string, frameRate: number, loop: bool, killOnComplete: bool) -> +Phaser.Animation"
 		     },
 		     "autoCull": {
 		      "!type": "bool"
@@ -6025,16 +6025,16 @@
 		      "!type": "number"
 		     },
 		     "bringToTop": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +PIXI.DisplayObject"
 		     },
 		     "sendToBack": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +PIXI.DisplayObject"
 		     },
 		     "moveUp": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +PIXI.DisplayObject"
 		     },
 		     "moveDown": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +PIXI.DisplayObject"
 		     },
 		     "cropRect": {
 		      "!type": "+Phaser.Rectangle"
@@ -6093,10 +6093,10 @@
 		      "!type": "number"
 		     },
 		     "revive": {
-		      "!type": "fn(health: number) -> ?"
+		      "!type": "fn(health: number) -> +PIXI.DisplayObject"
 		     },
 		     "kill": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +PIXI.DisplayObject"
 		     },
 		     "loadTexture": {
 		      "!type": "fn(key: string|+Phaser.RenderTexture|+Phaser.BitmapData|+Phaser.Video|+PIXI.Texture, frame: string|number, stopAnimation: bool)"
@@ -6117,7 +6117,7 @@
 		      "!type": "string"
 		     },
 		     "overlap": {
-		      "!type": "fn(displayObject: +Phaser.Sprite|+Phaser.Image|+Phaser.TileSprite|+Phaser.Button|+PIXI.DisplayObject) -> ?"
+		      "!type": "fn(displayObject: +Phaser.Sprite|+Phaser.Image|+Phaser.TileSprite|+Phaser.Button|+PIXI.DisplayObject) -> bool"
 		     },
 		     "body": {
 		      "!type": "+Phaser.Physics.Arcade.Body|+Phaser.Physics.P2.Body|+Phaser.Physics.Ninja.Body|+null"
@@ -6129,7 +6129,7 @@
 		      "!type": "number"
 		     },
 		     "reset": {
-		      "!type": "fn(x: number, y: number, health: number) -> ?"
+		      "!type": "fn(x: number, y: number, health: number) -> +PIXI.DisplayObject"
 		     },
 		     "transformCallback": {
 		      "!type": "fn()"
@@ -6239,7 +6239,7 @@
 		      "!type": "number"
 		     },
 		     "play": {
-		      "!type": "fn(name: string, frameRate: number, loop: bool, killOnComplete: bool) -> ?"
+		      "!type": "fn(name: string, frameRate: number, loop: bool, killOnComplete: bool) -> +Phaser.Animation"
 		     },
 		     "autoCull": {
 		      "!type": "bool"
@@ -6266,16 +6266,16 @@
 		      "!type": "number"
 		     },
 		     "bringToTop": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +PIXI.DisplayObject"
 		     },
 		     "sendToBack": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +PIXI.DisplayObject"
 		     },
 		     "moveUp": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +PIXI.DisplayObject"
 		     },
 		     "moveDown": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +PIXI.DisplayObject"
 		     },
 		     "destroyPhase": {
 		      "!type": "bool"
@@ -6316,10 +6316,10 @@
 		      "!type": "number"
 		     },
 		     "revive": {
-		      "!type": "fn(health: number) -> ?"
+		      "!type": "fn(health: number) -> +PIXI.DisplayObject"
 		     },
 		     "kill": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +PIXI.DisplayObject"
 		     },
 		     "loadTexture": {
 		      "!type": "fn(key: string|+Phaser.RenderTexture|+Phaser.BitmapData|+Phaser.Video|+PIXI.Texture, frame: string|number, stopAnimation: bool)"
@@ -6340,7 +6340,7 @@
 		      "!type": "string"
 		     },
 		     "overlap": {
-		      "!type": "fn(displayObject: +Phaser.Sprite|+Phaser.Image|+Phaser.TileSprite|+Phaser.Button|+PIXI.DisplayObject) -> ?"
+		      "!type": "fn(displayObject: +Phaser.Sprite|+Phaser.Image|+Phaser.TileSprite|+Phaser.Button|+PIXI.DisplayObject) -> bool"
 		     },
 		     "body": {
 		      "!type": "+Phaser.Physics.Arcade.Body|+Phaser.Physics.P2.Body|+Phaser.Physics.Ninja.Body|+null"
@@ -6429,16 +6429,16 @@
 		      "!type": "+Phaser.BitmapData"
 		     },
 		     "connectToMediaStream": {
-		      "!type": "fn(video: +HTMLVideoElement, stream: +MediaStream) -> ?"
+		      "!type": "fn(video: +HTMLVideoElement, stream: +MediaStream) -> +Phaser.Video"
 		     },
 		     "startMediaStream": {
-		      "!type": "fn(captureAudio: bool, width: number, height: number) -> ?"
+		      "!type": "fn(captureAudio: bool, width: number, height: number) -> +Phaser.Video"
 		     },
 		     "createVideoFromBlob": {
-		      "!type": "fn(blob: +Blob) -> ?"
+		      "!type": "fn(blob: +Blob) -> +Phaser.Video"
 		     },
 		     "createVideoFromURL": {
-		      "!type": "fn(url: string, autoplay: bool) -> ?"
+		      "!type": "fn(url: string, autoplay: bool) -> +Phaser.Video"
 		     },
 		     "updateTexture": {
 		      "!type": "fn(event: ?, width: number, height: number)"
@@ -6447,22 +6447,22 @@
 		      "!type": "fn()"
 		     },
 		     "play": {
-		      "!type": "fn(loop: bool, playbackRate: number) -> ?"
+		      "!type": "fn(loop: bool, playbackRate: number) -> +Phaser.Video"
 		     },
 		     "stop": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +Phaser.Video"
 		     },
 		     "add": {
-		      "!type": "fn(object: +Phaser.Sprite|[?]|+Phaser.Image|[?]) -> ?"
+		      "!type": "fn(object: +Phaser.Sprite|[?]|+Phaser.Image|[?]) -> +Phaser.Video"
 		     },
 		     "addToWorld": {
-		      "!type": "fn(x: number, y: number, anchorX: number, anchorY: number, scaleX: number, scaleY: number) -> ?"
+		      "!type": "fn(x: number, y: number, anchorX: number, anchorY: number, scaleX: number, scaleY: number) -> +Phaser.Image"
 		     },
 		     "render": {
 		      "!type": "fn()"
 		     },
 		     "changeSource": {
-		      "!type": "fn(src: string, autoplay: bool) -> ?"
+		      "!type": "fn(src: string, autoplay: bool) -> +Phaser.Video"
 		     },
 		     "setTouchLock": {
 		      "!type": "fn()"
@@ -6471,7 +6471,7 @@
 		      "!type": "fn()"
 		     },
 		     "grab": {
-		      "!type": "fn(clear: bool, alpha: number, blendMode: string) -> ?"
+		      "!type": "fn(clear: bool, alpha: number, blendMode: string) -> +Phaser.BitmapData"
 		     },
 		     "removeVideoElement": {
 		      "!type": "fn()"
@@ -6512,40 +6512,40 @@
 		      "!type": "number"
 		     },
 		     "circumference": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> number"
 		     },
 		     "random": {
-		      "!type": "fn(out: +Phaser.Point|?) -> ?"
+		      "!type": "fn(out: +Phaser.Point|?) -> +Phaser.Point"
 		     },
 		     "getBounds": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +Phaser.Rectangle"
 		     },
 		     "setTo": {
-		      "!type": "fn(x: number, y: number, diameter: number) -> ?"
+		      "!type": "fn(x: number, y: number, diameter: number) -> +Circle"
 		     },
 		     "copyFrom": {
-		      "!type": "fn(source: +any) -> ?"
+		      "!type": "fn(source: +any) -> +Circle"
 		     },
 		     "copyTo": {
 		      "!type": "fn(dest: +any) -> ?"
 		     },
 		     "distance": {
-		      "!type": "fn(dest: ?, round: bool) -> ?"
+		      "!type": "fn(dest: ?, round: bool) -> number"
 		     },
 		     "clone": {
-		      "!type": "fn(output: +Phaser.Circle) -> ?"
+		      "!type": "fn(output: +Phaser.Circle) -> +Phaser.Circle"
 		     },
 		     "contains": {
-		      "!type": "fn(x: number, y: number) -> ?"
+		      "!type": "fn(x: number, y: number) -> bool"
 		     },
 		     "circumferencePoint": {
-		      "!type": "fn(angle: number, asDegrees: bool, out: +Phaser.Point) -> ?"
+		      "!type": "fn(angle: number, asDegrees: bool, out: +Phaser.Point) -> +Phaser.Point"
 		     },
 		     "offset": {
-		      "!type": "fn(dx: number, dy: number) -> ?"
+		      "!type": "fn(dx: number, dy: number) -> +Circle"
 		     },
 		     "offsetPoint": {
-		      "!type": "fn(point: +Point) -> ?"
+		      "!type": "fn(point: +Point) -> +Circle"
 		     },
 		     "diameter": {
 		      "!type": "number"
@@ -6571,19 +6571,19 @@
 		     }
 		    },
 		    "contains": {
-		     "!type": "fn(a: +Phaser.Circle, x: number, y: number) -> ?"
+		     "!type": "fn(a: +Phaser.Circle, x: number, y: number) -> bool"
 		    },
 		    "equals": {
-		     "!type": "fn(a: +Phaser.Circle, b: +Phaser.Circle) -> ?"
+		     "!type": "fn(a: +Phaser.Circle, b: +Phaser.Circle) -> bool"
 		    },
 		    "intersects": {
-		     "!type": "fn(a: +Phaser.Circle, b: +Phaser.Circle) -> ?"
+		     "!type": "fn(a: +Phaser.Circle, b: +Phaser.Circle) -> bool"
 		    },
 		    "circumferencePoint": {
-		     "!type": "fn(a: +Phaser.Circle, angle: number, asDegrees: bool, out: +Phaser.Point) -> ?"
+		     "!type": "fn(a: +Phaser.Circle, angle: number, asDegrees: bool, out: +Phaser.Point) -> +Phaser.Point"
 		    },
 		    "intersectsRectangle": {
-		     "!type": "fn(c: +Phaser.Circle, r: +Phaser.Rectangle) -> ?"
+		     "!type": "fn(c: +Phaser.Circle, r: +Phaser.Rectangle) -> bool"
 		    }
 		   },
 		   "Ellipse": {
@@ -6605,25 +6605,25 @@
 		      "!type": "number"
 		     },
 		     "setTo": {
-		      "!type": "fn(x: number, y: number, width: number, height: number) -> ?"
+		      "!type": "fn(x: number, y: number, width: number, height: number) -> +Phaser.Ellipse"
 		     },
 		     "getBounds": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +Phaser.Rectangle"
 		     },
 		     "copyFrom": {
-		      "!type": "fn(source: +any) -> ?"
+		      "!type": "fn(source: +any) -> +Phaser.Ellipse"
 		     },
 		     "copyTo": {
 		      "!type": "fn(dest: +any) -> ?"
 		     },
 		     "clone": {
-		      "!type": "fn(output: +Phaser.Ellipse) -> ?"
+		      "!type": "fn(output: +Phaser.Ellipse) -> +Phaser.Ellipse"
 		     },
 		     "contains": {
-		      "!type": "fn(x: number, y: number) -> ?"
+		      "!type": "fn(x: number, y: number) -> bool"
 		     },
 		     "random": {
-		      "!type": "fn(out: +Phaser.Point|?) -> ?"
+		      "!type": "fn(out: +Phaser.Point|?) -> +Phaser.Point"
 		     },
 		     "left": {},
 		     "right": {
@@ -6640,7 +6640,7 @@
 		     }
 		    },
 		    "contains": {
-		     "!type": "fn(a: +Phaser.Ellipse, x: number, y: number) -> ?"
+		     "!type": "fn(a: +Phaser.Ellipse, x: number, y: number) -> bool"
 		    }
 		   },
 		   "Line": {
@@ -6656,46 +6656,46 @@
 		      "!type": "number"
 		     },
 		     "setTo": {
-		      "!type": "fn(x1: number, y1: number, x2: number, y2: number) -> ?"
+		      "!type": "fn(x1: number, y1: number, x2: number, y2: number) -> +Phaser.Line"
 		     },
 		     "fromSprite": {
-		      "!type": "fn(startSprite: +Phaser.Sprite, endSprite: +Phaser.Sprite, useCenter: bool) -> ?"
+		      "!type": "fn(startSprite: +Phaser.Sprite, endSprite: +Phaser.Sprite, useCenter: bool) -> +Phaser.Line"
 		     },
 		     "fromAngle": {
-		      "!type": "fn(x: number, y: number, angle: number, length: number) -> ?"
+		      "!type": "fn(x: number, y: number, angle: number, length: number) -> +Phaser.Line"
 		     },
 		     "rotate": {
-		      "!type": "fn(angle: number, asDegrees: bool) -> ?"
+		      "!type": "fn(angle: number, asDegrees: bool) -> +Phaser.Line"
 		     },
 		     "rotateAround": {
-		      "!type": "fn(angle: number, asDegrees: bool) -> ?"
+		      "!type": "fn(angle: number, asDegrees: bool) -> +Phaser.Line"
 		     },
 		     "intersects": {
-		      "!type": "fn(line: +Phaser.Line, asSegment: bool, result: +Phaser.Point) -> ?"
+		      "!type": "fn(line: +Phaser.Line, asSegment: bool, result: +Phaser.Point) -> +Phaser.Point"
 		     },
 		     "reflect": {
-		      "!type": "fn(line: +Phaser.Line) -> ?"
+		      "!type": "fn(line: +Phaser.Line) -> number"
 		     },
 		     "midPoint": {
-		      "!type": "fn(out: +Phaser.Point) -> ?"
+		      "!type": "fn(out: +Phaser.Point) -> +Phaser.Point"
 		     },
 		     "centerOn": {
-		      "!type": "fn(x: number, y: number) -> ?"
+		      "!type": "fn(x: number, y: number) -> +Phaser.Line"
 		     },
 		     "pointOnLine": {
-		      "!type": "fn(x: number, y: number) -> ?"
+		      "!type": "fn(x: number, y: number) -> bool"
 		     },
 		     "pointOnSegment": {
-		      "!type": "fn(x: number, y: number) -> ?"
+		      "!type": "fn(x: number, y: number) -> bool"
 		     },
 		     "random": {
-		      "!type": "fn(out: +Phaser.Point|?) -> ?"
+		      "!type": "fn(out: +Phaser.Point|?) -> +Phaser.Point"
 		     },
 		     "coordinatesOnLine": {
-		      "!type": "fn(stepRate: number, results: +array) -> ?"
+		      "!type": "fn(stepRate: number, results: +array) -> +array"
 		     },
 		     "clone": {
-		      "!type": "fn(output: +Phaser.Line) -> ?"
+		      "!type": "fn(output: +Phaser.Line) -> +Phaser.Line"
 		     },
 		     "length": {
 		      "!type": "number"
@@ -6744,13 +6744,13 @@
 		     }
 		    },
 		    "intersectsPoints": {
-		     "!type": "fn(a: +Phaser.Point, b: +Phaser.Point, e: +Phaser.Point, f: +Phaser.Point, asSegment: bool, result: +Phaser.Point|?) -> ?"
+		     "!type": "fn(a: +Phaser.Point, b: +Phaser.Point, e: +Phaser.Point, f: +Phaser.Point, asSegment: bool, result: +Phaser.Point|?) -> +Phaser.Point"
 		    },
 		    "intersects": {
-		     "!type": "fn(a: +Phaser.Line, b: +Phaser.Line, asSegment: bool, result: +Phaser.Point) -> ?"
+		     "!type": "fn(a: +Phaser.Line, b: +Phaser.Line, asSegment: bool, result: +Phaser.Point) -> +Phaser.Point"
 		    },
 		    "reflect": {
-		     "!type": "fn(a: +Phaser.Line, b: +Phaser.Line) -> ?"
+		     "!type": "fn(a: +Phaser.Line, b: +Phaser.Line) -> number"
 		    }
 		   },
 		   "Matrix": {
@@ -6778,43 +6778,43 @@
 		      "!type": "number"
 		     },
 		     "fromArray": {
-		      "!type": "fn(array: [?]) -> ?"
+		      "!type": "fn(array: [?]) -> +Phaser.Matrix"
 		     },
 		     "setTo": {
-		      "!type": "fn(a: number, b: number, c: number, d: number, tx: number, ty: number) -> ?"
+		      "!type": "fn(a: number, b: number, c: number, d: number, tx: number, ty: number) -> +Phaser.Matrix"
 		     },
 		     "clone": {
-		      "!type": "fn(output: +Phaser.Matrix) -> ?"
+		      "!type": "fn(output: +Phaser.Matrix) -> +Phaser.Matrix"
 		     },
 		     "copyTo": {
-		      "!type": "fn(matrix: +Phaser.Matrix) -> ?"
+		      "!type": "fn(matrix: +Phaser.Matrix) -> +Phaser.Matrix"
 		     },
 		     "copyFrom": {
-		      "!type": "fn(matrix: +Phaser.Matrix) -> ?"
+		      "!type": "fn(matrix: +Phaser.Matrix) -> +Phaser.Matrix"
 		     },
 		     "toArray": {
-		      "!type": "fn(transpose: bool, array: +PIXI.Float32Array) -> ?"
+		      "!type": "fn(transpose: bool, array: +PIXI.Float32Array) -> +PIXI.Float32Array"
 		     },
 		     "apply": {
-		      "!type": "fn(pos: +Phaser.Point, newPos: +Phaser.Point) -> ?"
+		      "!type": "fn(pos: +Phaser.Point, newPos: +Phaser.Point) -> +Phaser.Point"
 		     },
 		     "applyInverse": {
-		      "!type": "fn(pos: +Phaser.Point, newPos: +Phaser.Point) -> ?"
+		      "!type": "fn(pos: +Phaser.Point, newPos: +Phaser.Point) -> +Phaser.Point"
 		     },
 		     "translate": {
-		      "!type": "fn(x: number, y: number) -> ?"
+		      "!type": "fn(x: number, y: number) -> +Phaser.Matrix"
 		     },
 		     "scale": {
-		      "!type": "fn(x: number, y: number) -> ?"
+		      "!type": "fn(x: number, y: number) -> +Phaser.Matrix"
 		     },
 		     "rotate": {
-		      "!type": "fn(angle: number) -> ?"
+		      "!type": "fn(angle: number) -> +Phaser.Matrix"
 		     },
 		     "append": {
-		      "!type": "fn(matrix: +Phaser.Matrix) -> ?"
+		      "!type": "fn(matrix: +Phaser.Matrix) -> +Phaser.Matrix"
 		     },
 		     "identity": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +Phaser.Matrix"
 		     }
 		    }
 		   },
@@ -6831,149 +6831,149 @@
 		      "!type": "number"
 		     },
 		     "copyFrom": {
-		      "!type": "fn(source: +any) -> ?"
+		      "!type": "fn(source: +any) -> +Phaser.Point"
 		     },
 		     "invert": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +Phaser.Point"
 		     },
 		     "setTo": {
-		      "!type": "fn(x: number, y: number) -> ?"
+		      "!type": "fn(x: number, y: number) -> +Phaser.Point"
 		     },
 		     "set": {
-		      "!type": "fn(x: number, y: number) -> ?"
+		      "!type": "fn(x: number, y: number) -> +Phaser.Point"
 		     },
 		     "add": {
-		      "!type": "fn(x: number, y: number) -> ?"
+		      "!type": "fn(x: number, y: number) -> +Phaser.Point"
 		     },
 		     "subtract": {
-		      "!type": "fn(x: number, y: number) -> ?"
+		      "!type": "fn(x: number, y: number) -> +Phaser.Point"
 		     },
 		     "multiply": {
-		      "!type": "fn(x: number, y: number) -> ?"
+		      "!type": "fn(x: number, y: number) -> +Phaser.Point"
 		     },
 		     "divide": {
-		      "!type": "fn(x: number, y: number) -> ?"
+		      "!type": "fn(x: number, y: number) -> +Phaser.Point"
 		     },
 		     "clampX": {
-		      "!type": "fn(min: number, max: number) -> ?"
+		      "!type": "fn(min: number, max: number) -> +Phaser.Point"
 		     },
 		     "clampY": {
-		      "!type": "fn(min: number, max: number) -> ?"
+		      "!type": "fn(min: number, max: number) -> +Phaser.Point"
 		     },
 		     "clamp": {
-		      "!type": "fn(min: number, max: number) -> ?"
+		      "!type": "fn(min: number, max: number) -> +Phaser.Point"
 		     },
 		     "clone": {
-		      "!type": "fn(output: +Phaser.Point) -> ?"
+		      "!type": "fn(output: +Phaser.Point) -> +Phaser.Point"
 		     },
 		     "copyTo": {
 		      "!type": "fn(dest: +any) -> ?"
 		     },
 		     "distance": {
-		      "!type": "fn(dest: ?, round: bool) -> ?"
+		      "!type": "fn(dest: ?, round: bool) -> number"
 		     },
 		     "equals": {
-		      "!type": "fn(a: +Phaser.Point|+any) -> ?"
+		      "!type": "fn(a: +Phaser.Point|+any) -> bool"
 		     },
 		     "angle": {
-		      "!type": "fn(a: +Phaser.Point|+any, asDegrees: bool) -> ?"
+		      "!type": "fn(a: +Phaser.Point|+any, asDegrees: bool) -> number"
 		     },
 		     "rotate": {
-		      "!type": "fn(x: number, y: number, angle: number, asDegrees: bool, distance: number) -> ?"
+		      "!type": "fn(x: number, y: number, angle: number, asDegrees: bool, distance: number) -> +Phaser.Point"
 		     },
 		     "getMagnitude": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> number"
 		     },
 		     "getMagnitudeSq": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> number"
 		     },
 		     "setMagnitude": {
-		      "!type": "fn(magnitude: number) -> ?"
+		      "!type": "fn(magnitude: number) -> +Phaser.Point"
 		     },
 		     "normalize": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +Phaser.Point"
 		     },
 		     "isZero": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> bool"
 		     },
 		     "dot": {
-		      "!type": "fn(a: +Phaser.Point) -> ?"
+		      "!type": "fn(a: +Phaser.Point) -> number"
 		     },
 		     "cross": {
-		      "!type": "fn(a: +Phaser.Point) -> ?"
+		      "!type": "fn(a: +Phaser.Point) -> number"
 		     },
 		     "perp": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +Phaser.Point"
 		     },
 		     "rperp": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +Phaser.Point"
 		     },
 		     "normalRightHand": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +Phaser.Point"
 		     },
 		     "floor": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +Phaser.Point"
 		     },
 		     "ceil": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +Phaser.Point"
 		     }
 		    },
 		    "add": {
-		     "!type": "fn(a: +Phaser.Point, b: +Phaser.Point, out: +Phaser.Point) -> ?"
+		     "!type": "fn(a: +Phaser.Point, b: +Phaser.Point, out: +Phaser.Point) -> +Phaser.Point"
 		    },
 		    "subtract": {
-		     "!type": "fn(a: +Phaser.Point, b: +Phaser.Point, out: +Phaser.Point) -> ?"
+		     "!type": "fn(a: +Phaser.Point, b: +Phaser.Point, out: +Phaser.Point) -> +Phaser.Point"
 		    },
 		    "multiply": {
-		     "!type": "fn(a: +Phaser.Point, b: +Phaser.Point, out: +Phaser.Point) -> ?"
+		     "!type": "fn(a: +Phaser.Point, b: +Phaser.Point, out: +Phaser.Point) -> +Phaser.Point"
 		    },
 		    "divide": {
-		     "!type": "fn(a: +Phaser.Point, b: +Phaser.Point, out: +Phaser.Point) -> ?"
+		     "!type": "fn(a: +Phaser.Point, b: +Phaser.Point, out: +Phaser.Point) -> +Phaser.Point"
 		    },
 		    "equals": {
-		     "!type": "fn(a: +Phaser.Point, b: +Phaser.Point) -> ?"
+		     "!type": "fn(a: +Phaser.Point, b: +Phaser.Point) -> bool"
 		    },
 		    "angle": {
-		     "!type": "fn(a: +Phaser.Point, b: +Phaser.Point) -> ?"
+		     "!type": "fn(a: +Phaser.Point, b: +Phaser.Point) -> number"
 		    },
 		    "negative": {
-		     "!type": "fn(a: +Phaser.Point, out: +Phaser.Point) -> ?"
+		     "!type": "fn(a: +Phaser.Point, out: +Phaser.Point) -> +Phaser.Point"
 		    },
 		    "multiplyAdd": {
-		     "!type": "fn(a: +Phaser.Point, b: +Phaser.Point, s: number, out: +Phaser.Point) -> ?"
+		     "!type": "fn(a: +Phaser.Point, b: +Phaser.Point, s: number, out: +Phaser.Point) -> +Phaser.Point"
 		    },
 		    "interpolate": {
-		     "!type": "fn(a: +Phaser.Point, b: +Phaser.Point, f: number, out: +Phaser.Point) -> ?"
+		     "!type": "fn(a: +Phaser.Point, b: +Phaser.Point, f: number, out: +Phaser.Point) -> +Phaser.Point"
 		    },
 		    "perp": {
-		     "!type": "fn(a: +Phaser.Point, out: +Phaser.Point) -> ?"
+		     "!type": "fn(a: +Phaser.Point, out: +Phaser.Point) -> +Phaser.Point"
 		    },
 		    "rperp": {
-		     "!type": "fn(a: +Phaser.Point, out: +Phaser.Point) -> ?"
+		     "!type": "fn(a: +Phaser.Point, out: +Phaser.Point) -> +Phaser.Point"
 		    },
 		    "distance": {
-		     "!type": "fn(a: ?, b: ?, round: bool) -> ?"
+		     "!type": "fn(a: ?, b: ?, round: bool) -> number"
 		    },
 		    "project": {
-		     "!type": "fn(a: +Phaser.Point, b: +Phaser.Point, out: +Phaser.Point) -> ?"
+		     "!type": "fn(a: +Phaser.Point, b: +Phaser.Point, out: +Phaser.Point) -> +Phaser.Point"
 		    },
 		    "projectUnit": {
-		     "!type": "fn(a: +Phaser.Point, b: +Phaser.Point, out: +Phaser.Point) -> ?"
+		     "!type": "fn(a: +Phaser.Point, b: +Phaser.Point, out: +Phaser.Point) -> +Phaser.Point"
 		    },
 		    "normalRightHand": {
-		     "!type": "fn(a: +Phaser.Point, out: +Phaser.Point) -> ?"
+		     "!type": "fn(a: +Phaser.Point, out: +Phaser.Point) -> +Phaser.Point"
 		    },
 		    "normalize": {
-		     "!type": "fn(a: +Phaser.Point, out: +Phaser.Point) -> ?"
+		     "!type": "fn(a: +Phaser.Point, out: +Phaser.Point) -> +Phaser.Point"
 		    },
 		    "rotate": {
-		     "!type": "fn(a: +Phaser.Point, x: number, y: number, angle: number, asDegrees: bool, distance: number) -> ?"
+		     "!type": "fn(a: +Phaser.Point, x: number, y: number, angle: number, asDegrees: bool, distance: number) -> +Phaser.Point"
 		    },
 		    "centroid": {
-		     "!type": "fn(points: [?], out: +Phaser.Point) -> ?"
+		     "!type": "fn(points: [?], out: +Phaser.Point) -> +Phaser.Point"
 		    },
 		    "parse": {
-		     "!type": "fn(obj: ?, xProp: string, yProp: string) -> ?"
+		     "!type": "fn(obj: ?, xProp: string, yProp: string) -> +Phaser.Point"
 		    }
 		   },
 		   "Polygon": {
@@ -6989,19 +6989,19 @@
 		      "!type": "number"
 		     },
 		     "toNumberArray": {
-		      "!type": "fn(output: +array) -> ?"
+		      "!type": "fn(output: +array) -> +array"
 		     },
 		     "flatten": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +Phaser.Polygon"
 		     },
 		     "clone": {
-		      "!type": "fn(output: +Phaser.Polygon) -> ?"
+		      "!type": "fn(output: +Phaser.Polygon) -> +Phaser.Polygon"
 		     },
 		     "contains": {
-		      "!type": "fn(x: number, y: number) -> ?"
+		      "!type": "fn(x: number, y: number) -> bool"
 		     },
 		     "setTo": {
-		      "!type": "fn(points: [?]|[?]|+Phaser.Point|number) -> ?"
+		      "!type": "fn(points: [?]|[?]|+Phaser.Point|number) -> +Phaser.Polygon"
 		     },
 		     "points": {
 		      "!type": "[?]"
@@ -7027,19 +7027,19 @@
 		      "!type": "number"
 		     },
 		     "offset": {
-		      "!type": "fn(dx: number, dy: number) -> ?"
+		      "!type": "fn(dx: number, dy: number) -> +Phaser.Rectangle"
 		     },
 		     "offsetPoint": {
-		      "!type": "fn(point: +Phaser.Point) -> ?"
+		      "!type": "fn(point: +Phaser.Point) -> +Phaser.Rectangle"
 		     },
 		     "setTo": {
-		      "!type": "fn(x: number, y: number, width: number, height: number) -> ?"
+		      "!type": "fn(x: number, y: number, width: number, height: number) -> +Phaser.Rectangle"
 		     },
 		     "scale": {
-		      "!type": "fn(x: number, y: number) -> ?"
+		      "!type": "fn(x: number, y: number) -> +Phaser.Rectangle"
 		     },
 		     "centerOn": {
-		      "!type": "fn(x: number, y: number) -> ?"
+		      "!type": "fn(x: number, y: number) -> +Phaser.Rectangle"
 		     },
 		     "floor": {
 		      "!type": "fn()"
@@ -7054,46 +7054,46 @@
 		      "!type": "fn()"
 		     },
 		     "copyFrom": {
-		      "!type": "fn(source: +any) -> ?"
+		      "!type": "fn(source: +any) -> +Phaser.Rectangle"
 		     },
 		     "copyTo": {
 		      "!type": "fn(source: +any) -> ?"
 		     },
 		     "inflate": {
-		      "!type": "fn(dx: number, dy: number) -> ?"
+		      "!type": "fn(dx: number, dy: number) -> +Phaser.Rectangle"
 		     },
 		     "size": {
-		      "!type": "fn(output: +Phaser.Point) -> ?"
+		      "!type": "fn(output: +Phaser.Point) -> +Phaser.Point"
 		     },
 		     "resize": {
-		      "!type": "fn(width: number, height: number) -> ?"
+		      "!type": "fn(width: number, height: number) -> +Phaser.Rectangle"
 		     },
 		     "clone": {
-		      "!type": "fn(output: +Phaser.Rectangle) -> ?"
+		      "!type": "fn(output: +Phaser.Rectangle) -> +Phaser.Rectangle"
 		     },
 		     "contains": {
-		      "!type": "fn(x: number, y: number) -> ?"
+		      "!type": "fn(x: number, y: number) -> bool"
 		     },
 		     "containsRect": {
-		      "!type": "fn(b: +Phaser.Rectangle) -> ?"
+		      "!type": "fn(b: +Phaser.Rectangle) -> bool"
 		     },
 		     "equals": {
-		      "!type": "fn(b: +Phaser.Rectangle) -> ?"
+		      "!type": "fn(b: +Phaser.Rectangle) -> bool"
 		     },
 		     "intersection": {
-		      "!type": "fn(b: +Phaser.Rectangle, out: +Phaser.Rectangle) -> ?"
+		      "!type": "fn(b: +Phaser.Rectangle, out: +Phaser.Rectangle) -> +Phaser.Rectangle"
 		     },
 		     "intersects": {
-		      "!type": "fn(b: +Phaser.Rectangle) -> ?"
+		      "!type": "fn(b: +Phaser.Rectangle) -> bool"
 		     },
 		     "intersectsRaw": {
-		      "!type": "fn(left: number, right: number, top: number, bottom: number, tolerance: number) -> ?"
+		      "!type": "fn(left: number, right: number, top: number, bottom: number, tolerance: number) -> bool"
 		     },
 		     "union": {
-		      "!type": "fn(b: +Phaser.Rectangle, out: +Phaser.Rectangle) -> ?"
+		      "!type": "fn(b: +Phaser.Rectangle, out: +Phaser.Rectangle) -> +Phaser.Rectangle"
 		     },
 		     "random": {
-		      "!type": "fn(out: +Phaser.Point|?) -> ?"
+		      "!type": "fn(out: +Phaser.Point|?) -> +Phaser.Point"
 		     },
 		     "halfWidth": {
 		      "!type": "number"
@@ -7147,50 +7147,50 @@
 		      "!type": "bool"
 		     },
 		     "aabb": {
-		      "!type": "fn(points: [?], out: +Phaser.Rectangle) -> ?"
+		      "!type": "fn(points: [?], out: +Phaser.Rectangle) -> +Phaser.Rectangle"
 		     }
 		    },
 		    "inflate": {
-		     "!type": "fn(a: +Phaser.Rectangle, dx: number, dy: number) -> ?"
+		     "!type": "fn(a: +Phaser.Rectangle, dx: number, dy: number) -> +Phaser.Rectangle"
 		    },
 		    "inflatePoint": {
-		     "!type": "fn(a: +Phaser.Rectangle, point: +Phaser.Point) -> ?"
+		     "!type": "fn(a: +Phaser.Rectangle, point: +Phaser.Point) -> +Phaser.Rectangle"
 		    },
 		    "size": {
-		     "!type": "fn(a: +Phaser.Rectangle, output: +Phaser.Point) -> ?"
+		     "!type": "fn(a: +Phaser.Rectangle, output: +Phaser.Point) -> +Phaser.Point"
 		    },
 		    "clone": {
-		     "!type": "fn(a: +Phaser.Rectangle, output: +Phaser.Rectangle) -> ?"
+		     "!type": "fn(a: +Phaser.Rectangle, output: +Phaser.Rectangle) -> +Phaser.Rectangle"
 		    },
 		    "contains": {
-		     "!type": "fn(a: +Phaser.Rectangle, x: number, y: number) -> ?"
+		     "!type": "fn(a: +Phaser.Rectangle, x: number, y: number) -> bool"
 		    },
 		    "containsRaw": {
-		     "!type": "fn(rx: number, ry: number, rw: number, rh: number, x: number, y: number) -> ?"
+		     "!type": "fn(rx: number, ry: number, rw: number, rh: number, x: number, y: number) -> bool"
 		    },
 		    "containsPoint": {
-		     "!type": "fn(a: +Phaser.Rectangle, point: +Phaser.Point) -> ?"
+		     "!type": "fn(a: +Phaser.Rectangle, point: +Phaser.Point) -> bool"
 		    },
 		    "containsRect": {
-		     "!type": "fn(a: +Phaser.Rectangle, b: +Phaser.Rectangle) -> ?"
+		     "!type": "fn(a: +Phaser.Rectangle, b: +Phaser.Rectangle) -> bool"
 		    },
 		    "equals": {
-		     "!type": "fn(a: +Phaser.Rectangle, b: +Phaser.Rectangle) -> ?"
+		     "!type": "fn(a: +Phaser.Rectangle, b: +Phaser.Rectangle) -> bool"
 		    },
 		    "sameDimensions": {
-		     "!type": "fn(a: +Phaser.Rectangle, b: +Phaser.Rectangle) -> ?"
+		     "!type": "fn(a: +Phaser.Rectangle, b: +Phaser.Rectangle) -> bool"
 		    },
 		    "intersection": {
-		     "!type": "fn(a: +Phaser.Rectangle, b: +Phaser.Rectangle, output: +Phaser.Rectangle) -> ?"
+		     "!type": "fn(a: +Phaser.Rectangle, b: +Phaser.Rectangle, output: +Phaser.Rectangle) -> +Phaser.Rectangle"
 		    },
 		    "intersects": {
-		     "!type": "fn(a: +Phaser.Rectangle, b: +Phaser.Rectangle) -> ?"
+		     "!type": "fn(a: +Phaser.Rectangle, b: +Phaser.Rectangle) -> bool"
 		    },
 		    "intersectsRaw": {
-		     "!type": "fn(left: number, right: number, top: number, bottom: number, tolerance: number) -> ?"
+		     "!type": "fn(left: number, right: number, top: number, bottom: number, tolerance: number) -> bool"
 		    },
 		    "union": {
-		     "!type": "fn(a: +Phaser.Rectangle, b: +Phaser.Rectangle, output: +Phaser.Rectangle) -> ?"
+		     "!type": "fn(a: +Phaser.Rectangle, b: +Phaser.Rectangle, output: +Phaser.Rectangle) -> +Phaser.Rectangle"
 		    }
 		   },
 		   "RoundedRectangle": {
@@ -7215,10 +7215,10 @@
 		      "!type": "number"
 		     },
 		     "clone": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +Phaser.RoundedRectangle"
 		     },
 		     "contains": {
-		      "!type": "fn(x: number, y: number) -> ?"
+		      "!type": "fn(x: number, y: number) -> bool"
 		     }
 		    }
 		   },
@@ -7284,10 +7284,10 @@
 		      "!type": "fn(value: number)"
 		     },
 		     "justPressed": {
-		      "!type": "fn(duration: number) -> ?"
+		      "!type": "fn(duration: number) -> bool"
 		     },
 		     "justReleased": {
-		      "!type": "fn(duration: number) -> ?"
+		      "!type": "fn(duration: number) -> bool"
 		     },
 		     "reset": {
 		      "!type": "fn()"
@@ -7344,10 +7344,10 @@
 		      "!type": "fn()"
 		     },
 		     "justPressed": {
-		      "!type": "fn(buttonCode: number, duration: number) -> ?"
+		      "!type": "fn(buttonCode: number, duration: number) -> bool"
 		     },
 		     "isDown": {
-		      "!type": "fn(buttonCode: number) -> ?"
+		      "!type": "fn(buttonCode: number) -> bool"
 		     },
 		     "destroy": {
 		      "!type": "fn()"
@@ -7526,7 +7526,7 @@
 		      "!type": "fn(callback: fn(), context: ?)"
 		     },
 		     "addPointer": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +Phaser.Pointer|+null"
 		     },
 		     "update": {
 		      "!type": "fn()"
@@ -7538,25 +7538,25 @@
 		      "!type": "fn(x: number, y: number)"
 		     },
 		     "startPointer": {
-		      "!type": "fn(event: +any) -> ?"
+		      "!type": "fn(event: +any) -> +Phaser.Pointer"
 		     },
 		     "updatePointer": {
-		      "!type": "fn(event: +any) -> ?"
+		      "!type": "fn(event: +any) -> +Phaser.Pointer"
 		     },
 		     "stopPointer": {
-		      "!type": "fn(event: +any) -> ?"
+		      "!type": "fn(event: +any) -> +Phaser.Pointer"
 		     },
 		     "getPointer": {
-		      "!type": "fn(isActive: bool) -> ?"
+		      "!type": "fn(isActive: bool) -> +Phaser.Pointer"
 		     },
 		     "getPointerFromIdentifier": {
-		      "!type": "fn(identifier: number) -> ?"
+		      "!type": "fn(identifier: number) -> +Phaser.Pointer"
 		     },
 		     "getPointerFromId": {
-		      "!type": "fn(pointerId: number) -> ?"
+		      "!type": "fn(pointerId: number) -> +Phaser.Pointer"
 		     },
 		     "getLocalPosition": {
-		      "!type": "fn(displayObject: +Phaser.Sprite|+Phaser.Image, pointer: +Phaser.Pointer) -> ?"
+		      "!type": "fn(displayObject: +Phaser.Sprite|+Phaser.Image, pointer: +Phaser.Pointer) -> +Phaser.Point"
 		     },
 		     "hitTest": {
 		      "!type": "fn(displayObject: +DisplayObject, pointer: +Phaser.Pointer, localPoint: +Phaser.Point)"
@@ -7687,7 +7687,7 @@
 		      "!type": "+Phaser.Point"
 		     },
 		     "start": {
-		      "!type": "fn(priority: number, useHandCursor: bool) -> ?"
+		      "!type": "fn(priority: number, useHandCursor: bool) -> +Phaser.Sprite"
 		     },
 		     "reset": {
 		      "!type": "fn()"
@@ -7699,76 +7699,76 @@
 		      "!type": "fn()"
 		     },
 		     "validForInput": {
-		      "!type": "fn(highestID: number, highestRenderID: number, includePixelPerfect: bool) -> ?"
+		      "!type": "fn(highestID: number, highestRenderID: number, includePixelPerfect: bool) -> bool"
 		     },
 		     "isPixelPerfect": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> bool"
 		     },
 		     "pointerX": {
-		      "!type": "fn(pointer: number) -> ?"
+		      "!type": "fn(pointer: number) -> number"
 		     },
 		     "pointerY": {
-		      "!type": "fn(pointer: number) -> ?"
+		      "!type": "fn(pointer: number) -> number"
 		     },
 		     "pointerDown": {
-		      "!type": "fn(pointer: number) -> ?"
+		      "!type": "fn(pointer: number) -> bool"
 		     },
 		     "pointerUp": {
-		      "!type": "fn(pointer: number) -> ?"
+		      "!type": "fn(pointer: number) -> bool"
 		     },
 		     "pointerTimeDown": {
-		      "!type": "fn(pointer: number) -> ?"
+		      "!type": "fn(pointer: number) -> number"
 		     },
 		     "pointerTimeUp": {
-		      "!type": "fn(pointer: +Phaser.Pointer) -> ?"
+		      "!type": "fn(pointer: +Phaser.Pointer) -> number"
 		     },
 		     "pointerOver": {
-		      "!type": "fn(index: number) -> ?"
+		      "!type": "fn(index: number) -> bool"
 		     },
 		     "pointerOut": {
-		      "!type": "fn(index: number) -> ?"
+		      "!type": "fn(index: number) -> bool"
 		     },
 		     "pointerTimeOver": {
-		      "!type": "fn(pointer: +Phaser.Pointer) -> ?"
+		      "!type": "fn(pointer: +Phaser.Pointer) -> number"
 		     },
 		     "pointerTimeOut": {
-		      "!type": "fn(pointer: +Phaser.Pointer) -> ?"
+		      "!type": "fn(pointer: +Phaser.Pointer) -> number"
 		     },
 		     "pointerDragged": {
-		      "!type": "fn(pointer: +Phaser.Pointer) -> ?"
+		      "!type": "fn(pointer: +Phaser.Pointer) -> bool"
 		     },
 		     "checkPointerDown": {
-		      "!type": "fn(pointer: +Phaser.Pointer, fastTest: bool) -> ?"
+		      "!type": "fn(pointer: +Phaser.Pointer, fastTest: bool) -> bool"
 		     },
 		     "checkPointerOver": {
-		      "!type": "fn(pointer: +Phaser.Pointer, fastTest: bool) -> ?"
+		      "!type": "fn(pointer: +Phaser.Pointer, fastTest: bool) -> bool"
 		     },
 		     "checkPixel": {
-		      "!type": "fn(x: number, y: number, pointer: +Phaser.Pointer) -> ?"
+		      "!type": "fn(x: number, y: number, pointer: +Phaser.Pointer) -> bool"
 		     },
 		     "update": {
 		      "!type": "fn(pointer: +Phaser.Pointer)"
 		     },
 		     "updateDrag": {
-		      "!type": "fn(pointer: +Phaser.Pointer) -> ?"
+		      "!type": "fn(pointer: +Phaser.Pointer) -> bool"
 		     },
 		     "justOver": {
-		      "!type": "fn(pointer: +Phaser.Pointer, delay: number) -> ?"
+		      "!type": "fn(pointer: +Phaser.Pointer, delay: number) -> bool"
 		     },
 		     "justOut": {
-		      "!type": "fn(pointer: +Phaser.Pointer, delay: number) -> ?"
+		      "!type": "fn(pointer: +Phaser.Pointer, delay: number) -> bool"
 		     },
 		     "justPressed": {
-		      "!type": "fn(pointer: +Phaser.Pointer, delay: number) -> ?"
+		      "!type": "fn(pointer: +Phaser.Pointer, delay: number) -> bool"
 		     },
 		     "justReleased": {
-		      "!type": "fn(pointer: +Phaser.Pointer, delay: number) -> ?"
+		      "!type": "fn(pointer: +Phaser.Pointer, delay: number) -> bool"
 		     },
 		     "overDuration": {
-		      "!type": "fn(pointer: +Phaser.Pointer) -> ?"
+		      "!type": "fn(pointer: +Phaser.Pointer) -> number"
 		     },
 		     "downDuration": {
-		      "!type": "fn(pointer: +Phaser.Pointer) -> ?"
+		      "!type": "fn(pointer: +Phaser.Pointer) -> number"
 		     },
 		     "enableDrag": {
 		      "!type": "fn(lockCenter: bool, bringToTop: bool, pixelPerfect: bool, alphaThreshold: bool, boundsRect: +Phaser.Rectangle, boundsSprite: +Phaser.Sprite)"
@@ -7865,10 +7865,10 @@
 		      "!type": "fn(hard: bool)"
 		     },
 		     "downDuration": {
-		      "!type": "fn(duration: number) -> ?"
+		      "!type": "fn(duration: number) -> bool"
 		     },
 		     "upDuration": {
-		      "!type": "fn(duration: number) -> ?"
+		      "!type": "fn(duration: number) -> bool"
 		     }
 		    }
 		   },
@@ -7897,7 +7897,7 @@
 		      "!type": "fn(context: ?, onDown: fn(), onUp: fn(), onPress: fn())"
 		     },
 		     "addKey": {
-		      "!type": "fn(keycode: number) -> ?"
+		      "!type": "fn(keycode: number) -> +Phaser.Key"
 		     },
 		     "addKeys": {
 		      "!type": "fn(keys: ?) -> ?"
@@ -7942,13 +7942,13 @@
 		      "!type": "fn(hard: bool)"
 		     },
 		     "downDuration": {
-		      "!type": "fn(keycode: number, duration: number) -> ?"
+		      "!type": "fn(keycode: number, duration: number) -> bool"
 		     },
 		     "upDuration": {
-		      "!type": "fn(keycode: number, duration: number) -> ?"
+		      "!type": "fn(keycode: number, duration: number) -> bool"
 		     },
 		     "isDown": {
-		      "!type": "fn(keycode: number) -> ?"
+		      "!type": "fn(keycode: number) -> bool"
 		     },
 		     "lastChar": {
 		      "!type": "string"
@@ -8268,7 +8268,7 @@
 		      "!type": "fn(event: +MouseEvent|+PointerEvent|+TouchEvent, fromClick: bool)"
 		     },
 		     "processInteractiveObjects": {
-		      "!type": "fn(fromClick: bool) -> ?"
+		      "!type": "fn(fromClick: bool) -> bool"
 		     },
 		     "leave": {
 		      "!type": "fn(event: +MouseEvent|+PointerEvent|+TouchEvent)"
@@ -8277,10 +8277,10 @@
 		      "!type": "fn(event: +MouseEvent|+PointerEvent|+TouchEvent)"
 		     },
 		     "justPressed": {
-		      "!type": "fn(duration: number) -> ?"
+		      "!type": "fn(duration: number) -> bool"
 		     },
 		     "justReleased": {
-		      "!type": "fn(duration: number) -> ?"
+		      "!type": "fn(duration: number) -> bool"
 		     },
 		     "addClickTrampoline": {
 		      "!type": "fn(name: string, callback: fn(), callbackContext: ?, callbackArgs: [?]|+null)"
@@ -8361,7 +8361,7 @@
 		      "!type": "fn(context: ?, callbacks: ?)"
 		     },
 		     "getButton": {
-		      "!type": "fn(buttonCode: number) -> ?"
+		      "!type": "fn(buttonCode: number) -> +Phaser.DeviceButton"
 		     },
 		     "pollStatus": {
 		      "!type": "fn()"
@@ -8388,22 +8388,22 @@
 		      "!type": "fn(buttonCode: number, value: ?)"
 		     },
 		     "axis": {
-		      "!type": "fn(axisCode: number) -> ?"
+		      "!type": "fn(axisCode: number) -> number"
 		     },
 		     "isDown": {
-		      "!type": "fn(buttonCode: number) -> ?"
+		      "!type": "fn(buttonCode: number) -> bool"
 		     },
 		     "isUp": {
-		      "!type": "fn(buttonCode: number) -> ?"
+		      "!type": "fn(buttonCode: number) -> bool"
 		     },
 		     "justReleased": {
-		      "!type": "fn(buttonCode: number, duration: number) -> ?"
+		      "!type": "fn(buttonCode: number, duration: number) -> bool"
 		     },
 		     "justPressed": {
-		      "!type": "fn(buttonCode: number, duration: number) -> ?"
+		      "!type": "fn(buttonCode: number, duration: number) -> bool"
 		     },
 		     "buttonValue": {
-		      "!type": "fn(buttonCode: number) -> ?"
+		      "!type": "fn(buttonCode: number) -> number"
 		     },
 		     "reset": {
 		      "!type": "fn()"
@@ -8457,7 +8457,7 @@
 		      "!type": "fn(callback: fn(), context: ?)"
 		     },
 		     "removeTouchLockCallback": {
-		      "!type": "fn(callback: fn(), context: ?) -> ?"
+		      "!type": "fn(callback: fn(), context: ?) -> bool"
 		     },
 		     "onTouchStart": {
 		      "!type": "fn(event: +TouchEvent)"
@@ -8522,7 +8522,7 @@
 		      "!type": "fn(key: string, binaryData: ?)"
 		     },
 		     "addBitmapData": {
-		      "!type": "fn(key: string, bitmapData: +Phaser.BitmapData, frameData: +Phaser.FrameData|+null) -> ?"
+		      "!type": "fn(key: string, bitmapData: +Phaser.BitmapData, frameData: +Phaser.FrameData|+null) -> +Phaser.BitmapData"
 		     },
 		     "addBitmapFont": {
 		      "!type": "fn(key: string, url: string, data: ?, atlasData: ?, xSpacing: number, ySpacing: number)"
@@ -8561,61 +8561,61 @@
 		      "!type": "fn(key: string, data: ?)"
 		     },
 		     "isSoundDecoded": {
-		      "!type": "fn(key: string) -> ?"
+		      "!type": "fn(key: string) -> bool"
 		     },
 		     "isSoundReady": {
-		      "!type": "fn(key: string) -> ?"
+		      "!type": "fn(key: string) -> bool"
 		     },
 		     "checkKey": {
-		      "!type": "fn(cache: number, key: string) -> ?"
+		      "!type": "fn(cache: number, key: string) -> bool"
 		     },
 		     "checkURL": {
-		      "!type": "fn(url: string) -> ?"
+		      "!type": "fn(url: string) -> bool"
 		     },
 		     "checkCanvasKey": {
-		      "!type": "fn(key: string) -> ?"
+		      "!type": "fn(key: string) -> bool"
 		     },
 		     "checkImageKey": {
-		      "!type": "fn(key: string) -> ?"
+		      "!type": "fn(key: string) -> bool"
 		     },
 		     "checkTextureKey": {
-		      "!type": "fn(key: string) -> ?"
+		      "!type": "fn(key: string) -> bool"
 		     },
 		     "checkSoundKey": {
-		      "!type": "fn(key: string) -> ?"
+		      "!type": "fn(key: string) -> bool"
 		     },
 		     "checkTextKey": {
-		      "!type": "fn(key: string) -> ?"
+		      "!type": "fn(key: string) -> bool"
 		     },
 		     "checkPhysicsKey": {
-		      "!type": "fn(key: string) -> ?"
+		      "!type": "fn(key: string) -> bool"
 		     },
 		     "checkTilemapKey": {
-		      "!type": "fn(key: string) -> ?"
+		      "!type": "fn(key: string) -> bool"
 		     },
 		     "checkBinaryKey": {
-		      "!type": "fn(key: string) -> ?"
+		      "!type": "fn(key: string) -> bool"
 		     },
 		     "checkBitmapDataKey": {
-		      "!type": "fn(key: string) -> ?"
+		      "!type": "fn(key: string) -> bool"
 		     },
 		     "checkBitmapFontKey": {
-		      "!type": "fn(key: string) -> ?"
+		      "!type": "fn(key: string) -> bool"
 		     },
 		     "checkJSONKey": {
-		      "!type": "fn(key: string) -> ?"
+		      "!type": "fn(key: string) -> bool"
 		     },
 		     "checkXMLKey": {
-		      "!type": "fn(key: string) -> ?"
+		      "!type": "fn(key: string) -> bool"
 		     },
 		     "checkVideoKey": {
-		      "!type": "fn(key: string) -> ?"
+		      "!type": "fn(key: string) -> bool"
 		     },
 		     "checkShaderKey": {
-		      "!type": "fn(key: string) -> ?"
+		      "!type": "fn(key: string) -> bool"
 		     },
 		     "checkRenderTextureKey": {
-		      "!type": "fn(key: string) -> ?"
+		      "!type": "fn(key: string) -> bool"
 		     },
 		     "getItem": {
 		      "!type": "fn(key: string, cache: number, method: string, property: string) -> ?"
@@ -8624,13 +8624,13 @@
 		      "!type": "fn(key: string) -> ?"
 		     },
 		     "getImage": {
-		      "!type": "fn(key: string, full: bool) -> ?"
+		      "!type": "fn(key: string, full: bool) -> +Image"
 		     },
 		     "getTextureFrame": {
-		      "!type": "fn(key: string) -> ?"
+		      "!type": "fn(key: string) -> +Phaser.Frame"
 		     },
 		     "getSound": {
-		      "!type": "fn(key: string) -> ?"
+		      "!type": "fn(key: string) -> +Phaser.Sound"
 		     },
 		     "getSoundData": {
 		      "!type": "fn(key: string) -> ?"
@@ -8648,10 +8648,10 @@
 		      "!type": "fn(key: string) -> ?"
 		     },
 		     "getBitmapData": {
-		      "!type": "fn(key: string) -> ?"
+		      "!type": "fn(key: string) -> +Phaser.BitmapData"
 		     },
 		     "getBitmapFont": {
-		      "!type": "fn(key: string) -> ?"
+		      "!type": "fn(key: string) -> +Phaser.BitmapFont"
 		     },
 		     "getJSON": {
 		      "!type": "fn(key: string, clone: bool) -> ?"
@@ -8660,49 +8660,49 @@
 		      "!type": "fn(key: string) -> ?"
 		     },
 		     "getVideo": {
-		      "!type": "fn(key: string) -> ?"
+		      "!type": "fn(key: string) -> +Phaser.Video"
 		     },
 		     "getShader": {
-		      "!type": "fn(key: string) -> ?"
+		      "!type": "fn(key: string) -> string"
 		     },
 		     "getRenderTexture": {
 		      "!type": "fn(key: string) -> ?"
 		     },
 		     "getBaseTexture": {
-		      "!type": "fn(key: string, cache: number) -> ?"
+		      "!type": "fn(key: string, cache: number) -> +PIXI.BaseTexture"
 		     },
 		     "getFrame": {
-		      "!type": "fn(key: string, cache: number) -> ?"
+		      "!type": "fn(key: string, cache: number) -> +Phaser.Frame"
 		     },
 		     "getFrameCount": {
-		      "!type": "fn(key: string, cache: number) -> ?"
+		      "!type": "fn(key: string, cache: number) -> number"
 		     },
 		     "getFrameData": {
-		      "!type": "fn(key: string, cache: number) -> ?"
+		      "!type": "fn(key: string, cache: number) -> +Phaser.FrameData"
 		     },
 		     "hasFrameData": {
-		      "!type": "fn(key: string, cache: number) -> ?"
+		      "!type": "fn(key: string, cache: number) -> bool"
 		     },
 		     "updateFrameData": {
 		      "!type": "fn(key: string, frameData: number, cache: number)"
 		     },
 		     "getFrameByIndex": {
-		      "!type": "fn(key: string, index: number, cache: number) -> ?"
+		      "!type": "fn(key: string, index: number, cache: number) -> +Phaser.Frame"
 		     },
 		     "getFrameByName": {
-		      "!type": "fn(key: string, name: string, cache: number) -> ?"
+		      "!type": "fn(key: string, name: string, cache: number) -> +Phaser.Frame"
 		     },
 		     "getPixiTexture": {
-		      "!type": "fn(key: string) -> ?"
+		      "!type": "fn(key: string) -> +PIXI.Texture"
 		     },
 		     "getPixiBaseTexture": {
-		      "!type": "fn(key: string) -> ?"
+		      "!type": "fn(key: string) -> +PIXI.BaseTexture"
 		     },
 		     "getURL": {
 		      "!type": "fn(url: string) -> ?"
 		     },
 		     "getKeys": {
-		      "!type": "fn(cache: number) -> ?"
+		      "!type": "fn(cache: number) -> [?]"
 		     },
 		     "removeCanvas": {
 		      "!type": "fn(key: string)"
@@ -8870,88 +8870,88 @@
 		      "!type": "fn()"
 		     },
 		     "checkKeyExists": {
-		      "!type": "fn(type: string, key: string) -> ?"
+		      "!type": "fn(type: string, key: string) -> bool"
 		     },
 		     "getAssetIndex": {
-		      "!type": "fn(type: string, key: string) -> ?"
+		      "!type": "fn(type: string, key: string) -> number"
 		     },
 		     "getAsset": {
-		      "!type": "fn(type: string, key: string) -> ?"
+		      "!type": "fn(type: string, key: string) -> +any"
 		     },
 		     "reset": {
 		      "!type": "fn(hard: bool, clearEvents: bool)"
 		     },
 		     "addToFileList": {
-		      "!type": "fn(type: string, key: string, url: string, properties: ?, overwrite: bool, extension: string) -> ?"
+		      "!type": "fn(type: string, key: string, url: string, properties: ?, overwrite: bool, extension: string) -> +Phaser.Loader"
 		     },
 		     "replaceInFileList": {
 		      "!type": "fn(type: string, key: string, url: string, properties: ?)"
 		     },
 		     "pack": {
-		      "!type": "fn(key: string, url: string, data: ?, callbackContext: ?) -> ?"
+		      "!type": "fn(key: string, url: string, data: ?, callbackContext: ?) -> +Phaser.Loader"
 		     },
 		     "image": {
-		      "!type": "fn(key: string, url: string, overwrite: bool) -> ?"
+		      "!type": "fn(key: string, url: string, overwrite: bool) -> +Phaser.Loader"
 		     },
 		     "images": {
-		      "!type": "fn(keys: +array, urls: +array) -> ?"
+		      "!type": "fn(keys: +array, urls: +array) -> +Phaser.Loader"
 		     },
 		     "text": {
-		      "!type": "fn(key: string, url: string, overwrite: bool) -> ?"
+		      "!type": "fn(key: string, url: string, overwrite: bool) -> +Phaser.Loader"
 		     },
 		     "json": {
-		      "!type": "fn(key: string, url: string, overwrite: bool) -> ?"
+		      "!type": "fn(key: string, url: string, overwrite: bool) -> +Phaser.Loader"
 		     },
 		     "shader": {
-		      "!type": "fn(key: string, url: string, overwrite: bool) -> ?"
+		      "!type": "fn(key: string, url: string, overwrite: bool) -> +Phaser.Loader"
 		     },
 		     "xml": {
-		      "!type": "fn(key: string, url: string, overwrite: bool) -> ?"
+		      "!type": "fn(key: string, url: string, overwrite: bool) -> +Phaser.Loader"
 		     },
 		     "script": {
-		      "!type": "fn(key: string, url: string, callback: fn(), callbackContext: ?) -> ?"
+		      "!type": "fn(key: string, url: string, callback: fn(), callbackContext: ?) -> +Phaser.Loader"
 		     },
 		     "binary": {
-		      "!type": "fn(key: string, url: string, callback: fn(), callbackContext: ?) -> ?"
+		      "!type": "fn(key: string, url: string, callback: fn(), callbackContext: ?) -> +Phaser.Loader"
 		     },
 		     "spritesheet": {
-		      "!type": "fn(key: string, url: string, frameWidth: number, frameHeight: number, frameMax: number, margin: number, spacing: number) -> ?"
+		      "!type": "fn(key: string, url: string, frameWidth: number, frameHeight: number, frameMax: number, margin: number, spacing: number) -> +Phaser.Loader"
 		     },
 		     "audio": {
-		      "!type": "fn(key: string, urls: string|[?]|[?], autoDecode: bool) -> ?"
+		      "!type": "fn(key: string, urls: string|[?]|[?], autoDecode: bool) -> +Phaser.Loader"
 		     },
 		     "audiosprite": {
-		      "!type": "fn(key: string, urls: [?]|string, jsonURL: string, jsonData: string|?, autoDecode: bool) -> ?"
+		      "!type": "fn(key: string, urls: [?]|string, jsonURL: string, jsonData: string|?, autoDecode: bool) -> +Phaser.Loader"
 		     },
 		     "video": {
-		      "!type": "fn(key: string, urls: string|[?]|[?], loadEvent: string, asBlob: bool) -> ?"
+		      "!type": "fn(key: string, urls: string|[?]|[?], loadEvent: string, asBlob: bool) -> +Phaser.Loader"
 		     },
 		     "tilemap": {
-		      "!type": "fn(key: string, url: string, data: ?|string, format: number) -> ?"
+		      "!type": "fn(key: string, url: string, data: ?|string, format: number) -> +Phaser.Loader"
 		     },
 		     "physics": {
-		      "!type": "fn(key: string, url: string, data: ?|string, format: string) -> ?"
+		      "!type": "fn(key: string, url: string, data: ?|string, format: string) -> +Phaser.Loader"
 		     },
 		     "bitmapFont": {
-		      "!type": "fn(key: string, textureURL: string, atlasURL: string, atlasData: ?, xSpacing: number, ySpacing: number) -> ?"
+		      "!type": "fn(key: string, textureURL: string, atlasURL: string, atlasData: ?, xSpacing: number, ySpacing: number) -> +Phaser.Loader"
 		     },
 		     "atlasJSONArray": {
-		      "!type": "fn(key: string, textureURL: string, atlasURL: string, atlasData: ?) -> ?"
+		      "!type": "fn(key: string, textureURL: string, atlasURL: string, atlasData: ?) -> +Phaser.Loader"
 		     },
 		     "atlasJSONHash": {
-		      "!type": "fn(key: string, textureURL: string, atlasURL: string, atlasData: ?) -> ?"
+		      "!type": "fn(key: string, textureURL: string, atlasURL: string, atlasData: ?) -> +Phaser.Loader"
 		     },
 		     "atlasXML": {
-		      "!type": "fn(key: string, textureURL: string, atlasURL: string, atlasData: ?) -> ?"
+		      "!type": "fn(key: string, textureURL: string, atlasURL: string, atlasData: ?) -> +Phaser.Loader"
 		     },
 		     "atlas": {
-		      "!type": "fn(key: string, textureURL: string, atlasURL: string, atlasData: ?, format: number) -> ?"
+		      "!type": "fn(key: string, textureURL: string, atlasURL: string, atlasData: ?, format: number) -> +Phaser.Loader"
 		     },
 		     "withSyncPoints": {
-		      "!type": "fn(callback: fn(), callbackContext: ?) -> ?"
+		      "!type": "fn(callback: fn(), callbackContext: ?) -> +Phaser.Loader"
 		     },
 		     "addSyncPoint": {
-		      "!type": "fn(type: string, key: string) -> ?"
+		      "!type": "fn(type: string, key: string) -> +Phaser.Loader"
 		     },
 		     "removeFile": {
 		      "!type": "fn(type: string, key: string)"
@@ -8963,19 +8963,19 @@
 		      "!type": "fn()"
 		     },
 		     "transformUrl": {
-		      "!type": "fn(url: string, file: ?) -> ?"
+		      "!type": "fn(url: string, file: ?) -> string"
 		     },
 		     "totalLoadedFiles": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> number"
 		     },
 		     "totalQueuedFiles": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> number"
 		     },
 		     "totalLoadedPacks": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> number"
 		     },
 		     "totalQueuedPacks": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> number"
 		     },
 		     "progressFloat": {
 		      "!type": "number"
@@ -9019,166 +9019,166 @@
 		    },
 		    "prototype": {
 		     "fuzzyEqual": {
-		      "!type": "fn(a: number, b: number, epsilon: number) -> ?"
+		      "!type": "fn(a: number, b: number, epsilon: number) -> bool"
 		     },
 		     "fuzzyLessThan": {
-		      "!type": "fn(a: number, b: number, epsilon: number) -> ?"
+		      "!type": "fn(a: number, b: number, epsilon: number) -> bool"
 		     },
 		     "fuzzyGreaterThan": {
-		      "!type": "fn(a: number, b: number, epsilon: number) -> ?"
+		      "!type": "fn(a: number, b: number, epsilon: number) -> bool"
 		     },
 		     "fuzzyCeil": {
-		      "!type": "fn(val: number, epsilon: number) -> ?"
+		      "!type": "fn(val: number, epsilon: number) -> bool"
 		     },
 		     "fuzzyFloor": {
-		      "!type": "fn(val: number, epsilon: number) -> ?"
+		      "!type": "fn(val: number, epsilon: number) -> bool"
 		     },
 		     "average": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> number"
 		     },
 		     "shear": {
-		      "!type": "fn(n: number) -> ?"
+		      "!type": "fn(n: number) -> number"
 		     },
 		     "snapTo": {
-		      "!type": "fn(input: number, gap: number, start: number) -> ?"
+		      "!type": "fn(input: number, gap: number, start: number) -> number"
 		     },
 		     "snapToFloor": {
-		      "!type": "fn(input: number, gap: number, start: number) -> ?"
+		      "!type": "fn(input: number, gap: number, start: number) -> number"
 		     },
 		     "snapToCeil": {
-		      "!type": "fn(input: number, gap: number, start: number) -> ?"
+		      "!type": "fn(input: number, gap: number, start: number) -> number"
 		     },
 		     "roundTo": {
-		      "!type": "fn(value: number, place: number, base: number) -> ?"
+		      "!type": "fn(value: number, place: number, base: number) -> number"
 		     },
 		     "floorTo": {
-		      "!type": "fn(value: number, place: number, base: number) -> ?"
+		      "!type": "fn(value: number, place: number, base: number) -> number"
 		     },
 		     "ceilTo": {
-		      "!type": "fn(value: number, place: number, base: number) -> ?"
+		      "!type": "fn(value: number, place: number, base: number) -> number"
 		     },
 		     "angleBetween": {
-		      "!type": "fn(x1: number, y1: number, x2: number, y2: number) -> ?"
+		      "!type": "fn(x1: number, y1: number, x2: number, y2: number) -> number"
 		     },
 		     "angleBetweenY": {
-		      "!type": "fn(x1: number, y1: number, x2: number, y2: number) -> ?"
+		      "!type": "fn(x1: number, y1: number, x2: number, y2: number) -> number"
 		     },
 		     "angleBetweenPoints": {
-		      "!type": "fn(point1: +Phaser.Point, point2: +Phaser.Point) -> ?"
+		      "!type": "fn(point1: +Phaser.Point, point2: +Phaser.Point) -> number"
 		     },
 		     "angleBetweenPointsY": {
-		      "!type": "fn(point1: +Phaser.Point, point2: +Phaser.Point) -> ?"
+		      "!type": "fn(point1: +Phaser.Point, point2: +Phaser.Point) -> number"
 		     },
 		     "reverseAngle": {
-		      "!type": "fn(angleRad: number) -> ?"
+		      "!type": "fn(angleRad: number) -> number"
 		     },
 		     "normalizeAngle": {
-		      "!type": "fn(angleRad: number) -> ?"
+		      "!type": "fn(angleRad: number) -> number"
 		     },
 		     "maxAdd": {
-		      "!type": "fn(value: number, amount: number, max: number) -> ?"
+		      "!type": "fn(value: number, amount: number, max: number) -> number"
 		     },
 		     "minSub": {
-		      "!type": "fn(value: number, amount: number, min: number) -> ?"
+		      "!type": "fn(value: number, amount: number, min: number) -> number"
 		     },
 		     "wrap": {
-		      "!type": "fn(value: number, min: number, max: number) -> ?"
+		      "!type": "fn(value: number, min: number, max: number) -> number"
 		     },
 		     "wrapValue": {
-		      "!type": "fn(value: number, amount: number, max: number) -> ?"
+		      "!type": "fn(value: number, amount: number, max: number) -> number"
 		     },
 		     "isOdd": {
-		      "!type": "fn(n: number) -> ?"
+		      "!type": "fn(n: number) -> bool"
 		     },
 		     "isEven": {
-		      "!type": "fn(n: number) -> ?"
+		      "!type": "fn(n: number) -> bool"
 		     },
 		     "min": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> number"
 		     },
 		     "max": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> number"
 		     },
 		     "minProperty": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> number"
 		     },
 		     "maxProperty": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> number"
 		     },
 		     "wrapAngle": {
-		      "!type": "fn(angle: number, radians: bool) -> ?"
+		      "!type": "fn(angle: number, radians: bool) -> number"
 		     },
 		     "linearInterpolation": {
-		      "!type": "fn(v: [?], k: number) -> ?"
+		      "!type": "fn(v: [?], k: number) -> number"
 		     },
 		     "bezierInterpolation": {
-		      "!type": "fn(v: [?], k: number) -> ?"
+		      "!type": "fn(v: [?], k: number) -> number"
 		     },
 		     "catmullRomInterpolation": {
-		      "!type": "fn(v: [?], k: number) -> ?"
+		      "!type": "fn(v: [?], k: number) -> number"
 		     },
 		     "linear": {
-		      "!type": "fn(p0: number, p1: number, t: number) -> ?"
+		      "!type": "fn(p0: number, p1: number, t: number) -> number"
 		     },
 		     "bernstein": {
-		      "!type": "fn(n: number, i: number) -> ?"
+		      "!type": "fn(n: number, i: number) -> number"
 		     },
 		     "factorial": {
-		      "!type": "fn(value: number) -> ?"
+		      "!type": "fn(value: number) -> number"
 		     },
 		     "catmullRom": {
-		      "!type": "fn(p0: number, p1: number, p2: number, p3: number, t: number) -> ?"
+		      "!type": "fn(p0: number, p1: number, p2: number, p3: number, t: number) -> number"
 		     },
 		     "difference": {
-		      "!type": "fn(a: number, b: number) -> ?"
+		      "!type": "fn(a: number, b: number) -> number"
 		     },
 		     "roundAwayFromZero": {
-		      "!type": "fn(value: number) -> ?"
+		      "!type": "fn(value: number) -> number"
 		     },
 		     "sinCosGenerator": {
 		      "!type": "fn(length: number, sinAmplitude: number, cosAmplitude: number, frequency: number) -> ?"
 		     },
 		     "distance": {
-		      "!type": "fn(x1: number, y1: number, x2: number, y2: number) -> ?"
+		      "!type": "fn(x1: number, y1: number, x2: number, y2: number) -> number"
 		     },
 		     "distanceSq": {
-		      "!type": "fn(x1: number, y1: number, x2: number, y2: number) -> ?"
+		      "!type": "fn(x1: number, y1: number, x2: number, y2: number) -> number"
 		     },
 		     "distancePow": {
-		      "!type": "fn(x1: number, y1: number, x2: number, y2: number, pow: number) -> ?"
+		      "!type": "fn(x1: number, y1: number, x2: number, y2: number, pow: number) -> number"
 		     },
 		     "clamp": {
-		      "!type": "fn(x: number, a: number, b: number) -> ?"
+		      "!type": "fn(x: number, a: number, b: number) -> number"
 		     },
 		     "clampBottom": {
-		      "!type": "fn(x: number, a: number) -> ?"
+		      "!type": "fn(x: number, a: number) -> number"
 		     },
 		     "within": {
-		      "!type": "fn(a: number, b: number, tolerance: number) -> ?"
+		      "!type": "fn(a: number, b: number, tolerance: number) -> bool"
 		     },
 		     "mapLinear": {
-		      "!type": "fn(x: number, a1: number, a2: number, b1: number, b2: number) -> ?"
+		      "!type": "fn(x: number, a1: number, a2: number, b1: number, b2: number) -> number"
 		     },
 		     "smoothstep": {
-		      "!type": "fn(x: number, min: number, max: number) -> ?"
+		      "!type": "fn(x: number, min: number, max: number) -> number"
 		     },
 		     "smootherstep": {
-		      "!type": "fn(x: number, min: number, max: number) -> ?"
+		      "!type": "fn(x: number, min: number, max: number) -> number"
 		     },
 		     "sign": {
-		      "!type": "fn(x: number) -> ?"
+		      "!type": "fn(x: number) -> number"
 		     },
 		     "percent": {
-		      "!type": "fn(a: number, b: number, base: number) -> ?"
+		      "!type": "fn(a: number, b: number, base: number) -> number"
 		     },
 		     "degToRad": {
-		      "!type": "fn(degrees: number) -> ?"
+		      "!type": "fn(degrees: number) -> number"
 		     },
 		     "radToDeg": {
-		      "!type": "fn(radians: number) -> ?"
+		      "!type": "fn(radians: number) -> number"
 		     },
 		     "chanceRoll": {
-		      "!type": "fn(chance: number) -> ?"
+		      "!type": "fn(chance: number) -> bool"
 		     }
 		    }
 		   },
@@ -9217,10 +9217,10 @@
 		      "!type": "fn(body: +Phaser.Physics.Arcade.Body|?)"
 		     },
 		     "getIndex": {
-		      "!type": "fn(rect: +Phaser.Rectangle|?) -> ?"
+		      "!type": "fn(rect: +Phaser.Rectangle|?) -> number"
 		     },
 		     "retrieve": {
-		      "!type": "fn(source: +Phaser.Sprite|+Phaser.Rectangle) -> ?"
+		      "!type": "fn(source: +Phaser.Sprite|+Phaser.Rectangle) -> +array"
 		     },
 		     "clear": {
 		      "!type": "fn()"
@@ -9234,40 +9234,40 @@
 		      "!type": "fn(seeds: [?])"
 		     },
 		     "integer": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> number"
 		     },
 		     "frac": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> number"
 		     },
 		     "real": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> number"
 		     },
 		     "integerInRange": {
-		      "!type": "fn(min: number, max: number) -> ?"
+		      "!type": "fn(min: number, max: number) -> number"
 		     },
 		     "between": {
-		      "!type": "fn(min: number, max: number) -> ?"
+		      "!type": "fn(min: number, max: number) -> number"
 		     },
 		     "realInRange": {
-		      "!type": "fn(min: number, max: number) -> ?"
+		      "!type": "fn(min: number, max: number) -> number"
 		     },
 		     "normal": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> number"
 		     },
 		     "uuid": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> string"
 		     },
 		     "pick": {
-		      "!type": "fn(ary: [?]) -> ?"
+		      "!type": "fn(ary: [?]) -> +any"
 		     },
 		     "weightedPick": {
-		      "!type": "fn(ary: [?]) -> ?"
+		      "!type": "fn(ary: [?]) -> +any"
 		     },
 		     "timestamp": {
-		      "!type": "fn(min: number, max: number) -> ?"
+		      "!type": "fn(min: number, max: number) -> number"
 		     },
 		     "angle": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> number"
 		     }
 		    }
 		   },
@@ -9275,19 +9275,19 @@
 		    "!type": "fn(game: +Phaser.Game)",
 		    "prototype": {
 		     "getHostName": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> string"
 		     },
 		     "checkDomainName": {
-		      "!type": "fn(domain: string) -> ?"
+		      "!type": "fn(domain: string) -> bool"
 		     },
 		     "updateQueryString": {
-		      "!type": "fn(key: string, value: string, redirect: bool, url: string) -> ?"
+		      "!type": "fn(key: string, value: string, redirect: bool, url: string) -> string"
 		     },
 		     "getQueryString": {
-		      "!type": "fn(parameter: string) -> ?"
+		      "!type": "fn(parameter: string) -> string|?"
 		     },
 		     "decodeURI": {
-		      "!type": "fn(value: string) -> ?"
+		      "!type": "fn(value: string) -> string"
 		     }
 		    }
 		   },
@@ -9394,7 +9394,7 @@
 		        "!type": "fn()"
 		       },
 		       "makeParticles": {
-		        "!type": "fn(keys: +array|string, frames: +array|number, quantity: number, collide: bool, collideWorldBounds: bool) -> ?"
+		        "!type": "fn(keys: +array|string, frames: +array|number, quantity: number, collide: bool, collideWorldBounds: bool) -> +Phaser.Particles.Arcade.Emitter"
 		       },
 		       "kill": {
 		        "!type": "fn()"
@@ -9412,7 +9412,7 @@
 		        "!type": "fn(explode: bool, lifespan: number, frequency: number, quantity: number, forceQuantity: number)"
 		       },
 		       "emitParticle": {
-		        "!type": "fn() -> ?"
+		        "!type": "fn() -> bool"
 		       },
 		       "destroy": {
 		        "!type": "fn()"
@@ -9512,25 +9512,25 @@
 		        "!type": "+array"
 		       },
 		       "add": {
-		        "!type": "fn(child: +DisplayObject, silent: bool) -> ?"
+		        "!type": "fn(child: +DisplayObject, silent: bool) -> +DisplayObject"
 		       },
 		       "addToHash": {
-		        "!type": "fn(child: +DisplayObject) -> ?"
+		        "!type": "fn(child: +DisplayObject) -> bool"
 		       },
 		       "removeFromHash": {
-		        "!type": "fn(child: +DisplayObject) -> ?"
+		        "!type": "fn(child: +DisplayObject) -> bool"
 		       },
 		       "addMultiple": {
-		        "!type": "fn(children: [?]|+Phaser.Group, silent: bool) -> ?"
+		        "!type": "fn(children: [?]|+Phaser.Group, silent: bool) -> [?]|+Phaser.Group"
 		       },
 		       "addAt": {
-		        "!type": "fn(child: +DisplayObject, index: number, silent: bool) -> ?"
+		        "!type": "fn(child: +DisplayObject, index: number, silent: bool) -> +DisplayObject"
 		       },
 		       "getAt": {
-		        "!type": "fn(index: number) -> ?"
+		        "!type": "fn(index: number) -> +DisplayObject|number"
 		       },
 		       "create": {
-		        "!type": "fn(x: number, y: number, key: string, frame: number|string, exists: bool) -> ?"
+		        "!type": "fn(x: number, y: number, key: string, frame: number|string, exists: bool) -> +DisplayObject"
 		       },
 		       "createMultiple": {
 		        "!type": "fn(quantity: number, key: string, frame: number|string, exists: bool)"
@@ -9539,28 +9539,28 @@
 		        "!type": "fn()"
 		       },
 		       "resetCursor": {
-		        "!type": "fn(index: number) -> ?"
+		        "!type": "fn(index: number) -> +any"
 		       },
 		       "next": {
-		        "!type": "fn() -> ?"
+		        "!type": "fn() -> +any"
 		       },
 		       "previous": {
-		        "!type": "fn() -> ?"
+		        "!type": "fn() -> +any"
 		       },
 		       "swap": {
 		        "!type": "fn(child1: +any, child2: +any)"
 		       },
 		       "bringToTop": {
-		        "!type": "fn(child: +any) -> ?"
+		        "!type": "fn(child: +any) -> +any"
 		       },
 		       "sendToBack": {
-		        "!type": "fn(child: +any) -> ?"
+		        "!type": "fn(child: +any) -> +any"
 		       },
 		       "moveUp": {
-		        "!type": "fn(child: +any) -> ?"
+		        "!type": "fn(child: +any) -> +any"
 		       },
 		       "moveDown": {
-		        "!type": "fn(child: +any) -> ?"
+		        "!type": "fn(child: +any) -> +any"
 		       },
 		       "xy": {
 		        "!type": "fn(index: number, x: number, y: number)"
@@ -9569,22 +9569,22 @@
 		        "!type": "fn()"
 		       },
 		       "getIndex": {
-		        "!type": "fn(child: +any) -> ?"
+		        "!type": "fn(child: +any) -> number"
 		       },
 		       "replace": {
-		        "!type": "fn(oldChild: +any, newChild: +any) -> ?"
+		        "!type": "fn(oldChild: +any, newChild: +any) -> +any"
 		       },
 		       "hasProperty": {
-		        "!type": "fn(child: +any, key: [?]) -> ?"
+		        "!type": "fn(child: +any, key: [?]) -> bool"
 		       },
 		       "setProperty": {
-		        "!type": "fn(child: +any, key: +array, value: +any, operation: number, force: bool) -> ?"
+		        "!type": "fn(child: +any, key: +array, value: +any, operation: number, force: bool) -> bool"
 		       },
 		       "checkProperty": {
-		        "!type": "fn(child: +any, key: +array, value: +any, force: bool) -> ?"
+		        "!type": "fn(child: +any, key: +array, value: +any, force: bool) -> bool"
 		       },
 		       "set": {
-		        "!type": "fn(child: +Phaser.Sprite, key: string, value: +any, checkAlive: bool, checkVisible: bool, operation: number, force: bool) -> ?"
+		        "!type": "fn(child: +Phaser.Sprite, key: string, value: +any, checkAlive: bool, checkVisible: bool, operation: number, force: bool) -> bool"
 		       },
 		       "setAll": {
 		        "!type": "fn(key: string, value: +any, checkAlive: bool, checkVisible: bool, operation: number, force: bool)"
@@ -9623,7 +9623,7 @@
 		        "!type": "fn()"
 		       },
 		       "filter": {
-		        "!type": "fn(predicate: fn(), checkExists: bool) -> ?"
+		        "!type": "fn(predicate: fn(), checkExists: bool) -> +Phaser.ArraySet"
 		       },
 		       "forEach": {
 		        "!type": "fn(callback: fn(), callbackContext: ?, checkExists: bool, args: +any)"
@@ -9650,37 +9650,37 @@
 		        "!type": "fn(a: ?, b: ?)"
 		       },
 		       "iterate": {
-		        "!type": "fn(key: string, value: +any, returnType: number, callback: fn(), callbackContext: ?, args: [?]) -> ?"
+		        "!type": "fn(key: string, value: +any, returnType: number, callback: fn(), callbackContext: ?, args: [?]) -> +any"
 		       },
 		       "getFirstExists": {
-		        "!type": "fn(exists: bool) -> ?"
+		        "!type": "fn(exists: bool) -> +any"
 		       },
 		       "getFirstAlive": {
-		        "!type": "fn() -> ?"
+		        "!type": "fn() -> +any"
 		       },
 		       "getFirstDead": {
-		        "!type": "fn() -> ?"
+		        "!type": "fn() -> +any"
 		       },
 		       "getTop": {
-		        "!type": "fn() -> ?"
+		        "!type": "fn() -> +any"
 		       },
 		       "getBottom": {
-		        "!type": "fn() -> ?"
+		        "!type": "fn() -> +any"
 		       },
 		       "countLiving": {
-		        "!type": "fn() -> ?"
+		        "!type": "fn() -> number"
 		       },
 		       "countDead": {
-		        "!type": "fn() -> ?"
+		        "!type": "fn() -> number"
 		       },
 		       "getRandom": {
-		        "!type": "fn(startIndex: number, length: number) -> ?"
+		        "!type": "fn(startIndex: number, length: number) -> +any"
 		       },
 		       "remove": {
-		        "!type": "fn(child: +any, destroy: bool, silent: bool) -> ?"
+		        "!type": "fn(child: +any, destroy: bool, silent: bool) -> bool"
 		       },
 		       "moveAll": {
-		        "!type": "fn(group: +Phaser.Group, silent: bool) -> ?"
+		        "!type": "fn(group: +Phaser.Group, silent: bool) -> +Phaser.Group"
 		       },
 		       "removeAll": {
 		        "!type": "fn(destroy: bool, silent: bool)"
@@ -9720,7 +9720,7 @@
 		      "!type": "number"
 		     },
 		     "add": {
-		      "!type": "fn(emitter: +Phaser.Emitter) -> ?"
+		      "!type": "fn(emitter: +Phaser.Emitter) -> +Phaser.Emitter"
 		     },
 		     "remove": {
 		      "!type": "fn(emitter: +Phaser.Emitter)"
@@ -9902,28 +9902,28 @@
 		        "!type": "fn(x: number, y: number)"
 		       },
 		       "hitTest": {
-		        "!type": "fn(x: number, y: number) -> ?"
+		        "!type": "fn(x: number, y: number) -> bool"
 		       },
 		       "onFloor": {
-		        "!type": "fn() -> ?"
+		        "!type": "fn() -> bool"
 		       },
 		       "onWall": {
-		        "!type": "fn() -> ?"
+		        "!type": "fn() -> bool"
 		       },
 		       "deltaAbsX": {
-		        "!type": "fn() -> ?"
+		        "!type": "fn() -> number"
 		       },
 		       "deltaAbsY": {
-		        "!type": "fn() -> ?"
+		        "!type": "fn() -> number"
 		       },
 		       "deltaX": {
-		        "!type": "fn() -> ?"
+		        "!type": "fn() -> number"
 		       },
 		       "deltaY": {
-		        "!type": "fn() -> ?"
+		        "!type": "fn() -> number"
 		       },
 		       "deltaZ": {
-		        "!type": "fn() -> ?"
+		        "!type": "fn() -> number"
 		       },
 		       "bottom": {
 		        "!type": "number"
@@ -10005,82 +10005,82 @@
 		       "!type": "fn(The: +Phaser.Physics.Arcade.Body)"
 		      },
 		      "computeVelocity": {
-		       "!type": "fn(axis: number, body: +Phaser.Physics.Arcade.Body, velocity: number, acceleration: number, drag: number, max: number) -> ?"
+		       "!type": "fn(axis: number, body: +Phaser.Physics.Arcade.Body, velocity: number, acceleration: number, drag: number, max: number) -> number"
 		      },
 		      "overlap": {
-		       "!type": "fn(object1: +Phaser.Sprite|+Phaser.Group|+Phaser.Particles.Emitter|+array, object2: +Phaser.Sprite|+Phaser.Group|+Phaser.Particles.Emitter|+array, overlapCallback: fn(), processCallback: fn(), callbackContext: ?) -> ?"
+		       "!type": "fn(object1: +Phaser.Sprite|+Phaser.Group|+Phaser.Particles.Emitter|+array, object2: +Phaser.Sprite|+Phaser.Group|+Phaser.Particles.Emitter|+array, overlapCallback: fn(), processCallback: fn(), callbackContext: ?) -> bool"
 		      },
 		      "collide": {
-		       "!type": "fn(object1: +Phaser.Sprite|+Phaser.Group|+Phaser.Particles.Emitter|+Phaser.TilemapLayer|+array, object2: +Phaser.Sprite|+Phaser.Group|+Phaser.Particles.Emitter|+Phaser.TilemapLayer|+array, collideCallback: fn(), processCallback: fn(), callbackContext: ?) -> ?"
+		       "!type": "fn(object1: +Phaser.Sprite|+Phaser.Group|+Phaser.Particles.Emitter|+Phaser.TilemapLayer|+array, object2: +Phaser.Sprite|+Phaser.Group|+Phaser.Particles.Emitter|+Phaser.TilemapLayer|+array, collideCallback: fn(), processCallback: fn(), callbackContext: ?) -> bool"
 		      },
 		      "sortLeftRight": {
-		       "!type": "fn(a: +Phaser.Sprite, b: +Phaser.Sprite) -> ?"
+		       "!type": "fn(a: +Phaser.Sprite, b: +Phaser.Sprite) -> number"
 		      },
 		      "sortRightLeft": {
-		       "!type": "fn(a: +Phaser.Sprite, b: +Phaser.Sprite) -> ?"
+		       "!type": "fn(a: +Phaser.Sprite, b: +Phaser.Sprite) -> number"
 		      },
 		      "sortTopBottom": {
-		       "!type": "fn(a: +Phaser.Sprite, b: +Phaser.Sprite) -> ?"
+		       "!type": "fn(a: +Phaser.Sprite, b: +Phaser.Sprite) -> number"
 		      },
 		      "sortBottomTop": {
-		       "!type": "fn(a: +Phaser.Sprite, b: +Phaser.Sprite) -> ?"
+		       "!type": "fn(a: +Phaser.Sprite, b: +Phaser.Sprite) -> number"
 		      },
 		      "sort": {
 		       "!type": "fn(group: +Phaser.Group, sortDirection: number)"
 		      },
 		      "intersects": {
-		       "!type": "fn(body1: +Phaser.Physics.Arcade.Body, body2: +Phaser.Physics.Arcade.Body) -> ?"
+		       "!type": "fn(body1: +Phaser.Physics.Arcade.Body, body2: +Phaser.Physics.Arcade.Body) -> bool"
 		      },
 		      "getObjectsUnderPointer": {
-		       "!type": "fn(pointer: +Phaser.Pointer, group: +Phaser.Group, callback: fn(), callbackContext: ?) -> ?"
+		       "!type": "fn(pointer: +Phaser.Pointer, group: +Phaser.Group, callback: fn(), callbackContext: ?) -> [?]"
 		      },
 		      "getObjectsAtLocation": {
-		       "!type": "fn(x: number, y: number, group: +Phaser.Group, callback: fn(), callbackContext: ?, callbackArg: ?) -> ?"
+		       "!type": "fn(x: number, y: number, group: +Phaser.Group, callback: fn(), callbackContext: ?, callbackArg: ?) -> [?]"
 		      },
 		      "moveToObject": {
-		       "!type": "fn(displayObject: +any, destination: +any, speed: number, maxTime: number) -> ?"
+		       "!type": "fn(displayObject: +any, destination: +any, speed: number, maxTime: number) -> number"
 		      },
 		      "moveToPointer": {
-		       "!type": "fn(displayObject: +any, speed: number, pointer: +Phaser.Pointer, maxTime: number) -> ?"
+		       "!type": "fn(displayObject: +any, speed: number, pointer: +Phaser.Pointer, maxTime: number) -> number"
 		      },
 		      "moveToXY": {
-		       "!type": "fn(displayObject: +any, x: number, y: number, speed: number, maxTime: number) -> ?"
+		       "!type": "fn(displayObject: +any, x: number, y: number, speed: number, maxTime: number) -> number"
 		      },
 		      "velocityFromAngle": {
-		       "!type": "fn(angle: number, speed: number, point: +Phaser.Point|?) -> ?"
+		       "!type": "fn(angle: number, speed: number, point: +Phaser.Point|?) -> +Phaser.Point"
 		      },
 		      "velocityFromRotation": {
-		       "!type": "fn(rotation: number, speed: number, point: +Phaser.Point|?) -> ?"
+		       "!type": "fn(rotation: number, speed: number, point: +Phaser.Point|?) -> +Phaser.Point"
 		      },
 		      "accelerationFromRotation": {
-		       "!type": "fn(rotation: number, speed: number, point: +Phaser.Point|?) -> ?"
+		       "!type": "fn(rotation: number, speed: number, point: +Phaser.Point|?) -> +Phaser.Point"
 		      },
 		      "accelerateToObject": {
-		       "!type": "fn(displayObject: +any, destination: +any, speed: number, xSpeedMax: number, ySpeedMax: number) -> ?"
+		       "!type": "fn(displayObject: +any, destination: +any, speed: number, xSpeedMax: number, ySpeedMax: number) -> number"
 		      },
 		      "accelerateToPointer": {
-		       "!type": "fn(displayObject: +any, pointer: +Phaser.Pointer, speed: number, xSpeedMax: number, ySpeedMax: number) -> ?"
+		       "!type": "fn(displayObject: +any, pointer: +Phaser.Pointer, speed: number, xSpeedMax: number, ySpeedMax: number) -> number"
 		      },
 		      "accelerateToXY": {
-		       "!type": "fn(displayObject: +any, x: number, y: number, speed: number, xSpeedMax: number, ySpeedMax: number) -> ?"
+		       "!type": "fn(displayObject: +any, x: number, y: number, speed: number, xSpeedMax: number, ySpeedMax: number) -> number"
 		      },
 		      "distanceBetween": {
-		       "!type": "fn(source: +any, target: +any) -> ?"
+		       "!type": "fn(source: +any, target: +any) -> number"
 		      },
 		      "distanceToXY": {
-		       "!type": "fn(displayObject: +any, x: number, y: number) -> ?"
+		       "!type": "fn(displayObject: +any, x: number, y: number) -> number"
 		      },
 		      "distanceToPointer": {
-		       "!type": "fn(displayObject: +any, pointer: +Phaser.Pointer) -> ?"
+		       "!type": "fn(displayObject: +any, pointer: +Phaser.Pointer) -> number"
 		      },
 		      "angleBetween": {
-		       "!type": "fn(source: +any, target: +any) -> ?"
+		       "!type": "fn(source: +any, target: +any) -> number"
 		      },
 		      "angleToXY": {
-		       "!type": "fn(displayObject: +any, x: number, y: number) -> ?"
+		       "!type": "fn(displayObject: +any, x: number, y: number) -> number"
 		      },
 		      "angleToPointer": {
-		       "!type": "fn(displayObject: +any, pointer: +Phaser.Pointer) -> ?"
+		       "!type": "fn(displayObject: +any, pointer: +Phaser.Pointer) -> number"
 		      }
 		     },
 		     "SORT_NONE": {
@@ -10150,34 +10150,34 @@
 		        "!type": "fn(tile: +Phaser.Physics.Ninja.Tile)"
 		       },
 		       "resolveTile": {
-		        "!type": "fn(x: number, y: number, body: +Phaser.Physics.Ninja.AABB, tile: +Phaser.Physics.Ninja.Tile) -> ?"
+		        "!type": "fn(x: number, y: number, body: +Phaser.Physics.Ninja.AABB, tile: +Phaser.Physics.Ninja.Tile) -> bool"
 		       },
 		       "projAABB_Full": {
-		        "!type": "fn(x: number, y: number, obj: +Phaser.Physics.Ninja.AABB, t: +Phaser.Physics.Ninja.Tile) -> ?"
+		        "!type": "fn(x: number, y: number, obj: +Phaser.Physics.Ninja.AABB, t: +Phaser.Physics.Ninja.Tile) -> number"
 		       },
 		       "projAABB_Half": {
-		        "!type": "fn(x: number, y: number, obj: +Phaser.Physics.Ninja.AABB, t: +Phaser.Physics.Ninja.Tile) -> ?"
+		        "!type": "fn(x: number, y: number, obj: +Phaser.Physics.Ninja.AABB, t: +Phaser.Physics.Ninja.Tile) -> number"
 		       },
 		       "projAABB_45Deg": {
-		        "!type": "fn(x: number, y: number, obj: +Phaser.Physics.Ninja.AABB, t: +Phaser.Physics.Ninja.Tile) -> ?"
+		        "!type": "fn(x: number, y: number, obj: +Phaser.Physics.Ninja.AABB, t: +Phaser.Physics.Ninja.Tile) -> number"
 		       },
 		       "projAABB_22DegS": {
-		        "!type": "fn(x: number, y: number, obj: +Phaser.Physics.Ninja.AABB, t: +Phaser.Physics.Ninja.Tile) -> ?"
+		        "!type": "fn(x: number, y: number, obj: +Phaser.Physics.Ninja.AABB, t: +Phaser.Physics.Ninja.Tile) -> number"
 		       },
 		       "projAABB_22DegB": {
-		        "!type": "fn(x: number, y: number, obj: +Phaser.Physics.Ninja.AABB, t: +Phaser.Physics.Ninja.Tile) -> ?"
+		        "!type": "fn(x: number, y: number, obj: +Phaser.Physics.Ninja.AABB, t: +Phaser.Physics.Ninja.Tile) -> number"
 		       },
 		       "projAABB_67DegS": {
-		        "!type": "fn(x: number, y: number, obj: +Phaser.Physics.Ninja.AABB, t: +Phaser.Physics.Ninja.Tile) -> ?"
+		        "!type": "fn(x: number, y: number, obj: +Phaser.Physics.Ninja.AABB, t: +Phaser.Physics.Ninja.Tile) -> number"
 		       },
 		       "projAABB_67DegB": {
-		        "!type": "fn(x: number, y: number, obj: +Phaser.Physics.Ninja.AABB, t: +Phaser.Physics.Ninja.Tile) -> ?"
+		        "!type": "fn(x: number, y: number, obj: +Phaser.Physics.Ninja.AABB, t: +Phaser.Physics.Ninja.Tile) -> number"
 		       },
 		       "projAABB_Convex": {
-		        "!type": "fn(x: number, y: number, obj: +Phaser.Physics.Ninja.AABB, t: +Phaser.Physics.Ninja.Tile) -> ?"
+		        "!type": "fn(x: number, y: number, obj: +Phaser.Physics.Ninja.AABB, t: +Phaser.Physics.Ninja.Tile) -> number"
 		       },
 		       "projAABB_Concave": {
-		        "!type": "fn(x: number, y: number, obj: +Phaser.Physics.Ninja.AABB, t: +Phaser.Physics.Ninja.Tile) -> ?"
+		        "!type": "fn(x: number, y: number, obj: +Phaser.Physics.Ninja.AABB, t: +Phaser.Physics.Ninja.Tile) -> number"
 		       },
 		       "destroy": {
 		        "!type": "fn()"
@@ -10255,16 +10255,16 @@
 		        "!type": "fn()"
 		       },
 		       "deltaAbsX": {
-		        "!type": "fn() -> ?"
+		        "!type": "fn() -> number"
 		       },
 		       "deltaAbsY": {
-		        "!type": "fn() -> ?"
+		        "!type": "fn() -> number"
 		       },
 		       "deltaX": {
-		        "!type": "fn() -> ?"
+		        "!type": "fn() -> number"
 		       },
 		       "deltaY": {
-		        "!type": "fn() -> ?"
+		        "!type": "fn() -> number"
 		       },
 		       "destroy": {
 		        "!type": "fn()"
@@ -10342,37 +10342,37 @@
 		        "!type": "fn()"
 		       },
 		       "collideCircleVsTile": {
-		        "!type": "fn(t: +Phaser.Physics.Ninja.Tile) -> ?"
+		        "!type": "fn(t: +Phaser.Physics.Ninja.Tile) -> bool"
 		       },
 		       "resolveCircleTile": {
-		        "!type": "fn(x: number, y: number, oH: number, oV: number, obj: +Phaser.Physics.Ninja.Circle, t: +Phaser.Physics.Ninja.Tile) -> ?"
+		        "!type": "fn(x: number, y: number, oH: number, oV: number, obj: +Phaser.Physics.Ninja.Circle, t: +Phaser.Physics.Ninja.Tile) -> number"
 		       },
 		       "projCircle_Full": {
-		        "!type": "fn(x: number, y: number, oH: number, oV: number, obj: +Phaser.Physics.Ninja.Circle, t: +Phaser.Physics.Ninja.Tile) -> ?"
+		        "!type": "fn(x: number, y: number, oH: number, oV: number, obj: +Phaser.Physics.Ninja.Circle, t: +Phaser.Physics.Ninja.Tile) -> number"
 		       },
 		       "projCircle_45Deg": {
-		        "!type": "fn(x: number, y: number, oH: number, oV: number, obj: +Phaser.Physics.Ninja.Circle, t: +Phaser.Physics.Ninja.Tile) -> ?"
+		        "!type": "fn(x: number, y: number, oH: number, oV: number, obj: +Phaser.Physics.Ninja.Circle, t: +Phaser.Physics.Ninja.Tile) -> number"
 		       },
 		       "projCircle_Concave": {
-		        "!type": "fn(x: number, y: number, oH: number, oV: number, obj: +Phaser.Physics.Ninja.Circle, t: +Phaser.Physics.Ninja.Tile) -> ?"
+		        "!type": "fn(x: number, y: number, oH: number, oV: number, obj: +Phaser.Physics.Ninja.Circle, t: +Phaser.Physics.Ninja.Tile) -> number"
 		       },
 		       "projCircle_Convex": {
-		        "!type": "fn(x: number, y: number, oH: number, oV: number, obj: +Phaser.Physics.Ninja.Circle, t: +Phaser.Physics.Ninja.Tile) -> ?"
+		        "!type": "fn(x: number, y: number, oH: number, oV: number, obj: +Phaser.Physics.Ninja.Circle, t: +Phaser.Physics.Ninja.Tile) -> number"
 		       },
 		       "projCircle_Half": {
-		        "!type": "fn(x: number, y: number, oH: number, oV: number, obj: +Phaser.Physics.Ninja.Circle, t: +Phaser.Physics.Ninja.Tile) -> ?"
+		        "!type": "fn(x: number, y: number, oH: number, oV: number, obj: +Phaser.Physics.Ninja.Circle, t: +Phaser.Physics.Ninja.Tile) -> number"
 		       },
 		       "projCircle_22DegS": {
-		        "!type": "fn(x: number, y: number, oH: number, oV: number, obj: +Phaser.Physics.Ninja.Circle, t: +Phaser.Physics.Ninja.Tile) -> ?"
+		        "!type": "fn(x: number, y: number, oH: number, oV: number, obj: +Phaser.Physics.Ninja.Circle, t: +Phaser.Physics.Ninja.Tile) -> number"
 		       },
 		       "projCircle_22DegB": {
-		        "!type": "fn(x: number, y: number, oH: number, oV: number, obj: +Phaser.Physics.Ninja.Circle, t: +Phaser.Physics.Ninja.Tile) -> ?"
+		        "!type": "fn(x: number, y: number, oH: number, oV: number, obj: +Phaser.Physics.Ninja.Circle, t: +Phaser.Physics.Ninja.Tile) -> number"
 		       },
 		       "projCircle_67DegS": {
-		        "!type": "fn(x: number, y: number, oH: number, oV: number, obj: +Phaser.Physics.Ninja.Circle, t: +Phaser.Physics.Ninja.Tile) -> ?"
+		        "!type": "fn(x: number, y: number, oH: number, oV: number, obj: +Phaser.Physics.Ninja.Circle, t: +Phaser.Physics.Ninja.Tile) -> number"
 		       },
 		       "projCircle_67DegB": {
-		        "!type": "fn(x: number, y: number, oH: number, oV: number, obj: +Phaser.Physics.Ninja.Circle, t: +Phaser.Physics.Ninja.Tile) -> ?"
+		        "!type": "fn(x: number, y: number, oH: number, oV: number, obj: +Phaser.Physics.Ninja.Circle, t: +Phaser.Physics.Ninja.Tile) -> number"
 		       },
 		       "destroy": {
 		        "!type": "fn()"
@@ -10498,16 +10498,16 @@
 		       "!type": "fn(map: +Phaser.Tilemap, layer: number|string|+Phaser.TilemapLayer)"
 		      },
 		      "convertTilemap": {
-		       "!type": "fn(map: +Phaser.Tilemap, layer: number|string|+Phaser.TilemapLayer, slopeMap: ?) -> ?"
+		       "!type": "fn(map: +Phaser.Tilemap, layer: number|string|+Phaser.TilemapLayer, slopeMap: ?) -> +array"
 		      },
 		      "overlap": {
-		       "!type": "fn(object1: +Phaser.Sprite|+Phaser.Group|+Phaser.Particles.Emitter, object2: +Phaser.Sprite|+Phaser.Group|+Phaser.Particles.Emitter|+array, overlapCallback: fn(), processCallback: fn(), callbackContext: ?) -> ?"
+		       "!type": "fn(object1: +Phaser.Sprite|+Phaser.Group|+Phaser.Particles.Emitter, object2: +Phaser.Sprite|+Phaser.Group|+Phaser.Particles.Emitter|+array, overlapCallback: fn(), processCallback: fn(), callbackContext: ?) -> bool"
 		      },
 		      "collide": {
-		       "!type": "fn(object1: +Phaser.Sprite|+Phaser.Group|+Phaser.Particles.Emitter|+Phaser.TilemapLayer, object2: +Phaser.Sprite|+Phaser.Group|+Phaser.Particles.Emitter|+Phaser.TilemapLayer|+array, collideCallback: fn(), processCallback: fn(), callbackContext: ?) -> ?"
+		       "!type": "fn(object1: +Phaser.Sprite|+Phaser.Group|+Phaser.Particles.Emitter|+Phaser.TilemapLayer, object2: +Phaser.Sprite|+Phaser.Group|+Phaser.Particles.Emitter|+Phaser.TilemapLayer|+array, collideCallback: fn(), processCallback: fn(), callbackContext: ?) -> bool"
 		      },
 		      "separate": {
-		       "!type": "fn(body1: +Phaser.Physics.Ninja.Body, body2: +Phaser.Physics.Ninja.Body) -> ?"
+		       "!type": "fn(body1: +Phaser.Physics.Ninja.Body, body2: +Phaser.Physics.Ninja.Body) -> bool"
 		      }
 		     }
 		    },
@@ -10589,7 +10589,7 @@
 		        "!type": "fn(group: +Phaser.Physics.CollisionGroup, callback: fn(), callbackContext: ?)"
 		       },
 		       "getCollisionMask": {
-		        "!type": "fn() -> ?"
+		        "!type": "fn() -> number"
 		       },
 		       "updateCollisionMask": {
 		        "!type": "fn(shape: +p2.Shape)"
@@ -10607,7 +10607,7 @@
 		        "!type": "fn()"
 		       },
 		       "getVelocityAtPoint": {
-		        "!type": "fn(result: [?], relativePoint: [?]) -> ?"
+		        "!type": "fn(result: [?], relativePoint: [?]) -> [?]"
 		       },
 		       "applyDamping": {
 		        "!type": "fn(dt: number)"
@@ -10691,40 +10691,40 @@
 		        "!type": "fn()"
 		       },
 		       "addShape": {
-		        "!type": "fn(shape: +p2.Shape, offsetX: number, offsetY: number, rotation: number) -> ?"
+		        "!type": "fn(shape: +p2.Shape, offsetX: number, offsetY: number, rotation: number) -> +p2.Shape"
 		       },
 		       "addCircle": {
-		        "!type": "fn(radius: number, offsetX: number, offsetY: number, rotation: number) -> ?"
+		        "!type": "fn(radius: number, offsetX: number, offsetY: number, rotation: number) -> +p2.Circle"
 		       },
 		       "addRectangle": {
-		        "!type": "fn(width: number, height: number, offsetX: number, offsetY: number, rotation: number) -> ?"
+		        "!type": "fn(width: number, height: number, offsetX: number, offsetY: number, rotation: number) -> +p2.Box"
 		       },
 		       "addPlane": {
-		        "!type": "fn(offsetX: number, offsetY: number, rotation: number) -> ?"
+		        "!type": "fn(offsetX: number, offsetY: number, rotation: number) -> +p2.Plane"
 		       },
 		       "addParticle": {
-		        "!type": "fn(offsetX: number, offsetY: number, rotation: number) -> ?"
+		        "!type": "fn(offsetX: number, offsetY: number, rotation: number) -> +p2.Particle"
 		       },
 		       "addLine": {
-		        "!type": "fn(length: number, offsetX: number, offsetY: number, rotation: number) -> ?"
+		        "!type": "fn(length: number, offsetX: number, offsetY: number, rotation: number) -> +p2.Line"
 		       },
 		       "addCapsule": {
-		        "!type": "fn(length: number, radius: number, offsetX: number, offsetY: number, rotation: number) -> ?"
+		        "!type": "fn(length: number, radius: number, offsetX: number, offsetY: number, rotation: number) -> +p2.Capsule"
 		       },
 		       "addPolygon": {
-		        "!type": "fn(options: +PhaserPhysics.P2.BodyaddPolygonOptions, points: [?]|number) -> ?"
+		        "!type": "fn(options: +PhaserPhysics.P2.BodyaddPolygonOptions, points: [?]|number) -> bool"
 		       },
 		       "removeShape": {
-		        "!type": "fn(shape: +p2.Circle|+p2.Rectangle|+p2.Plane|+p2.Line|+p2.Particle) -> ?"
+		        "!type": "fn(shape: +p2.Circle|+p2.Rectangle|+p2.Plane|+p2.Line|+p2.Particle) -> bool"
 		       },
 		       "setCircle": {
 		        "!type": "fn(radius: number, offsetX: number, offsetY: number, rotation: number)"
 		       },
 		       "setRectangle": {
-		        "!type": "fn(width: number, height: number, offsetX: number, offsetY: number, rotation: number) -> ?"
+		        "!type": "fn(width: number, height: number, offsetX: number, offsetY: number, rotation: number) -> +p2.Rectangle"
 		       },
 		       "setRectangleFromSprite": {
-		        "!type": "fn(sprite: +Phaser.Sprite|+Phaser.Image) -> ?"
+		        "!type": "fn(sprite: +Phaser.Sprite|+Phaser.Image) -> +p2.Rectangle"
 		       },
 		       "setMaterial": {
 		        "!type": "fn(material: +Phaser.Physics.P2.Material, shape: +p2.Shape)"
@@ -10736,10 +10736,10 @@
 		        "!type": "fn(key: string, object: string)"
 		       },
 		       "addFixture": {
-		        "!type": "fn(fixtureData: string) -> ?"
+		        "!type": "fn(fixtureData: string) -> +array"
 		       },
 		       "loadPolygon": {
-		        "!type": "fn(key: string, object: string|?) -> ?"
+		        "!type": "fn(key: string, object: string|?) -> bool"
 		       },
 		       "static": {
 		        "!type": "bool"
@@ -10883,25 +10883,25 @@
 		        "!type": "+array"
 		       },
 		       "add": {
-		        "!type": "fn(child: +DisplayObject, silent: bool) -> ?"
+		        "!type": "fn(child: +DisplayObject, silent: bool) -> +DisplayObject"
 		       },
 		       "addToHash": {
-		        "!type": "fn(child: +DisplayObject) -> ?"
+		        "!type": "fn(child: +DisplayObject) -> bool"
 		       },
 		       "removeFromHash": {
-		        "!type": "fn(child: +DisplayObject) -> ?"
+		        "!type": "fn(child: +DisplayObject) -> bool"
 		       },
 		       "addMultiple": {
-		        "!type": "fn(children: [?]|+Phaser.Group, silent: bool) -> ?"
+		        "!type": "fn(children: [?]|+Phaser.Group, silent: bool) -> [?]|+Phaser.Group"
 		       },
 		       "addAt": {
-		        "!type": "fn(child: +DisplayObject, index: number, silent: bool) -> ?"
+		        "!type": "fn(child: +DisplayObject, index: number, silent: bool) -> +DisplayObject"
 		       },
 		       "getAt": {
-		        "!type": "fn(index: number) -> ?"
+		        "!type": "fn(index: number) -> +DisplayObject|number"
 		       },
 		       "create": {
-		        "!type": "fn(x: number, y: number, key: string, frame: number|string, exists: bool) -> ?"
+		        "!type": "fn(x: number, y: number, key: string, frame: number|string, exists: bool) -> +DisplayObject"
 		       },
 		       "createMultiple": {
 		        "!type": "fn(quantity: number, key: string, frame: number|string, exists: bool)"
@@ -10910,28 +10910,28 @@
 		        "!type": "fn()"
 		       },
 		       "resetCursor": {
-		        "!type": "fn(index: number) -> ?"
+		        "!type": "fn(index: number) -> +any"
 		       },
 		       "next": {
-		        "!type": "fn() -> ?"
+		        "!type": "fn() -> +any"
 		       },
 		       "previous": {
-		        "!type": "fn() -> ?"
+		        "!type": "fn() -> +any"
 		       },
 		       "swap": {
 		        "!type": "fn(child1: +any, child2: +any)"
 		       },
 		       "bringToTop": {
-		        "!type": "fn(child: +any) -> ?"
+		        "!type": "fn(child: +any) -> +any"
 		       },
 		       "sendToBack": {
-		        "!type": "fn(child: +any) -> ?"
+		        "!type": "fn(child: +any) -> +any"
 		       },
 		       "moveUp": {
-		        "!type": "fn(child: +any) -> ?"
+		        "!type": "fn(child: +any) -> +any"
 		       },
 		       "moveDown": {
-		        "!type": "fn(child: +any) -> ?"
+		        "!type": "fn(child: +any) -> +any"
 		       },
 		       "xy": {
 		        "!type": "fn(index: number, x: number, y: number)"
@@ -10940,22 +10940,22 @@
 		        "!type": "fn()"
 		       },
 		       "getIndex": {
-		        "!type": "fn(child: +any) -> ?"
+		        "!type": "fn(child: +any) -> number"
 		       },
 		       "replace": {
-		        "!type": "fn(oldChild: +any, newChild: +any) -> ?"
+		        "!type": "fn(oldChild: +any, newChild: +any) -> +any"
 		       },
 		       "hasProperty": {
-		        "!type": "fn(child: +any, key: [?]) -> ?"
+		        "!type": "fn(child: +any, key: [?]) -> bool"
 		       },
 		       "setProperty": {
-		        "!type": "fn(child: +any, key: +array, value: +any, operation: number, force: bool) -> ?"
+		        "!type": "fn(child: +any, key: +array, value: +any, operation: number, force: bool) -> bool"
 		       },
 		       "checkProperty": {
-		        "!type": "fn(child: +any, key: +array, value: +any, force: bool) -> ?"
+		        "!type": "fn(child: +any, key: +array, value: +any, force: bool) -> bool"
 		       },
 		       "set": {
-		        "!type": "fn(child: +Phaser.Sprite, key: string, value: +any, checkAlive: bool, checkVisible: bool, operation: number, force: bool) -> ?"
+		        "!type": "fn(child: +Phaser.Sprite, key: string, value: +any, checkAlive: bool, checkVisible: bool, operation: number, force: bool) -> bool"
 		       },
 		       "setAll": {
 		        "!type": "fn(key: string, value: +any, checkAlive: bool, checkVisible: bool, operation: number, force: bool)"
@@ -10997,7 +10997,7 @@
 		        "!type": "fn()"
 		       },
 		       "filter": {
-		        "!type": "fn(predicate: fn(), checkExists: bool) -> ?"
+		        "!type": "fn(predicate: fn(), checkExists: bool) -> +Phaser.ArraySet"
 		       },
 		       "forEach": {
 		        "!type": "fn(callback: fn(), callbackContext: ?, checkExists: bool, args: +any)"
@@ -11024,37 +11024,37 @@
 		        "!type": "fn(a: ?, b: ?)"
 		       },
 		       "iterate": {
-		        "!type": "fn(key: string, value: +any, returnType: number, callback: fn(), callbackContext: ?, args: [?]) -> ?"
+		        "!type": "fn(key: string, value: +any, returnType: number, callback: fn(), callbackContext: ?, args: [?]) -> +any"
 		       },
 		       "getFirstExists": {
-		        "!type": "fn(exists: bool) -> ?"
+		        "!type": "fn(exists: bool) -> +any"
 		       },
 		       "getFirstAlive": {
-		        "!type": "fn() -> ?"
+		        "!type": "fn() -> +any"
 		       },
 		       "getFirstDead": {
-		        "!type": "fn() -> ?"
+		        "!type": "fn() -> +any"
 		       },
 		       "getTop": {
-		        "!type": "fn() -> ?"
+		        "!type": "fn() -> +any"
 		       },
 		       "getBottom": {
-		        "!type": "fn() -> ?"
+		        "!type": "fn() -> +any"
 		       },
 		       "countLiving": {
-		        "!type": "fn() -> ?"
+		        "!type": "fn() -> number"
 		       },
 		       "countDead": {
-		        "!type": "fn() -> ?"
+		        "!type": "fn() -> number"
 		       },
 		       "getRandom": {
-		        "!type": "fn(startIndex: number, length: number) -> ?"
+		        "!type": "fn(startIndex: number, length: number) -> +any"
 		       },
 		       "remove": {
-		        "!type": "fn(child: +any, destroy: bool, silent: bool) -> ?"
+		        "!type": "fn(child: +any, destroy: bool, silent: bool) -> bool"
 		       },
 		       "moveAll": {
-		        "!type": "fn(group: +Phaser.Group, silent: bool) -> ?"
+		        "!type": "fn(group: +Phaser.Group, silent: bool) -> +Phaser.Group"
 		       },
 		       "removeAll": {
 		        "!type": "fn(destroy: bool, silent: bool)"
@@ -11386,70 +11386,70 @@
 		       "!type": "fn()"
 		      },
 		      "addBody": {
-		       "!type": "fn(body: +Phaser.Physics.P2.Body) -> ?"
+		       "!type": "fn(body: +Phaser.Physics.P2.Body) -> bool"
 		      },
 		      "removeBody": {
-		       "!type": "fn(body: +Phaser.Physics.P2.Body) -> ?"
+		       "!type": "fn(body: +Phaser.Physics.P2.Body) -> +Phaser.Physics.P2.Body"
 		      },
 		      "addSpring": {
-		       "!type": "fn(spring: +Phaser.Physics.P2.Spring|+p2.LinearSpring|+p2.RotationalSpring) -> ?"
+		       "!type": "fn(spring: +Phaser.Physics.P2.Spring|+p2.LinearSpring|+p2.RotationalSpring) -> +Phaser.Physics.P2.Spring"
 		      },
 		      "removeSpring": {
-		       "!type": "fn(spring: +Phaser.Physics.P2.Spring) -> ?"
+		       "!type": "fn(spring: +Phaser.Physics.P2.Spring) -> +Phaser.Physics.P2.Spring"
 		      },
 		      "createDistanceConstraint": {
-		       "!type": "fn(bodyA: +Phaser.Sprite|+Phaser.Physics.P2.Body|+p2.Body, bodyB: +Phaser.Sprite|+Phaser.Physics.P2.Body|+p2.Body, distance: number, localAnchorA: [?], localAnchorB: [?], maxForce: number) -> ?"
+		       "!type": "fn(bodyA: +Phaser.Sprite|+Phaser.Physics.P2.Body|+p2.Body, bodyB: +Phaser.Sprite|+Phaser.Physics.P2.Body|+p2.Body, distance: number, localAnchorA: [?], localAnchorB: [?], maxForce: number) -> +Phaser.Physics.P2.DistanceConstraint"
 		      },
 		      "createGearConstraint": {
-		       "!type": "fn(bodyA: +Phaser.Sprite|+Phaser.Physics.P2.Body|+p2.Body, bodyB: +Phaser.Sprite|+Phaser.Physics.P2.Body|+p2.Body, angle: number, ratio: number) -> ?"
+		       "!type": "fn(bodyA: +Phaser.Sprite|+Phaser.Physics.P2.Body|+p2.Body, bodyB: +Phaser.Sprite|+Phaser.Physics.P2.Body|+p2.Body, angle: number, ratio: number) -> +Phaser.Physics.P2.GearConstraint"
 		      },
 		      "createRevoluteConstraint": {
-		       "!type": "fn(bodyA: +Phaser.Sprite|+Phaser.Physics.P2.Body|+p2.Body, pivotA: [?], bodyB: +Phaser.Sprite|+Phaser.Physics.P2.Body|+p2.Body, pivotB: [?], maxForce: number, worldPivot: +Float32Array) -> ?"
+		       "!type": "fn(bodyA: +Phaser.Sprite|+Phaser.Physics.P2.Body|+p2.Body, pivotA: [?], bodyB: +Phaser.Sprite|+Phaser.Physics.P2.Body|+p2.Body, pivotB: [?], maxForce: number, worldPivot: +Float32Array) -> +Phaser.Physics.P2.RevoluteConstraint"
 		      },
 		      "createLockConstraint": {
-		       "!type": "fn(bodyA: +Phaser.Sprite|+Phaser.Physics.P2.Body|+p2.Body, bodyB: +Phaser.Sprite|+Phaser.Physics.P2.Body|+p2.Body, offset: [?], angle: number, maxForce: number) -> ?"
+		       "!type": "fn(bodyA: +Phaser.Sprite|+Phaser.Physics.P2.Body|+p2.Body, bodyB: +Phaser.Sprite|+Phaser.Physics.P2.Body|+p2.Body, offset: [?], angle: number, maxForce: number) -> +Phaser.Physics.P2.LockConstraint"
 		      },
 		      "createPrismaticConstraint": {
-		       "!type": "fn(bodyA: +Phaser.Sprite|+Phaser.Physics.P2.Body|+p2.Body, bodyB: +Phaser.Sprite|+Phaser.Physics.P2.Body|+p2.Body, lockRotation: bool, anchorA: [?], anchorB: [?], axis: [?], maxForce: number) -> ?"
+		       "!type": "fn(bodyA: +Phaser.Sprite|+Phaser.Physics.P2.Body|+p2.Body, bodyB: +Phaser.Sprite|+Phaser.Physics.P2.Body|+p2.Body, lockRotation: bool, anchorA: [?], anchorB: [?], axis: [?], maxForce: number) -> +Phaser.Physics.P2.PrismaticConstraint"
 		      },
 		      "addConstraint": {
-		       "!type": "fn(constraint: +Phaser.Physics.P2.Constraint) -> ?"
+		       "!type": "fn(constraint: +Phaser.Physics.P2.Constraint) -> +Phaser.Physics.P2.Constraint"
 		      },
 		      "removeConstraint": {
-		       "!type": "fn(constraint: +Phaser.Physics.P2.Constraint) -> ?"
+		       "!type": "fn(constraint: +Phaser.Physics.P2.Constraint) -> +Phaser.Physics.P2.Constraint"
 		      },
 		      "addContactMaterial": {
-		       "!type": "fn(material: +Phaser.Physics.P2.ContactMaterial) -> ?"
+		       "!type": "fn(material: +Phaser.Physics.P2.ContactMaterial) -> +Phaser.Physics.P2.ContactMaterial"
 		      },
 		      "removeContactMaterial": {
-		       "!type": "fn(material: +Phaser.Physics.P2.ContactMaterial) -> ?"
+		       "!type": "fn(material: +Phaser.Physics.P2.ContactMaterial) -> +Phaser.Physics.P2.ContactMaterial"
 		      },
 		      "getContactMaterial": {
-		       "!type": "fn(materialA: +Phaser.Physics.P2.Material, materialB: +Phaser.Physics.P2.Material) -> ?"
+		       "!type": "fn(materialA: +Phaser.Physics.P2.Material, materialB: +Phaser.Physics.P2.Material) -> +Phaser.Physics.P2.ContactMaterial|bool"
 		      },
 		      "setMaterial": {
 		       "!type": "fn(material: +Phaser.Physics.P2.Material, bodies: +array.<Phaser.Physics.P2.Body>)"
 		      },
 		      "createMaterial": {
-		       "!type": "fn(name: string, body: +Phaser.Physics.P2.Body) -> ?"
+		       "!type": "fn(name: string, body: +Phaser.Physics.P2.Body) -> +Phaser.Physics.P2.Material"
 		      },
 		      "createContactMaterial": {
-		       "!type": "fn(materialA: +Phaser.Physics.P2.Material, materialB: +Phaser.Physics.P2.Material, options: ?) -> ?"
+		       "!type": "fn(materialA: +Phaser.Physics.P2.Material, materialB: +Phaser.Physics.P2.Material, options: ?) -> +Phaser.Physics.P2.ContactMaterial"
 		      },
 		      "getBodies": {
-		       "!type": "fn() -> ?"
+		       "!type": "fn() -> +array.<Phaser.Physics.P2.Body>"
 		      },
 		      "getBody": {
-		       "!type": "fn(object: ?) -> ?"
+		       "!type": "fn(object: ?) -> +p2.Body"
 		      },
 		      "getSprings": {
-		       "!type": "fn() -> ?"
+		       "!type": "fn() -> +array.<Phaser.Physics.P2.Spring>"
 		      },
 		      "getConstraints": {
-		       "!type": "fn() -> ?"
+		       "!type": "fn() -> +array.<Phaser.Physics.P2.Constraint>"
 		      },
 		      "hitTest": {
-		       "!type": "fn(worldPoint: +Phaser.Point, bodies: [?], precision: number, filterStatic: bool) -> ?"
+		       "!type": "fn(worldPoint: +Phaser.Point, bodies: [?], precision: number, filterStatic: bool) -> [?]"
 		      },
 		      "toJSON": {
 		       "!type": "fn() -> ?"
@@ -11458,37 +11458,37 @@
 		       "!type": "fn(object: +Phaser.Group|+Phaser.Sprite)"
 		      },
 		      "createSpring": {
-		       "!type": "fn(bodyA: +Phaser.Sprite|+Phaser.Physics.P2.Body|+p2.Body, bodyB: +Phaser.Sprite|+Phaser.Physics.P2.Body|+p2.Body, restLength: number, stiffness: number, damping: number, worldA: [?], worldB: [?], localA: [?], localB: [?]) -> ?"
+		       "!type": "fn(bodyA: +Phaser.Sprite|+Phaser.Physics.P2.Body|+p2.Body, bodyB: +Phaser.Sprite|+Phaser.Physics.P2.Body|+p2.Body, restLength: number, stiffness: number, damping: number, worldA: [?], worldB: [?], localA: [?], localB: [?]) -> +Phaser.Physics.P2.Spring"
 		      },
 		      "createRotationalSpring": {
-		       "!type": "fn(bodyA: +Phaser.Sprite|+Phaser.Physics.P2.Body|+p2.Body, bodyB: +Phaser.Sprite|+Phaser.Physics.P2.Body|+p2.Body, restAngle: number, stiffness: number, damping: number) -> ?"
+		       "!type": "fn(bodyA: +Phaser.Sprite|+Phaser.Physics.P2.Body|+p2.Body, bodyB: +Phaser.Sprite|+Phaser.Physics.P2.Body|+p2.Body, restAngle: number, stiffness: number, damping: number) -> +Phaser.Physics.P2.RotationalSpring"
 		      },
 		      "createBody": {
-		       "!type": "fn(x: number, y: number, mass: number, addToWorld: bool, options: +PhaserPhysics.P2createBodyOptions, points: [?]|number) -> ?"
+		       "!type": "fn(x: number, y: number, mass: number, addToWorld: bool, options: +PhaserPhysics.P2createBodyOptions, points: [?]|number) -> +Phaser.Physics.P2.Body"
 		      },
 		      "createParticle": {
 		       "!type": "fn(x: number, y: number, mass: number, addToWorld: bool, options: +PhaserPhysics.P2createParticleOptions, points: [?]|number)"
 		      },
 		      "convertCollisionObjects": {
-		       "!type": "fn(map: +Phaser.Tilemap, layer: number|string|+Phaser.TilemapLayer, addToWorld: bool) -> ?"
+		       "!type": "fn(map: +Phaser.Tilemap, layer: number|string|+Phaser.TilemapLayer, addToWorld: bool) -> +array"
 		      },
 		      "clearTilemapLayerBodies": {
 		       "!type": "fn(map: +Phaser.Tilemap, layer: number|string|+Phaser.TilemapLayer)"
 		      },
 		      "convertTilemap": {
-		       "!type": "fn(map: +Phaser.Tilemap, layer: number|string|+Phaser.TilemapLayer, addToWorld: bool, optimize: bool) -> ?"
+		       "!type": "fn(map: +Phaser.Tilemap, layer: number|string|+Phaser.TilemapLayer, addToWorld: bool, optimize: bool) -> +array"
 		      },
 		      "mpx": {
-		       "!type": "fn(v: number) -> ?"
+		       "!type": "fn(v: number) -> number"
 		      },
 		      "pxm": {
-		       "!type": "fn(v: number) -> ?"
+		       "!type": "fn(v: number) -> number"
 		      },
 		      "mpxi": {
-		       "!type": "fn(v: number) -> ?"
+		       "!type": "fn(v: number) -> number"
 		      },
 		      "pxmi": {
-		       "!type": "fn(v: number) -> ?"
+		       "!type": "fn(v: number) -> number"
 		      },
 		      "friction": {
 		       "!type": "number"
@@ -11635,13 +11635,13 @@
 		     },
 		     "sounds": {},
 		     "play": {
-		      "!type": "fn(marker: string, volume: number) -> ?"
+		      "!type": "fn(marker: string, volume: number) -> +Phaser.Sound"
 		     },
 		     "stop": {
 		      "!type": "fn(marker: string)"
 		     },
 		     "get": {
-		      "!type": "fn(marker: string) -> ?"
+		      "!type": "fn(marker: string) -> +Phaser.Sound"
 		     }
 		    }
 		   },
@@ -11770,10 +11770,10 @@
 		      "!type": "fn()"
 		     },
 		     "loopFull": {
-		      "!type": "fn(volume: number) -> ?"
+		      "!type": "fn(volume: number) -> +Phaser.Sound"
 		     },
 		     "play": {
-		      "!type": "fn(marker: string, position: number, volume: number, loop: bool, forceRestart: bool) -> ?"
+		      "!type": "fn(marker: string, position: number, volume: number, loop: bool, forceRestart: bool) -> +Phaser.Sound"
 		     },
 		     "restart": {
 		      "!type": "fn(marker: string, position: number, volume: number, loop: bool)"
@@ -11856,7 +11856,7 @@
 		      "!type": "fn()"
 		     },
 		     "unlock": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> bool"
 		     },
 		     "stopAll": {
 		      "!type": "fn()"
@@ -11877,19 +11877,19 @@
 		      "!type": "fn()"
 		     },
 		     "add": {
-		      "!type": "fn(key: string, volume: number, loop: bool, connect: bool) -> ?"
+		      "!type": "fn(key: string, volume: number, loop: bool, connect: bool) -> +Phaser.Sound"
 		     },
 		     "addSprite": {
-		      "!type": "fn(key: string) -> ?"
+		      "!type": "fn(key: string) -> +Phaser.AudioSprite"
 		     },
 		     "remove": {
-		      "!type": "fn(sound: +Phaser.Sound) -> ?"
+		      "!type": "fn(sound: +Phaser.Sound) -> bool"
 		     },
 		     "removeByKey": {
-		      "!type": "fn(key: string) -> ?"
+		      "!type": "fn(key: string) -> number"
 		     },
 		     "play": {
-		      "!type": "fn(key: string, volume: number, loop: bool) -> ?"
+		      "!type": "fn(key: string, volume: number, loop: bool) -> +Phaser.Sound"
 		     },
 		     "destroy": {
 		      "!type": "fn()"
@@ -11912,7 +11912,7 @@
 		      "!type": "bool"
 		     },
 		     "getAll": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> [?]"
 		     },
 		     "removeAll": {
 		      "!type": "fn()"
@@ -11921,19 +11921,19 @@
 		      "!type": "fn(obj: ?|[?]|+Phaser.Group, children: bool)"
 		     },
 		     "add": {
-		      "!type": "fn(tween: +Phaser.Tween) -> ?"
+		      "!type": "fn(tween: +Phaser.Tween) -> +Phaser.Tween"
 		     },
 		     "create": {
-		      "!type": "fn(object: ?) -> ?"
+		      "!type": "fn(object: ?) -> +Phaser.Tween"
 		     },
 		     "remove": {
 		      "!type": "fn(tween: +Phaser.Tween)"
 		     },
 		     "update": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> bool"
 		     },
 		     "isTweening": {
-		      "!type": "fn(object: ?) -> ?"
+		      "!type": "fn(object: ?) -> bool"
 		     },
 		     "pauseAll": {
 		      "!type": "fn()"
@@ -11946,37 +11946,37 @@
 		   "Canvas": {
 		    "!type": "fn()",
 		    "create": {
-		     "!type": "fn(parent: ?, width: number, height: number, id: string, skipPool: bool) -> ?"
+		     "!type": "fn(parent: ?, width: number, height: number, id: string, skipPool: bool) -> +HTMLCanvasElement"
 		    },
 		    "setBackgroundColor": {
-		     "!type": "fn(canvas: +HTMLCanvasElement, color: string) -> ?"
+		     "!type": "fn(canvas: +HTMLCanvasElement, color: string) -> +HTMLCanvasElement"
 		    },
 		    "setTouchAction": {
-		     "!type": "fn(canvas: +HTMLCanvasElement, value: string) -> ?"
+		     "!type": "fn(canvas: +HTMLCanvasElement, value: string) -> +HTMLCanvasElement"
 		    },
 		    "setUserSelect": {
-		     "!type": "fn(canvas: +HTMLCanvasElement, value: string) -> ?"
+		     "!type": "fn(canvas: +HTMLCanvasElement, value: string) -> +HTMLCanvasElement"
 		    },
 		    "addToDOM": {
-		     "!type": "fn(canvas: +HTMLCanvasElement, parent: string|+HTMLElement, overflowHidden: bool) -> ?"
+		     "!type": "fn(canvas: +HTMLCanvasElement, parent: string|+HTMLElement, overflowHidden: bool) -> +HTMLCanvasElement"
 		    },
 		    "removeFromDOM": {
 		     "!type": "fn(canvas: +HTMLCanvasElement)"
 		    },
 		    "setTransform": {
-		     "!type": "fn(context: +CanvasRenderingContext2D, translateX: number, translateY: number, scaleX: number, scaleY: number, skewX: number, skewY: number) -> ?"
+		     "!type": "fn(context: +CanvasRenderingContext2D, translateX: number, translateY: number, scaleX: number, scaleY: number, skewX: number, skewY: number) -> +CanvasRenderingContext2D"
 		    },
 		    "setSmoothingEnabled": {
-		     "!type": "fn(context: +CanvasRenderingContext2D, value: bool) -> ?"
+		     "!type": "fn(context: +CanvasRenderingContext2D, value: bool) -> +CanvasRenderingContext2D"
 		    },
 		    "getSmoothingEnabled": {
-		     "!type": "fn(context: +CanvasRenderingContext2D) -> ?"
+		     "!type": "fn(context: +CanvasRenderingContext2D) -> bool"
 		    },
 		    "setImageRenderingCrisp": {
-		     "!type": "fn(canvas: +HTMLCanvasElement) -> ?"
+		     "!type": "fn(canvas: +HTMLCanvasElement) -> +HTMLCanvasElement"
 		    },
 		    "setImageRenderingBicubic": {
-		     "!type": "fn(canvas: +HTMLCanvasElement) -> ?"
+		     "!type": "fn(canvas: +HTMLCanvasElement) -> +HTMLCanvasElement"
 		    }
 		   },
 		   "Device": {
@@ -12208,10 +12208,10 @@
 		      "!type": "bool"
 		     },
 		     "canPlayAudio": {
-		      "!type": "fn(type: string) -> ?"
+		      "!type": "fn(type: string) -> bool"
 		     },
 		     "canPlayVideo": {
-		      "!type": "fn(type: string) -> ?"
+		      "!type": "fn(type: string) -> bool"
 		     },
 		     "isConsoleOpen": {
 		      "!type": "fn()"
@@ -12263,16 +12263,16 @@
 		   "DOM": {
 		    "!type": "fn()",
 		    "getOffset": {
-		     "!type": "fn(element: +DOMElement, point: +Phaser.Point) -> ?"
+		     "!type": "fn(element: +DOMElement, point: +Phaser.Point) -> +Phaser.Point"
 		    },
 		    "getBounds": {
-		     "!type": "fn(element: +DOMElement|?, cushion: number) -> ?"
+		     "!type": "fn(element: +DOMElement|?, cushion: number) -> ?|bool"
 		    },
 		    "getAspectRatio": {
-		     "!type": "fn(object: +DOMElement|?) -> ?"
+		     "!type": "fn(object: +DOMElement|?) -> number"
 		    },
 		    "inLayoutViewport": {
-		     "!type": "fn(element: +DOMElement|?, cushion: number) -> ?"
+		     "!type": "fn(element: +DOMElement|?, cushion: number) -> bool"
 		    },
 		    "getScreenOrientation": {
 		     "!type": "fn(primaryFallback: string)"
@@ -12318,10 +12318,10 @@
 		      "!type": "fn()"
 		     },
 		     "isSetTimeOut": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> bool"
 		     },
 		     "isRAF": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> bool"
 		     }
 		    }
 		   },
@@ -12354,7 +12354,7 @@
 		      "!type": "number"
 		     },
 		     "containsImageIndex": {
-		      "!type": "fn(imageIndex: number) -> ?"
+		      "!type": "fn(imageIndex: number) -> bool"
 		     },
 		     "addImage": {
 		      "!type": "fn(gid: number, image: string)"
@@ -12434,7 +12434,7 @@
 		     },
 		     "collisionCallbackContext": {},
 		     "containsPoint": {
-		      "!type": "fn(x: number, y: number) -> ?"
+		      "!type": "fn(x: number, y: number) -> bool"
 		     },
 		     "intersects": {
 		      "!type": "fn(x: number, y: number, right: number, bottom: number)"
@@ -12452,7 +12452,7 @@
 		      "!type": "fn()"
 		     },
 		     "isInteresting": {
-		      "!type": "fn(collides: bool, faces: bool) -> ?"
+		      "!type": "fn(collides: bool, faces: bool) -> bool"
 		     },
 		     "copy": {
 		      "!type": "fn(tile: +Phaser.Tile)"
@@ -12545,40 +12545,40 @@
 		      "!type": "+array"
 		     },
 		     "create": {
-		      "!type": "fn(name: string, width: number, height: number, tileWidth: number, tileHeight: number, group: +Phaser.Group) -> ?"
+		      "!type": "fn(name: string, width: number, height: number, tileWidth: number, tileHeight: number, group: +Phaser.Group) -> +Phaser.TilemapLayer"
 		     },
 		     "setTileSize": {
 		      "!type": "fn(tileWidth: number, tileHeight: number)"
 		     },
 		     "addTilesetImage": {
-		      "!type": "fn(tileset: string, key: string|+Phaser.BitmapData, tileWidth: number, tileHeight: number, tileMargin: number, tileSpacing: number, gid: number) -> ?"
+		      "!type": "fn(tileset: string, key: string|+Phaser.BitmapData, tileWidth: number, tileHeight: number, tileMargin: number, tileSpacing: number, gid: number) -> +Phaser.Tileset"
 		     },
 		     "createFromObjects": {
 		      "!type": "fn(name: string, gid: number, key: string, frame: number|string, exists: bool, autoCull: bool, group: +Phaser.Group, CustomClass: ?, adjustY: bool)"
 		     },
 		     "createFromTiles": {
-		      "!type": "fn(tiles: number|[?], replacements: number|[?], key: string, layer: number|string|+Phaser.TilemapLayer, group: +Phaser.Group, properties: ?) -> ?"
+		      "!type": "fn(tiles: number|[?], replacements: number|[?], key: string, layer: number|string|+Phaser.TilemapLayer, group: +Phaser.Group, properties: ?) -> number"
 		     },
 		     "createLayer": {
-		      "!type": "fn(layer: number|string, width: number, height: number, group: +Phaser.Group) -> ?"
+		      "!type": "fn(layer: number|string, width: number, height: number, group: +Phaser.Group) -> +Phaser.TilemapLayer"
 		     },
 		     "createBlankLayer": {
-		      "!type": "fn(name: string, width: number, height: number, tileWidth: number, tileHeight: number, group: +Phaser.Group) -> ?"
+		      "!type": "fn(name: string, width: number, height: number, tileWidth: number, tileHeight: number, group: +Phaser.Group) -> +Phaser.TilemapLayer"
 		     },
 		     "getIndex": {
-		      "!type": "fn(location: +array, name: string) -> ?"
+		      "!type": "fn(location: +array, name: string) -> number"
 		     },
 		     "getLayerIndex": {
-		      "!type": "fn(name: string) -> ?"
+		      "!type": "fn(name: string) -> number"
 		     },
 		     "getTilesetIndex": {
-		      "!type": "fn(name: string) -> ?"
+		      "!type": "fn(name: string) -> number"
 		     },
 		     "getImageIndex": {
-		      "!type": "fn(name: string) -> ?"
+		      "!type": "fn(name: string) -> number"
 		     },
 		     "getObjectIndex": {
-		      "!type": "fn(name: string) -> ?"
+		      "!type": "fn(name: string) -> number"
 		     },
 		     "setTileIndexCallback": {
 		      "!type": "fn(indexes: number|+array, callback: fn(), callbackContext: ?, layer: number|string|+Phaser.TilemapLayer)"
@@ -12599,7 +12599,7 @@
 		      "!type": "fn(index: number, collides: bool, layer: number, recalculate: bool)"
 		     },
 		     "getLayer": {
-		      "!type": "fn(layer: number|string|+Phaser.TilemapLayer) -> ?"
+		      "!type": "fn(layer: number|string|+Phaser.TilemapLayer) -> number"
 		     },
 		     "setPreventRecalculate": {
 		      "!type": "fn(value: bool)"
@@ -12623,31 +12623,31 @@
 		      "!type": "fn(layer: number|string|+Phaser.TilemapLayer)"
 		     },
 		     "hasTile": {
-		      "!type": "fn(x: number, y: number, layer: number|string|+Phaser.TilemapLayer) -> ?"
+		      "!type": "fn(x: number, y: number, layer: number|string|+Phaser.TilemapLayer) -> bool"
 		     },
 		     "removeTile": {
-		      "!type": "fn(x: number, y: number, layer: number|string|+Phaser.TilemapLayer) -> ?"
+		      "!type": "fn(x: number, y: number, layer: number|string|+Phaser.TilemapLayer) -> +Phaser.Tile"
 		     },
 		     "removeTileWorldXY": {
-		      "!type": "fn(x: number, y: number, tileWidth: number, tileHeight: number, layer: number|string|+Phaser.TilemapLayer) -> ?"
+		      "!type": "fn(x: number, y: number, tileWidth: number, tileHeight: number, layer: number|string|+Phaser.TilemapLayer) -> +Phaser.Tile"
 		     },
 		     "putTile": {
-		      "!type": "fn(tile: +Phaser.Tile|number|+null, x: number, y: number, layer: number|string|+Phaser.TilemapLayer) -> ?"
+		      "!type": "fn(tile: +Phaser.Tile|number|+null, x: number, y: number, layer: number|string|+Phaser.TilemapLayer) -> +Phaser.Tile"
 		     },
 		     "putTileWorldXY": {
-		      "!type": "fn(tile: +Phaser.Tile|number, x: number, y: number, tileWidth: number, tileHeight: number, layer: number|string|+Phaser.TilemapLayer) -> ?"
+		      "!type": "fn(tile: +Phaser.Tile|number, x: number, y: number, tileWidth: number, tileHeight: number, layer: number|string|+Phaser.TilemapLayer) -> +Phaser.Tile"
 		     },
 		     "searchTileIndex": {
-		      "!type": "fn(index: number, skip: number, reverse: number, layer: number|string|+Phaser.TilemapLayer) -> ?"
+		      "!type": "fn(index: number, skip: number, reverse: number, layer: number|string|+Phaser.TilemapLayer) -> +Phaser.Tile"
 		     },
 		     "getTile": {
-		      "!type": "fn(x: number, y: number, layer: number|string|+Phaser.TilemapLayer, nonNull: bool) -> ?"
+		      "!type": "fn(x: number, y: number, layer: number|string|+Phaser.TilemapLayer, nonNull: bool) -> +Phaser.Tile"
 		     },
 		     "getTileWorldXY": {
-		      "!type": "fn(x: number, y: number, tileWidth: number, tileHeight: number, layer: number|string|+Phaser.TilemapLayer, nonNull: bool) -> ?"
+		      "!type": "fn(x: number, y: number, tileWidth: number, tileHeight: number, layer: number|string|+Phaser.TilemapLayer, nonNull: bool) -> +Phaser.Tile"
 		     },
 		     "copy": {
-		      "!type": "fn(x: number, y: number, width: number, height: number, layer: number|string|+Phaser.TilemapLayer) -> ?"
+		      "!type": "fn(x: number, y: number, width: number, height: number, layer: number|string|+Phaser.TilemapLayer) -> +array"
 		     },
 		     "paste": {
 		      "!type": "fn(x: number, y: number, tileblock: +array, layer: number|string|+Phaser.TilemapLayer)"
@@ -12764,19 +12764,19 @@
 		      "!type": "fn()"
 		     },
 		     "getTileX": {
-		      "!type": "fn(x: number) -> ?"
+		      "!type": "fn(x: number) -> number"
 		     },
 		     "getTileY": {
-		      "!type": "fn(y: number) -> ?"
+		      "!type": "fn(y: number) -> number"
 		     },
 		     "getTileXY": {
-		      "!type": "fn(x: number, y: number, point: +Phaser.Point|?) -> ?"
+		      "!type": "fn(x: number, y: number, point: +Phaser.Point|?) -> +Phaser.Point|?"
 		     },
 		     "getRayCastTiles": {
-		      "!type": "fn(line: +Phaser.Line, stepRate: number, collides: bool, interestingFace: bool) -> ?"
+		      "!type": "fn(line: +Phaser.Line, stepRate: number, collides: bool, interestingFace: bool) -> [?]"
 		     },
 		     "getTiles": {
-		      "!type": "fn(x: number, y: number, width: number, height: number, collides: bool, interestingFace: bool) -> ?"
+		      "!type": "fn(x: number, y: number, width: number, height: number, collides: bool, interestingFace: bool) -> +array.<Phaser.Tile>"
 		     },
 		     "resetTilesetCache": {
 		      "!type": "fn()"
@@ -12837,7 +12837,7 @@
 		      "!type": "number"
 		     },
 		     "play": {
-		      "!type": "fn(name: string, frameRate: number, loop: bool, killOnComplete: bool) -> ?"
+		      "!type": "fn(name: string, frameRate: number, loop: bool, killOnComplete: bool) -> +Phaser.Animation"
 		     },
 		     "autoCull": {
 		      "!type": "bool"
@@ -12864,16 +12864,16 @@
 		      "!type": "number"
 		     },
 		     "bringToTop": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +PIXI.DisplayObject"
 		     },
 		     "sendToBack": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +PIXI.DisplayObject"
 		     },
 		     "moveUp": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +PIXI.DisplayObject"
 		     },
 		     "moveDown": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +PIXI.DisplayObject"
 		     },
 		     "cropRect": {
 		      "!type": "+Phaser.Rectangle"
@@ -12932,10 +12932,10 @@
 		      "!type": "number"
 		     },
 		     "revive": {
-		      "!type": "fn(health: number) -> ?"
+		      "!type": "fn(health: number) -> +PIXI.DisplayObject"
 		     },
 		     "kill": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +PIXI.DisplayObject"
 		     },
 		     "loadTexture": {
 		      "!type": "fn(key: string|+Phaser.RenderTexture|+Phaser.BitmapData|+Phaser.Video|+PIXI.Texture, frame: string|number, stopAnimation: bool)"
@@ -12956,7 +12956,7 @@
 		      "!type": "string"
 		     },
 		     "overlap": {
-		      "!type": "fn(displayObject: +Phaser.Sprite|+Phaser.Image|+Phaser.TileSprite|+Phaser.Button|+PIXI.DisplayObject) -> ?"
+		      "!type": "fn(displayObject: +Phaser.Sprite|+Phaser.Image|+Phaser.TileSprite|+Phaser.Button|+PIXI.DisplayObject) -> bool"
 		     },
 		     "body": {
 		      "!type": "+Phaser.Physics.Arcade.Body|+Phaser.Physics.P2.Body|+Phaser.Physics.Ninja.Body|+null"
@@ -12968,7 +12968,7 @@
 		      "!type": "number"
 		     },
 		     "reset": {
-		      "!type": "fn(x: number, y: number, health: number) -> ?"
+		      "!type": "fn(x: number, y: number, health: number) -> +PIXI.DisplayObject"
 		     },
 		     "transformCallback": {
 		      "!type": "fn()"
@@ -13042,7 +13042,7 @@
 		      "!type": "fn(context: +CanvasRenderingContext2D, x: number, y: number, index: number)"
 		     },
 		     "containsTileIndex": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> bool"
 		     },
 		     "setImage": {
 		      "!type": "fn(image: +Image)"
@@ -13125,10 +13125,10 @@
 		      "!type": "fn()"
 		     },
 		     "add": {
-		      "!type": "fn(timer: +Phaser.Timer) -> ?"
+		      "!type": "fn(timer: +Phaser.Timer) -> +Phaser.Timer"
 		     },
 		     "create": {
-		      "!type": "fn(autoDestroy: bool) -> ?"
+		      "!type": "fn(autoDestroy: bool) -> +Phaser.Timer"
 		     },
 		     "removeAll": {
 		      "!type": "fn()"
@@ -13137,13 +13137,13 @@
 		      "!type": "fn(time: number)"
 		     },
 		     "totalElapsedSeconds": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> number"
 		     },
 		     "elapsedSince": {
-		      "!type": "fn(since: number) -> ?"
+		      "!type": "fn(since: number) -> number"
 		     },
 		     "elapsedSecondsSince": {
-		      "!type": "fn(since: number) -> ?"
+		      "!type": "fn(since: number) -> number"
 		     },
 		     "reset": {
 		      "!type": "fn()"
@@ -13184,13 +13184,13 @@
 		      "!type": "bool"
 		     },
 		     "add": {
-		      "!type": "fn(delay: number, callback: fn(), callbackContext: ?, arguments: ?) -> ?"
+		      "!type": "fn(delay: number, callback: fn(), callbackContext: ?, arguments: ?) -> +Phaser.TimerEvent"
 		     },
 		     "repeat": {
-		      "!type": "fn(delay: number, repeatCount: number, callback: fn(), callbackContext: ?, arguments: ?) -> ?"
+		      "!type": "fn(delay: number, repeatCount: number, callback: fn(), callbackContext: ?, arguments: ?) -> +Phaser.TimerEvent"
 		     },
 		     "loop": {
-		      "!type": "fn(delay: number, callback: fn(), callbackContext: ?, arguments: ?) -> ?"
+		      "!type": "fn(delay: number, callback: fn(), callbackContext: ?, arguments: ?) -> +Phaser.TimerEvent"
 		     },
 		     "start": {
 		      "!type": "fn(delay: number)"
@@ -13208,7 +13208,7 @@
 		      "!type": "fn()"
 		     },
 		     "update": {
-		      "!type": "fn(time: number) -> ?"
+		      "!type": "fn(time: number) -> bool"
 		     },
 		     "pause": {
 		      "!type": "fn()"
@@ -13290,7 +13290,7 @@
 		     "!type": "fn()",
 		     "prototype": {
 		      "None": {
-		       "!type": "fn(k: number) -> ?"
+		       "!type": "fn(k: number) -> number"
 		      }
 		     }
 		    },
@@ -13298,13 +13298,13 @@
 		     "!type": "fn()",
 		     "prototype": {
 		      "In": {
-		       "!type": "fn(k: number) -> ?"
+		       "!type": "fn(k: number) -> number"
 		      },
 		      "Out": {
-		       "!type": "fn(k: number) -> ?"
+		       "!type": "fn(k: number) -> number"
 		      },
 		      "InOut": {
-		       "!type": "fn(k: number) -> ?"
+		       "!type": "fn(k: number) -> number"
 		      }
 		     }
 		    },
@@ -13312,13 +13312,13 @@
 		     "!type": "fn()",
 		     "prototype": {
 		      "In": {
-		       "!type": "fn(k: number) -> ?"
+		       "!type": "fn(k: number) -> number"
 		      },
 		      "Out": {
-		       "!type": "fn(k: number) -> ?"
+		       "!type": "fn(k: number) -> number"
 		      },
 		      "InOut": {
-		       "!type": "fn(k: number) -> ?"
+		       "!type": "fn(k: number) -> number"
 		      }
 		     }
 		    },
@@ -13326,13 +13326,13 @@
 		     "!type": "fn()",
 		     "prototype": {
 		      "In": {
-		       "!type": "fn(k: number) -> ?"
+		       "!type": "fn(k: number) -> number"
 		      },
 		      "Out": {
-		       "!type": "fn(k: number) -> ?"
+		       "!type": "fn(k: number) -> number"
 		      },
 		      "InOut": {
-		       "!type": "fn(k: number) -> ?"
+		       "!type": "fn(k: number) -> number"
 		      }
 		     }
 		    },
@@ -13340,13 +13340,13 @@
 		     "!type": "fn()",
 		     "prototype": {
 		      "In": {
-		       "!type": "fn(k: number) -> ?"
+		       "!type": "fn(k: number) -> number"
 		      },
 		      "Out": {
-		       "!type": "fn(k: number) -> ?"
+		       "!type": "fn(k: number) -> number"
 		      },
 		      "InOut": {
-		       "!type": "fn(k: number) -> ?"
+		       "!type": "fn(k: number) -> number"
 		      }
 		     }
 		    },
@@ -13354,13 +13354,13 @@
 		     "!type": "fn()",
 		     "prototype": {
 		      "In": {
-		       "!type": "fn(k: number) -> ?"
+		       "!type": "fn(k: number) -> number"
 		      },
 		      "Out": {
-		       "!type": "fn(k: number) -> ?"
+		       "!type": "fn(k: number) -> number"
 		      },
 		      "InOut": {
-		       "!type": "fn(k: number) -> ?"
+		       "!type": "fn(k: number) -> number"
 		      }
 		     }
 		    },
@@ -13368,13 +13368,13 @@
 		     "!type": "fn()",
 		     "prototype": {
 		      "In": {
-		       "!type": "fn(k: number) -> ?"
+		       "!type": "fn(k: number) -> number"
 		      },
 		      "Out": {
-		       "!type": "fn(k: number) -> ?"
+		       "!type": "fn(k: number) -> number"
 		      },
 		      "InOut": {
-		       "!type": "fn(k: number) -> ?"
+		       "!type": "fn(k: number) -> number"
 		      }
 		     }
 		    },
@@ -13382,13 +13382,13 @@
 		     "!type": "fn()",
 		     "prototype": {
 		      "In": {
-		       "!type": "fn(k: number) -> ?"
+		       "!type": "fn(k: number) -> number"
 		      },
 		      "Out": {
-		       "!type": "fn(k: number) -> ?"
+		       "!type": "fn(k: number) -> number"
 		      },
 		      "InOut": {
-		       "!type": "fn(k: number) -> ?"
+		       "!type": "fn(k: number) -> number"
 		      }
 		     }
 		    },
@@ -13396,13 +13396,13 @@
 		     "!type": "fn()",
 		     "prototype": {
 		      "In": {
-		       "!type": "fn(k: number) -> ?"
+		       "!type": "fn(k: number) -> number"
 		      },
 		      "Out": {
-		       "!type": "fn(k: number) -> ?"
+		       "!type": "fn(k: number) -> number"
 		      },
 		      "InOut": {
-		       "!type": "fn(k: number) -> ?"
+		       "!type": "fn(k: number) -> number"
 		      }
 		     }
 		    },
@@ -13410,13 +13410,13 @@
 		     "!type": "fn()",
 		     "prototype": {
 		      "In": {
-		       "!type": "fn(k: number) -> ?"
+		       "!type": "fn(k: number) -> number"
 		      },
 		      "Out": {
-		       "!type": "fn(k: number) -> ?"
+		       "!type": "fn(k: number) -> number"
 		      },
 		      "InOut": {
-		       "!type": "fn(k: number) -> ?"
+		       "!type": "fn(k: number) -> number"
 		      }
 		     }
 		    },
@@ -13424,13 +13424,13 @@
 		     "!type": "fn()",
 		     "prototype": {
 		      "In": {
-		       "!type": "fn(k: number) -> ?"
+		       "!type": "fn(k: number) -> number"
 		      },
 		      "Out": {
-		       "!type": "fn(k: number) -> ?"
+		       "!type": "fn(k: number) -> number"
 		      },
 		      "InOut": {
-		       "!type": "fn(k: number) -> ?"
+		       "!type": "fn(k: number) -> number"
 		      }
 		     }
 		    }
@@ -13492,49 +13492,49 @@
 		      "!type": "bool"
 		     },
 		     "to": {
-		      "!type": "fn(properties: ?, duration: number, ease: fn()|string, autoStart: bool, delay: number, repeat: number, yoyo: bool) -> ?"
+		      "!type": "fn(properties: ?, duration: number, ease: fn()|string, autoStart: bool, delay: number, repeat: number, yoyo: bool) -> +Phaser.Tween"
 		     },
 		     "from": {
-		      "!type": "fn(properties: ?, duration: number, ease: fn()|string, autoStart: bool, delay: number, repeat: number, yoyo: bool) -> ?"
+		      "!type": "fn(properties: ?, duration: number, ease: fn()|string, autoStart: bool, delay: number, repeat: number, yoyo: bool) -> +Phaser.Tween"
 		     },
 		     "start": {
-		      "!type": "fn(index: number) -> ?"
+		      "!type": "fn(index: number) -> +Phaser.Tween"
 		     },
 		     "stop": {
-		      "!type": "fn(complete: bool) -> ?"
+		      "!type": "fn(complete: bool) -> +Phaser.Tween"
 		     },
 		     "updateTweenData": {
-		      "!type": "fn(property: string, value: number|fn(), index: number) -> ?"
+		      "!type": "fn(property: string, value: number|fn(), index: number) -> +Phaser.Tween"
 		     },
 		     "delay": {
-		      "!type": "fn(duration: number, index: number) -> ?"
+		      "!type": "fn(duration: number, index: number) -> +Phaser.Tween"
 		     },
 		     "repeat": {
-		      "!type": "fn(total: number) -> ?"
+		      "!type": "fn(total: number) -> +Phaser.Tween"
 		     },
 		     "repeatDelay": {
-		      "!type": "fn(duration: number, index: number) -> ?"
+		      "!type": "fn(duration: number, index: number) -> +Phaser.Tween"
 		     },
 		     "yoyo": {
-		      "!type": "fn(enable: bool, yoyoDelay: number, index: number) -> ?"
+		      "!type": "fn(enable: bool, yoyoDelay: number, index: number) -> +Phaser.Tween"
 		     },
 		     "yoyoDelay": {
-		      "!type": "fn(duration: number, index: number) -> ?"
+		      "!type": "fn(duration: number, index: number) -> +Phaser.Tween"
 		     },
 		     "easing": {
-		      "!type": "fn(ease: fn()|string, index: number) -> ?"
+		      "!type": "fn(ease: fn()|string, index: number) -> +Phaser.Tween"
 		     },
 		     "interpolation": {
-		      "!type": "fn(interpolation: fn(), context: ?, index: number) -> ?"
+		      "!type": "fn(interpolation: fn(), context: ?, index: number) -> +Phaser.Tween"
 		     },
 		     "chain": {
-		      "!type": "fn(tweens: +Phaser.Tween) -> ?"
+		      "!type": "fn(tweens: +Phaser.Tween) -> +Phaser.Tween"
 		     },
 		     "loop": {
-		      "!type": "fn(value: bool) -> ?"
+		      "!type": "fn(value: bool) -> +Phaser.Tween"
 		     },
 		     "onUpdateCallback": {
-		      "!type": "fn(callback: fn(), callbackContext: ?) -> ?"
+		      "!type": "fn(callback: fn(), callbackContext: ?) -> +Phaser.Tween"
 		     },
 		     "pause": {
 		      "!type": "fn()"
@@ -13543,10 +13543,10 @@
 		      "!type": "fn()"
 		     },
 		     "update": {
-		      "!type": "fn(time: number) -> ?"
+		      "!type": "fn(time: number) -> bool"
 		     },
 		     "generateData": {
-		      "!type": "fn(frameRate: number, data: +array) -> ?"
+		      "!type": "fn(frameRate: number, data: +array) -> +array"
 		     },
 		     "totalDuration": {
 		      "!type": "+Phaser.TweenData"
@@ -13612,19 +13612,19 @@
 		      "!type": "bool"
 		     },
 		     "to": {
-		      "!type": "fn(properties: ?, duration: number, ease: fn(), delay: number, repeat: number, yoyo: bool) -> ?"
+		      "!type": "fn(properties: ?, duration: number, ease: fn(), delay: number, repeat: number, yoyo: bool) -> +Phaser.TweenData"
 		     },
 		     "from": {
-		      "!type": "fn(properties: ?, duration: number, ease: fn(), delay: number, repeat: number, yoyo: bool) -> ?"
+		      "!type": "fn(properties: ?, duration: number, ease: fn(), delay: number, repeat: number, yoyo: bool) -> +Phaser.TweenData"
 		     },
 		     "start": {
-		      "!type": "fn() -> ?"
+		      "!type": "fn() -> +Phaser.TweenData"
 		     },
 		     "update": {
-		      "!type": "fn(time: number) -> ?"
+		      "!type": "fn(time: number) -> number"
 		     },
 		     "generateData": {
-		      "!type": "fn(frameRate: number) -> ?"
+		      "!type": "fn(frameRate: number) -> +array"
 		     }
 		    },
 		    "PENDING": {
@@ -13650,22 +13650,22 @@
 		      "!type": "[?]"
 		     },
 		     "add": {
-		      "!type": "fn(item: +any) -> ?"
+		      "!type": "fn(item: +any) -> +any"
 		     },
 		     "getIndex": {
-		      "!type": "fn(item: +any) -> ?"
+		      "!type": "fn(item: +any) -> number"
 		     },
 		     "getByKey": {
-		      "!type": "fn(property: string, value: +any) -> ?"
+		      "!type": "fn(property: string, value: +any) -> +any"
 		     },
 		     "exists": {
-		      "!type": "fn(item: +any) -> ?"
+		      "!type": "fn(item: +any) -> bool"
 		     },
 		     "reset": {
 		      "!type": "fn()"
 		     },
 		     "remove": {
-		      "!type": "fn(item: +any) -> ?"
+		      "!type": "fn(item: +any) -> +any"
 		     },
 		     "setAll": {
 		      "!type": "fn(key: +any, value: +any)"
@@ -13696,33 +13696,33 @@
 		     "!type": "fn(objects: [?], startIndex: number, length: number) -> ?"
 		    },
 		    "shuffle": {
-		     "!type": "fn(array: [?]) -> ?"
+		     "!type": "fn(array: [?]) -> [?]"
 		    },
 		    "transposeMatrix": {
-		     "!type": "fn(array: [?]) -> ?"
+		     "!type": "fn(array: [?]) -> [?]"
 		    },
 		    "rotateMatrix": {
-		     "!type": "fn(matrix: [?], direction: number|string) -> ?"
+		     "!type": "fn(matrix: [?], direction: number|string) -> [?]"
 		    },
 		    "findClosest": {
-		     "!type": "fn(value: number, arr: [?]) -> ?"
+		     "!type": "fn(value: number, arr: [?]) -> number"
 		    },
 		    "rotate": {
-		     "!type": "fn(array: [?]) -> ?"
+		     "!type": "fn(array: [?]) -> +any"
 		    },
 		    "prototype": {
 		     "numberArray": {
-		      "!type": "fn(start: number, end: number) -> ?"
+		      "!type": "fn(start: number, end: number) -> [?]"
 		     },
 		     "numberArrayStep": {
-		      "!type": "fn(start: number, end: number, step: number) -> ?"
+		      "!type": "fn(start: number, end: number, step: number) -> [?]"
 		     }
 		    }
 		   },
 		   "Color": {
 		    "!type": "fn()",
 		    "packPixel": {
-		     "!type": "fn(r: number, g: number, b: number, a: number) -> ?"
+		     "!type": "fn(r: number, g: number, b: number, a: number) -> number"
 		    },
 		    "unpackPixel": {
 		     "!type": "fn(rgba: number, out: ?, hsl: bool, hsv: bool) -> ?"
@@ -13731,7 +13731,7 @@
 		     "!type": "fn(rgba: number, out: ?) -> ?"
 		    },
 		    "toRGBA": {
-		     "!type": "fn(r: number, g: number, b: number, a: number) -> ?"
+		     "!type": "fn(r: number, g: number, b: number, a: number) -> number"
 		    },
 		    "RGBtoHSL": {
 		     "!type": "fn(r: number, g: number, b: number, out: ?) -> ?"
@@ -13746,25 +13746,25 @@
 		     "!type": "fn(h: number, s: number, v: number, out: ?) -> ?"
 		    },
 		    "hueToColor": {
-		     "!type": "fn(p: number, q: number, t: number) -> ?"
+		     "!type": "fn(p: number, q: number, t: number) -> number"
 		    },
 		    "createColor": {
 		     "!type": "fn(r: number, g: number, b: number, a: number, h: number, s: number, l: number, v: number) -> ?"
 		    },
 		    "updateColor": {
-		     "!type": "fn(out: ?) -> ?"
+		     "!type": "fn(out: ?) -> number"
 		    },
 		    "getColor32": {
-		     "!type": "fn(a: number, r: number, g: number, b: number) -> ?"
+		     "!type": "fn(a: number, r: number, g: number, b: number) -> number"
 		    },
 		    "getColor": {
-		     "!type": "fn(r: number, g: number, b: number) -> ?"
+		     "!type": "fn(r: number, g: number, b: number) -> number"
 		    },
 		    "RGBtoString": {
-		     "!type": "fn(r: number, g: number, b: number, a: number, prefix: string) -> ?"
+		     "!type": "fn(r: number, g: number, b: number, a: number, prefix: string) -> string"
 		    },
 		    "hexToRGB": {
-		     "!type": "fn(hex: string) -> ?"
+		     "!type": "fn(hex: string) -> number"
 		    },
 		    "hexToColor": {
 		     "!type": "fn(hex: string, out: ?) -> ?"
@@ -13776,121 +13776,121 @@
 		     "!type": "fn(value: string|number, out: ?) -> ?"
 		    },
 		    "componentToHex": {
-		     "!type": "fn(color: number) -> ?"
+		     "!type": "fn(color: number) -> string"
 		    },
 		    "HSVColorWheel": {
-		     "!type": "fn(s: number, v: number) -> ?"
+		     "!type": "fn(s: number, v: number) -> +array"
 		    },
 		    "HSLColorWheel": {
-		     "!type": "fn(s: number, l: number) -> ?"
+		     "!type": "fn(s: number, l: number) -> +array"
 		    },
 		    "interpolateColor": {
-		     "!type": "fn(color1: number, color2: number, steps: number, currentStep: number, alpha: number) -> ?"
+		     "!type": "fn(color1: number, color2: number, steps: number, currentStep: number, alpha: number) -> number"
 		    },
 		    "interpolateColorWithRGB": {
-		     "!type": "fn(color: number, r: number, g: number, b: number, steps: number, currentStep: number) -> ?"
+		     "!type": "fn(color: number, r: number, g: number, b: number, steps: number, currentStep: number) -> number"
 		    },
 		    "interpolateRGB": {
-		     "!type": "fn(r1: number, g1: number, b1: number, r2: number, g2: number, b2: number, steps: number, currentStep: number) -> ?"
+		     "!type": "fn(r1: number, g1: number, b1: number, r2: number, g2: number, b2: number, steps: number, currentStep: number) -> number"
 		    },
 		    "getRandomColor": {
-		     "!type": "fn(min: number, max: number, alpha: number) -> ?"
+		     "!type": "fn(min: number, max: number, alpha: number) -> number"
 		    },
 		    "getRGB": {
 		     "!type": "fn(color: number) -> ?"
 		    },
 		    "getWebRGB": {
-		     "!type": "fn(color: number|?) -> ?"
+		     "!type": "fn(color: number|?) -> string"
 		    },
 		    "getAlpha": {
-		     "!type": "fn(color: number) -> ?"
+		     "!type": "fn(color: number) -> number"
 		    },
 		    "getAlphaFloat": {
-		     "!type": "fn(color: number) -> ?"
+		     "!type": "fn(color: number) -> number"
 		    },
 		    "getRed": {
-		     "!type": "fn(color: number) -> ?"
+		     "!type": "fn(color: number) -> number"
 		    },
 		    "getGreen": {
-		     "!type": "fn(color: number) -> ?"
+		     "!type": "fn(color: number) -> number"
 		    },
 		    "getBlue": {
-		     "!type": "fn(color: number) -> ?"
+		     "!type": "fn(color: number) -> number"
 		    },
 		    "blendNormal": {
-		     "!type": "fn(a: number, b: number) -> ?"
+		     "!type": "fn(a: number, b: number) -> number"
 		    },
 		    "blendLighten": {
-		     "!type": "fn(a: number, b: number) -> ?"
+		     "!type": "fn(a: number, b: number) -> number"
 		    },
 		    "blendDarken": {
-		     "!type": "fn(a: number, b: number) -> ?"
+		     "!type": "fn(a: number, b: number) -> number"
 		    },
 		    "blendMultiply": {
-		     "!type": "fn(a: number, b: number) -> ?"
+		     "!type": "fn(a: number, b: number) -> number"
 		    },
 		    "blendAverage": {
-		     "!type": "fn(a: number, b: number) -> ?"
+		     "!type": "fn(a: number, b: number) -> number"
 		    },
 		    "blendAdd": {
-		     "!type": "fn(a: number, b: number) -> ?"
+		     "!type": "fn(a: number, b: number) -> number"
 		    },
 		    "blendSubtract": {
-		     "!type": "fn(a: number, b: number) -> ?"
+		     "!type": "fn(a: number, b: number) -> number"
 		    },
 		    "blendDifference": {
-		     "!type": "fn(a: number, b: number) -> ?"
+		     "!type": "fn(a: number, b: number) -> number"
 		    },
 		    "blendNegation": {
-		     "!type": "fn(a: number, b: number) -> ?"
+		     "!type": "fn(a: number, b: number) -> number"
 		    },
 		    "blendScreen": {
-		     "!type": "fn(a: number, b: number) -> ?"
+		     "!type": "fn(a: number, b: number) -> number"
 		    },
 		    "blendExclusion": {
-		     "!type": "fn(a: number, b: number) -> ?"
+		     "!type": "fn(a: number, b: number) -> number"
 		    },
 		    "blendOverlay": {
-		     "!type": "fn(a: number, b: number) -> ?"
+		     "!type": "fn(a: number, b: number) -> number"
 		    },
 		    "blendSoftLight": {
-		     "!type": "fn(a: number, b: number) -> ?"
+		     "!type": "fn(a: number, b: number) -> number"
 		    },
 		    "blendHardLight": {
-		     "!type": "fn(a: number, b: number) -> ?"
+		     "!type": "fn(a: number, b: number) -> number"
 		    },
 		    "blendColorDodge": {
-		     "!type": "fn(a: number, b: number) -> ?"
+		     "!type": "fn(a: number, b: number) -> number"
 		    },
 		    "blendColorBurn": {
-		     "!type": "fn(a: number, b: number) -> ?"
+		     "!type": "fn(a: number, b: number) -> number"
 		    },
 		    "blendLinearDodge": {
-		     "!type": "fn(a: number, b: number) -> ?"
+		     "!type": "fn(a: number, b: number) -> number"
 		    },
 		    "blendLinearBurn": {
-		     "!type": "fn(a: number, b: number) -> ?"
+		     "!type": "fn(a: number, b: number) -> number"
 		    },
 		    "blendLinearLight": {
-		     "!type": "fn(a: number, b: number) -> ?"
+		     "!type": "fn(a: number, b: number) -> number"
 		    },
 		    "blendVividLight": {
-		     "!type": "fn(a: number, b: number) -> ?"
+		     "!type": "fn(a: number, b: number) -> number"
 		    },
 		    "blendPinLight": {
-		     "!type": "fn(a: number, b: number) -> ?"
+		     "!type": "fn(a: number, b: number) -> number"
 		    },
 		    "blendHardMix": {
-		     "!type": "fn(a: number, b: number) -> ?"
+		     "!type": "fn(a: number, b: number) -> number"
 		    },
 		    "blendReflect": {
-		     "!type": "fn(a: number, b: number) -> ?"
+		     "!type": "fn(a: number, b: number) -> number"
 		    },
 		    "blendGlow": {
-		     "!type": "fn(a: number, b: number) -> ?"
+		     "!type": "fn(a: number, b: number) -> number"
 		    },
 		    "blendPhoenix": {
-		     "!type": "fn(a: number, b: number) -> ?"
+		     "!type": "fn(a: number, b: number) -> number"
 		    }
 		   },
 		   "Utils": {
@@ -14028,17 +14028,17 @@
 		    },
 		    "prototype": {
 		     "randomChoice": {
-		      "!type": "fn(choice1: +any, choice2: +any) -> ?"
+		      "!type": "fn(choice1: +any, choice2: +any) -> +any"
 		     }
 		    },
 		    "parseDimension": {
-		     "!type": "fn(size: string|number, dimension: number) -> ?"
+		     "!type": "fn(size: string|number, dimension: number) -> number"
 		    },
 		    "pad": {
-		     "!type": "fn(str: string, len: number, pad: string, dir: number) -> ?"
+		     "!type": "fn(str: string, len: number, pad: string, dir: number) -> string"
 		    },
 		    "isPlainObject": {
-		     "!type": "fn(obj: ?) -> ?"
+		     "!type": "fn(obj: ?) -> bool"
 		    },
 		    "extend": {
 		     "!type": "fn(deep: bool, target: ?) -> ?"
@@ -14086,382 +14086,382 @@
 		  },
 		  "<anonymous>~vec2": {
 		   "create": {
-		    "!type": "fn() -> ?"
+		    "!type": "fn() -> +vec2"
 		   },
 		   "clone": {
-		    "!type": "fn(a: +vec2) -> ?"
+		    "!type": "fn(a: +vec2) -> +vec2"
 		   },
 		   "fromValues": {
-		    "!type": "fn(x: number, y: number) -> ?"
+		    "!type": "fn(x: number, y: number) -> +vec2"
 		   },
 		   "copy": {
-		    "!type": "fn(out: +vec2, a: +vec2) -> ?"
+		    "!type": "fn(out: +vec2, a: +vec2) -> +vec2"
 		   },
 		   "set": {
-		    "!type": "fn(out: +vec2, x: number, y: number) -> ?"
+		    "!type": "fn(out: +vec2, x: number, y: number) -> +vec2"
 		   },
 		   "add": {
-		    "!type": "fn(out: +vec2, a: +vec2, b: +vec2) -> ?"
+		    "!type": "fn(out: +vec2, a: +vec2, b: +vec2) -> +vec2"
 		   },
 		   "subtract": {
-		    "!type": "fn(out: +vec2, a: +vec2, b: +vec2) -> ?"
+		    "!type": "fn(out: +vec2, a: +vec2, b: +vec2) -> +vec2"
 		   },
 		   "sub": {
 		    "!type": "fn()"
 		   },
 		   "multiply": {
-		    "!type": "fn(out: +vec2, a: +vec2, b: +vec2) -> ?"
+		    "!type": "fn(out: +vec2, a: +vec2, b: +vec2) -> +vec2"
 		   },
 		   "mul": {
 		    "!type": "fn()"
 		   },
 		   "divide": {
-		    "!type": "fn(out: +vec2, a: +vec2, b: +vec2) -> ?"
+		    "!type": "fn(out: +vec2, a: +vec2, b: +vec2) -> +vec2"
 		   },
 		   "div": {
 		    "!type": "fn()"
 		   },
 		   "min": {
-		    "!type": "fn(out: +vec2, a: +vec2, b: +vec2) -> ?"
+		    "!type": "fn(out: +vec2, a: +vec2, b: +vec2) -> +vec2"
 		   },
 		   "max": {
-		    "!type": "fn(out: +vec2, a: +vec2, b: +vec2) -> ?"
+		    "!type": "fn(out: +vec2, a: +vec2, b: +vec2) -> +vec2"
 		   },
 		   "scale": {
-		    "!type": "fn(out: +vec2, a: +vec2, b: number) -> ?"
+		    "!type": "fn(out: +vec2, a: +vec2, b: number) -> +vec2"
 		   },
 		   "scaleAndAdd": {
-		    "!type": "fn(out: +vec2, a: +vec2, b: +vec2, scale: number) -> ?"
+		    "!type": "fn(out: +vec2, a: +vec2, b: +vec2, scale: number) -> +vec2"
 		   },
 		   "distance": {
-		    "!type": "fn(a: +vec2, b: +vec2) -> ?"
+		    "!type": "fn(a: +vec2, b: +vec2) -> number"
 		   },
 		   "dist": {
 		    "!type": "fn()"
 		   },
 		   "squaredDistance": {
-		    "!type": "fn(a: +vec2, b: +vec2) -> ?"
+		    "!type": "fn(a: +vec2, b: +vec2) -> number"
 		   },
 		   "sqrDist": {
 		    "!type": "fn()"
 		   },
 		   "length": {
-		    "!type": "fn(a: +vec2) -> ?"
+		    "!type": "fn(a: +vec2) -> number"
 		   },
 		   "len": {
 		    "!type": "fn()"
 		   },
 		   "squaredLength": {
-		    "!type": "fn(a: +vec2) -> ?"
+		    "!type": "fn(a: +vec2) -> number"
 		   },
 		   "sqrLen": {
 		    "!type": "fn()"
 		   },
 		   "negate": {
-		    "!type": "fn(out: +vec2, a: +vec2) -> ?"
+		    "!type": "fn(out: +vec2, a: +vec2) -> +vec2"
 		   },
 		   "inverse": {
-		    "!type": "fn(out: +vec2, a: +vec2) -> ?"
+		    "!type": "fn(out: +vec2, a: +vec2) -> +vec2"
 		   },
 		   "normalize": {
-		    "!type": "fn(out: +vec2, a: +vec2) -> ?"
+		    "!type": "fn(out: +vec2, a: +vec2) -> +vec2"
 		   },
 		   "dot": {
-		    "!type": "fn(a: +vec2, b: +vec2) -> ?"
+		    "!type": "fn(a: +vec2, b: +vec2) -> number"
 		   },
 		   "cross": {
-		    "!type": "fn(out: +vec3, a: +vec2, b: +vec2) -> ?"
+		    "!type": "fn(out: +vec3, a: +vec2, b: +vec2) -> +vec3"
 		   },
 		   "lerp": {
-		    "!type": "fn(out: +vec2, a: +vec2, b: +vec2, t: number) -> ?"
+		    "!type": "fn(out: +vec2, a: +vec2, b: +vec2, t: number) -> +vec2"
 		   },
 		   "random": {
-		    "!type": "fn(out: +vec2, scale: number) -> ?"
+		    "!type": "fn(out: +vec2, scale: number) -> +vec2"
 		   },
 		   "transformMat2": {
-		    "!type": "fn(out: +vec2, a: +vec2, m: +mat2) -> ?"
+		    "!type": "fn(out: +vec2, a: +vec2, m: +mat2) -> +vec2"
 		   },
 		   "transformMat2d": {
-		    "!type": "fn(out: +vec2, a: +vec2, m: +mat2d) -> ?"
+		    "!type": "fn(out: +vec2, a: +vec2, m: +mat2d) -> +vec2"
 		   },
 		   "transformMat3": {
-		    "!type": "fn(out: +vec2, a: +vec2, m: +mat3) -> ?"
+		    "!type": "fn(out: +vec2, a: +vec2, m: +mat3) -> +vec2"
 		   },
 		   "transformMat4": {
-		    "!type": "fn(out: +vec2, a: +vec2, m: +mat4) -> ?"
+		    "!type": "fn(out: +vec2, a: +vec2, m: +mat4) -> +vec2"
 		   },
 		   "forEach": {
-		    "!type": "fn(a: [?], stride: number, offset: number, count: number, fn: fn(), arg: ?) -> ?"
+		    "!type": "fn(a: [?], stride: number, offset: number, count: number, fn: fn(), arg: ?) -> [?]"
 		   },
 		   "str": {
-		    "!type": "fn(vec: +vec2) -> ?"
+		    "!type": "fn(vec: +vec2) -> string"
 		   }
 		  },
 		  "<anonymous>~vec3": {
 		   "create": {
-		    "!type": "fn() -> ?"
+		    "!type": "fn() -> +vec3"
 		   },
 		   "clone": {
-		    "!type": "fn(a: +vec3) -> ?"
+		    "!type": "fn(a: +vec3) -> +vec3"
 		   },
 		   "fromValues": {
-		    "!type": "fn(x: number, y: number, z: number) -> ?"
+		    "!type": "fn(x: number, y: number, z: number) -> +vec3"
 		   },
 		   "copy": {
-		    "!type": "fn(out: +vec3, a: +vec3) -> ?"
+		    "!type": "fn(out: +vec3, a: +vec3) -> +vec3"
 		   },
 		   "set": {
-		    "!type": "fn(out: +vec3, x: number, y: number, z: number) -> ?"
+		    "!type": "fn(out: +vec3, x: number, y: number, z: number) -> +vec3"
 		   },
 		   "add": {
-		    "!type": "fn(out: +vec3, a: +vec3, b: +vec3) -> ?"
+		    "!type": "fn(out: +vec3, a: +vec3, b: +vec3) -> +vec3"
 		   },
 		   "subtract": {
-		    "!type": "fn(out: +vec3, a: +vec3, b: +vec3) -> ?"
+		    "!type": "fn(out: +vec3, a: +vec3, b: +vec3) -> +vec3"
 		   },
 		   "sub": {
 		    "!type": "fn()"
 		   },
 		   "multiply": {
-		    "!type": "fn(out: +vec3, a: +vec3, b: +vec3) -> ?"
+		    "!type": "fn(out: +vec3, a: +vec3, b: +vec3) -> +vec3"
 		   },
 		   "mul": {
 		    "!type": "fn()"
 		   },
 		   "divide": {
-		    "!type": "fn(out: +vec3, a: +vec3, b: +vec3) -> ?"
+		    "!type": "fn(out: +vec3, a: +vec3, b: +vec3) -> +vec3"
 		   },
 		   "div": {
 		    "!type": "fn()"
 		   },
 		   "min": {
-		    "!type": "fn(out: +vec3, a: +vec3, b: +vec3) -> ?"
+		    "!type": "fn(out: +vec3, a: +vec3, b: +vec3) -> +vec3"
 		   },
 		   "max": {
-		    "!type": "fn(out: +vec3, a: +vec3, b: +vec3) -> ?"
+		    "!type": "fn(out: +vec3, a: +vec3, b: +vec3) -> +vec3"
 		   },
 		   "scale": {
-		    "!type": "fn(out: +vec3, a: +vec3, b: number) -> ?"
+		    "!type": "fn(out: +vec3, a: +vec3, b: number) -> +vec3"
 		   },
 		   "scaleAndAdd": {
-		    "!type": "fn(out: +vec3, a: +vec3, b: +vec3, scale: number) -> ?"
+		    "!type": "fn(out: +vec3, a: +vec3, b: +vec3, scale: number) -> +vec3"
 		   },
 		   "distance": {
-		    "!type": "fn(a: +vec3, b: +vec3) -> ?"
+		    "!type": "fn(a: +vec3, b: +vec3) -> number"
 		   },
 		   "dist": {
 		    "!type": "fn()"
 		   },
 		   "squaredDistance": {
-		    "!type": "fn(a: +vec3, b: +vec3) -> ?"
+		    "!type": "fn(a: +vec3, b: +vec3) -> number"
 		   },
 		   "sqrDist": {
 		    "!type": "fn()"
 		   },
 		   "length": {
-		    "!type": "fn(a: +vec3) -> ?"
+		    "!type": "fn(a: +vec3) -> number"
 		   },
 		   "len": {
 		    "!type": "fn()"
 		   },
 		   "squaredLength": {
-		    "!type": "fn(a: +vec3) -> ?"
+		    "!type": "fn(a: +vec3) -> number"
 		   },
 		   "sqrLen": {
 		    "!type": "fn()"
 		   },
 		   "negate": {
-		    "!type": "fn(out: +vec3, a: +vec3) -> ?"
+		    "!type": "fn(out: +vec3, a: +vec3) -> +vec3"
 		   },
 		   "inverse": {
-		    "!type": "fn(out: +vec3, a: +vec3) -> ?"
+		    "!type": "fn(out: +vec3, a: +vec3) -> +vec3"
 		   },
 		   "normalize": {
-		    "!type": "fn(out: +vec3, a: +vec3) -> ?"
+		    "!type": "fn(out: +vec3, a: +vec3) -> +vec3"
 		   },
 		   "dot": {
-		    "!type": "fn(a: +vec3, b: +vec3) -> ?"
+		    "!type": "fn(a: +vec3, b: +vec3) -> number"
 		   },
 		   "cross": {
-		    "!type": "fn(out: +vec3, a: +vec3, b: +vec3) -> ?"
+		    "!type": "fn(out: +vec3, a: +vec3, b: +vec3) -> +vec3"
 		   },
 		   "lerp": {
-		    "!type": "fn(out: +vec3, a: +vec3, b: +vec3, t: number) -> ?"
+		    "!type": "fn(out: +vec3, a: +vec3, b: +vec3, t: number) -> +vec3"
 		   },
 		   "random": {
-		    "!type": "fn(out: +vec3, scale: number) -> ?"
+		    "!type": "fn(out: +vec3, scale: number) -> +vec3"
 		   },
 		   "transformMat4": {
-		    "!type": "fn(out: +vec3, a: +vec3, m: +mat4) -> ?"
+		    "!type": "fn(out: +vec3, a: +vec3, m: +mat4) -> +vec3"
 		   },
 		   "transformMat3": {
-		    "!type": "fn(out: +vec3, a: +vec3, m: +mat4) -> ?"
+		    "!type": "fn(out: +vec3, a: +vec3, m: +mat4) -> +vec3"
 		   },
 		   "transformQuat": {
-		    "!type": "fn(out: +vec3, a: +vec3, q: +quat) -> ?"
+		    "!type": "fn(out: +vec3, a: +vec3, q: +quat) -> +vec3"
 		   },
 		   "rotateX": {
-		    "!type": "fn(out: +vec3, a: +vec3, b: +vec3, c: number) -> ?"
+		    "!type": "fn(out: +vec3, a: +vec3, b: +vec3, c: number) -> +vec3"
 		   },
 		   "rotateY": {
-		    "!type": "fn(out: +vec3, a: +vec3, b: +vec3, c: number) -> ?"
+		    "!type": "fn(out: +vec3, a: +vec3, b: +vec3, c: number) -> +vec3"
 		   },
 		   "rotateZ": {
-		    "!type": "fn(out: +vec3, a: +vec3, b: +vec3, c: number) -> ?"
+		    "!type": "fn(out: +vec3, a: +vec3, b: +vec3, c: number) -> +vec3"
 		   },
 		   "forEach": {
-		    "!type": "fn(a: [?], stride: number, offset: number, count: number, fn: fn(), arg: ?) -> ?"
+		    "!type": "fn(a: [?], stride: number, offset: number, count: number, fn: fn(), arg: ?) -> [?]"
 		   },
 		   "str": {
-		    "!type": "fn(vec: +vec3) -> ?"
+		    "!type": "fn(vec: +vec3) -> string"
 		   }
 		  },
 		  "<anonymous>~vec4": {
 		   "create": {
-		    "!type": "fn() -> ?"
+		    "!type": "fn() -> +vec4"
 		   },
 		   "clone": {
-		    "!type": "fn(a: +vec4) -> ?"
+		    "!type": "fn(a: +vec4) -> +vec4"
 		   },
 		   "fromValues": {
-		    "!type": "fn(x: number, y: number, z: number, w: number) -> ?"
+		    "!type": "fn(x: number, y: number, z: number, w: number) -> +vec4"
 		   },
 		   "copy": {
-		    "!type": "fn(out: +vec4, a: +vec4) -> ?"
+		    "!type": "fn(out: +vec4, a: +vec4) -> +vec4"
 		   },
 		   "set": {
-		    "!type": "fn(out: +vec4, x: number, y: number, z: number, w: number) -> ?"
+		    "!type": "fn(out: +vec4, x: number, y: number, z: number, w: number) -> +vec4"
 		   },
 		   "add": {
-		    "!type": "fn(out: +vec4, a: +vec4, b: +vec4) -> ?"
+		    "!type": "fn(out: +vec4, a: +vec4, b: +vec4) -> +vec4"
 		   },
 		   "subtract": {
-		    "!type": "fn(out: +vec4, a: +vec4, b: +vec4) -> ?"
+		    "!type": "fn(out: +vec4, a: +vec4, b: +vec4) -> +vec4"
 		   },
 		   "sub": {
 		    "!type": "fn()"
 		   },
 		   "multiply": {
-		    "!type": "fn(out: +vec4, a: +vec4, b: +vec4) -> ?"
+		    "!type": "fn(out: +vec4, a: +vec4, b: +vec4) -> +vec4"
 		   },
 		   "mul": {
 		    "!type": "fn()"
 		   },
 		   "divide": {
-		    "!type": "fn(out: +vec4, a: +vec4, b: +vec4) -> ?"
+		    "!type": "fn(out: +vec4, a: +vec4, b: +vec4) -> +vec4"
 		   },
 		   "div": {
 		    "!type": "fn()"
 		   },
 		   "min": {
-		    "!type": "fn(out: +vec4, a: +vec4, b: +vec4) -> ?"
+		    "!type": "fn(out: +vec4, a: +vec4, b: +vec4) -> +vec4"
 		   },
 		   "max": {
-		    "!type": "fn(out: +vec4, a: +vec4, b: +vec4) -> ?"
+		    "!type": "fn(out: +vec4, a: +vec4, b: +vec4) -> +vec4"
 		   },
 		   "scale": {
-		    "!type": "fn(out: +vec4, a: +vec4, b: number) -> ?"
+		    "!type": "fn(out: +vec4, a: +vec4, b: number) -> +vec4"
 		   },
 		   "scaleAndAdd": {
-		    "!type": "fn(out: +vec4, a: +vec4, b: +vec4, scale: number) -> ?"
+		    "!type": "fn(out: +vec4, a: +vec4, b: +vec4, scale: number) -> +vec4"
 		   },
 		   "distance": {
-		    "!type": "fn(a: +vec4, b: +vec4) -> ?"
+		    "!type": "fn(a: +vec4, b: +vec4) -> number"
 		   },
 		   "dist": {
 		    "!type": "fn()"
 		   },
 		   "squaredDistance": {
-		    "!type": "fn(a: +vec4, b: +vec4) -> ?"
+		    "!type": "fn(a: +vec4, b: +vec4) -> number"
 		   },
 		   "sqrDist": {
 		    "!type": "fn()"
 		   },
 		   "length": {
-		    "!type": "fn(a: +vec4) -> ?"
+		    "!type": "fn(a: +vec4) -> number"
 		   },
 		   "len": {
 		    "!type": "fn()"
 		   },
 		   "squaredLength": {
-		    "!type": "fn(a: +vec4) -> ?"
+		    "!type": "fn(a: +vec4) -> number"
 		   },
 		   "sqrLen": {
 		    "!type": "fn()"
 		   },
 		   "negate": {
-		    "!type": "fn(out: +vec4, a: +vec4) -> ?"
+		    "!type": "fn(out: +vec4, a: +vec4) -> +vec4"
 		   },
 		   "inverse": {
-		    "!type": "fn(out: +vec4, a: +vec4) -> ?"
+		    "!type": "fn(out: +vec4, a: +vec4) -> +vec4"
 		   },
 		   "normalize": {
-		    "!type": "fn(out: +vec4, a: +vec4) -> ?"
+		    "!type": "fn(out: +vec4, a: +vec4) -> +vec4"
 		   },
 		   "dot": {
-		    "!type": "fn(a: +vec4, b: +vec4) -> ?"
+		    "!type": "fn(a: +vec4, b: +vec4) -> number"
 		   },
 		   "lerp": {
-		    "!type": "fn(out: +vec4, a: +vec4, b: +vec4, t: number) -> ?"
+		    "!type": "fn(out: +vec4, a: +vec4, b: +vec4, t: number) -> +vec4"
 		   },
 		   "random": {
-		    "!type": "fn(out: +vec4, scale: number) -> ?"
+		    "!type": "fn(out: +vec4, scale: number) -> +vec4"
 		   },
 		   "transformMat4": {
-		    "!type": "fn(out: +vec4, a: +vec4, m: +mat4) -> ?"
+		    "!type": "fn(out: +vec4, a: +vec4, m: +mat4) -> +vec4"
 		   },
 		   "transformQuat": {
-		    "!type": "fn(out: +vec4, a: +vec4, q: +quat) -> ?"
+		    "!type": "fn(out: +vec4, a: +vec4, q: +quat) -> +vec4"
 		   },
 		   "forEach": {
-		    "!type": "fn(a: [?], stride: number, offset: number, count: number, fn: fn(), arg: ?) -> ?"
+		    "!type": "fn(a: [?], stride: number, offset: number, count: number, fn: fn(), arg: ?) -> [?]"
 		   },
 		   "str": {
-		    "!type": "fn(vec: +vec4) -> ?"
+		    "!type": "fn(vec: +vec4) -> string"
 		   }
 		  },
 		  "<anonymous>~mat2": {
 		   "create": {
-		    "!type": "fn() -> ?"
+		    "!type": "fn() -> +mat2"
 		   },
 		   "clone": {
-		    "!type": "fn(a: +mat2) -> ?"
+		    "!type": "fn(a: +mat2) -> +mat2"
 		   },
 		   "copy": {
-		    "!type": "fn(out: +mat2, a: +mat2) -> ?"
+		    "!type": "fn(out: +mat2, a: +mat2) -> +mat2"
 		   },
 		   "identity": {
-		    "!type": "fn(out: +mat2) -> ?"
+		    "!type": "fn(out: +mat2) -> +mat2"
 		   },
 		   "transpose": {
-		    "!type": "fn(out: +mat2, a: +mat2) -> ?"
+		    "!type": "fn(out: +mat2, a: +mat2) -> +mat2"
 		   },
 		   "invert": {
-		    "!type": "fn(out: +mat2, a: +mat2) -> ?"
+		    "!type": "fn(out: +mat2, a: +mat2) -> +mat2"
 		   },
 		   "adjoint": {
-		    "!type": "fn(out: +mat2, a: +mat2) -> ?"
+		    "!type": "fn(out: +mat2, a: +mat2) -> +mat2"
 		   },
 		   "determinant": {
-		    "!type": "fn(a: +mat2) -> ?"
+		    "!type": "fn(a: +mat2) -> number"
 		   },
 		   "multiply": {
-		    "!type": "fn(out: +mat2, a: +mat2, b: +mat2) -> ?"
+		    "!type": "fn(out: +mat2, a: +mat2, b: +mat2) -> +mat2"
 		   },
 		   "mul": {
 		    "!type": "fn()"
 		   },
 		   "rotate": {
-		    "!type": "fn(out: +mat2, a: +mat2, rad: number) -> ?"
+		    "!type": "fn(out: +mat2, a: +mat2, rad: number) -> +mat2"
 		   },
 		   "scale": {
-		    "!type": "fn(out: +mat2, a: +mat2, v: +vec2) -> ?"
+		    "!type": "fn(out: +mat2, a: +mat2, v: +vec2) -> +mat2"
 		   },
 		   "str": {
-		    "!type": "fn(mat: +mat2) -> ?"
+		    "!type": "fn(mat: +mat2) -> string"
 		   },
 		   "frob": {
-		    "!type": "fn(a: +mat2) -> ?"
+		    "!type": "fn(a: +mat2) -> number"
 		   },
 		   "LDU": {
 		    "!type": "fn(L: +mat2, D: +mat2, U: +mat2, a: +mat2)"
@@ -14469,258 +14469,258 @@
 		  },
 		  "<anonymous>~mat2d": {
 		   "create": {
-		    "!type": "fn() -> ?"
+		    "!type": "fn() -> +mat2d"
 		   },
 		   "clone": {
-		    "!type": "fn(a: +mat2d) -> ?"
+		    "!type": "fn(a: +mat2d) -> +mat2d"
 		   },
 		   "copy": {
-		    "!type": "fn(out: +mat2d, a: +mat2d) -> ?"
+		    "!type": "fn(out: +mat2d, a: +mat2d) -> +mat2d"
 		   },
 		   "identity": {
-		    "!type": "fn(out: +mat2d) -> ?"
+		    "!type": "fn(out: +mat2d) -> +mat2d"
 		   },
 		   "invert": {
-		    "!type": "fn(out: +mat2d, a: +mat2d) -> ?"
+		    "!type": "fn(out: +mat2d, a: +mat2d) -> +mat2d"
 		   },
 		   "determinant": {
-		    "!type": "fn(a: +mat2d) -> ?"
+		    "!type": "fn(a: +mat2d) -> number"
 		   },
 		   "multiply": {
-		    "!type": "fn(out: +mat2d, a: +mat2d, b: +mat2d) -> ?"
+		    "!type": "fn(out: +mat2d, a: +mat2d, b: +mat2d) -> +mat2d"
 		   },
 		   "mul": {
 		    "!type": "fn()"
 		   },
 		   "rotate": {
-		    "!type": "fn(out: +mat2d, a: +mat2d, rad: number) -> ?"
+		    "!type": "fn(out: +mat2d, a: +mat2d, rad: number) -> +mat2d"
 		   },
 		   "scale": {
-		    "!type": "fn(out: +mat2d, a: +mat2d, v: +vec2) -> ?"
+		    "!type": "fn(out: +mat2d, a: +mat2d, v: +vec2) -> +mat2d"
 		   },
 		   "translate": {
-		    "!type": "fn(out: +mat2d, a: +mat2d, v: +vec2) -> ?"
+		    "!type": "fn(out: +mat2d, a: +mat2d, v: +vec2) -> +mat2d"
 		   },
 		   "str": {
-		    "!type": "fn(a: +mat2d) -> ?"
+		    "!type": "fn(a: +mat2d) -> string"
 		   },
 		   "frob": {
-		    "!type": "fn(a: +mat2d) -> ?"
+		    "!type": "fn(a: +mat2d) -> number"
 		   }
 		  },
 		  "<anonymous>~mat3": {
 		   "create": {
-		    "!type": "fn() -> ?"
+		    "!type": "fn() -> +mat3"
 		   },
 		   "fromMat4": {
-		    "!type": "fn(out: +mat3, a: +mat4) -> ?"
+		    "!type": "fn(out: +mat3, a: +mat4) -> +mat3"
 		   },
 		   "clone": {
-		    "!type": "fn(a: +mat3) -> ?"
+		    "!type": "fn(a: +mat3) -> +mat3"
 		   },
 		   "copy": {
-		    "!type": "fn(out: +mat3, a: +mat3) -> ?"
+		    "!type": "fn(out: +mat3, a: +mat3) -> +mat3"
 		   },
 		   "identity": {
-		    "!type": "fn(out: +mat3) -> ?"
+		    "!type": "fn(out: +mat3) -> +mat3"
 		   },
 		   "transpose": {
-		    "!type": "fn(out: +mat3, a: +mat3) -> ?"
+		    "!type": "fn(out: +mat3, a: +mat3) -> +mat3"
 		   },
 		   "invert": {
-		    "!type": "fn(out: +mat3, a: +mat3) -> ?"
+		    "!type": "fn(out: +mat3, a: +mat3) -> +mat3"
 		   },
 		   "adjoint": {
-		    "!type": "fn(out: +mat3, a: +mat3) -> ?"
+		    "!type": "fn(out: +mat3, a: +mat3) -> +mat3"
 		   },
 		   "determinant": {
-		    "!type": "fn(a: +mat3) -> ?"
+		    "!type": "fn(a: +mat3) -> number"
 		   },
 		   "multiply": {
-		    "!type": "fn(out: +mat3, a: +mat3, b: +mat3) -> ?"
+		    "!type": "fn(out: +mat3, a: +mat3, b: +mat3) -> +mat3"
 		   },
 		   "mul": {
 		    "!type": "fn()"
 		   },
 		   "translate": {
-		    "!type": "fn(out: +mat3, a: +mat3, v: +vec2) -> ?"
+		    "!type": "fn(out: +mat3, a: +mat3, v: +vec2) -> +mat3"
 		   },
 		   "rotate": {
-		    "!type": "fn(out: +mat3, a: +mat3, rad: number) -> ?"
+		    "!type": "fn(out: +mat3, a: +mat3, rad: number) -> +mat3"
 		   },
 		   "scale": {
-		    "!type": "fn(out: +mat3, a: +mat3, v: +vec2) -> ?"
+		    "!type": "fn(out: +mat3, a: +mat3, v: +vec2) -> +mat3"
 		   },
 		   "fromMat2d": {
-		    "!type": "fn(out: +mat3, a: +mat2d) -> ?"
+		    "!type": "fn(out: +mat3, a: +mat2d) -> +mat3"
 		   },
 		   "fromQuat": {
-		    "!type": "fn(out: +mat3, q: +quat) -> ?"
+		    "!type": "fn(out: +mat3, q: +quat) -> +mat3"
 		   },
 		   "normalFromMat4": {
-		    "!type": "fn(out: +mat3, a: +mat4) -> ?"
+		    "!type": "fn(out: +mat3, a: +mat4) -> +mat3"
 		   },
 		   "str": {
-		    "!type": "fn(mat: +mat3) -> ?"
+		    "!type": "fn(mat: +mat3) -> string"
 		   },
 		   "frob": {
-		    "!type": "fn(a: +mat3) -> ?"
+		    "!type": "fn(a: +mat3) -> number"
 		   }
 		  },
 		  "<anonymous>~mat4": {
 		   "create": {
-		    "!type": "fn() -> ?"
+		    "!type": "fn() -> +mat4"
 		   },
 		   "clone": {
-		    "!type": "fn(a: +mat4) -> ?"
+		    "!type": "fn(a: +mat4) -> +mat4"
 		   },
 		   "copy": {
-		    "!type": "fn(out: +mat4, a: +mat4) -> ?"
+		    "!type": "fn(out: +mat4, a: +mat4) -> +mat4"
 		   },
 		   "identity": {
-		    "!type": "fn(out: +mat4) -> ?"
+		    "!type": "fn(out: +mat4) -> +mat4"
 		   },
 		   "transpose": {
-		    "!type": "fn(out: +mat4, a: +mat4) -> ?"
+		    "!type": "fn(out: +mat4, a: +mat4) -> +mat4"
 		   },
 		   "invert": {
-		    "!type": "fn(out: +mat4, a: +mat4) -> ?"
+		    "!type": "fn(out: +mat4, a: +mat4) -> +mat4"
 		   },
 		   "adjoint": {
-		    "!type": "fn(out: +mat4, a: +mat4) -> ?"
+		    "!type": "fn(out: +mat4, a: +mat4) -> +mat4"
 		   },
 		   "determinant": {
-		    "!type": "fn(a: +mat4) -> ?"
+		    "!type": "fn(a: +mat4) -> number"
 		   },
 		   "multiply": {
-		    "!type": "fn(out: +mat4, a: +mat4, b: +mat4) -> ?"
+		    "!type": "fn(out: +mat4, a: +mat4, b: +mat4) -> +mat4"
 		   },
 		   "mul": {
 		    "!type": "fn()"
 		   },
 		   "translate": {
-		    "!type": "fn(out: +mat4, a: +mat4, v: +vec3) -> ?"
+		    "!type": "fn(out: +mat4, a: +mat4, v: +vec3) -> +mat4"
 		   },
 		   "scale": {
-		    "!type": "fn(out: +mat4, a: +mat4, v: +vec3) -> ?"
+		    "!type": "fn(out: +mat4, a: +mat4, v: +vec3) -> +mat4"
 		   },
 		   "rotate": {
-		    "!type": "fn(out: +mat4, a: +mat4, rad: number, axis: +vec3) -> ?"
+		    "!type": "fn(out: +mat4, a: +mat4, rad: number, axis: +vec3) -> +mat4"
 		   },
 		   "rotateX": {
-		    "!type": "fn(out: +mat4, a: +mat4, rad: number) -> ?"
+		    "!type": "fn(out: +mat4, a: +mat4, rad: number) -> +mat4"
 		   },
 		   "rotateY": {
-		    "!type": "fn(out: +mat4, a: +mat4, rad: number) -> ?"
+		    "!type": "fn(out: +mat4, a: +mat4, rad: number) -> +mat4"
 		   },
 		   "rotateZ": {
-		    "!type": "fn(out: +mat4, a: +mat4, rad: number) -> ?"
+		    "!type": "fn(out: +mat4, a: +mat4, rad: number) -> +mat4"
 		   },
 		   "fromRotationTranslation": {
-		    "!type": "fn(out: +mat4, q: +quat4, v: +vec3) -> ?"
+		    "!type": "fn(out: +mat4, q: +quat4, v: +vec3) -> +mat4"
 		   },
 		   "frustum": {
-		    "!type": "fn(out: +mat4, left: number, right: number, bottom: number, top: number, near: number, far: number) -> ?"
+		    "!type": "fn(out: +mat4, left: number, right: number, bottom: number, top: number, near: number, far: number) -> +mat4"
 		   },
 		   "perspective": {
-		    "!type": "fn(out: +mat4, fovy: number, aspect: number, near: number, far: number) -> ?"
+		    "!type": "fn(out: +mat4, fovy: number, aspect: number, near: number, far: number) -> +mat4"
 		   },
 		   "ortho": {
-		    "!type": "fn(out: +mat4, left: number, right: number, bottom: number, top: number, near: number, far: number) -> ?"
+		    "!type": "fn(out: +mat4, left: number, right: number, bottom: number, top: number, near: number, far: number) -> +mat4"
 		   },
 		   "lookAt": {
-		    "!type": "fn(out: +mat4, eye: +vec3, center: +vec3, up: +vec3) -> ?"
+		    "!type": "fn(out: +mat4, eye: +vec3, center: +vec3, up: +vec3) -> +mat4"
 		   },
 		   "str": {
-		    "!type": "fn(mat: +mat4) -> ?"
+		    "!type": "fn(mat: +mat4) -> string"
 		   },
 		   "frob": {
-		    "!type": "fn(a: +mat4) -> ?"
+		    "!type": "fn(a: +mat4) -> number"
 		   }
 		  },
 		  "<anonymous>~quat": {
 		   "create": {
-		    "!type": "fn() -> ?"
+		    "!type": "fn() -> +quat"
 		   },
 		   "rotationTo": {},
 		   "setAxes": {},
 		   "clone": {
-		    "!type": "fn(a: +quat) -> ?"
+		    "!type": "fn(a: +quat) -> +quat"
 		   },
 		   "fromValues": {
-		    "!type": "fn(x: number, y: number, z: number, w: number) -> ?"
+		    "!type": "fn(x: number, y: number, z: number, w: number) -> +quat"
 		   },
 		   "copy": {
-		    "!type": "fn(out: +quat, a: +quat) -> ?"
+		    "!type": "fn(out: +quat, a: +quat) -> +quat"
 		   },
 		   "set": {
-		    "!type": "fn(out: +quat, x: number, y: number, z: number, w: number) -> ?"
+		    "!type": "fn(out: +quat, x: number, y: number, z: number, w: number) -> +quat"
 		   },
 		   "identity": {
-		    "!type": "fn(out: +quat) -> ?"
+		    "!type": "fn(out: +quat) -> +quat"
 		   },
 		   "setAxisAngle": {
-		    "!type": "fn(out: +quat, axis: +vec3, rad: number) -> ?"
+		    "!type": "fn(out: +quat, axis: +vec3, rad: number) -> +quat"
 		   },
 		   "add": {
-		    "!type": "fn(out: +quat, a: +quat, b: +quat) -> ?"
+		    "!type": "fn(out: +quat, a: +quat, b: +quat) -> +quat"
 		   },
 		   "multiply": {
-		    "!type": "fn(out: +quat, a: +quat, b: +quat) -> ?"
+		    "!type": "fn(out: +quat, a: +quat, b: +quat) -> +quat"
 		   },
 		   "mul": {
 		    "!type": "fn()"
 		   },
 		   "scale": {
-		    "!type": "fn(out: +quat, a: +quat, b: number) -> ?"
+		    "!type": "fn(out: +quat, a: +quat, b: number) -> +quat"
 		   },
 		   "rotateX": {
-		    "!type": "fn(out: +quat, a: +quat, rad: number) -> ?"
+		    "!type": "fn(out: +quat, a: +quat, rad: number) -> +quat"
 		   },
 		   "rotateY": {
-		    "!type": "fn(out: +quat, a: +quat, rad: number) -> ?"
+		    "!type": "fn(out: +quat, a: +quat, rad: number) -> +quat"
 		   },
 		   "rotateZ": {
-		    "!type": "fn(out: +quat, a: +quat, rad: number) -> ?"
+		    "!type": "fn(out: +quat, a: +quat, rad: number) -> +quat"
 		   },
 		   "calculateW": {
-		    "!type": "fn(out: +quat, a: +quat) -> ?"
+		    "!type": "fn(out: +quat, a: +quat) -> +quat"
 		   },
 		   "dot": {
-		    "!type": "fn(a: +quat, b: +quat) -> ?"
+		    "!type": "fn(a: +quat, b: +quat) -> number"
 		   },
 		   "lerp": {
-		    "!type": "fn(out: +quat, a: +quat, b: +quat, t: number) -> ?"
+		    "!type": "fn(out: +quat, a: +quat, b: +quat, t: number) -> +quat"
 		   },
 		   "slerp": {
-		    "!type": "fn(out: +quat, a: +quat, b: +quat, t: number) -> ?"
+		    "!type": "fn(out: +quat, a: +quat, b: +quat, t: number) -> +quat"
 		   },
 		   "invert": {
-		    "!type": "fn(out: +quat, a: +quat) -> ?"
+		    "!type": "fn(out: +quat, a: +quat) -> +quat"
 		   },
 		   "conjugate": {
-		    "!type": "fn(out: +quat, a: +quat) -> ?"
+		    "!type": "fn(out: +quat, a: +quat) -> +quat"
 		   },
 		   "length": {
-		    "!type": "fn(a: +quat) -> ?"
+		    "!type": "fn(a: +quat) -> number"
 		   },
 		   "len": {
 		    "!type": "fn()"
 		   },
 		   "squaredLength": {
-		    "!type": "fn(a: +quat) -> ?"
+		    "!type": "fn(a: +quat) -> number"
 		   },
 		   "sqrLen": {
 		    "!type": "fn()"
 		   },
 		   "normalize": {
-		    "!type": "fn(out: +quat, a: +quat) -> ?"
+		    "!type": "fn(out: +quat, a: +quat) -> +quat"
 		   },
 		   "fromMat3": {
-		    "!type": "fn(out: +quat, m: +mat3) -> ?"
+		    "!type": "fn(out: +quat, m: +mat3) -> +quat"
 		   },
 		   "str": {
-		    "!type": "fn(vec: +quat) -> ?"
+		    "!type": "fn(vec: +quat) -> string"
 		   }
 		  },
 		  "<anonymous>": {
@@ -15679,10 +15679,10 @@
 		    }
 		   },
 		   "Graphics#containsPoint": {
-		    "!type": "fn(point: +Point) -> ?"
+		    "!type": "fn(point: +Point) -> bool"
 		   },
 		   "GraphicsData#clone": {
-		    "!type": "fn() -> ?"
+		    "!type": "fn() -> +GraphicsData"
 		   },
 		   "CanvasRenderer": {
 		    "!type": "fn(width: number, height: number, options: ?)",
