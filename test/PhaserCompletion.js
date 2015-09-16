@@ -21,3 +21,15 @@ exports['test Phaser completion'] = function() {
   }, "Game");
 
 }
+
+// See https://github.com/angelozerr/tern-phaser/issues/1
+exports['test tween (Issue 1) completion'] = function() {
+  
+  // Completion for tween
+  util.assertCompletion("new Phaser.Game().add.tween().", {
+    "name":"chain",
+    "type":"fn(tweens: Phaser.Tween) -> Phaser.Tween",
+    "origin":"phaser"
+  }, "chain");
+
+}
