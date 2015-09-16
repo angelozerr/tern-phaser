@@ -9,12 +9,19 @@
   Phaser.generate = function(jsDoc) {
     var options = {
       "name" : "phaser",
+      tweek: tweek,
       getTernType: function(name) {
     	if (name == "Rectangle-like") return "Rectangle";
       }
     };
     var generator = new jsdoc2tern.Generator(options);
     return generator.process(jsDoc);
+  }
+  
+  function tweek(jsdocItem) {
+    if (jsdocItem.scope === "global" && jsdocItem.kind === "constant" && !jsdocItem.memberof) {
+      jsdocItem.memberof = "Phaser";
+    }	  
   }
    
 });  

@@ -33,3 +33,17 @@ exports['test tween (Issue 1) completion'] = function() {
   }, "chain");
 
 }
+
+//See https://github.com/angelozerr/tern-phaser/issues/2
+exports['test Phaser.AUTO (Issue 2) completion'] = function() {
+  
+  // Completion for tween
+  util.assertCompletion("Phaser.AUT", {
+    "start":{"line":0,"ch":7},
+	"end":{"line":0,"ch":10},
+	"isProperty":true,
+	"isObjectKey":false,
+	"completions":[{"name":"AUTO","type":"number","origin":"phaser"}]
+  });
+
+}

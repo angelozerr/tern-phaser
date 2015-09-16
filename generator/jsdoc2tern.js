@@ -25,6 +25,7 @@
     // Iterate over all jsdoc items
     for ( var i = 0; i < jsDoc.length; i++) {
       var jsdocItem = jsDoc[i];
+      if (this.options.tweek) this.options.tweek(jsdocItem);
       if (isIgnore(jsdocItem)) continue;
       var parent = getParent(jsdocItem, ternDef);
       if (parent) {
