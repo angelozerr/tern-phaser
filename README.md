@@ -17,7 +17,7 @@ Here a screenshot with completion with Eclipse IDE Phaser completion :
 
 ![Eclipse & TernPhaser](https://github.com/angelozerr/tern-phaser/wiki/images/TernPhaserWithEclipse.png)
 
-If you wish to use Eclipse as IDE, see Eclipse [support for Phaser](https://github.com/angelozerr/tern.java/wiki/Tern-&-Phaser-support).
+If you wish to use Eclipse as IDE, see [Eclipse support for Phaser](https://github.com/angelozerr/tern.java/wiki/Tern-&-Phaser-support).
 
 ## Structure
 
