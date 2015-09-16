@@ -1,0 +1,19 @@
+<html>
+
+<head>
+<title>JSDoc 2 Tern</title>
+<script type="text/javascript" src="../data/jsdoc-ast.json.js"></script>
+<script type="text/javascript" src="../jsdoc2tern.js"></script>
+<script type="text/javascript" src="../phaser2tern.js"></script>
+<script type="text/javascript">
+  function generateTernDef() {
+    var ternDef = jsdoc2tern.Phaser.generate(jsDoc);
+    document.getElementById('ternDef').value = JSON.stringify(ternDef, null,
+        ' ');
+  }
+</script>
+</head>
+<body onload="generateTernDef();">
+	<textarea id="ternDef" style="width: 100%; height: 100%"></textarea>
+</body>
+</html>
