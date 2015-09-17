@@ -12,6 +12,8 @@
       tweek: tweek,
       getTernType: function(name) {
     	if (name == "Rectangle-like") return "Rectangle";
+    	// tweek for https://github.com/angelozerr/tern-phaser/issues/6
+    	if (name == "Point") return "Phaser.Point";
       }
     };
     var generator = new jsdoc2tern.Generator(options);
@@ -20,8 +22,10 @@
   
   function tweek(jsdocItem) {
     if (jsdocItem.scope === "global" && jsdocItem.kind === "constant" && !jsdocItem.memberof) {
+      // tweek to support Phaser.AUTO, etc 
+      // see https://github.com/angelozerr/tern-phaser/issues/2
       jsdocItem.memberof = "Phaser";
-    }	  
+    }    
   }
    
 });  

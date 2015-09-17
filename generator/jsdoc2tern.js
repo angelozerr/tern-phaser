@@ -36,9 +36,11 @@
             if (properties && properties[0]) {
               var prop = properties[0];
               description = prop.description;
-              type = getParamType(prop, this.options);
-              if (type == "?") type = null;
-            }        
+              type = getParamType(prop, this.options, true);
+            }
+            if (type == null) {
+              type = getParamType(jsdocItem, this.options, true);
+            } 
             break;
           case "function":
             type = getFunctionType(jsdocItem, ternDef, this.options);
@@ -138,23 +140,35 @@
     return type;
   }
   
-  var getParamType = function(param, options)  {
-    var jsdocType = param.type;
+  var getParamType = function(param, options, returnNullIfUnkwown)  {
+    var jsdocType = param.type, type = "";
     if (jsdocType) {
-      var type  = "";
-      var names = jsdocType.names;
+      var names = jsdocType.names, t, firstTypeIsFn = false;
       for (var i = 0; i < names.length; i++) {
-    	  if (i > 0) type+= "|";
-    	  type += getTernType(names[i], options);
+    	  t = getTernType(names[i], options);    	  
+    	  if (t) {
+    		if(i == 0 && startsWith(t, "fn(")) {
+    		  firstTypeIsFn = true;
+    		  type += t;
+        	} else {
+        	  if (firstTypeIsFn) {
+        		  type = t + "|" + type;
+            	  firstTypeIsFn = false;
+        	  } else {
+        		if (i > 0) type+= "|";
+          	    type += t;  
+        	  }        		
+        	}    	     
+    	  }
 	  }
-      return type != "" ? type : "?";
     }
-	return "?";
+    if (type != "") return type;
+    return returnNullIfUnkwown ? null : "?";
   }
   
   var getTernType = function(name, options) {
 	var overridedType = options.getTernType ? options.getTernType(name) : null;
-	if (overridedType) return overridedType;
+	if (overridedType) name = overridedType;
 	switch(name.toLowerCase()) {
 	  case "string":
 		return "string";
