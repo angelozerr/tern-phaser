@@ -77,6 +77,7 @@
     if(jsdocItem.undocumented == true) return true;
     if (jsdocItem.kind == "member" && jsdocItem.scope == "inner") return true;
     if (jsdocItem.kind == "file") return true;
+    if (jsdocItem.memberof === "<anonymous>") return true;
   }
   
   function getParent(jsdocItem, ternDef) {
