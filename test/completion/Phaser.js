@@ -1,6 +1,4 @@
-var util = require("./util");
-
-// See 
+var util = require("./../util");
 
 exports['test Phaser completion'] = function() {
   

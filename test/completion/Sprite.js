@@ -1,4 +1,4 @@
-var util = require("./util");
+var util = require("./../util");
 
 // See https://github.com/angelozerr/tern-phaser/issues/6
 exports['test Sprite (Issue 6) completion'] = function() {

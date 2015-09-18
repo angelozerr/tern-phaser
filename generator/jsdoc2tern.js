@@ -76,18 +76,25 @@
     if (jsdocItem.access === "private") return true;
     if(jsdocItem.undocumented == true) return true;
     if (jsdocItem.kind == "member" && jsdocItem.scope == "inner") return true;
+    if (jsdocItem.kind == "file") return true;
   }
   
   function getParent(jsdocItem, ternDef) {
-    var name = jsdocItem.memberof;
-    if (!name) return ternDef;
-    var names = name.split(".");
-    var parent = ternDef;
-    for (var i = 0; i < names.length; i++) {
-      parent = getOrCreate(parent, names[i])
+	var parent = ternDef, memberof = getMemberOf(jsdocItem);
+    if (memberof) { 
+      var names = memberof.split(".");    
+        for (var i = 0; i < names.length; i++) {
+          parent = getOrCreate(parent, names[i])
+        }
     }
     if (jsdocItem.scope == "instance") parent = getOrCreate(parent, "prototype");
     return getOrCreate(parent, jsdocItem.name);
+  }
+  
+  function getMemberOf(jsdocItem) {
+	  var memberof = jsdocItem.memberof
+	  if (memberof && startsWith(memberof, "<anonymous>~")) return memberof.substring("<anonymous>~".length, memberof.length); 
+	  return memberof;	  
   }
   
   function getOrCreate(item, name) {
