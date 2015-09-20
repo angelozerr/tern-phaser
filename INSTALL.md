@@ -28,9 +28,9 @@ where you ran `npm install`.
 If you know how to install tern-phaser with the alternative
 [sublime-tern][sublime-tern-alt], let me know!
 
-## Bracket
+## Brackets
 
-TODO, please help me to explain how to configure bracket for custom tern plugin like tern-phaser.
+Yoiu should read http://www.netsi.dk/wordpress/index.php/2015/06/17/my-brackets-just-got-meteor-autosuggest/
 
 ## Gedit
 
