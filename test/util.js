@@ -58,7 +58,8 @@ exports.assertCompletion = function(text, expected, name, substraction) {
 			origins: queryOptions.origins,
 			caseInsensitive: true,
 			lineCharPositions: true,
-			expandWordForward: false
+			expandWordForward: false,
+			guess: false
 		}
 	}, function(err, resp) {
 		if (err)
