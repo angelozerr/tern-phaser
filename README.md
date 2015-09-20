@@ -54,7 +54,7 @@ Here is a minimal example `.tern-project` configuration file:
 ```json
 {
   "ecmaVersion": 5,
-  "libs": ["borwser"],
+  "libs": ["browser"],
   "plugins": {
     "phaser": {}
   }
