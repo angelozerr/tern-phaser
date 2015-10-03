@@ -44,6 +44,9 @@ To use tern-phaser in Eclipse, follow [these
 instructions][eclipse-tern-phaser] for setting up tern-phaser with
 [tern.java][tern-java].
 
+## Atom
+
+See [User tern-phaser with Atom](https://github.com/angelozerr/tern-phaser/wiki/UseTernPhaserWithAtom)
 
 [eclipse-tern-phaser]: https://github.com/angelozerr/tern.java/wiki/Tern-&-Phaser-support
 [emacs-install]: http://ternjs.net/doc/manual.html#emacs
